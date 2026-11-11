@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Generate Time Intervals | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to generate time intervals using date time columns and make the most of your analytics.
+title: Transformation Generate Time Intervals in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to generate time intervals and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

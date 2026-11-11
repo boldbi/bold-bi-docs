@@ -1,6 +1,6 @@
 ---
 layout: post
-title: REST API Reference – Embedded Analytics | Bold BI Docs
+title: REST API Reference for Embedded Analytics | Bold BI
 description: Explore the REST APIs to programmatically handle our application server operations. It lets you access the functionality behind the resources on your site.
 canonical: "/multi-tenancy/site-administration/api-reference/"
 platform: bold-bi
@@ -17,7 +17,7 @@ For example, `https://onpremise-demo.boldbi.com/api/token`
 
 For Bold BI tenant site REST API references, refer to the following [API Reference](/server-api-reference/).
 
-### API Versions 
+## API Versions 
 
 <table>
 <tr>

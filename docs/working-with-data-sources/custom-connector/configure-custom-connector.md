@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to configure Custom Connector in Bold BI | Bold BI Docs
+title: How to configure Custom Connector in Bold BI | Bold BI
 description: Learn how to configure the custom connector by creating a custom connector and you need to prepare a simple JSON file and upload it into Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Custom Connector
+# How to configure Custom Connector in Bold BI
 
-A custom connector allows you to create a BoldBI connector by yourself. You can create a BoldBI connector for your REST API without having to wait for it to be implemented. 
+A custom connector allows you to create a Bold BI connector by yourself. You can create a Bold BI connector for your REST API without having to wait for it to be implemented. 
 To create a custom connector, you need to prepare a JSON file and upload it to Bold BI.
 
 > **Note:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

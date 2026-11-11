@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Reset a User Password – Admin Utility | Bold BI Embedded
+title: Reset a User Password - Admin Utility in Bold BI | Bold BI
 description: Learn how to use the command line interface to reset the current password of any user in Bold BI Embedded using their email address or user name.
 platform: bold-bi
 documentation: ug
 ---
 
-# Reset Password
+# Reset a User Password - Admin Utility
 
 Please refer to the documentation of your operating system for instructions on how to reset the current password for any user using their email address or username.
 

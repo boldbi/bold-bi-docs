@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Prerequisites – Deploying BoldBI in Docker Environment
-description: This section explains the prerequisites to deploy the Bold BI server application in the docker environment.
+title: Prerequisites for Bold BI in Docker Environment | Bold BI
+description: This section explains the prerequisites to deploy the Bold BI Server application in the docker environment.
 platform: bold-bi
 documentation: ug
 ---
 
-# Deployment Prerequisites
+# Prerequisites for Bold BI in Docker Environment
 
 The following hardware and software requirements are necessary to run the Bold BI application on a Docker container.
 

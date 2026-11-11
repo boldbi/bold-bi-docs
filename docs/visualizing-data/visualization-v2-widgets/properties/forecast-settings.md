@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Forecast Settings for Modern Widgets | Bold BI Docs
+title: Forecast Settings for Modern Widgets in Bold BI | Bold BI
 description: Learn when forecast settings are available in modern Bold BI charts and how to configure forecast length, confidence interval, seasonality, and display options.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/forecast-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Forecast Settings
+# Forecast Settings for Modern Widgets
 
 | Unsupported widgets |
 |---|
 | All widgets except Modern Line, Spline, and eligible Line or Spline series in a Combo Chart |
 
-Forecasting extends an existing time series with predicted values and an optional confidence band. Use it to estimate future values when the chart contains one measure, one supported date-time dimension, and no Row field.
+Forecasting in Bold BI extends an existing time series with predicted values and an optional confidence band. Use it to estimate future values when the chart contains one measure, one supported date-time dimension, and no Row field.
 
 > **Availability:** Forecast settings appear only for a Line or Spline series with one value, one forecast-compatible category field, and no Row field. They are unavailable while the chart is acting as a Period Over Period slave widget.
 
@@ -21,7 +21,7 @@ Forecasting extends an existing time series with predicted values and an optiona
 
 ## Properties
 
-#### Enable Forecast
+### Enable Forecast
 
 Enables forecast calculation for the configured series.
 

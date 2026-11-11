@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Secure Dashboard Embedding via Backend Authorization | Bold BI
+title: Dashboard Embedding via Backend Authorization | Bold BI
 description: Learn how to securely embed Bold BI dashboards using a backend authorization server with the Embed SDK.
 platform: bold-bi
 documentation: ug
 ---
 
-# Secure Dashboard Embedding via Backend Authorization
+# Dashboard Embedding via Backend Authorization
 
 When embedding Bold BI dashboards using the Embed SDK, the **Authorization URL** plays a crucial role in securely fetching the access token and dashboard data. Here's a step-by-step breakdown of the workflow:
 
 ## Overview
 
-The Authorization Server is a secure backend service that acts as the bridge between your client application (where the dashboard is embedded) and the Bold BI server. This is done through a backend endpoint in your application — referred to as the `AuthorizationServer`, configured using the [authorizationServer.url](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#url) member in the Embed SDK. You can refer this [link](/security-configuration/authorize-server/) to know more.
+The Authorization Server is a secure backend service that acts as the bridge between your client application (where the dashboard is embedded) and the Bold BI Server. This is done through a backend endpoint in your application: referred to as the `AuthorizationServer`, configured using the [authorizationServer.url](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#url) member in the Embed SDK. You can refer this [link](/security-configuration/authorize-server/) to know more.
 
 Think of it as a bridge:
 * The frontend (using BoldBI SDK) sends a request to your backend.
@@ -229,7 +229,7 @@ function getSignatureUrl($embedQuerString) {
 :::ENDTAB
 :::ENDTABS
 
- Here, it will return the dashboard details in the `resultContent` response in the form of a raw JSON string from the Bold BI server if the provided dashboard is valid. Please find the below image of the resultContent.
+ Here, it will return the dashboard details in the `resultContent` response in the form of a raw JSON string from the Bold BI Server if the provided dashboard is valid. Please find the below image of the resultContent.
 
 ![authorizeresponse](/static/assets/javascript/images/authorize-response.png)
 

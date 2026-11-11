@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combo Box Widget – Embedded BI | Bold BI Documentation
+title: Combo Box Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Combo Box visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/combo-box/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Combo Box
+# Combo Box Widget - Embedded Analytics
 
 The combo box enables you to filter items based on single or multiple item selections in the dropdown list. To bind a combo box, a minimum requirement of 1 column is needed.
 
@@ -126,19 +126,19 @@ You can format the combo box for a better illustration of the view that you requ
 
 #### Name
 
-This allows you to set the `title` for this combo box widget.
+This lets you set the `title` for this combo box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/combo-box/title.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this combo box widget.
+This lets you set the `subtitle` for this combo box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/combo-box/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this combo box widget.
+This lets you set a brief explanation about this combo box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/combo-box/Description.png)
 
@@ -148,7 +148,7 @@ This allows you to set a brief explanation about this combo box widget.
 
 #### Enable Multi-select
 
-`Enable Multi-Select` allows you to select one or more items in the dropdown list.
+`Enable Multi-Select` lets you select one or more items in the dropdown list.
 
 #### Single Selection
 
@@ -160,13 +160,13 @@ You can select multiple items in the combo box.
 
 ![Multiple Selection](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combobox-multiselect.png)
 
- ***All*** - This allows you to select or unselect all the items in the combo box.
+ ***All*** - This lets you select or unselect all the items in the combo box.
 
 ![Multiple Selection All](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combobox-multiselect-all.png)
 
 #### Allow Filter
 
-This allows you to enable a `filter` box for easy filtering of data.
+This lets you enable a `filter` box for easy filtering of data.
 
 #### Place Holder
 
@@ -176,7 +176,7 @@ The `Placeholder` property of a combo box provides context about the user’s se
 
 #### Customizing Text for Multiple Combo Boxes Simultaneously
 
-If you have multiple combo boxes in your dashboard and you want to customize the placeholder text for all of them at once, [localize](/localization/) the `defaultplaceHolderText` property in the locale file. This property allows you to set a default placeholder text for all combo boxes in your dashboard.
+If you have multiple combo boxes in your dashboard and you want to customize the placeholder text for all of them at once, [localize](/localization/) the `defaultplaceHolderText` property in the locale file. This property lets you set a default placeholder text for all combo boxes in your dashboard.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/multi-combox-placeholder-before.png)
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/multi-combox-placeholder-locale-customize.png)
@@ -199,11 +199,11 @@ This option allows data to be displayed from right to left.
 
 #### Act as Master Widget
 
-This allows you to define this combo box widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this combo box widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this combo box widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this combo box widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -213,7 +213,7 @@ When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for e
 
 #### Apply Field Filters
 
-This allows you to apply filters from the configured field in the Combo Box Widget to its listener widgets
+This lets you apply filters from the configured field in the Combo Box Widget to its listener widgets
 
 ![Apply Field Filters](/static/assets/visualizing-data/visualization-widgets/images/combo-box/ApplyFieldFilters.png)
 
@@ -225,7 +225,7 @@ This allows you to apply filters from the configured field in the Combo Box Widg
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the Combobox widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the Combobox widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -233,11 +233,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the Co
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget title to either `left, center, or right.`
+This lets you handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -245,7 +245,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -253,31 +253,31 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 #### Background Color
 
-This allows you to set the **background color** of the combo box widget.
+This lets you set the **background color** of the combo box widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 #### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -287,8 +287,8 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the combo box widget. 
+This lets you enable or disable the `widget title` of the combo box widget. 
 
 #### Enable Comments
 
-This allows you to enable or disable comments for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable comments for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

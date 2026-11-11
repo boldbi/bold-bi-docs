@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Prometheus - Cloud BI Connector | Bold BI Documentation
+title: Prometheus Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Prometheus web service through REST API endpoint with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to the Prometheus data source
+# Prometheus Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Prometheus web services using the REST API. 
 
 ## Choose Prometheus data source
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

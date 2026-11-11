@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI Assistant Best Practices and Limitations | Bold BI Docs
+title: AI Assistant Best Practices and Limitations | Bold BI
 description: "Learn about the best practices and limitations to ensure seamless use of the AI Assistant in Bold BI, enhancing your data visualization experience."
 canonical: "/artificial-intelligence-and-machine-learning/best-practices-and-limitations/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Guidelines for Optimal Use of the AI Assistant
+# AI Assistant Best Practices and Limitations
 
 ## Best Practices
  

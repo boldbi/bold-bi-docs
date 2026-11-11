@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Lighthouse – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Lighthouse web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Lighthouse Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Lighthouse web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Lighthouse data source
+# Lighthouse Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Lighthouse web services through the REST API. 
 
 ## Choose Lighthouse data source
-To configure the Lighthouse data source, follow the below steps:
+To configure the Lighthouse data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Lighthouse data source, follow the below steps:
 
 ## Create Lighthouse data source
 
-Once you click the Lighthouse data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Lighthouse data source.
+Once you click the Lighthouse data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Lighthouse data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Lighthouse REST API endpoint in the URL textbox. Refer to the [Lighthouse API documentation](http://help.lighthouseapp.com/kb/api/api-basics) for more details.
 
@@ -43,7 +43,7 @@ Once you click the Lighthouse data source, the NEW DATA SOURCE configuration pan
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Access Token for connecting Lighthouse data source?
+### How do I get Access Token for connecting Lighthouse data source?
 
 1. Login to your **Lighthouse** account.
 2. Go to *Profile -> Account*. Find your API token under *YOUR API TOKENS*.

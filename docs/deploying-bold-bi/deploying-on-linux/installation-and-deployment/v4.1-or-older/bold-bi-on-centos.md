@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation & deployment of Bold BI on CentOS | Bold BI Docs
+title: Installation & deployment of Bold BI on CentOS | Bold BI
 description: Learn more about the prerequisites, installation and deployment of the Embedded Bold BI v4.1 or older Linux package on CentOS Linux server with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on CentOS
+# Installation & deployment of Bold BI on CentOS
 
 ## Deployment prerequisites
 

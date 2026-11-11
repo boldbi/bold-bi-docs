@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Import Groups from OAuth Provider – Embedded BI | Bold BI
+title: Import Groups from an OAuth Provider in Bold BI | Bold BI
 description: Learn how to import single group or bulk groups from OAuth provider and update the authentication settings of OAuth 2.0 in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Import Group for OAuth 2.0
+# Import Groups from an OAuth Provider
 
 This section explains how to import single group or bulk groups from an OAuth provider and update the authentication settings of OAuth 2.0 in Bold BI.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interface Customization – Embedded BI | Bold BI Docs
+title: User Interface Customization - Embedded Analytics | Bold BI
 description: Learn how to customize Bold BI application user interface in terms of adding custom menus, menu items listing, showing preview, etc. with a configuration file.
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to customize the Bold BI application user interface by adding custom menus, listing menu items, showing previews, etc. through a configuration file.
 
-> **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment, but not in Cloud Edition.
 
 You can make your own selections about what you want to see or set preferences for how information is organized or displayed.
 

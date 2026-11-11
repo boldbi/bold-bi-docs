@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading Bold BI Server in Azure VM | Bold BI Documentation
+title: Upgrading Bold BI Server in Azure VM in Bold BI | Bold BI
 description: Learn how to upgrade Bold BI Server in Azure VM to the latest version to get benefited with new feature and fix updates.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade to latest Bold BI Server latest version
+# Upgrading Bold BI Server in Azure VM in Bold BI
 
 To upgrade the Bold BI Server VM to the latest source from older versions, follow these steps:
 

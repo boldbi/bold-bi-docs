@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configure Data Relationship in Embedded BI | Bold BI Docs
+title: Configure Data Relationship in Embedded Analytics | Bold BI
 description: Learn how to create relationships between multiple tables based on one or more conditions when configuring a data source in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 --- 
 
-# Configuring Data Relationship
+# Configure Data Relationship in Embedded Analytics
 
 In data modeling, relationships between tables are essential for organizing and analyzing data effectively. A `Data Relationship` defines how data in one table connects to data in another, enabling seamless integration and accurate reporting. By configuring relationships such as One-to-Many, Many-to-One, and Many-to-Many, users can build more dynamic and scalable dashboards. These relationships eliminate the need for complex joins and improve query performance, making it easier to visualize and interpret data across multiple sources
 

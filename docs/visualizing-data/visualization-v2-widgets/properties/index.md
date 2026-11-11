@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Modern Widget Properties Overview | Bold BI Documentation
-description: Explore the shared property pages for modern Bold BI widgets, including data configuration, tooltip settings, formatting, linking, export options, and container settings.
+title: Modern Widget Properties Overview in Bold BI | Bold BI
+description: Explore the shared property pages for modern Bold BI widgets, including data configuration, tooltips, legends, axis settings, and linking, in one place.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Widget Properties
+# Modern Widget Properties Overview
 
-This section documents properties shared across multiple Bold BI Modern widgets. Instead of repeating these settings on every widget page, each widget page links to the relevant property page here.
+Bold BI modern widget properties are settings shared by several widgets, such as data, tooltips and fonts. Instead of repeating these settings on every widget page, each widget page links to the relevant property page here.
 
 Each property page clearly lists the widgets that do **not** support that property. If a widget is not listed in the unsupported table, the property applies to it.
 

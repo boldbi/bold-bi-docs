@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Configuration – Widget Properties | Bold BI Documentation
-description: Learn how to assign fields, aggregate measures, sort, filter, format, and configure drill-down for Bold BI Modern widgets.
+title: Data Configuration in Modern Widgets in Bold BI | Bold BI
+description: Learn how to assign fields, aggregate measures, sort, filter, format, and configure drill-down for modern Bold BI widgets in dashboards, step by step.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/data-configuration/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Data Configuration
+# Data Configuration in Modern Widgets
 
 Data configuration determines which fields a widget displays and how Bold BI summarizes and groups those fields. The available data sections depend on the selected widget.
 
@@ -28,7 +28,7 @@ The widget page identifies its supported data sections and minimum field require
 
 Select the settings icon beside an assigned field to configure the options supported by that field and widget.
 
-#### Rename
+### Rename
 
 Changes the field name displayed in the widget without modifying the source column.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading Bold BI to latest version in Azure App Service
+title: Upgrading Bold BI to Latest Version in App Service | Bold BI
 description: Learn more about how to upgrade Bold BI Azure App to the latest version using the Azure Resource Manager template.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade to the latest version
+# Upgrading Bold BI to Latest Version in App Service
 
 Follow these steps to upgrade the Bold BI Azure App service to the latest version:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Appending Data Sources – Embedded BI | Bold BI Docs
+title: Appending Data Sources - Embedded Analytics | Bold BI
 description: Learn how to append different data sources of same connector type and connect to dashboard in Bold BI Embedded. 
 canonical: "/working-with-data-sources/append-data-sources/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 keywords: append, append data source, data source
 ---
 
-# How to create append data source
+# Appending Data Sources - Embedded Analytics
 
 The append data source feature allows you to create a new data source by combining existing extracted mode data sources. This is done by appending all rows with column mapping.
 

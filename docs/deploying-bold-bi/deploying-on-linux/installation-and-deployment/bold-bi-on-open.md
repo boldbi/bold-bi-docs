@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation of Bold BI on SUSE-15  | Bold BI Documentation
+title: Installation of Bold BI on SUSE-15 in Bold BI | Bold BI
 description: Learn more about the installation and deployment of the Bold BI Linux package on SUSE-15 Linux server with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on SUSE-15 
+# Installation of Bold BI on SUSE-15 in Bold BI
 
 ## Deployment prerequisites
 

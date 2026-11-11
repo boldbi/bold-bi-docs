@@ -59,7 +59,10 @@ For more information about AI Credits, including credit allocation, subscription
 
 - For Azure AI configuration, users need to provide their Azure AI model name, resource name, deployment name, and API key.
 
->**NOTE:** We recommend using gpt-4o deployment for Azure AI to achieve better responses.
+## Anthropic
+- Users can integrate Anthropic models for AI features by entering a valid Anthropic API key.
+
+- Once configured, users can select one or more models based on their requirements.
 
 The following section explains how to configure AI settings in both UMS and Site Settings.
 

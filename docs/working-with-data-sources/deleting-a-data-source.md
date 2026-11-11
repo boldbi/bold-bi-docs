@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deleting a data source – Embedded BI | Bold BI Documentation
+title: Deleting a data source - Embedded Analytics | Bold BI
 description: Learn how to delete an unwanted or inappropriate data source associated with a dashboard in Bold BI Embedded.
 canonical: "/working-with-data-sources/deleting-a-data-source/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Deleting a Data Source
+# Deleting a data source - Embedded Analytics
 
 To delete an existing data source, follow these steps:
 

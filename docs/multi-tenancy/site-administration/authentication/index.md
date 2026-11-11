@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  Authentication provider – Bold ID | Bold BI Documentation
-description: Learn how to configure Default Authentication, Azure AD, OAuth 2.0, OpenID, and JWT SSO in User Management Server.
+title: Authentication Providers for SSO in Bold BI | Bold BI
+description: Choose and configure Default Authentication, Azure AD, OAuth 2.0, OpenID, or JWT single sign-on (SSO) in User Management Server, step by step.
 platform: bold-bi
 documentation: ug
 ---
 
 # Authentication
 
-This section explains how to configure Default Authentication, Azure AD, OAuth 2.0, OpenID, and JWT SSO in User Management Server.
+Configure Default Authentication, Azure AD, OAuth 2.0, OpenID, or JWT single sign-on (SSO) in User Management Server.
+
+SSO settings apply to self-hosted deployments, and each tenant can configure its own identity provider. Cloud Edition does not support SSO.
 
 Here, you can explore authentication in detail.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bold BI Deployment on Multi Container | Bold BI Documentation
+title: Bold BI Deployment on Multi Container in Bold BI | Bold BI
 description: This section explains about the installation and deployment of the Bold BI on Docker Multi Container.
 platform: bold-bi
 documentation: ug
 ---
 
 
-# Deploy Bold BI on Docker Multiple Container
+# Bold BI Deployment on Multi Container in Bold BI
 
 Bold BI can be deployed using Docker containers to simplify setup, enhance scalability, and streamline maintenance. A multi-container Docker setup enables you to run Bold BI in isolated containers that work together seamlessly.
 

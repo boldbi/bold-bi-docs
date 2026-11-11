@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Webhook Listing - Manage Webhooks in Bold BI | Bold BI Docs
+title: Webhook Listing - Manage Webhooks in Bold BI | Bold BI
 description: Learn more about Webhook listing and learn how to edit, delete, and deactivate all webhooks created by all users on the site on the Bold BI site's admin page.
 platform: bold-bi
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Treemap Visual – embedded BI Widget | Bold BI Documentation
+title: Treemap Visual Widget in Embedded Analytics | Bold BI
 description: Learn how to create a Treemap visual in Bold BI embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/tree-map/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# Configuring and Formatting Tree Map
+# Treemap Visual - embedded Analytics Widget
 
-The `Tree map` allows you to visualize large data using its proportional shelves and color scales.
+The `Tree map` lets you visualize large data using its proportional shelves and color scales.
 
 *Figure: Default Tree map visualization showing country wise stocks count.* 
 
@@ -201,19 +201,19 @@ You can format the tree map widget to better illustrate the desired view using t
 
 #### Name
 
-This allows you to set a `title` for the tree map widget.
+This lets you set a `title` for the tree map widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/title.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for the tree map widget.
+This lets you set a `subtitle` for the tree map widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Subtitle.png)
 
 #### Description
 
-This allows you to provide a brief explanation about the grid widget.
+This lets you provide a brief explanation about the grid widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Description.png)
 
@@ -223,13 +223,13 @@ This allows you to provide a brief explanation about the grid widget.
 
 #### Show legend
 
-This allows you to toggle the visibility of the legend.
+This lets you toggle the visibility of the legend.
 
 ![Legend enabled Treemap](/static/assets/visualizing-data/visualization-widgets/images/tree-map/showlegend.png)
 
 #### Label color
 
-This allows you to select the color for the tree map label. The default value is `#ffffff`.
+This lets you select the color for the tree map label. The default value is `#ffffff`.
 
 ![After changing the label color](/static/assets/visualizing-data/visualization-widgets/images/tree-map/label-color.png)
 
@@ -237,13 +237,13 @@ This allows you to select the color for the tree map label. The default value is
 
 #### Show Value Label
 
-This allows you to toggle the visibility of `value labels`.
+This lets you toggle the visibility of `value labels`.
 
 ![Value label](/static/assets/visualizing-data/visualization-widgets/images/tree-map/value-label.png)
 
 #### Enable Text Wrap
 
-This option allows you to wrap the `Lable text`.
+This option lets you wrap the `Lable text`.
 
 ![label text wrap](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Treemap-text-wrap.png)
 
@@ -261,25 +261,25 @@ Once you've drilled down, you can drill up to the previous view using the breadc
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the tree map.
+This option lets you toggle the visibility of the tooltip in the tree map.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the map's tooltip.
+This option lets you customize which columns are visible in the map's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/tree-map/rtl-tooltip.png)
 
@@ -295,7 +295,7 @@ To configure linking to a URL or dashboard with the widget using its settings. F
 
 #### Monochromatic
 
-This allows you to configure a single color palette whose saturation will vary based on the value density. The default value is `#f6727f`.
+This lets you configure a single color palette whose saturation will vary based on the value density. The default value is `#f6727f`.
 
 ![After changing the monochromatic color](/static/assets/visualizing-data/visualization-widgets/images/tree-map/applied-color.png)
 
@@ -311,11 +311,11 @@ Select Advanced Setting to configure conditions and apply color to the cells bas
 
 #### Act as master widget
 
-This allows you to define this tree map widget as a `master widget` so that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this tree map widget as a `master widget` so that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore filter actions
 
-This allows you to define this tree map widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this tree map widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable hierarchical filtering
 
@@ -325,7 +325,7 @@ When the `Hierarchical Filter` option is enabled, the top N will be applied for 
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the Treemap widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the Treemap widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply conditional formatting in tree map
 
@@ -379,13 +379,13 @@ If the value of a region in the tree map is outside the specified range, then th
 
 ### Rule based condition mode
 
-This allows you to customize the fill color of the tree map based on one or more numerical/text conditions.
+This lets you customize the fill color of the tree map based on one or more numerical/text conditions.
 
 ![Rule mode](/static/assets/visualizing-data/visualization-widgets/images/tree-map/rulemode.png)
 
 #### Value type
 
-The value type drop-down allows you to choose whether to apply the direct value (such as three goals or order ID 10248) or percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether to apply the direct value (such as three goals or order ID 10248) or percentage (values above 30% or 50%).
 
 ##### Condition name
 
@@ -450,11 +450,11 @@ To undo all the changes, click `reset.`
 
 ### Title Alignment
 
-This allows you to adjust the alignment of the widget title to either **left, center, or right**.
+This lets you adjust the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -462,7 +462,7 @@ When `Auto Font Size` is enabled, the font size of the title will be adjusted au
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -470,7 +470,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -478,35 +478,35 @@ When Auto Padding is enabled, the padding of the widget container will be adjust
 
 **Padding**
 
-This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This allows you to set a **background image** for the tree map widget.
+This lets you set a **background image** for the tree map widget.
 
 ### Background Color
 
-This allows you to set the **background color** for the tree map widget.
+This lets you set the **background color** for the tree map widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This allows you to toggle the visibility of  the `shadow` surrounding the widget.
+This lets you toggle the visibility of  the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -516,41 +516,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the tree map. 
+This lets you enable or disable the `widget title` of the tree map. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the tree map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the tree map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the tree map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the tree map widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the tree map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the tree map widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the tree map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the tree map widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the tree map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the tree map widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the following link: [Dashboard Widget Comments](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the following link: [Dashboard Widget Comments](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

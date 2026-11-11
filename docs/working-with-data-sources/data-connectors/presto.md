@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Presto – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Presto SQL query engine with Bold BI Cloud and execute queries against data sources such as, MySQL, etc.
+title: Presto Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect the Presto SQL query engine with Bold BI Cloud, run queries against sources such as MySQL, and create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Presto data source
+# Presto Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Presto database through SQL Live Query (REST API).
 
 ## Choose Presto data source
-To configure the Presto data source, follow the below steps:
+To configure the Presto data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -76,12 +76,12 @@ The schema represents the collection list that is retrieved from the Presto serv
     ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
 2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, the data is extracted using the Data Hub. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+3. When switching to Bold Data Hub, the data is extracted using the Bold Data Hub. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Presto/maxRowOption.png#max-width=60%)
  
 ### Refresh Settings

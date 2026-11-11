@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI Copilot in Dashboard Designer - Embedded BI | Bold BI Docs
+title: AI Copilot in Dashboard Designer in Bold BI | Bold BI
 description: Learn how to effectively use the AI Copilot in Dashboard Designer, including various use cases that enhance your data visualization experience.
 canonical: "/artificial-intelligence-and-machine-learning/generative-ai/ai-copilot/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Using the AI Copilot in Dashboard Designer
+# AI Copilot in Dashboard Designer in Bold BI
 
 The AI Copilot is a conversational chat tool powered by Large Language Models, designed to help you create charts based on your input. It simplifies data investigation and dashboard creation, making it easy to visualize data and uncover valuable insights effortlessly.
 

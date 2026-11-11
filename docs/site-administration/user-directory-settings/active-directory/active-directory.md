@@ -1,5 +1,5 @@
 ---
-title: Active Directory Settings – Embedded BI | Bold BI Learning
+title: Active Directory Settings - Embedded Analytics | Bold BI
 description: Learn the required Active Directory details and how to configure Active Directory with Bold BI Server.
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ This section explains the [Active Directory](https://msdn.microsoft.com/en-us/li
 
 ![Active Directory Settings](/static/assets/site-administration/images/active-directory-settings.png#width=60%)
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 You will need the following Active Directory details to configure Bold BI with your Active Directory:
 

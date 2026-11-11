@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Setup Custom & Auto Hierarchy in Dashboard Widget | Bold BI Docs
+title: Setup Custom & Auto Hierarchy in Dashboard Widget | Bold BI
 description: Learn how to configure Custom & Auto Hierarchy that helps add multiple column fields into a single field for the user's visual needs using the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Custom and Auto Hierarchy in Dashboard Widget
+# Setup Custom & Auto Hierarchy in Dashboard Widget
 
 Hierarchy allows you to add multiple fields into a single group, making it easier to view a group of data fields that are bound in widgets with a single drag. Hierarchy can be created in the following ways:
 

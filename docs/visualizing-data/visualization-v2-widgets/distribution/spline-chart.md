@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Chart (Modern) Widget | Bold BI Documentation
+title: Spline Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, trend settings, forecast support, formatting, drill-down, and interactions for the modern Spline Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/spline-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Spline Chart
 documentation: ug
 ---
 
-# Spline Chart
+# Spline Chart for Modern Dashboards
 
-A Spline Chart connects data points with smooth curves. It is useful for presenting gradual trends across time or another ordered category.
+The Spline Chart widget in Bold BI connects data points with smooth curves. It is useful for presenting gradual trends across time or another ordered category.
 
 ![Spline Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/spline-chart/spline-chart.png)
 

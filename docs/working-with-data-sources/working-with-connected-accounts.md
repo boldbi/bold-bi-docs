@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Managing OAuth Connected App Accounts | Bold BI Docs
+title: Managing OAuth Connected App Accounts in Bold BI | Bold BI
 description: Learn how to manage the external OAuth accounts of corresponding data connectors that you have granted access for in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Working with Connected Accounts
+# Managing OAuth Connected App Accounts
 
 This section will provide the details for managing the external OAuth accounts that you have granted access to in Bold BI.
 

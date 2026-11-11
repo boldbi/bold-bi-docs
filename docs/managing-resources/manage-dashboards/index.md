@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Managing Dashboards – Embedded BI | Bold BI Documentation
+title: Managing Dashboards and Their Permissions | Bold BI
 description: Learn how to open, add, mark favorite, manage views, multi-tabbed dashboards, share, move, copy and clone dashboards in Bold BI deployed in your server.
 canonical: "/managing-resources/manage-dashboards/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Manage Dashboards
+# Managing Dashboards and Their Permissions
 
 This section explains how to create, open, delete, and share a dashboard in the Bold BI Server application. It also explains how to manage dashboard views, multi-tabbed dashboards, and how to move and copy dashboards.
 

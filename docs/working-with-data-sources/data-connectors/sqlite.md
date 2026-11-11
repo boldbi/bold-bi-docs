@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SQLite – Embedded BI Data Connector | Bold BI Documentation
-description: Learn how to connect SQLite database with Bold BI deployed in your server and create data source for dashboard preparation.
+title: SQLite Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect a SQLite database with Bold BI deployed on your server using SQL Live Query, then create a data source for dashboard preparation.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to SQLite data source
+# SQLite Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SQLite database using the SQL Live Query (C# API).
 
 ## Choose a SQLite data source

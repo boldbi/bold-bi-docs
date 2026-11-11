@@ -1,12 +1,12 @@
 ---
 layout: post
-title: YouTube – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect YouTube data using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: YouTube Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect YouTube data through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to YouTube data source
+# YouTube Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the YouTube web services through the REST API. 
 
 ## Choose YouTube data source
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the YouTube web service:
 
 ## Connect to YouTube
 ### Create YouTube data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create YouTube data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create YouTube data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid YouTube REST API endpoint in the URL textbox. Refer to the [YouTube API documentation](https://developers.google.com/youtube/v3/docs/) for more details.
 

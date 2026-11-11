@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Active Directory User Groups Synchronization | Bold BI Docs 
+title: Active Directory User Groups Synchronization | Bold BI
 description: Learn how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
 platform: bold-bi
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
 
-> **NOTE:**  Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) before scheduling the synchronization of Active Directory users and groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:**  Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) before scheduling the synchronization of Active Directory users and groups. This feature is available in On-Premises Deployment but not in Cloud Edition.
  
 
 ![Active Directory Synchronization Schedule](/static/assets/site-administration/images/active-directory-schedule-synchronization.png)

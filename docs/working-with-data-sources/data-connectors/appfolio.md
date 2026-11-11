@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AppFolio – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect AppFolio web service through basic http authentication with Bold BI Cloud and create data source.
+title: AppFolio Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect AppFolio through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to AppFolio data source
+# AppFolio Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to AppFolio web services through the REST API.
 
 ## Choose AppFolio data source
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/AppFolio/DataSourcesView.png)
 
-#### How do I get Client ID and Client Secret for connecting AppFolio data source?
+### How do I get Client ID and Client Secret for connecting AppFolio data source?
 
 1. Login to your [AppFolio](https://www.appfolio.com/) account. Click your *Account Icon -> General Settings*.
 2. Within the *General Settings* page, navigate to the *Manage API settings* tab.

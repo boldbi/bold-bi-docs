@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text (Rich Text Editor) Visual – Embedded BI | Bold BI Docs
+title: Text (Rich Text Editor) Visual in Bold BI | Bold BI
 description: Learn how to utilize a Text (Rich Text Editor) visual in Bold BI Embedded dashboard, configure, formatting text and other settings.
 canonical: "/visualizing-data/visualization-widgets/text/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Text (Rich Text Editor)
 documentation: ug
 ---
 
-# Text (Rich Text Editor)
+# Text (Rich Text Editor) Visual in Bold BI
 
-The text editor allows you to edit and visualize the content of formatted texts, tables, hyperlinks, and source code.
+The text editor lets you edit and visualize the content of formatted texts, tables, hyperlinks, and source code.
 
 ![text_overview](/static/assets/visualizing-data/visualization-widgets/images/text/text-overview.png)
 
@@ -28,7 +28,7 @@ Drag and drop the `Text` control icon from the toolbox to the design panel. You 
 
 ### Container Padding
 
-This allows you to customize the padding of the widget container. The default value of the padding is 16.
+This lets you customize the padding of the widget container. The default value of the padding is 16.
 
 ![Padding](/static/assets/visualizing-data/visualization-widgets/images/text/propertypanel.png)
 
@@ -41,19 +41,19 @@ If the padding is set as 0, the RTE widget will render as shown below.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Show Background Image
 
-This option allows you to enable an image for the background.
+This option lets you enable an image for the background.
 
 ![Background Image](/static/assets/visualizing-data/visualization-widgets/images/text/background-image.png)
 
 ### Image Type
 
-This option allows you to select the type of image.
+This option lets you select the type of image.
 
 ### Local
 
@@ -104,7 +104,7 @@ You can customize the color of the background by enabling the `background color`
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ![Background Transparency](/static/assets/visualizing-data/visualization-widgets/images/text/background-transparency.png)
 
@@ -147,13 +147,13 @@ You can format the text by applying font style, family, and color. The available
 ![text_fontFormatting](/static/assets/visualizing-data/visualization-widgets/images/text/text-fontformatting.png)
 
 
-***Bold*** - It allows you to Bold the text.   
+***Bold*** - It lets you Bold the text.   
 
-***Italic*** -  It allows you to Italicize the text.    
+***Italic*** -  It lets you Italicize the text.    
 
-***Underline*** - It allows you to underline the text.  
+***Underline*** - It lets you underline the text.  
 
-***Strikethrough*** - It allows you to strikeout the text.   
+***Strikethrough*** - It lets you strikeout the text.   
 
 ***Font Family*** - `Roboto` is the default font family, it allows to change the font family of selected text. Available font families are `Roboto, Segoe UI, Arial, Georgia, Impact, Tahoma, Times New Roman, Verdana`.   
 
@@ -161,11 +161,11 @@ You can format the text by applying font style, family, and color. The available
 
 ***Font Color*** - Color of the font can be change using this item.  
 
-***Highlight Color*** - It allows you to highlight the selected text.    
+***Highlight Color*** - It lets you highlight the selected text.    
 
-***SuperScript*** - It allows you to add superscript text.  
+***SuperScript*** - It lets you add superscript text.  
 
-***SubScript*** - It allows you to add subscript text.
+***SubScript*** - It lets you add subscript text.
 
 ### Paragraph Formatting
 
@@ -173,25 +173,25 @@ You can format the paragraph in the text widget. The available paragraph formats
 
 ![text_paraFormatting](/static/assets/visualizing-data/visualization-widgets/images/text/text-paraformatting.png)
 
-***Formats*** - This allows you to apply the formatting for the paragraph. Available formatting options are paragraph, code, quotation, and headings. By default, the `paragraph` type is formatted.
+***Formats*** - This lets you apply the formatting for the paragraph. Available formatting options are paragraph, code, quotation, and headings. By default, the `paragraph` type is formatted.
 
 ***Alignments*** - Used to align the paragraph as left, right, center, and justify.
 
-***Numbered and Bulleted List*** - It allows you to add numbers and bullets before the selected lines of the paragraph.
+***Numbered and Bulleted List*** - It lets you add numbers and bullets before the selected lines of the paragraph.
 
 ### Vertical Alignments
 
-This allows you to align the paragraph vertically.
+This lets you align the paragraph vertically.
 
 There are three options in the menu for vertical-align as follows.
 
 ![text_verticalAlign](/static/assets/visualizing-data/visualization-widgets/images/text/text-verticalalign.png)
 
-***Align Top***    - Allows you to align the paragraph by vertically top of the container.
+***Align Top***    - Lets you align the paragraph by vertically top of the container.
 
-***Align middle*** - Allows you to align the paragraph by vertically centered.
+***Align middle*** - Lets you align the paragraph by vertically centered.
 
-***Align Bottom*** - Allows you to align the paragraph by vertically bottom of the container.
+***Align Bottom*** - Lets you align the paragraph by vertically bottom of the container.
 
 ### Insert Table
 
@@ -273,7 +273,7 @@ Clicking the `preview` icon will switch to the editor view.
 
 #### IFrame
 
-The code view allows you to pass `<iframe>` tag to embed an external web page as shown below.
+The code view lets you pass `<iframe>` tag to embed an external web page as shown below.
 
 ![text-iframeCode](/static/assets/visualizing-data/visualization-widgets/images/text/text-framecode.png)
 

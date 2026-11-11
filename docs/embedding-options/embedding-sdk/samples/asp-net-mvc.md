@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET MVC | Bold BI Docs
+title: Embed Bold BI with ASP.NET MVC using the SDK | Bold BI
 description: Learn how to embed an analytics dashboard with an ASP.NET MVC application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embed SDK
+# Embed Bold BI with ASP.NET MVC using the SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) the sample application, which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET MVC `on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) the sample application, which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI Server. This is followed by steps to create a new embedding application in `ASP.NET MVC `on your own.
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
@@ -227,7 +227,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
       </html>
     ```
 
- 2. When the page loads, the Init() function triggers an AJAX request to the getDashboardsUrl endpoint, where the GetDashboards() method in `HomeController.cs` retrieves an authentication token using GetToken() and fetches the list of available dashboards from the Bold BI server.
+ 2. When the page loads, the Init() function triggers an AJAX request to the getDashboardsUrl endpoint, where the GetDashboards() method in `HomeController.cs` retrieves an authentication token using GetToken() and fetches the list of available dashboards from the Bold BI Server.
    
     ```js
     function Init() {
@@ -457,7 +457,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
      ```js
      <head>
      <link rel="stylesheet" href="~/Content/Site.css" />
-      <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+      <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
       <script type="text/javascript" src="~/Scripts/Embed/Index.js"></script>
       <script type="text/javascript">
          var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";

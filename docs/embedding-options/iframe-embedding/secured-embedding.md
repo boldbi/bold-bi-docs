@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Embed Dashboard with Advanced Security | Bold BI Learning
+title: Embed Dashboard with Advanced Security in Bold BI | Bold BI
 description: Learn how to embed dashboard with advanced security like restricting embedded dashboard access to specific domains or IP addresses.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed your Dashboard with advanced security
+# Embed Dashboard with Advanced Security
 
 1. Please specify the domain in which you want to embed the dashboard and select the `When the dashboard is embedded` option in the `Apply these settings` section.
 

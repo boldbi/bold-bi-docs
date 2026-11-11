@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Doughnut Chart – Embedded BI Visual | Bold BI Documentation
+title: Doughnut Chart - Embedded Analytics Visual | Bold BI
 description: Learn how to create a Doughnut Chart visual in Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/doughnut-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Doughnut Chart
 documentation: ug
 ---
 
-# Doughnut Chart
+# Doughnut Chart - Embedded Analytics Visual
 
-The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut slices. It works best to display data with a small number of categories.
+The Doughnut chart lets you showcase the proportionality of each item to the total in the form of doughnut slices. It works best to display data with a small number of categories.
 
 ![Doughnut chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
@@ -162,7 +162,7 @@ The primary use case of hidden columns is linking. On configuring hidden columns
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the following filter icon.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/filtericon.png)
 
@@ -170,7 +170,7 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
+Now, we can see in the following image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/hidden-column-filter.png)
 
@@ -186,11 +186,11 @@ You can view the data in the hidden columns in the underlying data view. This is
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/info-icon.png)
 
-The below chart displays the goals by each team without hidden columns.
+The following chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/before.png)
 
-If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate. This affects the chart visualization as we can see in the below image.
+If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate. This affects the chart visualization as we can see in the following image.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/after.png)
 
@@ -234,13 +234,13 @@ You can see the list of properties available for the widget with default value.
 
 #### Name
 
-Allows you to set a `title` for the Doughnut chart widget.
+Lets you set a `title` for the Doughnut chart widget.
 
 ![Title](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/Name.png)
 
 #### Subtitle
 
-Allows you to set a `subtitle` for the Doughnut chart widget.
+Lets you set a `subtitle` for the Doughnut chart widget.
 
 ![Title](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/Subtitle.png)
 
@@ -276,7 +276,7 @@ If you disable the `Show Value Labels` properties, the dependent properties, whi
 
 #### Value Label Color
 
-This allows you to customize the value label's color.
+This lets you customize the value label's color.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
 
@@ -316,17 +316,17 @@ You can define the display format as a `category, value, percentage, category an
 
 #### Value labels suffix
 
-This allows you to show or hide the suffix value of value labels.
+This lets you show or hide the suffix value of value labels.
 
 ### Suffix Value
 
-This allows you to customize the suffix value of value labels.
+This lets you customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
 
 ### Chart Size
 
-This allows you to customize the size of the doughnut chart. Values can be between 0.1 and 1.
+This lets you customize the size of the doughnut chart. Values can be between 0.1 and 1.
 
 ### Series Settings
 
@@ -354,25 +354,25 @@ By enabling the `Column Count,` you can set the column count.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the pie chart.
+This option lets you toggle the visibility of the tooltip in the pie chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/rtl-tooltip.png)
 
@@ -382,7 +382,7 @@ This option allows you to display fields and their data from right to left.
 
 #### Show legend
 
-A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position by selecting through the combo box.
+A legend is a text used to describe the plotted data. It lets you toggle the visibility of the legend in the chart and change the legend text position by selecting through the combo box.
 
 ![Show legend](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
 
@@ -390,18 +390,18 @@ Enabling the **Custom Legend Text** option will allow you to define custom text 
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-interactivity-disable.png)
-Enabling the interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-interactivity-enable.png)
 
 #### Label Color
 
-This allows you to change the chart legend title and label colors.
+This lets you change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
 
@@ -425,7 +425,7 @@ You can change the position for the legend to `Top, Left, Right,` and `Bottom.`
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to `dropdown`. When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to `dropdown`. When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
  
@@ -439,33 +439,33 @@ Legend Alignment enables you to control how the legend is positioned within its 
 
 #### Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option lets you change the shape of the legend in a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option lets you change the shape of the legend in `Series.`
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
 
 #### Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This lets you add the legend title for the chart. It will reflect with the `Show Legend.`
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize legend text based on the 'Text Width' property value.
+This option lets you customize legend text based on the 'Text Width' property value.
 
 **None**
 
-This option allows you to render legend items without any wrap and trim.
+This option lets you render legend items without any wrap and trim.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-none-option.png)
 
@@ -473,7 +473,7 @@ This option allows you to render legend items without any wrap and trim.
 
 **Trim**
 
-This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+This option lets you trim the legend items if its legend exceeds the 'Text Width' value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-trim-option.png)
 
@@ -481,7 +481,7 @@ This option allows you to trim the legend items if its legend exceeds the 'Text 
 
 **Wrap**
 
-This option allows you to trim the legend items if its legend exceeds the `Text Width` value.
+This option lets you trim the legend items if its legend exceeds the `Text Width` value.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-wrap-option.png)
 
@@ -489,7 +489,7 @@ This option allows you to trim the legend items if its legend exceeds the `Text 
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-width-option.png)
 
@@ -517,7 +517,7 @@ When the Hierarchical Filter option is enabled, the` Top N` will be applied for 
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the doughnut chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the doughnut chart widget when the `Act as Master Widget` option is enabled.
 
 ### Link
 
@@ -533,7 +533,7 @@ By toggling the `series palette`, you can customize the colors of the proportion
 
 ### Font settings
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
 
@@ -549,14 +549,14 @@ Using the Color Mapping type, you can apply colors to the series either based on
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It lets you apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
 > **IMPORTANT:**  Only top 100 records will be listed in the dialog. 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if the data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It lets you apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if the data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -584,11 +584,11 @@ By toggling off the `Use Default Palette`, you can customize the colors of the p
 
 ### Title Alignment
 
-This allows you to handle the alignment of the widget title to either **left, center, or right**.
+This lets you handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -596,7 +596,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can be between 10 and 32.
 
 ### Subtitle Auto Font Size
 
@@ -604,7 +604,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -612,35 +612,35 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This allows you to set the **background image** for the spline area chart widget.
+This lets you set the **background image** for the spline area chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** of the spline area chart widget.
+This lets you set the **background color** of the spline area chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -650,36 +650,36 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the spline area chart. 
+This lets you enable or disable the `widget title` of the spline area chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the spline area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the spline area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the spline area chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the spline area chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the spline area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the spline area chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the spline area chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the spline area chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 #### Allow Pin 
 
-This allows you to pin the widget.
+This lets you pin the widget.

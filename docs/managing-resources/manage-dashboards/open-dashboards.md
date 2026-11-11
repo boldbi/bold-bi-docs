@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Opening a Dashboard – Manage Dashboards | Bold BI Embedded
+title: Opening a Dashboard in Your Site in Bold BI | Bold BI
 description: Learn how to open a dashboard in the designer from the dashboard listing that is accessible to you in Bold BI Embedded.
 canonical: "/managing-resources/manage-dashboards/open-dashboards/" 
 platform: bold-bi
 documentation: ug
 ---
 
-# How to open Dashboards
+# Opening a Dashboard in Your Site
 
 This section explains how to open Dashboards in Bold BI and the Dashboard Designer from Bold BI.
 

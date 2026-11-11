@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Chargify – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Chargify web service using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Chargify Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Chargify web service through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Chargify data source
+# Chargify Data Connector Guide in Bold BI
 Bold BI dashboard designer supports connecting Chargify web services through the REST API.
 
 ## Choose Chargify data source
-To configure the Chargify data source, follow the below steps:
+To configure the Chargify data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Chargify data source, follow the below steps:
 
 
 ## Create Chargify data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Chargify data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Chargify data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Chargify REST API endpoint in the URL textbox. Refer to the [Chargify API documentation](https://reference.chargify.com/v1/basics/introduction) for more details.
 

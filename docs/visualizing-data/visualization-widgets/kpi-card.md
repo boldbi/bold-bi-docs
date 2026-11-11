@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KPI Card Widget – Embedded BI | Bold BI Documentation
+title: KPI Card Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a KPI Card visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/kpi-card/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# KPI Card
+# KPI Card Widget - Embedded Analytics
 
-The `KPI Card` widget allows you to measure trends through key performance indicators (KPIs) such as value and goal. Key metrics like revenue vs investment, target vs current value, and stocks vs demand are typically displayed in the KPI Card widget.
+The `KPI Card` widget lets you measure trends through key performance indicators (KPIs) such as value and goal. Key metrics like revenue vs investment, target vs current value, and stocks vs demand are typically displayed in the KPI Card widget.
 
 The visualization of the KPI card widget is customizable, and you can format the values displayed in the widget using the provided options.
 
@@ -121,7 +121,7 @@ You can use the `Sparkline` section to showcase the variation of measurement in 
 
 ### Image
 
-The `image` section allows you to configure the image data for each KPI card or records. The image data may be the direct URL for the records or contain a part of the URL.
+The `image` section lets you configure the image data for each KPI card or records. The image data may be the direct URL for the records or contain a part of the URL.
 
 #### Direct URL
 
@@ -205,17 +205,17 @@ To format the KPI card, follow the given steps:
 
 #### Name 
 
-This option allows you to change the `title` for the KPI card.
+This option lets you change the `title` for the KPI card.
 
 #### Subtitle
 
-This option allows you to provide the `subtitle` for the KPI card. 
+This option lets you provide the `subtitle` for the KPI card. 
 
 > **NOTE:** Subtitle will be shown only when the series section is configured. 
 
 ##### Description
 
-This option allows you to provide the `description` about the KPI Card.
+This option lets you provide the `description` about the KPI Card.
 
 **Header properties**
 
@@ -229,25 +229,25 @@ This option allows you to provide the `description` about the KPI Card.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/Tooltip-Settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in a card.
+This option lets you toggle the visibility of the tooltip in a card.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize the columns that are visible in the card tooltip.
+This option lets you customize the columns that are visible in the card tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/rtl-tooltip.png)
 
@@ -267,7 +267,7 @@ You can customize the color values for the `high, medium,` and `low` colors usin
 
 #### Separator color
 
-Allows you to change the `separator` color. 
+Lets you change the `separator` color. 
 
 ## How to apply conditional formatting in KPI card
 
@@ -310,7 +310,7 @@ You can select the summary type for the selected measure field.
 
 #### Value type
 
-The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248) or percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248) or percentage (values above 30% or 50%).
 
 ![Value type](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/value-type.png)
 
@@ -338,7 +338,7 @@ Enter the condition value.
 
 #### Font style
 
-Allows you to choose the title font style (Bold, Italic, Underline, and Superscript).
+Lets you choose the title font style (Bold, Italic, Underline, and Superscript).
 
 #### Case-sensitivity
 
@@ -358,7 +358,7 @@ Figure: *The KPI card series view with the applied conditional formatting*.
 
 #### Show title
 
-Allows you to choose whether the title needs to be shown or not in the KPI Card. 
+Lets you choose whether the title needs to be shown or not in the KPI Card. 
 
 ### Show title for series card
 
@@ -368,7 +368,7 @@ The following screenshot shows the `title` for single card.
 
 ### Hide title
 
-It allows you to `hide the title` by unchecking the show title property.
+It lets you `hide the title` by unchecking the show title property.
 
 ![Hide Title](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/hide-title.png)
 
@@ -378,7 +378,7 @@ You can enter the value for the KPI card title.
 
 #### Color
 
-Allows you to choose the KPI Card title value color.
+Lets you choose the KPI Card title value color.
 
 ### Auto Font Size
 
@@ -448,11 +448,11 @@ The animation duration property specifies how long the animation cycle should la
 
 #### Show value
 
-This option allows you to toggle the visibility of the `KPI value` in the KPI card.
+This option lets you toggle the visibility of the `KPI value` in the KPI card.
 
 #### Type
 
-The type drop-down menu allows you to select the value that should be displayed as the KPI value. The available options are:
+The type drop-down menu lets you select the value that should be displayed as the KPI value. The available options are:
 
 1.	Absolute difference. 
 2.	Percent of difference. 
@@ -467,7 +467,7 @@ Figure: *KPI card with different KPI types.*
 
 #### Color option
 
-This feature allows you to customize the color of the KPI value.
+This feature lets you customize the color of the KPI value.
 
 ### Auto Font Size
 
@@ -501,7 +501,7 @@ Provides the option to change the KPI value font size by unchecking `Auto Font S
 
 #### Show icon
 
-This feature allows you to toggle the visibility of `icons` for the KPI values.
+This feature lets you toggle the visibility of `icons` for the KPI values.
 
 #### Color option
 
@@ -555,7 +555,7 @@ Provides the option to change the font size of the indicators by unchecking `Aut
 
 #### Type
 
-The type drop-down allows you to choose the value, which needs to be shown as the left side value. The available options are:
+The type drop-down lets you choose the value, which needs to be shown as the left side value. The available options are:
 
 1.	Absolute difference. 
 2.	Percent of difference. 
@@ -608,7 +608,7 @@ The option to change the left value font size by unchecking `Auto Font Size`.
 
 #### Show caption
 
-Allows you to choose whether to show the caption for the left value or not. 
+Lets you choose whether to show the caption for the left value or not. 
 
 #### Value
 
@@ -658,7 +658,7 @@ The option to change the left value caption font size by unchecking `Auto Font S
 
 #### Type
 
-The type drop-down allows you to choose the value that needs to be shown as the `right-side` value. The available options are:
+The type drop-down lets you choose the value that needs to be shown as the `right-side` value. The available options are:
 
 1.	Absolute difference. 
 2.	Percent of difference. 
@@ -711,7 +711,7 @@ The option to change the right value font size by unchecking `Auto Font Size`.
 
 #### Show caption
 
-Allows you to choose whether to show the caption for the right value or not. 
+Lets you choose whether to show the caption for the right value or not. 
 
 #### Value
 
@@ -765,7 +765,7 @@ Provides the option to change the visibility of the image within the KPI Card wi
 
 #### Image mode
 
-Allows you to choose the image mode. 
+Lets you choose the image mode. 
 
 **Default** - Displays the image in its original size.
 
@@ -800,7 +800,7 @@ Provides the option to change the visibility of the background image within the 
 
 #### Image mode
 
-Allows you to choose the image mode from the options `Default, Fill, Uniform to fill, and Uniform`.
+Lets you choose the image mode from the options `Default, Fill, Uniform to fill, and Uniform`.
 
 #### Image
 
@@ -814,7 +814,7 @@ Provides the following three different options to select the image source.
 
 #### Color
 
-Allows you to choose the background color for the KPI Card widget. 
+Lets you choose the background color for the KPI Card widget. 
 
 > **NOTE:**  If both the background image and background color are enabled in the widget, then based on the transparency of the background image and the selected image mode, either the background image alone will appear in the widget or both the background color and image will appear in the KPI Card.
 
@@ -836,7 +836,7 @@ Provides the option to choose whether to show the sparkline in the KPI Card or n
 
 #### Color option 
 
-Allows you to customize the sparkline color in the KPI Card. 
+Lets you customize the sparkline color in the KPI Card. 
 
 #### Opacity
 
@@ -887,7 +887,7 @@ The following steps illustrates how to add the fixed value:
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -897,7 +897,7 @@ On enabling Auto Font size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title, if the `Title Auto Font Size` is disabled. The value ranges between 10 and 44.
+This lets you apply the specified font size to the widget title, if the `Title Auto Font Size` is disabled. The value ranges between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -905,15 +905,15 @@ On enabling Auto Font size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title, if the `Subtitle Auto Font Size` is disabled. The value ranges between 10 and 32.
+This lets you apply the specified font size to the widget title, if the `Subtitle Auto Font Size` is disabled. The value ranges between 10 and 32.
 
 ### Show Border
 
-This allows you to toggle the visibility of the border that surrounds the widget.
+This lets you toggle the visibility of the border that surrounds the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified radius to the widget corners, if the `Show Border` is enabled. The value ranges between 0 and 100.
+This lets you apply the specified radius to the widget corners, if the `Show Border` is enabled. The value ranges between 0 and 100.
 
 ### Container actions
 
@@ -921,7 +921,7 @@ This allows you to apply the specified radius to the widget corners, if the `Sho
 
 #### Show header
 
-This allows you to enable or disable the widget title of the KPI Card widget. 
+This lets you enable or disable the widget title of the KPI Card widget. 
 
 #### Allow maximize view
 
@@ -929,31 +929,31 @@ The visibility of the` maximize icon` in the widget header will be defined based
 
 #### Allow CSV export
 
-This allows you to enable or disable the `CSV export` option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the KPI Card widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel export
 
-This allows you to enable or disable the `Excel export` option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the KPI Card widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image export
 
-This allows you to enable or disable the `image export` option for the KPI Card widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `image export` option for the KPI Card widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF export
 
-This allows you to enable or disable the `PDF export` option for the KPI Card widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the KPI Card widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow view underlying data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 ## Related links
 

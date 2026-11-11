@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Filter – Query Mode – Embedded BI | Bold BI Learning
+title: User Filter - Query Mode - Embedded Analytics | Bold BI
 description: Learn how to create user filter in Bold BI Embedded through mapping another data source and run query against it to generate the fields and map.
 canonical: "/working-with-data-sources/user-filter/user-filter-advanced-query-mode/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# User Filter - Query Mode
+# User Filter - Query Mode - Embedded Analytics
 
 ## Query Mode
 The query mode allows us to have more control over the data used for mapping. We can create our own query that will be executed against the selected data source from the Mapping Data source list.

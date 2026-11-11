@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Area Chart (Modern) | Bold BI Documentation
+title: Spline Area Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Spline Area Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/spline-area-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Spline Area Chart
 documentation: ug
 ---
 
-# Spline Area Chart
+# Spline Area Chart for Modern Dashboards
 
-A Spline Area Chart draws a smooth curve through the data points and fills the area to the value-axis baseline. It emphasizes magnitude while presenting gradual changes.
+The Spline Area Chart widget in Bold BI draws a smooth curve through the data points and fills the area to the value-axis baseline. It emphasizes magnitude while presenting gradual changes.
 
 ![Spline Area Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/spline-area-chart/spline-area-chart.png)
 

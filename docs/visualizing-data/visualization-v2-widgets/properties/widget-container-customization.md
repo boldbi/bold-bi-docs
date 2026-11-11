@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Widget Container Customization | Bold BI Documentation
+title: Modern Widget Container Customization in Bold BI | Bold BI
 description: Learn how to configure general settings, container appearance, actions, export controls, and responsive behavior for modern Bold BI widgets.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/widget-container-customization/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Widget Container Customization
+# Modern Widget Container Customization
 
 ## General Settings
 
-The **General Settings** section appears at the top of every widget's Properties pane.
+The **General Settings** section in Bold BI appears at the top of every widget's Properties pane.
 
-#### Widget Type
+### Widget Type
 
 Displays the selected widget's type, such as **Bar Chart**, **Grid**, or **KPI Card**. This read-only value helps you confirm which Modern widget is currently selected before you configure its properties.
 
@@ -97,7 +97,7 @@ Toggles the drop shadow displayed around the widget container, giving it a raise
 
 Container actions control the icons that appear in the widget header and the capabilities available to dashboard viewers at runtime.
 
-#### Show Header
+### Show Header
 
 Toggles the visibility of the entire widget header bar, including the title, subtitle, and all action icons.
 

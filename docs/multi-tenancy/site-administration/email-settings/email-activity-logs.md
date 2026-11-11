@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Track Email Activity using Logs in UMS | Bold BI Doc
+title: Track Email Activity Using Logs in User Management | Bold BI
 description: Learn how to use email activity logs in the User Management to track if emails were successfully sent to recipients and monitor delivery status.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # Email Activity Logs in User Management Server
 
-The email activity logs allow us to track whether the email was sent to the recipients or not. The logs contain information about each email, including the **sender and recipient, date and time, status, and any associated error messages**.
+Use the email activity logs in Bold BI User Management Server to check whether each email was sent to its recipients. The logs contain information about each email, including the **sender and recipient, date and time, status, and any associated error messages**.
 
 You can view the details of the email activity logs by clicking the `Logs` tab on the Email Settings page in User Management Server.
 

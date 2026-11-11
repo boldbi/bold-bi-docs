@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connect Azure Cosmos DB data in Dashboard | Cloud Bold BI Docs
+title: Azure Cosmos DB Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect your Azure Cosmos DB data through MongoDB and create data source for dashboard configuration in Bold BI application for cloud.
 canonical: "/working-with-data-sources/data-connectors/cosmosdb/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Cosmos DB data source
+# Azure Cosmos DB Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to Cosmos DB database through MongoDB client. 
 
@@ -18,7 +18,7 @@ To configure the Cosmos DB data source through the MongoDB data source, follow t
 3. To connect to Cosmos DB using the MongoDB connector, an Azure Cosmos DB account should be created with the [API type of MongoDB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account) from the Azure Portal.
 
 > **NOTE:** 
->* As of writing, Cosmos DB has a limitation. The type of API cannot be changed after the Azure Cosmos DB account is created, so you either need to create a new account for a different API type or migrate data into a new database account from an older database account. Data migration steps are provided for each API type [for MongoDB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account).
+>* As of writing, Cosmos DB has a limitation. The type of API cannot be changed after the Azure Cosmos DB account is created. To use a different API type, you need to create a new account or migrate data into a new database account from an older one. Data migration steps are provided for each API type [for MongoDB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account).
 >* The Azure Cosmos DB's API for MongoDB is compatible with MongoDB server version 3.2 and 3.6. There are some limitations in the query language explained in [this documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-36#query-language-support).
 
 ## Choose MongoDB data source by following the given steps:
@@ -58,7 +58,7 @@ Once you click the data source, the **NEW DATA SOURCE** configuration panel open
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

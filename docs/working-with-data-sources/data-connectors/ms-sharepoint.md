@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Microsoft SharePoint – Cloud BI Connector | Bold BI Learning
+title: Microsoft SharePoint Data Connector Guide | Bold BI
 description: Learn how to connect your Microsoft SharePoint account with Bold BI Cloud, read CSV, JSON, XML and XLSX files and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Microsoft SharePoint data source
+# Microsoft SharePoint Data Connector Guide
 The Bold BI dashboard designer supports connecting to Microsoft SharePoint web services through the REST API. 
 
 ## Choose Microsoft SharePoint data source
-To configure the Microsoft SharePoint data source, follow the below steps:
+To configure the Microsoft SharePoint data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: QuickBooks Online – Cloud BI Connector | Bold BI Docs
-description: QuickBooks Online – Cloud BI Connector | Bold BI Documentation	Learn how to connect QuickBooks Online using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: QuickBooks Online Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect QuickBooks Online with Bold BI Cloud through OAuth-based authentication and the REST API, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to QuickBooks Online data source
+# QuickBooks Online Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to QuickBooks Online web services through the REST API. 
 
 ## Choose QuickBooks Online data source

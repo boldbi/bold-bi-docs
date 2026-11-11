@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Azure Tables - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Azure Table storage service with cloud-hosted Bold BI and create data source for dashboard configuration.
+title: Azure Tables Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect the Azure Table storage service with cloud-hosted Bold BI and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Azure Tables data source
+# Azure Tables Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Azure Tables web services using the REST API.
 
 ## Choose Azure Tables data source
@@ -36,7 +36,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

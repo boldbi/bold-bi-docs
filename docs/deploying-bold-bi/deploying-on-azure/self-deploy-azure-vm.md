@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Deploying Bold BI Server on Azure VM | Bold BI | Docs
-description: Learn how to efficiently deploy a virtual machine in the Microsoft Azure portal and seamlessly install the Bold BI server application.
+title: Deploying Bold BI Server on Azure VM Bold BI | Bold BI
+description: Learn how to efficiently deploy a virtual machine in the Microsoft Azure portal and seamlessly install the Bold BI Server application.
 platform: bold-bi
 documentation: ug
 ---
-# Self-Deploy a Bold BI Server on Microsoft Azure Virtual Machine
+# Deploying Bold BI Server on Azure VM Bold BI
 
 The following steps will guide you through deploying Bold BI on Azure Virtual Machines. Follow the steps according to your instance type.
 <ul>
@@ -98,9 +98,9 @@ Follow the below steps to connect to the virtual machine.
 
 ### Installation and Running of the Bold BI Server
 
-This section provides instructions on how to install and run the Bold BI server in a virtual machine (VM).
+This section provides instructions on how to install and run the Bold BI Server in a virtual machine (VM).
 
-* Install the Bold BI server on the created virtual machine (VM) in the Azure portal using [help link](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/). 
+* Install the Bold BI Server on the created virtual machine (VM) in the Azure portal using [help link](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/). 
 * Launch your application either by default or through your Desktop shortcut menu item. For example, `Start Bold BI in IIS`
 
     ![Start up](/static/assets/installation-and-deployment/images/azure-ubuntu-vm-boldbi.png)

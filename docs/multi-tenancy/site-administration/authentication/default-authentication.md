@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Default Authentication Option in User Management Server | Bold BI
+title: Default Authentication in User Management | Bold BI
 description: Learn default authentication functionality and how to configure the default authentication in User Management Server to enable or disable it.
 platform: bold-bi
 documentation: ug
@@ -8,9 +8,9 @@ documentation: ug
 
 # Default Authentication option in User Management Server 
 
-This topic explains how to enable or disable default authentication in User Management Server. 
+Enable or disable default authentication in Bold BI User Management Server. 
 
-This feature allows you to configure any third-party identity provider as your default authentication provider. Once default authentication is configured, the Bold BI application will automatically redirect to the corresponding authentication provider’s login page instead of Bold BI’s login page. 
+You can configure any third-party identity provider as your default authentication provider. Once default authentication is configured, the Bold BI application will automatically redirect to the corresponding authentication provider’s login page instead of Bold BI’s login page. 
 
  You must configure any provider and enable one of the following identity providers to configure default authentication. Otherwise, you will see the following options.
 

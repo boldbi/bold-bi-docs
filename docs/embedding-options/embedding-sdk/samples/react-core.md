@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET Core and React | Bold BI Docs
+title: Embedding Analytics with ASP.NET Core and React | Bold BI
 description: Learn how to embed an analytics dashboard with an ASP.NET Core and React application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with ASP.NET Core using Embed SDK
+# Embedding Analytics with ASP.NET Core and React
 
-A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application that demonstrates the rendering of the dashboard on your Bold BI server. This will be followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application that demonstrates the rendering of the dashboard on your Bold BI Server. This will be followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.
 
 > **NOTE:** The best way to get started would be by reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides all the necessary information you need to know before working on the sample.      
 

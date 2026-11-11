@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Embed Data Source Designer in JavaScript App | Bold BI Docs
+title: Embed Data Source Designer in JavaScript App | Bold BI
 description: Explore how to embed the data source designer module in your JavaScript-based Web application using iFrame and how to create and edit the data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Data Source view
+# Embed Data Source Designer in JavaScript App
 This section explains how to integrate the Bold BI data source into the sample application by embedding the item listing and designing modules. 
 
 ![DatasourceListingSample](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js.png)

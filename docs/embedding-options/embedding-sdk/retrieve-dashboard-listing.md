@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Bold BI SDK - Efficiently Embed Multiple Dashboards
+title: Efficiently Embed Multiple Dashboards with the SDK | Bold BI
 description: Learn how to embed multiple dashboards efficiently using REST APIs and signed embed token, reducing server load and improving performance.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedding list of Dashboards Efficiently with Bold BI SDK
+# Efficiently Embed Multiple Dashboards with the SDK
 
 Bold BI SDK allows you to efficiently embed multiple dashboards in your application by fetching the dashboard list once from the backend, generating reusable Embed Token, and rendering dashboards on demand. This approach reduces server calls, improves performance, and ensures a smooth user experience when switching between dashboards. The process involves:
 <ul style="margin:0; padding-left:20px;">
-  <li><b>Fetching dashboard list</b> from the Bold BI server via a secure REST API.</li>
+  <li><b>Fetching dashboard list</b> from the Bold BI Server via a secure REST API.</li>
   <li><b>Displaying the dashboard list</b> on the frontend UI with clickable items.</li>
   <li><b>Generating Embed Token</b> for dashboards, reusing them until expiration.</li>
   <li><b>Rendering dashboards</b> on demand using the Bold BI SDK and the Embed Token.</li>
@@ -26,7 +26,7 @@ Bold BI SDK allows you to efficiently embed multiple dashboards in your applicat
 
 ## Step 1: Fetch the Dashboard List from Backend
 
-The backend application communicates with the Bold BI server using the REST API. It exchanges the embed secret for an access token, calls the `/v5.0/dashboards` API, and securely returns the dashboard list to the client application.
+The backend application communicates with the Bold BI Server using the REST API. It exchanges the embed secret for an access token, calls the `/v5.0/dashboards` API, and securely returns the dashboard list to the client application.
 
 ```js
 /*

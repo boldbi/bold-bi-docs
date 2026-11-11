@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Google Ads – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect your Google Ads service account through OAuth-based authentication with Bold BI Cloud and create data source. 
+title: Google Ads Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect your Google Ads service account through OAuth-based authentication with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Google Ads Data Source
+# Google Ads Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google Ads web services through the REST API.
 
 > **NOTE:**  If you want to connect a **Google Ads** data source, your account must be linked to Google Analytics.
 
 ## Choose Google Ads Data Source
-To configure the Google Ads data source, follow the below steps:
+To configure the Google Ads data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
   ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

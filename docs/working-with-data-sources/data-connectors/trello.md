@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Trello - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Trello web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Trello Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Trello through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Trello data source
+# Trello Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Trello web services through the REST API.
 
 ## Choose Trello data source
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

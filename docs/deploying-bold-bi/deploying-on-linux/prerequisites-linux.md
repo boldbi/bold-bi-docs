@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Prerequisites for Deployment on Linux  | Bold BI Learning
+title: Prerequisites for Deployment on Linux in Bold BI | Bold BI
 description: Explore the prerequisites for deploying Bold BI application in Linux server with a standard user account.
 platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites
+# Prerequisites for Deployment on Linux in Bold BI
 
 ## Hardware requirements
      

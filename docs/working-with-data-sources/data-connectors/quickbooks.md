@@ -1,16 +1,16 @@
 ---
 layout: post
-title: QuickBooks – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect QuickBooks Online using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: QuickBooks Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect QuickBooks Online and Payments with Bold BI Cloud through OAuth-based authentication and the REST API, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to QuickBooks data source
+# QuickBooks Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to QuickBooks Online and Payments web services through the REST API. 
 
 ## Choose QuickBooks data source
-To configure the QuickBooks data source, follow the below steps:
+To configure the QuickBooks data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the QuickBooks web service:
 
 ## Connect to QuickBooks
 ### Create QuickBooks data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create QuickBooks data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create QuickBooks data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid QuickBooks REST API endpoint in the URL textbox. Refer to the [QuickBooks API documentation](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account) for more details.
 
@@ -84,7 +84,7 @@ By default data is retrieved in <i>JSON</i> format. Additionally <i>XML</i> is s
 
 ### Setting up the URL
 
-1. To find your company id/realm id, refer [here](https://quickbooks.intuit.com/community/Help-Articles/How-do-I-find-my-Company-ID/td-p/185551)
+1. To find your company id/realm id, refer to [How do I find my Company ID](https://quickbooks.intuit.com/community/Help-Articles/How-do-I-find-my-Company-ID/td-p/185551)
 
 Replace it in the URL to query a particular company:
 

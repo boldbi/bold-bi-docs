@@ -1,12 +1,12 @@
 ---
 layout: Post
-title: Limitations of Replace Value Support in Bold BI application
+title: Limitations of Replace Value Support in Bold BI | Bold BI
 description: This page demonstrates the aspects that will not be affected by the Replace Value support in the Bold BI
 platform: bold-bi
 documentation: ug
 ---
 
-# Limitation of Replace Value Support
+# Limitations of Replace Value Support in Bold BI
 
 The Replace Value feature is primarily used to change null or blank values in columns of a data source to enhance the appearance of widgets and dashboards. However, this replacement will not affect the following aspects of Bold BI applications:
 

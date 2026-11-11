@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Card Visual – Embedded BI | Bold BI Documentation
+title: Number Card Visual - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Number Card visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/number-card/"
 platform: bold-bi
@@ -98,7 +98,7 @@ You can change the `aggregation type` of the measure section from the settings m
 
 ### Series number cards
 
-The Series section allows you to plot a `series` of cards over the dropped field. In this following example, the team-wise goals are displayed in the card.
+The Series section lets you plot a `series` of cards over the dropped field. In this following example, the team-wise goals are displayed in the card.
 
 ![Configure series](/static/assets/visualizing-data/visualization-widgets/images/number-card/configure-series.png)
 
@@ -114,7 +114,7 @@ Now, the card will be rendered with the sparkline.
 
 ### Image
 
-The `Image` section allows you to configure the image data for each number card/records. The image data may be the direct URL for the records or contain part of the URL.
+The `Image` section lets you configure the image data for each number card/records. The image data may be the direct URL for the records or contain part of the URL.
 
 #### Direct URL
 
@@ -200,25 +200,25 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in a card.
+This option lets you toggle the visibility of the tooltip in a card.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize the columns that are visible in the card tooltip.
+This option lets you customize the columns that are visible in the card tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/number-card/rtl-tooltip.png)
 
@@ -263,7 +263,7 @@ You can select the summary type for the selected measure field.
 
 #### Value type
 
-The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248) or percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248) or percentage (values above 30% or 50%).
 
 ![Value type](/static/assets/visualizing-data/visualization-widgets/images/number-card/value-type.png)
 
@@ -291,7 +291,7 @@ Enter the condition value.
 
 #### Font style
 
-Allows you to choose the title font style (bold, italic, underline, and superscript).
+Lets you choose the title font style (bold, italic, underline, and superscript).
 
 #### Case sensitivity
 
@@ -309,11 +309,11 @@ Select the checkbox next to the options to customize the properties, and click `
 
 ### Horizontal alignment 
 
-This option allows you to place the content of the widget at the position of **Left,Center and Right**.
+This option lets you place the content of the widget at the position of **Left,Center and Right**.
 
 ### Vertical alignment
 
-This option allows you to customize the alignment of the number card vertically. This dropdown option has Top, Center, and Bottom values. By default, the alignment value is set to ‘Center.’
+This option lets you customize the alignment of the number card vertically. This dropdown option has Top, Center, and Bottom values. By default, the alignment value is set to ‘Center.’
 
 ### Auto font size
 
@@ -333,7 +333,7 @@ By enabling the Auto Font Size option, the font size will be adjusted automatica
 
 ### Scaling factor
 
-If the auto font size is enabled, the scaling factor allows you to increase or decrease the font size.
+If the auto font size is enabled, the scaling factor lets you increase or decrease the font size.
 
 #### Measure properties
 
@@ -409,7 +409,7 @@ The following image shows the Number Card widget after modifying the color and f
 
 ### Text Wrap
 
-This option allows you to wrap the Card Title based on `Card size`. This option will be enabled only for a single card. It wraps the title only if the space is not enough to show the title in a single line.
+This option lets you wrap the Card Title based on `Card size`. This option will be enabled only for a single card. It wraps the title only if the space is not enough to show the title in a single line.
 
 ![Show Text Wrap title](/static/assets/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
 
@@ -531,7 +531,7 @@ The background image properties are the same as the Number card’s image proper
 
 #### Background color
 
-Allows you to set a solid color as the background and to change the transparency of the color.
+Lets you set a solid color as the background and to change the transparency of the color.
 
 ![Background color](/static/assets/visualizing-data/visualization-widgets/images/number-card/background-color.png)
 
@@ -591,11 +591,11 @@ The following steps illustrate how to add the fixed value:
 
 ### Title alignment
 
-This allows you to handle the alignment of the widget title to either **left, center, or right**.
+This lets you handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -603,7 +603,7 @@ By enabling the Auto Font Size, the font size of the title will be adjusted auto
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
+This lets you apply the specified font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -611,21 +611,21 @@ By enabling the Auto Font Size, the font size of the subtitle will be adjusted a
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
 
 ### Show Border
 
-This allows you to toggle the visibility of the border surrounding the widget.
+This lets you toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 100.
+This lets you apply the specified radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 100.
 
 ### Container Appearance 
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -635,39 +635,39 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show header
 
-This allows you to enable or disable the widget title of the number card widget. 
+This lets you enable or disable the widget title of the number card widget. 
 
 #### Allow maximize view
 
-This allows you to enable or disable the maximized mode of the number card widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the maximized mode of the number card widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV export
 
-This allows you to enable or disable the CSV export option for the number card widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the CSV export option for the number card widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel export
 
-This allows you to enable or disable the Excel export option for the number card widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
+This lets you enable or disable the Excel export option for the number card widget. Enabling this lets you export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
 
 #### Allow image export
 
-This allows you to enable or disable the image export option for the number card widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
+This lets you enable or disable the image export option for the number card widget. Enabling this lets you export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
 
 #### Allow PDF export
 
-This allows you to enable or disable the PDF export option for the number card widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the PDF export option for the number card widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable comment for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 ## Related links
 

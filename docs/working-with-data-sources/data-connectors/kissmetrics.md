@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Kissmetrics – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Kissmetrics web service through basic http authentication with Bold BI Cloud and create data source.
+title: Kissmetrics Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Kissmetrics web service through basic HTTP authentication with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Kissmetrics data source
+# Kissmetrics Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Kissmetrics web services through the REST API.
 
 ## Choose Kissmetrics data source
 
-To configure the Kissmetrics data source, follow the below steps:
+To configure the Kissmetrics data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Kissmetrics data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/kissmetrics/ChooseDS_server.png)
 
 ## Create Kissmetrics data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Kissmetrics data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Kissmetrics data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Kissmetrics REST API endpoint in the URL textbox. Refer to the [Kissmetrics API documentation](https://developers.kissmetrics.com/reference#overview) for more details.
 
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

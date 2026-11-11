@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Configure Allow Known Domain List & Avoid SSRF | Bold BI Docs
+title: Configure Allow Known Domain List & Avoid SSRF | Bold BI
 description: Learn about how to configure the known domain list in Bold BI application to avoid Server-side request forgery (SSRF) attacks.
 platform: bold-bi
 documentation: ug
 ---
 
-# Block Sending Data to Unknown Domain
+# Configure Allow Known Domain List & Avoid SSRF
 
 The callback URL will be present throughout a certain workflow within the application, allowing the operation status and other data to be delivered back to the program via that URL (e.g., publishing dashboard from one server to another server). What if a scammer changes the URL and manages to regain access to the encrypted data? This is a type of Server-side request forgery (SSRF) attack.
 

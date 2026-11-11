@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Dashboard - JavaScript Embedding | Bold BI Docs
+title: Bold BI Dashboard - JavaScript Embedding | Bold BI
 description: Learn how to securely embed Bold BI dashboards into your application using the SDK and embed token authentication from v14.1.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed Token Generation
+# Bold BI Dashboard - JavaScript Embedding
 
 > **Note:** This is the enhanced approach to token generation. If you need a lower version below 14.1 of the token generation approach, please refer to this [link](/embedding-options/embedding-sdk/authorization-options/token-generation-lower-version/).
 
@@ -147,7 +147,7 @@ function getToken() {
     ]
   ];
 
-  // Send POST request to Bold BI server
+  // Send POST request to Bold BI Server
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $embedDetails["serverurl"] . "/api/" . $embedDetails["siteidentifier"] . "/embed/authorize");
   curl_setopt($ch, CURLOPT_POST, true);

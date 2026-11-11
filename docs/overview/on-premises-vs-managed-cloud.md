@@ -7,7 +7,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Distinct Features by Edition: On-Premises vs. Managed Cloud 
+# Distinct Features - On-Premises vs. Managed Cloud
  
 Explore the distinct features that set our on-premises and managed cloud editions apart. 
 

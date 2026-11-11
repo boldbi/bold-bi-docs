@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Azure Databricks – BI Connector | Bold BI Documentation
+title: Azure Databricks Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Azure Databricks, an analytic data warehouse with Bold BI Cloud & Embedded, and create a data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Azure Databricks data source
+# Azure Databricks Data Connector Guide in Bold BI
 Bold BI Dashboard Designer supports connecting to Azure Databricks Catalog through SQL Live query.
 
 ## Choose Azure Databricks data source
@@ -23,7 +23,7 @@ To configure the Azure Databricks data source, follow these steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/AzureDatabricks/ChooseDataSource.png)
 
- >**NOTE:**  You can also create a **data source** from the home page by clicking on the Data Sources menu in the left menu panel and selecting **Create Data Source** from the data sources page.
+ >**NOTE:**  You can also create a **data source** from the home page. Click **Data Sources** in the left menu panel, then select **Create Data Source** on the data sources page.
 
  ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/AzureDatabricks/ChooseDS_server.png)
 
@@ -87,7 +87,7 @@ A custom attribute is a piece of code that functions as a parameter and can be r
 
 **Dashboard Parameter**
 
-A dashboard parameter is a global placeholder value such as a number, string, or date that can replace a constant value in an expression, stored procedure, code view, and web URL. By default, the dashboard will be rendered with the default parameter value. You can change the parameter dynamically while viewing the dashboard.
+A dashboard parameter is a global placeholder value, such as a number, string, or date. It can replace a constant value in an expression, stored procedure, code view, and web URL. By default, the dashboard will be rendered with the default parameter value. You can change the parameter dynamically while viewing the dashboard.
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/AzureDatabricks/Parameter.png)
 
@@ -99,27 +99,27 @@ A dashboard parameter is a global placeholder value such as a number, string, or
 To find the Azure Databricks Workspace URL, open your Azure Databricks workspace and copy the URL displayed in the browser's address bar. For example: `https://adb-1234567890123456.7.azuredatabricks.net`.
 
 ### Warehouse ID 
- To obtain the Azure Databricks SQL Warehouse ID, navigate to **Azure Databricks** → **SQL Warehouses**, select the target warehouse, and copy the **Warehouse ID** from the warehouse details page or from the warehouse URL.
+ To obtain the Azure Databricks SQL Warehouse ID, navigate to **Azure Databricks** → **SQL Warehouses**. Select the target warehouse, and copy the **Warehouse ID** from the warehouse details page or from the warehouse URL.
  
  ![Get WarehouseID ](/static/assets/working-with-datasource/data-connectors/images/AzureDatabricks/Azure_Databricks_WarehouseID.png)
 
 ### Tenant ID 
-To obtain the Tenant ID from the registered application, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**, select the application, and copy the **Directory (tenant) ID** from the application's **Overview** page.
+To obtain the Tenant ID from the registered application, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**. Select the application, and copy the **Directory (tenant) ID** from its **Overview** page.
 
 ### Client ID 
-To obtain the Azure Databricks Client ID, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**, select the registered application used for authentication, and copy the **Application (client) ID** from the application's **Overview** page.
+To obtain the Azure Databricks Client ID, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**. Select the registered application used for authentication, and copy the **Application (client) ID** from its **Overview** page.
 
 ### Application Key 
-To obtain the Application Key, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**, select the registered application, go to **Certificates & Secrets** → **Client Secrets**, and copy the **Secret Value** of the generated client secret. This value is used to authenticate the application when connecting to Azure Databricks.
+To obtain the Application Key, navigate to **Azure Portal** → **Microsoft Entra ID** → **App Registrations**. Select the registered application, go to **Certificates & Secrets** → **Client Secrets**, and copy the **Secret Value** of the generated client secret. This value is used to authenticate the application when connecting to Azure Databricks.
 
 ### Personal Access Token 
-To generate a Personal Access Token (PAT) in Azure Databricks, navigate to **Profile** → **Settings** → **Developer** → **Access Tokens**, generate a new token, and securely copy the generated PAT for later use.
+To generate a Personal Access Token (PAT) in Azure Databricks, navigate to **Profile** → **Settings** → **Developer** → **Access Tokens**. Generate a new token, and securely copy the generated PAT for later use.
 
    ![Azure Databricks GetPAT](/static/assets/working-with-datasource/data-connectors/images/AzureDatabricks/Azure_Databricks_GetPAT.png)
 
 ## How to get Service Principal credentials in Azure Portal
 
-Follow the below steps to access Azure Databricks data using the Service Principal
+Follow the following steps to access Azure Databricks data using the Service Principal
 
 1. Register an Application in Microsoft Entra (Azure AD)
 

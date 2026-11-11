@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configure Fiscal Year – Embedded BI | Bold BI Documentation
+title: Configure Fiscal Year - Embedded Analytics | Bold BI
 description: Learn how to configure Fiscal Year settings while creating a data source and dashboard in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 keywords: fiscal, fiscal year, fiscal quarter, fiscal month, fiscal quarter year, fiscal month year 
 
 ---
-# Configure Fiscal Year
+# Configure Fiscal Year - Embedded Analytics
 
 To configure the fiscal year, select a date-based column and click the `Settings` icon, which will be displayed as shown below.
 
@@ -87,9 +87,9 @@ If the Fiscal Quarter starts in April, then the Fiscal Quarters are,
 | `Quarter Months`|`Fiscal Quarter` |
 |-----------------|-----------------|
 | Apr - Jun       | Quarter 1  	    |
-| Jul – Sep       | Quarter 2   	|
-| Oct – Dec       | Quarter 3   	|
-| Jan – Mar       | Quarter 4   	|
+| Jul: Sep       | Quarter 2   	|
+| Oct: Dec       | Quarter 3   	|
+| Jan: Mar       | Quarter 4   	|
 
 ![Fiscal Quarter](/static/assets/working-with-datasource/images/FiscalQuarter.png)
 
@@ -102,9 +102,9 @@ Consider the Fiscal year for Apr 2025 - Mar 2026, then the Fiscal Quarter Years 
 | `Quarter Months`| `Fiscal Quarter`| `Fiscal Year` |`Fiscal Quarter Year` |
 |-----------------|-----------------|---------------|----------------------|
 | Apr - Jun       | Quarter 1       | 2026          | Quarter 1  2026	   |
-| Jul – Sep       | Quarter 2       | 2026          | Quarter 2  2026 	   |
-| Oct – Dec       | Quarter 3       | 2026          | Quarter 3  2026 	   |
-| Jan – Mar       | Quarter 4       | 2026          | Quarter 4  2026 	   |
+| Jul: Sep       | Quarter 2       | 2026          | Quarter 2  2026 	   |
+| Oct: Dec       | Quarter 3       | 2026          | Quarter 3  2026 	   |
+| Jan: Mar       | Quarter 4       | 2026          | Quarter 4  2026 	   |
 
 ![Fiscal Quarter Year](/static/assets/working-with-datasource/images/FiscalQuarterYear.png)
 

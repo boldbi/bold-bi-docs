@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET Web Forms | Bold BI Docs
+title: Embedding Analytics with ASP.NET Web Forms | Bold BI
 description: Learn how to embed an analytics dashboard with ASP.NET Web Forms application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in ASP.NET Web Forms using Embed SDK
+# Embedding Analytics with ASP.NET Web Forms
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application,  which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application,  which demonstrates the rendering of the dashboard available on your Bold BI Server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Reference – AI Assistant Methods | Bold BI Docs
+title: API Reference - AI Assistant Methods in Bold BI | Bold BI
 description: Learn how to use the SDK API to embed and render the AI Assistant in Bold BI deployments on your server.
 platform: bold-bi
 documentation: UG
 ---
 
-# AI Assistant Methods
+# API Reference - AI Assistant Methods in Bold BI
 
 ## loadAIAssistant()
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connecting Bold BI application to Data Sampling feature
+title: Connecting Bold BI Applications to Data Sampling | Bold BI
 description: This section describes how to enable and configure the Data Sampling feature for data sources in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 keywords:  isolation, isolation code, isolation filter, row level security, row level ,data sampling, preview row limit, sampling strategy, accurate, balanced, fast
 ---
 
-# Data Sampling feature in Bold BI
+# Connecting Bold BI Applications to Data Sampling
 
 The **Data Sampling** feature in Bold BI improves the dashboard design experience by limiting the amount of data retrieved while designing dashboards. This helps reduce query execution time and improves responsiveness when working with large datasets.
 
@@ -41,8 +41,8 @@ To configure Data Sampling in Bold BI, follow these steps:
 
    Once enabled, the following options become available:
 
-   - **Preview Row Limit** – Specifies the maximum number of rows retrieved during preview.
-   - **Sampling Strategy** – Select one of the following strategies:
+   - **Preview Row Limit**: Specifies the maximum number of rows retrieved during preview.
+   - **Sampling Strategy**: Select one of the following strategies:
      - **Accurate**
      - **Balanced**
      - **Fast**

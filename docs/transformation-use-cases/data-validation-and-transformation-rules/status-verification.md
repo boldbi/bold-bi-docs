@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Ticket Status Validation | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to validate the ticket status and make the most of your analytics.
+title: Transformation Ticket Status Validation in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to validate the ticket status and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Area Chart – Embedded Dashboard Widget | Bold BI Docs
+title: Spline Area Chart - Embedded Dashboard Widget | Bold BI
 description: Learn how to create a Spline Area Chart widget in Bold BI embedded dashboard (analytical,operational, or strategic), configure data fields and others.
 canonical: "/visualizing-data/visualization-widgets/spline-area-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Spline Area Chart
 documentation: ug
 ---
 
-# Spline Area Chart
+# Spline Area Chart - Embedded Dashboard Widget
 
-The Spline Area chart allows you to showcase the difference between the minimum and maximum values over a certain time period, with data points connected by smooth curves.
+The Spline Area chart lets you showcase the difference between the minimum and maximum values over a certain time period, with data points connected by smooth curves.
 
 ![Spline Area Chart](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/spline-area-chart.png) 
 
@@ -186,7 +186,7 @@ The primary use case of the hidden columns is linking. On configuring hidden col
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the following filter icon.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/filtericon.png)
 
@@ -194,7 +194,7 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the following image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/hidden-column-filter.png)
 
@@ -242,19 +242,19 @@ The property window will open:
 
 #### Name
 
-This allows you to change the `title` for this spline area chart widget.
+This lets you change the `title` for this spline area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/Title.png)
 
 #### Subtitle
 
-Allows you to provide the `subtitle` for this spline area chart widget.
+Lets you provide the `subtitle` for this spline area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/subtitle.png)
 
 #### Description
 
-Allows you to provide a `description` about this spline area chart widget.
+Lets you provide a `description` about this spline area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/Description.png)
 
@@ -268,17 +268,17 @@ Click the `Change` button to open the `Chart Type` and `Axis Settings` dialog.
 
 ![Chart Type](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/name.png)
 
-**Chart Type**: This allows you to switch the widget view from the current chart type to another chart type.
+**Chart Type**: This lets you switch the widget view from the current chart type to another chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis.
 
 #### Enable Animation
 
-This allows you to enable the `animation` property. It animates by the measure values.
+This lets you enable the `animation` property. It animates by the measure values.
 
 #### Show Value Labels
 
-This allows you to toggle the visibility of value labels.
+This lets you toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-value-labels.png)
 
@@ -288,7 +288,7 @@ If you disable the `Show Value Labels` property, the dependent properties, which
 
 #### Customize
 
-This allows you to customize the toggle visibility of value labels in each series.
+This lets you customize the toggle visibility of value labels in each series.
 
 ![Show Value Labels Customization OPtion](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/label-customize.png)
 
@@ -296,7 +296,7 @@ This allows you to customize the toggle visibility of value labels in each serie
 
 ### Value Label Color
 
-This allows you to customize the value label's color.
+This lets you customize the value label's color.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/data-label-color-option.png)
 
@@ -304,23 +304,23 @@ This allows you to customize the value label's color.
 
 ### Value Label Position
 
-This option allows you to customize the value label position in a chart. By default, it is set to ‘Auto,’ so the label position for the spline area chart will be set to Top.
+This option lets you customize the value label position in a chart. By default, it is set to ‘Auto,’ so the label position for the spline area chart will be set to Top.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/valuelabelposition.png)
 
 ### Value Label Rotation
  
-This allows you to define the rotation angle for the value labels to display.
+This lets you define the rotation angle for the value labels to display.
 
 ![Value Label Rotation](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-showlabelrotation.png)
 
 ### Value Label Suffix
 
-This allows you to show or hide the suffix value of value labels.
+This lets you show or hide the suffix value of value labels.
 
 ### Suffix Value
 
-This allows you to customize the suffix value of value labels.
+This lets you customize the suffix value of value labels.
 
 ![Value Label Suffix](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/label-suffix.png)
 
@@ -328,7 +328,7 @@ This allows you to customize the suffix value of value labels.
 
 ### Show Marker
 
-This allows you to toggle the visibility of the `marker` from the label to adorn each data point in a chart series.
+This lets you toggle the visibility of the `marker` from the label to adorn each data point in a chart series.
 
 ![Show Marker](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-marker.png)
 
@@ -338,7 +338,7 @@ On enabling this support, the chart scroll bar thumb size will be calculated bas
 
 #### Page Size
 
-This option allows you to set the number of records that need to be fetched on the initial load.
+This option lets you set the number of records that need to be fetched on the initial load.
 
 ### Show Items With No Data
 
@@ -352,25 +352,25 @@ If you enable the `Show Items With No Data` property, then the columns with null
 
 ### Empty Point Mode
 
-This allows you to handle the display mode for empty points with the properties `Gap`, `Zero`, `Average` and `Connect`.
+This lets you handle the display mode for empty points with the properties `Gap`, `Zero`, `Average` and `Connect`.
 
 ![Empty Point Mode Options](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/chart-options.png)
 
 ### Gap
 
-This option allows you to show the null or undefined values with gaps.
+This option lets you show the null or undefined values with gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-gap.png)
 
 ### Zero
 
-This option allows you to show the null or undefined values on the zero axis.
+This option lets you show the null or undefined values on the zero axis.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-zero.png)
 
 ### Average
 
-This option allows you to display the null or undefined values as an average.
+This option lets you display the null or undefined values as an average.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-average.png)
 
@@ -382,31 +382,31 @@ This option ignores the empty values and connects the remaining points.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-tooltip.png)
 
@@ -416,7 +416,7 @@ This option allows you to display tooltip text and value colors that correspond 
 
 #### Show Legend
 
-A legend is text used to describe the plotted data. This allows you to toggle the visibility of the legend in a chart and also change the legend text position (selecting through the combo box). 
+A legend is text used to describe the plotted data. This lets you toggle the visibility of the legend in a chart and also change the legend text position (selecting through the combo box). 
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-legend.png)
 
@@ -424,18 +424,18 @@ Enabling the **Custom Legend Text** option will allow you to define custom text 
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-interactivity-enable.png)
 
 ### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This lets you change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-label-color-option.png)
 
@@ -451,11 +451,11 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top,** and **Bottom**.
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
  
@@ -469,33 +469,33 @@ Legend Alignment enables you to control how the legend is positioned within its 
 
 #### Legend Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend to a `Circle`.
+This option lets you change the shape of the legend to a `Circle`.
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in a `Series`.
+This option lets you change the shape of the legend in a `Series`.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splinearea-legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
+This lets you add the legend title for the chart. It will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splinearea-legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to trim the legend items if the legend exceeds the `Text Width` value.
+This option lets you trim the legend items if the legend exceeds the `Text Width` value.
 
 ***None***
 
-This option allows you to render legend items without any wrap and trim.
+This option lets you render legend items without any wrap and trim.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-text-overflow-none-option.png)
 
@@ -503,7 +503,7 @@ This option allows you to render legend items without any wrap and trim.
 
 ***Trim***
 
-This option allows you to trim the legend items if its legend exceeds the `Text Width` value.
+This option lets you trim the legend items if its legend exceeds the `Text Width` value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-text-overflow-trim-option.png)
 
@@ -511,7 +511,7 @@ This option allows you to trim the legend items if its legend exceeds the `Text 
 
 ***Wrap***
 
-This option allows you to wrap legend items based on 'Text Width' value.
+This option lets you wrap legend items based on 'Text Width' value.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-text-overflow-wrap-option.png)
 
@@ -519,7 +519,7 @@ This option allows you to wrap legend items based on 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/legend-text-overflow-width-option.png)
 
@@ -537,31 +537,31 @@ You can enable linking and configure to navigate to a general URL with or withou
 
 ### Axis Settings
 
-This section allows you to customize the `axis settings` in a chart.
+This section lets you customize the `axis settings` in a chart.
 
 ![Axis Settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/axis-settings.png)
 
 ### Title color
 
-This allows you to customize the axis title color.
+This lets you customize the axis title color.
 
 ![Title color](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/title-color.png)
 
 ### Label color
 
-This allows you to customize the axis label color.
+This lets you customize the axis label color.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/label-color.png)
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-axis-border.png)
 
 ### Show Category Axis
 
-This allows you to enable the visibility of the `Category Axis`.
+This lets you enable the visibility of the `Category Axis`.
 
 ![Show Category Axis](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-category-axis.png)
 
@@ -571,13 +571,13 @@ If you disable the `Show Category Axis` option, dependency properties, which are
 
 ### Show Category Axis Title
 
-This allows you to enable the visibility of the `Category Axis` title.
+This lets you enable the visibility of the `Category Axis` title.
 
 ![Show Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-categoryaxis-title.png)
 
 ### Category Axis Title
 
-This allows you to edit the `Category Axis` title for the chart. It will reflect in the x-axis name of the chart.
+This lets you edit the `Category Axis` title for the chart. It will reflect in the x-axis name of the chart.
 
 ![Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-editcategoryaxistitle.png)
 
@@ -587,7 +587,7 @@ If we uncheck the `Show Axis Title` property, the Axis title text box property w
 
 ### Label overflow mode
 
-This allows you to handle the display mode of the overlapping labels in the `Category Axis`.
+This lets you handle the display mode of the overlapping labels in the `Category Axis`.
 
 ***Trim***
 
@@ -603,11 +603,11 @@ This option hides the overlapping label in the axis.
 
 #### Trim Axis Labels
 
-This option allows you to trim the axis labels, based on the **Maximum Label Width** property value.
+This option lets you trim the axis labels, based on the **Maximum Label Width** property value.
 
 #### Label Maximum Width
 
-This option allows you to set a maximum width for the axis labels and it can be made customizable when the `trim axis label` option is enabled.
+This option lets you set a maximum width for the axis labels and it can be made customizable when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/maximum-label-width.png)
 
@@ -615,7 +615,7 @@ This option allows you to set a maximum width for the axis labels and it can be 
 
 #### Category Axis Label Rotation
 
-This allows you to define the rotation angle for the category axis labels to display.
+This lets you define the rotation angle for the category axis labels to display.
 
 ![Category Axis Label Rotation](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/label-rotation.png)
 
@@ -629,7 +629,7 @@ By default, the 'Auto Interval' property is enabled. Auto Interval property is u
 
 #### Show Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` for the chart. 
+This lets you enable the `Primary Value Axis` for the chart. 
 
 ![Show Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/show-primary-value.png)
 
@@ -639,13 +639,13 @@ If you disable the `Show Primary Axis` option, dependent properties, which are *
 
 #### Show Primary Value Axis Title
 
-This allows you to enable the visibility of the `Primary Value Axis` title of the chart.
+This lets you enable the visibility of the `Primary Value Axis` title of the chart.
 
 ![Show Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-primaryvalueaxistitle.png)
 
 #### Primary Value Axis Title
 
-This allows you to edit the `Primary Value Axis` title. It will reflect in the y-axis name of the chart. 
+This lets you edit the `Primary Value Axis` title. It will reflect in the y-axis name of the chart. 
 
 ![Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/primary-value-axis-title.png)
 
@@ -659,25 +659,25 @@ On enabling this property, the chart negative values will display on the top and
 
 #### Axis Type
 
-This allows you to change the type of axis in a spline area chart.
+This lets you change the type of axis in a spline area chart.
 
 ***Linear***
 
-This option allows you to handle the type of axis as linear.
+This option lets you handle the type of axis as linear.
 
 ***Logarithmic***
 
-This option allows you to handle the logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude (eg: 10-6) and higher order of magnitude (eg: 106). 
+This option lets you handle the logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude (eg: 10-6) and higher order of magnitude (eg: 106). 
 
 #### Axis Format
 
-This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting option](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/formatting-button.png)
 
 ### Axis Range Settings
 
-This allows you to manually set the **Minimum, Maximum,**  and **Interval** values of the primary value axis through the `Axis Range Settings` dialog.
+This lets you manually set the **Minimum, Maximum,**  and **Interval** values of the primary value axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachart-axisrange-settings.png)
 
@@ -687,7 +687,7 @@ It will reflect in the primary value axis of the chart.
 
 ### Parameter Support in Axis range:
 
-This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This lets you dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -749,25 +749,25 @@ You can toggle the visibility of the each axis gridlines visibility using the pr
 
 #### Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` gridlines for the spline area chart.
+This lets you enable the `Primary Value Axis` gridlines for the spline area chart.
 
 ![Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/enable-primary-value-axis.png)
 
 #### Secondary value Axis
 
-This allows you to enable the `Secondary Value Axis` gridlines for the Combination chart.
+This lets you enable the `Secondary Value Axis` gridlines for the Combination chart.
 
 ![Secondary value Axis](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/splineareachartsecondaryaxis.png)
 
 #### Category Axis
 
-This allows you to enable the `Category Axis` gridlines for the spline area chart.
+This lets you enable the `Category Axis` gridlines for the spline area chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/category-axis.png)
 
 ### Formatting
 
-This allows you to change the `color` for the spline area chart.
+This lets you change the `color` for the spline area chart.
 
 ![Format Colors](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/formatting.png)
 
@@ -777,13 +777,13 @@ It will reflect in the spline area chart.
 
 ### Series Palette
 
-This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if we configured the row section in the chart.
+This lets you apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if we configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/series-palette.png)
 
 #### Use Default Palette
 
-This option allows you to apply the default color for chart series.
+This option lets you apply the default color for chart series.
 
 By toggling off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -797,13 +797,13 @@ Using the Color Mapping type, you can apply the colors to the series either base
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data (i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data-based color mapping. By default, the Color Mapping Type will be `Data`.
+It lets you apply color for chart series based on data. If you want to apply a specific color to specific data (i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data-based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/spline-area-chart-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It lets you apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -813,7 +813,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 ### Font Settings 
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/font-settings.png)
 
@@ -823,17 +823,17 @@ By default, the `Auto Font Size` property is enabled. The Auto font-size propert
 
 ### Filter
 
-This section allows you to handle the `filter` action for the spline area chart widget.
+This section lets you handle the `filter` action for the spline area chart widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/filter.png)
 
 **Act as Master Widget**
 
-This allows you to define this chart widget as a `master widget` such that its filter action can be made to listen to by other widgets in the dashboard.
+This lets you define this chart widget as a `master widget` such that its filter action can be made to listen to by other widgets in the dashboard.
 
 **Ignore Filter Actions**
 
-This allows you to define this chart widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this chart widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 **Enable Hierarchical Filter**
 
@@ -843,7 +843,7 @@ When the `Enable Hierarchical Filter` option is enabled, the Top N will be appli
 
 **Show Filter**
 
-This feature allows you to toggle the visibility of the `Filter` icon for the spline area chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the spline area chart widget when the `Act as Master Widget` option is enabled.
 
 ### Trendline
 
@@ -899,33 +899,33 @@ To delete the trendline, select the one to be deleted and click the highlighted 
 
 ### Container Appearance
 
-This Section allows you to customize the `Container Appearance` for the spline area chart widget.
+This Section lets you customize the `Container Appearance` for the spline area chart widget.
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/container-appearance.png)
 
 **Title Alignment**
 
-This allows you to handle the alignment of the widget title to either **left, center,** or **right**.
+This lets you handle the alignment of the widget title to either **left, center,** or **right**.
 
 **Title Color**
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 **Title Auto Font Size**
 
-This allows you to toggle the size of the font for the widget title.
+This lets you toggle the size of the font for the widget title.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 **Subtitle Auto Font Size**
 
-This allows you to toggle the size of the font for the widget subtitle.
+This lets you toggle the size of the font for the widget subtitle.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 **Auto Padding**
 
@@ -933,81 +933,81 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 **Show Border**
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 **Corner Radius**
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 **Show Background Image**
 
-This allows you to set the **background image** for the spline area chart widget.
+This lets you set the **background image** for the spline area chart widget.
 
 **Background Color**
 
-This allows you to set the **background color** to the spline area chart widget.
+This lets you set the **background color** to the spline area chart widget.
 
 **Transparency**
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 **Show Shadow**
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 **Mobile Height Factor**
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 
-This Section allows you to customize the `Container actions` for the spline area chart widget.
+This Section lets you customize the `Container actions` for the spline area chart widget.
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/spline-area-chart/container-actions.png)
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the spline area chart widget. 
+This lets you enable or disable the `widget title` of the spline area chart widget. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the spline area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the spline area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the spline area chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the spline area chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the spline area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the spline area chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the Column chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the Column chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

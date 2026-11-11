@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Concierge Support – Security Configuration | Bold BI Docs
+title: Concierge Support - Security Configuration | Bold BI
 description:  Learn how to enable & manage concierge support in Bold BI, allowing secure access for the support team to validate issues while maintaining control over permissions.
 platform: bold-bi
 documentation: ug
 ---
 
-# Concierge support
+# Concierge Support - Security Configuration
 
 This section explains how to enable concierge support in Bold BI Cloud.
 

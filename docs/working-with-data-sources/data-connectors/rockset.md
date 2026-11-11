@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Rockset – Embedded BI Connector | Bold BI Documentation
-description: Learn how to connect Rockset data source, and create a data source for widget configuration using Bold BI application.
+title: Rockset Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Rockset using SQL Live Query over its REST API, then create a data source for widgets in the Bold BI application for dashboards.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Rockset data source
+# Rockset Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Rockset database through SQL Live Query (REST API).
 
 ## Choose Rockset data source
-To configure the Rockset data source, follow the below steps:
+To configure the Rockset data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

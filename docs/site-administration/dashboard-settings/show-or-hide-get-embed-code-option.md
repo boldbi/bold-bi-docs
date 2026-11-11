@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Show or Hide the Get Embed Code Option | Bold BI Docs
+title: How to Show or Hide the Get Embed Code Option | Bold BI
 description: This page describes how to show or hide the Get Embed Code option across your dashboard listing page and dashboard view page in the Bold BI site.
 documentation: ug
 ---

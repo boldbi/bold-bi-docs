@@ -1,16 +1,16 @@
 ---
 layout: post
-title: SendGrid – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect SendGrid through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: SendGrid Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect SendGrid through its REST API endpoint with Bold BI Cloud and create a data source for widget configuration in the dashboard designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to SendGrid data source
+# SendGrid Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SendGrid web services through the REST API. 
 
 ## Choose SendGrid data source
-To configure the SendGrid data source, follow the below steps:
+To configure the SendGrid data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the SendGrid data source, follow the below steps:
 
 
 ## Create SendGrid data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create SendGrid data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create SendGrid data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid SendGrid REST API endpoint in the URL textbox. Refer to the [SendGrid API documentation](https://sendgrid.com/docs/API_Reference/api_getting_started.html) for more details.
 
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting SendGrid data source?
+### How do I get Account Key for connecting SendGrid data source?
 1. To get your API key, refer [API Key Settings](https://sendgrid.com/docs/ui/account-and-settings/api-keys/)
 
 #### Additional information

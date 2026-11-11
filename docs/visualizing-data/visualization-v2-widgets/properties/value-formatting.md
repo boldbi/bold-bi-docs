@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Value Formatting – Widget Properties | Bold BI Documentation
-description: Learn how to format measure values displayed on Bold BI Modern widgets using number, currency, percentage, and custom format patterns.
+title: Value Formatting in Modern Widgets in Bold BI | Bold BI
+description: Learn how to format measure values displayed on modern Bold BI widgets using number, currency, percentage, and custom formats in charts, grids, and cards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/value-formatting/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Value Formatting
+# Value Formatting in Modern Widgets
 
-Value formatting controls how numeric measure values are displayed in charts, grids, and cards. You can apply standard patterns such as currency symbols, thousands separators, and decimal precision, or build a custom format string for specialized output.
+Value formatting in Bold BI controls how numeric measure values are displayed in charts, grids, and cards. You can apply standard patterns such as currency symbols, thousands separators, and decimal precision, or build a custom format string for specialized output.
 
 Formatting is applied via the **Measure Format** dialog, which you open by clicking the **Format** button in the widget's Properties pane or from the field settings menu in the Assign Data panel.
 

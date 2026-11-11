@@ -1,14 +1,14 @@
 ---
 layout: post
-title: SSO with Azure AD B2C in User Management Server | Bold BI Docs
-description: Learn how to configure the Bold BI application with Azure Active Directory B2C Single Sign-on authentication in User Management Server.
+title: Configure Azure AD B2C SSO in User Management | Bold BI
+description: Learn how to set up Azure Active Directory B2C Single Sign-On (SSO) for the Bold BI application in User Management Server, step by step, with settings.
 platform: bold-bi
 documentation: ug
 ---
 
 # Azure Active Directory B2C
 
-This section explains steps to configure Azure AD B2C Single Sign-On (SSO) in the Bold BI application.
+Follow these steps to configure Azure AD B2C Single Sign-On (SSO) in the Bold BI application.
 Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C tenant in Azure portal](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-tenant-in-azure-portal) is done.
  
 

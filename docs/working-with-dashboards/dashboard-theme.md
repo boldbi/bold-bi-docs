@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Color Themes for Dashboards – Embedded BI | Bold BI Docs
+title: Color Themes for Dashboards - Embedded Analytics | Bold BI
 description: Learn about the built-in color themes available in Bold BI Embedded. Also, know how to create a custom theme and apply to the dashboard.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Dashboard Themes in Bold BI Server
+# Color Themes for Dashboards - Embedded Analytics
 
 The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. Currently, we have provided light and dark themes.
 
-**NOTE:** You can customize themes for the BoldBI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the BoldBI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the BoldBI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
+**NOTE:** You can customize themes for the Bold BI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the Bold BI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the Bold BI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
 
 ## How to switch dashboard themes
 

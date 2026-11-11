@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Salesforce – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Salesforce using Rest API through OAuth-based authentication with Bold BI Cloud.
+title: Salesforce Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Salesforce through the REST API with OAuth-based authentication in Bold BI Cloud, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Salesforce data source
+# Salesforce Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Salesforce web services through the REST API. 
 
 ## Choose Salesforce data source
-To configure the Salesforce data source, follow the below steps:
+To configure the Salesforce data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ To authenticate with the Salesforce web service, follow these steps:
 
 ## Connect to Salesforce
 ### Create Salesforce data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Salesforce data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Salesforce data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid **SOQL Query** in the Query textbox. Refer to the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_sosl_intro.htm) for more details.
 
@@ -51,7 +51,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel will op
 
  ![Salesforce Connection](/static/assets/working-with-datasource/data-connectors/images/Salesforce/salesforce-connection.png)
 
-4. Choose a time interval by using the **Refresh Settings** button to trigger the Rest API request periodically in order to keep the data in sync with our dashboard.
+4. Choose a time interval by using the **Refresh Settings** button to trigger the Rest API request periodically to keep the data in sync with our dashboard.
 
 You can also edit the connection information that is set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

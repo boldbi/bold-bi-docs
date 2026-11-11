@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Custom Vanity Domain in Cloud | Bold BI Documentation
+title: Setting up Custom Vanity Domain in Cloud | Bold BI
 description: Learn how to set up custom vanity domain in Bold BI Cloud. Using custom vanity domain support, you can set your custom vanity URL instead of the predefined URL.
 platform: bold-bi
 documentation: ug

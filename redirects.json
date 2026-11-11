@@ -51302,5 +51302,13 @@
   {
     "fromPath":"/embedding-options/iframe-embedding/embedding-a-widget/",
     "toPath":"/embedding-options/iframe-embedding/embedding-with-iframe/"
+  },
+    {
+    "fromPath":"/multi-tenancy/site-administration/api-reference/interact-with-rest-api/",
+    "toPath":"/multi-tenancy/api-reference/interact-with-rest-api/"
+  },
+  {
+    "fromPath":"/site-administration/api-reference/interact-with-rest-api/",
+    "toPath":"/multi-tenancy/api-reference/interact-with-rest-api/"
   }
 ]

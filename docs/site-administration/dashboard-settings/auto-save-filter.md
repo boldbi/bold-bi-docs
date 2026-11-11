@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Saving Filters in Dashboard – Embedded BI | Bold BI Docs
+title: Auto-Saving Filters in Embedded Analytics | Bold BI
 description: Learn how to enable/disable auto-saving the filters applied at runtime in a dashboard in Bold BI Embedded.
 canonical: "/site-administration/dashboard-settings/auto-save-filter/"
 platform: bold-bi

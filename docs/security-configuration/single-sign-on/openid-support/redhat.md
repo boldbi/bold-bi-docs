@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configure SSO with Red Hat using Open ID Connect | Bold BI Docs
+title: Configure SSO with Red Hat using Open ID Connect | Bold BI
 description: Learn how to configure Bold BI Embedded application with Red Hat identity provider for Single Sign-on authentication (RH-SSO) using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Red Hat support for SSO authentication
+# Configure SSO with Red Hat using Open ID Connect
 
 Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like OpenID Connect, and OAuth 2.0.
 

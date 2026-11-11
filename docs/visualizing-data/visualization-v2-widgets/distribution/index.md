@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Distribution Widgets (Modern) | Bold BI Documentation
-description: Learn when to use Bold BI Modern distribution widgets and explore the chart types available in this category.
+title: Distribution Widgets for Modern Dashboards | Bold BI
+description: Learn when to use Bold BI modern distribution widgets, review the chart types in this category, and understand how they show trends and patterns over time.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Distribution
+# Distribution Widgets for Modern Dashboards
 
 Distribution widgets help users understand trends, movement, spread, and patterns across categories or time. Use these widgets when you need to show how values change, how they are distributed, or how points relate over a continuous axis.
 

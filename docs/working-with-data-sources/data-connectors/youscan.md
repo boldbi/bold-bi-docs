@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connecting YouScan Data with Bold BI | Bold BI Docs
+title: YouScan Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the YouScan data through its REST API endpoint in Dashboard Designer with the Bold BI application.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Connecting Bold BI to YouScan data source
+# YouScan Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer connects to the YouScan web services through the REST API.
 
 ## Choose YouScan data source
@@ -28,7 +28,7 @@ Once you click the YouScan data source, the YouScan data source configuration pa
 3.  Click the Relative Date dropdown box and choose the required relative date range such as Today, Past Week, Past Month, Custom, etc.,
 4.  If the Custom option is selected in the **Relative Date** dropdown, select the **Start** date and **End** date value from the date picker.
 5.  Enter the **API KEY** for the connected account in the textbox.
-6.  By default, the Max size of Youscan pagination size is 10K for all endpoints. However, if you need to increase the pagination size for the **mention** endpoint with a date range, you can utilize the **SinceSeq Filter** checkbox. Using the SinceSeq anchors filter is the most helpful way to retrieve large results in this case. For more details and specific instructions, please refer to the provided documentation [SinceSeq API documentation](https://youscan.docs.apiary.io/#reference/mention-stream/fetching-mentions).
+6.  By default, the Max size of Youscan pagination size is 10K for all endpoints. However, if you need to increase the pagination size for the **mention** endpoint with a date range, you can use the **SinceSeq Filter** checkbox. Using the SinceSeq anchors filter is the most helpful way to retrieve large results in this case. For more details and specific instructions, please refer to the provided documentation [SinceSeq API documentation](https://youscan.docs.apiary.io/#reference/mention-stream/fetching-mentions).
 7.  Click the **Custom Url** to enter the URL manually. For more details you  can refer to the documentation [YouScan API documentation](https://youscan.docs.apiary.io/).
 8.  Choose a time interval for the **Refresh Settings** using the combo box to periodically trigger the Rest API request to keep the data in sync with your dashboard.
 
@@ -36,7 +36,7 @@ Once you click the YouScan data source, the YouScan data source configuration pa
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

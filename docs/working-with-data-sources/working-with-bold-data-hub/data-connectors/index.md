@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ETL/Data Hub Connectors in Bold BI – Bold BI Learning
-description: Learn how to use the ETL/Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
+title: ETL and Bold Data Hub Connectors Overview in Bold BI | Bold BI
+description: Learn how to use the ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Data Hub Connectors
+# ETL and Bold Data Hub Connectors Overview
 
 
-## Data Hub Connectors List
+## Bold Data Hub Connectors List
 
 [Asana](/working-with-data-sources/working-with-bold-data-hub/data-connectors/asana/)<br>
 [Bing Ads](/working-with-data-sources/working-with-bold-data-hub/data-connectors/bing-ads/)<br>

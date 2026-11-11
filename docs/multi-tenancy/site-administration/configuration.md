@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Update the Configuration in Embedded BI Apps | Bold BI Docs
-description: Learn how to make your own configuration changes by following these guidelines to your embedded BI application.
+title: Update Configuration in Embedded Analytics Apps | Bold BI
+description: Learn how to change the configuration files of your Bold BI Embedded application, following the guidelines in this guide for each setting you change.
 platform: bold-bi
 documentation: ug
 ---
 
 # Configuration
  
-This guide explains how to modify the configuration files in Bold BI Embedded.
+Change the configuration files in Bold BI Embedded by following these guidelines.
  
-> **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment, but not in Cloud Edition.
  
 ## Steps to change the configuration
  

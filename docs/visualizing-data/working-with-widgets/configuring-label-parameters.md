@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Label Parameters – Embedded BI | Bold BI Docs
+title: Configuring Label Parameters - Embedded Analytics | Bold BI
 description: Learn how to configure label parameters in label widget and name property in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/configuring-label-parameters/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Configuring Label Parameters
+# Configuring Label Parameters - Embedded Analytics
 
 You can configure the label parameters by using the field name in the `Name` of the widget. Use the following format to configure the label parameter:
 

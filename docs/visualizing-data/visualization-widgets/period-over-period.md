@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Period Over Period Widget – Embedded BI | Bold BI Learning
+title: Period Over Period Widget - Embedded Analytics | Bold BI
 description: Learn how to create a Period over Period visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/period-over-period/"
 platform: bold-bi
@@ -8,7 +8,7 @@ control: Period Over Period
 documentation: ug
 ---
 
-# Period Over Period(PoP)
+# Period Over Period Widget - Embedded Analytics
 
 Period over Period support is used to compare measure values for one period of time against the results from a previous or subsequent period of time. The PoP widget is used to choose two different time periods at a time.
 
@@ -258,19 +258,19 @@ You can format the Period Over Period for better illustration of the view that y
 
 #### Name 
 
-This option allows you to change the title for the Period Over Period widget.
+This option lets you change the title for the Period Over Period widget.
 
 ![period over period name](/static/assets/visualizing-data/visualization-widgets/images/pop/Name.png)
 
 #### Subtitle
 
-This option allows you to change the subtitle for the Period Over Period widget.
+This option lets you change the subtitle for the Period Over Period widget.
 
 ![period over period name](/static/assets/visualizing-data/visualization-widgets/images/pop/subtitle.png)
 
 #### Description
 
-This option allows you to change the description about the Period Over Period widget.
+This option lets you change the description about the Period Over Period widget.
 
 ![period over period name](/static/assets/visualizing-data/visualization-widgets/images/pop/Description.png)
 
@@ -280,7 +280,7 @@ This option allows you to change the description about the Period Over Period wi
 
 ### Act as Master Widget 
 
-This allows you to define this PoP as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this PoP as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Container Appearance
 
@@ -288,11 +288,11 @@ This allows you to define this PoP as a master widget such that its filter actio
 
 #### Title Alignment
 
-This option allows you to handle the alignment of widget title to either `left, center, or right`.
+This option lets you handle the alignment of widget title to either `left, center, or right`.
 
 #### Title Color
 
-This option allows you to apply the text `color` to the widget title.
+This option lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -300,7 +300,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This option allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This option lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -308,31 +308,31 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This option allows you to apply the specified size of the font to the widget subtitle if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This option lets you apply the specified size of the font to the widget subtitle if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 #### Show Border
 
-This option allows you to toggle the visibility of the `border` surrounding the widget.
+This option lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This option lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 #### Background Color
 
-This option allows you to set the **background color** to the Period over Period widget.
+This option lets you set the **background color** to the Period over Period widget.
 
 #### Transparency
 
-This option allows you to specify the **transparency** for the `background color.`
+This option lets you specify the **transparency** for the `background color.`
 
 #### Show Shadow
 
-This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+This option lets you toggle the visibility of the `shadow` surrounding the widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -342,8 +342,8 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This option allows you to enable or disable the `widget title` of the Period over Period widget. 
+This option lets you enable or disable the `widget title` of the Period over Period widget. 
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

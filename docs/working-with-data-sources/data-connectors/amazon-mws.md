@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Amazon MWS - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Amazon MWS web service through REST API endpoint with cloud-hosted Bold BI and create data source.
+title: Amazon MWS Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect the Amazon MWS web service through its REST API endpoint with cloud-hosted Bold BI and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to the Amazon MWS Database
+# Amazon MWS Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Amazon MWS web services using the REST API.
 
 ## Choose Amazon MWS data source
@@ -53,11 +53,11 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 ![string to sign details](/static/assets/working-with-datasource/data-connectors/images/AmazonMWS/stringtosign.png)
 
-5. The constructed URL can be utilized in the Bold BI Amazon MWS connector's custom URL text box.
+5. The constructed URL can be used in the Bold BI Amazon MWS connector's custom URL text box.
 
 ![constructed url details](/static/assets/working-with-datasource/data-connectors/images/AmazonMWS/constructedurl.png)
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Embed Dashboard in an iframe | Bold BI Documentation
+title: Embed a Dashboard in an iframe using Bold BI | Bold BI
 description: Learn how to embed a dashboard in various modes using iFrame with private/public accessibility, advance security, filter parameters, and more.
 platform: bold-bi
 documentation: ug
 ---
-# Embedding with iframe
+# Embed a Dashboard in an iframe using Bold BI
 
 ## Embed the dashboard in an iframe
 

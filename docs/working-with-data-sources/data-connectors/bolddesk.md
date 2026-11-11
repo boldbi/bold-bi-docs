@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to connect BoldDesk Service in Cloud BI | Bold BI Docs
+title: BoldDesk Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect BoldDesk service using basic http authentication through REST API endpoint with Bold BI Cloud and create powerful dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to BoldDesk data source
+# BoldDesk Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to BoldDesk web services through REST API.
 
 ## Choose BoldDesk data source
-To configure the BoldDesk data source, follow the below steps:
+To configure the BoldDesk data source, follow the following steps:
 1. Click on the **Data Sources** option in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the BoldDesk data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/BoldDesk/ChooseDS_server.png)
 
 ## Create BoldDesk data source
-Once you click the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the below steps to create BoldDesk data source.
+Once you click the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the following steps to create BoldDesk data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter the **HostName** for the connected account.
 3. Enter your **x-api-key** in the **API Key** text box for the connected account. Refer to [BoldDesk Document-Authentication](https://developer.bolddesk.com/api#section/Getting-Started/Authentication) for more details.

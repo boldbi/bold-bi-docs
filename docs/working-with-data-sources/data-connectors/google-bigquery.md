@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Google BigQuery – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Google BigQuery cloud data warehouse and read its data into the dashboard in Bold BI Cloud.
+title: Google BigQuery Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect the Google BigQuery cloud data warehouse, read its data into a dashboard, and configure the intermediate database in Bold BI Cloud.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google BigQuery data source
+# Google BigQuery Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google BigQuery server using the Live mode.
 
 ## Authentication Types:
@@ -107,7 +107,7 @@ Enter the app's name and user's email address, as shown in the following image.
 
 ![Set Application Name](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppName.png)
 
-Please enter the app domain information in order to register the application with Bold BI as follows.
+Please enter the app domain information to register the application with Bold BI as follows.
 
 ![Set Domain Information](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppDomain.png)
 
@@ -136,7 +136,7 @@ After creating the credentials, open the corresponding credentials and add your 
 
 **3. Go to Bold BI application and navigate to data connectors settings page**
 
-If the intermediate DB is not configured, you will receive an error as shown below.
+If the intermediate DB is not configured, you will receive an error as follows.
 
    ![IntermediateDB Set Error](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/IntermediateDB_SetError.png)
  

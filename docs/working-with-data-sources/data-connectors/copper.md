@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Copper – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Copper web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Copper Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Copper web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Copper data source
+# Copper Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Copper web services through the REST API. 
 
 ## Choose Copper data source
-To configure the Copper data source, follow the below steps:
+To configure the Copper data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Copper data source, follow the below steps:
 
 
 ## Create Copper data source
-Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Copper data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Copper data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Copper REST API endpoint in the URL textbox. Refer to the [Copper API documentation](https://developer.copper.com/?version=latest) for more details.
 
@@ -46,7 +46,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Copper data source?
+### How do I get API Key for connecting Copper data source?
 1. Login to [Copper](https://www.copper.com/) account. Go to *Settings -> API Keys*.
 2. Use this *API key* as value for **X-PW-AccessToken** in Copper data source in Bold BI Dashboard.
 

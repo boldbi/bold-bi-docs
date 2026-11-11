@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Column Chart (Modern) | Bold BI Documentation
+title: Stacked Column Chart for Modern Dashboards | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Stacked Column Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/stacked-column-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Stacked Column Chart
 documentation: ug
 ---
 
-# Stacked Column Chart
+# Stacked Column Chart for Modern Dashboards
 
-A Stacked Column Chart uses vertical columns divided into series segments. It compares category totals and the contribution of each series to those totals.
+The Stacked Column Chart widget in Bold BI uses vertical columns divided into series segments. It compares category totals and the contribution of each series to those totals.
 
 ![Stacked Column Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/stacked-column-chart/stackedcolumnchart.png)
 

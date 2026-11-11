@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Import Groups from OpenID Connect – Embedded BI | Bold BI
+title: Import Groups from OpenID Connect in Bold BI | Bold BI
 description: Learn how to import single group or bulk groups from OpenID provider and update the authentication settings of OpenID Connect in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Import Group for OpenID Connect
+# Import Groups from OpenID Connect
 
 This section explains how to import a single group or bulk groups from an OpenID provider and update the authentication settings of OpenID Connect in Bold BI.
 

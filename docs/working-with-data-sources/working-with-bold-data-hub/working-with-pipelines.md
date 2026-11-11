@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Working with Pipeline – Embedded BI | Bold BI Learning
+title: Working with Pipelines in Bold Data Hub in Bold BI | Bold BI
 description: Learn how to Working with Pipeline in ETL application in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Working with Pipeline:
+# Working with Pipelines in Bold Data Hub
 
-This section provides detailed instructions on the process of creating a new Pipeline and importing data into the designated connector. Prior to this, it is essential to properly configure the [Data Store](/working-with-data-sources/working-with-bold-data-hub/data-store/) in order to proceed with the subsequent steps.
+This section provides detailed instructions on the process of creating a new Pipeline and importing data into the designated connector. Prior to this, it is essential to properly configure the [Data Store](/working-with-data-sources/working-with-bold-data-hub/data-store/) to proceed with the subsequent steps.
 
 ## Steps for Creating New Pipeline:
 
@@ -93,8 +93,8 @@ Please refer to the current operational status by accessing the information disp
 **isDropTable**  
 **Description:**  
 Controls whether existing tables in the destination are dropped and recreated during pipeline execution.
-- true (Default) — If the table exists, it is dropped and recreated before loading fresh data. 
-- false — Tables are created only if they don't exist, and data is inserted/appended without dropping.
+- true (Default), If the table exists, it is dropped and recreated before loading fresh data. 
+- false, Tables are created only if they don't exist, and data is inserted/appended without dropping.
 
 **When/Why to Use:**
 - Set to true for full refreshes, where historical data is not needed and a clean schema is desired.
@@ -111,11 +111,11 @@ Controls whether existing tables in the destination are dropped and recreated du
 **direct_load_to_destination**  
 **Description:**  
 Determines the data flow path: whether data should be moved from a staging layer (DuckDB) to the target datastore or remain in staging.
-- true (default) — data is first loaded into DuckDB (staging) for transformation and then moved to the target datastore.
-- false — data is loaded into DuckDB for transformation but is not moved to the target datastore, only transformed data can be moved later to target datastore (via the transform option in DataHub).
+- true (default), data is first loaded into DuckDB (staging) for transformation and then moved to the target datastore.
+- false, data is loaded into DuckDB for transformation but is not moved to the target datastore, only transformed data can be moved later to target datastore (via the transform option in DataHub).
 
 **When/Why to Use:**
-- Set to true when you want the full data flow — from source → staging (DuckDB) → destination.
+- Set to true when you want the full data flow, from source → staging (DuckDB) → destination.
 - Set to false when you want to keep only the transformed data in staging (DuckDB) and avoid automatic movement to the destination.
 
 **Note:**
@@ -126,8 +126,8 @@ Applied across all supported datastores.
 **direct_target_import**  
 **Description:**  
 Determines whether data should be moved directly to the target datastore or processed first through a staging layer before being exported (DuckDB → Parquet → destination).
-- false (default) — data is first loaded into DuckDB (staging) and then exported as Parquet files and moved to the destination using bulkupload .
-- true — data is sent directly to the destination datastore without using the staging layer.
+- false (default), data is first loaded into DuckDB (staging) and then exported as Parquet files and moved to the destination using bulkupload .
+- true, data is sent directly to the destination datastore without using the staging layer.
 
 **When/Why to Use:**
 - Prefer false (staging + Parquet) for large datasets, because exporting optimized Parquet files from DuckDB and bulk-loading them can be faster.
@@ -143,8 +143,8 @@ Determines whether data should be moved directly to the target datastore or proc
 **set_not_null_as_primary_key**  
 **Description:**  
 Determines whether columns that contain no null values in DuckDB should be automatically treated as primary keys in the destination when no explicit primary key is defined.
-- true — After data is loaded to DuckDB, each column is scanned; columns with no nulls are treated as primary keys.
-- false — No automatic inference from data; primary keys must be provided explicitly.
+- true, After data is loaded to DuckDB, each column is scanned; columns with no nulls are treated as primary keys.
+- false, No automatic inference from data; primary keys must be provided explicitly.
 If a column contains no nulls (even if it's not explicitly defined as NOT NULL in the schema), it is automatically promoted as a primary key candidate in the destination.
 
 **When/Why to Use:**</br>
@@ -153,7 +153,7 @@ Use this when importing from sources that often lack explicit primary keys (CSV,
 **Behavior & Caution:**
 - The process inspects actual data (not only schema metadata) to find columns with no nulls.
 - Columns with internal DLT metadata (e.g., _dlt_id, _dlt_parent_id) are excluded from inference.
-- Caution: A column that contains no nulls may still be non-unique — promoting such a column to a primary key can cause correctness or constraint errors in the destination.
+- Caution: A column that contains no nulls may still be non-unique, promoting such a column to a primary key can cause correctness or constraint errors in the destination.
 
 **Note:**
 | Supported Datastores | Not Supported Datastores  |
@@ -168,7 +168,7 @@ Use this when importing from sources that often lack explicit primary keys (CSV,
 | Snowflake             |                          |
 
 ## Configuring Primary Keys for Connectors
-The primary_keys property in the extractor's properties section allows you to define custom primary keys for the tables being extracted. This property specifies which column(s) should be used as primary key(s) in the destination table.
+The primary_keys property in the extractor's properties section lets you define custom primary keys for the tables being extracted. This property specifies which column(s) should be used as primary key(s) in the destination table.
 
 **Syntax:**
 ```yaml

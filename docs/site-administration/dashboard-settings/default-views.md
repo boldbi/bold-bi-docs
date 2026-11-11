@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handling Default Views – Embedded BI | Bold BI Documentation
+title: Handling Default Views - Embedded Analytics | Bold BI
 description: Learn how to handle default views at administrator level in Bold BI Embedded to let users choose a view as default view.
 canonical: "/site-administration/dashboard-settings/default-views/"
 platform: bold-bi

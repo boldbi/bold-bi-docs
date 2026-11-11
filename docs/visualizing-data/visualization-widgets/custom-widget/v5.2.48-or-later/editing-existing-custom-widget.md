@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to edit & update the existing custom widgets | Bold BI Docs
+title: How to edit & update the existing custom widgets | Bold BI
 description: Find the steps to edit the existing custom widgets and update them thorough the widget settings page by using the edit icon in the dashboard or APIs available.
 platform: bold-bi
 control: Custom Widget
 documentation: ug
 ---
 
-# Editing the existing custom widget 
+# How to edit & update the existing custom widgets
 
  To edit or modify the existing custom widget, follow these steps:
 

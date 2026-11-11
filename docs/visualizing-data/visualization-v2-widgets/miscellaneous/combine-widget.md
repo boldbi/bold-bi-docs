@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Combined Panel Widget (Modern) | Bold BI Documentation
-description: Learn how to configure layout, linked widgets, and display settings for the modern Combined Widget in Bold BI dashboards.
+title: Combined Panel Widget for Modern Dashboards | Bold BI
+description: Learn how to configure layout, linked widgets, and display settings for the modern Combined Panel widget in Bold BI to group several widgets together.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/combine-widget/"
 platform: bold-bi
 control: Combine Widget
 documentation: ug
 ---
 
-# Combined Widget
+# Combined Panel Widget for Modern Dashboards
 
-The Combined Widget groups multiple dashboard widgets into one container that can be moved and resized. Use it to preserve a related layout or build a layered composition.
+The Combined Widget in Bold BI groups multiple dashboard widgets into one container that can be moved and resized. Use it to preserve a related layout or build a layered composition.
 
 ![Combined Widget](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets.png)
 

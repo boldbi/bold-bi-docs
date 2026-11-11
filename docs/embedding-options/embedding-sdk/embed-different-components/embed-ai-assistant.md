@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI AI Assistant - SDK Embedding | Bold BI Docs
+title: Bold BI AI Assistant - SDK Embedding in Bold BI | Bold BI
 description: Learn how to seamlessly embed the Bold BI AI Assistant into your business application using the SDK to enhance data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 
 ---
-# Embed a AI Assistant using an Embed Token
+# Bold BI AI Assistant - SDK Embedding in Bold BI
 
 The AI Assistant is a securely embeddable, conversational interface that lets users ask natural-language questions inside your application and receive context-aware insights, with persistent chat history and full adherence to user permissions.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI dashboard - JavaScripts Embedding | Bold BI Docs
+title: Bold BI dashboard - JavaScript Embedding | Bold BI
 description: Learn to embed Bold BI dashboards seamlessly in your business application using SDK, enhancing data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 
 ---
-# Embed Token Authentication for the dashboard viewer
+# Bold BI dashboard - JavaScript Embedding
 
 This section outlines the use case for embedding Bold BI dashboards using `embedToken` authentication.
 
@@ -17,7 +17,7 @@ This section outlines the use case for embedding Bold BI dashboards using `embed
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
     </head>
     <body>
         <div id="dashboard_container"></div>
@@ -82,7 +82,7 @@ To securely embed a Bold BI dashboard, you must first generate an embedToken. Th
 
     ```
 
- 3. **Build the Request Payload**: The payload includes the query string and the API URL of the Bold BI server.
+ 3. **Build the Request Payload**: The payload includes the query string and the API URL of the Bold BI Server.
 
     ```js       
         function buildRequestPayload(queryString) {

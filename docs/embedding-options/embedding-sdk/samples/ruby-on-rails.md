@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with Ruby on Rails | Bold BI Docs
+title: Embedding Analytics with Ruby on Rails in Bold BI | Bold BI
 description: Learn how to embed an analytics dashboard with Ruby on Rails application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Ruby on Rails using Embed SDK
+# Embedding Analytics with Ruby on Rails in Bold BI
 
-A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. The link is followed by steps to create a new embedding application in `Ruby on Rails ` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI Server. The link is followed by steps to create a new embedding application in `Ruby on Rails ` on your own.  
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) Started section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
@@ -100,7 +100,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">

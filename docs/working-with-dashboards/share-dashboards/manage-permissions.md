@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Dashboards Permissions in Embedded BI | Bold BI Docs
+title: Managing Dashboard Permissions in Bold BI | Bold BI
 description: Learn how to manage the permissions for dashboards assigned to the users and groups with needed scope to the corresponding entities in Bold BI Embedded.
 canonical: "/managing-resources/manage-permissions/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Permissions
+# Managing Dashboard Permissions in Bold BI
 
 You can grant dashboard access to users or groups with Read, Read and Write, or Read, Write, and Delete permissions. You can also revoke this access using the share permission dialog on the dashboard listing page.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Recommended Azure VM Configuration | Bold BI Embedded Docs
-description: Learn the recommended Azure VM configuration to install the Bold BI server in test, development and production environments for embedded use.
+title: Recommended Azure VM Configuration in Bold BI | Bold BI
+description: Learn the recommended Azure VM configuration to install the Bold BI Server in test, development and production environments for embedded use.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended VM configuration to use Bold BI server on Microsoft Azure
+# Recommended Azure VM Configuration in Bold BI
 
-This section outlines the recommended VM configuration for the installation of the Bold BI server on Microsoft Azure. Selecting the correct VM configuration is crucial to experiencing optimal performance with Bold BI. For a comprehensive list of all VM types and sizes, please refer to this link: [Windows Virtual Machine Types](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
+This section outlines the recommended VM configuration for the installation of the Bold BI Server on Microsoft Azure. Selecting the correct VM configuration is crucial to experiencing optimal performance with Bold BI. For a comprehensive list of all VM types and sizes, please refer to this link: [Windows Virtual Machine Types](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
 
 ## VM types for test, development and production environments
 
@@ -43,7 +43,7 @@ Virtual Machines of the General Purpose type are ideally suited for test and dev
  </tr>
  <tr>
  <td> Storage </td>
- <td> 100 GB or larger volume for Bold BI server storage </td>
+ <td> 100 GB or larger volume for Bold BI Server storage </td>
  </tr>
  </table>
 
@@ -80,6 +80,6 @@ Optimized type VM is suitable for high traffic and large data processing product
  </tr>
  <tr>
  <td> Storage </td>
- <td> 100 GB or larger volume for Bold BI server storage </td>
+ <td> 100 GB or larger volume for Bold BI Server storage </td>
  </tr>
  </table>

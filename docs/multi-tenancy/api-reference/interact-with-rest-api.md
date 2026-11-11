@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with API – Site Administration | Bold BI Documentation
-description: Work with Site Administration REST APIs through the interactive API documentation. Just get the access token to authenticate the API endpoint and get the response.
+title: Work with REST APIs in Site Administration | Bold BI
+description: Call Site Administration REST APIs from the interactive API documentation. Get an access token to authenticate each endpoint and read the response.
 canonical: "/multi-tenancy/site-administration/api-reference/interact-with-rest-api/"
 platform: bold-bi
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Interact with Our REST API
 
-This section explains how to use our interactive API documentation.
+Use the interactive API documentation to call the Bold BI Site Administration REST APIs with an access token.
 
-You need to obtain an access token to authenticate the API endpoints in order to receive responses.
+You need to obtain an access token to authenticate the API endpoints to receive responses.
 
 ## Get Access Token
 Each client has its own unique token to authenticate requests, which should be added to the header of the request.
@@ -23,7 +23,7 @@ To obtain the `Client Token`, follow these steps:
      * [v2.0](https://help.boldbi.com/site-administration/api-reference/v2.0/try-it-now/)
 2. Expand `Authentication` and click `Try it out`.
 ![Authentication](/static/assets/rest-api-reference/images/site-administration/authentication.png)
-3. We have already hosted our application for public demonstration at [this](https://onpremise-demo.boldbi.com/) domain. To access the public demo, you will need to obtain the access token using the following sample credentials.
+3. A public demonstration of the application is hosted at [onpremise-demo.boldbi.com](https://onpremise-demo.boldbi.com/). To access the public demo, you will need to obtain the access token using the following sample credentials.
 
      **client_id** - `92773343-b3d8-4fb6-adcb-31568bfdd259`
 

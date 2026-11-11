@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Publishing Data Sources Across Multiple Tenants | Bold BI Docs
+title: Publishing Data Sources Across Multiple Tenants | Bold BI
 description: Learn how to publish data sources online across multiple Bold BI tenants, deployed on your servers, either on the same machine or on different instances.
 platform: bold-bi
 documentation: ug
 ---
 
-# Migrate Data Sources Online
+# Publishing Data Sources Across Multiple Tenants
 
 Migrating a data source online refers to the process of publishing a data source in the Bold BI application to multiple tenants, either on the same server or on different instances. By doing so, you can easily share data sources across multiple sites.
 
@@ -24,7 +24,7 @@ To migrate a data source online, follow these steps:
 
 ## Internal site
 
-You can publish the data source to the sites created in the same Bold BI server.
+You can publish the data source to the sites created in the same Bold BI Server.
 
 1. Choose the site from the drop-down menu where you want to publish the data source.
 
@@ -60,7 +60,7 @@ You can publish the data source to the sites created in the same Bold BI server.
 
 ## External site
 
-You can publish the data source to sites created on other Bold BI servers.
+You can publish the data source to sites created on other Bold BI Servers.
 
 1. Click `+` button to **add external site**.
 
@@ -99,6 +99,8 @@ You can view the status of the published data sources on the **Published Resourc
 When you make changes in an original data source, you can move those changes to the published site using the synchronize published resource option.
 
 ![Publish Synchronize](/static/assets/resource-migration/migrate-data-sources-online/images/publish-synchronize.png)
+
+> **Note:** Extract Mode data sources are automatically refreshed in the destination site, ensuring that migrated dashboards and data sources are up to date and ready for use.
 
 ### Information of published data source
 

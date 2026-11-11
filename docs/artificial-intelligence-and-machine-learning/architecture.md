@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Architecture of AI Assistant | Bold BI Documentation
+title: Architecture of the AI Assistant in Bold BI | Bold BI
 description: Explore the architecture of the AI Assistant and learn how it transforms user queries into visualizations using natural language processing. 
 canonical: "/artificial-intelligence-and-machine-learning/architecture/"
 platform: bold-bi
@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 
-# Bold BI AI Architecture Overview
+# Architecture of the AI Assistant in Bold BI
 
 Bold BI incorporates a natural language processing (NLP) interface that enables users to interact with business intelligence data using plain english queries. This capability supports the generation of visualizations, textual summaries, business insights, and contextual responses directly within the platform.
 
-The AI functionality in Bold BI is described through two complementary architectural perspectives:
+The AI functionality in Bold BI is described through three complementary architectural perspectives:
 
 1. **Bold BI NLP Architecture** 
 
@@ -21,6 +21,9 @@ The AI functionality in Bold BI is described through two complementary architect
 2. **Bold BI AI Service Architecture** 
 
  - Describes the dedicated, AI service layer responsible for secure intent detection, governance, LLM orchestration, reasoning, guardrails, and structured output generation. This service powers the natural language capabilities across the Bold BI platform.
+
+3. **Bold BI AI Assistant v3 Architecture**
+ - Describes how the AI Assistant manages user sessions, retrieves datasource and dashboard context through MCP tools, integrates with multiple AI providers, processes user intent, orchestrates specialized workflows, and generates visualizations, insights, summaries, recommendations, and conversational responses.
 
 ## Bold BI NLP Architecture
 
@@ -72,7 +75,7 @@ This document outlines the process flow for using the AI feature within Bold BI 
 
 ## Bold BI AI Service Architecture
 
-This document describes Bold BI's secure, governed AI Service architecture—an intelligent backend that processes natural language queries through semantic understanding, enforces strict access controls, leverages advanced LLM reasoning, orchestrates Agentic workflows, and executes entirely within the Bold BI platform.
+This document describes Bold BI's secure, governed AI Service architecture, an intelligent backend that processes natural language queries through semantic understanding, enforces strict access controls, leverages advanced LLM reasoning, orchestrates Agentic workflows, and executes entirely within the Bold BI platform.
 
 ![AI-Assistant-Architecture](/static/assets/artificial-intelligence-and-machine-learning/images/architecture/AiServiceArchitecture.png)
 
@@ -114,3 +117,71 @@ This document describes Bold BI's secure, governed AI Service architecture—an 
 
 - Handles the actual processing of queries through BOLD BI Tools. 
 - This includes executing SQL only within the secure Bold BI environment, rendering charts via the Visualization Engine, and applying RBAC + RLS on every request to maintain data integrity and security.
+
+## Bold BI AI Assistant v3 Service Architecture
+
+This section describes Bold BI AI v3, an advanced service architecture that improves upon the previous version by streamlining user interactions, supporting multiple AI providers, and enabling flexible deployment options.
+
+![AI-Assistant-Architecture](/static/assets/artificial-intelligence-and-machine-learning/images/architecture/aiassistant-architecture.png)
+
+**1. User Interface & Session Handling**
+
+- The AI Assistant UI sends user messages and session IDs to the Bold BI service.
+- The server retrieves the session information from cache, which includes user credentials, the selected AI provider, and previous context about datasources and dashboards.
+
+**2. Request Processing**
+
+- The Bold BI platform receives the user query and initializes the orchestration service to process the request.
+- The service manages real-time communication with the user interface, providing streaming responses as they are generated.
+
+**3. AI Provider Selection**
+
+- Bold BI v3 supports multiple AI providers through a unified connector system:
+  - **OpenAI** - Direct integration with OpenAI's models
+  - **Azure OpenAI** - For enterprise deployments on Azure
+  - **Anthropic Claude** - Alternative AI models
+  - **Bold BI AI Service** – Azure-hosted service gateway for cloud or on-premises deployments.
+
+**4. Session & Context Management**
+
+- The system retrieves and caches important information including:
+  - User session data and credentials
+  - Connected datasource metadata (table names, columns, data types)
+  - Dashboard widget information
+  - User permissions and security settings
+
+**5. Data Discovery & Context**
+
+- The AI Assistant uses MCP tools to discover and retrieve:
+  - Available datasource schemas and metadata
+  - Dashboard widget structures and data
+  - Query execution capabilities
+  - Business context and relationships
+
+**6. Query Processing & Intent Recognition**
+
+- The system analyzes the user's query to determine the intent (create a visualization, provide text analysis, summarize a dashboard, or provide recommendations).
+- Based on the identified intent, the appropriate workflow is selected.
+
+**7. Workflow Execution**
+
+- Depending on the query intent, the system executes specialized workflows:
+  - **Visual Creation** - Generates charts, widgets, and KPIs from user queries
+  - **Text Response** - Provides textual analysis, aggregations, and comparisons
+  - **Dashboard Summary** - Creates summaries that highlight key insights from dashboards
+  - **Recommendations** - Suggests follow-up questions and next steps for analysis
+
+**14. Specialized Workflow Services**
+
+Each workflow invoked by the Unified Agent Orchestrator delegates to a dedicated service:
+
+- **Visual Creation Workflow Service** — processes visual creation requests and emits a **Visual result event** back to the UI.
+- **Textual Response Agent Service** — the system generates SQL queries based on the user's intent and the datasource schema. Queries are validated to ensure security and accuracy. The data is fetched from the connected datasources
+- **Dashboard Summary Agent Service** — processes dashboard summarization requests and emits a **Dashboard summary event**.
+- **Run Post Analyzer Workflow** — evaluates whether a datasource or dashboard selection is needed and emits **Recommendation / no-action events** directly, without a dedicated downstream service.
+
+**9. Security & Access Control**
+
+- All queries execute within the secure Bold BI environment.
+- Row-level security (RLS) and role-based access control (RBAC) are enforced on every request.
+- User permissions are applied to ensure data confidentiality and compliance.

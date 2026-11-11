@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linking Dashboards and URLs – Embedded BI | Bold BI Learning
+title: Linking Dashboards and URLs - Embedded Analytics | Bold BI
 description: Learn how to link dashboard and URL to a widget and show it as drill-down report in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/linking-urls-and-dashboards/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Linking URLs in dashboards
+# Linking Dashboards and URLs - Embedded Analytics
 
 URL linking allows you to link the dashboard with valid web URLs. 
 

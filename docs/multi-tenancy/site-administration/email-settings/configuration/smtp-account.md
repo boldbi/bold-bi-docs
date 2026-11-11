@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use the SMTP Email Service Configuration – UMS | Bold BI Doc
+title: Use the SMTP Email Service Configuration - UMS | Bold BI
 description: Learn how to use the SMTP mail service in the User Management for email notifications on account activation, password reset, and forgotten passwords
 platform: bold-bi
 documentation: ug
@@ -8,9 +8,9 @@ documentation: ug
 
 # SMTP Account in User Management Server
 
-This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the User Management Server to send emails.
+Configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in Bold BI User Management Server to send emails.
 
-**The User Management Server requires the following SMTP details in order to send emails.**
+**The User Management Server requires the following SMTP details to send emails.**
 
 <table>
 <tr>

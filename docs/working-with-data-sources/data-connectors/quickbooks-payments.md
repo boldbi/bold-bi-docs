@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  QuickBooks Payments – Cloud BI Connector | Bold BI Docs
-description: Learn how to connect QuickBooks Payments using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: QuickBooks Payments Data Connector Guide | Bold BI
+description: Learn how to connect QuickBooks Payments with Bold BI Cloud through OAuth-based authentication and the REST API, then create a data source for dashboards.
 documentation: ug
 ---
 
-# Connecting Bold BI to the QuickBooks Payments data source
+# QuickBooks Payments Data Connector Guide
 The Bold BI dashboard designer supports connecting to QuickBooks Payments web services through the REST API. 
 
 ## Choose QuickBooks Payments data source

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: EDI – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect EDI file with cloud-hosted Bold BI and create data source for dashboard preparation.
+title: EDI Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect an EDI file with cloud-hosted Bold BI and create a data source for dashboard preparation, including the file size limit for data preview.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to EDI data source
+# EDI Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to EDI files.
 
 ## Choose an EDI data source
@@ -35,7 +35,7 @@ After clicking on the data source, the **NEW DATA SOURCE** configuration panel w
 
    ![EDI Connection](/static/assets/working-with-datasource/data-connectors/images/Edi/Edi_Connection.png)
 
-> **NOTE:** Please note that you can preview data with a file size of 200 megabytes or less. You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+> **NOTE:** You can preview data with a file size of 200 megabytes or less. You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 ### Preview and data import
 1. Click on **Preview and Connect** to connect with the configurations set.

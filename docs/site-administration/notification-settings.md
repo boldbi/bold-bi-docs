@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Notification Settings in Embedded BI | Bold BI Docs
+title: Notification Settings in Embedded Analytics | Bold BI
 description: Learn how to configure and manage notification settings to notify the users of the various activities, such as data alerts, comments, etc., in Bold BI.
 canonical: "/site-administration/notification-settings/"
 platform: bold-bi

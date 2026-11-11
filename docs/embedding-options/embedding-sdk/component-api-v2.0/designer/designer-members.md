@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Reference Designer Members - JavaScript Embedding | Bold BI
+title: API Reference for Designer Members in JavaScript | Bold BI
 description: Explore the Designer JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
 
-# Members
+# API Reference for Designer Members in JavaScript
 <h2 class="doc-prop-wrapper" id="dashboardid" data-Path="dashboardid-dashboardId">
 <a href="#dashboardid" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -341,7 +341,7 @@ dashboard.loadDesigner();
 
 </h3>
     
-Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance. Refer to the [authorization server documentation](/security-configuration/authorize-server/) for details.
+Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI Server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI Server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance. Refer to the [authorization server documentation](/security-configuration/authorize-server/) for details.
 
 
 - **Required**: Yes (If [token](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#token) or [embedToken](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#embedtoken) APIs are not used)
@@ -516,7 +516,7 @@ dashboard.loadDesigner();
 
 ## aiAssistant
 
-> **Note:** Please use the SDK and Bold BI server from the same version. Starting from version 13.1, the AI Assistant settings are restructured.
+> **Note:** Please use the SDK and Bold BI Server from the same version. Starting from version 13.1, the AI Assistant settings are restructured.
 
 <h2 class="doc-prop-wrapper" id="enabled" data-Path="aiassistant-enabled">
   <a href="#enabled" aria-hidden="true" class="anchor">
@@ -533,7 +533,7 @@ dashboard.loadDesigner();
 Enables the AI Assistant for generating and modifying widgets using natural language queries. The AI Assistant enhances widget creation and customization by leveraging advanced AI models, making data visualization more intuitive and accessible. This feature is available in both Cloud and Enterprise editions for Dashboard Viewer, and Dashboard Designer embeddings.
 
 - **Default**: `false`
-- **Note**: Ensure the SDK and Bold BI server versions match. Refer to [here](/artificial-intelligence-and-machine-learning/activate-ai-feature/) for more details.
+- **Note**: Ensure the SDK and Bold BI Server versions match. Refer to [here](/artificial-intelligence-and-machine-learning/activate-ai-feature/) for more details.
 
 **Example**
 ```javascript

@@ -139,11 +139,18 @@ exports.createPages = ({ graphql, actions }) => {
                 })
 
                  // Ensure a root page exists at '/' — render with our src/index.js component
+                let homeLastUpdated = null;
+                try {
+                    homeLastUpdated = execSync('git log -1 --format=%cI -- src/index.js').toString().trim();
+                } catch (e) {
+                    console.log("Git error:", e);
+                }
+
                 try {
                     createPage({
                         path: '/',
                         component: path.resolve('./src/index.js'),
-                        context: { slug: '/' }
+                        context: { slug: '/', lastUpdated: homeLastUpdated }
                     });
                 } catch (e) {
                     console.warn('createPage for root failed', e);

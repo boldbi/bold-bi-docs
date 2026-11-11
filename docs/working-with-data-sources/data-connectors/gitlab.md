@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Gitlab – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Gitlab data through REST API endpoint with Bold BI Cloud and create data source.
+title: GitLab Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect GitLab data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to GitLab data source
+# GitLab Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to GitLab web services through the REST API. 
 
 ## Choose GitLab data source
@@ -43,7 +43,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set here by using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Access Token for connecting GitLab data source?
+### How do I get Access Token for connecting GitLab data source?
 1. Log in to your [GitLab](https://gitlab.com/users/sign_in) account. Click on your avatar and Go to *User Profile -> Settings -> Access Tokens*.
 2. Choose a name for the token, set an optional expiry date, and select the [desired scopes](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#limiting-scopes-of-a-personal-access-token).
 3. Click on `Create personal access token` and make sure to save the access token. Note that once you leave or refresh the page, you will not be able to access it again.

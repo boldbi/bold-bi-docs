@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Map Widget for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure map data, shape settings, legend options, formatting, filters, and interactions for the modern Map widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/map/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Map
 documentation: ug
 ---
 
-# Map
+# Map Widget for Modern Dashboards
 
-The Map visual displays geographic data as colored regions or location markers, helping viewers compare values by place.
+The Map widget in Bold BI displays geographic data as colored regions or location markers, helping viewers compare values by place.
 
 ![Choropleth Map](/static/assets/visualizing-data/visualization-widgets/images/map/choroplethmap.png)
 

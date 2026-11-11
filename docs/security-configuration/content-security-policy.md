@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configure Content Security Policy to Secure Sites | Bold BI Docs
+title: Configure Content Security Policy to Secure Sites | Bold BI
 description: Learn about how to configure Content Security Policy (CSP) settings to secure sites in the Bold BI embedded application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Content Security Policy
+# Configure Content Security Policy to Secure Sites
 
 An attacker may attempt to deliver malicious scripts and inject unwanted data into your site using cross-site scripting (XSS) and data injection attacks. The browser will execute all sources from any origin without restriction, as it does not know whether the source is trusted or not. The malicious script can then access any cookies, session tokens, or other sensitive information stored by the browser. Therefore, to protect your site from this type of attack, the Content Security Policy includes a standardized set of directives that guide the browser on which content sources are allowed and which should be restricted.
 

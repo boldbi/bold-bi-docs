@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding a Dashboard – Manage Dashboards | Bold BI Embedded
+title: Add a Dashboard to Your Site Step by Step | Bold BI
 description: Learn the step-by-step procedure to add a dashboard right from application login till dashboard publish in Bold BI Embedded.
 canonical: "/managing-resources/manage-dashboards/add-dashboards/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Create Dashboards in the Bold BI
+# Add a Dashboard to Your Site Step by Step
 
 To create the Dashboard, you have to follow the step-by-step procedure outlined below:
 

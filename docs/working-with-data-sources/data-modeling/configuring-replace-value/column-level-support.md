@@ -1,12 +1,12 @@
 ---
 layout: Post
-title: Configuring the Replace Value Support in Column Level
+title: Configuring Replace Value at Column Level | Bold BI
 description: This page demonstrates how to configure the replace value support in the column level in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Replace Value Support in Column Level
+# Configuring Replace Value at Column Level
 
 You can modify the specific column values in the datasource that contain null and blank by using the replace value support at the column level.
 

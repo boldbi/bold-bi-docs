@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Change Dashboard Data Connection – Embedded BI | Bold BI
+title: Change Dashboard Data Connection in Bold BI | Bold BI
 description: Learn how to change dashboard data connection in embedded view based on criteria defined in web service and the configuration in Bold BI Embedded application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Dynamic Connection String
+# Change Dashboard Data Connection in Bold BI
 
 The Dynamic Connection String feature allows you to modify the connection string of data sources in dashboard view mode. This feature enables you to view the modified connection string on the Bold BI application itself and on embedded dashboards using the Dashboard Embedding feature.
 

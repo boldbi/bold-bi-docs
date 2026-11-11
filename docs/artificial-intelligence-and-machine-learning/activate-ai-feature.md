@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Activate AI Feature - Embedded BI Visual | Bold BI Documentation
+title: Activate AI Feature - Embedded Analytics Visual | Bold BI
 description: The Bold BI AI Feature activation documentation provides step-by-step guidance on activating the AI Features in the Bold BI application.
 canonical: "/artificial-intelligence-and-machine-learning/activate-ai-feature"
 platform: bold-bi
 documentation: ug
 
 ---
-# Activating AI Feature
+# Activate AI Feature - Embedded Analytics Visual
 
 ## For On-Premises Users (10.1 and Later)
 

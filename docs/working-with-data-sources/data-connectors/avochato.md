@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to create data source for Avochato Web Service | Bold BI Docs
+title: Avochato Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Avochato web service through basic HTTP authentication with Bold BI and create a data source for the dashboards in Server application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Avochato data source
+# Avochato Data Connector Guide in Bold BI
 The Bold BI dashboard designer connects to Avochato web services through REST API.
 
 > **Note:** The Avochato data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
@@ -43,7 +43,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

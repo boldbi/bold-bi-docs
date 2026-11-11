@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radial Gauge – Embedded BI | Bold BI Documentation
+title: Radial Gauge - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Radial Gauge visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/radial-gauge/"
 platform: bold-bi
@@ -11,7 +11,7 @@ documentation: ug
 
 # Configuring Radial Gauge
 
-`Radial Gauge` allows you to measure processing efficiency through key performance indicators (KPIs) such as value and goal.
+`Radial Gauge` lets you measure processing efficiency through key performance indicators (KPIs) such as value and goal.
 
 ![Radial gauge](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/radialgauge.png)
 
@@ -211,19 +211,19 @@ To format the Radial Gauge, follow these steps:
 
 #### Name
 
-This option allows you to change the `title` for the Radial Gauge.
+This option lets you change the `title` for the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
 
 #### Subtitle
 
-Allows you to provide a `subtitle` for the Radial Gauge.
+Lets you provide a `subtitle` for the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
 
 #### Description
 
-Allows you to provide a `description` about the Radial Gauge.
+Lets you provide a `description` about the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
 
@@ -233,7 +233,7 @@ Allows you to provide a `description` about the Radial Gauge.
 
 #### Gauge Type
 
-Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge, or vice versa. The default type is `Horse Shoe`.
+Lets you switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge, or vice versa. The default type is `Horse Shoe`.
 
 > **Note:** If you change the gauge type to `Full circle`, the **Color settings** or **Range settings** categories will be hidden. In the Pointer settings category, the **Value Pointer**, **Target Pointer**, and **Target Color** properties will be hidden, and in the `Scale settings` category, **Show ticks**, **Show label**, and their dependent properties will be hidden. The `Size` option will be shown, which is used to customize the font size of the difference value.
 
@@ -300,7 +300,7 @@ You can apply color for the Radial Gauge labels. The default value is `#000000.`
 
 #### Show Difference Value
 
-When binding both actual and target values in the gauge, this option will be shown. This allows you to hide or show the difference value of the actual and target value with its percentage value. The default value is true.
+When binding both actual and target values in the gauge, this option will be shown. This lets you hide or show the difference value of the actual and target value with its percentage value. The default value is true.
 
 ![Show Difference Value](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/show-difference-value.png)
 
@@ -320,25 +320,25 @@ Customize the color values for the **High**, **Medium**, and **low** colors from
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the radial gauge.
+This option lets you toggle the visibility of the tooltip in the radial gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the radial gauge tooltip.
+This option lets you customize which columns are visible in the radial gauge tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/rtl-tooltip.png)
 
@@ -398,19 +398,19 @@ You can change the tick’s position to either inside or `outside`. The default 
 
 #### Ticks Height
 
-Allows you to change the tick’s height. The minimum and maximum values of the tick’s height are 1 and 10 respectively, with the default value being `5`. This option is displayed only when the Show Ticks option is enabled.
+Lets you change the tick’s height. The minimum and maximum values of the tick’s height are 1 and 10 respectively, with the default value being `5`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Ticks Width
 
-Allows you to change the tick’s width of the gauge. The minimum and maximum values of the tick’s width are 1 and 5 respectively, with the default value being `1`. This option is displayed only when the Show Ticks option is enabled.
+Lets you change the tick’s width of the gauge. The minimum and maximum values of the tick’s width are 1 and 5 respectively, with the default value being `1`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Scale Width
 
-Allows you to change the scale width of the gauge. The minimum and maximum values of the gauge are 1 and 60 respectively, with the default value being `40`.
+Lets you change the scale width of the gauge. The minimum and maximum values of the gauge are 1 and 60 respectively, with the default value being `40`.
 
 #### Show Scale Label
 
-Allows you to display the scale label of the gauge. The default value is `true`.
+Lets you display the scale label of the gauge. The default value is `true`.
 
 By enabling this property, the **Scale Label Position** property will be shown.
 
@@ -419,7 +419,7 @@ By enabling this property, the **Scale Label Position** property will be shown.
 
 #### Scale Label Position
 
-Allows you to change the scale label position. The default value is `outside`. This option will be disabled if the gauge type is half circle and the Show Ticks option is false.
+Lets you change the scale label position. The default value is `outside`. This option will be disabled if the gauge type is half circle and the Show Ticks option is false.
 
 ### Range Settings
 
@@ -439,15 +439,15 @@ You can select a range to change its start, end, and color values.
 
 #### Start
 
-Allows you to set the start value of the selected range. This option is displayed only if Show Range is true.
+Lets you set the start value of the selected range. This option is displayed only if Show Range is true.
 
 #### End
 
-Allows you to set the end value of the selected range. This option is displayed only if Show Range is true.
+Lets you set the end value of the selected range. This option is displayed only if Show Range is true.
 
 #### Color
 
-Allows you to set the color of the selected range. This option is displayed only if Show Range is true.
+Lets you set the color of the selected range. This option is displayed only if Show Range is true.
 
 #### Value Color
 You can customize the color for the Actual value displayed in the Radial Gauge by range color or default label color.
@@ -463,7 +463,7 @@ You can enable linking and configure it to navigate to a general URL with or wit
 
 ### Font settings
 
-This section allows you to customize the font size of radial gauge elements.
+This section lets you customize the font size of radial gauge elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/font-settings.png)
 
@@ -477,25 +477,25 @@ By default, the `Auto Font Size` property is enabled. The Auto font size propert
 
 ### Scale Label Font Size
 
-This option allows you to customize the font size of scale labels. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
+This option lets you customize the font size of scale labels. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
 
 ![Customized Scale Label Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
 
 ### Actual Value Font Size
 
-This option allows you to customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
+This option lets you customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
 
 ![Customized Actual Value Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
 
 ### Difference Value Font Size
 
-This option allows you to customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
+This option lets you customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
 
 ![Customized Difference Value Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
 
 ### Series Title Font Size
 
-This option allows you to customize the font size of the Series Title. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
+This option lets you customize the font size of the Series Title. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
 
 ![Customized Series Title Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
 
@@ -505,7 +505,7 @@ This option allows you to customize the font size of the Series Title. While the
 
 #### Ignore filter actions
 
-This allows you to define the radial gauge widget to ignore responding filter actions applied to other widgets on the dashboard.
+This lets you define the radial gauge widget to ignore responding filter actions applied to other widgets on the dashboard.
 
 #### Enable Hierarchical Filter
 
@@ -515,7 +515,7 @@ The Radial Gauge widget can be set to act as a master widget by checking the `Ac
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the radial gauge widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the radial gauge widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply advanced conditional formatting
 
@@ -616,11 +616,11 @@ Indicating whether the value is `case sensitive` or not.
 
 ### Title Alignment
 
-This allows you to handle the alignment of the widget title to either **left, center, or right**.
+This lets you handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -628,7 +628,7 @@ Enabling Auto Font Size will adjust the font size of the title automatically if 
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified font size to the widget title if **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -636,7 +636,7 @@ Enabling Auto Font Size will adjust the font size of the subtitle automatically 
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified font size to the widget title if **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -644,35 +644,35 @@ Enabling Auto Padding will adjust the padding of the widget container automatica
 
 **Padding**
 
-This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This allows you to set the **background color** for the radial gauge widget.
+This lets you set the **background color** for the radial gauge widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the radial gauge  widget.
+This lets you set the **background color** to the radial gauge  widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -682,41 +682,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the radial gauge.
+This lets you enable or disable the `widget title` of the radial gauge.
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the radial gauge  widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the radial gauge  widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the radial gauge  widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the radial gauge  widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the radial gauge  widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the radial gauge  widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the radial gauge  widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the radial gauge  widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the radial gauge  widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the radial gauge  widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

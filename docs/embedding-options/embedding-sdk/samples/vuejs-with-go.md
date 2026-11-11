@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Building dashboard app with Go and Vue.js | Bold BI Docs
+title: Building dashboard app with Go and Vue.js | Bold BI
 description: Explore the dashboard embedded web application built with Go and Vue.js supported since v4.1.36 of Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Building dashboard app in VueJs with Go using Embed SDK
+# Building dashboard app with Go and Vue.js
 
-A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-sample) the sample application, which illustrates the rendering of the dashboard that is accessible on your Bold BI server. This is followed by a set of steps to create a new embedding application in `VueJs` with `Go` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-sample) the sample application, which illustrates the rendering of the dashboard that is accessible on your Bold BI Server. This is followed by a set of steps to create a new embedding application in `VueJs` with `Go` on your own. 
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
@@ -104,7 +104,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"
+      "https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Area Chart – Embedded BI | Bold BI Documentation
+title: Stacked Area Chart - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Stacked Area Chart visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/stacked-area-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Stacked Area Chart
 documentation: ug
 ---
 
-# Stacked Area Chart
+# Stacked Area Chart - Embedded Analytics
 
-The Stacked Area Chart allows you to compare multiple measures by displaying filled curves that are stacked vertically, one after the other.
+The Stacked Area Chart lets you compare multiple measures by displaying filled curves that are stacked vertically, one after the other.
 
 ![Stacked Area Chart](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart.png)
 
@@ -232,19 +232,19 @@ You can view the list of properties that are available for the widget with the d
 
 #### Name
 
-This feature allows you to change the `title` for this stacked area chart widget.
+This feature lets you change the `title` for this stacked area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/title.png)
 
 #### Subtitle
 
-This widget allows you to provide the `subtitle` for the stacked area chart.
+This widget lets you provide the `subtitle` for the stacked area chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/Subtitle.png)
 
 #### Description
 
-This allows you to provide a `description` for this stacked area chart widget.
+This lets you provide a `description` for this stacked area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/Description.png)
 
@@ -258,7 +258,7 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 ![Chart Type](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/name.png)
 
-**Chart Type**: This allows you to switch the widget view from the current chart type to another chart type.
+**Chart Type**: This lets you switch the widget view from the current chart type to another chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis. 
 
@@ -268,7 +268,7 @@ It animates the measure values when you toggle the `Enable Animation.`
 
 ### Show Value Labels
 
-This feature allows you to switch the visibility of value labels.
+This feature lets you switch the visibility of value labels.
 
 ![Show Value Labels](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-value-labels.png)
 
@@ -278,7 +278,7 @@ If you disable the `Show Value Labels` properties, the dependent properties, whi
 
 #### Customize
 
-This feature allows you to customize the visibility of value labels in each series.
+This feature lets you customize the visibility of value labels in each series.
 
 ![Show Value Labels Customize](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-value-labels-customize.png)
 
@@ -286,7 +286,7 @@ This feature allows you to customize the visibility of value labels in each seri
 
 ### Value Label Color
 
-This allows you to customize the color of the value label's.
+This lets you customize the color of the value label's.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/data-label-color-option.png)
 
@@ -300,13 +300,13 @@ This option enables you to personalize the position of the value label in a char
 
 ### Value Label Rotation
  
-This allows you to define the rotation angle for displaying the value labels.
+This lets you define the rotation angle for displaying the value labels.
 
 ![Value Label Rotation](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-showlabelrotation.png)
 
 ### Value Label Suffix
 
-This feature allows you to display or conceal the suffix value of value labels.
+This feature lets you display or conceal the suffix value of value labels.
 
 ### Suffix Value
 
@@ -318,7 +318,7 @@ This feature enables you to customize the suffix value of value labels.
 
 ### Show Marker
 
-This feature allows you to switch the visibility of the marker, which labels and adorns each data point in a chart series.
+This feature lets you switch the visibility of the marker, which labels and adorns each data point in a chart series.
 
 ![Show Marker](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-marker.png)
 
@@ -334,13 +334,13 @@ If you enable the `Show Items With No Data` property, then the columns with null
 
 ### Empty Point Mode
 
-This allows you to handle the display mode for empty points with the properties `Gap`, `Zero`, `Average` and `Connect`.
+This lets you handle the display mode for empty points with the properties `Gap`, `Zero`, `Average` and `Connect`.
 
 ![Empty Point Mode Options](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/chart-options.png)
 
 ### Gap
 
-This option allows you to display the null or undefined values as gaps.
+This option lets you display the null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/chart-gap.png)
 
@@ -352,7 +352,7 @@ This option enables you to display the null or undefined values on the zero axis
 
 ### Average
 
-This option allows you to display the null or undefined values along with the average value.
+This option lets you display the null or undefined values along with the average value.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/chart-average.png)
 
@@ -368,35 +368,35 @@ When this support is enabled, the size of the chart scroll bar thumb will be cal
 
 #### Page Size
 
-This option allows you to set the number of records that need to be fetched on the initial load.
+This option lets you set the number of records that need to be fetched on the initial load.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-tooltip.png)
 
@@ -406,20 +406,20 @@ This option allows you to display tooltip text and value colors that correspond 
 
 ### Show Legend
 
-A legend is a text used to describe the data plotted. This allows you to toggle the visibility of the legend in the chart and also change the legend text position (selecting through a combo box). 
+A legend is a text used to describe the data plotted. This lets you toggle the visibility of the legend in the chart and also change the legend text position (selecting through a combo box). 
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-legend.png)
 
-Enabling the option of **Custom Legend Text** allows you to define custom text (using the text area) to display for each legend series (selected via the combo box) on the chart.
+Enabling the option of **Custom Legend Text** lets you define custom text (using the text area) to display for each legend series (selected via the combo box) on the chart.
 
 #### Legend Interactivity
 
-The `legend interactivity` option on the chart allows you to control the behavior of the chart legends. This option enables you to make the chart legends non-clickable, which can be particularly useful in situations where you do not want users to hide or show series data by clicking on the legend. This feature is also helpful when displaying critical pieces of data that should always be present for accuracy and context.
+The `legend interactivity` option on the chart lets you control the behavior of the chart legends. This option enables you to make the chart legends non-clickable, which can be particularly useful in situations where you do not want users to hide or show series data by clicking on the legend. This feature is also helpful when displaying critical pieces of data that should always be present for accuracy and context.
 
 Disabling the Interactivity feature in the Legend Settings category prevents you from clicking on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-interactivity-enable.png)
 
@@ -455,11 +455,11 @@ You can customize the legend text by using the Custom Legend Settings dialog. Th
 
 #### Legend Position
 
-A legend is a text used to describe the plotted data. This option allows you to position the legend on the **Left, Right, Top, and Bottom**.
+A legend is a text used to describe the plotted data. This option lets you position the legend on the **Left, Right, Top, and Bottom**.
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
  
@@ -473,11 +473,11 @@ Legend Alignment enables you to control how the legend is positioned within its 
 
 #### Legend Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend to a `Circle.`
+This option lets you change the shape of the legend to a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-shape.png)
 
@@ -489,17 +489,17 @@ This option enables you to modify the shape of the legend in a `Series.`
 
 #### Legend Title
 
-This allows you to add the legend title for the chart, which will be reflected with the `Show Legend.`
+This lets you add the legend title for the chart, which will be reflected with the `Show Legend.`
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize the legend text based on the value of the `Text Width` property.
+This option lets you customize the legend text based on the value of the `Text Width` property.
 
 ***None***
 
-This option allows you to render legend items without wrapping or trimming.
+This option lets you render legend items without wrapping or trimming.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-text-overflow-none-option.png)
 
@@ -507,7 +507,7 @@ This option allows you to render legend items without wrapping or trimming.
 
 ***Trim***
 
-This option allows you to trim the legend items if their legend exceeds the value of `Text Width`.
+This option lets you trim the legend items if their legend exceeds the value of `Text Width`.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-text-overflow-trim-option.png)
 
@@ -523,7 +523,7 @@ This option enables you to wrap legend items based on the value of `Text Width`.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/legend-text-overflow-width-option.png)
 
@@ -542,11 +542,11 @@ You can enable linking and configure it to navigate to a general URL, with or wi
 
 ![Axis Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/axis-settings.png)
 
-This section allows you to customize the axis settings in the chart.
+This section lets you customize the axis settings in the chart.
 
 ### Title color
 
-This allows you to customize the color of the axis title.
+This lets you customize the color of the axis title.
 
 ![Title color](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/title-color.png)
 
@@ -558,13 +558,13 @@ This feature enables you to customize the color of the axis label.
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-axis-border.png)
 
 ### Show Category Axis
 
-This allows you to enable the visibility of the `Category Axis`.
+This lets you enable the visibility of the `Category Axis`.
 
 ![Show Category Axis](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-category-axis.png)
 
@@ -574,13 +574,13 @@ If you disable the `Show Category Axis` option, dependencies properties, which a
 
 ### Show Category Axis Title
 
-This allows you to enable the visibility of the `Category Axis` title.
+This lets you enable the visibility of the `Category Axis` title.
 
 ![Show Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-categoryaxistitle.png)
 
 ### Category Axis Title
 
-This feature allows you to edit the title of the `Category Axis` for the chart. The edited title will be reflected as the name of the x-axis on the chart.
+This feature lets you edit the title of the `Category Axis` for the chart. The edited title will be reflected as the name of the x-axis on the chart.
 
 ![Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-editcategoryaxistitle.png)
 
@@ -590,7 +590,7 @@ If we uncheck the `Show Axis Title` property, the Axis title text box property w
 
 ### Label overflow mode
 
-This allows you to manage the display mode of the overlapping labels in the `Category Axis`.
+This lets you manage the display mode of the overlapping labels in the `Category Axis`.
 
 ***Trim***
 
@@ -606,11 +606,11 @@ This option hides the overlapping label on the axis.
 
 #### Trim Axis Labels
 
-This option allows you to `trim` the axis labels based on the value of the `Maximum Label Width` property.
+This option lets you `trim` the axis labels based on the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
+This option lets you set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/maximum-label-width.png)
 
@@ -632,7 +632,7 @@ By default, the `Auto Interval` property is enabled. The Auto Interval property 
 
 #### Show Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` for the chart.
+This lets you enable the `Primary Value Axis` for the chart.
 
 ![Show Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/show-primary-value.png)
 
@@ -642,13 +642,13 @@ If you disable the `Show Primary Axis` option, dependencies properties, which ar
 
 #### Show Primary Value Axis Title
 
-This allows you to enable the visibility of the title of the `Primary Value Axis` on the chart.
+This lets you enable the visibility of the title of the `Primary Value Axis` on the chart.
 
 ![Show Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/primaryvalueaxistitle.png)
 
 #### Primary Value Axis Title
 
-This allows you to edit the title of the `Primary Value Axis`, which will be reflected in the y-axis name of the chart.
+This lets you edit the title of the `Primary Value Axis`, which will be reflected in the y-axis name of the chart.
 
 ![Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-primaryvalueaxistitle.png)
 
@@ -662,7 +662,7 @@ When this property is enabled, the chart will display negative values at the top
 
 #### Axis Range Settings
 
-This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis through the `Axis Range Settings` dialog.
+This lets you manually set the Minimum, Maximum, and Interval values of primary value axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-axisrangesettings.png)
 
@@ -672,7 +672,7 @@ It will be reflected in the primary value axis of the chart.
 
 ### Parameter Support in Axis range:
 
-This allows you to dynamically set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This lets you dynamically set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -732,25 +732,25 @@ If you want to set the same ranges in multiple cases, create the range type para
 
 #### Primary value Axis
 
-This allows you to enable the `Primary Value Axis` gridlines for the stacked area chart.
+This lets you enable the `Primary Value Axis` gridlines for the stacked area chart.
 
 ![Primary value Axis](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/primary-value-axis.png)
 
 #### Category Axis**
 
-This allows you to enable the `Category axis` gridlines for the stacked area chart.
+This lets you enable the `Category axis` gridlines for the stacked area chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/category-axis.png)
 
 #### Secondary value Axis
 
-This allows you to enable the `Secondary Value Axis` gridlines for the Combination chart.
+This lets you enable the `Secondary Value Axis` gridlines for the Combination chart.
 
 ![Secondary value Axis](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/secondaryaxis.png)
 
 ### Formatting
 
-This allows you to change the `color` for the stacked area chart.
+This lets you change the `color` for the stacked area chart.
 
 ![Format Colors](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/formatting.png)
 
@@ -760,13 +760,13 @@ It will reflect in the stacked area chart.
 
 ### Series Palette
 
-This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if we configured the row section in the chart.
+This lets you apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if we configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/series-palette.png)
 
 #### Use Default Palette
 
-This Option allows you to apply default color for chart series.
+This Option lets you apply default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -780,13 +780,13 @@ Using the Color Mapping type, you can apply the colors to the series either base
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It lets you apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/stacked-area-chart-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It lets you apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -796,7 +796,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 ### Font settings
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/stacked-area-chart/font-settings.png)
 
@@ -810,11 +810,11 @@ By default, the 'Auto Font Size' property is enabled. Auto font-size property is
 
 ### Act as Master Widget
 
-This allows you to define this 100% stacked area chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this 100% stacked area chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 ### Ignore Filter Actions
 
-This allows you to define this 100% stacked area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This lets you define this 100% stacked area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
 ### Hierarchical Filter
 
@@ -824,7 +824,7 @@ When the `Hierarchical Filter` option is enabled, the Top N will be applied for 
 
 ### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the stacked area chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the stacked area chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
@@ -832,11 +832,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the st
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This lets you handle the alignment of widget title to either **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -844,7 +844,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -852,7 +852,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -860,15 +860,15 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -876,19 +876,19 @@ This allow you to set the **background image** for the stacked area chart widget
 
 ### Background Color
 
-This allows you to set the **background color** to the stacked area chart widget.
+This lets you set the **background color** to the stacked area chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -898,41 +898,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the stacked area chart. 
+This lets you enable or disable the `widget title` of the stacked area chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the stacked area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the stacked area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the stacked area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the stacked area chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the stacked area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the stacked area chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the stacked area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the stacked area chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the stacked area chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the stacked area chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the[view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

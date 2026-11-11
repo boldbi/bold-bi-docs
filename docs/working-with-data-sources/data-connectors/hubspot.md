@@ -1,12 +1,12 @@
 ---
 layout: post
-title: HubSpot – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect HubSpot data using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: HubSpot Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect HubSpot data through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to HubSpot data source
+# HubSpot Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to HubSpot web services through the REST API. 
 
 ## Choose HubSpot data source
@@ -42,16 +42,16 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>
@@ -73,7 +73,7 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 ### Setting up the URL
 
-1. For example, in order to retrieve the specific deal details, query the <i>/Show Deal</i> endpoint.
+1. For example, to retrieve the specific deal details, query the <i>/Show Deal</i> endpoint.
 2. Obtain the id of the specific user from the information listed.
 
 Replace it in the URL to query particular conversations:

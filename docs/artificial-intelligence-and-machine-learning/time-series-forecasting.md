@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Forecasting in Dashboard – Embedded BI | Bold BI Docs
+title: Time Series Forecasting in Bold BI Dashboards | Bold BI
 description: Learn how to forecast the future data when visualizing your data in widgets in Bold BI Embedded dashboard.
 canonical: "/artificial-intelligence-and-machine-learning/time-series-forecasting/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Forecast in Dashboard
+# Time Series Forecasting in Bold BI Dashboards
 
 Bold BI allows you to forecast future data when visualizing your data in a chart. Our forecasting includes built-in models that allow prediction based on exponential smoothing techniques. Forecasting in Bold BI can be applied to both seasonal and non-seasonal data points. For seasonal data, seasonality can be automatically detected based on historical data. Our forecasting model also supports bound value prediction using an adjustable confidence interval.
 

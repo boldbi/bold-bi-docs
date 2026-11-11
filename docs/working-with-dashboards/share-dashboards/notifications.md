@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Dashboard Notifications | Bold BI Embedded Docs
+title: Managing Dashboard Notifications in Bold BI | Bold BI
 description: Learn how to configure notifications to notify the users of comments on dashboards and widgets in Bold BI Embedded.
 canonical: "/working-with-dashboards/share-dashboards/notifications/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Notifications for comments on the dashboards and widgets
+# Managing Dashboard Notifications
 
 This section explains how to configure notifications to alert users of comments on dashboards and widgets in Bold BI.
 

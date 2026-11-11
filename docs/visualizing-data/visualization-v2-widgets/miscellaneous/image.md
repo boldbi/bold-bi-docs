@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Display Widget (Modern) | Bold BI Documentation
+title: Image Display Widget for Modern Dashboards | Bold BI
 description: Learn how to configure fixed, remote, and data-driven images, plus formatting, filters, and actions for the modern Image widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/image/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Image
 documentation: ug
 ---
 
-# Image Widget
+# Image Display Widget for Modern Dashboards
 
-The Image widget displays a local, remote, or data-driven image. Use it for branding, product images, status indicators, or navigation.
+The Image widget in Bold BI displays a local, remote, or data-driven image. Use it for branding, product images, status indicators, or navigation.
 
 ![Image Widget](/static/assets/visualizing-data/visualization-widgets/images/image/image-widget.png)
 

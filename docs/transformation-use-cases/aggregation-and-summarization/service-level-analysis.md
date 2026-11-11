@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Service Level Adherence| Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to monitor the service level adherence and make the most of your analytics.
+title: Transformation Service Level Adherence in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to check service level adherence and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

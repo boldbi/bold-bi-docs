@@ -1,12 +1,12 @@
 ---
 layout: post  
-title: Anonymous User – JavaScript Embedding | Bold BI Docs  
+title: Anonymous User - JavaScript Embedding in Bold BI | Bold BI
 description: Learn how to use anonymous users in JavaScript-based embedding of Bold BI dashboards in your business or web applications.  
 platform: bold-bi  
 documentation: ug  
 ---
 
-# Anonymous User Embedding
+# Anonymous User - JavaScript Embedding in Bold BI
 
 Anonymous embedding is an ideal solution for applications with a large number of users, where managing each user individually within Bold BI would be inefficient. Instead, anonymous embedding allows you to seamlessly integrate dashboards with a predefined, permission-based group on the BI server, providing a streamlined experience for your users.
 
@@ -172,7 +172,7 @@ function getToken() {
     ]
  ];
 
-  // Send POST request to Bold BI server
+  // Send POST request to Bold BI Server
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $embedDetails["serverurl"] . "/api/" . $embedDetails["siteidentifier"] . "/embed/authorize");
   curl_setopt($ch, CURLOPT_POST, true);
@@ -258,7 +258,7 @@ app.post('/tokenGeneration', function (req, res) {
   const embedSignature = "&embed_signature=" + getSignatureUrl(queryString, embedSecret);
   const embedDetailsUrl = "/embed/authorize?" + queryString + embedSignature;
 
-  // Request token from Bold BI server
+  // Request token from Bold BI Server
   const serverProtocol = new URL(serverApiUrl).protocol === 'https:' ? https : http;
   serverProtocol.get(serverApiUrl + embedDetailsUrl, function (resultContent) {
     let str = '';

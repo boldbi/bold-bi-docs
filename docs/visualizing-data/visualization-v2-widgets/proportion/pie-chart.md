@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Pie Chart (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, labels, palette settings, formatting, and interactions for the modern Pie Chart in Bold BI dashboards.
+title: Pie Chart for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, labels, palette settings, formatting, and interactions for the modern Pie Chart widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/pie-chart/"
 platform: bold-bi
 control: Pie Chart
 documentation: ug
 ---
 
-# Pie Chart
+# Pie Chart for Modern Dashboards
 
-A Pie Chart represents values as slices of a circle. The size of each slice shows its contribution to the total, making it useful for comparing part-to-whole relationships across a small number of categories.
+The Pie Chart widget in Bold BI represents values as slices of a circle. The size of each slice shows its contribution to the total, making it useful for comparing part-to-whole relationships across a small number of categories.
 
 ![Pie Chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
 
@@ -43,11 +43,11 @@ Without a `Columns` field, the configured `Values` fields form the segments. Wit
 
 Click the `More options` icon for an assigned field to access the options supported by that field and data section:
 
-- **Rename** — Overrides the field's display name.
-- **Aggregation type** — Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
-- **Sort** — Changes the order of dimension values. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
-- **Filter(s)** — Applies field-level filter conditions. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
-- **Format** — Changes the displayed measure format. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+- **Rename**, Overrides the field's display name.
+- **Aggregation type**, Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
+- **Sort**, Changes the order of dimension values. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
+- **Filter(s)**, Applies field-level filter conditions. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+- **Format**, Changes the displayed measure format. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ### Drill Down
 

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Smartsheet – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Smartsheet web service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Smartsheet Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Smartsheet through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Smartsheet data source
+# Smartsheet Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to Smartsheet web services through the REST API.
 
 ## Choose Smartsheet data source
 
-To configure the Smartsheet data source, follow the below steps:
+To configure the Smartsheet data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -66,7 +66,7 @@ Use the following steps to authenticate with the Smartsheet web service.
 
 ## Connect to Smartsheet
 ### Create Smartsheet data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Smartsheet data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Smartsheet data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Smartsheet REST API endpoint in the URL textbox. Refer to the [Smartsheet API documentation](https://smartsheet-platform.github.io/api-docs/) for more details.
 

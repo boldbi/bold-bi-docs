@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Virtual Scrolling with Widgets - Embedded BI | Bold BI Docs
+title: Virtual Scrolling with Widgets in Bold BI | Bold BI
 description: This page describes the Virtual Scrolling technique utilized by the widgets in Bold BI Embedded dashboards.
 platform: Bold BI
 documentation: ug
 ---
 
-# Virtual Scrolling
+# Virtual Scrolling with Widgets in Bold BI
 
 Virtual scrolling enhances the user experience within the dashboard interface without compromising performance. Initially, when dealing with large amounts of data, widgets render only limited datasets. As the user scrolls, virtual scrolling dynamically fetches and displays relevant portions of data, optimizing memory usage and rendering performance by loading and rendering only the data currently visible to the user.
 

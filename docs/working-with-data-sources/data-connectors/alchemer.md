@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Alchemer – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Alchemer web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Alchemer Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Alchemer web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Alchemer data source
+# Alchemer Data Connector Guide in Bold BI
 Bold BI dashboard designer supports connecting to Alchemer web services through REST API.
 
 ## Choose Alchemer data source
@@ -26,7 +26,7 @@ To choose an Alchemer data source, follow these steps:
 
 
 ## Create Alchemer data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Alchemer data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Alchemer data source.
 1. Enter a name and optional description for the data source.
 2. Enter a valid Alchemer REST API endpoint in the URL textbox. Refer to the [Alchemer API documentation](https://apihelp.alchemer.com/help) for more details.
 
@@ -40,7 +40,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can also edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Token for connecting Alchemer Data source?
+### How do I get API Token for connecting Alchemer Data source?
 1. Login to your [Alchemer](https://www.alchemer.com/) and go to *Account -> Integrations -> API Key* to get your API key and API secret.
 
     ![API Request Parameters](/static/assets/working-with-datasource/data-connectors/images/Alchemer/APIKey.png)

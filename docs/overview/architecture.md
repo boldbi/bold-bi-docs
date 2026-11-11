@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bold BI High Level Architecture | Bold BI Documentation
+title: Bold BI High Level Architecture in Bold BI | Bold BI
 description: Study the overview of the system architecture, highlighting key components and their roles in the data flow process.
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Architecture User Guide
+# Bold BI High Level Architecture
 
 Bold BI is a comprehensive business intelligence platform designed to help organizations integrate, analyze, and visualize data. This document provides a detailed overview of the system architecture, highlighting key components and their roles in the data flow process.
 
@@ -17,12 +17,12 @@ The architecture consists of several core components that work together to provi
 
 ![ Bold BI Architecture](/static/assets/overview/images/architecture-of-boldBI.png)
 
-### 1. Bold ID
+### 1. Bold BI
 
-Bold ID is the identity and access management service that ensures secure authentication and authorization.
+Bold BI is the identity and access management service that ensures secure authentication and authorization.
 
-- **Identity Service** – Manages user authentication and access control.
-- **Site Catalog** – Stores site-specific configurations and user access information.
+- **Identity Service**: Manages user authentication and access control.
+- **Site Catalog**: Stores site-specific configurations and user access information.
 
 ### 2. Load Balancer
 
@@ -89,7 +89,7 @@ This section outlines the typical flow of user interaction, data processing, and
 
 ### 1. Dashboard Access Flow
 
-- The user logs in through the Bold BI dashboard interface using Bold ID.
+- The user logs in through the Bold BI dashboard interface using Bold BI.
 - The login request is sent to the Identity Service, which verifies user credentials.
 - The Metadata Server confirms the site and user permissions.
 - The Load Balancer directs the request to the appropriate Dashboard Server.

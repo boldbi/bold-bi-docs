@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embed a Dashboard in a Flutter App with JavaScript | Bold BI Docs
+title: Embed a Dashboard in a Flutter App with JavaScript | Bold BI
 description: Explore and learn the steps for JavaScript-based dashboard embedding with Flutter applications, supported by Bold BI since v5.1.55.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Flutter using the Embed SDK
+# Embed a Dashboard in a Flutter App with JavaScript
 
-A GitHub link is provided to [access](https://github.com/boldbi/flutter-sample) the sample application, demonstrating the rendering of a dashboard on your Bold BI server. Following are the steps to create your own embedding application in `Flutter`.
+A GitHub link is provided to [access](https://github.com/boldbi/flutter-sample) the sample application, demonstrating the rendering of a dashboard on your Bold BI Server. Following are the steps to create your own embedding application in `Flutter`.
 
 > **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides all the necessary information before working on the sample.
 

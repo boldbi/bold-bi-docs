@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Salesforce Reports – Cloud BI Connector | Bold BI Learning
-description: Learn how to connect Salesforce Reports using through OAuth-based authentication with Bold BI Cloud.
+title: Salesforce Reports Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Salesforce Reports through OAuth-based authentication with Bold BI Cloud and the REST API, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Salesforce Reports data source
+# Salesforce Reports Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Salesforce Reports web services through the REST API. 
 
 ## Choose Salesforce Reports data source
-To configure the Salesforce Reports data source, follow the below steps:
+To configure the Salesforce Reports data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Follow these steps to authenticate with the Salesforce Reports web service:
 
 ## Connect to Salesforce Reports
 ### Create Salesforce Reports data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Salesforce Reports data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Salesforce Reports data source.
 1. Enter a name and description (optional) for the data source.
 2. Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection)
 3. Reports that exist in your account will be listed in the dropdown. Select the report from the list. You can also use the search box to filter the reports.

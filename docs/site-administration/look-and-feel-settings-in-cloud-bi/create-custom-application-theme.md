@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a Custom Theme for Cloud BI Application | Bold BI Docs
+title: Create a Custom Theme for Cloud BI Application | Bold BI
 description: Learn how to create a custom theme by modifying the CSS3 variable in the template file at the basic or advanced customization levels for your Cloud BI apps.
 platform: bold-bi
 documentation: ug

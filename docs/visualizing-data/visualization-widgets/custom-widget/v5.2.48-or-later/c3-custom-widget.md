@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to create custom widget using C3 Chart | Bold BI Docs
+title: How to create custom widget using C3 Chart | Bold BI
 description: Find the steps to create the custom widgets using the third party library C3 Chart and publish them to use in Bold BI v5.2.48 or later version dashboards.
 platform: bold-bi
 control: Custom Widget
 documentation: ug
 ---
 
-# Adding C3 chart as a custom widget
+# How to create custom widget using C3 Chart
 
 Here we are creating a C3 Chart using the D3 Library.
 

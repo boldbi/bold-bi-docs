@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Wistia – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Wistia service through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Wistia Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Wistia through OAuth-based authentication with Bold BI Cloud and the REST API, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Wistia data source
+# Wistia Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Wistia web services through the REST API. 
 
 > **NOTE:** Wistia data source is available in Syncfusion Managed Cloud Server and it is not available in On-Premises Deployment.
 
 ## Choose Wistia data source
-To configure the Wistia data source, follow the below steps:
+To configure the Wistia data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -59,7 +59,7 @@ Use the following steps to authenticate with the Wistia web service:
 
 ## Connect to Wistia
 ### Create Wistia data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Wistia data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Wistia data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Wistia REST API endpoint in the URL textbox. Refer to the [Wistia API documentation](https://wistia.com/support/developers/data-api) for more details.
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Proportion Chart Properties | Bold BI Documentation
-description: Learn how to configure category-specific properties for modern Pie, Doughnut, Funnel, and Pyramid charts in Bold BI.
+title: Proportion Chart Properties in Modern Widgets | Bold BI
+description: Learn how to configure category-specific properties for modern Pie, Doughnut, Funnel, and Pyramid widgets in Bold BI dashboards, including labels and slices.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/properties/proportion-chart-properties/"
 platform: bold-bi
 control: Proportion Charts
 documentation: ug
 ---
 
-# Properties
+# Proportion Chart Properties in Modern Widgets
 
-This page describes properties shared by the modern **Pie Chart**, **Doughnut Chart**, **Funnel Chart**, and **Pyramid Chart**. The groups follow the order in the `PROPERTIES` panel.
+Bold BI modern widget properties on this page are shared by the **Pie Chart**, **Doughnut Chart**, **Funnel Chart**, and **Pyramid Chart**. The groups follow the order in the `PROPERTIES` panel.
 
 Global properties such as Link, Font Settings, Filter, and container settings are documented on their respective global property pages and linked from each chart page.
 
 ## Basic Settings
 
-#### Chart Type
+### Chart Type
 
 Changes the visualization between `Pie`, `Doughnut`, `Pyramid`, and `Funnel` without removing the assigned data.
 
@@ -50,7 +50,7 @@ Pie and Doughnut labels appear outside the segments by default. Funnel and Pyram
 
 ## Tooltip Settings
 
-#### Show Tooltip
+### Show Tooltip
 
 Displays information when a viewer points to a segment. Disabling it disables the remaining tooltip controls.
 
@@ -66,9 +66,9 @@ Fields assigned to the `Tooltip` data section are included as supplementary valu
 
 ## Series Settings
 
-This group is available when `Row` is configured or when multiple `Values` fields are used with a `Columns` field.
+The Series Settings group is available when `Row` is configured or when multiple `Values` fields are used with a `Columns` field.
 
-#### Fixed Rows and Columns
+### Fixed Rows and Columns
 
 Arranges multiple charts in a fixed grid instead of allowing the layout to adjust automatically.
 

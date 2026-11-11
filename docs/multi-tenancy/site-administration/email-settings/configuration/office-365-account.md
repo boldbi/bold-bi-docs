@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use Microsoft Office 365 via OAuth2 for Emails | Bold BI Doc
+title: Use Microsoft Office 365 via OAuth2 for Emails | Bold BI
 description: Learn supported mail services in User Management, like SMTP and Microsoft Office 365 with OAuth2, to enhance email notifications and security controls.
 platform: bold-bi
 documentation: ug
@@ -8,11 +8,11 @@ documentation: ug
 
 # Microsoft Office 365 Account Settings with OAuth authentication in User Management Server
 
-This section explains how to configure the Microsoft Office 365 account to send emails from the User Management Server. This process requires creating an Azure app and granting it the necessary API permissions to access the email service. If needed, you can also restrict the app’s access to specific mailboxes.
+Configure a Microsoft Office 365 account with OAuth 2.0 to send emails from Bold BI User Management Server. This process requires creating an Azure app and granting it the necessary API permissions to access the email service. If needed, you can also restrict the app’s access to specific mailboxes.
 
 To learn [how to register an Azure app with mail-sending API permissions](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions) and restrict access to specific mailboxes.
 
-**The User Management Server requires the following Microsoft Office 365 account details in order to send email.**
+**The User Management Server requires the following Microsoft Office 365 account details to send email.**
 
 <table>
 <tr>
@@ -52,5 +52,5 @@ To learn [how to register an Azure app with mail-sending API permissions](https:
 ![Send Email](/static/assets/multi-tenancy/images/send-email.png#width=35%)
 
 ### What happens if the sender email address does not have application access?
-If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error as shown below. Learn more about restricting app access to specific mailboxes [here](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions#restricting-app-access-to-specific-mailboxes).
+If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error. To learn how to restrict app access to specific mailboxes, see [How to register an Azure app with mail sending permissions](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions#restricting-app-access-to-specific-mailboxes).
 ![Send Email failed](/static/assets/multi-tenancy/images/error-without-app-access.png#width=35%)

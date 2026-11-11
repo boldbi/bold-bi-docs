@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Customer Journey Map | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to create journey map for the customer and make the most of your analytics.
+title: Transformation Customer Journey Map in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to map customer journeys and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

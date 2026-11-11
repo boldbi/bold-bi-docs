@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fixed Layout Configuration – Embedded BI | Bold BI Learning
+title: Fixed Layout Configuration - Embedded Analytics | Bold BI
 description: Discover how to modify your dashboard layout effortlessly using the Fixed Layout feature in Bold BI Embedded, ensuring a seamless user experience.
 canonical: "/working-with-dashboards/fixed-layout/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Overview of Fixed Layout
+# Fixed Layout Configuration - Embedded Analytics
 
 When using a fixed layout, the dashboard can be viewed and designed according to the specified resolution settings, ensuring a consistent layout that appears as intended across different devices and screen sizes.
 

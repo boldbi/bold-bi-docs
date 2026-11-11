@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Conditional Formatting Widget Properties | Bold BI
-description: Learn how to apply rule-based, gradient, and individual color formatting to Bold BI Modern chart widgets using conditional formatting.
+title: Conditional Formatting Properties in Bold BI | Bold BI
+description: Learn how to apply rule-based, gradient, and individual color formatting to modern Bold BI chart widgets so series colors reflect the values in your data.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/conditional-formatting/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Conditional Formatting
+# Conditional Formatting Properties
 
-Conditional formatting lets you override a widget's default series colors based on data values. Use it to highlight breaches of a target, color-code performance bands (red/amber/green), or assign a unique color to each data point. This makes patterns and outliers immediately visible without the viewer needing to scan a data table.
+Conditional formatting in Bold BI lets you override a widget's default series colors based on data values. Use it to highlight breaches of a target, color-code performance bands (red/amber/green), or assign a unique color to each data point. This makes patterns and outliers immediately visible without the viewer needing to scan a data table.
 
 | Widgets without conditional formatting |
 |---|

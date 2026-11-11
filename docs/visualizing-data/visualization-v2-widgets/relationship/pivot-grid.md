@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Pivot Grid (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, summarization, formatting, filters, and interactions for the modern Pivot Grid widget in Bold BI dashboards.
+title: Pivot Grid for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, summarization, formatting, filters, and interactions for the modern Pivot Grid widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/pivot-grid/"
 platform: bold-bi
 control: Pivot Grid
 documentation: ug
 ---
 
-# Pivot Grid
+# Pivot Grid for Modern Dashboards
 
-The Pivot Grid summarizes measures across row and column dimensions, allowing viewers to inspect grouped values and totals from different perspectives.
+The Pivot Grid widget in Bold BI summarizes measures across row and column dimensions, allowing viewers to inspect grouped values and totals from different perspectives.
 
 ![Pivot Grid](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-grid-demo.png)
 

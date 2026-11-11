@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Azure AD Users Synchronization – Embedded BI | Bold BI
+title: Synchronizing Azure Active Directory Users | Bold BI
 description: Learn how to synchronize imported user details such as, first name, last name, email address, and contact number from Azure Active Directory in Bold BI Embedded.
 canonical: "/managing-resources/manage-users/synchronize-azure-active-directory-users/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Azure Active Directory User Synchronization
+# Synchronizing Azure Active Directory Users
 
 This section explains how to synchronize the imported Azure Active Directory user details with the Azure Active Directory.
 

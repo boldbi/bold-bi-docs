@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google AdSense – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Google AdSense through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Google AdSense Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google AdSense through OAuth-based authentication with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google AdSense data source
+# Google AdSense Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google AdSense web services through the REST API. 
 
 ## Choose Google AdSense data source
-To configure the Google AdSense data source, follow the below steps:
+To configure the Google AdSense data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Google AdSense web service:
 
 ## Connect to Google AdSense
 ### Create Google AdSense data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google AdSense data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Google AdSense data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google AdSense REST API endpoint in the URL textbox. Refer to the [Google AdSense API documentation](https://developers.google.com/adsense/management/v1.4/reference/) for more details.
 

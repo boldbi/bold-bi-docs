@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Responsive Behavior – Widget Properties | Bold BI Documentation
-description: Learn how Bold BI Modern widgets adapt their content and text when dashboard or widget dimensions change.
+title: Responsive Behavior in Modern Widgets in Bold BI | Bold BI
+description: Learn how modern Bold BI widgets adapt their content and text when dashboard or widget dimensions change, and how to control resize behavior in dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/responsive-behavior/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Responsive Behavior
+# Responsive Behavior in Modern Widgets
 
-Responsive behavior controls how a widget adapts when its container or the dashboard view area changes size. Bold BI recalculates the available plotting and content area when a widget is resized.
+Responsive behavior in Bold BI controls how a widget adapts when its container or the dashboard view area changes size. Bold BI recalculates the available plotting and content area when a widget is resized.
 
 ## Configuring responsive widgets
 
-#### Resize the widget
+### Resize the widget
 
 Drag a widget edge or corner on the design canvas. Review the widget at the smallest size in which it will be used because labels, legends, and data points have less space at smaller dimensions.
 

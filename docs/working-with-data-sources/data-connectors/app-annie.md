@@ -1,12 +1,12 @@
 ---
 layout: post
-title: App Annie – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect App Annie data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: App Annie Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect App Annie data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to App Annie data source
+# App Annie Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports utilizing App Annie web services through the REST API.
 
@@ -44,7 +44,7 @@ When you click on the App Annie data source, the NEW DATA SOURCE configuration p
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Bearer Key for connecting App Annie data source?
+### How do I get Bearer Key for connecting App Annie data source?
 
 1. Login to the App Annie [Dashboard.](https://www.data.ai/account/login/?_ref=header)
 2. Select **Account -> API Key** and find the API Key under **'Your API Key'** section.

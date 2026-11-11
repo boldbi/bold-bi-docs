@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Analytics – Cloud BI Connector | Bold BI Learning
-description: Learn how to connect Google Analytics through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Google Analytics Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google Analytics through OAuth-based authentication with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google Analytics data source
+# Google Analytics Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google Analytics web services through the REST API. 
 
 ## Choose Google Analytics data source
-To configure the Google Analytics data source, follow the below steps:
+To configure the Google Analytics data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Google Analytics web service:
 
 ## Connect to Google Analytics
 ### Create Google Analytics data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google Analytics data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Google Analytics data source.
 1. Enter a name and description (optional) for the data source.
 2. Select account, properties, and view value.
 3. You can choose a specific date as a start date and end date respectively by using the date picker controls given. If you choose the launch date option, Google analytics initial launch date will be considered as the start date for the API. Similarly, if no end date option is selected, current date will be passed as the end date to pull data up to date during data source creation and data source refresh.

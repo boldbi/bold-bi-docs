@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AD Groups Synchronization – Embedded BI | Bold BI Learning
+title: Synchronize Active Directory Groups in Bold BI | Bold BI
 description: Learn how to synchronize the imported Active Directory group and its users with the Active Directory in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Active Directory Group Synchronization
+# Synchronize Active Directory Groups
 
 This section explains how to synchronize the imported Active Directory group and its users with the Active Directory.
 

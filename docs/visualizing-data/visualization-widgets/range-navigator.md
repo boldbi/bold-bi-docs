@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Navigator – Embedded BI | Bold BI Documentation
+title: Range Navigator - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Range Navigator visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/range-navigator/"
 platform: bold-bi
@@ -8,7 +8,7 @@ control: Range Navigator
 documentation: ug
 ---
 
-# Range Navigator
+# Range Navigator - Embedded Analytics
 
 The Range navigator control provides an effective interface for selecting a smaller range from a large collection. It is commonly used to filter the date range for which the data is visualized.
 
@@ -104,19 +104,19 @@ You can format the Range Navigator for better illustration of the view that you 
 
 #### Name
 
-This allows you to set the `title` for this range navigator widget.
+This lets you set the `title` for this range navigator widget.
 
 ![Range Navigator Name](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/Name.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this range navigator widget.
+This lets you set the `subtitle` for this range navigator widget.
 
 ![Subtitle](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this range navigator widget.
+This lets you set a brief explanation about this range navigator widget.
 
 ![description](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/Description.png)
 
@@ -124,11 +124,11 @@ This allows you to set a brief explanation about this range navigator widget.
 
 ![Range Navigator Color Settings](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/navigator-basic-setting.png)
 
-This allows you to customize Range chart series color.
+This lets you customize Range chart series color.
 
 **Label Color**
 
-This allows you to customize the label color.
+This lets you customize the label color.
 
 ![Range Navigator Label Color Settings](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/label-color-option.png)
 
@@ -152,11 +152,11 @@ Here is an illustration.
 
 ### Act as Master Widget
 
-This allows you to define this range navigator widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this range navigator widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
 
 ### Ignore Filter Actions
 
-This allows you to define this range navigator widget to ignore responding to the filter actions applied to other widgets on a dashboard.
+This lets you define this range navigator widget to ignore responding to the filter actions applied to other widgets on a dashboard.
 
 ### Hierarchical Filter
 
@@ -166,7 +166,7 @@ When the `Hierarchical Filter` option is enabled, the Top N will be applied for 
 
 ### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the range navigator widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the range navigator widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -174,11 +174,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the ra
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget title to either `left, center, or right.`
+This lets you handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -186,7 +186,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -194,31 +194,31 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
-This allows you to set the **background color** of the range navigator widget.
+This lets you set the **background color** of the range navigator widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -228,8 +228,8 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the range navigator widget. 
+This lets you enable or disable the `widget title` of the range navigator widget. 
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

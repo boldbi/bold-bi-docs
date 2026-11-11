@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Enable and Disable the connections | Bold BI Documentation
+title: Enable and Disable the connections in Bold BI | Bold BI
 description: Learn how to enable and disable the particular data source connections from the connection tab in the Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Enable and Disable data source connectors
+# Enable and Disable the connections
 
 1. Click the **Settings** icon in the left pane and select the  **Connectors** tab.
     ![Page view](/static/assets/working-with-datasource/images/enable-disable1.png)

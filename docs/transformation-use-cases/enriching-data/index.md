@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation Enriching User's Data | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to enrich the data smoothly and make the most of your analytics.
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to enrich the data and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

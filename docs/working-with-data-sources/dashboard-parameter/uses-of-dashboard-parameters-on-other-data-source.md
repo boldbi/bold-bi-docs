@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dashboard Parameter on other data source - Embedded BI | Bold BI
+title: Use Dashboard Parameters on Other Data Sources | Bold BI
 description: This section describes about how to use dashboard parameter on other data source in dashboards using Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Uses of Dashboard Parameter on other data source
+# Use Dashboard Parameters on Other Data Sources
 
 Users can utilize the parameter from the cross data source by using the following syntax.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Drive – Cloud BI Connector | Bold BI Documentation
+title: Google Drive Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect your Google Drive account with Bold BI Cloud, read CSV, JSON, XML and XLSX files and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
    
-# Connecting Bold BI to Google Drive data source
-`What is Google Drive?` Google Drive is a storage service offered by `Google` to store files and folders in a web-based cloud drive. It also provides support for synchronization services with your local devices, keeping files synced with Google Drive and adding benefits for a backup system and reducing local storage usage.
+# Google Drive Data Connector Guide in Bold BI
+`What is Google Drive?` Google Drive is a web-based cloud storage service from Google, and Bold BI connects to it to use the files and folders stored there. It also provides support for synchronization services with your local devices, keeping files synced with Google Drive and adding benefits for a backup system and reducing local storage usage.
 
 ## Connecting to a Google Drive
-The Bold BI dashboard designer allows you to connect files that are uploaded to `Google Drive`. It supports xlsx, xml, csv, and json format files.
+The Bold BI dashboard designer lets you connect files that are uploaded to `Google Drive`. It supports xlsx, xml, csv, and json format files.
   
 To enable this connection, follow the given steps:
 
@@ -35,10 +35,10 @@ To enable this connection, follow the given steps:
 7. Now, the Google Drive window appears. Set a data source name and choose a file as shown in the following image.
 ![File Storage](/static/assets/working-with-datasource/data-connectors/images/GoogleDrive/file_storage.png)
 
-8. Bold BI allows for different `Import` type for Excel files. Click [here](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
+8. Bold BI allows for different `Import` type for Excel files. see [importing data](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
 ![Import File](/static/assets/working-with-datasource/data-connectors/images/GoogleDrive/import.png)
 
-9. You can schedule refreshes to keep the data on your dashboard up to date by using the `Refresh Settings` option and click [here](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to learn more.
+9. You can schedule refreshes to keep the data on your dashboard up to date by using the `Refresh Settings` option and see [refreshing cloud Excel data](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to learn more.
 ![Refresh Settings](/static/assets/working-with-datasource/data-connectors/images/GoogleDrive/refresh_settings.png)
 
 10. Now, click `Select` and a preview window will appear. Here, you can choose your preferred `tables and columns`.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Embedded Analytics using Embed SDK NPM package | Bold BI
+title: Embedded Analytics using Embed SDK NPM package | Bold BI
 description: Embed analytical dashboards into JavaScript-based applications using the Bold BI Embed SDK NPM package, a zipped version of dependent scripts and assets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Steps to embed Bold BI into your application using the NPM package
+# Embedded Analytics using Embed SDK NPM package
 
 Follow these steps to embed a dashboard in your application.
 
@@ -93,7 +93,7 @@ Follow these steps to embed a dashboard in your application.
     <tbody>
     <tr>
     <td align="left">serverUrl</td>
-    <td align="left">Use your Bold BI server url (http://localhost:[portno]/bi/site/site1)</td>
+    <td align="left">Use your Bold BI Server url (http://localhost:[portno]/bi/site/site1)</td>
     </tr>
     <tr>
     <td align="left">dashboardId</td>
@@ -177,7 +177,7 @@ You can also embed the multi-tabbed dashboard using the dashboard ID and dashboa
 
 ## How to implement the authorize server with user mail
 
-1. You need to implement an authorization server in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you will need to update the secure details such as email and group-based access. Learn more about the [authorization server](/security-configuration/authorize-server/).
+1. You need to implement an authorization server in your application. This will act as the bridge between your application and the Bold BI Server. Additionally, you will need to update the secure details such as email and group-based access. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
     Here is the provided code sample in C# language, which should be based on the application's backend server language. There are already samples available on multiple platforms with this authorization server implementation. Please take a look at the [samples](/embedding-options/embedding-sdk/samples/).
 
@@ -235,4 +235,4 @@ The embed secret key can be found in the administrator setting section. Please r
 
 ## How to get common Embed Secret key from UMS
 
-If you are using multi-tenant Bold BI server sites and want to embed the Dashboard in your application, you can use the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to obtain the common embed secret.
+If you are using multi-tenant Bold BI Server sites and want to embed the Dashboard in your application, you can use the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to obtain the common embed secret.

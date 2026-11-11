@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Gravity Forms - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Gravity Forms web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Gravity Forms Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Gravity Forms web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Gravity Forms data source
+# Gravity Forms Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Gravity Forms web services through the REST API.
 
 ## Choose Gravity Forms data source
@@ -44,7 +44,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

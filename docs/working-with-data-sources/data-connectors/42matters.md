@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 42matters – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect 42matters data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: 42matters Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect 42matters data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to 42matters data source
+# 42matters Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to 42matters web services through REST API.
 
 ## Choose 42matters data source
@@ -42,7 +42,7 @@ When you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Access Token for connecting 42matters data source?
+### How do I get API Access Token for connecting 42matters data source?
 1. Login to your [42matters](https://42matters.com/launchpad) account. Go to *Profile -> My Account*.
 2. Use this *API Access Token* as ***&lt;:access_token&gt;*** in 42matters data source in Bold BI Dashboard.
 
@@ -80,7 +80,7 @@ In 42matters, making requests more than the allowed requests will get an error r
 
 The **&lt;:package_name&gt;** is a publicly available Android app package name. Retrieve the package details from the [app market](https://42matters.com/app-market-explorer/android/?view=filter).
 
-Replace it in the below URL, `p=<:package_name> and access_token=<:access_token>`
+Replace it in the following URL, `p=<:package_name> and access_token=<:access_token>`
 
 `https://data.42matters.com/api/v2.0/android/apps/lookup.json?p=<:package_name>&access_token=<:access_token>`
 

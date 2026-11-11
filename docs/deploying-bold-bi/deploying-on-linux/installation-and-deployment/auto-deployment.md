@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Auto Deployment on Linux Environment | Bold BI Docs
+title: Bold BI Auto Deployment on Linux Environment | Bold BI
 description: Read here to learn about how to auto deploy a Bold BI in Linux by activating licensing and configuring startup from the browser and customize the branding.
 platform: bold-bi
 documentation: ug
 ---
 
-# Auto deploy Bold BI on Linux
+# Bold BI Auto Deployment on Linux Environment
  
 This section provides instructions for deploying Bold BI in Linux without manually activating licensing and configuring startup from the browser. It also allows for customizing the branding using environment variables.
 
@@ -252,9 +252,9 @@ The following variable is necessary to configure a startup application on the ba
       <td>
       Type of database server to be used for configuring the Bold BI.</br>
       The following DB types are accepted:</br>
-     1. mssql – Microsoft SQL Server/Azure SQL Database </br>
-     2. postgresql – PostgreSQL Server</br>
-     3. mysql – MySQL/MariaDB Server</br>
+     1. mssql: Microsoft SQL Server/Azure SQL Database </br>
+     2. postgresql: PostgreSQL Server</br>
+     3. mysql: MySQL/MariaDB Server</br>
       </td>
     </tr> 
     <tr>
@@ -277,7 +277,7 @@ The following variable is necessary to configure a startup application on the ba
       </td>
       <td>
       The system will use the following default port numbers based on the database server type.
-      PostgrSQL – 5234 </br>
+      PostgrSQL: 5234 </br>
       MySQL -3306</br>
       Please specify the port number for your database server if it is configured on a different port.</br>
       For MS SQL Server, this parameter is not necessary.</br>

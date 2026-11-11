@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SingleStore – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect SingleStore database using SQL Live Query with cloud-hosted Bold BI and create data source.
+title: SingleStore Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect a SingleStore database with cloud-hosted Bold BI using SQL Live Query, then create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to SingleStore data source
+# SingleStore Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SingleStore database using the SQL Live Query (C# API).
 
 ## Choose SingleStore data source
@@ -71,7 +71,7 @@ In this type of connection, a data source is periodically fetched from the sourc
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/single-store/SingleStore_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (without limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (without limit) will be extracted during the next refresh.  <br /> 
 ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/single-store/maxRowOption.png#max-width=60%)
 
 ### Refresh Settings

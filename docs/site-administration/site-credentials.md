@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Site Credentials Settings in Bold BI | Bold BI Docs
+title: Managing Site Credentials Settings in Bold BI | Bold BI
 description: Learn the steps to get the client ID and client secret needed to publish resources between the sites in the Bold BI application.
 platform: bold-bi
 documentation: ug

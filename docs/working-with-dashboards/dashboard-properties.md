@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Dashboard Properties – Embedded BI | Bold BI Learning
+title: Dashboard Properties - Embedded Analytics | Bold BI
 description: Learn how to view the rows and columns of a selected widget, and assess the total number of rows and columns utilized in Bold BI Embedded.
 canonical: "/working-with-dashboards/dashboard-properties/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Basic Settings
+# Dashboard Properties - Embedded Analytics
 
 ![Basic Settings](/static/assets/working-with-dashboards/images/basic-settings.png)
 

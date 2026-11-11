@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combo Box Filter Widget (Modern) | Bold BI Documentation
+title: Combo Box Filter for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, field settings, formatting, filters, and widget behavior for the modern Combo Box widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/combo-box/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Combo Box
 documentation: ug
 ---
 
-# Combo Box
+# Combo Box Filter for Modern Dashboards
 
-The Combo Box allows users to select one or more values from a drop-down list to filter and interact with dashboard data.
+The Combo Box filter in Bold BI lets users select one or more values from a drop-down list to filter and interact with dashboard data.
 
 ## Configuring Data
 
@@ -20,7 +20,7 @@ Configure the data for the Combo Box in the `ASSIGN DATA` tab.
 |---|---|---|
 | **Value** | Required | Specifies the measure or dimension field whose values are used by the Combo Box. |
 | **Display Column** | Optional | Specifies the field whose values are displayed in the Combo Box. |
-| **Filters** | Optional | Allows you to apply additional filtering conditions to the Combo Box data. |
+| **Filters** | Optional | Lets you apply additional filtering conditions to the Combo Box data. |
 
 ### Assigning Data
 
@@ -38,9 +38,9 @@ Configure the data for the Combo Box in the `ASSIGN DATA` tab.
 
 Click the `More options` icon for a field to configure the following options.
 
-- **Sort** – Sorts the values in ascending or descending order. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
-- **Filter(s)** – Applies filter conditions to include or exclude specific values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
-- **Relative Dates** – Configures relative date ranges when a date dimension is used. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
+- **Sort**, Sorts the values in ascending or descending order. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+- **Filter(s)**, Applies filter conditions to include or exclude specific values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+- **Relative Dates**, Configures relative date ranges when a date dimension is used. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
 
 ---
 

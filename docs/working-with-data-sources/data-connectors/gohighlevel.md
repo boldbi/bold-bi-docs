@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to create GoHighLevel data source in Cloud BI | Bold BI Docs
-description: Learn how to connect GoHighLevel web service through OAuth-based authentication and create data source with Bold BI Cloud application.
+title: GoHighLevel Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect GoHighLevel web service through OAuth-based authentication and create a data source with the Bold BI Cloud application for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to GoHighLevel  data source
+# GoHighLevel Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to GoHighLevel web services using the REST API. 
 
 ## Choose GoHighLevel data source
@@ -53,7 +53,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>
@@ -122,7 +122,7 @@ You can edit, delete, and re-authorize this account from the [Connected Accounts
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/GoHighLevel/scope.png)
 6. Add the redirect URL to access the application in Bold BI.
 
-   Please refer to the following syntax for the redirect URL and ensure it is configured correctly. Any errors in the redirect URLs will impact its connectivity with BoldBI.
+   Please refer to the following syntax for the redirect URL and ensure it is configured correctly. Any errors in the redirect URLs will impact its connectivity with Bold BI.
 
     For example:`<portocal>://<hostname:port>/bi/designer/v1.0/oauth/agent`
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/GoHighLevel/redirect.png)

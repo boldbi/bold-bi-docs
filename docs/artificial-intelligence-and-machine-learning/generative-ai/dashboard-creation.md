@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI-Based Dashboard Creation Overview | Bold BI Docs
+title: AI-Based Dashboard Creation Overview in Bold BI | Bold BI
 description: Explore how to create dashboards using AI in Bold BI, including the full process of data analysis, visualization, and automated generation.
 canonical: "/artificial-intelligence-and-machine-learning/generative-ai/dashboard-creation/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Prompt to Dashboard
+# AI-Based Dashboard Creation Overview
  
 The Prompt to Dashboard feature allows users to generate a complete, interactive dashboard using just a natural language input. This AI-powered capability eliminates the need for manual setup by understanding user intent, selecting relevant data sources, generating visualization queries, and automatically building the dashboard with meaningful widgets.
 
@@ -37,17 +37,19 @@ Based on this prompt, the system will:
 3. Open the AI copilot and either select a suggested dashboard creation question or type your own prompt.
 ![Dashboard-Creation](/static/assets/artificial-intelligence-and-machine-learning/images/generative-ai/dashboard-creation/dashboardsuggestion.png)
 
+4. The available AI models are displayed based on the configuration used in the Site Settings page. Select a model to continue your query. By default, the latest available model is automatically selected.
+![Dashboard-Creation](/static/assets/artificial-intelligence-and-machine-learning/images/generative-ai/dashboard-creation/model-selection.png)
 
-4. The copilot will generate a dashboard with six widgets, with value labels enabled by default.
+5. The copilot will generate a dashboard with six widgets, with value labels enabled by default.
 ![Dashboard-Creation](/static/assets/artificial-intelligence-and-machine-learning/images/generative-ai/dashboard-creation/generateddashboard.png)
 
-5. The dashboard is created and visually rendered according to the user's input prompt.
+6. The dashboard is created and visually rendered according to the user's input prompt.
 ![Dashboard-Creation](/static/assets/artificial-intelligence-and-machine-learning/images/generative-ai/dashboard-creation/fulldashboard.png)
 
 ## Support and Limitations
 
 - Works only on empty dashboards.
-- Exactly six widgets are generated per prompt—no more, no less—regardless of the data provided.
+- Exactly six widgets are generated per prompt, no more and no less, regardless of the data provided.
 - Available only in Design Mode, not in View or Preview modes.
 - Dashboard creation is not available if the dashboard already contains widgets.
 - Supported widget types: Bar, Column, Pie, Doughnut, Line, Spline, Spline Area, Grid, and Map.

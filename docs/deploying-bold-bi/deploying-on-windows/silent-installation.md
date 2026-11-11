@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Install Bold BI Server in Silent Mode | Bold BI Docs
+title: Install Bold BI Server in Silent Mode in Bold BI | Bold BI
 description: Read this documentation to learn how to install the Bold BI Server in silent mode into another installer and embed the dashboards in an application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Install the Bold BI Server in silent mode
+# Install Bold BI Server in Silent Mode in Bold BI
  
 This section outlines how to install and deploy the Bold BI Server in silent mode. This silent installer can be integrated into your existing installation process.
 
@@ -56,8 +56,8 @@ Download the [v2_application_startup](https://github.com/boldbi/api-payload/blob
 ![Command-line-startUp-true](/static/assets/installation-and-deployment/images/command-line-startup-true.png)
 
 **IsUpgrade** - Option is set to 'False' during a fresh installation. It can be true if you are upgrading to newer version.
-- **IISSiteName** – Newer site will be created based on this Name.
-- **IISPortNo** – Created Site to be hosted within this port number.
+- **IISSiteName**: Newer site will be created based on this Name.
+- **IISPortNo**: Created Site to be hosted within this port number.
 
 ![Bold-BI-application](/static/assets/installation-and-deployment/images/bold-bi-application.png)
 
@@ -83,10 +83,10 @@ To install Bold BI as a sub-application silently without providing the applicati
      boldbiserverinstaller_x64_(version)_(timestamp).exe /InstallPath:{Location to install} /DeploymentPath:{Deployment path} /IISSiteName:{siteName} /IISSubAppName:{Sub app name} /IISSubAppDomainName:{Sub app domain name} /IsSetFirewall:{true/false} /IsUpgrade:FALSE /IsDesktopShortcut:{true/false} /IsStartMenuShortcut:{true/false} /IsSilentStartUp:{true/false}
 
 
-- **IISSiteName** – Name of the site was already present in IIS. BoldBI will hosted as child site of this site.
-- **IsUpgrade** – False during fresh installation.
-- **IISSubAppName** – Sub application name of Bold BI site.
-- **IISSubAppDomainName** – Domain name of Bold BI site localhost:80.
+- **IISSiteName**: Name of the site was already present in IIS. BoldBI will hosted as child site of this site.
+- **IsUpgrade**: False during fresh installation.
+- **IISSubAppName**: Sub application name of Bold BI site.
+- **IISSubAppDomainName**: Domain name of Bold BI site localhost:80.
 
 **Example,**
 
@@ -99,9 +99,9 @@ If you are hosting the Bold BI over Bold Reports and wants to host in common log
 
 This command is for installing a BoldBI application in a specific environment, where each parameter tailors the installation process to the user's needs. Here's a breakdown of each parameter:
 
-- **boldbiserverinstaller_x64_(version)_(timestamp).exe** – This is the executable file for installing the software. The version and timestamp are dynamically added, which suggests the file has a version number and a timestamp to uniquely identify it for each build.  
+- **boldbiserverinstaller_x64_(version)_(timestamp).exe**: This is the executable file for installing the software. The version and timestamp are dynamically added, which suggests the file has a version number and a timestamp to uniquely identify it for each build.  
 - **/InstallPath:{Location to install}** - Specifies the directory where the application should be installed. Replace {Location to install} with the actual path (e.g., C:\Program Files\My Application). It defines the installation directory for the software.
-- **/IISPortNo:{Port No}** – Sets the port number for IIS (Internet Information Services), a web server on Windows. This parameter assigns a custom port for the web application to run on. Replace {Port No} with the desired port (e.g., 8080).   
+- **/IISPortNo:{Port No}**: Sets the port number for IIS (Internet Information Services), a web server on Windows. This parameter assigns a custom port for the web application to run on. Replace {Port No} with the desired port (e.g., 8080).   
 
     **Note:** This field is not required when hosting as sub application.
 - **/IISSiteName:{site name}** - Defines the name of the IIS site where the application will be hosted. Replace {Site Name} with the actual name you want to assign to the site (e.g., My Application Site).

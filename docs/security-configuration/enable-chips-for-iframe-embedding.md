@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Enable CHIPS for IFrame Embedding | Bold BI Documentations
+title: Enable CHIPS for IFrame Embedding in Bold BI | Bold BI
 description: Learn to enable CHIPS in Bold BI to store cookies per site, protect user privacy, and prevent cross-site tracking in secure iframe embedding scenarios.
 platform: bold-bi
 documentation: ug
 ---
 
-# What is Partitioned Cookies
+# Enable CHIPS for IFrame Embedding
 Cookies Having Independent Partitioned State (CHIPS) also known as partitioned cookies allow web developers to store cookies separately for each top-level site. This helps prevent third-party tracking by making cookies accessible only within the context of the site where they were created.
 
 CHIPS maintain user experience for valid use cases like preserving the state of embedded maps or chat widgets across different host websites while still respecting privacy boundaries.

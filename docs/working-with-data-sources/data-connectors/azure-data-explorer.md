@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Azure Data Explorer – BI Connector | Bold BI Documentation
+title: Azure Data Explorer Data Connector Guide | Bold BI
 description: Learn how to connect Azure Data Explorer, an analytic data warehouse with Bold BI Cloud & Embedded, and create a data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Azure Data Explorer data source
+# Azure Data Explorer Data Connector Guide
 Bold BI Dashboard Designer supports connecting to Azure Data Explorer database through KQL Live query.
 
 ## Choose Azure Data Explorer data source
@@ -98,5 +98,5 @@ This application key is the secret key generated for your app by Azure AD when t
    * Date Name
 
 2. You cannot use ranges with an aggregation function in a widget’s measure filter. Therefore, selecting the **none** option in the **aggregate** setting after applying a measure filter with ranges will be supported.
-3. Azure Data Explorer does not provide built-in support for data sampling. While it offers powerful capabilities for real-time analytics and querying large datasets, data sampling operations cannot be performed directly within the platform. If data sampling is required, it is necessary to perform the sampling outside of Azure Data Explorer using other tools or programming languages. Once the sampling is completed, the sampled data can be ingested into Azure Data Explorer for further analysis. It is important to consider alternative approaches and optimize data analysis workflows without relying on built-in data sampling functionality.
+3. Azure Data Explorer does not provide built-in support for data sampling. While it offers strong capabilities for real-time analytics and querying large datasets, data sampling operations cannot be performed directly within the platform. If data sampling is required, it is necessary to perform the sampling outside of Azure Data Explorer using other tools or programming languages. Once the sampling is completed, the sampled data can be ingested into Azure Data Explorer for further analysis. It is important to consider alternative approaches and optimize data analysis workflows without relying on built-in data sampling functionality.
 4. The Azure Data Explorer connector cannot support column names with dots. In such cases, address this limitation by hiding the affected column in the table.

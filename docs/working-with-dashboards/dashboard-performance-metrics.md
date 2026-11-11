@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dashboard Performance Metrics – Embedded BI | Bold BI Docs
+title: Dashboard Performance Metrics - Embedded Analytics | Bold BI
 description: Learn how to view detailed performance metrics for overall layout rendering and the processing times for individual widgets of a Dashboard.
 platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard Performance Metrics
+# Dashboard Performance Metrics - Embedded Analytics
 
 The Dashboard allows you to enable or disable specific dashboard metrics options in the dashboard properties section. By default, metrics options is enabled.
 

@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Amazon Cognito support for SSO authentication
+# SSO with Amazon Cognito Provider of OAuth 2.0
 
 The Bold BI application supports the addition of users using the Amazon Cognito provider. By importing them, you can share the dashboards and email exported dashboards to them.
 

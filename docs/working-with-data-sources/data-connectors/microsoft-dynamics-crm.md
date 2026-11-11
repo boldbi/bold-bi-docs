@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Microsoft Dynamics CRM – Cloud BI Connector | Bold BI
-description: Learn how to connect Microsoft Dynamics CRM Sales through OAuth-based authentication with Bold BI Cloud.
+title: Microsoft Dynamics CRM Data Connector Guide | Bold BI
+description: Learn how to connect Microsoft Dynamics CRM Sales with Bold BI Cloud through OAuth-based authentication, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Microsoft Dynamics CRM Sales and Service
+# Microsoft Dynamics CRM Data Connector Guide
 
 The Bold BI dashboard designer supports connecting to Microsoft Dynamics CRM Sales and Customer Service web services through the REST API.
 
 ## Choose Microsoft Dynamics CRM data source
 
-To configure the Microsoft Dynamics CRM data source, follow the below steps:
+To configure the Microsoft Dynamics CRM data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -48,7 +48,7 @@ Use the following steps to authenticate with the Microsoft Dynamics CRM web serv
 ## Connect to Microsoft Dynamics CRM
 ### Create Microsoft Dynamics CRM data source
 
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Microsoft Dynamics CRM data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Microsoft Dynamics CRM data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Microsoft Dynamics CRM REST API endpoint in the URL textbox. Refer to the [Microsoft Dynamics CRM API documentation](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9) for more details.
 

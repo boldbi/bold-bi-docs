@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Heat Map (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, color settings, formatting, tooltips, and interactions for the modern Heatmap widget in Bold BI dashboards.
+title: Heat Map for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, color settings, formatting, tooltips, and interactions for the modern Heatmap widget in Bold BI dashboards to compare values.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/heat-map/"
 platform: bold-bi
 control: Heat Map
 documentation: ug
 ---
 
-# Heatmap
+# Heat Map for Modern Dashboards
 
-A Heatmap uses color to compare values across two categorical axes, making high, low, and clustered values easy to identify.
+The Heatmap widget in Bold BI uses color to compare values across two categorical axes, making high, low, and clustered values easy to identify.
 
 ![Heat Map](/static/assets/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 

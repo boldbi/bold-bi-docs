@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Prerequisites - Deploying in Azure App Service | Bold BI Docs
-description: Know about the prerequisites to deploy the Bold BI server application in Microsoft Azure App service.
+title: Prerequisites - Deploying in Azure App Service | Bold BI
+description: Know about the prerequisites to deploy the Bold BI Server application in Microsoft Azure App service.
 platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites for using Bold BI on Microsoft Azure App Service
+# Prerequisites - Deploying in Azure App Service
 
 This section explains the requirements for using Bold BI on Microsoft Azure App Service.
 

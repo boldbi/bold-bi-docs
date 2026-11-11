@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis Range Settings — Widget Properties | Bold BI Documentation
-description: Learn how to set manual and parameter-driven minimum, maximum, and interval values for the primary value axis in Bold BI Modern widgets.
+title: Axis Range Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how to set manual and parameter-driven minimum, maximum, and interval values for the primary axis of modern Bold BI widgets in dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/axis-range-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Axis Range Settings
+# Axis Range Settings in Modern Widgets
 
-Axis range settings let you override the automatically calculated minimum, maximum, and interval values on the primary value axis. Use these settings when you need the Y-axis to start at a specific baseline, to zoom into a specific value range, or to align scales across multiple widgets on the same dashboard.
+Axis range settings in Bold BI let you override the automatically calculated minimum, maximum, and interval values on the primary value axis. Use these settings when you need the Y-axis to start at a specific baseline, to zoom into a specific value range, or to align scales across multiple widgets on the same dashboard.
 
 | Unsupported widgets |
 |---|
@@ -21,9 +21,9 @@ Axis range settings let you override the automatically calculated minimum, maxim
 
 Open the **Axis Range Settings** dialog and enter numeric values directly for **Minimum**, **Maximum**, and **Interval**.
 
-- **Minimum** — Sets the lowest value shown on the primary value axis. If left empty, Bold BI uses the minimum value in the dataset.
-- **Maximum** — Sets the highest value shown on the primary value axis. If left empty, Bold BI uses the maximum value in the dataset.
-- **Interval** — Sets the step size between tick marks on the axis. If left empty, Bold BI calculates a suitable interval automatically.
+- **Minimum**, Sets the lowest value shown on the primary value axis. If left empty, Bold BI uses the minimum value in the dataset.
+- **Maximum**, Sets the highest value shown on the primary value axis. If left empty, Bold BI uses the maximum value in the dataset.
+- **Interval**, Sets the step size between tick marks on the axis. If left empty, Bold BI calculates a suitable interval automatically.
 
 After applying, the chart axis reflects the updated range.
 
@@ -67,7 +67,7 @@ Stores a start value and an end value. Use to control both the minimum and maxim
 
    ![Selecting range parameter](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/rangeaxis.png)
 
-3. The axis updates to reflect the start—end range.
+3. The axis updates to reflect the start-end range.
 
    ![Range parameter applied](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/range.png)
 
@@ -75,7 +75,7 @@ Stores a start value and an end value. Use to control both the minimum and maxim
 
 Binds the axis range to a value derived from a data source field. Use when the desired axis boundary comes from a data-driven threshold such as a target, budget, or limit stored in a database table.
 
-1. Create a data source—type dashboard parameter and map it to a field.
+1. Create a data source-type dashboard parameter and map it to a field.
 
    ![Data source parameter setup](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/datasource.png)
 

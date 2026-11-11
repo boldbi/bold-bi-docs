@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Excel – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Excel file data with Bold BI Cloud and create data source for dashboard configuration.
+title: Excel Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Excel file data with Bold BI Cloud, choose an import type, and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 
 
 ---
 
-# Connecting Bold BI to Excel Data Source
-Bold BI dashboard designer allows you to connect Excel files from both local and cloud storage.
+# Excel Data Connector Setup Guide in Bold BI
+Bold BI dashboard designer lets you connect Excel files from both local and cloud storage.
 
 ## File Prerequisites
 * Bold BI supports connecting Excel workbooks created with version 2007 and later with `.xlsx` and `.xls` file extensions. 
@@ -21,7 +21,7 @@ Bold BI dashboard designer allows you to connect Excel files from both local and
 * You can upload a maximum of file size 200 MB.
 
 ## Connecting an Excel file from Local Storage
-To connect an Excel file from local storage, follow the below steps:
+To connect an Excel file from local storage, follow the following steps:
 
 1. Click the **Data Sources** icon in the configuration panel to add a new data connection.
 ![Add new connection](/static/assets/working-with-datasource/data-connectors/images/Excel/add-new-connection.png)
@@ -37,7 +37,7 @@ To connect an Excel file from local storage, follow the below steps:
 5. Choose the excel file from local storage by clicking the **browse** button and then file will be uploaded.
 ![Browse excel file](/static/assets/working-with-datasource/data-connectors/images/Excel/browse-excel-file.png)
 
-6. Here, Bold BI allows for different `Import Type` and click [here](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
+6. Here, Bold BI allows for different `Import Type` and see [importing data](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
 ![Import type](/static/assets/working-with-datasource/data-connectors/images/Excel/import-type.png)
 
 7. Now, click **Preview & Connect** and then preview window will appear. Here, you can choose your preferred `Tables and Columns`.
@@ -48,12 +48,12 @@ To connect an Excel file from local storage, follow the below steps:
 9. Now, drag and drop the worksheet/table you want to analyze, and preview the data by clicking **Update**.
 ![Data design page](/static/assets/working-with-datasource/data-connectors/images/Excel/data-design-page.png)
  
-10. You can also `refresh` the Excel data and click [here](/working-with-data-sources/data-connectors/excel/#refreshing-local-excel-data-source) to know more.
+10. You can also `refresh` the Excel data and see [refreshing local Excel data](/working-with-data-sources/data-connectors/excel/#refreshing-local-excel-data-source) to know more.
 
 11. Click **Save** to save the data source.
 
 ## Connecting an Excel file from Cloud Storage
-To connect an Excel file from cloud storage, follow the below steps:
+To connect an Excel file from cloud storage, follow the following steps:
 
 1. Click the **Data Sources** icon in the configuration panel to add a new data connection.
  ![Add new connection](/static/assets/working-with-datasource/data-connectors/images/Excel/add-new-connection.png)
@@ -69,10 +69,10 @@ To connect an Excel file from cloud storage, follow the below steps:
 5. Now, Microsoft SharePoint window appears. Set a data source name, select site and navigate through the folders to choose file as shown in the following image.
  ![Choose cloud excel](/static/assets/working-with-datasource/data-connectors/images/Excel/choose-cloud-excel.png)
              
-6. Here, Bold BI allows for different `Import Type` and click [here](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
+6. Here, Bold BI allows for different `Import Type` and see [importing data](/working-with-data-sources/data-connectors/excel/#importing-data) to learn more.
 ![Import type](/static/assets/working-with-datasource/data-connectors/images/Excel/import-type.png)
  
-7. You can schedule refreshes to keep your data on the dashboard up to date using the `Refresh Settings` option.  click [here](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to know more. 
+7. You can schedule refreshes to keep your data on the dashboard up to date using the `Refresh Settings` option.  see [refreshing cloud Excel data](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to know more. 
            
 8. Now, click **Select** and then a preview window will appear. Here, you can choose your preferred `Tables and Columns`.
 ![Cloud excel preview](/static/assets/working-with-datasource/data-connectors/images/Excel/cloud-excel-preview.png)
@@ -85,14 +85,14 @@ To connect an Excel file from cloud storage, follow the below steps:
 11. Click **Save** to save the data source.
 
 ## Importing data
-Bold BI allows you to import Excel as `worksheets` and `tables`. Choose Tables to fetch tables from Excel worksheets, and choose Worksheets to fetch an entire worksheet of data along with tables.
+Bold BI lets you import Excel as `worksheets` and `tables`. Choose Tables to fetch tables from Excel worksheets, and choose Worksheets to fetch an entire worksheet of data along with tables.
 
 > **NOTE:**  The import type feature is only available for version 2007 and later with the .xlsx extension format.
 
 ## Importing Worksheets
-Bold BI `Excel` data connector allows you to connect data from different worksheets.
+Bold BI `Excel` data connector lets you connect data from different worksheets.
 
-Follow the below steps to connect data from different tables:
+Follow the following steps to connect data from different tables:
 
 1. To connect entire worksheet along with tables, choose `Worksheets` in the Import type.
 ![Import worksheets](/static/assets/working-with-datasource/data-connectors/images/Excel/import-worksheets.png)
@@ -103,7 +103,7 @@ Follow the below steps to connect data from different tables:
 ![Import worksheets preview](/static/assets/working-with-datasource/data-connectors/images/Excel/import-worksheets-preview.png)
 
 ## Importing Tables
-The Bold BI `Excel` data connector allows you to connect multiple tables across worksheets. In the following workbook, the `Order Details` worksheet contains two different tables. Now, you can connect both tables in the designer.
+The Bold BI `Excel` data connector lets you connect multiple tables across worksheets. In the following workbook, the `Order Details` worksheet contains two different tables. Now, you can connect both tables in the designer.
 ![Spreadsheet tables](/static/assets/working-with-datasource/data-connectors/images/Excel/spreadsheet-tables.png)
  
 Follow the steps below to connect data from different tables:
@@ -117,14 +117,14 @@ Follow the steps below to connect data from different tables:
 ![Import table preview](/static/assets/working-with-datasource/data-connectors/images/Excel/import-table-preview.png)
 
 ## Joining Excel data source with other data source
-Bold BI allows you to join tables from two or more different data sources. To combine multiple data sources, use the `Shared Tables` panel at the bottom of the data source designer.
+Bold BI lets you join tables from two or more different data sources. To combine multiple data sources, use the `Shared Tables` panel at the bottom of the data source designer.
 
 Click on the [Shared Table](/working-with-data-sources/shared-table/) to know more.
 
 ## Refreshing Local Excel Data Source
-Bold BI allows you to `refresh` the excel data in your dashboard. You can update this by editing the data source connection.
+Bold BI lets you `refresh` the excel data in your dashboard. You can update this by editing the data source connection.
 
-Follow the below steps to edit data source connection:
+Follow the following steps to edit data source connection:
 
 1. Click on **Edit Connection** button in data source designer page.
 ![Refresh local excel](/static/assets/working-with-datasource/data-connectors/images/Excel/refresh-local-excel.png)
@@ -136,9 +136,9 @@ Follow the below steps to edit data source connection:
 3. Click the **Reconnect** button and now your data will now be updated.
 
 ## Refreshing Cloud Excel Data Source
-Bold BI allows you to `refresh` the cloud-stored Excel data on your dashboard. You can update this by creating a schedule to transfer data from your cloud location to an intermediate database location.
+Bold BI lets you `refresh` the cloud-stored Excel data on your dashboard. You can update this by creating a schedule to transfer data from your cloud location to an intermediate database location.
 
-Follow the below steps to refresh the data:
+Follow the following steps to refresh the data:
 
 1. Click the **Refresh Settings** button in data source designer page.
 ![Refresh cloud excel](/static/assets/working-with-datasource/data-connectors/images/Excel/refresh-cloud-excel.png)
@@ -153,7 +153,7 @@ Follow the below steps to refresh the data:
 
 > **NOTE:**  In cloud storage, you may either replace the latest file with one of the same name or edit your existing file and save it with the modified content before a refresh is triggered. If the schema changed in the uploaded file, then data will be lost in your dashboard.
 
-> **NOTE:**  You can also schedule a refresh for an already created data source. Click [here](/managing-resources/manage-data-sources/#refresh-setting) to learn more. 
+> **NOTE:**  You can also schedule a refresh for an already created data source. see [refresh settings](/managing-resources/manage-data-sources/#refresh-setting) to learn more. 
 
 ## Limitations
 Below are the limitations for connecting excel file in Bold BI,

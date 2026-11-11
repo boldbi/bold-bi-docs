@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Theme Settings in Site Administration | Bold BI Docs
+title: Custom Theme Settings in Site Administration | Bold BI
 description: Learn how to create a custom theme by modifying the CSS3 variable in the template in both the basic or advanced customization levels of Bold BI application.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # How to create custom application theme
 
-Once you have extracted the template file downloaded from the link in the `Manage Application Theme` dialog, you can manually edit the CSS variables and assign color codes in the template file to customize the theme.
+To customize the Bold BI application theme, extract the template file from the `Manage Application Theme` dialog, then edit the CSS variables and assign color codes in it.
 
 **Let's learn some basics on CSS3 variable and color code assignments.**
 
@@ -29,7 +29,7 @@ The value represents the hexadecimal representation of the color code that you w
 
 ```
 
-### **Points to be noted while editing and uploading custom theme file.**
+## **Points to be noted while editing and uploading custom theme file.**
 
 * To avoid errors in the color assignment, please check this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you wish to use in the template file.
 
@@ -45,12 +45,12 @@ The value represents the hexadecimal representation of the color code that you w
 
 ### **Simple Customization**
 
-You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyper link colors** by changing color codes for the below-mentioned variables. These minimal changes will be enough to customize all components and elements.
+You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyper link colors** by changing color codes for the variables listed below. These minimal changes will be enough to customize all components and elements.
 
 #### Branding Color
 
 You can customize the **branding color** by changing the `--primary-branding-color` variable.
-This will reflect in the areas and components shown in the below image.
+The change appears in the application areas and components that use these variables.
 
 <table>
     <tr>
@@ -66,7 +66,7 @@ This will reflect in the areas and components shown in the below image.
 
 #### Typography
 
-You can customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** over the entire application by changing the color codes of the below variables.
+You can customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** over the entire application by changing the color codes of the variables listed below.
 
 <table>
 <tr>

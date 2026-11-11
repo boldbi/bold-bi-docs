@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Row Expression Fields | Bold BI Embedded Docs
+title: Configuring Row Expression Fields in Bold BI | Bold BI
 description: Learn how to configure expression fields comprising calculated row expressions using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Configure Row expression
+# Configuring Row Expression Fields
 
 ## Functions
 

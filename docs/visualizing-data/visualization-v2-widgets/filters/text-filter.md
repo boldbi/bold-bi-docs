@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Text Filter (Modern) Widget | Bold BI Documentation
-description: Learn how to configure data, input settings, filters, and widget behavior for the modern Text Filter widget in Bold BI dashboards.
+title: Text Filter for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, input settings, filters, and widget behavior for the modern Text Filter widget in Bold BI dashboards so viewers can search values.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/text-filter/"
 platform: bold-bi
 control: Text Filter
 documentation: ug
 ---
 
-# Text Filter
+# Text Filter for Modern Dashboards
 
-The Text Filter allows users to enter text and filter matching dimension values across linked widgets in a dashboard.
+The Text Filter widget in Bold BI lets users enter text and filter matching dimension values across linked widgets in a dashboard.
 
 ## Configuring Data
 
@@ -34,7 +34,7 @@ Configure the data for the Text Filter in the `ASSIGN DATA` tab.
 
 Click the `More options` icon for the assigned field to configure the following option.
 
-- **Rename** – Overrides the display name of the assigned field.
+- **Rename**, Overrides the display name of the assigned field.
 
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installing Bold BI Over Bold Reports on Linux with Nginx | Docs
+title: Installing Bold BI Over Bold Reports on Linux | Bold BI
 description: Read this guide to know how to install Bold BI on top when Bold Reports is installed already on Linux with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Install Bold BI when Bold Reports already exists
+# Installing Bold BI Over Bold Reports on Linux
 
 1. Please register and [download](https://www.boldbi.com/account) the Bold BI Linux package.
 

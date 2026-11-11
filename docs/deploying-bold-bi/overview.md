@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Exploring Embedded BI - An Overview | Bold BI Learning
-description: Embedded BI is an on-premise solution for creating, managing and sharing interactive business dashboards.
+title: Exploring Embedded Analytics - An Overview | Bold BI
+description: Embedded Analytics is an on-premises solution for creating, managing and sharing interactive business dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Overview and system requirements for Bold BI
+# Exploring Embedded Analytics - An Overview
 
 Bold BI is an all-inclusive solution designed for creating, managing, and sharing business dashboards. This powerful dashboard server application allows for easy composition, management, and sharing of dashboards.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Twilio – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Twilio using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Twilio Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Twilio through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Twilio data source
+# Twilio Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Twilio web services through the REST API. 
 
 ## Choose Twilio data source
-To configure the Twilio data source, follow the below steps:
+To configure the Twilio data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -37,13 +37,13 @@ After you click the data source, the NEW DATA SOURCE configuration panel will op
 5. In **Max Rows**, enter the maximum number of rows to be fetched from the Twilio data source. This value is used to fetch the data from the Twilio data source via pagination.
 6. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
 7. Select **JSON** data type in **Data Format** combo box.
-8. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account SID** and **Auth Token**. You can find the details for providing *Account SID* and *Auth Token* [here](/working-with-data-sources/data-connectors/twilio/#how-to-get-credentials-for-connecting-the-twilio-data-source).
+8. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account SID** and **Auth Token**. You can find the details for providing *Account SID* and *Auth Token* [how to get credentials](/working-with-data-sources/data-connectors/twilio/#how-to-get-credentials-for-connecting-the-twilio-data-source).
 
     ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/Twilio/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How to get Credentials for connecting the Twilio Data source
+### How to get Credentials for connecting the Twilio Data source
 1. Log in to your [Twilio](https://www.twilio.com/login) account.
 2. Navigate to the *Console Dashboard > Settings > API Credentials*.
 2. Input the *Account SID* and *Auth Token* from Twilio into the data source settings in Bold BI Dashboard.

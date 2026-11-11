@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Keen – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Keen web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Keen Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Keen web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Keen data source
+# Keen Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Keen web services through the REST API.
 
 ## Choose Keen data source
-To configure the Keen data source, follow the below steps:
+To configure the Keen data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Keen data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/keen/ChooseDS_server.png)
 
 ## Create Keen data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Keen data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Keen data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Keen REST API endpoint in the URL textbox. Refer to the [Keen API documentation](https://keen.io/docs/api/) for more details.
 
@@ -42,13 +42,13 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Keen data source?
+### How do I get API Key for connecting Keen data source?
 
 1. Log in to [keen](https://keen.io/login) account and Go to *Projects*. 
 2. Select a valid Project from the *Projects* dropdown menu and navigate to *ACCESS*.
 3. Locate your *ACCESS KEY* under *Access Keys*.
 4. Click on *NEW ACCESS KEY*, if you don't have a valid API Key.
-5. Utilize this *ACCESS KEY* as `<:project_read_key>` in Keen data source in Bold BI Dashboard.
+5. Use this *ACCESS KEY* as `<:project_read_key>` in Keen data source in Bold BI Dashboard.
 
    ![Reveal API Key](/static/assets/working-with-datasource/data-connectors/images/keen/APIKey.png)
 
@@ -56,7 +56,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 1. Log in to your [keen](https://keen.io/login) account, locate your *ORGANIZATION_ID* from the address bar.
 2. Navigate to *Organization Key* and find your organization key. 
-3. Utilize this *Organization Key* as *ORGANIZATION_KEY* in Authorization to query the projects.
+3. Use this *Organization Key* as *ORGANIZATION_KEY* in Authorization to query the projects.
 
    `https://api.keen.io/3.0/organizations/ORG_ID/projects/PROJECT_ID`
 

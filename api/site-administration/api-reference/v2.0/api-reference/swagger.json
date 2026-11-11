@@ -45,6 +45,12 @@
       "description": {
         "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/activity/getactivitydescription"
       }
+    },
+    {
+      "name": "Administration",
+      "description": {
+        "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/administration/getadministartiondescription"
+      }
     }
   ],
   "paths": {
@@ -2375,6 +2381,185 @@
           }
         }
       }
+    },
+    "/v2.0/administration/config-editor/known-domains": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get Known Domains Configuration",
+        "description": "Retrieve the current Known-Domain.json configuration values, including the allowed and denied domains.",
+        "operationId": "Administration_GetKnownDomains",
+        "responses": {
+          "200": {
+            "description": "Known Domains configuration retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiKnownDomainsResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve Known Domains configuration.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update Known Domains Configuration",
+        "description": "Update the Known-Domain.json configuration values for the domain allowlist, denylist, and enabled status. Internal site domains are maintained by the server.",
+        "operationId": "Administration_UpdateKnownDomains",
+        "requestBody": {
+          "description": "Known Domains configuration to update.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KnownDomains"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Known Domains configuration updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiKnownDomainsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update Known Domains configuration.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/settings/site": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get Site Settings",
+        "description": "Retrieve the list of site setting details for the particular site if the user has administrative rights for the site settings.",
+        "operationId": "Administration_GetSiteSettings",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "description": "<br />\nList of site setting keys separated by <code>,</code>",
+            "x-nullable": true,
+            "default": null,
+            "example": " OrganizationName,SiteUrl "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Site setting details has been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiSiteSettingList"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve site settings details.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update Site Settings",
+        "description": "Users who have administrative rights to site settings can update the site settings.",
+        "operationId": "Administration_UpdateSiteSettings",
+        "requestBody": {
+          "description": "The details of the site settings that were passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateApiSiteSettingList"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Site settings has been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiUpdateSiteSettingsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update site setting details.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "apiUpdateSiteSettings"
+      }
     }
   },
   "components": {
@@ -2502,6 +2687,125 @@
           "Message": {
             "type": "string",
             "description": "Returns the message from the API."
+          }
+        }
+      },
+      "KnownDomains": {
+        "type": "object",
+        "required": [
+          "Enabled"
+        ],
+        "properties": {
+          "Allow": {
+            "type": "string",
+            "description": "Comma-separated domains to allow."
+          },
+          "Internal": {
+            "type": "string",
+            "readOnly": true,
+            "description": "Comma-separated internal site domains maintained by the server."
+          },
+          "Deny": {
+            "type": "string",
+            "description": "Comma-separated domains to deny."
+          },
+          "Enabled": {
+            "type": "boolean",
+            "description": "Set to true to enable Known-Domain validation."
+          }
+        }
+      },
+      "ApiKnownDomainsResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Data": {
+            "$ref": "#/components/schemas/KnownDomains",
+            "description": "Known Domains configuration data."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns the status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "ApiSiteSettings": {
+        "type": "object",
+        "properties": {
+          "Key": {
+            "type": "string",
+            "description": "Site settings name.<br /><br />Valid keys: <code>OrganizationName, SiteUrl, LoginScreenLogo, EmailLogo, HeaderLogo, FooterLogo, FavIcon, AILogo, ShowCopyrightInformation, ShowPoweredBySyncfusion, CopyrightInformation, Use24HourFormat,  DisableUserPreference, ApplicationLanguage, DataLanguage, DateFormat, TimeZone</code>"
+          },
+          "Value": {
+            "type": "string",
+            "description": "Site settings value.<br /><br />Values of, <br />1. <code>OrganizationName, SiteUrl, TimeZone,  CopyrightInformation</code> are in `string`<br /><br />2. <code>LoginScreenLogo, EmailLogo, HeaderLogo, FooterLogo, FavIcon, AILogo</code> are in `Base64EncodedString`<br /><br />3. <code>ShowCopyrightInformation, ShowPoweredBySyncfusion, Use24HourFormat, DisableUserPreference</code> are in `true` or `false`<br /><br />4. <code>DateFormat</code> is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy`<br /><br />5. <code>ApplicationLanguage, DataLanguage</code> has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)<br /><br />6. <code>TimeZone</code> has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)<br /><br />"
+          },
+          "FileFormat": {
+            "type": "string",
+            "description": "Image format type.<br />Values allowed are <code>svg, png, jpg, jpeg</code>"
+          }
+        }
+      },
+      "ApiSiteSettingList": {
+        "type": "array",
+        "description": "UMS site settings details.",
+        "items": {
+          "$ref": "#/components/schemas/ApiSiteSettings"
+        }
+      },
+      "UpdateApiSiteSettings": {
+        "type": "object",
+        "required": [
+          "Key",
+          "Value"
+        ],
+        "properties": {
+          "Key": {
+            "type": "string",
+            "description": "Site settings name.<br /><br />Valid keys: <code>OrganizationName, SiteUrl, LoginScreenLogo, EmailLogo, HeaderLogo, FooterLogo, FavIcon, AILogo, ShowCopyrightInformation, ShowPoweredBySyncfusion, CopyrightInformation, Use24HourFormat,  DisableUserPreference, ApplicationLanguage, DataLanguage, DateFormat, TimeZone</code>"
+          },
+          "Value": {
+            "type": "string",
+            "description": "Site settings value.<br /><br />Values of, <br />1. <code>OrganizationName, SiteUrl, CopyrightInformation</code> should be `string`<br /><br />2. <code>LoginScreenLogo, EmailLogo, HeaderLogo, FooterLogo, FavIcon, AILogo</code> should be `Base64EncodedString`<br /><br />3. <code>ShowCopyrightInformation, ShowPoweredBySyncfusion, Use24HourFormat, DisableUserPreference</code> should be `true` or `false`<br /><br />4. <code>DateFormat</code> should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy`<br /><br />5. <code>ApplicationLanguage, DataLanguage</code> should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)<br /><br />6. <code>TimeZone</code> should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)"
+          },
+          "FileFormat": {
+            "type": "string",
+            "description": "Image format type. It must required when update image in site settings.<br />Values allowed are <code>svg, png, jpg, jpeg</code>"
+          }
+        }
+      },
+      "UpdateApiSiteSettingList": {
+        "type": "array",
+        "description": "UMS site settings to update.",
+        "items": {
+          "$ref": "#/components/schemas/UpdateApiSiteSettings"
+        }
+      },
+      "ApiUpdateSiteSettingsResponse": {
+        "type": "object",
+        "required": [
+          "ApiStatus",
+          "Status"
+        ],
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns the status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
           }
         }
       },
@@ -3055,6 +3359,10 @@
           "TenantIdentifier": {
             "type": "string",
             "description": "Identifier of the site."
+          },
+          "DNS": {
+            "type": "string",
+            "description": "Base URL or domain of the tenant site. For example, https://tenant.example.com. If omitted, the configured application domain is used."
           },
           "UseSiteIdentifier": {
             "type": "boolean",

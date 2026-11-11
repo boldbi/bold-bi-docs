@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Tab Widget (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure tab items, linked content, layout behavior, and viewer interactions for the modern Tab widget in Bold BI dashboards.
+title: Tab Widget for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure tab items, linked content, layout behavior, and viewer interactions for the modern Tab widget in Bold BI dashboards to switch views.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/tab-widget/"
 platform: bold-bi
 control: Tab Widget
 documentation: ug
 ---
 
-# Tab Widget
+# Tab Widget for Modern Dashboards
 
-The Tab widget organizes multiple widgets into switchable views in the same dashboard area, reducing clutter while keeping related analysis together.
+The Tab widget in Bold BI organizes multiple widgets into switchable views in the same dashboard area, reducing clutter while keeping related analysis together.
 
 ![Tab Widget](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/tab-widget.png)
 

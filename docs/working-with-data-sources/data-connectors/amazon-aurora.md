@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Amazon Aurora - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Amazon Aurora data with cloud-hosted Bold BI and create data source for widget configuration.
+title: Amazon Aurora Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Amazon Aurora data with cloud-hosted Bold BI and create a data source for widget configuration and dashboard preparation.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Amazon Aurora data source
+# Amazon Aurora Data Connector Guide in Bold BI
 The Bold BI Dashboard Designer supports connecting to multiple databases through Amazon Aurora using SQL Live Query.
 
 ## Choose Amazon Aurora data source
@@ -97,7 +97,7 @@ In this connection type, a data source is fetched from the source periodically. 
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/amazon-aurora/Amazonaurora_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
   ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/amazon-aurora/maxRowOption.png#max-width=60%)
 
 ### Refresh Settings
@@ -432,7 +432,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  Please note that for editing the Data Source via API, all parameters are optional. You only need to provide the parameter that needs to be changed.
+> **NOTE:**  For editing the data source via API, all parameters are optional. You only need to provide the parameter that needs to be changed.
 
 #### Parameters for modifying expressions when editing Data Source
    

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics Dashboard with Node.js | Bold BI Docs
+title: Embedding Analytics Dashboard with Node.js | Bold BI
 description: Learn how to embed an analytics dashboard with a Node.js application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Node.js using Embed SDK
+# Embedding Analytics Dashboard with Node.js
 
-A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Node.js` on your own.   
+A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI Server. This is followed by steps to create a new embedding application in `Node.js` on your own.   
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
@@ -115,7 +115,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

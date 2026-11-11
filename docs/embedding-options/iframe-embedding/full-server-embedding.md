@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Full Server Embedding for Bold BI | Bold BI Documentation
+title: Full Server Embedding for Bold BI in Bold BI | Bold BI
 description: Learn how to embed the entire Bold BI platform into your application using an iframe for comprehensive data analytics.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed Bold BI Full Server
+# Full Server Embedding for Bold BI
 
 This guide explains how to embed the full Bold BI Enterprise application (server and designer) into a web application using an iframe for versions 5.2 and above. This enables seamless integration of dashboards, data source design, and all Bold BI features into your external application.
 
 ## Steps to Embed Bold BI
 
-### 1. Configure JWT Authentication in Bold ID
+### 1. Configure JWT Authentication in Bold BI
 
-Set up JSON Web Token (JWT) authentication in the Bold ID admin panel to enable secure single sign-on (SSO).
+Set up JSON Web Token (JWT) authentication in the Bold BI admin panel to enable secure single sign-on (SSO).
 
-- Navigate to the Bold ID admin panel and add your application’s URL to the JWT settings. Follow the [JWT settings guide](/multi-tenancy/site-administration/authentication/json-web-token/#steps-to-configure-jwt-in-bold-bi).
+- Navigate to the Bold BI admin panel and add your application’s URL to the JWT settings. Follow the [JWT settings guide](/multi-tenancy/site-administration/authentication/json-web-token/#steps-to-configure-jwt-in-bold-bi).
 - Save the settings and note the generated **Signing Key** for use in your application.  
   ![Signing Key](/static/assets/images/SigningKey.png#max-width=90%)
 

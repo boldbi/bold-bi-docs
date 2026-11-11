@@ -21,10 +21,18 @@
 							"String Expressions": "string-expressions",
 							"Date Expressions": "date-expressions",
 							"Row Expressions": "row-expressions",
-							"Level Of Detail Expressions": "level-of-detail-expressions"
+							"Level Of Detail Expressions": "level-of-detail-expressions",
+						"Financial Expressions": "financial-expressions"
 						}
 					},
 					"Data Sampling": "data-sampling",
+					"Hybrid Data Cache": {
+						"slug": "cache",
+						"pages": {
+							"Hybrid Data Cache": "hybrid-data-cache",
+							"Code View Initial Load Cache": "initial-load-cache"
+						}
+					},
 					"Configuring Replace Value": {
 						"slug": "configuring-replace-value",
 						"pages": {

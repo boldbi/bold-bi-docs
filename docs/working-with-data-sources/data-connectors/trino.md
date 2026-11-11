@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Trino – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Trino SQL query engine with Bold BI Cloud and execute queries against data sources such as, MySQL, etc.
+title: Trino Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect the Trino SQL query engine with Bold BI Cloud, run queries against sources such as MySQL, and create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Trino data source Via Presto 
+# Trino Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Trino database through SQL Live Query (REST API). It is available in the Presto category type.
 
 ## Choose Trino data source
-To configure the Trino data source Via Presto, follow the below steps:
+To configure the Trino data source Via Presto, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

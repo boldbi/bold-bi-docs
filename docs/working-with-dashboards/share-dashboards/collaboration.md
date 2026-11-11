@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dashboard Collaboration – Embedded BI | Bold BI Learning
+title: Dashboard Collaboration - Embedded Analytics | Bold BI
 description: Learn how to collaborate with other users in Bold BI Embedded by commenting on dashboards using various options.
 canonical: "/working-with-dashboards/share-dashboards/collaboration/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Collaboration in the Bold BI
+# Dashboard Collaboration - Embedded Analytics
 
 This section explains how to collaborate with other users in the Bold BI cloud by commenting on dashboards.
 

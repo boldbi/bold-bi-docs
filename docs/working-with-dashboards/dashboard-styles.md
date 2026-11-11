@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dashboards Styles – Embedded BI | Bold BI Learning
+title: Dashboards Styles - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to change the Dashboard Styles like Background color Background Image in the Bold BI Embedded.
 canonical: "/working-with-dashboards/dashboard-styles/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Dashboard Style
+# Dashboards Styles - Embedded Analytics
 
 The `Canvas Style` section in the designer properties allows users to customize the dashboard's background color and background image by enabling the following properties:
 

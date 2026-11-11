@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – programmatic multitab dashboard Methods | Bold BI
+title: API Reference for Multi-tab Methods in JavaScript | Bold BI
 description: Explore the JavaScript programmatic multitab dashboard API reference for methods that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Methods
+# API Reference for Multi-tab Methods in JavaScript
 ## loadTabbedDashboards()
 This method will render a programmatic multitab dashboard using either [dashboard IDs](/embedding-options/embedding-sdk/component-api-v2.0/multi-tab/multi-tab-members/#dashboardids) or [dashboard Paths](/embedding-options/embedding-sdk/component-api-v2.0/multi-tab/multi-tab-members/#dashboardpaths) while calling the create method.
 

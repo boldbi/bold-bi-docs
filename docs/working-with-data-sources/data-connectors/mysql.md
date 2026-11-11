@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MySQL – Cloud BI Connector | Bold BI Documentation
+title: MySQL Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect MySQL database with Bold BI Cloud in both live and extract modes. Also know about the refresh settings in extract mode.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to MySQL data source
+# MySQL Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to MySQL database using SQL Query (C# API).
 
 **Supported Server Versions:** MySQL (5.1, 5.5, 5.6, 5.7, and 8.0)
@@ -77,7 +77,7 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mysql/Mysql_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records, for which there is no limit, will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records, for which there is no limit, will be extracted during the next refresh.  <br /> 
 ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mysql/maxRowOption.png#max-width=60%)
 
 ## Extract mode connection 
@@ -87,12 +87,12 @@ In this connection type, a data source is fetched from source periodically. Choo
     ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
 2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+3. When switching to Bold Data Hub, the data is extracted using the Bold Data Hub. An equivalent pipeline is created, which can leverage the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
 4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+5. When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 ### Refresh Settings
 #### Steps to configure the data source refresh settings:
@@ -714,7 +714,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ## How to enable SSL through connection parameters for MySQL data source
 
-Bold BI application allows you to enable SSL through connection parameters in the MySQL data source by following these steps.
+Bold BI application lets you enable SSL through connection parameters in the MySQL data source by following these steps.
 
 ### Steps to connect MySQL with SSL
 
@@ -730,7 +730,7 @@ In this way, you can enable SSL in the connection by passing parameters in the c
 
     ![Table schema](/static/assets/working-with-datasource/data-connectors/images/Mysql/ssh-tables.png#max-width=70%)
 
-4.	Click **Save** to save the data source with a relevant name in order to proceed with designing a dashboard.
+4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
 
     ![Save option](/static/assets/working-with-datasource/data-connectors/images/Mysql/ssh-save-option.png#max-width=70%)
 

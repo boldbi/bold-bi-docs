@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Button Widget – Embedded BI | Bold BI Documentation
+title: Button Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Button widget visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/button-widget/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Button Widget
+# Button Widget - Embedded Analytics
 
 The `Button widget` allows users to trigger actions and events within their dashboards. It enhances interactivity by enabling users to seamlessly navigate between different dashboards. Additionally, the purpose of the Button widget and the actions performed when clicking on it can be described in the tooltip.
 
@@ -188,11 +188,11 @@ For example, in the dashboard shown below, the Year-configured filter widget is 
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 

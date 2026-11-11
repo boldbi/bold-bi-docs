@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radar Polar Chart (Modern) | Bold BI Documentation
+title: Radar Polar Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, axis settings, formatting, legend settings, and interactions for the modern Radar Polar Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/radar-polar-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Radar Polar Chart
 documentation: ug
 ---
 
-# Radar/Polar Chart
+# Radar Polar Chart for Modern Dashboards
 
-A Radar or Polar Chart compares multiple measures across categories on axes that extend from a common center. Use it to identify relative strengths, weaknesses, and patterns across a common scale.
+The Radar Polar Chart widget in Bold BI compares multiple measures across categories on axes that extend from a common center. Use it to identify relative strengths, weaknesses, and patterns across a common scale.
 
 ![Radar Polar Chart](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/radar-polar-chart.png)
 

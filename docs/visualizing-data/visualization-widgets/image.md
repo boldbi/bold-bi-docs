@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualizing Images – Embedded BI | Bold BI Documentation
+title: Visualizing Images - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create an Image visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/image/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Image
 documentation: ug
 ---
 
-# Image
+# Visualizing Images - Embedded Analytics
 
-Image allows you to display both static and dynamic images within defined modes (default, fill, uniform, and uniform to fill).
+Image lets you display both static and dynamic images within defined modes (default, fill, uniform, and uniform to fill).
 
 ![Image Widget](/static/assets/visualizing-data/visualization-widgets/images/image/image-widget.png)
 
@@ -66,7 +66,7 @@ You can format the image for better illustration of the required view through th
 
 ### Name
 
-This allows you to set the `title` for the Image widget.
+This lets you set the `title` for the Image widget.
 
 ![Name](/static/assets/visualizing-data/visualization-widgets/images/image/title.png)
 
@@ -168,7 +168,7 @@ EX: [http://flagpedia.net/data/flags/normal/{0}.png](http://flagpedia.net/data/f
 
 ### Tooltip Settings
 
-`Show Tooltip `allows you to toggle the visibility of a tooltip on an image. The text box below the Show Tooltip option allows you to set the text that appears in the tooltip.
+`Show Tooltip `lets you toggle the visibility of a tooltip on an image. The text box below the Show Tooltip option lets you set the text that appears in the tooltip.
 
 ![Showtooltip](/static/assets/visualizing-data/visualization-widgets/images/image/tooltip-settings.png)
 
@@ -179,7 +179,7 @@ EX: [http://flagpedia.net/data/flags/normal/{0}.png](http://flagpedia.net/data/f
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -193,7 +193,7 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 ### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the image widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the image widget when the `Act as Master Widget` option is enabled.
 
 ### Link
 
@@ -207,4 +207,4 @@ Configure the linking to URL or dashboard with the widget using its settings. Fo
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.

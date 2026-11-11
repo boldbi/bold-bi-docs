@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Join External Customer Data | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to join the current data with an external customer data and make the most of your analytics.
+title: Transformation Join External Customer Data | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to join external customer data and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

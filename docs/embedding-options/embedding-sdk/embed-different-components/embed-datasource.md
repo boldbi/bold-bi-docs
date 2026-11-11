@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Bold BI DataSource - JavaScript Embedding | Bold BI Docs
+title: Bold BI DataSource - JavaScript Embedding | Bold BI
 description: Learn how to seamlessly embed Bold BI data sources into your business application using the SDK, enhancing data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
-# Embed a Data source using an Embed Token
+# Bold BI DataSource - JavaScript Embedding
 
 Embedding data source enables your users to <b>create</b> and <b>modify</b> data source directly within your application.
 
@@ -23,8 +23,8 @@ Before you begin, ensure the following:
   <li style="margin-top: 15px;">The user has the required <b>create/edit permissions</b> to manage data sources.</li>
   <li style="margin-top: 15px;">Set the <b>mode</b> property to:
     <ul style="margin-top:15px; padding-left:20px;">
-      <li style="margin-top: 15px;"><b>BoldBI.Mode.DataSource</b> – to edit an existing data source.</li>
-      <li style="margin-top: 15px;"><b>BoldBI.Mode.Connection</b> – to create a new data source connection.</li>
+      <li style="margin-top: 15px;"><b>BoldBI.Mode.DataSource</b>: to edit an existing data source.</li>
+      <li style="margin-top: 15px;"><b>BoldBI.Mode.Connection</b>: to create a new data source connection.</li>
     </ul>
   </li>
   <li style="margin-top: 15px;">Call the <b>loadDatasource()</b> method to render the data source.</li>

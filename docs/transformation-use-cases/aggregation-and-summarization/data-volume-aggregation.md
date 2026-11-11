@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Ticket Count Aggregation | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to aggregate the ticket count based on the columns and make the most of your analytics.
+title: Transformation Ticket Count Aggregation in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to count tickets by column and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

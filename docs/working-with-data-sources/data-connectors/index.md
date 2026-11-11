@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Connectors – Cloud BI | Bold BI Documentation
-description: Find the list of data connectors supported in Bold BI Cloud. It includes files, databases, web-based data sources and more.
+title: Overview of Bold BI Data Connectors in Bold BI | Bold BI
+description: Find the list of data connectors supported in Bold BI Cloud, including file, database, web-based and other data sources, and choose the one you need.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Data Connection Types
+# Overview of Bold BI Data Connectors in Bold BI
 
 The Bold BI supports the following data connection types such that the structured data can be in any specific format to consider for processing. Click a data source for instructions on how to connect in Bold BI dashboards.
 
@@ -58,7 +58,7 @@ The Bold BI supports the following data connection types such that the structure
 | [Pipedrive](https://help.boldbi.com/working-with-data-sources/data-connectors/pipedrive/) | Pipedrive is a sales pipeline software designed to help businesses manage leads and deals efficiently. |
 | [PipelineDeals](https://help.boldbi.com/working-with-data-sources/data-connectors/pipeline-deals/) | PipelineDeals combines sales engagement and CRM in one application, allowing easy organization, track, and sales management. |
 | [Salesforce](https://help.boldbi.com/working-with-data-sources/data-connectors/salesforce/) | Salesforce is a leading CRM platform providing businesses with the tools needed for effective customer relationship management. |
-| [Salesforce Reports](https://help.boldbi.com/working-with-data-sources/data-connectors/salesforce-reports/) | Salesforce Reports allows you to gain insights from various aspects of your business, including sales and customer data. |
+| [Salesforce Reports](https://help.boldbi.com/working-with-data-sources/data-connectors/salesforce-reports/) | Salesforce Reports lets you gain insights from various aspects of your business, including sales and customer data. |
 | [ServiceNow](https://help.boldbi.com/working-with-data-sources/data-connectors/servicenow/) | ServiceNow is a cloud-based platform that automates enterprise IT operations, offering service management services. |
 | [Zendesk](https://help.boldbi.com/working-with-data-sources/data-connectors/zendesk/) | Zendesk is a service-first CRM company that builds support, sales, and customer engagement software designed to foster better customer relationships. |
 | [Zendesk Sell](https://help.boldbi.com/working-with-data-sources/data-connectors/zendesk-sell/) | Zendesk Sell is a sales force automation software designed to enhance productivity, processes, and pipeline visibility for sales teams. |
@@ -89,7 +89,7 @@ The Bold BI supports the following data connection types such that the structure
 
 | Data Connector | Description |
 |----------------|-------------|
-| [AppFolio](https://help.boldbi.com/working-with-data-sources/data-connectors/appfolio/) | AppFolio property management software is trusted by thousands to get organized, efficient, and profitable. Automate and grow your business. The AppFolio connector allows you to access data from AppFolio databases within the Dashboard Designer. |
+| [AppFolio](https://help.boldbi.com/working-with-data-sources/data-connectors/appfolio/) | AppFolio property management software is trusted by thousands to get organized, efficient, and profitable. Automate and grow your business. The AppFolio connector lets you access data from AppFolio databases within the Dashboard Designer. |
 
 ## Cloud Storage
 
@@ -103,7 +103,7 @@ The Bold BI supports the following data connection types such that the structure
 | [Microsoft OneDrive](https://help.boldbi.com/working-with-data-sources/data-connectors/ms-one-drive/) | Microsoft OneDrive is a file hosting and synchronization service operated as part of the Office suite. Connect with the Bold BI Dashboard Designer and extract rich data sets to build dashboards and see the story that lives in your data. |
 | [Microsoft SharePoint](https://help.boldbi.com/working-with-data-sources/data-connectors/ms-sharepoint/) | Microsoft SharePoint is a web-based collaborative platform that integrates with Microsoft Office. |
 | [Google Drive](https://help.boldbi.com/working-with-data-sources/data-connectors/google-drive/) | Google Drive is a file storage and synchronization service developed by Google. |
-| [Google Sheets](https://help.boldbi.com/working-with-data-sources/data-connectors/google-sheets/) | Google Sheets is a web-based spreadsheet application that allows you to create, update, and modify spreadsheets and share the data online in real-time. |
+| [Google Sheets](https://help.boldbi.com/working-with-data-sources/data-connectors/google-sheets/) | Google Sheets is a web-based spreadsheet application that lets you create, update, and modify spreadsheets and share the data online in real-time. |
 
 ## Social Media
 
@@ -121,13 +121,13 @@ The Bold BI supports the following data connection types such that the structure
 | Data Connector | Description |
 |----------------|-------------|
 | [ClubReady](https://help.boldbi.com/working-with-data-sources/data-connectors/clubready/) | ClubReady gives you everything you need to run your fitness business your way. |
-| [Fitbit](https://help.boldbi.com/working-with-data-sources/data-connectors/fitbit/) | Fitbit is a consumer electronics and fitness company that produces wearable technology devices measuring data such as steps walked, heart rate, sleep quality, and other fitness metrics. The Fitbit connector allows you to access data from the Fitbit database within the Dashboard Designer. |
+| [Fitbit](https://help.boldbi.com/working-with-data-sources/data-connectors/fitbit/) | Fitbit is a consumer electronics and fitness company that produces wearable technology devices measuring data such as steps walked, heart rate, sleep quality, and other fitness metrics. The Fitbit connector lets you access data from the Fitbit database within the Dashboard Designer. |
 
 ## Learning
 
 | Data Connector | Description |
 |----------------|-------------|
-| [Lessonly](https://help.boldbi.com/working-with-data-sources/data-connectors/lessonly/) | Lessonly is powerfully simple training software that helps teams learn, practice, and do better work. The Lessonly connector allows you to access data from Lessonly databases within the Dashboard Designer. |
+| [Lessonly](https://help.boldbi.com/working-with-data-sources/data-connectors/lessonly/) | Lessonly is powerfully simple training software that helps teams learn, practice, and do better work. The Lessonly connector lets you access data from Lessonly databases within the Dashboard Designer. |
 | [Alma](https://help.boldbi.com/working-with-data-sources/data-connectors/alma/) | Alma is a cloud-based school management solution catering to businesses of all sizes in the education industry. Schools and districts use Alma Student Information System (SIS) for comprehensive student information management including admissions, scheduling, and more. Connect with the Dashboard Designer to get insights on student performance and course management. |
 
 ## Marketing
@@ -159,10 +159,10 @@ The Bold BI supports the following data connection types such that the structure
 | [FreshBooks](https://help.boldbi.com/working-with-data-sources/data-connectors/freshbooks/) | FreshBooks is a cloud-based accounting software designed exclusively for small business owners and independent professionals to invoice clients, track time, and manage expenses. Connect with the Dashboard Designer to track your business income, expenses, and more. |
 | [Staxbill](https://help.boldbi.com/working-with-data-sources/data-connectors/fusebill/) | Staxbill automates and streamlines recurring billing, invoicing, and subscription management processes. |
 | [QuickBooks Online](https://help.boldbi.com/working-with-data-sources/data-connectors/quickbooks-online/) | QuickBooks Online is an accounting software package developed for small and medium-sized businesses to manage sales, expenses, and more. |
-| [QuickBooks Payments](https://help.boldbi.com/working-with-data-sources/data-connectors/quickbooks-payments/) | QuickBooks Payments allows you to send invoices, accept payments, and manage all transactions directly from within the QuickBooks platform. |
+| [QuickBooks Payments](https://help.boldbi.com/working-with-data-sources/data-connectors/quickbooks-payments/) | QuickBooks Payments lets you send invoices, accept payments, and manage all transactions directly from within the QuickBooks platform. |
 | [Recurly](https://help.boldbi.com/working-with-data-sources/data-connectors/recurly/) | Recurly provides an enterprise-class subscription billing management platform that is reliable and flexible for businesses. |
 | [Stripe](https://help.boldbi.com/working-with-data-sources/data-connectors/stripe/) | Stripe is a technology company that allows individuals and businesses to make and receive payments over the Internet, with tools to fight fraud and manage billing. |
-| [SquareUp](https://help.boldbi.com/working-with-data-sources/data-connectors/squareup/) | Square helps millions of sellers run their businesses—from secure credit card processing to point-of-sale solutions. The Square connector allows you to access data square Zoom databases within the Dashboard Designer. |
+| [SquareUp](https://help.boldbi.com/working-with-data-sources/data-connectors/squareup/) | Square helps millions of sellers run their businesses-from secure credit card processing to point-of-sale solutions. The Square connector lets you access data square Zoom databases within the Dashboard Designer. |
 | [TDengine](https://help.boldbi.com/working-with-data-sources/data-connectors/tdengine/) | TDengine is a data platform designed for IoT, Big Data, and analytics, delivering high-performance data ingestion, processing, and monitoring. |
 | [Xero](https://help.boldbi.com/working-with-data-sources/data-connectors/xero/) | Xero is an online accounting software for small businesses, providing tools to manage business finances from anywhere. |
 | [Zoho Invoice](https://help.boldbi.com/working-with-data-sources/data-connectors/zoho-invoice/) | Zoho Invoice is an online invoicing software for small businesses to craft quotes, invoice clients, and accept payments online. |
@@ -187,7 +187,7 @@ The Bold BI supports the following data connection types such that the structure
 
 | Data Connector | Description |
 |----------------|-------------|
-| [Mailchimp](https://help.boldbi.com/working-with-data-sources/data-connectors/mailchimp/) | Mailchimp is an email marketing service that allows you to create beautiful campaigns, manage subscribers, and analyze campaign performance. |
+| [Mailchimp](https://help.boldbi.com/working-with-data-sources/data-connectors/mailchimp/) | Mailchimp is an email marketing service that lets you create beautiful campaigns, manage subscribers, and analyze campaign performance. |
 | [SendGrid](https://help.boldbi.com/working-with-data-sources/data-connectors/send-grid/) | SendGrid is a proven, cloud-based customer communication platform that drives engagement and business growth. Connect with the Dashboard Designer to monitor and gain insights from your email marketing KPIs. |
 | [SparkPost](https://help.boldbi.com/working-with-data-sources/data-connectors/sparkpost/) | SparkPost is an email delivery provider that empowers companies with actionable and real-time data to send relevant email to their customers. Connect with the Dashboard Designer to track the results of email deliverability, customer engagement, and performance insights. |
 
@@ -243,7 +243,7 @@ The Bold BI supports the following data connection types such that the structure
 | Data Connector | Description |
 |----------------|-------------|
 | [Alchemer](https://help.boldbi.com/working-with-data-sources/data-connectors/alchemer/) | Alchemer is a powerful online survey platform that empowers organizations of all sizes to make better, faster, and informed decisions. Connect with the dashboard designer to track survey results, feedback, and make actionable decisions. |
-| [SurveyMonkey](https://help.boldbi.com/working-with-data-sources/data-connectors/surveymonkey/) | SurveyMonkey is a tool that allows users to create their own surveys using question format templates. The SurveyMonkey connector allows you to access data from SurveyMonkey databases within the dashboard designer. |
+| [SurveyMonkey](https://help.boldbi.com/working-with-data-sources/data-connectors/surveymonkey/) | SurveyMonkey is a tool that allows users to create their own surveys using question format templates. The SurveyMonkey connector lets you access data from SurveyMonkey databases within the dashboard designer. |
 
 ## Digital Marketing
 
@@ -262,6 +262,6 @@ The Bold BI supports the following data connection types such that the structure
 
 | Data Connector | Description |
 |----------------|-------------|
-| [Gravity Forms](https://help.boldbi.com/working-with-data-sources/data-connectors/gravity-forms/) | Gravity Forms is a premium WordPress plugin that lets you create forms to place on your website. With this plugin, you can add contact forms, quizzes, and surveys to your website with ease. The Gravity Forms connector allows you to access data from Gravity Forms databases within the Dashboard Designer. |
+| [Gravity Forms](https://help.boldbi.com/working-with-data-sources/data-connectors/gravity-forms/) | Gravity Forms is a premium WordPress plugin that lets you create forms to place on your website. With this plugin, you can add contact forms, quizzes, and surveys to your website with ease. The Gravity Forms connector lets you access data from Gravity Forms databases within the Dashboard Designer. |
 
 

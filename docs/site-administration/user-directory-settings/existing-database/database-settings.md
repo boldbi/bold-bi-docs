@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mapping User Directory Database – Embedded BI | Bold BI Docs
+title: Map the User Directory Database in Bold BI | Bold BI
 description: Learn how to configure the user directory database and map the required columns to pull user details into Bold BI Embedded.
 canonical: "/site-administration/existing-database/database-settings/"
 platform: bold-bi

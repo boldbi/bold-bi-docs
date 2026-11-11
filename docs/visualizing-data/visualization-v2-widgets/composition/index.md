@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Composition Widgets Overview | Bold BI Documentation
+title: Composition Widgets for Modern Dashboards | Bold BI
 description: Learn when to use Bold BI Modern composition widgets, review the available chart types, and understand how they combine multiple visual styles in one chart.
 canonical: "/visualizing-data/visualization-v2-widgets/composition/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Composition
+# Composition Widgets for Modern Dashboards
 
 Composition widgets combine multiple visual styles in a single chart so users can view related measures together. Use these widgets when one series is better shown as columns while another is better shown as a line or area.
 

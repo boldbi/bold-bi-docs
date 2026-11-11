@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Resetting User Password – Admin Utility for v3.3 | Bold BI Docs
+title: Resetting User Password - Admin Utility for v3.3 | Bold BI
 description: Learn how to use the command line interface to reset the password of any user in Bold BI Embedded of v3.3 or earlier using their email address.
 platform: bold-bi
 documentation: ug
 ---
 
-# Reset Password for Bold BI version 3.3 or older
+# Resetting User Password - Admin Utility for v3.3
 
 You can reset any user's current password using their email address with this command. Please follow these steps:
    

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Microsoft Ads ETL Connector – Bold BI Embedded Guide
+title: Microsoft Ads Connector for Bold Data Hub | Bold BI
 description: Learn how to use the Microsoft (Bing) Ads ETL connector in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 ---
 
-# Microsoft (Bing) Ads:
+# Microsoft Ads Connector for Bold Data Hub
 
 Microsoft Advertising (formerly Bing Ads) is a platform for creating and managing ads across the Microsoft Search Network, including Bing, Yahoo, and AOL properties, as well as Microsoft Audience Network placements.
 
@@ -103,7 +103,7 @@ plugins:
         # At least one dimension is required:
 ```
 
-## Configure the Data Hub to connect Microsoft (Bing) Ads
+## Configure the Bold Data Hub to connect Microsoft (Bing) Ads
 
 1. To start, Click the `Bold Data Hub` icon on the Navigation Pane.
   ![Bing ADs](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
@@ -119,41 +119,41 @@ plugins:
 5. Click on Allow in the authorization window to accept the scopes requested by Bold DataHub.
 
 6. Update the developer token and IDs in the template. Adjust the columns and date window as needed, then save to the Bold BI Data Store.
-   ![Bing Ads - Data Hub](/static/assets/working-with-etl/images/bingads_template.png#max-width=100%)
+   ![Bing Ads - Bold Data Hub](/static/assets/working-with-etl/images/bingads_template.png#max-width=100%)
 
 7. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/).
-   ![FileSystem - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+   ![FileSystem - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 ## Available report resource in this template
 
 1. Campaign Performance (Daily aggregation)
 2. You can add other performance reports similarly (e.g., Ad Group Performance, Ad Performance, Keyword Performance) by changing properties.report and selecting valid columns for that report.
 
-### Schedule Data Hub Job
+### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![Bing Ads - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![Bing Ads - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%)
+![Bing Ads - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%)
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![Bing Ads - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![Bing Ads - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+![Bing Ads - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 5. Click `Edit DataSource` Option to view the created tables.
 
 ## Reference
 
-1. Microsoft Advertising API – Get started: https://learn.microsoft.com/advertising/guides/get-started
+1. Microsoft Advertising API, Get started: https://learn.microsoft.com/advertising/guides/get-started
 2. OAuth with Microsoft identity platform (v2): https://learn.microsoft.com/advertising/guides/authentication-oauth
 3. Developer Token: https://learn.microsoft.com/advertising/guides/get-started#developer-token
 4. Reports guide: https://learn.microsoft.com/advertising/guides/reports

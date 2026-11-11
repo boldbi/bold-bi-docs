@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Proxy Settings – On-Premises & Embedded | Bold BI Docs
-description: Learn how to configure proxy settings in Bold BI to route traffic securely and update domain and site configurations.
+title: Proxy Settings for On-Premises and Embedded | Bold BI
+description: Learn how to configure proxy settings in Bold BI to route traffic securely, update domain settings and confirm the active site address in use.
 platform: bold-bi
 documentation: ug
 ---
@@ -31,7 +31,7 @@ A **reverse proxy** is a server that sits between client devices and your backen
 
 ### Detected current site URL (effective)
 - This shows the URL automatically detected from incoming requests.
-- It helps confirm what the system currently identifies as the active site address.
+- It helps confirm what the system identifies as the active site address.
 
 ![Detected Current Site URL](/static/assets/multi-tenancy/images/Detected-Site-URL.png#width=55%)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Pinboards – Embedded BI | Bold BI Documentation
+title: Managing Pinboards in Your Site in Bold BI | Bold BI
 description: Learn how to add, rename, duplicate, delete pinboards and pin/unpin widgets in Bold BI deployed in your server.
 canonical: "/managing-resources/manage-pinboards/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Pinboards
+# Managing Pinboards in Your Site
 
 A pinboard is a collection of individual widgets from various dashboards pinned to it.
 

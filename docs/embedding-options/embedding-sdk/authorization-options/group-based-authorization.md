@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Group-Based Auth for OAuth, OpenID & Azure AD | Bold BI
+title: Group-Based Auth for OAuth, OpenID & Azure AD | Bold BI
 description: Learn how to embed Bold BI with group-based authorization for OAuth 2.0, OpenID and Azure AD identity providers.
 platform: bold-bi
 documentation: ug
 ---
 
-# Overview
-Bold BI embedding supports group-based authorization for OAuth 2.0 and OpenID providers. With this support, you can configure and import your OAuth or OpenID groups into the Bold BI server without importing the users of the group. However, every user from the group can access the Bold BI dashboard.  
+# Group-Based Auth for OAuth, OpenID & Azure AD
+Bold BI embedding supports group-based authorization for OAuth 2.0 and OpenID providers. With this support, you can configure and import your OAuth or OpenID groups into the Bold BI Server without importing the users of the group. However, every user from the group can access the Bold BI dashboard.  
 
 ## Why group-based authorization
 
@@ -25,13 +25,13 @@ Before embedding, review these essential guides:
 
 Let's take a look at the configuration settings for Azure AD, OAuth 2.0 and OpenID import, importing the group, and granting access to that group.
 
-1. To have Azure AD connect support, you would need to configure the Azure AD in Bold BI server. Please follow these steps provided in the link.
+1. To have Azure AD connect support, you would need to configure the Azure AD in Bold BI Server. Please follow these steps provided in the link.
 
     The following link explains how to connect with the Bold BI application.
 
     * [Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/#configure-azure-active-directory-details-in-bold-bi-to-import-users-and-groups)
 
-2. To have support for OAuth 2.0 connect, you will need to configure OAuth 2.0 in the Bold BI server. Please follow the steps provided in the link.
+2. To have support for OAuth 2.0 connect, you will need to configure OAuth 2.0 in the Bold BI Server. Please follow the steps provided in the link.
 
     The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
 
@@ -40,14 +40,14 @@ Let's take a look at the configuration settings for Azure AD, OAuth 2.0 and Open
     * [Okta](/security-configuration/single-sign-on/oauth-2.0-support/okta/)
     * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
-3. For OpenID connect support, you would need to configure the OpenID in Bold BI server, follow these steps in the link.
+3. For OpenID connect support, you would need to configure the OpenID in Bold BI Server, follow these steps in the link.
 
    The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
     * [Auth0](/security-configuration/single-sign-on/openid-support/auth0/)
     * [Okta](/security-configuration/single-sign-on/openid-support/okta/)
     * [OneLogin](/security-configuration/single-sign-on/openid-support/onelogin/)
 
-4. After configuring your providers, you need to import your group into the Bold BI server. Follow these respective links to import the groups.
+4. After configuring your providers, you need to import your group into the Bold BI Server. Follow these respective links to import the groups.
     * [Import Azure AD Group](/managing-resources/manage-groups/import-azure-active-directory-groups/)
     * [Import OAuth 2.0 Group](/managing-resources/manage-groups/import-oauth-groups/)
     * [Import OpenID Connect Group](/managing-resources/manage-groups/import-openid-groups/)
@@ -389,7 +389,7 @@ public string TokenGeneration()
         }
     };
 
-    //Post call to Bold BI server
+    //Post call to Bold BI Server
     var client = new HttpClient();
     var requestUrl = $"{embedDetails.serverurl}/api/{embedDetails.siteidentifier}/embed/authorize";
 
@@ -519,19 +519,19 @@ groupbasedauthorization: {
 </td>
 </tr>
 <tr>
-<td align="left">AzureAD – Set this if you have configured AzureAD</td>
+<td align="left">AzureAD: Set this if you have configured AzureAD</td>
 </tr>
 <tr>
-<td align="left">TenantOAuth – Set this if you have configured OAuth at the tenant level<br>TenantOpenID – Set this if you have configured OpenID at the tenant level</td>
+<td align="left">TenantOAuth: Set this if you have configured OAuth at the tenant level<br>TenantOpenID: Set this if you have configured OpenID at the tenant level</td>
 </tr>
 <tr>
-<td align="left">GlobalOAuth – Set this if you have configured OAuth at the global level<br>GlobalOpenID – Set this if you have configured OpenID at the global level</td>
+<td align="left">GlobalOAuth: Set this if you have configured OAuth at the global level<br>GlobalOpenID: Set this if you have configured OpenID at the global level</td>
 </tr>
 <tr>
-<td align="left">WindowsAD – Set this if you have configured WindowsAD</td>
+<td align="left">WindowsAD: Set this if you have configured WindowsAD</td>
 </tr>
 <tr>
-<td align="left">None – Set this if you aren’t using any auth providers</td>
+<td align="left">None: Set this if you aren’t using any auth providers</td>
 </tr>
 <tr>
 <td align="left">embed_user_id</td>
@@ -570,7 +570,7 @@ groupbasedauthorization: {
 
 ### Enabling user import with group-based authorization
 
-Enable this feature to dynamically import users from external identity provider groups when they access embedded dashboards. This ensures users inherit group permissions without being manually added to the Bold BI server.
+Enable this feature to dynamically import users from external identity provider groups when they access embedded dashboards. This ensures users inherit group permissions without being manually added to the Bold BI Server.
 
 For more details, refer to the [Enabling user import with group-based authorization](/embedding-options/embedding-sdk/authorization-options/enabling-user-import-with-group-based-authorization/)
 

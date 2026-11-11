@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Trendline Settings for Modern Widgets | Bold BI Docs
+title: Trendline Settings for Modern Widgets in Bold BI | Bold BI
 description: Learn when trendline settings are available in modern Bold BI charts and how to add, edit, and remove trendlines for supported data configurations.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/trendline-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Trendline Settings
+# Trendline Settings for Modern Widgets
 
 | Unsupported widgets |
 |---|
 | Stacked and 100% stacked charts, proportion charts, maps, tables, cards, gauges, filters, and content widgets |
 
-A trendline summarizes the direction or pattern in a chart series. Use it to make growth, decline, or correlation easier to identify without changing the underlying data.
+A trendline in Bold BI summarizes the direction or pattern in a chart series. Use it to make growth, decline, or correlation easier to identify without changing the underlying data.
 
 > **Availability:** The Trendline section appears for a supported non-stacked Cartesian chart when the chart has at least one value, exactly one Column field, and no Row field.
 
@@ -27,7 +27,7 @@ Use the add action to open the Trendline dialog. After creating a trendline, sel
 
 ## Properties
 
-#### Series
+### Series
 
 Selects the chart series used to calculate the trendline.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Track email activity using logs – Embedded BI | Bold BI Docs 
+title: Track Email Activity Using Logs in Bold BI | Bold BI
 description: Learn about email activity logs, which help us track whether emails were sent to the recipients or not in Bold BI for its activities.
 platform: bold-bi
 documentation: ug

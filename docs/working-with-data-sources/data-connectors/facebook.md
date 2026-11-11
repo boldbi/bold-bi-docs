@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Facebook – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Facebook web service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Facebook Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Facebook web service through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Facebook data source
+# Facebook Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Facebook web services through the REST API. 
 
 ## Choose Facebook data source
-To configure the Facebook data source, follow the below steps:
+To configure the Facebook data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -65,7 +65,7 @@ Follow these steps to authenticate with the Facebook web service:
 
 ## Connect to Facebook
 ### Create Facebook data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Facebook data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Facebook data source.
 1. Enter a name and description (optional) for the data source.
 2. Choose either **Insights** or **Graph API** from the radio button options to select the required API Endpoints.
 3. Click on the **Insights** radio button to choose the **Pages** in your Facebook account and the **Insights** API Endpoints.

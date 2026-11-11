@@ -8,7 +8,7 @@ documentation: ug
 
 # OpenID Connect support in User Management Server
 
-The User Management Server can be configured to support OpenID Connect for Single Sign-On (SSO), allowing users to log in directly to the User Management Server after authenticating using OpenID Connect.
+Configure OpenID Connect single sign-on (SSO) in Bold BI User Management Server so that users can sign in after they authenticate with OpenID Connect.
 
 ## Configure OpenID Connect provider
 
@@ -18,7 +18,7 @@ The User Management Server can be configured to support OpenID Connect for Singl
 
 ## Steps to configure OpenID in User Management Server
 
-1. Log in to Bold ID with admin credentials.
+1. Log in to Bold BI with admin credentials.
 
 2. In the left side menu, click `Settings`, then `Authentication`, and finally `OpenID Connect`.
 
@@ -58,9 +58,25 @@ The User Management Server can be configured to support OpenID Connect for Singl
     <td>It is the property name that holds the email address of the user in the deserialized ID token.</td>
     </tr>
 
-    </table>  
-    
+    </table>
+      
     ![OpenId settings](/static/assets/multi-tenancy/images/openid-auth-configuration.png)
+
+## HTTP OpenID Connect Support
+
+To allow HTTP-based OpenID Connect metadata endpoints, modify the following node in the config.json in the configuration settings:
+
+```json
+"EnableSslValidationOpenID": false
+```
+
+| Setting | Description |
+| --- | --- |
+| `EnableSslValidationOpenID` | Disables SSL certificate validation for OpenID Connect metadata and authority endpoints. |
+
+> **Note:** Set this option to `false` only for trusted HTTP endpoints in development or internal environments. HTTPS is strongly recommended for production deployments.
+    
+![OpenId settings](/static/assets/multi-tenancy/images/openid-sslenable.png)
 
 If you need to import the OpenID Connect groups, you must configure the group details while saving the OpenID authentication settings.  
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Facebook Ads – Cloud BI Data Connector | Bold BI Docs
-description: Learn how to connect Facebook Ads data using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Facebook Ads Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Facebook Ads data through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Facebook Ads data source
+# Facebook Ads Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Facebook Ads web services through the REST API. 
 
 ## Choose Facebook Ads data source
-To configure the Facebook Ads data source, follow the below steps:
+To configure the Facebook Ads data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -43,7 +43,7 @@ Use the following steps to authenticate with the Facebook Ads web service:
 
 ## Connect to Facebook Ads
 ### Create Facebook Ads data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Facebook Ads data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Facebook Ads data source.
 1. Enter a name and description (optional) for the data source.
 2. Choose the radio button **Insights** or **Graph API** for selecting the required API Endpoints.
 3. Click the **Insights** radio button to choose the **Pages** in your Facebook Ads account and the **Insights** API Endpoints.

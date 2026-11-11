@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ask Nicely – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Ask Nicely web service through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: Ask Nicely Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Ask Nicely web service through its REST API endpoint with Bold BI Cloud and create a data source for widget configuration in dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to AskNicely data source
+# Ask Nicely Data Connector Guide in Bold BI
 Bold BI dashboard designer supports connecting to Ask Nicely web services through REST API.
 
 ## Choose Ask Nicely data source
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel opens
 
 You can also edit the connection information set here using the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
 
-#### How do I get API Key for connecting AskNicely Data source?
+### How do I get API Key for connecting AskNicely Data source?
 1. Log in to your *Ask Nicely* account.
 2. Go to *Setup -> API* and you can find the API Key.
 3. Replace this API Key in `<:your_api_key>` in Ask Nicely data source in Bold BI Dashboard.

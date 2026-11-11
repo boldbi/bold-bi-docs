@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Importing a data source – Embedded BI | Bold BI Docs
+title: Importing a data source - Embedded Analytics | Bold BI
 description: Learn how to add or import an existing data source that is accessible to you into the current dashboard in Bold BI Embedded.
 canonical: "/working-with-data-sources/using-an-existing-data-source/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Using an Existing Data Source
+# Importing a data source - Embedded Analytics
 
 To use an existing data source in the current dashboard, follow these steps in the Dashboard Designer:
 

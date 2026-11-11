@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combo Chart (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Combo Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure mixed chart types, assigned data, formatting, trendlines, and interactions for the modern Combo Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/composition/combo-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Combo Chart
 documentation: ug
 ---
 
-# Combo Chart
+# Combo Chart for Modern Dashboards
 
-A Combo Chart displays two or more series with compatible chart types on a shared category axis. It is useful for comparing measures with different scales, such as revenue and quantity, in one visual.
+The Combo Chart widget in Bold BI displays two or more series with compatible chart types on a shared category axis. It is useful for comparing measures with different scales, such as revenue and quantity, in one visual.
 
 ![Combo Chart](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
 

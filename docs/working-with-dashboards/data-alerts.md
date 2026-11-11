@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Alerts & Notifications | Bold BI Documentation
+title: Data Alerts and Notifications in Bold BI | Bold BI
 description: Learn how to configure data alerts that helps to track threshold limit and notify to certain recipients when it was reached.
 platform: bold-bi
 documentation: ug
 ---
 
-# Create Data Alerts in Bold BI
+# Data Alerts and Notifications in Bold BI
 
 Data Alert provides users with the ability to track specific conditions and send alerts to specified recipients via email when a predefined threshold is met.
 
@@ -155,7 +155,7 @@ Dashboards can be scheduled on an `hourly, daily, weekly, monthly, and yearly` b
 
 #### Choose Subscribers
 
-Dashboards can be exported as an Image, PDF, CSV, and Excel. Exported dashboards can be sent to individual users, groups, or external recipients.
+Dashboards can be exported as an Image, PDF, PowerPoint, CSV, and Excel. Exported dashboards can be sent to individual users, groups, or external recipients.
 
 ![schedule-mail](/static/assets/visualizing-data/working-with-widgets/images/recipients.png)
 

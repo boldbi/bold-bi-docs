@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Embed Dashboard in Java Servlets-based Application | Bold BI Docs
+title: Embed Dashboard in Java Servlets-based Application | Bold BI
 description: Explore the steps to embed a Bold BI dashboard in Java Servlets-based application with a demo sample walkthrough.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Java Servlet using Embed SDK
+# Embed Dashboard in Java Servlets-based Application
 
-A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Java Servlet` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI Server. This is followed by steps to create a new embedding application in `Java Servlet` on your own. 
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.     
 

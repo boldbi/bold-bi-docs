@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configuring Level of Detail Functions | Bold BI Embedded Docs
+title: Configuring Level of Detail Functions in Bold BI | Bold BI
 description: Learn how to configure expression fields comprising calculated Level of Detail(LOD) function expression using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Configure Level Of Detail Expressions in Bold BI
+# Configuring Level of Detail Functions
 
 Level of Detail expressions (also known as LOD expressions) allow you to compute values at the data source level and the visualization level. However, LOD expressions let you control the granularity you want to compute. They can be performed at a more granular level (INCLUDE), a less granular level (EXCLUDE), or an entirely independent level (FIXED).
 
@@ -42,7 +42,7 @@ For more information about INCLUDE level of detail expressions, and for some exa
 
 #### EXCLUDE
 
-EXCLUDE level of detail expressions explicitly remove dimensions from the expression—that is, they subtract dimensions from the view level of detail.
+EXCLUDE level of detail expressions explicitly remove dimensions from the expression, that is, they subtract dimensions from the view level of detail.
 EXCLUDE level of detail expressions are most useful for eliminating a dimension in the view.
 
 ```format

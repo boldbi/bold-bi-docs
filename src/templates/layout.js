@@ -154,12 +154,55 @@ export default class LayoutTemplate extends React.Component {
 		return window.location.pathname.replace(this.pathPrefix || '', '');
 	}
 
+	// TechArticle and BreadcrumbList for a documentation page. Built from the
+	// build-time slug and the same routerData the visible breadcrumb uses, so
+	// the markup is present in the raw HTML. Dates come from git (see
+	// gatsby-node.js); datePublished is omitted because no source records it.
+	buildStructuredData(postNode, domain, canonicalUrl) {
+		const headline = postNode.frontmatter.title;
+		const article = {
+			'@type': 'TechArticle',
+			headline: headline,
+			description: postNode.frontmatter.description,
+			url: canonicalUrl,
+			mainEntityOfPage: canonicalUrl,
+			publisher: { '@type': 'Organization', name: 'Bold BI', url: 'https://www.boldbi.com/' },
+		};
+		if (postNode.lastUpdated) {
+			article.dateModified = postNode.lastUpdated;
+		}
+
+		const slug = postNode.slug || '/';
+		const segments = slug.split('/').filter(Boolean);
+		const entry = (this.routerData && this.routerData[slug]) || null;
+		const trail = entry && Array.isArray(entry.title) ? entry.title : [];
+
+		const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: domain + '/' }];
+		if (trail.length && trail.length === segments.length) {
+			trail.forEach((name, i) => {
+				const url = i === trail.length - 1 ? canonicalUrl : domain + '/' + segments.slice(0, i + 1).join('/') + '/';
+				items.push({ '@type': 'ListItem', position: i + 2, name: name, item: url });
+			});
+		} else {
+			items.push({ '@type': 'ListItem', position: 2, name: headline, item: canonicalUrl });
+		}
+
+		return {
+			'@context': 'https://schema.org',
+			'@graph': [
+				article,
+				{ '@type': 'BreadcrumbList', itemListElement: items },
+			],
+		};
+	}
+
 	/* eslint-disable */
 	render() {
 		const postNode = this.props.pageContext;
 		const domain = 'https://help.boldbi.com';
 		const canonicalUrl = postNode.frontmatter.canonical ? domain + postNode.frontmatter.canonical : domain + postNode.slug;
 		var metaRobot = { name: 'robots', content: 'follow' }
+		const structuredData = this.buildStructuredData(postNode, domain, canonicalUrl);
 		return (
 			<>
 				<Helmet>
@@ -168,6 +211,7 @@ export default class LayoutTemplate extends React.Component {
 					<meta name="keywords" content={postNode.frontmatter.keywords} />
 					<meta name={metaRobot.name} content={metaRobot.content} />
 					<link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />
+						<script type="application/ld+json">{JSON.stringify(structuredData)}</script>
 
 					{/* Favorite Icon */}
 					<link rel="icon" href="/favicon-32x32.png" sizes="32x32" />

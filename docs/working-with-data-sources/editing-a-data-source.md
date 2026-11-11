@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing a data source – Embedded BI | Bold BI Documentation
+title: Editing a data source - Embedded Analytics | Bold BI
 description: Learn how to edit an existing data source to customize the configured expression fields, column formatting, etc. through data source editor in Bold BI Embedded.
 canonical: "/working-with-data-sources/editing-a-data-source/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Editing a Data Source
+# Editing a data source - Embedded Analytics
 
 To edit a data source, follow these steps:
 

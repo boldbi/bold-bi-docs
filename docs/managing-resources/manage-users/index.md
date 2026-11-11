@@ -1,12 +1,12 @@
 ---
-title: Managing Users and Groups – Embedded BI | Bold BI Learning
+title: Managing Users and Groups in Your Site in Bold BI | Bold BI
 description: Learn how to add, edit, activate, deactivate, delete users, assigning to groups and manage their permissions with Bold BI Embedded.
 canonical: "/managing-resources/manage-users/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Users in the Bold BI
+# Managing Users and Groups in Your Site
 
 This section explains how to add, edit, activate, deactivate, delete users, and manage permissions and assign users to groups in Bold BI.
 

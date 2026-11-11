@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Embed SDK with ASP.NET Core and Angular | Bold BI Learning
+title: Embed SDK with ASP.NET Core and Angular in Bold BI | Bold BI
 description: Find Angular with ASP.NET Core sample for embedding Bold BI. List the dashboard and render in app with Angular app as client and Core app as server. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Angular with ASP.NET Core using Embed SDK
+# Embed SDK with ASP.NET Core and Angular in Bold BI
 
 We have created an Angular and ASP.NET Core application to achieve this embedding. In this setup, the Angular app serves as the client while the Core app serves as the server. With this environment, we are able to list the dashboards and render them on it. 
 
@@ -101,4 +101,4 @@ We have created an Angular and ASP.NET Core application to achieve this embeddin
 5. Before rendering, we call `authorizationUrl`, which redirects to the GetDetails action in the HomeController. This action generates the EmbedSignature using the embed secret provided in `EmbedProperties.cs` in the ASP.NET Core application. 
 ![Rendering](/static/assets/javascript/sample/images/angular-get-details.png)  
 
-6. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard will start to render.  
+6. These details will be sent to the Bold BI Server and validated there. Once the details are validated, the dashboard will start to render.  

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Mixpanel – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Mixpanel service with Bold BI Cloud and create data source for widget configuration.
+title: Mixpanel Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Mixpanel with Bold BI Cloud and create a data source for widgets, so you can build dashboards from your Mixpanel analytics data.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Mixpanel data source
+# Mixpanel Data Connector Guide in Bold BI
 
   You can connect to web services of popular sites like `Mixpanel` by selecting the connection type. To enable this connection, follow the given steps.
   

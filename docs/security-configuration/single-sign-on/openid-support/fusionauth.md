@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SSO with Fusion Auth (OpenID Connect) | Bold BI Documentation
+title: SSO with Fusion Auth (OpenID Connect) in Bold BI | Bold BI
 description: Learn how to configure Bold BI Embedded with the Fusion Auth identity provider for Single Sign-on authentication using Open ID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Fusion Auth support for SSO authentication
+# SSO with Fusion Auth (OpenID Connect)
 
 The Bold BI application supports adding users through the Fusion Auth provider. By importing them, you can share the dashboards and email exported dashboards with them.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: SEOmonitor – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect SEOmonitor data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: SEOmonitor Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect SEOmonitor data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to SEOmonitor data source
+# SEOmonitor Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SEOmonitor web services through the REST API.
 
 ## Choose SEOmonitor data source
-To configure the SEOmonitor data source, follow the below steps:
+To configure the SEOmonitor data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the SEOmonitor data source, follow the below steps:
 
 ## Create SEOmonitor data source
 
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create SEOmonitor data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create SEOmonitor data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid SEOmonitor REST API endpoint in the URL textbox. Refer to the [SEOmonitor API documentation](https://docs.seomonitor.com/api/v1/) for more details.
 
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Token for connecting SEOmonitor data source?
+### How do I get API Token for connecting SEOmonitor data source?
 
 1. Login to [SEOmonitor](https://app.seomonitor.com/my_account/login) account. Go to *Profile -> Account settings*.
 2. Use this **API Token**  as **&lt;:your_api_token&gt;** in SEOmonitor data source in Bold BI Dashboard.

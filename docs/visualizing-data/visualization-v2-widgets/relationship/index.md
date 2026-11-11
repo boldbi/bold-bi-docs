@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Relationship Widgets Overview | Bold BI Documentation
-description: Learn when to use Bold BI Modern relationship widgets, review the available widget types, and understand how they reveal geographic, tabular, and hierarchical patterns.
+title: Relationship Widgets for Modern Dashboards | Bold BI
+description: Learn when to use Bold BI modern relationship widgets, review the available widget types, and understand how they show geographic and tabular data.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Relationship
+# Relationship Widgets for Modern Dashboards
 
 Relationship widgets help you analyze how data points connect through geography, hierarchy, tabular structure, density, or distribution across an area. Use these widgets when you need to understand patterns between values rather than only compare totals.
 

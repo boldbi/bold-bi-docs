@@ -1,16 +1,16 @@
 ---
 layout: post
-title: GitHub – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect GitHub using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: GitHub Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect GitHub through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboard widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to GitHub data source
+# GitHub Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to GitHub web services through the REST API.
 
 ## Choose GitHub data source
-To configure the GitHub data source, follow the below steps:
+To configure the GitHub data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the GitHub data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/github/ChooseDS_server.png)
 
 ## Create GitHub data source
-Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create GitHub data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create GitHub data source.
 1. Enter a name and description (optional) for the data source.
 2. Select The Extract Engine.
 3. Enter a valid GitHub REST API endpoint in the URL textbox. Refer to the [GitHub API documentation](https://developer.github.com/v3/) for more details.
@@ -43,16 +43,16 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

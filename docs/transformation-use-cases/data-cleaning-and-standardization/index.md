@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Cleaning and Standardization in Bold Data Hub
-description: Learn how to use the ETL/Data Hub Trasnformation section in Bold BI Server. Discover simple steps to clean and standardize the data smoothly and make the most of your analytics.
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to clean and standardize the data and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

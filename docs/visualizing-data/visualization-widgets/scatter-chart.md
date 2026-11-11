@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scatter Chart – Embedded Dashboard Widget | Bold BI Docs
+title: Scatter Chart - Embedded Dashboard Widget | Bold BI
 description: Learn how to create and add a Scatter Chart visual in an embedded dashboard, configure data fields and other settings using Bold BI application.
 platform: bold-bi
 control: Scatter Chart
 documentation: ug
 ---
 
-# Scatter Chart
+# Scatter Chart - Embedded Dashboard Widget
 
 A `Scatter Chart` is a type of plot or mathematical diagram that uses Cartesian coordinates to display values for typically two variables in a set of data.
 
@@ -208,7 +208,7 @@ The primary use case of hidden columns is linking. On configuring hidden columns
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the following filter icon.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/filtericon.png)
 
@@ -216,7 +216,7 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the following image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/hidden-column-filter.png)
 
@@ -232,11 +232,11 @@ You can view the data in the hidden columns in the underlying data view. This is
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/info-icon.png)
 
-The below chart displays the goals by each team without hidden columns.
+The following chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/before.png)
 
-If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row field data, the data configured in the widgets gets duplicated, and individual columns are split based on hidden column field. This affects the chart visualization as we can see in the below image.
+If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row field data, the data configured in the widgets gets duplicated, and individual columns are split based on hidden column field. This affects the chart visualization as we can see in the following image.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/after.png)
 
@@ -254,19 +254,19 @@ You can format the scatter chart for better illustration of the view that you re
 
 #### Name
 
-This allows you to set a `title` for this scatter chart widget.
+This lets you set a `title` for this scatter chart widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/Name.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for this scatter chart widget.
+This lets you set a `subtitle` for this scatter chart widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/Subtitle.png)
 
 #### Description
 
-This allows you to set a `description` for this scatter chart widget.
+This lets you set a `description` for this scatter chart widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/Description.png)
 
@@ -276,13 +276,13 @@ This allows you to set a `description` for this scatter chart widget.
 
 #### Show Value Labels
 
-This allows you to toggle the visibility of value labels.
+This lets you toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/value-labels.png)
 
 #### Series Shape
 
-This allows you to change the shape of the series to **Circle**, **Rectangle**, **Triangle**, and **Diamond**.
+This lets you change the shape of the series to **Circle**, **Rectangle**, **Triangle**, and **Diamond**.
 
 ![Chart series shape](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/series-shape.png)
 
@@ -290,25 +290,25 @@ This allows you to change the shape of the series to **Circle**, **Rectangle**, 
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rtl-tooltip.png)
 
@@ -318,24 +318,24 @@ This option allows you to display fields and their data from right to left.
 
 #### Show legend
 
-A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of the legend in the scatter chart.
+A Legend is a text used to describe the data plotted. This lets you toggle the visibility of the legend in the scatter chart.
 
 ![chart legends](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/show-legend.png)
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/legend-interactivity-enable.png)
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top,** and **Bottom**.
 
 ![Legend position bottom](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/legend-bottom.png)
 
@@ -357,37 +357,37 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 ### X-Axis Settings
 
-This section allows you to customize the x-axis settings in the scatter chart.
+This section lets you customize the x-axis settings in the scatter chart.
 
 ![X-Axis settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/chart-x-axis-settings.png)
 
 #### Show X Axis
 
-This allows you to toggle the visibility of the category axis.
+This lets you toggle the visibility of the category axis.
 
 ![Category axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis.png)
 
 #### Show Axis Title
 
-This allows you to toggle the visibility of the category axis title of the scatter chart.
+This lets you toggle the visibility of the category axis title of the scatter chart.
 
 ![Category axis title](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title.png)
 
 #### Axis Title
 
-This allows you to edit the category axis title. It will reflect in the x-axis name of the chart.
+This lets you edit the category axis title. It will reflect in the x-axis name of the chart.
 
 ![Category axis title change](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title-changed.png)
 
 #### Label Rotation
 
-This allows you to define the rotation angle for the category axis labels to display.
+This lets you define the rotation angle for the category axis labels to display.
 
 ![Category axis label rotated](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/label-rotation.png)
 
 #### Axis Format
 
-This option allows you to format category axis values from the formatting details provided using the `Axis Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format category axis values from the formatting details provided using the `Axis Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-format.png)
 
@@ -397,7 +397,7 @@ By default, the chart control automatically determines the minimum, maximum, and
 
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/x-axisdefault.png)
 
-The axis range property allows you to manually set the **Minimum**, **Maximum**, and **Interval** values of the X axis through the `Axis Range Settings` dialog.
+The axis range property lets you manually set the **Minimum**, **Maximum**, and **Interval** values of the X axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/propertypanel.png)
 
@@ -413,31 +413,31 @@ It will be reflected in the X-axis of the scatter chart.
 
 ### Y-Axis Settings
 
-This section allows you to customize the y-axis settings in the scatter chart.
+This section lets you customize the y-axis settings in the scatter chart.
 
 ![X-Axis settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/chart-y-axis-settings.png)
 
 #### Show Y Axis
 
-This allows you to toggle the visibility of the primary axis.
+This lets you toggle the visibility of the primary axis.
 
 ![Primary axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis.png)
 
 #### Show Axis Title
 
-This allows you to toggle the visibility of the primary axis title of the scatter chart.
+This lets you toggle the visibility of the primary axis title of the scatter chart.
 
 ![Primary axis title](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title.png)
 
 #### Axis Title
 
-This allows you to edit the primary axis title. It will reflect in the y-axis name of the chart.
+This lets you edit the primary axis title. It will reflect in the y-axis name of the chart.
 
 ![Primary axis title change](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title-changed.png)
 
 #### Axis Format
 
-This option allows you to format primary axis values from the formatting details provided using the `Axis Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format primary axis values from the formatting details provided using the `Axis Format` button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-format.png)
 
@@ -447,7 +447,7 @@ By default, the chart control automatically determines the minimum, maximum, and
 
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/default.png)
 
-The axis range property allows you to manually set the **Minimum**, **Maximum**, and **Interval** values of the primary axis through the `Axis Range Settings` dialog.
+The axis range property lets you manually set the **Minimum**, **Maximum**, and **Interval** values of the primary axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primaryaxis_propertypanel.png)
 
@@ -465,7 +465,7 @@ It will be reflected in the y-axis of the scatter chart.
 
 ### Parameter Support in Axis range:
 
-This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This lets you dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -522,7 +522,7 @@ If you wish to set the same ranges in multiple cases, create the range type para
 
 #### Opposed Axis
 
-This allows you to render the primary axis to the opposite side of its default position.
+This lets you render the primary axis to the opposite side of its default position.
 
 ![Opposed axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/opposed-axis.png)
 
@@ -534,13 +534,13 @@ You can toggle the visibility of each axis gridlines using this property.
 
 #### Category Axis
 
-This allows you to enable the `Category Axis` gridlines for the Scatter chart.
+This lets you enable the `Category Axis` gridlines for the Scatter chart.
 
 ![Category Axis Grid Lines](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-grid-lines.png)
 
 #### Primary Value Axis
 
-This allows you to enable the `Primary Axis` gridlines for the Scatter chart.
+This lets you enable the `Primary Axis` gridlines for the Scatter chart.
 
 ![Primary Axis Grid Lines](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-grid-lines.png)
 
@@ -558,7 +558,7 @@ By toggling off the `Use Default Palette`, you can customize the scatter chart s
 
 ### Formatting
 
-This allows you to change the `color` for the scatter chart. This section will be shown only if the row is not configured. 
+This lets you change the `color` for the scatter chart. This section will be shown only if the row is not configured. 
 
 ![Formatting](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/formatting.png)
 
@@ -616,7 +616,7 @@ You can enter the title for the scatter chart legends.
 
 ### Rule based condition mode
 
-This allows you to customize the fill color of the scatter chart based on one or more numerical/text conditions.
+This lets you customize the fill color of the scatter chart based on one or more numerical/text conditions.
 
 ![rule mode](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rule-mode.png)
 
@@ -684,17 +684,17 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 ### Filter
 
-This section allows you to handle the `filter` action for the scatter chart widget.
+This section lets you handle the `filter` action for the scatter chart widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/filter.png)
 
 #### Act as master widget
 
-This allows you to define this scatter chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this scatter chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore filter actions
 
-This allows you to define this scatter chart widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this scatter chart widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Hierarchical filter
 
@@ -704,21 +704,21 @@ When the `Hierarchical Filter option` is enabled, the Top N will be applied for 
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the scatter chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the scatter chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
-This sections allows you to customize the `Container Appearance` for the scatter chart widget.
+This sections lets you customize the `Container Appearance` for the scatter chart widget.
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/container-appearance.png)
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,**  or **right**.
+This lets you handle the alignment of widget title to either **left, center,**  or **right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -726,7 +726,7 @@ This allows you to apply the text `color` to the widget title.
 
 **Font Size**
 
-This feature allows you to apply the specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can range between 10 and 44.
+This feature lets you apply the specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -734,7 +734,7 @@ When Auto Font Size is enabled, the font size of the subtitle will adjust automa
 
 **Font Size**
 
-This feature allows you to apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can range between 10 and 32.
+This feature lets you apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can range between 10 and 32.
 
 ### Auto Padding
 
@@ -742,78 +742,78 @@ Enabling Auto Padding will automatically adjust the padding of the widget contai
 
 **Padding**
 
-This feature allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can range between 0 and 25.
+This feature lets you customize the padding of the widget container if **Auto Padding** is disabled. The value can range between 0 and 25.
 
 ### Show Border
 
-This feature allows you to toggle the visibility of the **border** surrounding the widget.
+This feature lets you toggle the visibility of the **border** surrounding the widget.
 
 ### Corner Radius
 
-This feature allows you to apply the specified **radius** to the widget corners if **Show Border** is enabled. The value can range between 0 and 100.
+This feature lets you apply the specified **radius** to the widget corners if **Show Border** is enabled. The value can range between 0 and 100.
 
 ### Show Background Image
 
-This feature allows you to set the **background image** for the scatter chart widget.
+This feature lets you set the **background image** for the scatter chart widget.
 
 ### Background Color
 
-This feature allows you to set the **background color** for the scatter chart widget.
+This feature lets you set the **background color** for the scatter chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the **background color**.
+This property lets you specify the **transparency** for the **background color**.
 
 #### Show Shadow
 
-This property allows you to toggle the visibility of the `shadow` for the scatter chart widget.
+This property lets you toggle the visibility of the `shadow` for the scatter chart widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 
-This Section allows you to customize the **Container actions** for the scatter chart widget.
+This Section lets you customize the **Container actions** for the scatter chart widget.
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
-This allows you to enable or disable the **widget title** of the scatter chart. 
+This lets you enable or disable the **widget title** of the scatter chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the **maximized mode** of the scatter chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the **maximized mode** of the scatter chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the **CSV export** option for the scatter chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the **CSV export** option for the scatter chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the **Excel export** option for the scatter chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the **Excel export** option for the scatter chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the scatter chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the scatter chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the **PDF export** option for the scatter chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the **PDF export** option for the scatter chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.

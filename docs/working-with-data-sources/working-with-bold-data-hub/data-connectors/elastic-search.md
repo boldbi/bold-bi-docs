@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ElasticSearch Data Hub Connector – Embedded BI | Bold BI Learning
+title: Elasticsearch Connector for Bold Data Hub | Bold BI
 description: Learn how to use the ElasticSearch Bold Data Hub connector in Bold BI Server. Discover simple steps to integrate ElasticSearch data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 ---
 
-# ElasticSearch
+# Elasticsearch Connector for Bold Data Hub
 
 ElasticSearch is a distributed, RESTful search and analytics engine designed for handling a variety of data types, such as logs, metrics, search indexes, and application monitoring datasets. It is commonly used for real-time search, logging, analytics dashboards, and large-scale data ingestion.
 
@@ -21,7 +21,7 @@ To connect to ElasticSearch through Bold Data Hub, you must gather the required 
     * The port is usually 9200, unless otherwise configured.
 2. API Key Authentication
     * Open the Elastic Cloud Console.
-      ![Elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/elastic_home.png#max-width=100%)
+      ![Elastic search Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/elastic_home.png#max-width=100%)
     * Navigate to Management > security > API Keys.
     * Click Create API Key.
     * Provide a suitable name (e.g., `boldbi-access-key`).
@@ -78,25 +78,25 @@ plugins:
 ```
 
 
-## Configure the Data Hub to Connect ElasticSearch
+## Configure the Bold Data Hub to Connect ElasticSearch
 
 1. Click the **Bold Data Hub** icon from the left navigation panel.
 
-  ![Elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
+  ![Elastic search Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
 2. Click **Add Pipeline** and enter a name for your new pipeline.
 
-   ![Elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
+   ![Elastic search Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
 
 3. Select the newly created pipeline and add the **ElasticSearch** template.
 
-  ![elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/elastic_search_addtemplate.png#max-width=100%)
+  ![elastic search Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/elastic_search_addtemplate.png#max-width=100%)
 
 4. Enter the ElasticSearch connection and authentication details.
     * Host - ElasticSearch host URL.
     * Port - Port number of the ElasticSearch server.
-    * Index Name – Name of the ElasticSearch index.
-    * Authentication – Configure either one of the following:
+    * Index Name, Name of the ElasticSearch index.
+    * Authentication, Configure either one of the following:
         * API Key
         * Username and Password
     Note: If both API Key and Username/Password are provided, the Username/Password will be used.
@@ -106,30 +106,30 @@ plugins:
 
 Click **Save**, then choose the destination database.
 
- ![Elastic Search - Data Hub](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+ ![Elastic Search - Bold Data Hub](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
  >**Warning:**
     1. The `Encrypt_Credentials` property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the `Encrypt_Credentials` property must be set to true.
 
-### Schedule Data Hub Job
+### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![Elastic Search - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![Elastic Search - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![Elastic Search - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![Elastic Search - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![Elastic Search - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
+![Elastic Search - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![Elastic Search - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![Elastic Search - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
-![Elastic search - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+![Elastic search - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 
 5. Click `Edit DataSource` Option to view the created tables.

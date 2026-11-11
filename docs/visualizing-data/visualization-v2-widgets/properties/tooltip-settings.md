@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tooltip Settings - Widget Properties | Bold BI Documentation
-description: Learn how to configure tooltip visibility, content, and display behavior for Bold BI Modern widgets.
+title: Tooltip Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how to configure tooltip visibility, content, and display behavior for modern Bold BI widgets, so viewers see the right details when they hover over data.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/tooltip-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Tooltip Settings
+# Tooltip Settings in Modern Widgets
 
-A tooltip appears when a user hovers over a data point on a widget. It provides the exact value, label, or additional context for that point without requiring the user to navigate away from the dashboard. Configuring tooltip settings lets you control what information is shown and how it is presented.
+A tooltip in Bold BI appears when a user hovers over a data point on a widget. It provides the exact value, label, or additional context for that point without requiring the user to navigate away from the dashboard. Configuring tooltip settings lets you control what information is shown and how it is presented.
 
 | Unsupported widgets |
 |---|
@@ -19,7 +19,7 @@ A tooltip appears when a user hovers over a data point on a widget. It provides 
 
 ## Properties
 
-#### Show Tooltip
+### Show Tooltip
 
 Toggles the visibility of the tooltip. When disabled, no tooltip appears when hovering over data points.
 

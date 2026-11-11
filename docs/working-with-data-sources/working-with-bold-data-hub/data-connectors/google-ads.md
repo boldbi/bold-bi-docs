@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Google Ads ETL/Bold Data Hub Connector – Bold BI Learning
+title: Google Ads Connector for Bold Data Hub in Bold BI | Bold BI
 description: Learn how to use the Google Ads ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
-# Google Ads
+# Google Ads Connector for Bold Data Hub
 
 Google Ads is a service for online advertising that enables businesses to track and manage ad campaigns, providing data on ad performance and audience engagement across Google platforms.
 
@@ -17,7 +17,7 @@ To obtain API credentials using a GCP account, follow these steps:
 
 1. Sign in to [https://console.cloud.google.com](https://console.cloud.google.com).
 
-![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/gcloudconsole.png#max-width=100%)
+![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/gcloudconsole.png#max-width=100%)
 
 2. Ensure you're logged in with the Google account associated with your project.
 3. Select the project for which you want to find the OAuth 2.0 credentials.
@@ -43,19 +43,19 @@ customer_id: customer id
 
   1. Click the `Data Hub` icon on the Navigation Pane.
 
-  ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
+  ![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
   2. Click Plus icon and provide the new pipeline's name.
   
-  ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_addprojectDataHub.png#max-width=100%)
+  ![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/googleads_addprojectDataHub.png#max-width=100%)
   
   3. Select the newly created pipeline
   
-  ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_oauthconfiguration.png#max-width=100%)
+  ![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/googleads_oauthconfiguration.png#max-width=100%)
 
   4. Enter the `Client ID` and `Client Secret` and click ok. The Template will be added with credentials.
   
-  ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_addTemplate.png#max-width=100%)
+  ![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/googleads_addTemplate.png#max-width=100%)
 
 
 ### Configuration Parameters
@@ -69,30 +69,30 @@ customer_id: customer id
 | **Customer ID:**               | Provide the Google Ads customer ID of the account you want to access data for. |
 | **Select:**                  |    **Tablename(s):**         Specify the resources to load data from the Google Ads. |
 
-  5. Update the details required in the template. and save it to the BoldBI Data Store.
+  5. Update the details required in the template. and save it to the Bold BI Data Store.
 
-  ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_updateDatahub.png#max-width=100%)
+  ![Google Ads ETL- Bold BI](/static/assets/working-with-etl/images/googleads_updateDatahub.png#max-width=100%)
 
 ### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![google ads ETL - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![google ads ETL - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![google ads ETL - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![google ads ETL - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![google ads ETL - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%)
+![google ads ETL - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%)
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![google ads ETL - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![google ads ETL - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![google ads ETL - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)  
+![google ads ETL - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)  
 
 5. Click the `Edit DataSource` Option to view the created table(s), such as the 'votes' table.
 
-![google ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_tableDataHub.png#max-width=100%)
+![google ads ETL- Bold BI](/static/assets/working-with-etl/images/googleads_tableDataHub.png#max-width=100%)

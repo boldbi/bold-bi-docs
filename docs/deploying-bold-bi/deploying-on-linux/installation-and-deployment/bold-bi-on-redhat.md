@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation of Bold BI on RHEL | Bold BI Documentation
+title: Installation of Bold BI on RHEL in Bold BI | Bold BI
 description: Learn more about the installation and deployment of the Bold BI Linux package on the RHEL Linux server with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on RHEL Linux
+# Installation of Bold BI on RHEL in Bold BI
 
 ## Deployment Prerequisites
 

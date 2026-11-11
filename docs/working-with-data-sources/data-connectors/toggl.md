@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Toggl – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Toggl data through REST API endpoint with Bold BI Cloud and create data source.
+title: Toggl Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Toggl data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Toggl data source
+# Toggl Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Toggl web services through the REST API. 
 
 ## Choose Toggl data source
-To configure the Toggl data source, follow the below steps:
+To configure the Toggl data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Toggl data source, follow the below steps:
 
 
 ## Create Toggl data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Toggl data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Toggl data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Toggl REST API endpoint in the URL textbox. Refer to the [Toggl API documentation](https://github.com/toggl/toggl_api_docs/) for more details.
 
@@ -100,7 +100,7 @@ Replace it in the URL to query a particular workspace:
 For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://github.com/toggl/toggl_api_docs/)
 
 #### Mandatory Parameters for Reports API
-The following request parameters are mandatory in order to access the report APIs:
+The following request parameters are mandatory to access the report APIs:
 1. *user_agent* - The name of your application or your email address.
 2. *workspace_id* - The workspace for which you want to access data.
 

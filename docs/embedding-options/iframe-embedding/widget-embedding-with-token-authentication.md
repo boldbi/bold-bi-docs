@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Widget iFrame Embedding with Token Authentication | Bold BI Docs
+title: Widget iFrame Embedding with Token Authentication | Bold BI
 description: Learn how to embed a dashboard's widget in view mode using iFrame with token authentication. Also, find a sample to download.
 platform: bold-bi
 documentation: ug
 ---
 
-# Widget Embedding with Token Authentication
+# Widget iFrame Embedding with Token Authentication
 
 Bold BI supports embedding widgets with iFrame using token-based authentication.
 

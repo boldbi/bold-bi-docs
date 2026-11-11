@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Service Configuration – User Management | Bold BI Doc
+title: Email Service Configuration - User Management | Bold BI
 description: Learn how Microsoft Office 365 with OAuth authentication is used for mail notifications on account activation, password reset and forgotten passwords.
 platform: bold-bi
 documentation: ug
@@ -8,12 +8,12 @@ documentation: ug
 
 # Email Account Settings in User Management Server
 
-This section explains how to configure the email settings in the Bold BI User Management to send emails using either SMTP or Microsoft Office 365 accounts.
+Configure email settings in User Management Server to send emails through an SMTP or Microsoft Office 365 account.
 * [SMTP Account](/multi-tenancy/site-administration/email-settings/configuration/smtp-account/)
 
 * [Microsoft Office 365 Account with OAuth authentication](/multi-tenancy/site-administration/email-settings/configuration/office-365-account/)
 
-### Email Settings are required to perform the following operations:
+## Email Settings are required to perform the following operations:
 <table>
 <tr>
     <td>Account Activation</td>

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: RSS Feeds – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect RSS Feeds data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: RSS Feeds Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect RSS Feeds data through its REST API endpoint with Bold BI Cloud, then create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to RSS Feeds data source
+# RSS Feeds Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to RSS Feeds web services through the REST API. 
 
 ## Choose RSS Feeds data source
-To configure the RSS Feeds data source, follow the below steps:
+To configure the RSS Feeds data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the RSS Feeds data source, follow the below steps:
 
 
 ## Create RSS Feeds data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create RSS Feeds data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create RSS Feeds data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid RSS Feeds REST API endpoint in the URL textbox. Refer to the [RSS Feeds API documentation](http://www.rssboard.org/rss-specification) for more details.
 
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

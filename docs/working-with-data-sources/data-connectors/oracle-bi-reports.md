@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Oracle BI Reports - Cloud BI Connector | Bold BI Documentation
+title: Oracle BI Reports Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Oracle BI Reports web service through basic HTTP authentication with cloud-hosted Bold BI and create data source for widget configuration. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Oracle BI Reports data source
+# Oracle BI Reports Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to `Oracle BI Reports` web services through Report services API.
 
@@ -46,7 +46,7 @@ Once you click the data source, the `NEW DATA SOURCE` configuration panel opens.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 
 <table width="600">
 <tr>

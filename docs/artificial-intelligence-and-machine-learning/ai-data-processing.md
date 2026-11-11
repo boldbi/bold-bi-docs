@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI-Powered Data Processing in Bold BI | Bold BI Documentation
+title: AI-Powered Data Processing in Bold BI in Bold BI | Bold BI
 description: Discover how Bold BI processes and manages data for AI features, including AI Copilot, text-based queries, and dashboard insights, while ensuring data security and control.
 canonical: "/artificial-intelligence-and-machine-learning/ai-data-processing/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Data Processing
+# AI-Powered Data Processing in Bold BI
 
 ## How Bold BI Handles Data for AI Processing
 
@@ -59,7 +59,7 @@ The data sent to the AI model would be:
 }
 ```
 
->**NOTE:** No raw data is shared—only schema details are sent to ensure privacy and security.
+>**NOTE:** No raw data is shared, only schema details are sent to ensure privacy and security.
 
 ## Text-Based Queries
 

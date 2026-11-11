@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Microsoft OneDrive – Cloud BI Connector | Bold BI Learning
+title: Microsoft OneDrive Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect your OneDrive account with Bold BI Cloud, read CSV, JSON, XML and XLSX files and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Microsoft OneDrive data source
+# Microsoft OneDrive Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Microsoft OneDrive web services through the REST API. 
 
 ## Choose Microsoft OneDrive data source
-To configure the Microsoft OneDrive data source, follow the below steps:
+To configure the Microsoft OneDrive data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Microsoft OneDrive web service:
 
 ## Connect to Microsoft OneDrive
 ### Create Microsoft OneDrive data source
-After successful authentication, the File Explorer panel opens. Follow the below steps to create Microsoft OneDrive data source.
+After successful authentication, the File Explorer panel opens. Follow the following steps to create Microsoft OneDrive data source.
 1. Enter a name for the data source.
 2. Explorer will list out all the folders and files with extension `csv`, `json`, `xml` and `xlsx`.
 3. Select the file you wish to preview and connect the data.

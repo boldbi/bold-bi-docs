@@ -1,13 +1,13 @@
 ---
 layout: post
-title: View Data of Widget – Embedded BI | Bold BI Documentation
+title: View Data of Widget - Embedded Analytics | Bold BI
 description: Learn how to view raw data bounded to a widget in and use its different export options in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/view-data/"
 platform: bold-bi
 documentation: ug
 ---
 
-# View Underlying Data
+# View Data of Widget - Embedded Analytics
 
 The `View Underlying Data` feature allows users to access detailed data linked to a widget and specific sections within the view data grid. This functionality enhances data transparency, providing deeper insights into the information behind visual representations and facilitating more informed decision-making.
 

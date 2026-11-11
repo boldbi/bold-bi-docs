@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Navigation in Bold BI Dashboard Viewer | Bold BI Docs
+title: Keyboard Navigation in Bold BI Dashboard Viewer | Bold BI
 description: Learn how to explore Bold BI dashboards with keyboard shortcuts in viewer mode for improved accessibility.
 platform: bold-bi
 documentation: ug

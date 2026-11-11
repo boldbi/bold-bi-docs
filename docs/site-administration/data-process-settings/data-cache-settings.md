@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure Data Cache Settings – Embedded BI | Bold BI Docs
+title: Configure Data Cache Settings - Embedded Analytics | Bold BI
 description: Learn how to configure the data cache settings to improve dashboard performance by caching widget data during the interactions in a dashboard in the Bold BI.
 platform: bold-bi
 documentation: UG
@@ -12,7 +12,7 @@ This section explains how to configure the Data cache settings to improve dashbo
 
 The Data Cache feature allows you to enhance dashboard performance by caching the result of each widget and storing the cached data in a dashboard for a specified amount of time.
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 ## Mode selection
 The mode should be either `in-memory` or `redis`. The widget data will be cached based on the selected mode.

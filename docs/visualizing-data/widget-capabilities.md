@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Comprehensive Guide to Widget Capabilities | Bold BI Docs
+title: Comprehensive Guide to Widget Capabilities | Bold BI
 description: Navigate the comprehensive feature support matrix to determine which widgets align with your specific requirements.
 canonical: "/visualizing-data/widget-capabilities/"
 platform: bold-bi
 documentation: ug
 ---
 
-# A Comprehensive Guide to Widget Capabilities
+# Comprehensive Guide to Widget Capabilities
  
 This table provides a quick and easy way for users to see which features are supported by each widget. It can be helpful for users who are trying to decide which widget to use for a particular task.
 

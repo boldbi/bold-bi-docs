@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Xero - Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Xero web service through OAuth-based authentication with cloud-hosted Bold BI and create data source.
+title: Xero Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Xero through OAuth-based authentication and its REST API endpoint with cloud-hosted Bold BI, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Xero data source
+# Xero Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Xero web services through the REST API. 
 
 ## Choose Xero data source
@@ -52,7 +52,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>
@@ -74,7 +74,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 ### Setting up the URL
 
-1. For example, in order to retrieve specific account details, you should connect to the *Show Accounts* endpoint. This will return all account IDs, allowing you to select the specific account ID from the results.
+1. For example, to retrieve specific account details, you should connect to the *Show Accounts* endpoint. This will return all account IDs, allowing you to select the specific account ID from the results.
 2. Replace the account ID in the URL to query a particular account.
 
 `https://api.xero.com/api.xro/2.0/Accounts/<:accountid>`

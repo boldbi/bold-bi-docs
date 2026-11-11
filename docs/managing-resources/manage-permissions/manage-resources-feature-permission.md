@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resources Feature Permissions in Embedded BI | Bold BI Docs
+title: Feature Permissions for Site Resources in Bold BI | Bold BI
 description: Learn how to manage and control feature-level permissions for users and groups across all dashboards in Bold BI Embedded. 
 canonical: "/managing-resources/manage-permissions/manage-resources-feature-permission/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Resources Feature Permission
+# Feature Permissions for Site Resources
 
 This section explains the feature-level permissions available for dashboards, including their purpose, supported actions, and how to assign them to user-level and group-level granular permission.
 
@@ -21,7 +21,7 @@ Click the [Add Permission](/managing-resources/manage-permissions/manage-resourc
 
 Permissions are organized using the following structure:
 	
-* Entity – Scope – Access Mode
+* Entity, Scope, Access Mode
 
 ![Add Permission Dialog](/static/assets/images/resources-feature-permission.png)
 
@@ -53,9 +53,9 @@ Permissions are organized using the following structure:
 
 Scope selection is only available for `Dashboards in Category` and `Specific Dashboard` types.
 
-* <strong>Dashboards in Category</strong> – displays the list of available categories.
+* <strong>Dashboards in Category</strong>, displays the list of available categories.
 
-* <strong>Specific Dashboard</strong> – displays the list of dashboards.
+* <strong>Specific Dashboard</strong>, displays the list of dashboards.
 
 ## Access Modes
 

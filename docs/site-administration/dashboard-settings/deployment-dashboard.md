@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deploying Dashboards to Production – Embedded BI | Bold BI Docs
+title: Deploying Dashboards to Production in Bold BI | Bold BI
 description: Learn how to deploy dashboards from one site to another site with Bold BI Embedded. With this you can deploy any dashboard from testing site to production site.
 platform: bold-bi
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 # Deployment dashboards
 You can publish one or more dashboards to a site while creating that site by setting the deployment dashboards.
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 This section explains how to add dashboards to each site while deploying that site in the Bold BI application.
 

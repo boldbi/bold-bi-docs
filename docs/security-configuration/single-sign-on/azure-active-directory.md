@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Single Sign-On with Azure AD Users | Bold BI Embedded
+title: Single Sign-On with Azure AD Users in Bold BI | Bold BI
 description: Learn how to setup Azure Active Directory for Single Sign-on authentication in Bold BI. This configuration must be done in Azure portal.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# How to set up Azure Active Directory for SSO authentication in Bold BI
+# Single Sign-On with Azure AD Users
 
 This section explains how to perform Single Sign-On (SSO) for users in the Azure Active Directory with the Bold BI application.
 

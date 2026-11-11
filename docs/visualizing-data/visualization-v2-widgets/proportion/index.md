@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Proportion Widgets (Modern) | Bold BI Documentation
-description: Learn when to use Bold BI Modern proportion widgets and explore the chart types available in this category.
+title: Proportion Widgets in Modern Dashboards in Bold BI | Bold BI
+description: Learn when to use Bold BI modern proportion widgets, review the chart types in this category, and understand how they show parts of a whole in dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Proportion
+# Proportion Widgets in Modern Dashboards
 
 Proportion widgets show how each part contributes to a whole. Use these widgets when you want to explain percentage contribution, segment share, or part-to-total composition.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Inter-Widget Linking Widget Property | Bold BI Documentation
-description: Learn how to configure inter-widget linking between supported Modern widgets and a Tab widget in Bold BI dashboards.
+title: Inter-Widget Linking in Modern Widgets in Bold BI | Bold BI
+description: Learn how to configure inter-widget linking between supported modern widgets and a Tab widget in Bold BI dashboards so selections update linked content.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/inter-widget-linking/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Inter-Widget Linking
+# Inter-Widget Linking in Modern Widgets
 
-Inter-widget linking lets supported Modern widgets interact with a **Tab** widget. When a viewer selects a value in the linked widget, Bold BI can switch to a tab that matches the selected index and apply the related filter context to the widgets inside that tab.
+Inter-widget linking in Bold BI lets supported Modern widgets interact with a **Tab** widget. When a viewer selects a value in the linked widget, Bold BI can switch to a tab that matches the selected index and apply the related filter context to the widgets inside that tab.
 
 This feature is useful when you want a selection in one widget to guide viewers to a specific tabbed view without asking them to switch tabs manually.
 

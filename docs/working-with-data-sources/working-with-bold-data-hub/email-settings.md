@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mail Settings ETL/Data Hub – Embedded BI | Bold BI Learning
-description: Learn how to configure the smptp settings for sender email in Bold BI Data Hub. Discover simple steps to provide details for microsoft and google account.
+title: Mail Settings for Bold Data Hub in Bold BI | Bold BI
+description: Learn how to configure the smptp settings for sender email in Bold BI Bold Data Hub. Discover simple steps to provide details for microsoft and google account.
 platform: bold-bi
 documentation: ug
 
 ---
 
 
-# Email Settings
+# Mail Settings for Bold Data Hub
 
 To enable **mail alerts** for your pipelines, SMTP settings must be configured under the **Settings** tab in **Email settings** section.
 

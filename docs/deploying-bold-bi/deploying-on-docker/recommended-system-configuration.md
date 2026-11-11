@@ -1,12 +1,12 @@
 ---
 layout: post
-title: System Configuration For Docker| Bold BI Documentation.
+title: System Configuration For Docker in Bold BI | Bold BI
 description: Read this guide to learn system configuration based on user count and data size for Deploying Bold BI in Docker.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended System Configuration
+# System Configuration For Docker in Bold BI
  
 This section helps you to define your production system configuration based on user count and data size.
  

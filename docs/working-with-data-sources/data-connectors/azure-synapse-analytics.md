@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Azure Synapse Analytics - Cloud BI Connector | Bold BI Docs
-description: Learn how to connect Azure Synapse Analytics using SQL Live Query with cloud-hosted Bold BI and create data source.
+title: Azure Synapse Analytics Data Connector Guide | Bold BI
+description: Learn how to connect Azure Synapse Analytics using SQL Live Query with cloud-hosted Bold BI, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Azure Synapse Analytics data source
+# Azure Synapse Analytics Data Connector Guide
 The Bold BI Dashboard Designer supports connecting to an Azure Synapse Analytics database using SQL Live Query (C# API).
 
 ## Choose Azure Synapse Analytics data source

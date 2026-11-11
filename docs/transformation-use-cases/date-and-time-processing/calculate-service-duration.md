@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Calculate Service Duration | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to calculate service duration and make the most of your analytics.
+title: Transformation Calculate Service Duration | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to calculate service duration and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

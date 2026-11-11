@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of AI Credits - Embedded BI | Bold BI Docs
+title: Overview of AI Credits - Embedded Analytics | Bold BI
 description: Learn how AI Credits work in Bold BI, including free monthly credits, subscription plans, add-on credits, payment status, usage tracking, and troubleshooting.
 canonical: "/artificial-intelligence-and-machine-learning/ai-credits/"
 platform: bold-bi
 documentation: ug
 ---
 
-# AI Credits
+# Overview of AI Credits - Embedded Analytics
 
 AI Credits are used to access AI-powered features in Bold BI, such as the AI Assistant, dashboard summarization, and the Q&A widget. This page explains how AI Credits work, how to purchase credits, and how to monitor credit usage.
 
@@ -54,7 +54,7 @@ Subscription plans provide a fixed number of credits every month at a recurring 
 
 | Plan       | Monthly Price | Base Credits | Bonus Credits | Total Credits |
 | ---------- | ------------- | ------------ | ------------- | ------------- |
-| Standard   | $20           | 2,000        | —             | 2,000         |
+| Standard   | $20           | 2,000        |:             | 2,000         |
 | Enterprise | $50           | 5,000        | 500           | 5,500         |
 | Pro        | $100          | 10,000       | 2,000         | 12,000        |
 
@@ -72,7 +72,7 @@ If a license exhausts its monthly credits before the billing period ends, admins
 
 Key details for add-on credits:
 
-* **Pricing:** 100 credits are provided for $1. For example, a $5 purchase adds 500 credits, and a $10 purchase adds 1,000 credits.
+* **Pricing:** 1,000 credits cost $40. For example, a $40 purchase adds 1,000 credits, and a $20 purchase adds 500 credits.
 * **No expiry:** Add-on credits do not expire. Unused add-on credits carry over until they are consumed.
 * **Availability:** Add-on credits are available only for customers with an active paid AI Credits subscription.
 

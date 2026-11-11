@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Calendar – Cloud BI Data Connector | Bold BI Docs
-description: Learn how to connect Google Calendar data using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Google Calendar Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google Calendar data through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google Calendar data source
+# Google Calendar Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google Calendar web services through the REST API. 
 
 ## Choose Google Calendar data source
-To configure the Google Calendar data source, follow the below steps:
+To configure the Google Calendar data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ To authenticate with the Google Calendar web service, follow these steps:
 
 ## Connect to Google Calendar
 ### Create Google Calendar data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google Calendar data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Google Calendar data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google Calendar REST API endpoint in the URL textbox. Refer to the [Google Calendar API documentation](https://developers.google.com/calendar/v3/reference/) for more details.
 

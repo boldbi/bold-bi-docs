@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation of Bold BI on Oracle | Bold BI Documentation
+title: Installation of Bold BI on Oracle in Bold BI | Bold BI
 description: Learn more about the installation and deployment of the Bold BI Linux package on the Oracle Linux server with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on Oracle Linux
+# Installation of Bold BI on Oracle in Bold BI
 
 ## Deployment Prerequisites
 

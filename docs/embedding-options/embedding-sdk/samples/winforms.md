@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with .NET WinForms | Bold BI Docs
+title: Embedding Analytics with .NET WinForms in Bold BI | Bold BI
 description: Learn how to embed an analytics dashboard with .NET Win Forms application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Windows Forms using Embed SDK
+# Embedding Analytics with .NET WinForms in Bold BI
 
-A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI Server and followed by steps to create a new embedding application in the `Windows Forms` on your own.
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 

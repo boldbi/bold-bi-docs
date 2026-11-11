@@ -7,7 +7,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# MCP Server
+# Bold BI MCP Server Setup Guide for AI Assistants
 
 ## Getting Started with the Bold BI MCP Server 
 

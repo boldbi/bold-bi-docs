@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deploy Bold BI and Reports using ARM Template | Bold BI Docs
+title: Deploy Bold BI and Reports using ARM Template | Bold BI
 description: Learn about the steps for how to deploy Bold BI and Reports application in Azure App service using the ARM template.
 platform: bold-bi
 documentation: ug
 ---
 
-# Deploy Bold BI and Bold Reports Azure web app using the ARM template
+# Deploy Bold BI and Reports using ARM Template
 
 Please follow the below step to create combined Bold BI and Bold Reports Azure web app using the ARM template.
 
@@ -54,7 +54,7 @@ Please follow the below step to create combined Bold BI and Bold Reports Azure w
 
 9.	Bold BI and Reports Azure App service(web app) deployment gets started. This may take 5-10 minutes to complete the deployment.
 
-10. We have created an app service plan for the web app, which will be set to **Basic - B1** by default. For the common deployment (BI and Reports), we require a minimum of 2 vCPU and 8 Memory(GB) of memory. Therefore, we kindly request that you scale the app service plan to either Standard or Premium after the deployment. You can find the recommended Azure app service plans for development and production environments in the following link: ([DEV, TEST, and PROD Environments – App Service | Bold BI Docs]( https://help.boldbi.com/deploying-bold-bi/deploying-on-azure-app-service/recommendations/)). You can learn more about [app service plans]( https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview). Additionally, you can refer to the documentation links below for instructions on how to scale up and scale out the App Service plan.
+10. We have created an app service plan for the web app, which will be set to **Basic - B1** by default. For the common deployment (BI and Reports), we require a minimum of 2 vCPU and 8 Memory(GB) of memory. Therefore, we kindly request that you scale the app service plan to either Standard or Premium after the deployment. You can find the recommended Azure app service plans for development and production environments in the following link: ([DEV, TEST, and PROD Environments: App Service | Bold BI Docs]( https://help.boldbi.com/deploying-bold-bi/deploying-on-azure-app-service/recommendations/)). You can learn more about [app service plans]( https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview). Additionally, you can refer to the documentation links below for instructions on how to scale up and scale out the App Service plan.
 
     [Scale up an app in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-scale)
 

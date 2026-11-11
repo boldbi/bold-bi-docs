@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to lock the dashboard resource synchronization | Bold BI Docs
+title: How to lock the dashboard resource synchronization | Bold BI
 description: Find out how to use the Bold BI application to allow or disable lock synchronization of dashboards, data sources, and other resources from other websites.
 canonical: "/site-administration/dashboard-settings/lock-resource-synchronization/"
 platform: bold-bi

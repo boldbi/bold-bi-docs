@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic Translator – Embedded BI | Bold BI Learning
+title: Dynamic Translator - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to change the Language of the Dashboard using the Dynamic Translator in the Bold BI Embedded.
 canonical: "/working-with-dashboards/dynamic-translator/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Dynamic Translator
+# Dynamic Translator - Embedded Analytics
 
 The Dynamic Translator feature in Bold BI allows you to customize dashboard content in any desired language by inputting translated text corresponding to the original English content. This functionality enhances the user experience by delivering dashboard information in users' preferred languages. It supports translations for the following items:
 

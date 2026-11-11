@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation and Preview – Embedded BI | Bold BI Learning
+title: Transformation and Preview in Bold Data Hub | Bold BI
 description: Learn how to Transformation and preview in ETL application in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Transformation
+# Transformation and Preview in Bold Data Hub
 
 In ``Tranformation`` page, convert extracted data into a suitable format for analysis. This stage includes data cleaning, filtering, aggregation, and normalization. Enrich data by integrating it with additional information.
 

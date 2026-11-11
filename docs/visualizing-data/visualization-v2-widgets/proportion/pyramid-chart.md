@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Pyramid Chart Widget (Modern) | Bold BI Documentation
-description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Pyramid Chart in Bold BI dashboards.
+title: Pyramid Chart for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Pyramid Chart widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/pyramid-chart/"
 platform: bold-bi
 control: Pyramid Chart
 documentation: ug
 ---
 
-# Pyramid Chart
+# Pyramid Chart for Modern Dashboards
 
-A Pyramid Chart represents values as proportional segments of a triangular shape. The width of each segment helps viewers compare the relative size of categories or levels.
+The Pyramid Chart widget in Bold BI represents values as proportional segments of a triangular shape. The width of each segment helps viewers compare the relative size of categories or levels.
 
 ![Pyramid Chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/pyramidchart.png)
 

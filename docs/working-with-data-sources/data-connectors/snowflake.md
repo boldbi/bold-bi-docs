@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Snowflake – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Snowflake, an analytic data warehouse with Bold BI Cloud and create data source for widget configuration.
+title: Snowflake Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Snowflake, an analytic data warehouse, with Bold BI Cloud using SQL Live Query, then create a data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Snowflake data source
+# Snowflake Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Snowflake database through SQL Live query.
 
 **Supported Server Editions:** Standard, Enterprise and Business Critical
@@ -113,8 +113,8 @@ authenticator=snowflake_jwt;private_key='-----BEGIN ENCRYPTED PRIVATE KEY----- M
 
 ### Private Key File Authentication
 In Bold BI, we support two types of authentication mechanisms for secure key-based access:
-1. Key Pair Authentication – Uses RSA private/public key pair.
-2. PEM Certificate Authentication – Uses an encrypted PEM certificate.
+1. Key Pair Authentication, Uses RSA private/public key pair.
+2. PEM Certificate Authentication, Uses an encrypted PEM certificate.
 
 **Prerequisites**
 
@@ -296,7 +296,7 @@ In this connection type, a data source is fetched from the source periodically. 
 
    ![Snowflake Connection](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_extractmode.png)
 
-> **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected in order to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh.  <br /> 
   ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Snowflake/maxRowOption.png#max-width=60%)
 	
 ### Refresh settings
@@ -852,7 +852,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ## How to filter active warehouse through connection parameters for Snowflake data source
 
-The Bold BI application allows you to filter the warehouse through connection parameters in the Snowflake data source by following these steps.
+The Bold BI application lets you filter the warehouse through connection parameters in the Snowflake data source by following these steps.
 
 ### Steps to connect the snowflake with the active warehouse
 
@@ -868,7 +868,7 @@ In this way, you can filter the warehouse connection by passing parameters in th
 
     ![Table schema](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ssh-tables.png#max-width=70%)
 
-4.	Click **Save** to save the data source with a relevant name in order to proceed with designing a dashboard.
+4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
 
     ![Save option](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ssh-save-option.png#max-width=70%)
 

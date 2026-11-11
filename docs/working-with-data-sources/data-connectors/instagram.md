@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Instagram Data Connector for Embedded Dashboards | Bold BI Docs
+title: Instagram Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Instagram web service using OAuth-based authentication through REST API with Bold BI to prepare the dashboards and embed them in your app.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connect Bold BI to Instagram data source
+# Instagram Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Instagram web services through the REST API. 
 
 > **Note:** The Instagram data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
@@ -79,11 +79,11 @@ Replace it in the URL for query reach details:
 `https://graph.facebook.com/v6.0/<:business-account-id>/insights?metric=reach&period=day`
 
 ### Sample queries
-1. Use the below query to retrieve the **Business Info** information for your connected account.
+1. Use the following query to retrieve the **Business Info** information for your connected account.
 	
    `https://graph.facebook.com/v6.0/?fields=biography,id,followers_count,ig_id,follows_count,media_count,name,profile_picture_url,username,website,media,recently_searched_hashtags,stories,tags`
 
-2. Use the below query to retrieve the **Audience City** information for your connected account.
+2. Use the following query to retrieve the **Audience City** information for your connected account.
 
    `https://graph.facebook.com/v6.0//insights?metric=audience_city&period=lifetime`
 

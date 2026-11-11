@@ -7,7 +7,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI MCP Tool
+# Bold BI MCP Tool User Guide for AI Assistants
 
 ## Overview
 
@@ -15,7 +15,7 @@ The Bold BI MCP Tool is a Model Context Protocol (MCP) server that lets AI assis
 
 Model Context Protocol (MCP) is a standardized protocol that allows AI assistants to connect to external systems through structured tools over a Streamable HTTP endpoint. Instead of calling Bold BI's REST API directly, a user can ask a question in natural language, and the AI assistant invokes the matching MCP tool to retrieve information or perform an action on their behalf.
 
-The Bold BI MCP Tool exposes **51 tools** across dashboards, data sources, users, groups, schedules, slideshows, pinboards, items, categories, published content, and webhooks. These are read-and-operate tools covering discovery, inspection, and export of Bold BI content.
+The Bold BI MCP Tool exposes more than **50 tools** across dashboards, data sources, users, groups, schedules, slideshows, pinboards, items, categories, published content, and webhooks. These are read-and-operate tools covering discovery, inspection, and export of Bold BI content.
 
 Using an MCP-compatible client, users can:
 
@@ -43,7 +43,7 @@ The Bold BI MCP Tool acts as a bridge between an MCP-compatible client and a Bol
 
 | Component | Description |
 |---|---|
-| MCP Client | An MCP-compatible application — such as Claude, VS Code, Cursor, or a custom AI agent — that supports Streamable HTTP transport. |
+| MCP Client | An MCP-compatible application: such as Claude, VS Code, Cursor, or a custom AI agent: that supports Streamable HTTP transport. |
 | MCP Service Endpoint | The hosted Bold BI MCP service that exposes the available tools (`https://mcp.boldbi.com/api/mcp`). |
 | Authorization Header | Authenticates the request against the target Bold BI site. |
 | ServiceURL Header | Identifies the target Bold BI site that should process the request. |
@@ -123,11 +123,83 @@ Every tool call that reaches Bold BI must include the `Authorization` and `Servi
 
 > Replace `http://your-boldbi-host/bi/api/site/site1` with your own Bold BI site's API base URL.
 
+## Connect Bold BI MCP Server in External Clients
+
+You can connect the Bold BI MCP server to external AI clients such as Claude Desktop to access Bold BI MCP tools directly within the client application.
+
+### Configure MCP in Claude Desktop
+
+#### Step 1: Open the configuration file
+
+1. Open the **Claude Desktop** application.
+2. Click your **Profile** icon in the bottom-left corner and select **Settings**.
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/settings-button.png)
+
+3. Navigate to the **Developer** tab.
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/developer-button.png)
+
+4. Under **Local MCP Servers**, click **Edit Config**. Open the `claude_desktop_config.json` file  in your text editor.
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/editconfigpng.png)
+
+#### Step 2: Add the MCP server configuration
+
+Add the following MCP server configuration:
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/configjson.png)
+
+```json
+{
+  "mcpServers": {
+    "syncfusion_kpis": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.boldbi.com/api/mcp",
+        "--transport",
+        "http-only",
+        "--header",
+        "Authorization:${BOLDBI_TOKEN}",
+        "--header",
+        "ServiceURL:${BOLDBI_SERVICE_URL}"
+      ],
+      "env": {
+        "BOLDBI_TOKEN": "<YOUR_BOLD_BI_TOKEN>",
+        "BOLDBI_SERVICE_URL": "https://kpis.syncfusion.com/bi/api/site/cmo-cro1"
+      }
+    }
+  }
+}
+```
+
+> **NOTE:**
+> - In the `env` section, replace `<YOUR_BOLD_BI_TOKEN>` with a valid Bold BI access token (API key).
+> - In the `env` section, update `BOLDBI_SERVICE_URL` with your Bold BI site API URL (for example, `https://<your-domain>/bi/api/site/<site-identifier>`).
+> - Ensure that **Node.js** is installed and that the specified `npx.cmd` path is accessible on your machine. You can find your path by running `where npx` in the Command Prompt (for example, `C:\Program Files\nodejs\npx.cmd`).
+
+#### Step 3: Save and restart
+
+1. Save the `claude_desktop_config.json` file.
+2. Exit the Claude Desktop application completely. On Windows, click the hidden icons arrow (`^`) in the taskbar system tray, right-click the **Claude** icon, and select **Exit**.
+3. Reopen the **Claude Desktop** application.
+
+#### Step 4: Verify the MCP server
+
+1. Navigate to **Profile → Settings → Developer**.
+2. Under **Local MCP Servers**, verify that the `syncfusion_kpis` server status is **Running**.
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/running.png)
+
+3. In the chat interface, open the **Connectors** (or MCP Tools) menu to verify that `syncfusion_kpis` is listed. Select it to review the available Bold BI MCP tools, where you can choose to allow them, require approval, or block specific tools.
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/connectors.png)
+
+![BI MCP](/static/assets/artificial-intelligence-and-machine-learning/images/mcp/mcptools.png)
+
+4. Once connected, prompt Claude in natural language to explore dashboards, inspect data sources, and interact with Bold BI analytics.
+
 ## Available MCP Tools
 
-The Bold BI MCP service exposes **51 tools**, organized into 11 functional categories.
+The Bold BI MCP service exposes more than **50 tools**, organized into 11 functional categories.
 
-### Dashboard tools (15)
+### Dashboard tools (16)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -138,6 +210,7 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `dashboard_draft_list` | Lists dashboard drafts. | Read |
 | `dashboard_export` | Exports dashboard content. | Export |
 | `dashboard_widgets_list` | Retrieves the widgets contained in a dashboard. | Read |
+| `dashboard_widgets_data_get` | Retrieves the data rendered by the widgets in a dashboard. | Read |
 | `dashboard_view_list` | Lists views configured for a dashboard. | Read |
 | `dashboard_view_get` | Retrieves details for a specific dashboard view. | Read |
 | `dashboard_permissions_get` | Retrieves permissions configured on a dashboard. | Read |
@@ -161,7 +234,7 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `category_list` | Lists available categories. | Read |
 | `category_get` | Retrieves details for a specific category. | Read |
 
-### Data source tools (6)
+### Data source tools (8)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -171,6 +244,8 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `datasource_linked_dashboards_list` | Lists dashboards linked to a data source. | Read |
 | `datasource_export` | Exports data source content. | Export |
 | `datasource_activity_get` | Retrieves recent activity for a data source. | Audit |
+| `datasource_schema_get` | Retrieves the schema of a data source, including tables and columns. | Read |
+| `datasource_query` | Executes a query against a data source and returns the result. | Read |
 
 ### User tools (8)
 
@@ -305,7 +380,7 @@ When using the Bold BI MCP Tool:
 - Store authentication tokens in environment variables or a secure secret-management solution.
 - Never commit tokens or credentials to source control.
 - Use dedicated service accounts for automation scenarios whenever possible.
-- Follow the principle of least privilege — grant only the permissions required for the operations being performed.
+- Follow the principle of least privilege: grant only the permissions required for the operations being performed.
 - Use HTTPS for all communication with the MCP service.
 - Avoid including confidential business information or credentials in prompts.
 - Rotate authentication tokens periodically, according to your organization's security policy.

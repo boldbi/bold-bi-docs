@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Embedded Analytics | Integrate BI into Your Applications
+title: Overview of Embedded Analytics in Bold BI | Bold BI
 description: Enhance your apps with Bold BI's embedded analytics. Deliver interactive dashboards and reports within your platform for seamless data-driven experiences.
 canonical: "/overview/embedded-analytics/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedded Analytics
+# Overview of Embedded Analytics in Bold BI
 
 Embedded Analytics in Bold BI enables organizations to integrate dashboards directly into their applications, SaaS platforms, or web portals. This provides users with in-context insights, enhancing decision-making without switching between multiple tools.
 

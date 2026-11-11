@@ -1,14 +1,14 @@
 ---
-title: Manage users in Multi-tenancy of Embedded BI | Bold BI Docs
-description: Learn here how to add, update, activate, delete users, grant access to the site and more in User Management Server of Embedded Bold BI.
+title: Manage Users in UMS for Multitenant Sites | Bold BI
+description: Learn how to add, update, activate, and delete users, and grant site access, in the User Management Server of Embedded Bold BI, step by step.
 canonical: "/multi-tenancy/manage-users/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Users in UMS
+# Manage Users in UMS for Multitenant Sites
 
-This section explains how to add, update, activate, and delete users.
+Add, update, activate, and delete users in Bold BI User Management Server.
 
 Users can only be added, edited, or deleted by those who have UMS admin access.
 
@@ -36,7 +36,8 @@ The `Add User` dialog will be displayed as shown in the image below.
 **Automatic activation**|**Email activation**
 -----|-----
 1. Fill the form with a Username, Email address, First name, Last name and password and then click on `Add`.|1. Fill the form with a Username, Email address, First name and Last name and then click on `Add`.
-2. Please refer to [this](#password-requirement) section for password requirement.|2. To activate the user, please check [Activate Users](#activate-users) section for more details.
+2. See [Password requirement](#password-requirement) for the password rules.
+3. To activate the user, see [Activate Users](#activate-users) for more details.
 
 ### Import users from CSV
 
@@ -85,7 +86,7 @@ testuser,testuser@gmail.com,TestUser,Admin@123
 
 	![Import from CSV - User detail in grid](/static/assets/multi-tenancy/images/csv-import-proceed.png#max-width=95%)
 
-4. After uploading the users in UMS, the results will be displayed as shown below.
+4. After uploading the users in UMS, the results are displayed.
 
     ![Import from CSV - Success Message](/static/assets/multi-tenancy/images/csv-import-success-prompt.png#max-width=95%)
 	
@@ -121,20 +122,20 @@ Username, First Name, Last Name, Phone number, and profile picture of the user c
 ## Change Password 
 If users forget their password or want to create a new one, administrators can reset or create a password for them using this option.
 
-Please refer to [this](#password-requirement) section for password requirements.
+See [Password requirement](#password-requirement) for the password rules.
 
 The password change functionality is available for the following types of users:
 
-	- **Local Users** – Users created and managed within Bold BI.
-	- **Windows Active Directory (AD) Users** – Users imported from a configured Windows AD domain.
+	- **Local Users**: Users created and managed within Bold BI.
+	- **Windows Active Directory (AD) Users**: Users imported from a configured Windows AD domain.
 
-#### Change Password for Local Users
+### Change Password for Local Users
 
 Local users can change their password directly from the **User Profile** section in the application.
 
 #### Change Password for Windows AD Users
 
-Starting from **version 12.1.5**, **Bold BI** also supports changing the password for **Windows AD users** within the application.
+**Bold BI** also supports changing the password for **Windows AD users** within the application. [NEEDS FACT: confirm the version that added this, currently stated as 12.1.5.]
 
 - AD users can now **set or update their password** using the same interface used by local users.
 - Once a new password is created or updated, it can be used to log in to the Bold BI application directly.
@@ -182,4 +183,4 @@ After the process is completed, a detailed report will be available. You can als
 
 ![Grant Access Select Sites](/static/assets/multi-tenancy/images/grant-access-report.png#max-width=95%)
 
-You can revoke access to the site by referring [here](/multi-tenancy/manage-sites/#revoke-access).
+You can revoke access to the site in [Manage sites](/multi-tenancy/manage-sites/#revoke-access).

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Joining Data Tables – Embedded BI | Bold BI Documentation
+title: Joining Data Tables - Embedded Analytics | Bold BI
 description: Learn how to join multiple tables based on one or more conditions while creating a data source in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Joining Tables
+# Joining Data Tables - Embedded Analytics
 
 Joining tables is necessary when using more than one table in your data source design. The join icon in the tools pane at data design view will be disabled if only one table is found in the table design view.
 

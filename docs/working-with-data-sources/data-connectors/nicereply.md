@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Nicereply – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Nicereply web service through basic http authentication with Bold BI Cloud and create data source.
+title: Nicereply Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Nicereply through basic HTTP authentication with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Nicereply data source
+# Nicereply Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Nicereply web services through the REST API.
 
 ## Choose Nicereply data source
-To configure the Nicereply data source, follow the below steps:
+To configure the Nicereply data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Nicereply data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Nicereply/ChooseDS_server.png)
 
 ## Create Nicereply data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Nicereply data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Nicereply data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Nicereply REST API endpoint in the URL textbox. Refer to the [Nicereply API documentation](https://cdn.nicereply.com/s/api/v1/#get-started) for more details.
 
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get AI Key for connecting Nicereply data source?
+### How do I get AI Key for connecting Nicereply data source?
 
 1. Login to your [Nicereply](https://admin.nicereply.com/admin/login) account. Go to *Settings -> API*.
 2. Use this *Private Key* as *&lt;your_api_key&gt;* in Nicereply data source in Bold BI Dashboard.

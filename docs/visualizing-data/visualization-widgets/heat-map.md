@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Heatmap Visual – Embedded BI Widget | Bold BI Documentation
+title: Heatmap Visual - Embedded Analytics Widget | Bold BI
 description: Learn how to create a Heatmap visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/heat-map/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# Configuring and Formatting Heatmap
+# Heatmap Visual - Embedded Analytics Widget
 
-The `Heatmap` allows you to visualize large amounts of data as clustered rectangles with a color scale. 
+The `Heatmap` lets you visualize large amounts of data as clustered rectangles with a color scale. 
 
 *Figure: Heatmap visualization after various customizations*
 
@@ -226,19 +226,19 @@ You can format the `Heatmap` for better illustration of the view that you requir
 
 #### Name
 
-This allows you to set a `title` for this Heatmap widget.
+This lets you set a `title` for this Heatmap widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Name.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for this Heatmap widget. 
+This lets you set a `subtitle` for this Heatmap widget. 
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this Heatmap widget.
+This lets you set a brief explanation about this Heatmap widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Description.png)
 
@@ -252,13 +252,13 @@ If we uncheck this property, the value label color property will be hidden.
 
 #### Show label
 
-This allows you to toggle the visibility of value labels.
+This lets you toggle the visibility of value labels.
 
 ![Label](/static/assets/visualizing-data/visualization-widgets/images/heat-map/show-label.png)
 
 #### Label Color
 
-This allows you to change the color of the label.
+This lets you change the color of the label.
 
 ![Label Color](/static/assets/visualizing-data/visualization-widgets/images/heat-map/show-label-color.png)
 
@@ -266,7 +266,7 @@ This allows you to change the color of the label.
 
 #### Cell radius
 
-This allows you to apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3.`
+This lets you apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3.`
 
 ![Cell radius](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cell-radius-settings.png)
 
@@ -274,7 +274,7 @@ This allows you to apply the specified radius to cell corners. The value ranges 
 
 #### Cell border
 
-This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. The `default value is 1`.
+This lets you toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. The `default value is 1`.
 
 ![Cell border](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
 
@@ -282,25 +282,25 @@ This allows you to toggle the visibility of the border surrounding the cell. The
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in a heat map.
+This option lets you toggle the visibility of the tooltip in a heat map.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the map's tooltip.
+This option lets you customize which columns are visible in the map's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/heat-map/rtl-tooltip.png)
 
@@ -312,7 +312,7 @@ You can change the color of the widget.
 
 #### Monochromatic
 
-This allows you to configure a single-color palette whose saturation will be varied based on the value density.
+This lets you configure a single-color palette whose saturation will be varied based on the value density.
 
 #### Types
 
@@ -340,13 +340,13 @@ Select Advanced setting to configure conditions and apply color to the cells bas
 
 #### Show legend
 
-This allows you to toggle the visibility of the legend in the heatmap. By default, it will be disabled.
+This lets you toggle the visibility of the legend in the heatmap. By default, it will be disabled.
 
 ![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/legendsettings-show.png)
 
 #### Legend Position
 
-This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+This option lets you place the legend at the position of **Left, Right, Top, and Bottom**.
 
 ### X-axis settings
 
@@ -354,13 +354,13 @@ This option allows you to place the legend at the position of **Left, Right, Top
 
 #### Show axis label
 
-This allows you to enable the visibility of x-axis labels.
+This lets you enable the visibility of x-axis labels.
 
 ![Show axis label - Toggled off](/static/assets/visualizing-data/visualization-widgets/images/heat-map/showaxis-label.png)
 
 #### Label Color
 
-This allows you to change the x-axis label color.
+This lets you change the x-axis label color.
 
 ![Axis Label color](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color.png)
 
@@ -368,25 +368,25 @@ This allows you to change the x-axis label color.
 
 #### Title Color
 
-This allows you to change the x-axis title color.
+This lets you change the x-axis title color.
 
 ![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-axis-title-color.png)
 
 #### Show axis title
 
-This allows you to enable the visibility of x-axis title.
+This lets you enable the visibility of x-axis title.
 
 ![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/axistitle.png)
 
 #### Axis title
 
-This allows you to edit the x-axis title for the heatmap. It will reflect in the x-axis title of the heatmap.
+This lets you edit the x-axis title for the heatmap. It will reflect in the x-axis title of the heatmap.
 
 ![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/edit-axis-title.png)
 
 #### Label rotation
 
-This allows you to define the rotation angle for x-axis labels to display.
+This lets you define the rotation angle for x-axis labels to display.
 
 ![Label rotation](/static/assets/visualizing-data/visualization-widgets/images/heat-map/label-rotate.png)
 
@@ -406,29 +406,29 @@ This option trims the end of overlapping labels in the axis.
 
 #### Enable Trim
 
-This option allows you to trim X-axis labels based on the `Maximum Label Width` property value.
+This option lets you trim X-axis labels based on the `Maximum Label Width` property value.
 
 #### Maximum Label Width
 
-This option allows you to set a maximum width for the X-axis labels, and it can also be made customizable when the trim axis label option is enabled.
+This option lets you set a maximum width for the X-axis labels, and it can also be made customizable when the trim axis label option is enabled.
 
 ![Maximum label width](/static/assets/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
 
 #### Inversed axis
 
-This allows you to change the axis label's placement order from left to right in the X-axis.
+This lets you change the axis label's placement order from left to right in the X-axis.
 
 ![Inversed axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/inversedaxis.png)
 
 #### Opposed axis
 
-This allows you to change the axis position from bottom to top in the x-axis.
+This lets you change the axis position from bottom to top in the x-axis.
 
 ![Opposed axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
 
 #### Sorting
 
-This option allows you to perform sorting on both the X-axis and Y-axis at the same time. As we are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
+This option lets you perform sorting on both the X-axis and Y-axis at the same time. As we are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
 
 X-axis sorting with `Ascending` value.
 
@@ -440,13 +440,13 @@ X-axis sorting with `Ascending` value.
 
 #### Show axis label
 
-This allows you to enable the visibility of y-axis labels.
+This lets you enable the visibility of y-axis labels.
 
 ![axis label](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-settings.png)
 
 #### Label Color
 
-This allows you to change the y-axis label color.
+This lets you change the y-axis label color.
 
 ![Axis Label color Option](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-label-color-option.png)
 
@@ -454,47 +454,47 @@ This allows you to change the y-axis label color.
 
 #### Show axis title
 
-This allows you to enable the visibility of y-axis title.
+This lets you enable the visibility of y-axis title.
 
 ![axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title.png)
 
 #### Title Color
 
-This allows you to change the y-axis title color.
+This lets you change the y-axis title color.
 
 ![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-color.png)
 
 #### Axis title
 
-This allows you to edit the Y-axis title for the Heatmap. It will reflect in the Y-axis title of the Heatmap.
+This lets you edit the Y-axis title for the Heatmap. It will reflect in the Y-axis title of the Heatmap.
 
 ![axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
 
 #### Enable Trim
 
-This option allows you to trim Y-axis labels based on the `Maximum Label Width` property value.
+This option lets you trim Y-axis labels based on the `Maximum Label Width` property value.
 
 #### Maximum Label Width
 
-This option allows you to set the maximum width for the Y-axis labels, and it can also be made customizable when the trim axis label option is enabled.
+This option lets you set the maximum width for the Y-axis labels, and it can also be made customizable when the trim axis label option is enabled.
 
 ![Maximum label width](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
 
 #### Inversed axis
 
-This allows you to change the axis label's placement order from bottom to top in the Y-axis.
+This lets you change the axis label's placement order from bottom to top in the Y-axis.
 
 ![Inversed y-axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/inversed-axis-y.png)
 
 #### Opposed axis
 
-This allows you to change the axis position from left to right in the y-axis.
+This lets you change the axis position from left to right in the y-axis.
 
 ![Opposed y-axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
 
 #### Sorting
 
-This option allows you to perform sorting on both the X-axis and Y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, Auto sorting is selected, and the sort order will be the same as per the 2D resultant table.
+This option lets you perform sorting on both the X-axis and Y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, Auto sorting is selected, and the sort order will be the same as per the 2D resultant table.
 
 Y-axis sorting with the `Descending` value.
 
@@ -512,11 +512,11 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 #### Act as master widget
 
-This allows you to define the Heatmap widget as a master widget such that its filter action can be listened to by other widgets in the Dashboard.
+This lets you define the Heatmap widget as a master widget such that its filter action can be listened to by other widgets in the Dashboard.
 
 #### Ignore filter actions
 
-This allows you to define the Heatmap widget to ignore responding to filter actions applied to other widgets in the Dashboard.
+This lets you define the Heatmap widget to ignore responding to filter actions applied to other widgets in the Dashboard.
 
 #### Enable hierarchical filtering
 
@@ -526,7 +526,7 @@ When the hierarchical filter option is enabled, the Top N will be applied for ea
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the heatmap widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the heatmap widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply conditional formatting in Heatmap
 
@@ -576,7 +576,7 @@ If the region of the Heatmap value is out of the specified range, the color spec
 
 ### Rule based condition mode
 
-This allows you to customize the fill color of the Heatmap based on one or more numerical/text conditions.
+This lets you customize the fill color of the Heatmap based on one or more numerical/text conditions.
 
 ![Rule mode](/static/assets/visualizing-data/visualization-widgets/images/heat-map/rulemode.png)
 
@@ -632,11 +632,11 @@ The above screenshot shows cohort visualization in the heatmap widget.
 
 ### Title Alignment
 
-This allows you to handle the alignment of the widget title to either **left, center, or right**.
+This lets you handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -644,7 +644,7 @@ When enabled, the font size of the title will be adjusted automatically if the r
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -652,7 +652,7 @@ When enabled, the font size of the subtitle will be adjusted automatically if th
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -660,35 +660,35 @@ When enabled, the padding of the widget container will be adjusted automatically
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This allows you to set the **background image** for the heat map widget.
+This lets you set the **background image** for the heat map widget.
 
 ### Background Color
 
-This allows you to set the **background color** for the heat map widget.
+This lets you set the **background color** for the heat map widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -698,41 +698,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the heat map. 
+This lets you enable or disable the `widget title` of the heat map. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the heat map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the heat map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the heat map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the heat map widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the heat map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the heat map widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the heat map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the heat map widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the heat map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the heat map widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

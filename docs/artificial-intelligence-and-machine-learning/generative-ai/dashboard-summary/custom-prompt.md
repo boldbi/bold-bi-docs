@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Dashboard Summary Using Custom Prompts | Bold BI Docs
+title: Customize Dashboard Summary Using Custom Prompts | Bold BI
 description: Learn how to customize AI-generated dashboard summaries using custom prompts, configure summary requirements, and control summary output in Bold BI.
 canonical: "/artificial-intelligence-and-machine-learning/generative-ai/dashboard-summary/custom-prompt/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Custom Prompt Support
+# Customize Dashboard Summary Using Custom Prompts
 
 The Dashboard Summary feature supports custom prompts, allowing you to customize AI-generated summaries based on your business requirements. By providing additional instructions and context, you can guide the AI to generate summaries that focus on specific insights, metrics, trends, or reporting needs.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Users Permissions in Embedded BI | Bold BI Docs
+title: Manage User Permissions for Site Resources | Bold BI
 description: Learn how to manage the permissions of the users and groups with needed scope to the corresponding entities in Bold BI Embedded.
 canonical: "/managing-resources/manage-permissions/manage-resources-permission"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Manage Resources Permissions
+# Manage User Permissions for Site Resources
 
 This section explains the access modes, entities, scopes, and how to add permissions in Bold BI.
 
@@ -23,7 +23,7 @@ Click the [Add Permission](/managing-resources/manage-permissions/manage-resourc
 
 Permissions are classified in the following structure:
 	
-* Entity – Scope – Access Mode
+* Entity, Scope, Access Mode
 
 ![Add Permission Dialog](/static/assets/images/add-permission-dialog.png)
 
@@ -43,6 +43,11 @@ Permissions are classified in the following structure:
 <tr>
 <td>All Dashboards</td>
 <td>Provides permission to access all dashboards with the chosen access mode.</td>
+</tr>
+
+<tr>
+<td>All Views</td>
+<td>Provides the selected access mode for all Dashboard Views in the site that belong to dashboards the user has access to. This permission does not grant access to the dashboards that contain those views; the required dashboard permissions must be assigned explicitly.</td>
 </tr>
 
 <tr>
@@ -93,6 +98,16 @@ Permissions are classified in the following structure:
 <tr>
 <td>Specific Dashboard</td>
 <td>Provides permission to access a specific dashboard with the chosen access mode.</td>
+</tr>
+
+<tr>
+<td>Views in Dashboard</td>
+<td>Provides the selected access mode for all Dashboard Views associated with the selected Dashboard. This scope applies only to Dashboard Views within dashboards that the user has access to. This permission does not grant access to the dashboards that contain those views; the required dashboard permissions must be assigned explicitly.</td>
+</tr>
+
+<tr>
+<td>Specific View</td>
+<td>Provides the selected access mode for the specified Dashboard Views. This scope applies only to Dashboard Views within dashboards that the user has access to. This permission does not grant access to the dashboards that contain those views; the required dashboard permissions must be assigned explicitly.</td>
 </tr>
 
 <tr>
@@ -173,6 +188,8 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 <td>Provides download permission for the chosen entity.</td>
 </tr>
 </table>
+
+> **NOTE:** Dashboard Views support Read, Read & Write, and Read, Write & Delete permissions. A separate Create permission is not available. Users with access to the parent Dashboard can create personal Dashboard Views by default. No additional Dashboard View permissions are required.
 
 ## Add permissions
 The Add Permission section is divided into four sections:

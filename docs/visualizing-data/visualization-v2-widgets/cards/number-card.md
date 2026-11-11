@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Number Card (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, measures, appearance, formatting, and viewer actions for the modern Number Card widget in Bold BI.
+title: Number Card for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, measures, appearance, formatting, tooltips, and viewer actions for the modern Number Card widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/cards/number-card/"
 platform: bold-bi
 control: Number Card
 documentation: ug
 ---
 
-# Number Card
+# Number Card for Modern Dashboards
 
-A Number Card displays a measure as a prominent value in a compact dashboard tile. It can also display a separate card for each series value, along with supporting tooltips, images, and a sparkline trend.
+The Number Card widget in Bold BI displays a measure as a prominent value in a compact dashboard tile. It can also display a separate card for each series value, along with supporting tooltips, images, and a sparkline trend.
 
 Use a Number Card when:
 
@@ -57,11 +57,11 @@ Assigning only a `Measure` renders a single Number Card. Assigning `Series` rend
 
 Click the `More options` icon for an assigned field to configure the available options. The options vary based on the field type and data section.
 
-- **Rename** — Overrides the display name of the assigned field.
-- **Aggregation type** — Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
-- **Sort** — Configures the order of values in a dimension field. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
-- **Filter(s)** — Applies field-level conditions to include or exclude values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
-- **Format** — Changes the display format of the assigned measure. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+- **Rename**, Overrides the display name of the assigned field.
+- **Aggregation type**, Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
+- **Sort**, Configures the order of values in a dimension field. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
+- **Filter(s)**, Applies field-level conditions to include or exclude values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+- **Format**, Changes the display format of the assigned measure. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ---
 

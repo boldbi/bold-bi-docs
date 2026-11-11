@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Publish Dashboards Online in the Bold BI application
+# Migrate Dashboards Online across Multiple Tenants
 
 Migrating a dashboard online involves the process of publishing a dashboard in the Bold BI application to multiple tenants, whether on the same server or different instances. This allows for easy sharing of dashboards across various sites.
 
@@ -26,7 +26,7 @@ To publish a dashboard to other site(s), follow these steps:
 
 ## Internal site
 
-Publish the dashboard to the sites created in the same Bold BI server.
+Publish the dashboard to the sites created in the same Bold BI Server.
 
 1. Choose the sites in the drop-down menu where you want to publish the dashboard.
 
@@ -87,7 +87,7 @@ Publish the dashboard to the sites created in the same Bold BI server.
 
 ## External site
 
-Publish the dashboard to the sites created in other Bold BI servers and to the internal sites created in the same Bold BI server for the non-master sites using the external site publish option.
+Publish the dashboard to the sites created in other Bold BI Servers and to the internal sites created in the same Bold BI Server for the non-master sites using the external site publish option.
 
 1. Click on `+` to **add external site**.
 

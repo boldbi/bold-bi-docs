@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dashboard Version History – Embedded BI | Bold BI Docs
+title: Viewing Dashboard Version History in Bold BI | Bold BI
 description: Learn how versions and file logs for each dashboard will be maintained in the Bold BI Embedded server for every change in a dashboard.
 canonical: "/managing-resources/manage-dashboards/version-history-of-dashboards/" 
 platform: bold-bi
 documentation: ug
 ---
 
-# Version History
+# Viewing Dashboard Version History
 
 Versions and file logs for each Dashboard will be maintained on the Dashboard server for every change in the Dashboard.
 

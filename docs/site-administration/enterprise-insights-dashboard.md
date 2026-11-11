@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enterprise Insights Dashboard – Embedded BI | Bold BI Docs
+title: Enterprise Insights Dashboard - Embedded Analytics | Bold BI
 description: Learn how to monitor dashboard activity and understand how users are interacting with dashboards in Bold BI Embedded.
 platform: bold-bi
 documentation: ug

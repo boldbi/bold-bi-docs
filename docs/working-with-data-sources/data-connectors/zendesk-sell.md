@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Zendesk Sell – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Zendesk Sell web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Zendesk Sell Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Zendesk Sell through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zendesk Sell data source
+# Zendesk Sell Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zendesk Sell web services through the REST API. 
 
 ## Choose Zendesk Sell data source
-To configure the Zendesk Sell data source, follow the below steps:
+To configure the Zendesk Sell data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Zendesk Sell data source, follow the below steps:
 
 
 ## Create Zendesk Sell data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Zendesk Sell data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Zendesk Sell data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** down drop box and choose the required endpoint.
 3. Click **Custom Url** to enter the URL manually. Refer the [Zendesk Sell API documentation](https://developers.getbase.com/docs/rest/articles/introduction) for more details.
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Access Token for Zendesk Sell?
+### How do I get Access Token for Zendesk Sell?
 To get your access token, follow the steps defined in [Zendesk Sell Documentation](https://developers.getbase.com/docs/rest/articles/first_call#generate-access-token)
 
    ![Access Token](/static/assets/working-with-datasource/data-connectors/images/ZendeskSell/AccessToken.png)

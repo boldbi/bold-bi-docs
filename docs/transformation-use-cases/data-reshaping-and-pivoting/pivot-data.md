@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Pivoting Data | Bold Data Hub Learning
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to pivot the data and make the most of your analytics.
+title: Transformation Pivoting Data in Bold Data Hub | Bold BI
+description: Learn how to use the ETL/Bold Data Hub Transformation section in Bold BI Server. Discover simple steps to pivot the data and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: API Reference – Viewer Events JavaScript Embedding | Bold BI Docs
+title: API Reference - Viewer Events JavaScript Embedding | Bold BI
 description: Explore the JavaScript viewer API reference for events that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 
 ---
 
-# Events
+# API Reference - Viewer Events JavaScript Embedding
 
 ## onActionStart
    
@@ -1641,7 +1641,7 @@ This section describes the dashboard properties of the viewer object correctly.
                <td class="name">serverUrl</td>
                <td class="type">string</td>
                <td class="access">get</td>
-               <td class="description">Hold the Bold BI server URL.</td>
+               <td class="description">Hold the Bold BI Server URL.</td>
           </tr>
            <tr>
                <td class="name">itemId </td>

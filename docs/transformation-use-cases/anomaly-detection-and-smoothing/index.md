@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation - Handling Data Anomalies | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold Data Hub Server. Discover simple steps to handle data anomalies effectively, and make the most of your analytics.
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to handle data anomalies and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

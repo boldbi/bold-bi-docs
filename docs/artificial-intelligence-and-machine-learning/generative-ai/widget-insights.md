@@ -1,13 +1,13 @@
 ---
 layout: post
-title: A Comprehensive Guide to Widget Insights  | Bold BI Docs
+title: A Comprehensive Guide to Widget Insights | Bold BI
 description: Learn how to make the most of widget insights on your dashboard for better data visualization and decision-making.
 canonical: "/artificial-intelligence-and-machine-learning/generative-ai/widget-insights/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Using the Widget Insight in Dashboard
+# A Comprehensive Guide to Widget Insights
  
 To utilize the widget summary feature, you need to configure the AI. Please consult the  [Configure AI Feature Guide](/artificial-intelligence-and-machine-learning/configure-ai/) for comprehensive instructions.
  

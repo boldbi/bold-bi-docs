@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – Pinbaord Events - JavaScript Embedding | Bold BI
+title: API Reference for Pinboard Events in JavaScript | Bold BI
 description: Explore the Pinbaord JavaScript API reference for events that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Events
+# API Reference for Pinboard Events in JavaScript
 ## onActionStart
    
 This event will be triggered at the beginning of every viewer action, including connection, layout and dashboard rendering, popup opening and closing, refreshing, filtering, exporting, and more.
@@ -413,7 +413,7 @@ This event will be triggered when you perform the drag widget on the pinboard.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
  3. dashboardName - Unique name of the BoldBI Dashboard.
 </td>
@@ -452,7 +452,7 @@ This event will be triggered when you drop the widget.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
  3. dashboardName - Unique name of the BoldBI Dashboard.
 </td>
@@ -492,7 +492,7 @@ This event will be triggered when you remove the widget from the pinboard.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows.<br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the Bold BI Dashboard. <br>
  3. dashboardName - Unique name of the Bold BI Dashboard.
 </td>

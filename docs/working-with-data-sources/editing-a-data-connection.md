@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing a data connection – Embedded BI | Bold BI Learning
+title: Editing a data connection - Embedded Analytics | Bold BI
 description: Learn how to edit a data connection associated with an existing data source in Bold BI Embedded application.
 canonical: "/working-with-data-sources/editing-a-data-connection/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Editing a Data Connection
+# Editing a data connection - Embedded Analytics
 
 You can edit a data connection using the following steps:
 

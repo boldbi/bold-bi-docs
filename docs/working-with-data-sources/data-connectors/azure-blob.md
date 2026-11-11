@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Azure Blob – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Azure Blob web service through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: Azure Blob Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Azure Blob web service through its REST API endpoint with Bold BI Cloud and create a data source for widget configuration in dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Azure Blob data source
+# Azure Blob Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Azure Blob web services through REST API.
 
 ## Choose Azure Blob data source
-To configure the Azure Blob data source, follow the below steps:
+To configure the Azure Blob data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Azure Blob data source, follow the below steps:
 
 
 ## Create Azure Blob data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Azure Blob data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Azure Blob data source.
 1. Enter a name and optional description for the data source.
 2. Enter a valid Azure Blob REST API endpoint in the URL textbox. Refer to the [Azure Blob API documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api) for more details.
 
@@ -42,7 +42,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Storage Account Key for connecting Azure Blob data source?
+### How do I get Storage Account Key for connecting Azure Blob data source?
 1. In the [Azure Portal](https://portal.azure.com/), click on *Storage accounts* and select the storage account.
 2. Go to *Settings -> Access keys* and retrieve the access keys.
 

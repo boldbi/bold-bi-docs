@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Segement Hour Of The Day | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to segment hour of the day and make the most of your analytics.
+title: Transformation Segment Hour of the Day in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to segment hour of the day and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

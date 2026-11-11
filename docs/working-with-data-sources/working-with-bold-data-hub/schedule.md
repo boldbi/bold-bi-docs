@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scheduling ETL/Data Hub Jobs – Embedded BI | Bold BI Learning
+title: Scheduling Bold Data Hub Jobs in Bold BI | Bold BI
 description: Learn how to Scheduling ETL Jobs in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Scheduling Bold Data Hub Jobs:
+# Scheduling Bold Data Hub Jobs
 
-The Schedule page contains a list of pipeline names and allows you to configure On Demand or Interval based schedules.
+The Schedule page contains a list of pipeline names and lets you configure On Demand or Interval based schedules.
 
 ![Source](/static/assets/working-with-etl/images/schedule_icon.png)
 
@@ -27,7 +27,7 @@ Data refresh can be initiated on demand by selecting the **Run Now** option.
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![Zendesk Support - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
 2. By default, the Active toggle is disabled. Enable the Active toggle to activate and configure the schedule.
 > **Note:** The schedule will not run unless the **Active** toggle is enabled.
@@ -41,7 +41,7 @@ You can choose one of the following options:
 1. Every N day(s): Runs the schedule once every specified number of days. Example: Every 3 days.
 2. Every Weekday: Runs the schedule Monday to Friday only.
 
-![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/scheduleDaily.png#max-width=100%)
+![Zendesk Support - Bold BI](/static/assets/working-with-etl/images/scheduleDaily.png#max-width=100%)
 
 ### Hourly
 
@@ -50,11 +50,11 @@ The Hourly recurrence type allows the schedule to run at fixed intervals based o
 Recur every H hour(s) and M minute(s): Runs the schedule after the specified number of hours and minutes have passed.
 Example: Every 0 hours and 5 minutes (runs every 5 minutes).
 
-![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedulehourly.png#max-width=100%)
+![Zendesk Support - Bold BI](/static/assets/working-with-etl/images/schedulehourly.png#max-width=100%)
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![Zendesk Support - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 
 ## Mail Alert 

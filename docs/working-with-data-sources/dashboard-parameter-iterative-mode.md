@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure Iterative Mode for Dashboard | Embedded Bold BI Docs
+title: Configure Iterative Mode for Dashboard Parameters | Bold BI
 description: This section describes different use cases of dashboard parameter to configure the dashboard is either interactive or non-interactive mode in Embedded Bold BI
 canonical: "/working-with-data-sources/dashboard-parameter-iterative-mode/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 keywords: Dashboard parameter, dashboard, parameter, parameters, dynamic, configure dashboard parameter, query parameter, iterative.
 ---
 
-# Dashboard Parameter – Iterative Mode
+# Configure Iterative Mode for Dashboard Parameters
 
 Iterative mode is a special feature that comes with the dashboard parameter. Iterative mode allows you to call an API iteratively by changing a particular query parameter or endpoint to bring all data into Bold BI. To see how the dashboard parameter works, refer to the Configuring Dashboard Parameters.
 

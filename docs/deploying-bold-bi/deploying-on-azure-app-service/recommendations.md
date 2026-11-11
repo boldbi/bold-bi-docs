@@ -1,12 +1,12 @@
 ---
 layout: post
-title: DEV, TEST and PROD Environments – App Service | Bold BI Docs
+title: DEV, TEST and PROD Environments - App Service | Bold BI
 description: Learn the recommended Azure App service configuration to install the Bold BI application in test, development, and production environments for embedding use.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended Azure App service configuration to use Bold BI on Microsoft Azure App service
+# DEV, TEST and PROD Environments - App Service
 
 This section will explain the recommended Azure App service configuration for installing the Bold BI application. For a complete list of Azure App service plans, refer to the [Windows Azure App service plans](https://azure.microsoft.com/en-in/pricing/details/app-service/windows).
 
@@ -40,7 +40,7 @@ For test and development environments, the Basic service plan can be used. You c
  </tr>
  <tr>
  <td> Storage </td>
- <td> 10 GB or larger volume for Bold BI server storage </td>
+ <td> 10 GB or larger volume for Bold BI Server storage </td>
  </tr>
  </table>
 
@@ -73,7 +73,7 @@ For high traffic and large data processing production environments, the Premium 
  </tr>
  <tr>
  <td> Storage </td>
- <td> 50 GB or larger volume for Bold BI server storage </td>
+ <td> 50 GB or larger volume for Bold BI Server storage </td>
  </tr>
  </table>
 

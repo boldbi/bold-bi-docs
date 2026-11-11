@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configure Azure AD SSO with OAuth 2.0 | Bold BI Documentation
+title: Configure Azure AD SSO with OAuth 2.0 in Bold BI | Bold BI
 description: Learn how to set up Azure AD SSO using OAuth 2.0 in Bold BI Embedded. Follow this step-by-step guide to enable secure, seamless authentication for your users.
 platform: bold-bi
 documentation: ug
 ---
 
-# Azure AD support for SSO authentication
+# Configure Azure AD SSO with OAuth 2.0
 
 Azure Active Directory (Azure AD) OAuth is a powerful tool for securing your Bold BI applications. This guide will walk you through the process of configuring Azure AD OAuth in your Bold BI site.
 

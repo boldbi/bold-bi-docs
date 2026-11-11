@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Box – Cloud BI Data Connector | Bold BI Documentation
+title: Box Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect your Box account with Bold BI Cloud, read CSV, JSON, XML and XLSX files and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Box data source
+# Box Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Box web services through the REST API. 
 
 ## Choose Box data source

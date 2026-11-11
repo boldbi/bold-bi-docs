@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Account Settings – Embedded BI | Bold BI Documentation
+title: Configure Account Settings in Embedded Analytics | Bold BI
 description: Learn how to activate user accounts in the Bold BI server. There are two account activation modes available - Automatic and Email.
 platform: bold-bi
 documentation: ug
 ---
 
-# Accounts Settings
+# Configure Account Settings in Embedded Analytics
 
 This section explains the configuration needed to activate user accounts and user email in the Bold BI Server.
 
@@ -42,7 +42,7 @@ When the user email setting is set to `Required` mode, an email address is manda
 
 When the user email setting is set to `Not required` mode, an email address is not mandatory for adding users in the Bold BI server.
 
-> **NOTE:** By default, the setting will be `Required`. This setting option is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** By default, the setting will be `Required`. This setting option is available in On-Premises Deployment but not in Cloud Edition.
 
 ![Email Settings](/static/assets/site-administration/images/email-required-settings.png#width=60%)
 

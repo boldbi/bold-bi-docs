@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Settings and Logs – User Management | Bold BI Doc
+title: Email Settings and Logs - User Management | Bold BI
 description:  Learn how to configure SMTP in UMS for account activation & password emails; manage settings, view logs, & customize templates all from the Email Settings page.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # Email Settings in User Management Server
 
-The email settings page is divided into three sections: `Settings`, where you can configure your SMTP settings, `Logs`, where you can track the status of your email delivery from the Bold BI application and `Template` where you can create, customize and set default email template..
+The email settings page has three sections: `Settings`, where you configure your SMTP settings, `Logs`, where you track the status of email delivery from the Bold BI application, and `Template`, where you create, customize, and set default email templates.
 
 [Configuration](/multi-tenancy/site-administration/email-settings/configuration/)
 

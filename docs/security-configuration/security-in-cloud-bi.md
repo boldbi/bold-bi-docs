@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Understanding Bold BI Security – Cloud BI | Bold BI
+title: Understanding Bold BI Security - Cloud BI | Bold BI
 description: Learn about the security of Bold BI Cloud in terms of authentication, authorization, data security, disaster recovery and more.
 platform: bold-bi
 documentation: ug
 ---
 
-# Overview of Bold BI Security
+# Understanding Bold BI Security - Cloud BI
 Security is one of the most significant considerations for every SaaS (Software as a Service) product. We have constructed Bold BI SaaS on Microsoft Azure, which is dedicated to maintaining the highest levels of trust, transparency, standards conformity, and regulatory compliance. Microsoft Azure offers the most comprehensive range of compliance offerings among all cloud service providers. 
 
 This document explains the important security features handled by Bold BI for customer fulfillment, such as Azure security, authentication, authorization, data security, application security, disaster recovery and business continuity, network security, application monitoring, Stripe payment gateway, and more.

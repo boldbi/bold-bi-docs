@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Enabling User Import with Group-Based Authorization | Bold BI
+title: Enabling User Import with Group Authorization | Bold BI
 description: Learn how to enable automatic user import when embedding Bold BI dashboards with group-based authorization.
 platform: bold-bi
 documentation: ug
 ---
 
-# Overview
+# Enabling User Import with Group Authorization
 
 This guide explains how to automatically import users from external identity providers when embedding dashboards using the [Group-Based Authorization Overview](/embedding-options/embedding-sdk/authorization-options/group-based-authorization/) approach through SDK embedding. This helps track which users are accessing embedded dashboards.
 
-To enable this feature, configure your identity provider (e.g., Azure AD or Amazon Cognito) in the Bold BI server.
+To enable this feature, configure your identity provider (e.g., Azure AD or Amazon Cognito) in the Bold BI Server.
 
 ## Identity Provider Configuration
 
@@ -375,7 +375,7 @@ public string TokenGeneration()
         }
     };
 
-    //Post call to Bold BI server
+    //Post call to Bold BI Server
     var client = new HttpClient();
     var requestUrl = $"{embedDetails.serverurl}/api/{embedDetails.siteidentifier}/embed/authorize";
 
@@ -508,13 +508,13 @@ groupbasedauthorization: {
     </td>
     </tr>
     <tr>
-    <td align="left">AzureAD – Set this if you have configured AzureAD</td>
+    <td align="left">AzureAD: Set this if you have configured AzureAD</td>
     </tr>
     <tr>
-    <td align="left">TenantOAuth – Set this if you have configured OAuth at the tenant level</td>
+    <td align="left">TenantOAuth: Set this if you have configured OAuth at the tenant level</td>
     </tr>
     <tr>
-    <td align="left">GlobalOAuth – Set this if you have configured OAuth at the global level</td>
+    <td align="left">GlobalOAuth: Set this if you have configured OAuth at the global level</td>
     </tr>
     <tr>
     <td align="left">embed_user_id</td>

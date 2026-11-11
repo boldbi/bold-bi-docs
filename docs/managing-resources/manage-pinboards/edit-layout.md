@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing Pinboard Layout – Embedded BI | Bold BI Docs
+title: Editing a Pinboard Layout in Your Site in Bold BI | Bold BI
 description: Learn how to edit pinboard layout in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
 canonical: "/managing-resources/manage-pinboards/edit-layout/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Edit Pinboard Layout
+# Editing a Pinboard Layout in Your Site
 
 This section explains how to edit the Pinboard layout in the Bold BI application.
 

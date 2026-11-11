@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commenting in Widget – Embedded BI | Bold BI Documentation
+title: Commenting in Widget - Embedded Analytics | Bold BI
 description: Learn how to add comment to a widget and collaborate with your team through user mentions in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/commenting-widget/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Collaborate with your team by enabling comments in the Widgets
+# Commenting in Widget - Embedded Analytics
 
 You can comment on individual widgets on the site. You can toggle the `Enable Comments` option in the properties tab of individual widgets.
 

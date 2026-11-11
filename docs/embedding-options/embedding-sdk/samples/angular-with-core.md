@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET Core and Angular | Bold BI Docs
+title: Embedding Analytics with ASP.NET Core and Angular | Bold BI
 description: Learn how to embed an analytics dashboard with an ASP.NET Core and Angular application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Angular using Embed SDK
+# Embedding Analytics with ASP.NET Core and Angular
 
-A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create your own embedding application in `Angular`. 
+A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI Server. This is followed by steps to create your own embedding application in `Angular`. 
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. To explore the Angular embedding sample in Bold BI v3.2.16, please refer to the [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/v3.2.16/angular/) for more details.
 

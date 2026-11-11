@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Mapping Priority Levels | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to map the data based on the priority levels and make the most of your analytics.
+title: Transformation Mapping Priority Levels in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to map data by priority level and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

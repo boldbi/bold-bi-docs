@@ -1,13 +1,13 @@
 ---
 layout: post
-title: API Reference – Events - JavaScript Embedding | Bold BI Docs
+title: API Reference - Events - JavaScript Embedding | Bold BI
 description: Explore the JavaScript API reference for events that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 
 ---
 
-# Events
+# API Reference - Events - JavaScript Embedding
 
 ## actionBegin
    
@@ -27,7 +27,7 @@ This event will be triggered at the beginning of every viewer action, including 
 <td class="name">eventType</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
 <td class="access">get</td>
-<td class="description">Will hold the current <a href="/embedding-options/component-api-v1.0/events/#event-types">event type</a> that triggered the event</td>
+<td class="description">Will hold the current <a href="/embedding-options/embedding-sdk/component-api-v1.0/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>
@@ -155,7 +155,7 @@ This event will be triggered once all viewer actions have been completed.
 <td class="name">eventType</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
 <td class="access">get</td>
-<td class="description">Will hold the current <a href="/embedding-options/component-api-v1.0/events/#event-types">event type</a> that triggered the event</td>
+<td class="description">Will hold the current <a href="/embedding-options/embedding-sdk/component-api-v1.0/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>
@@ -309,7 +309,7 @@ This event will be triggered before the dashboard context menu is rendered.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -414,7 +414,7 @@ This event will be triggered before the URL linking navigations are called.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -827,7 +827,7 @@ This event will be triggered before the dashboard banner icons are rendered.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -949,7 +949,7 @@ This event will be triggered when the save as icon in the filter overview panel 
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1040,7 +1040,7 @@ This event will be triggered when the save icon in the filter overview panel is 
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1168,7 +1168,7 @@ This event will be triggered when an icon from the dashboard banner is clicked.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1251,7 +1251,7 @@ This event will be triggered once the master widget applying and clearing filter
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1312,7 +1312,7 @@ This event will be triggered when the "view saved filters" icon in the filter ov
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1382,7 +1382,7 @@ This event will be triggered when the designer toolbar icon/button is clicked.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard designer's object.</td>
 </tr>
@@ -1448,7 +1448,7 @@ This event will be triggered after the save action of the data source is called.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#datasourceproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#datasourceproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the Data source Viewer's Object.</td>
 </tr>
@@ -1518,7 +1518,7 @@ This event will be triggered before the save action of the data source is called
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#datasourceproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#datasourceproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the Data source Viewer's Object.</td>
 </tr>
@@ -1573,7 +1573,7 @@ This event will be triggered after the filter has been applied.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -1651,7 +1651,7 @@ This event will be triggered before the filter is applied.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 
 <td class ="access">get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
@@ -1729,7 +1729,7 @@ This event will be triggered when you perform the drag widget on the pinboard.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
  3. dashboardName - Unique name of the BoldBI Dashboard.
 </td>
@@ -1767,7 +1767,7 @@ This event will be triggered when you drop the widget.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
  3. dashboardName - Unique name of the BoldBI Dashboard.
 </td>
@@ -1843,7 +1843,7 @@ This event will be triggered when you remove the widget from the pinboard.
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
 <td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows.<br>
- 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 1. ServerUrl - Bold BI Server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the Bold BI Dashboard. <br>
  3. dashboardName - Unique name of the Bold BI Dashboard.
 </td>
@@ -1957,7 +1957,7 @@ This event will be triggered before the widget banner icons are rendered.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="access"> get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -2042,7 +2042,7 @@ This event will be triggered after clicking on any option from the control menu 
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="description">Holds the Dashboard Viewer's Object.</td>
 </tr>
 <tr>
@@ -2103,7 +2103,7 @@ This event will be triggered when an icon from the widget banner is clicked.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class= access>get</td>
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
@@ -2193,7 +2193,7 @@ This event will be triggered after clicking any option from the control menu ico
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/component-api-v1.0/events/#dashboardproperties>object</a></span></td>
 <td class="description">Holds the Dashboard Viewer's Object.</td>
 </tr>
 <tr>
@@ -2250,7 +2250,7 @@ This section describes the dashboard properties of the viewer object correctly.
                <td class="name">serverUrl</td>
                <td class="type">string</td>
                <td class="access">get</td>
-               <td class="description">Hold the Bold BI server URL.</td>
+               <td class="description">Hold the Bold BI Server URL.</td>
           </tr>
            <tr>
                <td class="name">itemId </td>
@@ -2301,7 +2301,7 @@ This section describes the data source properties of the viewer object.
                <td class="name">serverUrl</td>
                <td class="type">string</td>
                <td class="access">get</td>
-               <td class="description">Hold the Bold BI server URL.</td>
+               <td class="description">Hold the Bold BI Server URL.</td>
           </tr>
            <tr>
                <td class="name">datasource</td>

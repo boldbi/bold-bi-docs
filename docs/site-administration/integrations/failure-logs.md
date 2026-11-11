@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Webhook Failure Handling and Logs – Embedded BI | Bold BI Docs
+title: Webhook Failure Handling and Logs in Bold BI | Bold BI
 description: Learn how to handle webhook failures and how to read failure logs, which can be used to determine the cause of a webhook failure in Bold BI application.
 platform: bold-bi
 documentation: ug

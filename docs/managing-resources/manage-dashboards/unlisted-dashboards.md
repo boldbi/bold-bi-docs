@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to unlist a dashboard from listing | Bold BI Docs
+title: How to Unlist a Dashboard from Listing in Bold BI | Bold BI
 description:  Learn about dashboards unlisting in Bold BI and how to unlist or hide a dashboard from the list of dashboards that are already shared using Bold BI.
 canonical: "/managing-resources/manage-dashboards/unlisted-dashboards/" 
 platform: bold-bi
 documentation: ug
 ---
 
-# Unlisted Dashboards
+# How to Unlist a Dashboard from Listing
 
 Unlisted dashboards will not be visible to any users other than the owner, but users with the dashboard link can access them directly with permission.
 

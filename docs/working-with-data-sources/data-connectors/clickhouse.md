@@ -1,15 +1,15 @@
 ---
 layout: post
-title:     ClickHouse  –  Cloud BI Connector  |  Bold BI Docs
+title: ClickHouse Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect the ClickHouse RDMS database with the Bold BI Cloud application in live mode and connect ClickHouse data in the dashboard widget.
 canonical: "/working-with-data-sources/data-connectors/clickhouse/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to the ClickHouse Data Source
+# ClickHouse Data Connector Guide in Bold BI
 
-The Bold BI designer allows you to connect with multiple ClickHouse data sources to visualize and analyze the data using interactive dashboards.
+The Bold BI designer lets you connect with multiple ClickHouse data sources to visualize and analyze the data using interactive dashboards.
 
 ## How to create ClickHouse data source
 

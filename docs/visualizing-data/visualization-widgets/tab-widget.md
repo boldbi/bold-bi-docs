@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding a Tab Widget in Embedded Dashboard | Bold BI Docs
+title: Adding a Tab Widget in Embedded Dashboard | Bold BI
 description: Learn about the Tab widget and know how to create, add, and configure data & other settings for the Tab widget while preparing a dashboard in Bold BI.
 canonical: "/visualizing-data/visualization-widgets/tab-widget/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Tab Widget
-A Tab widget allows you to add multiple widgets in a single tab and multiple tabs within a single widget. It groups a number of widgets in one place, reducing the large design area of the dashboard.
+A Tab widget lets you add multiple widgets in a single tab and multiple tabs within a single widget. It groups a number of widgets in one place, reducing the large design area of the dashboard.
 
 ![Tab Widget](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/tab-widget.png#max-width=72%)
 
@@ -70,7 +70,7 @@ To rename a tab, click the `edit icon` at the top right of the `Tab Order` secti
     ![Tab Rename](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/tabrename-tab-widget.png#max-width=90%)
 
 #### Widget Order
-Widget Order allows you to rearrange the widgets within a tab. You can overlap widgets in a tab and change the order using the `Widget Order` section in the property panel.
+Widget Order lets you rearrange the widgets within a tab. You can overlap widgets in a tab and change the order using the `Widget Order` section in the property panel.
 
 The `Widget Order` section lists the widgets in a tab. Use the arrow icons to rearrange the order.
 
@@ -84,7 +84,7 @@ After clicking downward arrow icon, `Feedback Report` tab moves to bottom of the
 
 #### Apply Stack Order
 
-This allows you to stack entire widgets on top of each other.
+This lets you stack entire widgets on top of each other.
 
 ![Apply Stack Order](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/apply-stack-order-tab.png)
 
@@ -119,29 +119,29 @@ This option improves dashboard performance by rendering only the widgets in the 
 By enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
 **Padding**
 
-This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
 
 #### Show Border
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
-This allows you to apply the specified radius to the widget corners if Show Border is enabled. The value can be between 0 and 100.
+This lets you apply the specified radius to the widget corners if Show Border is enabled. The value can be between 0 and 100.
 
 #### Show Background Image
-This allows you to set the background image for the tab widget.
+This lets you set the background image for the tab widget.
 
 #### Show Background Color
-This allows you to set the background color for the tab widget.
+This lets you set the background color for the tab widget.
 
 #### Transparency
-This property allows you to specify the transparency for the background color.
+This property lets you specify the transparency for the background color.
 
 #### Show Shadow
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -172,7 +172,7 @@ The tab widget can be configured with inter-widget linking support by following 
 ![Inter widget linking configuration](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/InterWidgetLinking-PropertPanel.png#max-width=87%)
 
 ### Enable Inter widget linking
-This allows you to enable the inter-widget linking support for the tab widget. By default, the `Enable` checkbox is maintained in an unchecked state.
+This lets you enable the inter-widget linking support for the tab widget. By default, the `Enable` checkbox is maintained in an unchecked state.
 
 ### Widgets
 The Widgets section displays the list of tab widgets. You can choose the required tab widget for inter-widget linking by enabling the `Enable` checkbox.
@@ -187,7 +187,7 @@ There are two actions to configure the linking with the tab widget. When hoverin
 The above actions are initially disabled and will be enabled by selecting any of the tab widgets under the `Widgets` section.
 
 ### Default
-The `Default` action allows you to switch the tabs based on the selected index from the master widget. For example, when selecting the third value from the master widget, the third tab is switched in the tab widget.
+The `Default` action lets you switch the tabs based on the selected index from the master widget. For example, when selecting the third value from the master widget, the third tab is switched in the tab widget.
 
 ![Default option in Inter widget linking](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/InterWidgetLinking-Default-Option.png#max-width=87%)
 
@@ -196,7 +196,7 @@ The `Default` action allows you to switch the tabs based on the selected index f
 >**NOTE:**  If the selected index value is greater than the tab count, the last tab will be switched.
 
 ### Custom
-This allows you to switch the tab based on the specific index which can be entered in the text box under the `Custom` action. The textbox appears only by choosing the `Custom` action. This action switches to the configured tab only, even when choosing any value from the master widget. For example, entering a value of `1` in the custom text box will switch to the first tab only, even when selecting any other values in the combo box.
+This lets you switch the tab based on the specific index which can be entered in the text box under the `Custom` action. The textbox appears only by choosing the `Custom` action. This action switches to the configured tab only, even when choosing any value from the master widget. For example, entering a value of `1` in the custom text box will switch to the first tab only, even when selecting any other values in the combo box.
 
 ![Custom option in Inter widget linking](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/InterWidgetLinking-Custom-Option.png#max-width=87%)
 

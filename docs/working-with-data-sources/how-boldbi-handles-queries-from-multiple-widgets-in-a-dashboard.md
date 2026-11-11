@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BoldBI handles queries from widgets in dashboard | Bold BI Docs
+title: Bold BI handles queries from widgets in dashboard | Bold BI
 description: Learn about how Bold BI data service handles the queries from the multiple widgets in a dashboard page.
 canonical: "/working-with-data-sources/how-boldbi-handles-queries-from-multiple-widgets-in-a-dashboard/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# How Bold BI handles queries from multiple widgets in a dashboard
+# Bold BI handles queries from widgets in dashboard
 
 The Bold BI Data Source designer allows for creating a data model with columns from multiple tables/entities and additional calculated columns. A single data source model can be bound to multiple widgets in a dashboard. 
 

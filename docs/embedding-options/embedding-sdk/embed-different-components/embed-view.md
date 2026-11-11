@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Dashboard View - SDK Based Embedding | Bold BI Docs
+title: Bold BI Dashboard View - SDK Based Embedding | Bold BI
 description: Learn how to seamlessly embed Bold BI Dashboard Views into your business application using the SDK to enhance data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed a Dashboard View Using an Embed Token
+# Bold BI Dashboard View - SDK Based Embedding
 
 Dashboard View refers to saved states of a dashboard, including filter and layout configurations. This allows for secure visualization of specific dashboards with their filters applied.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Moving Visuals in Pinboard – Embedded BI | Bold BI Learning
+title: Moving Visuals Within a Pinboard in Bold BI | Bold BI
 description: Learn how to move visuals in pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
 canonical: "/managing-resources/manage-pinboards/drag-and-drop/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Widgets Drag and Drop 
+# Moving Visuals Within a Pinboard
 
 This section explains how to drag and drop widgets between columns within the Pinboard in the Bold BI application.
 

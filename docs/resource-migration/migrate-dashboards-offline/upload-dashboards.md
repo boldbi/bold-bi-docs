@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upload Dashboards Offline to Tenants - Bold BI Docs
+title: Upload Dashboards Offline to Tenants in Bold BI | Bold BI
 description: Discover how to utilize Bold BI's upload functionality for the seamless uploading of dashboards to other tenants.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upload dashboards in the Bold BI application
+# Upload Dashboards Offline to Tenants in Bold BI
 
 To upload dashboards to the Bold BI application, you can use the bbix file in Bold BI Embedded. Here is a step-by-step guide on how to upload dashboards to sites in Bold BI:
 
@@ -229,7 +229,7 @@ Click on the `Select` button to create the data source with the new connection d
 
 Auto mapping of data sources can save you a lot of time and effort by eliminating the need to set up the same data source which is used across different dashboards.
 
-**How to use auto mapping in BoldBI:**
+**How to use auto mapping in Bold BI:**
 
 1. Upload a set of dashboards that have a common data source used across them.
 
@@ -243,13 +243,13 @@ Auto mapping of data sources can save you a lot of time and effort by eliminatin
 
    ![Configured dashboards](/static/assets/resource-migration/migrate-dashboards-offline/images/auto-map-configured-dashboard-list.png)
 
- > **NOTE:** In order for this functionality to work, please ensure that the dashboards are downloaded again and that the BoldBI version is greater than 6.7.
+ > **NOTE:** In order for this functionality to work, please ensure that the dashboards are downloaded again and that the Bold BI version is greater than 6.7.
 
  ### Bulk category update
 
 This feature enables you to update categories for selected dashboards seamlessly and perform bulk deletion.
 
-**How to use bulk category update in BoldBI:**
+**How to use bulk category update in Bold BI:**
 
 1. Select the uploaded dashboards as follows:
 
@@ -299,7 +299,7 @@ This feature enables you to update categories for selected dashboards seamlessly
 
    ![Bulk category remove selection](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-remove-selection.png)
 	
- > **NOTE:** This functionality will only work on BoldBI version 6.13 or higher.
+ > **NOTE:** This functionality will only work on Bold BI version 6.13 or higher.
 
  ### Schema mismatch override on data source
 
@@ -343,4 +343,4 @@ There will be multiple errors thrown while uploading, as explained below.
 
         ![Upload button](/static/assets/resource-migration/migrate-dashboards-offline/images/schema_uploadbutton.png)
 
-> **NOTE:** This functionality will only work on BoldBI version 6.19 or higher.
+> **NOTE:** This functionality will only work on Bold BI version 6.19 or higher.

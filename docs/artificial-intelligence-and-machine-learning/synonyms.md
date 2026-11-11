@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Synonyms Support for AI Interactions | Bold BI Docs
+title: Synonyms Support for AI Interactions in Bold BI | Bold BI
 description: Learn how to add and manage column and value synonyms to improve AI question interpretation in Bold BI.
 canonical: "/artificial-intelligence-and-machine-learning/synonyms/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Synonyms
+# Synonyms Support for AI Interactions
 Synonyms let the AI recognize different phrasings users might use for the same columns or values, improving question interpretation and intent matching.
 
 ## Steps to initiate synonyms

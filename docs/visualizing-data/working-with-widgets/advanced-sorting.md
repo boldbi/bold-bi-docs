@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort by Fields in Widgets – Embedded BI | Bold BI Learning
+title: Sort by Fields in Widgets - Embedded Analytics | Bold BI
 description: Learn how to sort the widget-bounded data based on a field and visualize through Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/advanced-sorting/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Sorting
+# Sort by Fields in Widgets - Embedded Analytics
 
 You can customize the sorting behavior of dimension fields in each widget. You can order them based on alphabet or value, data source (default), or field.
 

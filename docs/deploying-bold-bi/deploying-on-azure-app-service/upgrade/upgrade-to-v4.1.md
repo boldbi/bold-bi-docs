@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading Bold BI to version 4.1 in Azure App Service
+title: Upgrading Bold BI to Version 4.1 in App Service | Bold BI
 description: Learn more about how to upgrade Bold BI Azure App to version 4.1 using the Azure Resource Manager template.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade to v4.1
+# Upgrading Bold BI to Version 4.1 in App Service
 
 Follow these steps to upgrade the Bold BI Azure App service to version 4.1:
 

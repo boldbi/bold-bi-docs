@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Group Import from Active Directory | Bold BI Embedded
+title: Import Groups from Active Directory in Bold BI | Bold BI
 description: Learn how to search and import user groups from Active Directory into Bold BI Embedded. Only System Administrators can import AD groups.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Active Directory Group Import
+# Import Groups from Active Directory
 
 This section explains how to search for and import groups from Active Directory into the Bold BI application.
 

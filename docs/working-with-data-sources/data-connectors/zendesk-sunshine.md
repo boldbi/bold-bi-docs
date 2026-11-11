@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Zendesk Sunshine - Cloud BI Connector | Bold BI Docs
+title: Zendesk Sunshine Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Zendesk Sunshine service through basic http authentication with cloud-hosted Bold BI and create data source for dashboard preparation.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zendesk Sunshine data source
+# Zendesk Sunshine Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zendesk Sunshine web services through the REST API. 
 
 ## Choose Zendesk Sunshine data source
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

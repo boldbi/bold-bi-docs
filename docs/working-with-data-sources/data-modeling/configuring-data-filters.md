@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Data Filters – Embedded BI | Bold BI Learning
+title: Configuring Data Filters - Embedded Analytics | Bold BI
 description: Learn how to configure data filters to restrict user access to records at data source level in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Data filters 
+# Configuring Data Filters - Embedded Analytics
 
 ## Configuring Data Filters
 

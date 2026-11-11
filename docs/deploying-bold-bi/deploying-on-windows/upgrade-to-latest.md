@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading Bold BI Server - Embedded BI | Bold BI Docs
+title: Upgrading Bold BI Server - Embedded Analytics | Bold BI
 description: Read this guide to know how to upgrade the existing Bold BI Server in your machine to the latest version without any hassle.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrading Bold BI Server to the Latest Version
+# Upgrading Bold BI Server - Embedded Analytics
 
 This section explains how to upgrade the Bold BI Server from any version to the latest version.
 

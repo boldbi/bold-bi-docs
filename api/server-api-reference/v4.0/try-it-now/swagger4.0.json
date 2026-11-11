@@ -4418,7 +4418,7 @@
           "Settings"
         ],
         "summary": "Update Site Settings",
-        "description": "Users who have administrative rights to the site are able to update the site settings.",
+        "description": "Users who have administrative rights to site settings can update the site settings.",
         "operationId": "Administration_UpdateSiteSettings",
         "parameters": [
           {

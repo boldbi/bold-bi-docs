@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Responsive Application – Embedded BI | Bold BI Documentation
+title: Responsive Application - Embedded Analytics | Bold BI
 description: Know about the responsiveness of Bold BI Embedded server pages in desktop, mobile and tablet devices for different screen sizes and orientations.
 canonical: "/responsive-layout/responsive-design-bold-bi-server/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Responsive Design in Bold BI Server
+# Responsive Application - Embedded Analytics
 We can view the Bold BI Server on desktop, mobile, and tablet devices. The server page can be recalculated and adapt its view for various screen sizes and orientations.
 
 ## Desktop Layout in Bold BI Server

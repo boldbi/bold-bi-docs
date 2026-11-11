@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Shopify - Cloud BI Connector | Bold BI Documentation
+title: Shopify Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect Shopify web service through basic http authentication with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to the Shopify data source
+# Shopify Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Shopify web services using the REST API. 
 
 ## Choose Shopify data source
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

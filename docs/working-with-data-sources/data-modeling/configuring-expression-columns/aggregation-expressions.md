@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Aggregate Expression Fields | Bold BI Embedded Docs
+title: Configuring Aggregate Expression Fields in Bold BI | Bold BI
 description: Learn how to configure expression fields comprising calculated aggregation expressions using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Configure Aggregation expressions
+# Configuring Aggregate Expression Fields
 
 ## Functions
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Amazon Redshift – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect an Amazon Redshift database cluster and read its data into Bold BI Cloud dashboard.
+title: Amazon Redshift Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect an Amazon Redshift database cluster to Bold BI Cloud and read its data into dashboards and widgets through a data source.
 platform: bold-bi
 documentation: ug
 ---
    
-# Connecting Bold BI to Amazon Redshift Database
+# Amazon Redshift Data Connector Guide in Bold BI
 
-Using the `Amazon Redshift` connection type, you can connect to an Amazon Redshift database.
+The Amazon Redshift connection type in Bold BI connects to an Amazon Redshift database.
 
 Click the `Data Source` button in the configuration panel to add a new data connection.
 
@@ -52,7 +52,7 @@ In this type of connection, a data source is fetched from the source periodicall
 
 ![Redshift Extract Mode](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftExtractmode.png#width=350px;height=503.92px)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/maxRowOption.png#max-width=60%)	
  
 ## Refresh Settings

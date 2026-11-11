@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Default Dashboard Settings – Embedded BI | Bold BI Docs
+title: Default Dashboard Settings - Embedded Analytics | Bold BI
 description: Learn how to manage dashboard settings in Bold BI Embedded, including setting your default dashboard upon login, for a personalized and efficient experience.
 canonical: "/site-administration/dashboard-settings/default-dashboard/"
 platform: bold-bi

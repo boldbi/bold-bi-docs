@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar Chart - Embedded BI Visual | Bold BI Documentation
+title: Bar Chart - Embedded Analytics Visual in Bold BI | Bold BI
 description: Learn how to create a Bar Chart visual in Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/bar-chart/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Bar Chart
+# Bar Chart - Embedded Analytics Visual
 
 A `Bar chart` enables you to compare values for a group of items that are not in any specific order across different categories, using vertical bars. 
 
@@ -249,7 +249,7 @@ You can format the bar chart for a better illustration of the view you require b
 
 #### Name
 
-This allows you to set the `title` for this bar chart widget.
+This lets you set the `title` for this bar chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/Name.png)
 
@@ -275,7 +275,7 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 ![Chart type and axis settings dialog](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/chart-type.png)
 
-**Chart Type**: This feature allows you to switch the widget view from the current chart type to another convertible chart type.
+**Chart Type**: This feature lets you switch the widget view from the current chart type to another convertible chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis. 
 
@@ -297,7 +297,7 @@ If you disable the `Show Value Labels` properties, the dependent properties, whi
 
 #### Customize
 
-This allows you to customize the toggle visibility of value labels in each series.
+This lets you customize the toggle visibility of value labels in each series.
 
 ![Value labels customization change](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/value-label-customization.png)
 
@@ -305,7 +305,7 @@ This allows you to customize the toggle visibility of value labels in each serie
 
 #### Value Label Color
 
-This allows you to customize the color of the value label.
+This lets you customize the color of the value label.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/data-label-color-option.png)
 
@@ -313,19 +313,19 @@ This allows you to customize the color of the value label.
 
 ### Value Label Position
 
-This option allows you to customize the position of the value labels in the chart. By default, it is set to `Auto`, so the label position for the area chart will be set as Top.
+This option lets you customize the position of the value labels in the chart. By default, it is set to `Auto`, so the label position for the area chart will be set as Top.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-valuelabelposition.png)
 
 #### Value label rotation
 
-This allows you to define the `rotation angle for the value labels` to be displayed.
+This lets you define the `rotation angle for the value labels` to be displayed.
 
 ![Rotated labels](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/label-rotation.png)
 
 #### Value label suffix
 
-This allows you to display or conceal the suffix value of value labels.
+This lets you display or conceal the suffix value of value labels.
 
 #### Suffix Value
 
@@ -337,19 +337,19 @@ This feature enables you to customize the suffix value of the value labels.
 
 #### Show items with no data
 
-This allows you to display data for columns that do not have a value.
+This lets you display data for columns that do not have a value.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/chart-gap.png)
 
 ### Empty Point Mode
 
-This allows you to handle the display mode of the data point values if they are null or undefined when the `Show Items With No Data` option is enabled.
+This lets you handle the display mode of the data point values if they are null or undefined when the `Show Items With No Data` option is enabled.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/chart-gap.png)
 
 ### Gap
 
-This option allows you to display null or undefined values as gaps.
+This option lets you display null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/chart-gap.png)
 
@@ -367,7 +367,7 @@ This option displays the null or undefined values along with the average value.
 
 #### Column Width
 
-This option allows you to increase or decrease the width of the column by using the `Column Width`.
+This option lets you increase or decrease the width of the column by using the `Column Width`.
 
 ![Column Width Customization](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/column-width-customization.png)
    
@@ -375,7 +375,7 @@ This option allows you to increase or decrease the width of the column by using 
 
 #### Column Spacing
 
-This option allows you to increase or decrease the space between the columns by using the `Column Spacing`.
+This option lets you increase or decrease the space between the columns by using the `Column Spacing`.
 
 ![Column Spacing Customization](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/column-space-customization.png)
 
@@ -387,7 +387,7 @@ When this support is enabled, the thumb size of the chart scroll bar will be cal
 
 ### Page Size
 
-This option allows you to set the number of records that need to be fetched on initial load.
+This option lets you set the number of records that need to be fetched on initial load.
 
 #### Invert Scroll
 
@@ -405,31 +405,31 @@ The scroll bar follows the default scrolling direction.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-legend-tooltip.png)
 
@@ -439,7 +439,7 @@ This option allows you to display tooltip text and value colors that correspond 
 
 #### Show legend
 
-A `Legend` is a text used to describe the plotted data. This allows you to toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
+A `Legend` is a text used to describe the plotted data. This lets you toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
 
 ![chart legends](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-legend.png)
 
@@ -447,12 +447,12 @@ Enabling the `Custom Legend Text` option will allow you to define a custom text,
 
 #### Legend Interactivity
 
-The chart's `legend interactivity` option allows you to control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This feature might also be helpful when displaying critical pieces of data that should always be present for accuracy and contextual purposes.
+The chart's `legend interactivity` option lets you control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This feature might also be helpful when displaying critical pieces of data that should always be present for accuracy and contextual purposes.
 
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-interactivity-enable.png)
 
@@ -474,7 +474,7 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
 
@@ -488,33 +488,33 @@ Legend Alignment enables you to control how the legend is positioned within its 
 
 #### Legend Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle`.
+This option lets you change the shape of the legend in a `Circle`.
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series`.
+This option lets you change the shape of the legend in `Series`.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
+This lets you add the legend title for the chart. It will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-title.png)
 
 #### Text Overflow
 
-This option allows you to customize legend text based on the `Text Width` property value.
+This option lets you customize legend text based on the `Text Width` property value.
 
 ***None***
 
-This option allows you to render legend items without wrapping or trimming.
+This option lets you render legend items without wrapping or trimming.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-text-overflow-none-option.png)
 
@@ -522,7 +522,7 @@ This option allows you to render legend items without wrapping or trimming.
 
 ***Trim***
 
-This option allows you to trim the legend items if their legend exceeds the value of `Text Width`.
+This option lets you trim the legend items if their legend exceeds the value of `Text Width`.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-text-overflow-trim-option.png)
 
@@ -530,7 +530,7 @@ This option allows you to trim the legend items if their legend exceeds the valu
 
 ***Wrap***
 
-This option allows you to wrap legend items based on the value of `Text Width`.
+This option lets you wrap legend items based on the value of `Text Width`.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-text-overflow-wrap-option.png)
 
@@ -538,7 +538,7 @@ This option allows you to wrap legend items based on the value of `Text Width`.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/legend-text-overflow-width-option.png)
 
@@ -551,7 +551,7 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 #### Axis Format
 
-This option allows you to format the values of the primary and secondary axes using the formatting details provided by using the Format button. For more information, please refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format the values of the primary and secondary axes using the formatting details provided by using the Format button. For more information, please refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting Axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-format.png)
 
@@ -563,7 +563,7 @@ To configure the linking to a URL or dashboard with the widget, use its settings
 
 ### Axis settings
 
-This section allows you to customize the axis settings in the chart.
+This section lets you customize the axis settings in the chart.
 
 ![Chart axis properties](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-settings.png)
 
@@ -581,13 +581,13 @@ This enables you to customize the color of the axis label.
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-axis-border.png)
 
 #### Show category axis
 
-This feature allows you to switch the visibility of the category axis.
+This feature lets you switch the visibility of the category axis.
 
 ![Category axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-categoryaxis.png)
 
@@ -597,13 +597,13 @@ If you disable the `Show Category Axis` option, dependencies properties, which a
 
 #### Show category axis title
 
-This feature allows you to easily switch the visibility of the category axis title.
+This feature lets you easily switch the visibility of the category axis title.
 
 ![Category axis title visibility](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-axis-title.png)
 
 #### Category axis title
 
-This allows you to edit the title of the category axis for the chart. It will be reflected as the name of the x-axis on the chart.
+This lets you edit the title of the category axis for the chart. It will be reflected as the name of the x-axis on the chart.
 
 ![category axis title](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-title-edit.png)
 
@@ -613,7 +613,7 @@ If we uncheck the `Show Axis Title` property, the Axis title text box property w
 
 #### Label overflow mode
 
-This feature allows you to manage the display mode of the overlapping labels on the category axis.
+This feature lets you manage the display mode of the overlapping labels on the category axis.
 
 #### Trim
 
@@ -629,11 +629,11 @@ This option hides the overlapping label on the axis.
 
 #### Trim Axis Labels
 
-This option allows you to trim the axis labels based on the value of the `Maximum Label Width` property.
+This option lets you trim the axis labels based on the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a maximum width for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
+This option lets you set a maximum width for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/maximum-label-width.png)
 
@@ -641,7 +641,7 @@ This option allows you to set a maximum width for the axis labels, and it can al
 
 #### Category axis label rotation
 
-This allows you to define the rotation angle for displaying the category axis labels.
+This lets you define the rotation angle for displaying the category axis labels.
 
 ![Rotated category axis labels](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-label-rotation.png)
 
@@ -659,19 +659,19 @@ If you disable the `Show Primary Axis` option, dependencies properties, which ar
 
 ![Show primary value axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/primary-axis.png)
 
-This feature allows you to enable the primary value axis for the chart.
+This feature lets you enable the primary value axis for the chart.
 
 ![Chart primary axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-primary-value-axis.png)
 
 #### Show primary axis title
 
-This feature allows you to enable the visibility of the primary value axis title on the chart.
+This feature lets you enable the visibility of the primary value axis title on the chart.
 
 ![Primary axis title visibility](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-primary-value-axis-title.png)
 
 #### Primary axis title value
 
-This allows you to edit the title of the primary value axis. It will be reflected in the y-axis name of the chart.
+This lets you edit the title of the primary value axis. It will be reflected in the y-axis name of the chart.
 
 ![Primary axis title value](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/edit-axis-title.png)
 
@@ -685,7 +685,7 @@ Enabling this property will cause the chart to display negative values on the to
 
 ### Axis range settings
 
-This feature allows you to manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
+This feature lets you manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
 
 ![Axis range settings](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-range.png)
 
@@ -695,7 +695,7 @@ It will be reflected in the primary value axis of the chart.
 
 ### Parameter Support in Axis range:
 
-This feature allows you to dynamically set the minimum, maximum, and interval values of the primary value axis using the `Axis Range Settings` dialog and the values of dashboard parameters. Only number-type dashboard parameter values can be used in the axis range properties. It is possible to create multiple types of dashboard parameters.
+This feature lets you dynamically set the minimum, maximum, and interval values of the primary value axis using the `Axis Range Settings` dialog and the values of dashboard parameters. Only number-type dashboard parameter values can be used in the axis range properties. It is possible to create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -752,19 +752,19 @@ If you want to set the same ranges in multiple cases, create the parameter value
 
 ### Axis Type
 
-This allows you to change the type of axis in the bar chart.
+This lets you change the type of axis in the bar chart.
 
 ### Linear
 
-This option allows you to specify the type of axis as linear.
+This option lets you specify the type of axis as linear.
 
 ### Logarithmic
 
-This option allows you to handle the logarithmic axis, which uses a logarithmic scale. It is very useful for visualizing data with values that have both a lower order of magnitude (e.g., 10-6) and a higher order of magnitude (e.g., 106).
+This option lets you handle the logarithmic axis, which uses a logarithmic scale. It is very useful for visualizing data with values that have both a lower order of magnitude (e.g., 10-6) and a higher order of magnitude (e.g., 106).
 
 #### Axis Format
 
-This option allows you to format the values of the primary and secondary axis using the formatting details provided through the `Format` button. For more information, please refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format the values of the primary and secondary axis using the formatting details provided through the `Format` button. For more information, please refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting Axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/axis-format.png)
 
@@ -776,7 +776,7 @@ You can toggle the visibility of each axis gridlines using the property.
 
 #### Primary Value Axis
 
-This feature allows you to enable the gridlines for the `Primary Value Axis` in the bar chart.
+This feature lets you enable the gridlines for the `Primary Value Axis` in the bar chart.
 
 ![Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/primary-gridlines.png)
 
@@ -848,7 +848,7 @@ To delete the trendline, select the one that you want to delete and click the hi
 
 > **IMPORTANT:** The `Formatting section` will be enabled when the widget is configured, and it will be hidden if the row field is configured.
 
-This allows you to change the `color` for the bar chart.
+This lets you change the `color` for the bar chart.
 
 ![Format Colors](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/formatting-color.png)
 
@@ -909,7 +909,7 @@ You can enter the title for the Bar chart legends.
 
 ### Rule based condition mode
 
-This allows you to customize the fill color of the bar chart based on one or more numerical/text conditions.
+This lets you customize the fill color of the bar chart based on one or more numerical/text conditions.
 
 ![rule mode](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/rule-mode.png)
 
@@ -926,7 +926,7 @@ For example, when drilling down on a 'Retail' point, the next level of series wi
 
 #### Value type
 
-The value type drop-down allows you to choose whether you are going to apply the direct value (such as a specific number like 3 goals or order ID 10248) or a percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether you are going to apply the direct value (such as a specific number like 3 goals or order ID 10248) or a percentage (values above 30% or 50%).
 
 #### Condition name
 
@@ -980,13 +980,13 @@ Using Color Mapping type, you can apply the colors to the series either based on
 
 ***Data***
 
-It allows you to apply color to chart series based on data. If you want to apply a specific color to specific data, you can use data-based color mapping. By default, the color mapping type will be `Data`.
+It lets you apply color to chart series based on data. If you want to apply a specific color to specific data, you can use data-based color mapping. By default, the color mapping type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/column-chart-formatting-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color to chart series based on the `Index`. This means that the colors will remain the same based on the index even if the data is changed. It only shows a maximum of 15 different colors. Once all 15 colors have been used, the colors will start to repeat from the previously used colors.
+It lets you apply color to chart series based on the `Index`. This means that the colors will remain the same based on the index even if the data is changed. It only shows a maximum of 15 different colors. Once all 15 colors have been used, the colors will start to repeat from the previously used colors.
 
 For example, if you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. For instance, assigning red to the top, the red color will be maintained for the country with the largest case count.
 
@@ -1004,13 +1004,13 @@ To undo all the changes, click `reset`.
 
 ### Series Palette
 
-This allows you to apply color to chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if we have configured the row section in the chart.
+This lets you apply color to chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if we have configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/series-palette.png)
 
 #### Use Default Palette
 
-This option allows you to apply the default color for chart series.
+This option lets you apply the default color for chart series.
 
 By toggling off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -1024,13 +1024,13 @@ Using the Color Mapping type, we can apply colors to the series based on either 
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It lets you apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/bar-chart-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It lets you apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If we are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -1040,7 +1040,7 @@ For example, If we are displaying the countries based on the increasing order of
 
 ### Font settings
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/font-settings.png)
 
@@ -1050,17 +1050,17 @@ By default, the 'Auto Font Size' property is enabled. Auto font size property is
 
 ### Filter
 
-This section allows you to handle the `filter` action for the spline area chart widget.
+This section lets you handle the `filter` action for the spline area chart widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/filter.png)
 
 #### Act as master widget
 
-This allows you to define this bar chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this bar chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore filter actions
 
-This allows you to define this bar chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This lets you define this bar chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
 #### Hierarchical filter
 
@@ -1070,21 +1070,21 @@ When the `Hierarchical Filter option` is enabled, the `Top N` will be applied fo
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the Bar Chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the Bar Chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
-This sections allows you to customize the `Container Appearance` for the bar chart widget.
+This sections lets you customize the `Container Appearance` for the bar chart widget.
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,**  or **right**.
+This lets you handle the alignment of widget title to either **left, center,**  or **right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -1092,7 +1092,7 @@ This allows you to apply the text `color` to the widget title.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -1100,7 +1100,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
+This lets you apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
 
 ### Auto Padding
 
@@ -1108,7 +1108,7 @@ When Auto Padding is enabled, the padding of the widget container will be automa
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -1116,11 +1116,11 @@ This feature enables you to switch the visibility of the `border` that surrounds
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This feature allows you to set the **background image** for the bar chart widget.
+This feature lets you set the **background image** for the bar chart widget.
 
 ### Background Color
 
@@ -1128,7 +1128,7 @@ This feature enables you to define the **background color** for the bar chart wi
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the `background color.`
+This property lets you specifies the **transparency** for the `background color.`
 
 ### Show Shadow
 
@@ -1136,53 +1136,53 @@ This feature enables you to toggle the visibility of the `shadow` surrounding th
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 
-This section allows you to customize the `Container actions` for the bar chart widget.
+This section lets you customize the `Container actions` for the bar chart widget.
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the bar chart. 
+This lets you enable or disable the `widget title` of the bar chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the bar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the bar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the bar chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the bar chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the bar chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the bar chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the bar chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the bar chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the bar chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the bar chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Logical Expression Fields | Bold BI Embedded Docs
+title: Configuring Logical Expression Fields in Bold BI | Bold BI
 description: Learn how to configure expression fields comprising calculated logical expressions using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Configure Logical expression
+# Configuring Logical Expression Fields
 
 ## Functions
 

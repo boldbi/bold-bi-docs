@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Embedded BI – A Basic Walkthrough | Bold BI Documentation
-description: Get a complete walkthrough of using Embedded BI from start to end. Know the features involved in-between the processes.
+title: Embedded Analytics - A Basic Walkthrough | Bold BI
+description: Get a complete walkthrough of using Embedded Analytics from start to end. Know the features involved in-between the processes.
 canonical: "/getting-started/creating-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI – A Basic Walkthrough
+# Embedded Analytics - A Basic Walkthrough
 
 This is a simple walkthrough that will help you get started with Bold BI. Throughout this walkthrough, we will be using the **Northwind** database to demonstrate each feature of Bold BI.
 
