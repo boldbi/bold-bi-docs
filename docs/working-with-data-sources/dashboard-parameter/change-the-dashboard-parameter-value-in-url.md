@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Change Dashboard Parameter value in URL - Embedded BI | Bold BI
+title: Change Dashboard Parameter Values in the URL | Bold BI
 description: This section describes about how to change the dashboard parameter value in Bold BI Embedded using URL. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Change the Dashboard Parameter value in URL
+# Change Dashboard Parameter Values in the URL
 
 By utilizing dashboard parameters, the user can dynamically change the value of the URLs.
 

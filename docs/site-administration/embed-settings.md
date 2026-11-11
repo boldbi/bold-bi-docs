@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embed Settings – Embedded BI | Bold BI Documentation
+title: Embed Settings to generate Embed Secret key | Bold BI
 description: Learn how to enable the embed authentication and generate the secret code using the embed settings in the Bold BI server.
 canonical: "/site-administration/embed-settings/"
 platform: bold-bi
@@ -58,11 +58,11 @@ The following properties are used in the `embedConfig.json` file:
             </tr>
             <tr>
                 <td align="left">SiteIdentifier</td>
-                <td align="left">For Bold BI On-Premise Edition, it should be like  <code>site/site1</code>.For Bold BI Cloud, it should be an empty string.</td>
+                <td align="left">For Bold BI On-Premises Edition, it should be like  <code>site/site1</code>.For Bold BI Cloud, it should be an empty string.</td>
             </tr>
             <tr>
             <td align="left">Environment</td>
-                <td align="left">Your Bold BI application environment. (If Cloud, use <code>cloud</code>; if On-Premise, use <code>enterprise</code>)</td>
+                <td align="left">Your Bold BI application environment. (If Cloud, use <code>cloud</code>; if On-Premises, use <code>enterprise</code>)</td>
             </tr>
             <tr>
                 <td align="left">UserEmail</td>

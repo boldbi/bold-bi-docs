@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SSO with Fusion Auth (OAuth 2.0) | Bold BI Documentation
+title: SSO with Fusion Auth (OAuth 2.0) in Bold BI | Bold BI
 description: Learn how to configure Bold BI Embedded with the Fusion Auth identity provider for Single Sign-On authentication using OAuth 2.0.
 platform: bold-bi
 documentation: ug
 ---
 
-# Fusion Auth support for SSO authentication
+# SSO with Fusion Auth (OAuth 2.0)
 
 The Bold BI application supports adding users through the Fusion Auth provider. By importing them, you can share the dashboards and email exported dashboards with them.
 

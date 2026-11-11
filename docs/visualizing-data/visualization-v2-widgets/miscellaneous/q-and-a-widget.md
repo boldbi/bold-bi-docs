@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Q&A Natural Language Widget (Modern) | Bold BI Docs
-description: Learn how to add and use the modern Q&A widget in Bold BI dashboards so viewers can ask natural-language questions about dashboard data.
+title: Q&A Natural Language Widget for Modern Dashboards | Bold BI
+description: Learn how to add and use the modern Q&A widget in Bold BI dashboards so viewers can ask natural-language questions and get answers from the dashboard data.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/q-and-a-widget/"
 platform: bold-bi
 control: Q&A Widget
 documentation: ug
 ---
 
-# Q&A Widget
+# Q&A Natural Language Widget for Modern Dashboards
 
-The Q&A widget lets viewers ask natural-language questions and receive answers based on the configured dashboard data.
+The Q&A widget in Bold BI lets viewers ask natural-language questions and receive answers based on the configured dashboard data.
 
 ## Before You Begin
 

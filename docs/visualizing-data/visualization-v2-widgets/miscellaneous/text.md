@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rich Text Editor Widget (Modern) | Bold BI Documentation
+title: Rich Text Editor for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to add, format, and organize rich text content, padding, actions, and appearance settings for the modern Rich Text Editor in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/text/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Text
 documentation: ug
 ---
 
-# Rich Text Editor
+# Rich Text Editor for Modern Dashboards
 
-The Rich Text Editor adds formatted text to a dashboard. Use it for headings, explanations, instructions, annotations, tables, and links.
+The Rich Text Editor widget in Bold BI adds formatted text to a dashboard. Use it for headings, explanations, instructions, annotations, tables, and links.
 
 ![Rich Text Editor](/static/assets/visualizing-data/visualization-widgets/images/text/text-overview.png)
 

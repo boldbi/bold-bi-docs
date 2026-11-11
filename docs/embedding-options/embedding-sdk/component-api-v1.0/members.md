@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Reference – Members - JavaScript Embedding | Bold BI
+title: API Reference - Members - JavaScript Embedding | Bold BI
 description: Explore the JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
 
-# Members
+# API Reference - Members - JavaScript Embedding
 <h2 class="doc-prop-wrapper" id="dashboardid" data-Path="dashboardid-dashboardId">
 <a href="#dashboardid" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -531,7 +531,7 @@ dashboard.loadDashboard();
 </h2>
     
 
-This API member allows you to bypass or load dependencies from the Bold BI server via the Embed SDK wrapper using a `nonce` source when the Content Security Policy is enabled in your application. Set any unique value here. The same unique value must be used in both the `nonce` member and meta tag as follows.
+This API member allows you to bypass or load dependencies from the Bold BI Server via the Embed SDK wrapper using a `nonce` source when the Content Security Policy is enabled in your application. Set any unique value here. The same unique value must be used in both the `nonce` member and meta tag as follows.
 
 <br>
 
@@ -848,7 +848,7 @@ dashboard.loadDashboard();
 </h3>
 
     
-Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance.
+Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI Server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI Server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance.
 
 This property holds the URL of the embedding application that will implement authorization. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
@@ -2011,7 +2011,7 @@ dashboard.loadDashboard();
 <p><strong>Default value:</strong></p>
 <ul><li>false</li></ul>
 
->**Note:** Please ensure the SDK and Bold BI server versions match.
+>**Note:** Please ensure the SDK and Bold BI Server versions match.
 
 <p><strong>Version info:</strong></p>
 <ul>
@@ -2031,7 +2031,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-> **Note:** Please use the SDK and Bold BI server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>enabled</code> objects as shown below.
+> **Note:** Please use the SDK and Bold BI Server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>enabled</code> objects as shown below.
 
 <p><strong>Example (From 12.1 onwards):</strong></p>
 
@@ -2121,7 +2121,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
->**Note:** Please use the SDK and Bold BI server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>enabled</code> and <code>summary</code> objects as shown below.
+>**Note:** Please use the SDK and Bold BI Server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>enabled</code> and <code>summary</code> objects as shown below.
 
 ```js
 var dashboard = BoldBI.create({
@@ -2171,7 +2171,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-> **Note:** Please use the SDK and Bold BI server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>includeDashboardSummary</code> and <code>summary</code> objects as shown below.
+> **Note:** Please use the SDK and Bold BI Server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>includeDashboardSummary</code> and <code>summary</code> objects as shown below.
 
 ```js
 var dashboard = BoldBI.create({
@@ -2220,7 +2220,7 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard();
 ```
->**Note:** Please use the SDK and Bold BI server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>includeWidgetSummary</code> and <code>summary</code> objects as shown below.
+>**Note:** Please use the SDK and Bold BI Server from the same version. Starting from version 12.1, the AI Assistant settings are restructured. Use the <code>includeWidgetSummary</code> and <code>summary</code> objects as shown below.
 
 ```js
 var dashboard = BoldBI.create({
@@ -2632,7 +2632,7 @@ dashboard.loadDesigner();
 
 > **NOTE:** Please refer to the new structure theme API [here](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#themes) from v13.1.
 
-The custom theme feature enables you to personalize the appearance of the Bold BI embedded dashboard. By selecting the custom theme option, you can modify the dashboard using different themes that are accessible on the Bold BI server.
+The custom theme feature enables you to personalize the appearance of the Bold BI embedded dashboard. By selecting the custom theme option, you can modify the dashboard using different themes that are accessible on the Bold BI Server.
 
 > **NOTE:** In order to set a custom theme, you should upload the custom theme files in Bold BI Server. Please refer to this [link](/site-administration/look-and-feel-settings-in-embedded-analytics/#custom-theme) for more information on how to upload custom theme files.
 
@@ -2760,7 +2760,7 @@ This member needs to be set as true when directly referring to the theme file in
 **Example** 
 ```js
  <head>  
-     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
      <link rel="stylesheet" href="/path/to/theme/file/darkviolet.css">
 </head>
 

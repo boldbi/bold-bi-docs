@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Uses of Dashboard Parameter Filters in Visuals | Bold BI Docs
+title: Uses of Dashboard Parameter Filters in Visuals | Bold BI
 description: Learn how to use dashboard parameters to filter individual visuals, drive targeted selections, deep links, and embedded experiences in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Uses of Filters in Visuals
+# Uses of Dashboard Parameter Filters in Visuals
 
 You can now use dashboard parameters to drive filters on individual visuals. This filters only the selected widget based on the parameter value without affecting the rest of the dashboard.
 
@@ -35,7 +35,7 @@ You can now use dashboard parameters to drive filters on individual visuals. Thi
 
    ![parameter left pane](/static/assets/working-with-datasource/dashboard-parameter/images/paramater-mapping-left-pane.png)
 
-4. The right pane shows the mapping options for the selected parameter. The **Target Widget**—the dropdown lists all widget available on the dashboard.
+4. The right pane shows the mapping options for the selected parameter. The **Target Widget**, the dropdown lists all widget available on the dashboard.
 
    ![parameter right pane](/static/assets/working-with-datasource/dashboard-parameter/images/parameter-mapping-right-pane.png)
 
@@ -56,4 +56,4 @@ In this example, the Branch Details dashboard parameter was passed through the U
 ### Notes
 
 - Parameter data type must match the target field type.
-- A widget can reference the same parameter multiple times, but only one column mapping per parameter is honored—the last saved configuration takes effect.
+- A widget can reference the same parameter multiple times, but only one column mapping per parameter is honored, the last saved configuration takes effect.

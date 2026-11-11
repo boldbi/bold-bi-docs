@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Area Chart (Modern) | Bold BI Documentation
+title: Stacked Area Chart in Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Stacked Area Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/stacked-area-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Stacked Area Chart
 documentation: ug
 ---
 
-# Stacked Area Chart
+# Stacked Area Chart in Modern Dashboards
 
-A Stacked Area Chart displays filled series accumulated on top of one another. It shows both the overall magnitude and each series' contribution across an ordered category.
+The Stacked Area Chart widget in Bold BI displays filled series accumulated on top of one another. It shows both the overall magnitude and each series' contribution across an ordered category.
 
 ![Stacked Area Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/stacked-area-chart/stackedareachart.png)
 

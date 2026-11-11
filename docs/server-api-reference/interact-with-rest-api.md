@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Bold BI REST APIs - Embedded | Bold BI Docs
+title: Working with Bold BI REST APIs - Embedded | Bold BI
 description: Work with Bold BI Embedded REST APIs through the interactive API documentation. Just get the access token to authenticate the API endpoint and get the response.
 canonical: "/server-api-reference/interact-with-rest-api/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Interact with our REST API
+# Working with Bold BI REST APIs - Embedded
 
 This section explains how to use our interactive API documentation to play.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: MongoDB – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect MongoDB database with Bold BI Cloud and create data source for dashboard configuration.
+title: MongoDB Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect a MongoDB database with Bold BI Cloud using the MongoDB client, then create a data source for dashboard configuration and widget data.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to MongoDB data source
+# MongoDB Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to MongoDB database through MongoDB client. 
 
 ## Choose MongoDB data source
-To configure the MongoDB data source, follow the below steps:
+To configure the MongoDB data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the MongoDB data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/mongodb/ChooseDS_server.png)
 
 ## Create MongoDB data source
-Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create MongoDB data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create MongoDB data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid MongoDB server/host name in the **Server Name** text box.
 3. Enter its corresponding port in the **Port** text box.
@@ -39,12 +39,12 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 7. Choose the **Extract Engine**.<br>
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 8. Select the database you want to query in the listed databases associated with the given MongoDB Server in the **Database** combo box.
 
    > **NOTE:**  If your MongoDB server reside inside a firewall, contact Bold BI support to get the list of IP addresses to be white-listed.
@@ -445,7 +445,7 @@ Upon initial connection, MongoDB will extract a maximum of 10,000 records. By co
 </tr>
 </table>
 
-**NOTE:** MongoDB provides a BI connector tool that allows you to connect MongoDB servers directly through an ODBC connector or MySQL connector, without the need for any intermediate database. Please refer to this KB article for more information. [How to connect MongoDB by direct query mode in Bold BI](https://www.boldbi.com/kb/faq/how-to-connect-mongodb-by-direct-query-mode-in-bold-bi).
+**NOTE:** MongoDB provides a BI connector tool that lets you connect MongoDB servers directly through an ODBC connector or MySQL connector, without the need for any intermediate database. Please refer to this KB article for more information. [How to connect MongoDB by direct query mode in Bold BI](https://www.boldbi.com/kb/faq/how-to-connect-mongodb-by-direct-query-mode-in-bold-bi).
 
 ## Related links
 [Blog post](https://www.boldbi.com/blog/connect-mongodb-workloads-migrated-to-azure-cosmos-db)

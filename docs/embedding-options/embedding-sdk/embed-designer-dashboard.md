@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI dashboard designer - JavaScript Embedding | Bold BI Docs
+title: Bold BI dashboard designer - JavaScript Embedding | Bold BI
 description:  Learn how to seamlessly embed the Bold BI dashboard designer into your business application using the SDK, enhancing data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 
 ---
-# Embed a Dashboard Designer using an Embed Token
+# Bold BI dashboard designer - JavaScript Embedding
 Embedding the designer enables your users to <b>create</b> and <b>modify</b> dashboards directly within your application.
 
 ### Prerequisites

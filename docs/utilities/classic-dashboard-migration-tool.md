@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Dashboard Migration Utility - Embedded | Bold BI Learning
+title: Dashboard Migration Utility - Embedded in Bold BI | Bold BI
 description: Learn how to migrate the classic platform dashboards and data sources into Bold BI Embedded supported formats using migration utility.
 canonical: "/migration-utility/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard Migration Utility
+# Dashboard Migration Utility - Embedded
 
 This section explains how to migrate Syncfusion **Dashboard Platform dashboards and datasources** to the `Bold BI` site using the Dashboard Migration Utility.
 
-> **NOTE:** The Dashboard Migration utility can only be used to migrate dashboards from the Syncfusion Dashboard Server to the Bold BI server. This utility cannot be used to migrate dashboards from the Bold BI instance to another. Instead, you can utilize the **Publish** Module for this purpose. Please refer to this [section](https://help.boldbi.com/working-with-dashboards/publish-dashboard/) for instructions on publishing a dashboard from one Bold BI instance to another. It is not suitable for migrating dashboards from the Syncfusion Dashboard Server to the Syncfusion Managed Cloud Server.
+> **NOTE:** The Dashboard Migration utility can only be used to migrate dashboards from the Syncfusion Dashboard Server to the Bold BI Server. This utility cannot be used to migrate dashboards from the Bold BI instance to another. Instead, you can utilize the **Publish** Module for this purpose. Please refer to this [section](https://help.boldbi.com/working-with-dashboards/publish-dashboard/) for instructions on publishing a dashboard from one Bold BI instance to another. It is not suitable for migrating dashboards from the Syncfusion Dashboard Server to the Syncfusion Managed Cloud Server.
 
 ## Instruction to use the Migration Utility
 
@@ -109,7 +109,7 @@ Currently, only live datasource connections `(SQL, PostgreSQL)` can be imported 
 
 ![Alert for unsupported connection](/static/assets/migration-utility/images/Migration_Utility_Alert-for-unsupported-connection.png)
 
-If the Dashboard is created from the `desktop designer`, some Datasource, Widgets, and Features may not be supported in the Bold BI server. These `unsupported` items will be shown on expansion as below,
+If the Dashboard is created from the `desktop designer`, some Datasource, Widgets, and Features may not be supported in the Bold BI Server. These `unsupported` items will be shown on expansion as below,
 
 ![Showing list of unsupported items](/static/assets/migration-utility/images/Migration_Utility_Showing-list-of-unsupported-items.png)
 

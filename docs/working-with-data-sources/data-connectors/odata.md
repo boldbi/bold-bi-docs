@@ -1,16 +1,16 @@
 ---
 layout: post
-title: OData – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect OData web service through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: OData Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect an OData web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to OData data source
+# OData Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to OData web services through the REST API. 
 
 ## Choose OData data source
-To configure the OData data source, follow the below steps:
+To configure the OData data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the OData data source, follow the below steps:
 
 
 ## Create OData data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create OData data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create OData data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid OData REST API endpoint in the URL textbox. Refer to the [OData API documentation](https://www.odata.org/documentation/) for more details.
 

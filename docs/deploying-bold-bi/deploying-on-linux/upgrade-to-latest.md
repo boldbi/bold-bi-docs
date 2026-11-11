@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading Bold BI Linux Server - On-Premises | Bold BI Docs
+title: Upgrading Bold BI Linux Server - On-Premises | Bold BI
 description: Read this guide to know how to upgrade the existing Bold BI Linux package in your machine to latest version.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrading the Bold BI Linux package to the Latest Version
+# Upgrading Bold BI Linux Server - On-Premises
 
 This section explains the process of upgrading the Bold BI Linux package to the latest version from any previous version.
 

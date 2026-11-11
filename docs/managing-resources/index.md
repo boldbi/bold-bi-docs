@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Site Resources - Embedded BI | Bold BI Learning
+title: Managing Site Resources and Their Settings | Bold BI
 description: Learn how to manage site resources such as dashboards, data sources, pinboards, schedules, slideshows, users, and groups in Bold BI deployed on your server.
 canonical: "/managing-resources/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Managing Resources
+# Managing Site Resources and Their Settings
 
 This section explains how to manage dashboards, data sources, schedules, slideshows, pinboards, groups, and users in the Bold BI Server application.
 

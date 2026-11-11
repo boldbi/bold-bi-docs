@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dashboard Interactivity in Mobile App | Bold BI Embedded
+title: Dashboard Interactivity in Mobile App in Bold BI | Bold BI
 description: Learn how to explore the options in dashboard listing page, view dashboards and save dashboard views in Bold BI Embedded through mobile app.
 canonical: "/accessing-through-mobile-app/dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 
-# List Dashboards
+# Dashboard Interactivity in Mobile App
 
 After successfully logging in, you can see the dashboards listed in different tabs such as favorite, recent, category, public, and all dashboards.
 

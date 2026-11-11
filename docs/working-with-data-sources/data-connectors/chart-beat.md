@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chartbeat – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Chartbeat web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Chartbeat Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Chartbeat web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to ChartBeat data source
+# Chartbeat Data Connector Guide in Bold BI
 
-  You can connect to web services of popular sites like ChartBeat using the `ChartBeat` connection type. To enable this connection, follow the steps below:
+  In Bold BI, the ChartBeat connection type connects to web services of popular sites like ChartBeat. To enable this connection, follow the steps below:
   
   Click the `Data Source` button in the configuration panel to add a new data connection.
    

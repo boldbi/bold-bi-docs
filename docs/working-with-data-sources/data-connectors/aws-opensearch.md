@@ -1,19 +1,19 @@
 ---
 layout: post
-title: AWS OpenSearch data source for Cloud BI | Bold BI Docs
-description: Learn how to create and connect AWS OpenSearch data source in the dashboard widget for your Amazon OpenSearch data using SQL live query in Bold BI cloud application.
+title: AWS OpenSearch Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect AWS OpenSearch data in the dashboard widget using SQL Live Query and create a data source in the Bold BI Cloud application for dashboards.
 canonical: "/working-with-data-sources/data-connectors/aws-opensearch/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to AWS Open Search
+# AWS OpenSearch Data Connector Guide in Bold BI
 The **Bold BI** Dashboard designer supports connecting to AWS Open Search using the [SQL Live Query](https://opensearch.org/docs/latest/search-plugins/sql/index/).
 
 **Supported Server Versions**:
 *  Amazon Elastic Search `7.10` and above
 
-### Prerequisites
+## Prerequisites
 To connect to Amazon Elasticsearch service through Open Search, make sure you have enabled the following settings:
 
 PUT _opendistro/_sql/settings <br />

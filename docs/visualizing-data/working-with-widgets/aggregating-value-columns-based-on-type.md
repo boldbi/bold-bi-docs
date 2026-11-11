@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aggregating Value Columns – Embedded BI | Bold BI Learning
+title: Aggregating Value Columns - Embedded Analytics | Bold BI
 description: Learn how to aggregate a value column based on an aggregation type in a widget in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Aggregating Value Columns Based on Type
+# Aggregating Value Columns - Embedded Analytics
 
 Each value column configured for the widget can be aggregated individually based on the type you define. The following table illustrates the aggregation types and their respective uses.
 

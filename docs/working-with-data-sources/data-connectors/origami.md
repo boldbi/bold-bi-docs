@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Origami – Embedded BI Data Connector | Bold BI Documentation
+title: Origami Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the Origami data using its REST API endpoint in Dashboard Designer with the Bold BI Embedded data connector.
 canonical: "/working-with-data-sources/data-connectors/origami/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Origami data source
+# Origami Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Origami web services through the REST API. 
 
 > **Note:** Origami data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
@@ -46,7 +46,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get *Entity_data_name* for connecting Origami Data source?
+### How do I get *Entity_data_name* for connecting Origami Data source?
 1. Login to the [Origami](https://origami.ms/login/) account.
 2. Go to *Settings -> Developers -> Entity test*.
 

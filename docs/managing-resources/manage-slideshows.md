@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Slideshows – Embedded BI | Bold BI Documentation
+title: Managing Slideshows in Your Site in Bold BI | Bold BI
 description: Learn how to manage slideshows in Bold BI Embedded. Slideshow is presentation of dashboards organized in rotating manner at regular intervals.
 canonical: "/managing-resources/manage-slideshows/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Slideshows - Present dashboards in slides
+# Managing Slideshows in Your Site
 
 Slideshows are a presentation of dashboards that can rotate with regular intervals.
 

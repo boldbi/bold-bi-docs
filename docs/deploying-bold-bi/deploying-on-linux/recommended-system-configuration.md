@@ -1,12 +1,12 @@
 ---
 layout: post
-title: System Configuration For Linux| Bold BI Documentation.
+title: System Configuration For Linux in Bold BI | Bold BI
 description: Read this guide to know system configuration based on users count and data size for Deploying Bold BI in Linux.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended System Configuration
+# System Configuration For Linux in Bold BI
  
 This section helps you define your production system configuration based on the number of users and the size of data.
  

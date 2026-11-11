@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Anomaly Flagging Data | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to flag the anomalies and make the most of your analytics.
+title: Transformation Anomaly Flagging Data in Bold BI | Bold BI
+description: Learn how to use the ETL/Bold Data Hub Transformation section in Bold BI Server. Follow simple steps to flag the anomalies and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

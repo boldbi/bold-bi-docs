@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Maps (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Azure Maps for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure map data, marker settings, formatting, filters, and interactions for the modern Azure Maps widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/azure-maps/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Azure Maps
 documentation: ug
 ---
 
-# Azure Maps
+# Azure Maps for Modern Dashboards
 
-Azure Maps displays geographic data on an interactive Microsoft Azure base map using shape, bubble, or marker layers.
+The Azure Maps widget in Bold BI displays geographic data on an interactive Microsoft Azure base map using shape, bubble, or marker layers.
 
 > **NOTE:** Enable Azure Maps and configure a valid Azure Maps key before using the widget. See [Azure Maps configuration](/visualizing-data/visualization-widgets/azure-maps/).
 

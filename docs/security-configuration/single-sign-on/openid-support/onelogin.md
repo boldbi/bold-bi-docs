@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# OneLogin support for SSO authentication
+# SSO with OneLogin Provider of OpenID Connect
 
 The Bold BI application supports adding users using the OneLogin provider. By importing them, you can share the dashboards and email exported dashboards with them.
 

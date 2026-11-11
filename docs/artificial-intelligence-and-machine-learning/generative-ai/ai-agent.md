@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI Agent in view mode - Embedded BI | Bold BI Docs
+title: AI Agent in view mode - Embedded Analytics | Bold BI
 description: Learn how to effectively use the AI Agent in view mode, including various use cases that enhance your data visualization experience.
 canonical: "/artificial-intelligence-and-machine-learning/generative-ai/ai-agent/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Using the AI Agent in View Mode
+# AI Agent in view mode - Embedded Analytics
 
 In View Mode, the AI Agent allows you to analyze data through visualizations without making any changes to the existing widgets. Although you can't create or modify widgets in this mode, the AI Agent helps you explore and compare data from the current dashboard.
 
@@ -19,7 +19,7 @@ In View Mode, the AI Agent allows you to analyze data through visualizations wit
 
 2. Enter queries to visualize data for deeper analysis without altering any existing widgets.
 
-3. For instance in a sales dashboard, you might want to analyze the relationship between orders and sales for a specific region. For example, you can ask `How many orders were placed last year in China displayed month wise?`
+3. For instance in a sales dashboard, you might want to analyze the relationship between shipping details for a specific country. For example, you can ask `How many orders were shipped by each country?`
 
 ![AI-Agent-Query-ViewMode](/static/assets/artificial-intelligence-and-machine-learning/images/generative-ai/query-view.png)
 

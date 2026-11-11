@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to configure SSL for Bold BI | Bold BI Documentation
+title: How to configure SSL for Bold BI in Bold BI | Bold BI
 description: This section explains about how to configure the SSL for Docker single and Multi container Deployment.
 platform: bold-bi
 documentation: ug
 ---
 
-# How to configure SSL for Bold BI application.
+# How to configure SSL for Bold BI in Bold BI
 
 * [Single container deployment](#single-container-deployment)
 * [Multi container deployment](#multi-container-deployment)

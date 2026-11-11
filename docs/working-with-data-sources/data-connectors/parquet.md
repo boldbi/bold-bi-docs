@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Parquet – BI Data Connector | Bold BI Documentation
-description: Learn how to connect a Parquet file with the Bold BI and create a data source for dashboard preparation.
+title: Parquet Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect a Parquet file to Bold BI and create a data source for dashboard preparation, so you can visualize columnar data in dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Parquet data source
+# Parquet Data Connector Setup Guide in Bold BI
 Bold BI dashboard designer supports the connection of Parquet files.
 
 ## Choose an Parquet data source

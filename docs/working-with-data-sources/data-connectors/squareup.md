@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Square - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect to the Square data source using token-based authentication through REST API endpoint with cloud-hosted Bold BI.
+title: Square Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect the Square data source using token-based authentication and its REST API with cloud-hosted Bold BI, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to SquareUp data source
+# Square Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the SquareUp web services through the REST API.
 
 ## Choose SquareUp data source
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

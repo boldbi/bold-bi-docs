@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Help Scout – Data Connector | Bold BI Documentation
-description: Learn how to connect Help Scout web service through REST API endpoint with Bold BI Embedded and create data source.
+title: Help Scout Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Help Scout web service through its REST API endpoint with Bold BI Embedded and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Help Scout data source
+# Help Scout Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Help Scout web services through the REST API.
 
 ## Choose HelpScout data source
-To configure the HelpScout data source, follow the below steps:
+To configure the HelpScout data source, follow the following steps:
 1. Click the `Data Source` button in the configuration panel to add a new data connection.
 
    ![Data button](/static/assets/working-with-datasource/data-connectors/images/common/databutton.png)
@@ -28,7 +28,7 @@ To configure the HelpScout data source, follow the below steps:
   ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/help-scout/ChooseDS.png)
 
 ## Authentication with Help Scout
-For the BoldBI Server version, the site admin should obtain the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/site-administration/data-connector-settings/oauth-configuration/) for the HelpScout connector in BoldBI.
+For the Bold BI Server version, the site admin should obtain the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/site-administration/data-connector-settings/oauth-configuration/) for the HelpScout connector in Bold BI.
 
 Use the following steps to authenticate with the Help Scout web service:
 
@@ -55,7 +55,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>
@@ -117,7 +117,7 @@ You can edit, delete, and re-authorize this account from the [Connected Accounts
 2. You need to create an OAuth application before you can use the API. Create one by navigating to Your Profile > My apps and click Create My App. A redirection URL is necessary when using the Authorization Code flow.
 3. Create a new App by entering information such as App name and redirect URL.
 
-   Refer to the below syntax for the redirect URL and configure it properly. Any mistakes in the redirect URLs will affect its connectivity with BoldBI.
+   Refer to the following syntax for the redirect URL and configure it properly. Any mistakes in the redirect URLs will affect its connectivity with Bold BI.
 
     For example:`<protocol>://<hostname:port>/bi/designer/v1.0/oauth/agent`
 

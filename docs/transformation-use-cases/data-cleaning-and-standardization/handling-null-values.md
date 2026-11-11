@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Handling Null Values in Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to handle the null values in data and make the most of your analytics.
+title: Transformation Handling Nulls in Bold Data Hub | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to handle the null values in data and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

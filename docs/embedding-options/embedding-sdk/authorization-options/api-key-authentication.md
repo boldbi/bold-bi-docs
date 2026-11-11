@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Token Member - JavaScript Embedding | Bold BI Docs
+title: Token Member - JavaScript Embedding in Bold BI | Bold BI
 description: Learn how to embed dashboard with help of token API member in the JavaScript embedding of Bold BI in any business application.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# No Backend Required for Token-Based Embedding
+# Token Member - JavaScript Embedding in Bold BI
 
 When using an API Key for embedding:
 
@@ -26,7 +26,7 @@ Follow these steps to embed the dashboard using the token API member. Previously
 
     ```html
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
     </head>
     <body>
         <div id="dashboard_container"></div>
@@ -61,7 +61,7 @@ Follow these steps to embed the dashboard using the token API member. Previously
     <tbody>
     <tr>
     <td align="left">serverUrl</td>
-    <td align="left">Use your Bold BI server url (http://localhost:[portno]/bi/site/site1)</td>
+    <td align="left">Use your Bold BI Server url (http://localhost:[portno]/bi/site/site1)</td>
     </tr>
     <tr>
     <td align="left">dashboardId</td>
@@ -79,11 +79,11 @@ Follow these steps to embed the dashboard using the token API member. Previously
     </table>
 
 ## Token Generation
-### Steps to generate the API key from Bold BI server UI
+### Steps to generate the API key from Bold BI Server UI
 
-The API key can be generated from the Bold BI server UI, which provides the flexibility to set the token's expiration period. To learn more about the API key, please refer to this [link](https://help.boldbi.com/site-administration/api-key). Follow the below steps to generate API Key.
+The API key can be generated from the Bold BI Server UI, which provides the flexibility to set the token's expiration period. To learn more about the API key, please refer to this [link](https://help.boldbi.com/site-administration/api-key). Follow the below steps to generate API Key.
  
-   1. Click on the `profile` icon located at the top right corner of the Bold BI server.
+   1. Click on the `profile` icon located at the top right corner of the Bold BI Server.
 
        ![User profile](/static/assets/javascript/images/User_Profile.png)
 

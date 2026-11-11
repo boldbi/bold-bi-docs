@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Widget Container Customization – Embedded BI | Bold BI Docs
+title: Widget Container Customization in Bold BI | Bold BI
 description: Learn how to customize widget container settings through Properties pane in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/customizing-container-appearance/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Widgets container appearance properties
+# Widget Container Customization in Bold BI
 
 The `Container Appearance Properties section` contains the properties for the widget container's layout and allows you to customize the widget container's appearance, widget title properties, and provides options to enable/disable widget exporting options.
 

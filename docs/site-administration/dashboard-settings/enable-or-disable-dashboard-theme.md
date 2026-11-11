@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Dashboard Themes – Embedded BI | Bold BI Docs
+title: Using Dashboard Themes - Embedded Analytics | Bold BI
 description: This page describes how to enable or disable the theme setting option across your dashboards deployed in your Bold BI site.
 platform: bold-bi
 documentation: ug

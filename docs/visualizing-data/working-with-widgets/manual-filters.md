@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering Widgets by Manual Filters - Embedded BI | Bold BI Docs
-description: This page describes the manual filters in Bold BI On-premise version where fields can be added into filter section of a widget to apply filter based on them.
+title: Filtering Widgets by Manual Filters in Bold BI | Bold BI
+description: This page describes the manual filters in Bold BI On-premises version where fields can be added into filter section of a widget to apply filter based on them.
 platform: bold-bi
 documentation: ug
 keywords: manual filters, widget filtering, filtering visuals
 ---
 
-# Configuring manual filter in widgets
+# Filtering Widgets by Manual Filters in Bold BI
 
 Starting from Bold BI [`v3.3.88`](https://www.boldbi.com/release-history/3-3#3-3-88) you can filter the data bind to the widget by using any of the fields present in the data source. You can use single or multiple fields to filter the widget data. 
 

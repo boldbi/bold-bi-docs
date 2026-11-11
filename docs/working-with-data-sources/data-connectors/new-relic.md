@@ -1,16 +1,16 @@
 ---
 layout: post
-title: New Relic – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect New Relic web service through REST API endpoint with Bold BI Cloud and create data source.
+title: New Relic Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect New Relic through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to New Relic data source
+# New Relic Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to New Relic web services through the REST API.
 
 ## Choose New Relic data source
-To configure the New Relic data source, follow the below steps:
+To configure the New Relic data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the New Relic data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/new-relic/ChooseDS_server.png)
 
 ## Create New Relic data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create New Relic data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create New Relic data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid New Relic REST API endpoint in the URL textbox. Refer to the [New Relic API documentation](https://docs.newrelic.com/docs/apis/rest-api-v2/get-started/introduction-new-relic-rest-api-v2/) for more details.
 
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting New Relic Data source?
+### How do I get API Key for connecting New Relic Data source?
 1. Login to [New Relic](https://login.newrelic.com/login) account. Go to *Account Settings -> API keys*.
 2. Find the *API key* by clicking the *Show key*.
 3. Use this *API key* as **your_api_key** in New Relic data source in Bold BI Dashboard.

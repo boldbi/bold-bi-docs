@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Modern Dashboard Widgets Overview | Bold BI Documentation
+title: Modern Dashboard Widgets Overview in Bold BI | Bold BI
 description: Explore the Modern widgets available in Bold BI dashboards and learn how to configure data, formatting, interactions, and shared widget properties.
 canonical: "/visualizing-data/visualization-v2-widgets/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Modern Widgets
+# Modern Dashboard Widgets Overview
 
-Modern widgets use Bold BI's current visualization architecture and updated property model. Use them when creating new dashboards that need the latest widget rendering, interactions, and customization capabilities.
+Modern widgets use Bold BI's current visualization architecture and updated property model. Use them when creating new dashboards that need the current widget rendering, interactions, and customization capabilities.
 
 In the dashboard designer, select the **Modern** tab in the widget panel to view the available Modern widgets. The following pages explain how to bind data and configure widget-specific properties. Settings shared by multiple widgets are documented once under [Properties](/visualizing-data/visualization-v2-widgets/properties/).
 

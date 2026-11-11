@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prerequisites – Deploying BoldBI in AWS EC2 instance
-description: Learn about the prerequisites to deploy the Bold BI server application in the Amazon Web Service EC2 instance.
+title: Prerequisites for Bold BI on AWS EC2 Instance | Bold BI
+description: Learn about the prerequisites to deploy the Bold BI Server application in the Amazon Web Service EC2 instance.
 platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites to use Bold BI server on AWS
+# Prerequisites for Bold BI on AWS EC2 Instance
 
-This section explains the requirement to use the Bold BI server on AWS portal.
+This section explains the requirement to use the Bold BI Server on AWS portal.
 
 1. AWS subscription with required privileges.
 

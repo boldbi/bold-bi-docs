@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radial Gauge (Modern) Widget | Bold BI Documentation
+title: Radial Gauge for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure gauge ranges, scale settings, formatting, filters, and interactions for the modern Radial Gauge widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/deviation/radial-gauge/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Radial Gauge
 documentation: ug
 ---
 
-# Radial Gauge
+# Radial Gauge for Modern Dashboards
 
-A Radial Gauge displays an actual value on a circular scale and can compare it with a target or performance range.
+The Radial Gauge widget in Bold BI displays an actual value on a circular scale and can compare it with a target or performance range.
 
 ![Radial Gauge](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/radialgauge.png)
 

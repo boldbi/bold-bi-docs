@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Site settings customization in Bold BI | Bold BI Documentation
+title: Customize Site Settings in Bold BI for Your Site | Bold BI
 description: Learn how to customize the site settings in Bold BI to modify the organization name, header logo, favicon, email logo, time zone, and date/time display formats.
 platform: bold-bi
 documentation: ug
@@ -94,7 +94,7 @@ The email logo image can be changed, with the preferred image size being `200 x 
 The AI logo image can be changed, with the preferred image size being `40 x 40` pixels. The Bold BI site will have the Bold BI AI logo as the default.
 
 ### Powered by Syncfusion
-You can either change the powered by logo image with the preferred image size of `100 x 25`, or disable it by unchecking the option for Embedded BI. Cloud BI users can only disable it by unchecking the option.
+You can either change the powered by logo image with the preferred image size of `100 x 25`, or disable it by unchecking the option for Embedded Analytics. Cloud BI users can only disable it by unchecking the option.
 
 ![Powered By Logo](/static/assets/images/powered-by-logo.png)
 

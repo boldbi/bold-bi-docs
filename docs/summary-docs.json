@@ -326,12 +326,21 @@
 					"Prompt To Dashboard": "dashboard-creation"
 				}
 			},
-			"Unified AI Agent": {
+			"AI Assistant": {
 				"slug": "unified-ai-agent",
 				"pages": {
 					"Data": "data",
 					"Dashboard": "dashboard",
-					"Chat History": "chat-history"
+					"Chat History": "chat-history",
+					"Settings": {
+                       "slug": "settings",
+                       "pages": {
+                            "Instructions": "instructions",
+							"Skills": "skills",
+							"Usage": "usage",
+							"Audit Logs": "audit-logs"
+                        }
+                    }
 				}
 			},
 			"Q&A Widget": "qna-widget",

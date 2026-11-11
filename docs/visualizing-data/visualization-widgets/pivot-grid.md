@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Table Visual – Embedded BI Widget | Bold BI Learning
+title: Pivot Table Visual - Embedded Analytics Widget | Bold BI
 description: Learn how to create a Pivot Table visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/pivot-grid/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# Configuring Pivot Grid
+# Pivot Table Visual - Embedded Analytics Widget
 
-The pivot grid allows you to display summarized data in a cross-tabular format, meaning it is organized in rows and columns.
+The pivot grid lets you display summarized data in a cross-tabular format, meaning it is organized in rows and columns.
 
 ![pivot-grid](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-grid-demo.png)
 
@@ -212,19 +212,19 @@ The properties in this section allow you to give a name, subtitle, and descripti
 
 #### Name 
 
-This property allows you to set a `title` for the pivot grid widget.
+This property lets you set a `title` for the pivot grid widget.
 
 ![Pivot grid property Name](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/Name.png)
 
 #### Subtitle
 
-This property allows you to set a `subtitle` for the pivot grid widget.
+This property lets you set a `subtitle` for the pivot grid widget.
 
 ![Pivot grid property Name](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/Subtitle.png)
 
 #### Description
 
-This property allows you to provide a brief explanation about the pivot grid widget.
+This property lets you provide a brief explanation about the pivot grid widget.
 
 ![Pivot grid property Name](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/Description.png)
 
@@ -238,7 +238,7 @@ The `Basic Settings` section contains general properties for the pivot grid, inc
 
 The classic layout in the Pivot widget offers a structured, tabular presentation of data, improving both readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier.
 
-This option allows you to switch the pivot grid from Compact to Tabular layout.
+This option lets you switch the pivot grid from Compact to Tabular layout.
 
 > **NOTE:** Enabling the `Enable Clasic Pivot` property will disable the `Allow Text Wrap`, `Allow Column Resize` and `Fit To Content` property in the basic settings.
 
@@ -292,7 +292,7 @@ This property displays the values in rows.
 
 #### Hide Empty Headers
 
-Enabling this option allows you to hide `null` or `empty` headers in the pivot grid table.
+Enabling this option lets you hide `null` or `empty` headers in the pivot grid table.
 
 In the following image, the column headers have `(Null)` values in data. 
 
@@ -304,7 +304,7 @@ By enabling this option, the (Null) header column gets hidden.
 
 #### Empty Cell Content
 
-This option allows you to set a value for empty cells in the pivot grid.
+This option lets you set a value for empty cells in the pivot grid.
 
 ![Pivot-grid empty cell content value](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
 
@@ -322,7 +322,7 @@ Use this option to enable or disable vertical grid lines in the Pivot Grid contr
 
 ### Pivot Chart Settings
 
-This section allows you to switch to pivot chart from pivot grid.
+This section lets you switch to pivot chart from pivot grid.
 
 ![pivot-chart-settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-chart-settings.png)
 
@@ -330,7 +330,7 @@ In pivot grid widget, pivot chart would act as an additional visualization compo
 
 #### Enable Pivot Charts
 
-Enabling this option allows you to view `Pivot Charts` or `Pivot Table` in the visualization.
+Enabling this option lets you view `Pivot Charts` or `Pivot Table` in the visualization.
 
 ![pivot-charts](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-charts.png)
 
@@ -390,45 +390,45 @@ The stripe line feature highlights a specific range on the chart for better data
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the pivot grid.
+This option lets you toggle the visibility of the tooltip in the pivot grid.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize the columns that are visible in the pivot grid tooltip.
+This option lets you customize the columns that are visible in the pivot grid tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/rtl-tooltip.png)
 
 ### Content Settings
 
-This section allows you to customize the height and width of the pivot grid cells.
+This section lets you customize the height and width of the pivot grid cells.
 
 ![pivot-grid-content-settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
 
 #### Row Height
 
-This option allows you to customize the height of content rows in the pivot grid.
+This option lets you customize the height of content rows in the pivot grid.
 
 #### Content Column Width
 
-This option allows you to customize the width of the content columns.
+This option lets you customize the width of the content columns.
 
 #### Row Header Width
 
-This option allows you to customize the width of the row headers (first column) in the pivot grid.
+This option lets you customize the width of the row headers (first column) in the pivot grid.
 
 Pivot grid with default values.
 
@@ -504,7 +504,7 @@ This option controls whether subtotals are displayed for row fields in the pivot
 
 * A dropdown appears listing all configured row fields (for example, `Year`, `Quarter`, and `Month`, as shown in the image).
 * By default, all fields are selected, displaying subtotals for every row field.
-* You can clear specific fields (for example, `Quarter`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly — in the example shown, unchecking `Quarter` in the dropdown removes the subtotal row for `Quarter 1`, while higher-level summaries for the remaining fields remain intact.
+* You can clear specific fields (for example, `Quarter`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly: in the example shown, unchecking `Quarter` in the dropdown removes the subtotal row for `Quarter 1`, while higher-level summaries for the remaining fields remain intact.
 
 **When Disabled**
 
@@ -522,7 +522,7 @@ This option controls whether subtotals are displayed for column fields in the pi
 
 * A dropdown appears listing all configured column fields (for example, `Country`, `City`, and `Product Name`, as shown in the image).
 * By default, all fields are selected, displaying subtotals for every column field.
-* You can clear specific fields (for example, `City`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly — in the example shown, unchecking `City` in the dropdown removes the subtotal column for that field, while higher-level summaries for the remaining fields remain intact.
+* You can clear specific fields (for example, `City`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly: in the example shown, unchecking `City` in the dropdown removes the subtotal column for that field, while higher-level summaries for the remaining fields remain intact.
 
 **When Disabled**
 
@@ -550,7 +550,7 @@ In the above image, all cities except Campinas have empty data, so they are disp
 
 ### Alignment Settings
 
-This option allows you to align the Column header, Row header, and Values to either the left, right, or center.
+This option lets you align the Column header, Row header, and Values to either the left, right, or center.
 
 ![pivot-alignment-settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-alignment-settings.png)
 
@@ -569,20 +569,20 @@ This section explains how to format the pivot grid cells.
 
 #### Group panel background color
 
-This allows you to select the color for the group panel’s background. The default value is `#e9e9e9`. 
+This lets you select the color for the group panel’s background. The default value is `#e9e9e9`. 
 
 ![Group panel background color](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/group-panel.png)
 
 #### Header background color
 
-This allows you to select the color for the header row’s background. The default value is `#eeeeee`. 
+This lets you select the color for the header row’s background. The default value is `#eeeeee`. 
 
 ![Header background color](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/background-color.png)
 
 
 #### Header foreground color
 
-This allows you to select the color for the header row’s foreground. The default value is `#333333`. 
+This lets you select the color for the header row’s foreground. The default value is `#333333`. 
 
 ![Header foreground color](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/foreground-color.png)
 
@@ -642,7 +642,7 @@ You can achieve this by applying date formatting to the configured fields.
 
 ### Font settings
 
-This section allows you to customize the height and width of the pivot grid content.
+This section lets you customize the height and width of the pivot grid content.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/font-settings.png)
 
@@ -674,7 +674,7 @@ To configure the linking to a URL or dashboard with the widget through its setti
 
 #### Enable Summary Link
 
-This option allows you to show or hide hyperlinks for summary value cells, such as parent totals, when `Enable Link` is enabled. When this option is disabled, child value cells remain linked.
+This option lets you show or hide hyperlinks for summary value cells, such as parent totals, when `Enable Link` is enabled. When this option is disabled, child value cells remain linked.
 
 By default, the `Enable Summary Link` option is enabled.
 
@@ -682,17 +682,17 @@ By default, the `Enable Summary Link` option is enabled.
 
 ### Filter
 
-`Filter` allows you to apply filtering based on data field.
+`Filter` lets you apply filtering based on data field.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/filtering.png)
 
 #### Act as Master Widget
 
-This allows you to define this pivot grid widget as a master widget, so its filter action can be listened to by other widgets in the dashboard.
+This lets you define this pivot grid widget as a master widget, so its filter action can be listened to by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this pivot grid widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this pivot grid widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Hierarchical Filter
 
@@ -701,7 +701,7 @@ Through this option, you can enable/disable hierarchical top N filtering. While 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately based on the number set for each column.
 
 #### Show Filter
-This feature allows you to toggle the visibility of the `Filter` icon for the pivot grid widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the pivot grid widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply advanced settings in pivot grid
 
@@ -745,7 +745,7 @@ You can define your range by entering the low, mid, and high values.
 
 #### Rule based condition mode
 
-This allows you to customize the `cell colors and value font style` of the pivot grid cells based on one or more numerical/text conditions.
+This lets you customize the `cell colors and value font style` of the pivot grid cells based on one or more numerical/text conditions.
 
 ![Rule mode](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/rulemode.png)
 
@@ -765,15 +765,15 @@ You can specify the condition value.
 
 #### Foreground
 
-This option allows you to define the foreground color of the pivot grid cell for this condition.
+This option lets you define the foreground color of the pivot grid cell for this condition.
 
 #### Background
 
-Allows you to define the pivot grid cell background for this condition. 
+Lets you define the pivot grid cell background for this condition. 
 
 #### Font style
 
-This option allows you to choose the font style for the title (`Bold, Italic, Underline, and Superscript`).
+This option lets you choose the font style for the title (`Bold, Italic, Underline, and Superscript`).
 
 #### Add condition
 
@@ -793,11 +793,11 @@ Click on the delete button to remove the existing condition.
 
 ### Title alignment
 
-This option allows you to align the widget title to the **left, center, or right**.
+This option lets you align the widget title to the **left, center, or right**.
 
 ### Title color
 
-This option allows you to apply a specific text `color` to the widget title.
+This option lets you apply a specific text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -805,7 +805,7 @@ When enabled, the font size of the title will automatically adjust if the screen
 
 **Font Size**
 
-This option allows you to apply a specific font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
+This option lets you apply a specific font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -813,7 +813,7 @@ When enabled, the font size of the subtitle will automatically adjust if the scr
 
 **Font Size**
 
-This option allows you to apply a specific font size to the widget subtitle if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
+This option lets you apply a specific font size to the widget subtitle if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
 
 ### Auto Padding
 
@@ -821,15 +821,15 @@ When enabled, the padding of the widget container will automatically adjust if t
 
 **Padding**
 
-This option allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This option lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This option allows you to toggle the visibility of the border surrounding the widget.
+This option lets you toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This option allows you to apply a specific radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 100.
+This option lets you apply a specific radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 100.
 
 ### Transparency
 
@@ -837,11 +837,11 @@ You can adjust the transparency from 0 to 1.
 
 ### Show Shadow
 
-This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+This option lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -851,40 +851,40 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show header
 
-This option allows you to enable or disable the widget title of the pivot grid.
+This option lets you enable or disable the widget title of the pivot grid.
 
 #### Allow maximize view
 
-This option allows you to enable or disable the maximized mode of the pivot grid. The visibility of the maximize icon in the widget header will be determined based on the setting in the viewer.
+This option lets you enable or disable the maximized mode of the pivot grid. The visibility of the maximize icon in the widget header will be determined based on the setting in the viewer.
 
 #### Allow CSV export
 
-This allows you to enable or disable the CSV export option for the pivot grid. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the CSV export option for the pivot grid. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel export
 
-This allows you to enable or disable the Excel export option for the pivot grid. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
+This lets you enable or disable the Excel export option for the pivot grid. Enabling this lets you export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
 
 #### Allow image export
 
-This allows you to enable or disable the image export option for the pivot grid. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
+This lets you enable or disable the image export option for the pivot grid. Enabling this lets you export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
 
 #### Allow PDF export
 
-This allows you to enable or disable the PDF export option for the pivot grid. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the PDF export option for the pivot grid. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to this refer to the following link: [Dashboard Widget Comments](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable comment for the dashboard widget. For more details, refer to this refer to the following link: [Dashboard Widget Comments](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 #### Pin widget
 
-This option allows you to pin the widget.
+This option lets you pin the widget.
 
 ## Related links
 
-Blog Post – <a href="https://www.boldbi.com/blog/7-unique-features-of-pivot-table" target="_blank">7 Unique Features of Pivot Table</a>
+Blog Post: <a href="https://www.boldbi.com/blog/7-unique-features-of-pivot-table" target="_blank">7 Unique Features of Pivot Table</a>

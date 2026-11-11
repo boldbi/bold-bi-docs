@@ -21,8 +21,8 @@ The Bold BI Dashboard Mobile app allows you to access your Bold BI dashboards on
 
 ## Supported operating systems
 
-* iOS 9.0 or later, compatible with iPhone, iPad, and iPod touch.
-* Android: Android versions 4.1 or later.
+* iOS / iPadOS 16.4 or later, compatible with iPhone and iPad.
+* Android 7.0 or later.
 
 ## Get Bold BI Dashboard Mobile
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – Datasource Methods-JavaScript Embedding | Bold BI
+title: API Reference for Datasource Methods in JavaScript | Bold BI
 description: Explore the Datasource JavaScript API reference for methods that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Methods
+# API Reference for Datasource Methods in JavaScript
 
 ## create()
     

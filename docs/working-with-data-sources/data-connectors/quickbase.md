@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Quickbase Data Connector for Cloud BI | Bold BI Docs
+title: Quickbase Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Quickbase web service through basic HTTP authentication with Bold BI and create a data source for the dashboards in Cloud application.
 documentation: ug
 ---
 
-# Connecting Bold BI to Quickbase data source
+# Quickbase Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Quickbase web services through the REST API. 
 
 ## Choose Quickbase data source
@@ -32,13 +32,13 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 4. Enter the **App Id** for the connected account.
 5. Click the **Table** dropdown box and choose the required table.
 6. In the **Max Rows** field, please enter the maximum number of rows to be fetched from the Quickbase data source. This value will be used to retrieve the data from the Quickbase data source by implementing pagination.
-7. Select a time interval for the **Refresh Settings** by using the combo box. This will allow the Rest API request to be triggered periodically in order to keep the data in sync with your dashboard.
+7. Select a time interval for the **Refresh Settings** by using the combo box. This will allow the Rest API request to be triggered periodically to keep the data in sync with your dashboard.
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/Quickbase/DataSourcesView.png)
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Active Campaign – Cloud BI Data Connector | Bold BI Docs
-description: Learn how to connect Active Campaign data with Bold BI Cloud through REST API endpoint and create data source for dashboard configuration.
+title: ActiveCampaign Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect ActiveCampaign data with Bold BI Cloud through its REST API endpoint and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to ActiveCampaign data source
+# ActiveCampaign Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to ActiveCampaign web services through the REST API.
 
@@ -47,7 +47,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting ActiveCampaign Data source?
+### How do I get API Key for connecting ActiveCampaign Data source?
 
 1. Login to your [ActiveCampaign](https://www.activecampaign.com/login/) account.
 2. Go to *Developer -> My Settings* and get your API key

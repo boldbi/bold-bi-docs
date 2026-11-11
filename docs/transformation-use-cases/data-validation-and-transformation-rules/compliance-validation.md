@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Compliance Validation | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to validate the contacts and make the most of your analytics.
+title: Transformation Compliance Validation in Bold BI | Bold BI
+description: Learn how to use the ETL/Bold Data Hub Transformation section in Bold BI Server. Follow simple steps to validate the contacts and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

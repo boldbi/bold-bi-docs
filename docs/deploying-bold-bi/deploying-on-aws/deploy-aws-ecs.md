@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deploy Bold BI on an ECS Fargate cluster | Bold BI Docs
+title: Deploy Bold BI on an ECS Fargate cluster | Bold BI
 description: Learn how to deploy the Bold BI application on an ECS Fargate cluster using an Application Load Balancer with step-by-step instructions.
 platform: bold-bi
 documentation: ug
 ---
 
-# Deploy Bold BI on an ECS Fargate cluster using an Application Load Balancer
+# Deploy Bold BI on an ECS Fargate cluster
 
 ## Prerequisites
 

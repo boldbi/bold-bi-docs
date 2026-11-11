@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Fusebill – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Fusebill web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Fusebill Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Fusebill web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Fusebill data source
+# Fusebill Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Fusebill web services through the REST API. 
 
 ## Choose Fusebill data source
-To configure the Fusebill data source, follow the below steps:
+To configure the Fusebill data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Fusebill data source, follow the below steps:
 
 
 ## Create Fusebill data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Fusebill data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Fusebill data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Fusebill REST API endpoint in the URL textbox. Refer to the [Fusebill API documentation](https://developer.fusebill.com/reference) for more details.
 
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Fusebill data source?
+### How do I get API Key for connecting Fusebill data source?
 1. Login to [Fusebill](https://admin.fusebill.com/Account/Login) account. Go to *Settings -> Integrations -> API Key*.
 2. Use this *API Key* as **API Key** in Fusebill data source in Bold BI Dashboard.
 
@@ -63,7 +63,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 ### Setting up the URL
 
-1. For example, in order to obtain specific customer details, you can query the */customers* endpoint.
+1. For example, to obtain specific customer details, you can query the */customers* endpoint.
 2. Obtain the ID of the specific customer from the information provided.
 
 Replace it in the URL to query a particular customer:

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Jira – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Jira data using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Jira Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Jira data through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Jira data source
+# Jira Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to both Jira and Jira Service Management (JSM) web services through the REST API.
 
 ## Choose Jira data source
-To configure the Jira data source, follow the below steps:
+To configure the Jira data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

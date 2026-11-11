@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Menu Actions in Visuals – Embedded BI | Bold BI Docs
+title: Menu Actions in Visuals - Embedded Analytics | Bold BI
 description: Learn about the menu actions to perform filtering, drill down, linking and view underlying data in Bold BI.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Perform various actions through Widget Menu
+# Menu Actions in Visuals - Embedded Analytics
 
 You can perform various widget actions such as `Filtering`, `Linking`, `Drill Down`, and `Viewing Underlying Data` without resetting the properties or data configuration of widgets each time from Designer. Now, you can configure all required widget actions and perform them from the widget context menu, which will be shown when clicking the respective widget area.
 

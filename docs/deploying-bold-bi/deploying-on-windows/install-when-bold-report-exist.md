@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installing Bold BI Over Bold Reports on Windows | Bold BI Docs
+title: Installing Bold BI Over Bold Reports on Windows | Bold BI
 description:  Learn how to install Bold BI on top when Bold Reports is installed already on the Windows environment.
 platform: bold-bi
 documentation: ug
 ---
 
-# Install Bold BI when Bold Reports exists
+# Installing Bold BI Over Bold Reports on Windows
 
 This section explains how to install and deploy Bold BI Server when Bold Reports is already installed on the same machine.
 
@@ -22,9 +22,9 @@ This topic explains the steps required to install Bold BI Server:
     
     ![Installation Prompt](/static/assets/installation-and-deployment/images/installation-prompt.png) 
 
-3. Then a prompt will appear to proceed whether you are going to use the existing Bold ID for Bold BI Server.
+3. Then a prompt will appear to proceed whether you are going to use the existing Bold BI for Bold BI Server.
     
-    ![Bold ID prompt](/static/assets/installation-and-deployment/images/boldid-prompt.png)
+    ![Bold BI prompt](/static/assets/installation-and-deployment/images/boldid-prompt.png)
     
     If you select `No` to proceed the installation without common login, then Bold BI Server installation will be cancelled.
     
@@ -34,11 +34,11 @@ This topic explains the steps required to install Bold BI Server:
     
     ![Installation IIS](/static/assets/installation-and-deployment/images/installation-IIS.png)
     
-    > **NOTE:** Bold BI will be installed as a sub-application within the existing Bold Report Site, which is hosted on IIS. The following changes were made on IIS/IIS Express after using the common Bold ID. Normally, Bold Reports is hosted with the site name as `BoldReports_EnterpriseReporting` in IIS, but after using the common login (Bold ID), the site name has been changed to `BoldAppsEnterpriseEdition`. Additionally, Bold BI will be hosted as a sub-app called `bi` under the `BoldAppsEnterpriseEdition` site.
+    > **NOTE:** Bold BI will be installed as a sub-application within the existing Bold Report Site, which is hosted on IIS. The following changes were made on IIS/IIS Express after using the common Bold BI. Normally, Bold Reports is hosted with the site name as `BoldReports_EnterpriseReporting` in IIS, but after using the common login (Bold BI), the site name has been changed to `BoldAppsEnterpriseEdition`. Additionally, Bold BI will be hosted as a sub-app called `bi` under the `BoldAppsEnterpriseEdition` site.
     
     ![IIS for both Reports and Dashboard](/static/assets/installation-and-deployment/images/iis-reports-bi.png) 
     
-    > **NOTE:** Bold ID is the common identity provider application in our Bold products that can be used to Single Sign-On (SSO) to both Bold Reports and Bold BI.
+    > **NOTE:** Bold BI is the common identity provider application in our Bold products that can be used to Single Sign-On (SSO) to both Bold Reports and Bold BI.
 
 4. Then `Deploy Chromium packages` prompt will open. Chromium packages are necessary to enable image and PDF export functionalities in dashboards, widgets, and schedules from Bold BI. Without these packages, the image and PDF export options will be disabled. Agree to `Download Chromium Packages` and click `Next`.
     

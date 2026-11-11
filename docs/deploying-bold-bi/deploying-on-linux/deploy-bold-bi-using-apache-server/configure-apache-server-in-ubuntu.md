@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Configure Bold BI with Apache server in Ubuntu | Bold BI Docs
+title: Configure Bold BI with Apache server in Ubuntu | Bold BI
 description: Learn more about how to configure Bold BI with the Apache front-end server in Ubuntu with SSL termination.
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on Ubuntu 
+# Configure Bold BI with Apache server in Ubuntu
 
 ## Deployment prerequisites
 

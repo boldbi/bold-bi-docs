@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Adding OAuth Connection for Application Access | Bold BI 
+title: Adding OAuth Connection for Application Access | Bold BI
 description: Learn how to add OAuth connection for required data connectors for application access in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. Most service connectors require OAuth to connect, to ensure that a client application is authorized to access the data.
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 To configure OAuth for data sources in Bold BI, follow the steps below:
 1.	Click the **Settings** icon on the left pane.
@@ -19,7 +19,7 @@ To configure OAuth for data sources in Bold BI, follow the steps below:
     
     ![service-connectors](/static/assets/oauth/images/service-connectors.png)
 
-3.	Expand the **Service Connectors – OAuth** section.
+3.	Expand the **Service Connectors: OAuth** section.
 4.	Click *Enable All* to enable all the connectors or enable the connector you need to connect to.
 5.	Each connector will have a **Configure** button to get the OAuth details.
     

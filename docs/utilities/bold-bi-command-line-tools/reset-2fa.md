@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  How to Remove 2FA using Admin Utility | Bold BI Docs
+title: How to Remove 2FA using Admin Utility in Bold BI | Bold BI
 description: Learn how to use the command line interface to reset the Two-Factor Authentication (2FA) of any user in Bold BI Embedded using their email address or user name.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Reset Two Factor Authentication
+# How to Remove 2FA using Admin Utility
 
 Please refer to your operating system’s documentation for resetting the Two-Factor Authentication of any user using their email address or username.
 

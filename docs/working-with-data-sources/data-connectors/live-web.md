@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Connect Live Web data in Dashboard Designer | Cloud Bold BI Docs
+title: Live Web Data Connector Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the Live Web data through the REST API in Bold BI's Cloud Dashboard Designer and prepare your dashboards online.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Web data source
+# Live Web Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to nearly all web services that have a REST API interface.
-A live connection in Bold BI is more powerful than an extract connection because it does not store data in the data process. However, it is different from Direct Query since it fetches the data from your server rather than connecting directly to it.
+A live connection in Bold BI queries the source directly and does not store data in the data process, unlike an extract connection. However, it is different from Direct Query since it fetches the data from your server rather than connecting directly to it.
 
 ## What is Live Connection?
 A live connection feature is available for WEB API data sources. Live web API connections do not store data in the data process. The fetched data will be cleared from the data process once all widgets have been visualized in the dashboard.
@@ -32,7 +32,7 @@ Some of the limitations associated with the Bold BI Web API LIVE Connection are 
 3. The data will be cleared from the data processing unit once the dashboard data has been displayed.
 
 ## Choose web data source
-To configure the web data source, follow the below steps:
+To configure the web data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -47,7 +47,7 @@ To configure the web data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/ChooseDS_Server.png)
 
 ### Create web data source
-After clicking on the data source, the **NEW DATA SOURCE** configuration panel will open. Follow the below steps to create web data source:
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel will open. Follow the following steps to create web data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid REST API endpoint in the URL text box.
 3. Choose one of the **Method Type** from the combo box for the provided REST API. The options are *GET* and *POST*.
@@ -164,7 +164,7 @@ The number of records that should be skipped before beginning pagination.
 
    ![Offset Pagination](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Offset_Pagination.png)
 
-For example, connect the `OData` REST API in the web data source with the pagination parameters as shown below:
+For example, connect the `OData` REST API in the web data source with the pagination parameters as follows:
 
    <table>
    <tr>
@@ -509,7 +509,7 @@ A query string parameter will be added to the URL, allowing you to access the RE
 ### Adding API Key in the Body Data for Post method REST APIs
 Body data is typically added for POST method API calls. If the application is designed to send the API Key over the body data of the REST API, you can follow the steps below.
     
-* Please select the POST method in the Web API data source to include Body Data and then add the API Key as shown below, using the appropriate property names.
+* Please select the POST method in the Web API data source to include Body Data and then add the API Key as follows, using the appropriate property names.
 
     ![Post method View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Post_Method_View.png)
 
@@ -701,7 +701,7 @@ Only the **Live mode** WEB data source can be created through the REST API.
  
 ## Dashboard Parameter
 
-Utilize dashboard parameters in conjunction with a Live Web API connection.
+Use dashboard parameters in conjunction with a Live Web API connection.
 Connecting to the Web API live connection, along with using dashboard parameters, will assist in achieving various use cases. Below are some examples of using dashboard parameters with Live web connections.
 
 Dashboard parameters can be used in the Web API connection's URL, Headers, and Parameters.
@@ -798,7 +798,9 @@ You can configure parameters as numeric values for the following functions: AddM
 
 All the Add methods should not have a parameter of 0. The SetDayStart function should have a numerical value between 0 and 6, and the SetMonthStart function should have a numerical value between 1 and 12.
 
-String parameters are utilized in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters - week, month, quarter, and year. The format function is utilized to modify the format of date and time, with the parameter aligning with the date and time format supported in C#. Additionally, support for epoch time is available in the format function. The SetTimeZone function is utilized to alter the time zone of the date, with the parameter aligning with TimeZoneInfo IDs present in C#.
+String parameters are used in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters - week, month, quarter, and year. The format function is used to modify the format of date and time, with the parameter aligning with the date and time format supported in C#.
+
+Additionally, support for epoch time is available in the format function. The SetTimeZone function is used to alter the time zone of the date, with the parameter aligning with TimeZoneInfo IDs present in C#.
 
 `Today` function does not hold any parameters.
 Here for example concern we are using `today()`as `11/16/2018 12:17`

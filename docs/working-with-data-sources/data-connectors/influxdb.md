@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Connect to InfluxDB data source | Cloud BI Dashboard
-description: Learn how to create data source by connecting to the InfluxDB data source in Cloud BI Dashboard Designer
+title: InfluxDB Data Connector Guide in Bold BI | Bold BI
+description: Learn how to create a data source by connecting to InfluxDB in the Bold BI Cloud dashboard designer, then build dashboards and widgets from its data.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to InfluxDB data source
+# InfluxDB Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to an InfluxDB database using SQL Live Query (C# API).
 
 **Supported Server Version:** InfluxDB v1.8

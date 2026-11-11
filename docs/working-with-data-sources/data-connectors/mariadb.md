@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MariaDB – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect MariaDB using SQL Live Query with cloud-hosted Bold BI and create data source for dashboard preparation.
+title: MariaDB Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect MariaDB with cloud-hosted Bold BI using SQL Live Query, then create a data source for dashboard preparation and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to MariaDB data source
+# MariaDB Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to MariaDB database using the SQL Live Query (C# API).
 
 ## Choose MariaDB data source
@@ -91,7 +91,7 @@ In this type of connection, data is retrieved periodically from a data source. S
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mariadb/Mariadb_Extract_Connection.png)
 
-> **NOTE:** Initially, data will be extracted based on the maximum number of rows selected in order to proceed with creating the data model. The remaining records, of which there is no limit, will be extracted during the next refresh. <br /> 
+> **NOTE:** Initially, data will be extracted based on the maximum number of rows selected to proceed with creating the data model. The remaining records, of which there is no limit, will be extracted during the next refresh. <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mariadb/maxRowOption.png#max-width=60%)	
  
 ### Refresh Settings

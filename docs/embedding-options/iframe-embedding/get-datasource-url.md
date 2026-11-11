@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Get data source URL for Embedding | Bold BI Documentation
+title: Get data source URL for Embedding in Bold BI | Bold BI
 description: Learn how to get Bold BI data source URL to embed data source create and data source edit mode in any application.
 platform: bold-bi
 documentation: ug
 ---
 
-# How to get the data source URL
+# Get data source URL for Embedding
 
 1. To obtain the embed URL, click on the More option icon of the desired data source from the data source listing page. Then, select the Edit data source option from the dropdown menu. 
 ![DataSourceUrl](/static/assets/iFrame-based/images/Edit-DataSource.png#max-width=90%)  

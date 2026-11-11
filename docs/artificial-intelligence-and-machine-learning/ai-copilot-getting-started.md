@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of AI Copilot - Embedded BI | Bold BI Docs
+title: Overview of AI Copilot - Embedded Analytics | Bold BI
 description: Discover the AI Copilot overview, including its features, location, and session management for efficient widget creation.
 canonical: "/artificial-intelligence-and-machine-learning/ai-copilot-getting-started/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Getting Started with the AI Copilot
+# Overview of AI Copilot - Embedded Analytics
 We recommend watching the following video, which offers essential insights on effectively getting started with the AI Copilot in Bold BI.<br/>
 
 <iframe class="helpsite-video-section" src="https://www.youtube.com/embed/6KfzY3tpOG8" frameborder="0" allowfullscreen></iframe>

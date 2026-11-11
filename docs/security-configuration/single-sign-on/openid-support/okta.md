@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SSO with Okta Provider of OpenID Connect | Bold BI Embedded
+title: SSO with Okta Provider of OpenID Connect | Bold BI
 description: Learn how to configure Bold BI Embedded with Okta identity provider for Single Sign-on authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Okta support for SSO authentication
+# SSO with Okta Provider of OpenID Connect
 
 The Bold BI application supports the addition of users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with these users.
 

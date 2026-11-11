@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Area Chart (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Area Chart in Bold BI dashboards.
+title: Area Chart for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Area Chart widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/area-chart/"
 platform: bold-bi
 control: Area Chart
 documentation: ug
 ---
 
-# Area Chart
+# Area Chart for Modern Dashboards
 
-An Area Chart connects data points and fills the area between each series and its value-axis baseline. It emphasizes the magnitude of change across an ordered category, such as time.
+The Area Chart widget in Bold BI connects data points and fills the area between each series and its value-axis baseline. It emphasizes the magnitude of change across an ordered category, such as time.
 
 ![Area Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/area-chart/area-chart.png)
 

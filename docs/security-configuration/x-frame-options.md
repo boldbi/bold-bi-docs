@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to configure X-Frame-Options in Embedded BI| Bold BI Docs
+title: Configure X-Frame-Options in Embedded Analytics | Bold BI
 description: Learn about how to enable X-Frame-Options and restrict pages rendering in a frame to the current domain to secure sites in the Bold BI embedded application.
 platform: bold-bi
 documentation: ug
 ---
 
-# X-Frame-Options configuration
+# Configure X-Frame-Options in Embedded Analytics
 
 The X-Frame-Options is used to instruct the browser on whether it should allow or restrict page rendering in a frame. It can help prevent click-jacking attacks by ensuring that your site content is not embedded into other sites.
 

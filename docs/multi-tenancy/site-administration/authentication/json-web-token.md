@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Single Sign-On with Custom JSON Web Token | Bold BI
-description: Learn how to configure the settings and authenticate users with SSO using custom JSON Web Token with Bold BI application.
+description: Learn how to configure single sign-on (SSO) with a custom JSON Web Token (JWT) to authenticate users in the Bold BI application, step by step.
 platform: bold-bi
 documentation: ug
 ---
 
 # How to set up JWT for SSO authentication in Bold BI
 
-This section explains how to perform Single Sign-On (SSO) for users with the Custom JSON Web Token (JWT) in the Bold BI application.
+Set up single sign-on (SSO) for users with a custom JSON Web Token (JWT) in the Bold BI application.
 
 ## Steps to configure JWT in Bold BI
 

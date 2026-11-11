@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Upgrading versions of Bold BI Application | Bold BI Docs
+title: Upgrading versions of Bold BI Application | Bold BI
 description: Learn here about the information of upgrading from older Bold BI application version to a newer version, detailed steps and more details for the smooth update.
 platform: bold-bi
 documentation: ug
 ---
-# Upgrade Guidelines
+# Upgrading versions of Bold BI Application
 ## Overview
 This section provides upgrade guidance that should be followed before proceeding with the Bold BI upgrade on the production environment.
 - Save all open settings and unsaved items.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Single Sign-On with Custom JWT Embedded BI | Bold BI Doc
+title: Single Sign-On with Custom JWT Embedded Analytics | Bold BI
 description: Learn to configure & authenticate users with SSO using custom JSON Web Tokens at the site level in Bold BI Embedded with step-by-step settings & implementation.
 platform: bold-bi
 documentation: ug
 ---
 
-# How to set up JWT for SSO authentication in Bold BI site
+# Single Sign-On with Custom JWT Embedded Analytics
 
 This section provides a step-by-step guide to configuring Single Sign-On (SSO) for users at the site level in the Bold BI application using Custom JSON Web Tokens (JWT).
 

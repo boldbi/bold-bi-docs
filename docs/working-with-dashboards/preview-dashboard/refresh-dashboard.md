@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatic Refresh on Dashboards – Embedded BI | Bold BI
+title: Automatic Refresh on Dashboards in Bold BI | Bold BI
 description: Learn how to enable automatic refresh of dashboard at scheduled intervals to get latest data in Bold BI Embedded.
 canonical: "/working-with-dashboards/preview-dashboard/refresh-dashboard/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Refresh Dashboard
+# Automatic Refresh on Dashboards in Bold BI
 
 Bold BI allows you to configure the scheduled refresh of a dashboard. Either the entire dashboard or specific widgets within a dashboard can be automatically refreshed based on a timer.
 
@@ -120,4 +120,4 @@ Select `Hide Loading Indicator` to hide the loading indicator while refreshing w
 
       ![Select particular widgets](/static/assets/working-with-dashboards/preview-dashboards/images/select_particularwidgets.png)
 
- > **NOTE:** This functionality will only work on BoldBI version 6.19 or higher.
+ > **NOTE:** This functionality will only work on Bold BI version 6.19 or higher.

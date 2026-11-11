@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to Install and Deploy Bold BI on RHEL Linux Using RPM Package
+title: Install and Deploy Bold BI on RHEL Using RPM | Bold BI
 description: Learn how to install Bold BI using an RPM package with this step-by-step guide. Follow the instructions to set up and configure Bold BI seamlessly.
 platform: bold-bi
 documentation: ug
 ---
 
-# Installing and Upgrading Bold BI<sup>®</sup> Using an RPM Package
+# Install and Deploy Bold BI on RHEL Using RPM
 
 Starting from Bold BI<sup>®</sup> version 11.3.24, we now provide support for installing and upgrading Bold BI<sup>®</sup> using an RPM package.
 

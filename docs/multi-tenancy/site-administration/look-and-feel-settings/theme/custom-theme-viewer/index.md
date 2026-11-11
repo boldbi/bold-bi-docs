@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Themes for Dashboards Using CSS3 Variable | Embedded
-description: Learn how to create a custom theme using CSS3 Variables and apply custom theme for your dashboards in the Bold BI Embedded.
+title: Custom Themes for Dashboards Using CSS3 Variable | Bold BI
+description: Learn how to create a custom dashboard theme with CSS3 variables, apply it to your dashboards, and map each setting in Bold BI Embedded applications.
 platform: bold-bi
 documentation: ug
 ---
 
 # Dashboard Themes Using CSS3 variables in Bold BI Server
 
-The theme feature allows you to customize the appearance of the Bold BI Application. Switch the application’s theme from light to dark mode and vice versa under the `Look and Feel Settings`.
+Create a custom dashboard theme with CSS3 theme variables to change how dashboards look in Bold BI. Switch the application’s theme from light to dark mode and vice versa under the `Look and Feel Settings`.
 
 ## How to apply Theme in application 
 There are two ways to apply themes in the Bold BI application:
@@ -43,8 +43,8 @@ The following items are not supported with the dashboard theme:
 ## How to create custom Theme using CSS3 Variable 
 
 Create the custom theme in two ways:
-1. Refer [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#how-to-create-custom-application-theme) to create the application custom theme.
-2. Refer [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/#how-to-create-a-custom-theme-using-variables-for-dashboards) to create the dashboard custom theme.
+1. To create the application custom theme, see [Create custom application theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#how-to-create-custom-application-theme).
+2. To create the dashboard custom theme, see [Create custom dashboard theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/#how-to-create-a-custom-theme-using-variables-for-dashboards).
 
 Similarly, customize the `Theme` for widgets in the dashboard using the provided variables per your requirements. Follow these steps to create a custom theme file:
 
@@ -154,7 +154,7 @@ For example, we customized the color in the data color palette variable.
 
 ## Dashboard widgets
 
-The `boldbi.widgets.core.definition.css` section allows you to configure the properties of the widget container, such as the background color, title or sub-title color and font, icon color and font, as well as the properties at the widget level, such as axis properties, legend properties, and data label properties.
+The `boldbi.widgets.core.definition.css` section configures the properties of the widget container, such as the background color, title or sub-title color and font, and icon color and font. It also configures the properties at the widget level, such as axis properties, legend properties, and data label properties.
 
 ### Widget common level properties
 
@@ -193,7 +193,7 @@ Click on the [Widget core](https://github.com/boldbi/boldbi-themestudio/blob/mai
 ```
 
 ### Widget specific level properties
-  The `widgets` section allows you to customize the properties of a specific widget.
+  The `widgets` section customizes the properties of a specific widget.
  
 #### Chart Variables
 

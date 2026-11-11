@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar Chart (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Bar Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, filters, and interactions for the modern Bar Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/bar-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Bar Chart
 documentation: ug
 ---
 
-# Bar Chart
+# Bar Chart for Modern Dashboards
 
-A Bar Chart compares values across categories using horizontal bars. It is useful when category labels are long or when differences between many categories need to be compared clearly.
+The Bar Chart widget in Bold BI compares values across categories using horizontal bars. It is useful when category labels are long or when differences between many categories need to be compared clearly.
 
 ![Bar Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/bar-chart/barchart.png)
 
@@ -98,7 +98,7 @@ Add a trendline when the Bar Chart has an eligible non-stacked data configuratio
 
 ### Formatting
 
-This allows you to change the color for the bar chart series.
+This lets you change the color for the bar chart series.
 
 ![Formatting color](/static/assets/visualizing-data/visualization-v2-widgets/images/bar-chart/formatting-color.png)
 
@@ -148,11 +148,11 @@ Apply colors based on data or index.
 
 ![Color mapping type options](/static/assets/visualizing-data/visualization-v2-widgets/images/bar-chart/column-chart-formatting-color-mapping-type-options.png)
 
-***Data*** — applies color based on the data value.
+***Data***, applies color based on the data value.
 
 ![Color mapping data type color](/static/assets/visualizing-data/visualization-v2-widgets/images/bar-chart/column-chart-formatting-data-type-color.png)
 
-***Index*** — applies color based on position, maintaining colors even when data changes.
+***Index***, applies color based on position, maintaining colors even when data changes.
 
 ![Color mapping index-based color](/static/assets/visualizing-data/visualization-v2-widgets/images/bar-chart/column-chart-formatting-index-based-color.png)
 

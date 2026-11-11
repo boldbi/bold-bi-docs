@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Dashboard Filtering – JavaScript Embedding | Bold BI Docs
+title: Dashboard Filtering - JavaScript Embedding | Bold BI
 description: Learn types of data filtering and Learn how to securely apply custom attributes in sdk-based embedding of Bold BI dashboard from v14.1.
 platform: bold-bi
 documentation: ug
 ---
-# Row-Level Security(RLS)
+# Dashboard Filtering - JavaScript Embedding
 
 Bold BI supports **Row-Level Security (RLS)** to ensure users only access data they are authorized to see. 
 
@@ -161,7 +161,7 @@ function getToken() {
 ## Custom Attribute
 
 ### What is it?
-Custom Attributes are name–value pairs that can be defined at the user, group, or site level. It can be enforced by passing an `customattributes` parameter in the [embed details](/embedding-options/embedding-sdk/token-generation/).
+Custom Attributes are name-value pairs that can be defined at the user, group, or site level. It can be enforced by passing an `customattributes` parameter in the [embed details](/embedding-options/embedding-sdk/token-generation/).
 They allow dashboards to dynamically adjust queries, expressions, or data source connections to enforce RLS.
 
 ### Why use it?
@@ -175,7 +175,7 @@ They allow dashboards to dynamically adjust queries, expressions, or data source
 
 **Example: Token Generation with Custom Attribute**
 
-In this scenario, two users access the same dashboard with different databases sharing the same schema. We configured a custom attribute with the database name DB1 in the data source connection of the Bold BI server. In embedding, we dynamically assign a different database, DB2, using the embed_custom_attribute parameter, and the dashboard is rendered with the specified database details.
+In this scenario, two users access the same dashboard with different databases sharing the same schema. We configured a custom attribute with the database name DB1 in the data source connection of the Bold BI Server. In embedding, we dynamically assign a different database, DB2, using the embed_custom_attribute parameter, and the dashboard is rendered with the specified database details.
  
 >Note: Explore our [demo](https://demos.boldbi.com/#/row-level-security) to see how RLS is achieved with custom attributes.
 

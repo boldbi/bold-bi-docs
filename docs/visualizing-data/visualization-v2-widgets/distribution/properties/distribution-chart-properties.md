@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Distribution Chart Properties | Bold BI Documentation
-description: Learn the shared distribution chart properties used by modern Area, Line, Spline, Stacked Area, and Scatter widgets in Bold BI dashboards.
+title: Distribution Chart Properties in Modern Widgets | Bold BI
+description: Learn the shared distribution chart properties used by the modern Area, Stacked Area, Line, Spline and Spline Area widgets in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/properties/distribution-chart-properties/"
 platform: bold-bi
 control: Distribution Charts
 documentation: ug
 ---
 
-# Properties
+# Distribution Chart Properties in Modern Widgets
 
-This page describes the properties shared by the modern **Area Chart**, **Stacked Area Chart**, **100% Stacked Area Chart**, **Line Chart**, **Spline Chart**, and **Spline Area Chart**.
+Bold BI modern widget properties on this page are shared by the **Area Chart**, **Stacked Area Chart**, **100% Stacked Area Chart**, **Line Chart**, **Spline Chart**, and **Spline Area Chart**.
 
 Widget-specific property behavior that does not apply across this shared distribution-chart set is documented on the respective widget page.
 
 ## Basic Settings
 
-#### Chart Type and Axis
+### Chart Type and Axis
 
 Opens a dialog for changing each configured series to a compatible chart type and assigning eligible series to the primary or secondary value axis. It is available after a value is configured and is hidden while the chart is drilled down. A 100% stacked series cannot use the secondary axis.
 
@@ -86,7 +86,7 @@ Configures the outline of the filled area. It is available for Area and Spline A
 
 ## Tooltip Settings
 
-#### Show Tooltip
+### Show Tooltip
 
 Displays information when a viewer points to a data point. Disabling it disables the remaining tooltip controls.
 
@@ -108,7 +108,7 @@ Displays all series values for the pointed category in one tooltip. It is disabl
 
 ## Legend Settings
 
-#### Show Legend
+### Show Legend
 
 Shows or hides the legend. Enabling it displays the remaining legend properties.
 
@@ -150,7 +150,7 @@ Sets the available width for legend text.
 
 ## Forecast Settings
 
-This group is available for Line and Spline charts when there is one `Values` field, one supported numeric or date/time `Columns` field, no `Row` field, and the chart is not acting as a Period Over Period slave widget.
+The Forecast Settings group is available for Line and Spline charts when there is one `Values` field, one supported numeric or date/time `Columns` field, no `Row` field, and the chart is not acting as a Period Over Period slave widget.
 
 #### Enable Forecast
 
@@ -190,7 +190,7 @@ Displays the confidence band using the supported fill or line style.
 
 ## Series Palette
 
-This group is available when both `Values` and `Row` are configured.
+The Series Palette group is available when both `Values` and `Row` are configured.
 
 #### Use Default Palette
 
@@ -322,7 +322,7 @@ Sets the grid-line color.
 
 ## Trendline
 
-This group is available for eligible Area, Line, Spline, and Spline Area charts when exactly one `Columns` field is configured and no `Row` field is assigned. It is not available for Stacked Area or 100% Stacked Area charts.
+The Trendline group is available for eligible Area, Line, Spline, and Spline Area charts when exactly one `Columns` field is configured and no `Row` field is assigned. It is not available for Stacked Area or 100% Stacked Area charts.
 
 Use the add action to create a trendline, or select an existing trendline to edit or remove it.
 
@@ -340,7 +340,7 @@ Sets the trendline color. Additional dialog settings control its line appearance
 
 ## Formatting
 
-This group is available when `Values` is configured and `Row` is not configured.
+The Formatting group is available when `Values` is configured and `Row` is not configured.
 
 #### Series Color
 

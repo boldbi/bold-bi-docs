@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie Chart – Embedded BI Visual | Bold BI Documentation
+title: Pie Chart - Embedded Analytics Visual in Bold BI | Bold BI
 description: Learn how to create a Pie Chart visual in Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/pie-chart/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Pie Chart
+# Pie Chart - Embedded Analytics Visual
 
 Pie charts allow you to display the proportion of each item to the total in the form of pie slices.
 
@@ -263,7 +263,7 @@ It animates the measure values when you `Enable Animation`.
 
 ### Show value label
 
-It allows you to toggle the visibility of value labels.
+It lets you toggle the visibility of value labels.
 
 ![Show Value Label](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
@@ -272,7 +272,7 @@ If you disable the `Show Value Labels` properties, the dependent properties, suc
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
 ### Value Label Color
 
-This allows you to customize the value label's color.
+This lets you customize the value label's color.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
 
@@ -312,17 +312,17 @@ Defines the display format as a `category, value, percentage, category and value
 
 ### Value labels suffix
 
-This allows you to show or hide the suffix value of value labels.
+This lets you show or hide the suffix value of value labels.
 
 ### Suffix Value
 
-This allows you to customize the suffix value of value labels.
+This lets you customize the suffix value of value labels.
 
 ![Value Labels Suffix](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
 
 ### Chart Size
 
-This allows you to customize the size of the pie chart. Values can be between 0.1 and 1.
+This lets you customize the size of the pie chart. Values can be between 0.1 and 1.
 
 ### Series Settings
 
@@ -348,25 +348,25 @@ By enabling the `Column Count,` you can set the column count.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the pie chart.
+This option lets you toggle the visibility of the tooltip in the pie chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/rtl-tooltip.png)
 
@@ -376,24 +376,24 @@ This option allows you to display fields and their data from right to left.
 
 ### Show legend
 
-A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+A legend is a text used to describe the plotted data. It lets you toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-interactivity-enable.png)
 
 ### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This lets you change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
 
@@ -401,7 +401,7 @@ This allows you to change the chart legend title and label colors.
 
 ### Legend Customize 
 
-It allows you to customize the legends. When you click the `customize` button, the dialog box will be shown.
+It lets you customize the legends. When you click the `customize` button, the dialog box will be shown.
 
 ![Chart Legend Customize](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-customize.png)
 
@@ -409,13 +409,13 @@ It allows you to customize the legends. When you click the `customize` button, t
 
 ### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top, and Bottom**.
 
 ![Legend position](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legent-position.png)
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
  
@@ -433,29 +433,29 @@ This allows you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option lets you change the shape of the legend in a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option lets you change the shape of the legend in `Series.`
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-legendshape-series.png)
 
 ### Legend Title 
 
-This allows you to add the legend title for the chart, which will reflect with the `Show Legend`.
+This lets you add the legend title for the chart, which will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize legend text based on the 'Text Width' property value.
+This option lets you customize legend text based on the 'Text Width' property value.
 
 **None**
 
-This option allows you to render legend items without any wrap and trim.
+This option lets you render legend items without any wrap and trim.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-none-option.png)
 
@@ -463,7 +463,7 @@ This option allows you to render legend items without any wrap and trim.
 
 **Trim**
 
-This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+This option lets you trim the legend items if its legend exceeds the 'Text Width' value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-trim-option.png)
 
@@ -471,7 +471,7 @@ This option allows you to trim the legend items if its legend exceeds the 'Text 
 
 **Wrap**
 
-This option allows you to wrap legend items based on the 'Text Width' value.
+This option lets you wrap legend items based on the 'Text Width' value.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-wrap-option.png)
 
@@ -479,7 +479,7 @@ This option allows you to wrap legend items based on the 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-width-option.png)
 
@@ -515,14 +515,14 @@ Using the Color Mapping type, you can apply the colors to the series either base
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It lets you apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
 > **IMPORTANT:**  Only the top 100 records will be listed in the dialog.
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It lets you apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -546,13 +546,13 @@ By toggling off the `Use Default Palette`, you can customize the colors of the p
 
 ### Font settings
 
-This section allows you to customize the font size of the chart elements.
+This section lets you customize the font size of the chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
 
 ### Filter
 
-This section allows you to manage the `filter` actions for the pie chart widget.
+This section lets you manage the `filter` actions for the pie chart widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/filter.png)
 
@@ -572,7 +572,7 @@ When the **Enable Hierarchical Filtering** option is enabled, the `Top N` filter
 
 ### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the pie chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the pie chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
@@ -580,11 +580,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the pi
 
 ### Title Alignment
 
-This allows you to adjust the alignment of the widget title to either **left, center,** or **right**.
+This lets you adjust the alignment of the widget title to either **left, center,** or **right**.
 
 ### Title Color
 
-This allows you to apply a text `color` to the widget title.
+This lets you apply a text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -592,7 +592,7 @@ By enabling Auto Font Size, the font size of the title will automatically adjust
 
 **Font Size**
 
-This allows you to apply a specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can range from 10 to 44.
+This lets you apply a specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can range from 10 to 44.
 
 ### Subtitle Auto Font Size
 
@@ -600,7 +600,7 @@ By enabling Auto Font Size, the font size of the subtitle will automatically adj
 
 **Font Size**
 
-This allows you to apply a specified font size to the widget subtitle if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
+This lets you apply a specified font size to the widget subtitle if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
 
 ### Auto Padding
 
@@ -608,35 +608,35 @@ By enabling Auto Padding, the padding of the widget container will automatically
 
 **Padding**
 
-This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can range from 0 to 25.
+This lets you customize the padding of the widget container if **Auto Padding** is disabled. The value can range from 0 to 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can range from 0 to 100.
+This lets you apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can range from 0 to 100.
 
 ### Show Background Image
 
-This allows you to set a **background image** for the pie chart widget.
+This lets you set a **background image** for the pie chart widget.
 
 ### Background Color
 
-This allows you to set a **background color** for the pie chart widget.
+This lets you set a **background color** for the pie chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -646,38 +646,38 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the pie chart. 
+This lets you enable or disable the `widget title` of the pie chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the pie chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the pie chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the pie chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the pie chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the pie chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the pie chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the pie chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the pie chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the pie chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the pie chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.

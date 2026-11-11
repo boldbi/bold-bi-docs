@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating a New Data Source – Embedded BI | Bold BI Learning
+title: Creating a New Data Source - Embedded Analytics | Bold BI
 description: Learn how to create a new data source in Bold BI Embedded application to bind data with widgets in dashboard.
 canonical: "/working-with-data-sources/creating-a-new-data-source/"
 platform: bold-bi
 documentation: ug
 
 ---
-# Working with Data Sources
+# Creating a New Data Source - Embedded Analytics
 
 This section explains how to create a new data source and fetch data from it.
 

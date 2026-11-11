@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Sheets - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Google Sheets with cloud-hosted Bold BI and create data source for dashboard preparation.
+title: Google Sheets Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google Sheets with cloud-hosted Bold BI, create a data source, and prepare the sheet data for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
    
-# Connecting Bold BI to Google Sheets data source
-**What is Google Sheets?** Google Sheets is a spreadsheet program that serves as a collaborative tool for editing spreadsheets together in real-time.
+# Google Sheets Data Connector Guide in Bold BI
+**What is Google Sheets?** Google Sheets is a spreadsheet program for editing spreadsheets together in real time, and Bold BI connects to it as a data source.
 
 ## Connecting to a Google Sheets
-The Bold BI dashboard designer allows you to connect files that are uploaded in **Google Sheets**. It supports files in spreadsheet format.
+The Bold BI dashboard designer lets you connect files that are uploaded in **Google Sheets**. It supports files in spreadsheet format.
    
 To establish this connection, follow the steps below:
 
@@ -30,7 +30,7 @@ To establish this connection, follow the steps below:
 
 7. Now, the Google Sheets window appears. Set a data source name, Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection) and choose the file as shown in the following image. ![File Storage](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/file_storage.png)
 
-8. You can schedule refreshes to keep the data on your dashboard up to date by using the **Refresh Settings** option. click [here](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to learn more.![Refresh Settings](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/refresh_settings.png)
+8. You can schedule refreshes to keep the data on your dashboard up to date by using the **Refresh Settings** option. see [refreshing cloud Excel data](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to learn more.![Refresh Settings](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/refresh_settings.png)
 
 9. Now, click **Select** and then preview window will appear. Here, you can choose your preferred **Tables and Columns**.![File Preview](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/file_preview.png)
 

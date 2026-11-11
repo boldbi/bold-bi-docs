@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to create, configure & upload custom widgets | Bold BI Docs
+title: How to create, configure & upload custom widgets | Bold BI
 description: Find the steps to create custom widgets and upload the custom widgets in the widget settings, visualize them through embedded dashboard with APIs available.
 platform: bold-bi
 control: Custom Widget
 documentation: ug
 ---
 
-# Create, Configure and Format the Custom Widget
+# How to create, configure & upload custom widgets
 
-The Bold BI custom widget allows you to add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like a normal widget.
+The Bold BI custom widget lets you add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like a normal widget.
 
 > **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
 
@@ -45,7 +45,7 @@ To Create a new custom widget, follow the steps below:
 
 ## Create a custom widget template
 
-The BoldBI Custom Widget Utility (bicw.exe) is used to create the custom widget template. To create a new custom widget template, download the [Custom Widget Utility](https://files2.syncfusion.com/Installs/BoldBI/07-12-2023/Bicw+Utility.zip) and extract the zipped folder.
+The Bold BI Custom Widget Utility (bicw.exe) is used to create the custom widget template. To create a new custom widget template, download the [Custom Widget Utility](https://files2.syncfusion.com/Installs/BoldBI/07-12-2023/Bicw+Utility.zip) and extract the zipped folder.
 
   ![bicw.exe downloaded file location](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
 
@@ -437,13 +437,13 @@ Below is an example code to configure the `widgetconfig.json` file for the Syncf
 
 ### Adding Dependency Script Files
 
-To add the required dependency script file, visit [Essential JS 1 Custom Script Generator](https://help.boldbi.com/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/) where you can find the custom widget's min files. For example, you can select the `ejSunBurstChart` and download the script file as shown in the below image:
+To add the required dependency script file, visit [Essential JS 1 Custom Script Generator](https://help.boldbi.com/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/) where you can find the custom widget's min files. For example, you can select the `ejSunBurstChart` and download the script file as shown in the following image:
 
 ![SunBurst Custom Script Generator](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/sunburst-script-generator.png)
 
 > **NOTE:** Visit [Syncfusion Custom Resource Generator](https://crg.syncfusion.com/) where you can find the custom widget's min files for Syncfusion EJ2 Components.
 
-Once downloaded, extract the folder to locate the `ej.widget.all.min.js` file. Paste this `ej.widget.all.min.js` file inside the `src` folder which is available in the custom widgets root directory, as shown in the below image:
+Once downloaded, extract the folder to locate the `ej.widget.all.min.js` file. Paste this `ej.widget.all.min.js` file inside the `src` folder which is available in the custom widgets root directory, as shown in the following image:
 
 ![Sunburst min files](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/sunburst-min-files.png)
 

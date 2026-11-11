@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dashboard Embedding in ASP.NET MVC Application | Bold BI Docs
+title: Dashboard Embedding in ASP.NET MVC Application | Bold BI
 description: Learn how to embed the dashboard in an ASP.NET MVC application using iFrame and learn the code to view the particular dashboard with different data connections.
 platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard Embedding in ASP.NET MVC Sample
+# Dashboard Embedding in ASP.NET MVC Application
 This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sample application by providing the dashboard URL. In this sample, we have rendered the dashboard embedding using Single Sign On (SSO) with Token-based authentication. The explanation is concise.
 
 ![DashboardView](/static/assets/iFrame-based/sample/images/dashboard-views.png)

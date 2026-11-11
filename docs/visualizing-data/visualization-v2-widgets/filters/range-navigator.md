@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Range Navigator Widget (Modern) | Bold BI Documentation
-description: Learn how to configure assigned data, formatting, filters, and interactions for the modern Range Navigator widget in Bold BI dashboards.
+title: Range Navigator for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure assigned data, formatting, filters, and interactions for the modern Range Navigator widget in Bold BI dashboards to filter a range.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/range-navigator/"
 platform: bold-bi
 control: Range Navigator
 documentation: ug
 ---
 
-# Range Navigator
+# Range Navigator for Modern Dashboards
 
-The Range Navigator allows users to select a smaller numeric or date range from a larger data set and filter linked dashboard widgets using the selected interval.
+The Range Navigator widget in Bold BI lets users select a smaller numeric or date range from a larger data set and filter linked dashboard widgets using the selected interval.
 
 ![Range Navigator](/static/assets/visualizing-data/visualization-widgets/images/range-navigator/range-navigator.png)
 
@@ -22,7 +22,7 @@ Configure the data for the Range Navigator in the `ASSIGN DATA` tab.
 |---|---|---|
 | **Value(s)** | Required | Specifies one or more measure or expression fields plotted in the Range Navigator overview. |
 | **Argument** | Required | Specifies the numeric measure or date/date-time dimension used for the navigator axis and selected interval. |
-| **Filters** | Optional | Allows you to apply additional filtering conditions to the Range Navigator data. |
+| **Filters** | Optional | Lets you apply additional filtering conditions to the Range Navigator data. |
 
 ### Assigning Data
 
@@ -40,11 +40,11 @@ Configure the data for the Range Navigator in the `ASSIGN DATA` tab.
 
 Click the `More options` icon for an assigned field to configure the available options. The options vary based on the field type and data section.
 
-- **Rename** — Overrides the display name of the assigned field.
-- **Aggregation type** — Changes how a measure in the `Value(s)` section is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
-- **Filter(s)** — Applies filter conditions to include or exclude specific values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
-- **Format** — Changes the display format of an assigned measure or date field. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
-- **Relative Dates** — Configures a relative range when a date or date-time dimension is assigned to `Argument`. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
+- **Rename**, Overrides the display name of the assigned field.
+- **Aggregation type**, Changes how a measure in the `Value(s)` section is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
+- **Filter(s)**, Applies filter conditions to include or exclude specific values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+- **Format**, Changes the display format of an assigned measure or date field. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+- **Relative Dates**, Configures a relative range when a date or date-time dimension is assigned to `Argument`. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
 
 ---
 

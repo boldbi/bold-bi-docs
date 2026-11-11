@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring String Expression Fields | Bold BI Embedded Docs
+title: Configuring String Expression Fields in Bold BI | Bold BI
 description: Learn how to configure expression fields comprising calculated string expressions using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Configure String expression
+# Configuring String Expression Fields
 
 ## Functions
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Elastic Search data source for Cloud BI | Cloud Bold BI Docs 
+title: Elasticsearch Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Elastic search data source, and create a data source for widget configuration for your elastic search data using Bold BI Cloud application.
 canonical: "/working-with-data-sources/data-connectors/elastic-search/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Elastic Search data source
+# Elasticsearch Data Connector Guide in Bold BI
 The **Bold BI Cloud** Dashboard designer supports connecting to the Elastic Search database using the SQL Live Query. 
 
 **Supported Server Versions**:
@@ -28,7 +28,7 @@ To choose an Elastic Search data source, follow these steps:
 
 ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Choosedatasource.png#width=355.5px;height=509.7px)
    
-> **NOTE:**  You can also create a data source from the Bold BI home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the Bold BI home page by clicking **Data Sources** from the left menu panel and **Create Data Source** from the data sources page.
 
 ![Select data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Selectdatasource.png#max-width=85%)
 
@@ -60,7 +60,7 @@ There are two connection types available in a data source
 
 ![Choose Authentication](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Authenticationtype.png#width=358.5px;height=511.06px)
 
-4.	If the Elastic Search server uses `Basic HTTP Authentication` in the Authentication type, then enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
+4.	If the Elasticsearch server uses Basic HTTP Authentication in the authentication type, then enter a valid Elasticsearch username and password in the Username and Password text boxes.
 
 5.	Choose the `Live` mode option for this connection.
 6.	Select the `database` you want to query from the listed databases associated with the given Elastic Search server in the database drop-down box.
@@ -82,7 +82,7 @@ There are two connection types available in a data source
 
 ![Choose Authentication](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Authenticationtype.png#width=358.5px;height=511.06px)
 
-4.	If the Elastic Search server uses `Basic HTTP Authentication` in the Authentication type, then enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
+4.	If the Elasticsearch server uses Basic HTTP Authentication in the authentication type, then enter a valid Elasticsearch username and password in the Username and Password text boxes.
 5.	Choose the `Extract` mode option for this connection.
 6.	Select a `database` that you want to query in the listed database associated with the given Elastic Search server in the database drop-down box.
 7.	Click `Connect` to connect the Elastic Search server with the configured details.
@@ -96,12 +96,12 @@ There are two connection types available in a data source
     ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
 2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+3. When switching to Bold Data Hub, Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+5. When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 ### Connect using Open Distro connection type
 
@@ -124,7 +124,7 @@ Please follow these steps to connect using the Open Distro connection type.
 
 ![Open distro connection](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/opendistrolive.png#max-width=100%)
 
-> **NOTE:** You can also connect through the `Custom query` support on the extract mode of connection by providing the valid SQL query in both the Elastic search SQL and Open distro connection types.
+> **NOTE:** You can also connect via the `Custom query` support on the extract mode of connection by providing a valid SQL query in both the Elasticsearch SQL & Open distro connection types.
 
 ![Custom query connection](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/customquery.png#max-width=70%)
 
@@ -176,7 +176,7 @@ When you add `IncludeFilterKey=<subField>` in the URL, the specified sub-field i
 
 `IncludeFilterKey=keyword`
 
-### Example – Embed URL Filter
+### Example, Embed URL Filter
 `IncludeFilterKey=keyword&&(column4=item5|| column1=A00003)||column4=item99`
 This will be interpreted as:
 - `column4.keyword = item5`

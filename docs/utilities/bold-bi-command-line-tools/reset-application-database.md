@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Reset Application Database – Admin Utility | Bold BI
+title: Reset Application Database - Admin Utility | Bold BI
 description: Learn how to reset the application database of Bold BI server application through the command line interface.
 platform: bold-bi
 documentation: ug
 ---
 
-# Reset Application Database
+# Reset Application Database - Admin Utility
 
 Please refer to your operating system's documentation for instructions on how to reset the database of the Bold BI application.
 
@@ -31,13 +31,13 @@ cd C:\BoldServices\utilities\adminutils
 Syncfusion.Server.Commands.Utility.exe dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 > **IMPORTANT:**  command details:  
-> servername – SQL server hostname/IP  
-> databasename – SQL database name  
-> u – SQL server username  
-> p – SQL server password  
+> servername: SQL server hostname/IP  
+> databasename: SQL database name  
+> u: SQL server username  
+> p: SQL server password  
 > port - Port number required for PostgreSQL and MySQL  
-> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-> sslenabled – Is encrypted connection required (this is optional)  
+> iswindowsauthentication: Is windows authentication required (Required for MSSQL only)  
+> sslenabled: Is encrypted connection required (this is optional)  
 > additionalparameters - Additional parameters required for database connection (this is optional)   
   
 ![reset-command](/static/assets/admin-utility/images/reset-con-string-2.png)  
@@ -57,13 +57,13 @@ cd /var/www/bold-services/application/utilities/adminutils/
 ../../../dotnet/dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 > **IMPORTANT:**  command details:  
-> servername – SQL server hostname/IP  
-> databasename – SQL database name  
-> u – SQL server username  
-> p – SQL server password  
+> servername: SQL server hostname/IP  
+> databasename: SQL database name  
+> u: SQL server username  
+> p: SQL server password  
 > port - Port number required for PostgreSQL and MySQL  
-> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-> sslenabled – Is encrypted connection required (this is optional)  
+> iswindowsauthentication: Is windows authentication required (Required for MSSQL only)  
+> sslenabled: Is encrypted connection required (this is optional)  
 > additionalparameters - Additional parameters required for database connection (this is optional)  
   
 ![reset-command](/static/assets/admin-utility/images/linux-reset-con-string.png)  
@@ -108,13 +108,13 @@ dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -
 ~~~  
 
 > **IMPORTANT:**  command details:  
-> servername – SQL server hostname/IP  
-> databasename – SQL database name  
-> u – SQL server username  
-> p – SQL server password  
+> servername: SQL server hostname/IP  
+> databasename: SQL database name  
+> u: SQL server username  
+> p: SQL server password  
 > port - Port number required for PostgreSQL and MySQL  
-> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-> sslenabled – Is encrypted connection required (this is optional)  
+> iswindowsauthentication: Is windows authentication required (Required for MSSQL only)  
+> sslenabled: Is encrypted connection required (this is optional)  
 > additionalparameters - Additional parameters required for database connection (this is optional)  
 
 ![Database-reset](/static/assets/admin-utility/images/database-reset.png)
@@ -148,13 +148,13 @@ dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -
 ~~~  
 
 > **IMPORTANT:**  command details:  
-> servername – SQL server hostname/IP  
-> databasename – SQL database name  
-> u – SQL server username  
-> p – SQL server password  
+> servername: SQL server hostname/IP  
+> databasename: SQL database name  
+> u: SQL server username  
+> p: SQL server password  
 > port - Port number required for PostgreSQL and MySQL  
-> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-> sslenabled – Is encrypted connection required (this is optional)  
+> iswindowsauthentication: Is windows authentication required (Required for MSSQL only)  
+> sslenabled: Is encrypted connection required (this is optional)  
 > additionalparameters - Additional parameters required for database connection (this is optional)
 
 ![Database-reset](/static/assets/admin-utility/images/kubernete-database-reset.png)

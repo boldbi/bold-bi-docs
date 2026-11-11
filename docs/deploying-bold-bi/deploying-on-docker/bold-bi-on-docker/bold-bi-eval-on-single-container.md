@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deploy Bold BI Evaluation on Docker | Bold BI Documentation
+title: Deploy Bold BI Evaluation on Docker in Bold BI | Bold BI
 description: Learn how to deploy Bold BI application on Docker Environment and know its prerequisites, recommended specifications, and upgrading to the latest version.
 platform: bold-bi
 documentation: ug
 ---
 
-# Deploy Bold BI Evaluation on Docker
+# Deploy Bold BI Evaluation on Docker in Bold BI
 
 The Bold BI Evaluation Image is specifically designed to streamline the Bold BI evaluation process by integrating a PostgreSQL server within the Bold BI container. Please note that this image tag is intended for evaluation purposes only and should not be used in production environments. Follow the below steps to deploy the Bold BI Evaluation Image.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Application Startup – Embedded BI | Bold BI Documentation
+title: Application Startup - Embedded Analytics | Bold BI
 description: Read this guide to learn how to configure the installed Bold BI Embedded application with the admin account and data storage options to get started with Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Application Startup
+# Application Startup - Embedded Analytics
 
 > **NOTE:** To configure Bold BI v4.2.68 or earlier versions, please refer to [v4.2.68 or earlier](/application-startup/v4.2.68-or-earlier/).
 
@@ -116,7 +116,7 @@ With this mode, each tenant has a dedicated database, ensuring complete physical
 
 Once you select the preferred database mode, click Next to proceed to the database configuration step, where you will enter the required connection details.
 
-This configuration helps you configure single or individual databases for Bold ID, Bold BI, and Data Store configuration.
+This configuration helps you configure single or individual databases for Bold BI, Bold BI, and Data Store configuration.
 
 The `Bold ID` database stores user identities, site details, and access information.
 
@@ -135,13 +135,13 @@ To connect to an existing server instance, you have the following options:
 
 > **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified in [this documentation](https://support.boldbi.com/kb/article/16632/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded).
 
-> **IMPORTANT:**  The Bold BI server will accept all connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option when configuring the Bold BI Server.
+> **IMPORTANT:**  The Bold BI Server will accept all connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option when configuring the Bold BI Server.
 
 Here, the user can select either the simple or advanced mode for configuration.
 
 ### Simple mode
 
-Please configure a single database for Bold ID, Bold BI, and Data Store.
+Please configure a single database for Bold BI, Bold BI, and Data Store.
 
 This configuration will store the user identities, site details, dashboards, data store, and users along with their access permissions in a single database.
 
@@ -151,9 +151,9 @@ By default, in Simple mode, the sites will be deployed in the local file system.
 
 ### Advanced mode
 
-Please configure individual databases for Bold ID, Bold BI, and Data Store. You can choose between the local file system and Azure Blob Storage for Bold ID and Bold BI.
+Please configure individual databases for Bold BI, Bold BI, and Data Store. You can choose between the local file system and Azure Blob Storage for Bold BI and Bold BI.
 
-The Bold ID database stores user identities and site details.
+The Bold BI database stores user identities and site details.
 
 The Bold BI database stores dashboards, users, and their access permissions.
 
@@ -163,7 +163,7 @@ The Data Store database stores authentication information and data extracted fro
 
 #### Storage Configuration
 
-In advanced mode, the user can select the preferred storage type, either File Storage or Blob Storage, to store the resource in Bold ID and Bold BI.
+In advanced mode, the user can select the preferred storage type, either File Storage or Blob Storage, to store the resource in Bold BI and Bold BI.
 
 ![Site File Storage](/static/assets/application-startup/images/file-storage.png)  
 
@@ -202,7 +202,7 @@ The Bold BI application requires specific collations based on the type of databa
 > **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Server. Learn more [here](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries).
 
 After clicking Next, the application will register and validate the site information. Once the process is completed, you will be able to:
-* Manage sites – where you can manage the permissions for the sites you have created. 
+* Manage sites: where you can manage the permissions for the sites you have created. 
 * Go to Dashboards - where you can create, edit, update the dashboards and so on. 
 
 ![Launch Bold BI Dashboards](/static/assets/application-startup/images/launch-application.png)
@@ -215,7 +215,7 @@ Open the Manage License Page - `{domain}/ums/administration/license-settings`
 
 Next, select the Enterprise BI tab.
 
-![BoldBI Enterprise tab](/static/assets/application-startup/images/boldbi-enterprise-tab.png)
+![Bold BI Enterprise tab](/static/assets/application-startup/images/boldbi-enterprise-tab.png)
 
 ### Activate Bold BI license using the login credential
 

@@ -136,6 +136,8 @@ Dashboard Expressions enable dashboard authors to create custom calculations wit
 
 [Level Of Detail Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/level-of-detail-expressions/)
 
+[Financial Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/financial-expressions/)
+
 ## Deleting an expression column
 
    Select an expression column in left pane.

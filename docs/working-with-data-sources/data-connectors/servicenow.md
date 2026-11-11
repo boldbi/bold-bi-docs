@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ServiceNow – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect ServiceNow web service using basic http authentication with Bold BI Cloud and create data source.
+title: ServiceNow Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect ServiceNow through basic HTTP authentication and its REST API with Bold BI Cloud, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to ServiceNow data source
+# ServiceNow Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to ServiceNow web services through the REST API. 
 
 ## Choose ServiceNow data source
-To configure the ServiceNow data source, follow the below steps:
+To configure the ServiceNow data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the ServiceNow data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/servicenow/ChooseDS_server.png)
 
 ## Create ServiceNow data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create ServiceNow data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create ServiceNow data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter the **Host Name** for the connected account. For example. `<:your_domain>.service-now.com`.
 3. Click the **Resources** dropdown box and choose the required endpoint.
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Create Zuora data source in Cloud BI Connector | Bold BI Docs
+title: Zuora Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect Zuora data through basic HTTP authentication with Bold BI to create a data source for the dashboards in your cloud application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zuora data source
+# Zuora Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer connects the Zuora web services through the REST API. 
 
 ## Choose Zuora data source
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

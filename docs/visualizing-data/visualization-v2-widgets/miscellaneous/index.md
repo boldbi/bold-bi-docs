@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous Widgets Overview | Bold BI Documentation
+title: Miscellaneous Widgets Overview in Bold BI | Bold BI
 description: Learn when to use Bold BI Modern miscellaneous widgets, review the available widget types, and understand how they support layout, content, and viewer actions.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Miscellaneous
+# Miscellaneous Widgets Overview
 
 Miscellaneous widgets support layout, descriptive content, actions, and custom viewer experiences. Use these widgets when the dashboard needs more than analytical charts, such as explanatory text, images, buttons, tabs, or specialized content areas.
 

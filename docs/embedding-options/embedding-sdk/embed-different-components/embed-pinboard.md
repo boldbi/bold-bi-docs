@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Bold BI Pinboard dashboard - SDK Based Embedding | Bold BI Docs
+title: Bold BI Pinboard dashboard - SDK Based Embedding | Bold BI
 description: Learn how to embed Bold BI Pinboards seamlessly into your business application using the SDK to enhance data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
-# Embed a Pinboard Using an Embed Token
+# Bold BI Pinboard dashboard - SDK Based Embedding
 
 You can view curated insights and visuals in place of the pinboard based on the user permissions.
 

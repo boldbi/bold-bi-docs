@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Gridlines in Chart – Embedded BI | Bold BI Documentation
+title: Display Gridlines in Chart - Embedded Analytics | Bold BI
 description: Learn how to display or hide grid lines of primary/secondary value axis and category axis in chart widget of Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/chart-gridlines/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Chart Axis Grid Lines
+# Display Gridlines in Chart - Embedded Analytics
 
 The chart widget with enabled axis gridlines makes it easier for users to read values.
 

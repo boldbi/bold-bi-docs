@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis Settings - Widget Properties | Bold BI Documentation
+title: Axis Settings in Modern Widgets in Bold BI | Bold BI
 description: Learn how to configure category axis and value axis settings including titles, labels, rotation, overflow mode, and axis type in Bold BI Modern widgets.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/axis-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Axis Settings
+# Axis Settings in Modern Widgets
 
-Axis settings control how the category axis (X-axis in column charts, Y-axis in bar charts) and the primary value axis (Y-axis in column charts, X-axis in bar charts) are labeled and styled. Well-configured axes give viewers the context they need to interpret chart values without having to reference a data table.
+Axis settings in Bold BI control how the category axis (X-axis in column charts, Y-axis in bar charts) and the primary value axis (Y-axis in column charts, X-axis in bar charts) are labeled and styled. Well-configured axes give viewers the context they need to interpret chart values without having to reference a data table.
 
 | Unsupported widgets |
 |---|
@@ -19,7 +19,7 @@ Axis settings control how the category axis (X-axis in column charts, Y-axis in 
 
 ## Appearance Properties
 
-#### Title Color
+### Title Color
 
 Sets the font color of both axis titles.
 
@@ -41,13 +41,13 @@ Toggles the visibility of the axis border line.
 
 The category axis displays the dimension field used to group data (for example, product names or date values).
 
-#### Show Category Axis
+### Show Category Axis
 
 Toggles the entire category axis. When disabled, the dependent properties **Show Axis Title**, **Axis Title Text**, **Trim Overflow Mode**, **Trim Axis Labels**, **Label Rotation**, and **Auto Interval** are also hidden.
 
 ![Show Category Axis](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/show-categoryaxis.png)
 
-#### Show Category Axis Title
+### Show Category Axis Title
 
 Toggles the visibility of the category axis title label independently of the axis tick labels.
 
@@ -99,7 +99,7 @@ When enabled (the default), Bold BI automatically calculates the label interval 
 
 The primary value axis displays the measured values plotted on the chart.
 
-#### Show Primary Axis
+### Show Primary Axis
 
 Toggles the visibility of the primary value axis. When disabled, the dependent properties **Axis Title**, **Axis Title Text**, **Axis Type**, and **Axis Format** are hidden.
 

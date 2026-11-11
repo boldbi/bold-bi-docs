@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Combine Widget – Embedded BI Visual | Bold BI Documentation.
+title: Combine Widget - Embedded Analytics Visual | Bold BI
 description: Learn how to use a combine widget to group a set of visuals in the dashboard for unique identity in Bold BI.
 canonical: "/visualizing-data/visualization-widgets/combine-widget/"
 platform: bold-bi
 documentation: ug
 
 ---
-# How to configure combine widget 
+# Combine Widget - Embedded Analytics Visual
 
-Combine widget allows you to add multiple widgets in one container. 
+Combine widget lets you add multiple widgets in one container. 
 
 ![Combine widgets](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets.png)
 
@@ -50,7 +50,7 @@ You can format the combine widget for better illustration of the view that you r
 
 ## Basic settings
 
-Ordering of widget allows you to make the widget move back and forth. 
+Ordering of widget lets you make the widget move back and forth. 
 
 The property panel of the combine widget shows the list of widgets, which is dragged into it.
 
@@ -68,7 +68,7 @@ Now, the combo box widget is at the bottom of the combine widget and cannot be s
 
 ### Apply Stack Order
 
-This allows you to stack entire widgets on top of each other.
+This lets you stack entire widgets on top of each other.
 
 ![Apply Stack Order](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/apply-stack-order-combine.png)
 
@@ -93,7 +93,7 @@ This allows set **background image** for the combine widget.
 
 ### Background Color
 
-This allows you to set **background color** to the combine widget.
+This lets you set **background color** to the combine widget.
 
 ### Transparency
 
@@ -105,7 +105,7 @@ This property give **shadow** around the combine widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 

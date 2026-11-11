@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email with Microsoft Office 365 OAuth2 | Bold BI Docs
+title: Email with Microsoft Office 365 OAuth2 Settings | Bold BI
 description: Learn how to use the Microsoft Office 365 account through OAuth authentication for mail notifications on account activation, dashboard export, comments, etc.
 platform: bold-bi
 documentation: ug

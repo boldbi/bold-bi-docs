@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scatter Chart (Modern) Widget | Bold BI Documentation
+title: Scatter Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, axis settings, formatting, tooltip settings, and interactions for the modern Scatter Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/scatter-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Scatter Chart
 documentation: ug
 ---
 
-# Scatter Chart
+# Scatter Chart for Modern Dashboards
 
-A Scatter Chart plots data points using X- and Y-axis values, helping viewers identify relationships, clusters, and outliers. Assigning a measure to `Size` displays the points as bubbles and represents an additional value through bubble size.
+The Scatter Chart widget in Bold BI plots data points using X- and Y-axis values, helping viewers identify relationships, clusters, and outliers. Assigning a measure to `Size` displays the points as bubbles and represents an additional value through bubble size.
 
 ![Scatter Chart](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/scatter-chart-view.png)
 
@@ -162,7 +162,7 @@ Shows or hides grid lines aligned with the Y-axis values.
 
 ### Formatting
 
-This group is available when `Row` is not configured.
+The Formatting group is available when `Row` is not configured.
 
 #### Color Settings
 
@@ -172,7 +172,7 @@ Refer to [Conditional Formatting](/visualizing-data/visualization-v2-widgets/pro
 
 ### Series Palette
 
-This group is available when `Row` is configured.
+The Series Palette group is available when `Row` is configured.
 
 #### Use Default Palette
 

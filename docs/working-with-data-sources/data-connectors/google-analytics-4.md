@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Analytics 4 Connector – Cloud BI | Bold BI Docs
-description: Learn how to connect Google Analytics 4 through OAuth-based authentication with Bold BI Cloud and create data sources.
+title: Google Analytics 4 Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google Analytics 4 through OAuth-based authentication with Bold BI Cloud and create data sources for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google Analytics 4 data source
+# Google Analytics 4 Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Google Analytics 4 web services through the REST API. 
 
 ## Choose Google Analytics 4 data source
-To configure the Google Analytics 4 data source, follow the below steps:
+To configure the Google Analytics 4 data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Google Analytics 4 web service:
 
 ## Connect to Google Analytics 4
 ### Create Google Analytics 4 data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google Analytics 4 data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Google Analytics 4 data source.
 1. Enter a name and description (optional) for the data source.
 2. Select the account and property value.
 3. You can choose a specific start date and end date using the date picker controls provided. If you select the launch date option, the initial launch date of Google Analytics 4 will be considered as the start date for the API. If no end date option is chosen, the current date will be used as the end date to pull data up to date during data source creation and refresh.
@@ -150,7 +150,7 @@ With the deprecation of Universal Analytics, Google Analytics 4 (GA4) is the sta
 
 ### Link Google Ads with Google Analytics 4 (GA4)
 
-In order to access Google Ads data in Bold BI, it is necessary to link your Google Ads account with your Google Analytics 4 (GA4) property. This linkage enables GA4 to gather and provide Google Ads campaign information
+To access Google Ads data in Bold BI, it is necessary to link your Google Ads account with your Google Analytics 4 (GA4) property. This linkage enables GA4 to gather and provide Google Ads campaign information
 
 1. Sign in to Google Analytics 4 (GA4) using the Google account that has access to both the required GA4 property and the associated Google Ads account.
 

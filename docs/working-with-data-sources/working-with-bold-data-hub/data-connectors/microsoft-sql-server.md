@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Microsoft SQL Server Bold Data Hub Connector – Bold BI
+title: Microsoft SQL Server Connector for Bold Data Hub | Bold BI
 description: Learn how to use the Microsoft SQL Server Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Microsoft SQL Server
+# Microsoft SQL Server Connector for Bold Data Hub
 
 Microsoft SQL Server is a proprietary relational database management system developed by Microsoft using Structured Query Language. It stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
 
@@ -33,15 +33,15 @@ drivername: mssql+pyodbc
 
    1. Click the `Data Hub` icon on the Navigation Pane.
 
-  ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
+  ![sql Bold Data Hub- Bold BI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
   2. Click `Add Pipeline` and provide the new pipeline's name.
   
-   ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
+   ![sql Bold Data Hub- Bold BI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
   3. Select the newly created pipeline and add the `MSSQL` template.
 
-  ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/sql_addtemplate.png#max-width=100%)
+  ![sql Bold Data Hub- Bold BI](/static/assets/working-with-etl/images/sql_addtemplate.png#max-width=100%)
   
 ### Configuration Parameters
 
@@ -62,7 +62,7 @@ drivername: mssql+pyodbc
 
   4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
 
-  ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/sql_yaml.png#max-width=100%)
+  ![sql Bold Data Hub- Bold BI](/static/assets/working-with-etl/images/sql_yaml.png#max-width=100%)
 
   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
@@ -70,21 +70,21 @@ drivername: mssql+pyodbc
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![SQL - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![SQL - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![SQL - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![SQL - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![SQL - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
+![SQL - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![SQL - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![SQL - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
-![SQL - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+![SQL - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 
 5. Click `Edit DataSource` Option to view the created tables.
@@ -196,7 +196,7 @@ plugins:
 2. When a custom query is used, the select parameter does not extract data from the table name specified. Instead, the name provided in select is used only to create the destination table where the query result will be stored.
 
 3. Add Query under Properties and include the query. Please note that when using Query in the template, the Select parameter is used to create the table for storing the query result instead of extracting the data from the name given in it.
-![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/custom_query.png#max-width=100%)
+![sql Bold Data Hub- Bold BI](/static/assets/working-with-etl/images/custom_query.png#max-width=100%)
 Note: When using a custom query, data is not extracted from the table name specified. Instead, the query result is used to create and populate the table.
 
 ### Example Configuration

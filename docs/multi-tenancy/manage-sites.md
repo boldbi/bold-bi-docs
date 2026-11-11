@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manage sites in Multi-tenancy of Embedded BI | Bold BI Docs
+title: Manage Sites in Multitenancy of Embedded Analytics | Bold BI
 description: Learn here how to manage the site information, isolation code, custom attribute, how to grant and revoke access to the site users and more in Embedded Bold BI. 
 platform: bold-bi
 documentation: ug
@@ -8,9 +8,9 @@ documentation: ug
 
 # Manage sites
 
-This section briefly explains how to manage the sites and provides information about the site.
+Manage Bold BI sites from the site management page to edit site details, manage site users, and suspend a site.
 
-### Suspend Site
+## Suspend Site
 
 You can suspend the site by clicking the `Suspend` option in the Action Menu.
 
@@ -62,7 +62,7 @@ By clicking on the site name, you can view the site information.
 
 ### General
 
-This section displays basic information about the site.
+The General section shows basic information about the site.
 
 * Site Name
 * Site Url
@@ -73,7 +73,7 @@ This section displays basic information about the site.
 
 ### Site Users 
 
-This section shows the list of users who have access to the site.
+The Site Users section lists the users who have access to the site.
 
 ![Site Users](/static/assets/multi-tenancy/images/site-users.png#max-width=95%)
 

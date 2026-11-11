@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Live Agent – Cloud BI Data Connector | Bold BI Documentation
+title: LiveAgent Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Live Agent web service through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to LiveAgent data source
+# LiveAgent Data Connector Guide in Bold BI
 The Bold BI dashboard designer connects to the LiveAgent web services through the REST API.
 
 ## Choose LiveAgent data source
@@ -31,7 +31,7 @@ The Bold BI dashboard designer connects to the LiveAgent web services through th
 
 ## Create LiveAgent data source
 
-Once you click the LiveAgent data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create LiveAgent data source.
+Once you click the LiveAgent data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create LiveAgent data source.
 
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid LiveAgent REST API endpoint in the URL textbox. Refer to the [LiveAgent API documentation](https://www.ladesk.com/features/api/) for more details.
@@ -49,7 +49,7 @@ Once you click the LiveAgent data source, the NEW DATA SOURCE configuration pane
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How to get APIKEY from LiveAgent
+### How to get APIKEY from LiveAgent
 1. Login to your LiveAgent account.
 2. Navigate to **Configuration> System> API**.
 3. Click on the **ADD API KEY** button.
@@ -88,7 +88,7 @@ The period before the next refresh call is triggered. It will automatically init
 
 ### Preview and Data Import
 
-* Click **Preview & Connect** in order to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of the JSON data retrieved from the LiveAgent Rest API request. This dialog displays a list of schemas in a treeview and their corresponding values in a grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Schema window](/static/assets/working-with-datasource/data-connectors/images/live-agent/asknicelyschemawindow.png)

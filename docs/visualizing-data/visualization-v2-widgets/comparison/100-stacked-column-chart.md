@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 100% Stacked Column (Modern) | Bold BI Documentation
+title: 100% Stacked Column Chart for Modern Dashboards | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern 100% Stacked Column Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/100-stacked-column-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: 100% Stacked Column Chart
 documentation: ug
 ---
 
-# 100% Stacked Column Chart
+# 100% Stacked Column Chart for Modern Dashboards
 
-A 100% Stacked Column Chart displays each category as a vertical column normalized to 100%. Its segments show the percentage contribution of each series.
+The 100% Stacked Column Chart widget in Bold BI displays each category as a vertical column normalized to 100%. Its segments show the percentage contribution of each series.
 
 ![100% Stacked Column Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/100-stacked-column-chart/hundredstacked-columnchart.png)
 

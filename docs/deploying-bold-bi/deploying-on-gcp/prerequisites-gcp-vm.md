@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Prerequisites for Deploying Bold BI on GCP VM | Bold BI Docs
-description: Learn about the prerequisites to deploy the Bold BI server application in the Google Cloud Platform instance.
+title: Prerequisites for Deploying Bold BI on GCP VM | Bold BI
+description: Learn about the prerequisites to deploy the Bold BI Server application in the Google Cloud Platform instance.
 platform: bold-bi
 documentation: ug
 ---
-# Prerequisites to use Bold BI server on GCP
+# Prerequisites for Deploying Bold BI on GCP VM
 
-This section explains the requirement to use the Bold BI server on the GCP portal.
+This section explains the requirement to use the Bold BI Server on the GCP portal.
 
 1. GCP subscription with required privileges.
 

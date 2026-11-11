@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 100% Stacked Bar Chart – Embedded BI Visual | Bold BI Docs
+title: 100% Stacked Bar Chart - Embedded Analytics Visual | Bold BI
 description: Learn how to create a 100% Stacked Bar Chart visual in Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/100-stacked-bar-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: 100% Stacked Bar Chart
 documentation: ug
 ---
 
-# 100% Stacked Bar Chart
+# 100% Stacked Bar Chart - Embedded Analytics Visual
 
-The 100% Stacked Bar Chart allows you to compare multiple measures by stacking the bars horizontally, one after the other.
+The 100% Stacked Bar Chart lets you compare multiple measures by stacking the bars horizontally, one after the other.
 
 ![Hundred stacked bar chart image1](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstacked-barchart.png)
 
@@ -239,19 +239,19 @@ You can view the list of properties that are available for the widget with the d
 
 #### Name
 
-This allows you to change the `title` for this area chart widget.
+This lets you change the `title` for this area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/Title.png)
 
 #### Subtitle
 
-This area chart widget allows you to provide the `subtitle`.
+This area chart widget lets you provide the `subtitle`.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/Subtitle.png)
 
 #### Description
 
-This allows you to provide the `description` about this area chart widget.
+This lets you provide the `description` about this area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/Description.png)
 
@@ -265,7 +265,7 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 ![Chart Type](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/name.png)
 
-**Chart Type**: This feature allows you to switch the widget view from the current chart type to another chart type.
+**Chart Type**: This feature lets you switch the widget view from the current chart type to another chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis.
 
@@ -302,23 +302,23 @@ This feature enables you to personalize the color of the value label.
 
 #### Value Label Position
 
-This option allows you to customize the position of the value label in a chart. By default, it is set to 'Auto,' so the label position for the percent stacked bar chart will be set as middle.
+This option lets you customize the position of the value label in a chart. By default, it is set to 'Auto,' so the label position for the percent stacked bar chart will be set as middle.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/value-labelposition.png)
 
 #### Value Label Rotation
  
-This allows you to define the rotation angle for the value labels to display.
+This lets you define the rotation angle for the value labels to display.
 
 ![Label-Rotation](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/label-rotation.png)
 
 #### Value Label Suffix
 
-This allows you to show or hide the suffix value of value labels.
+This lets you show or hide the suffix value of value labels.
 
 #### Suffix Value
 
-This feature allows you to customize the suffix value of value labels.
+This feature lets you customize the suffix value of value labels.
 
 ![Suffix-Value](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/suffix-value.png)
 
@@ -326,19 +326,19 @@ This feature allows you to customize the suffix value of value labels.
 
 ### Show Items With No Data
 
-This allows you to show the data for which column does `not` have any values.
+This lets you show the data for which column does `not` have any values.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/areachart-gap.png)
 
 ### Empty Point Mode
 
-This allows you to handle the display mode of the data point values when they are `null or undefined` and the `Show Items With No Data` option is enabled.
+This lets you handle the display mode of the data point values when they are `null or undefined` and the `Show Items With No Data` option is enabled.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/areachart-gap.png)
 
 ### Gap
 
-This option allows you to display the null or undefined values as gaps.
+This option lets you display the null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/areachart-gap.png)
 
@@ -376,17 +376,17 @@ When this support is enabled, the size of the scroll bar thumb on the chart will
 
 #### Page Size
 
-This option allows you to specify the number of records that need to be fetched on the initial load.
+This option lets you specify the number of records that need to be fetched on the initial load.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/Showtooltip.png)
 
@@ -398,19 +398,19 @@ As it is a percentage type, values will be shown with percentages when you hover
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-tooltip.png)
 
@@ -420,7 +420,7 @@ This option allows you to display tooltip text and value colors that correspond 
 
 #### Show Legend
 
-A legend is a text used to describe the plotted data. This allows you to toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through the combo box.
+A legend is a text used to describe the plotted data. This lets you toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through the combo box.
 
 ![Show-Legend](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/show-legend.png)
 
@@ -428,18 +428,18 @@ Enabling the option of **Custom Legend Text** will allow you to define custom te
 
 #### Legend Interactivity
 
-The chart's `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make the chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart's `legend interactivity` option lets you control the behavior of the chart legends. This provides an option to make the chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
 Disabling the Interactivity feature in the Legend Settings category prevents you from clicking on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-interactivity-enable.png)
 
 #### Legend Label Color
 
-This allows you to change the title and label colors of the chart legend.
+This lets you change the title and label colors of the chart legend.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-label-color-option.png)
 
@@ -455,11 +455,11 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top, and Bottom**.
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
 
@@ -477,19 +477,19 @@ This enables you to alter the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend to a `Circle.`
+This option lets you change the shape of the legend to a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in the `Series` section.
+This option lets you change the shape of the legend in the `Series` section.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart, which will be reflected with the `Show Legend` option.
+This lets you add the legend title for the chart, which will be reflected with the `Show Legend` option.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legendtitle.png)
 
@@ -499,7 +499,7 @@ This option enables you to customize the legend text according to the value of t
 
 ***None***
 
-This option allows you to render the legend items without wrapping or trimming them.
+This option lets you render the legend items without wrapping or trimming them.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-none-option.png)
 
@@ -507,7 +507,7 @@ This option allows you to render the legend items without wrapping or trimming t
 
 ***Trim***
 
-This option allows you to trim the legend items if their legend exceeds the `Text Width` value.
+This option lets you trim the legend items if their legend exceeds the `Text Width` value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-trim-option.png)
 
@@ -515,7 +515,7 @@ This option allows you to trim the legend items if their legend exceeds the `Tex
 
 ***Wrap***
 
-This option allows you to wrap the legend items based on the value of `Text Width`.
+This option lets you wrap the legend items based on the value of `Text Width`.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-wrap-option.png)
 
@@ -523,7 +523,7 @@ This option allows you to wrap the legend items based on the value of `Text Widt
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-width-option.png)
 
@@ -543,23 +543,23 @@ You can enable linking and configure it to navigate to a general URL with or wit
 
 ![Chart axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/axis-settings.png)
 
-This section allows you to customize the axis settings in the chart.
+This section lets you customize the axis settings in the chart.
 
 #### Title color
 
-This allows you to customize the axis title color.
+This lets you customize the axis title color.
 
 ![Title color](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/title-color.png)
 
 #### Label color
 
-This allows you to customize the color of the axis label.
+This lets you customize the color of the axis label.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/label-color.png)
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/show-axis-border.png)
 
@@ -571,7 +571,7 @@ This enables the visibility of the `Category Axis`.
 
 #### Show Category Axis Title
 
-This allows you to enable the visibility of the `Category Axis` title.
+This lets you enable the visibility of the `Category Axis` title.
 
 ![Category axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstackedbarchart-categoryaxistitle.png)
 
@@ -581,7 +581,7 @@ If you disable the `Show Category Axis` option, dependencies properties which ar
 
 #### Category Axis Title
 
-This allows you to edit the title of the `Category Axis` for the chart. It will be reflected as the name of the x-axis on the chart.
+This lets you edit the title of the `Category Axis` for the chart. It will be reflected as the name of the x-axis on the chart.
 
 ![Edit category axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstackedbarchart-editcategoryaxistitle.png)
 
@@ -591,7 +591,7 @@ If we uncheck the `Show Axis Title` property, the Axis title text box property w
 
 #### Label overflow mode
 
-This allows you to control the display mode of the overlapping labels in the `Category Axis`. 
+This lets you control the display mode of the overlapping labels in the `Category Axis`. 
 
 ***Trim***
 
@@ -607,11 +607,11 @@ This option hides the overlapping label on the axis.
 
 #### Trim Axis Labels
 
-This option allows you to trim the `axis` labels based on the value of the `Maximum Label Width` property.
+This option lets you trim the `axis` labels based on the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
+This option lets you set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/maximum-label-width.png)
 
@@ -619,7 +619,7 @@ This option allows you to set a `maximum width` for the axis labels, and it can 
 
 #### Category Axis Label Rotation
 
-This allows you to define the rotation angle for displaying the category axis labels.
+This lets you define the rotation angle for displaying the category axis labels.
 
 ![Category-Axis-Label-Rotation](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/axis-label-rotation.png)
 
@@ -633,7 +633,7 @@ By default, the `Auto Interval` property is enabled. The Auto Interval property 
 
 #### Show Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` for chart. 
+This lets you enable the `Primary Value Axis` for chart. 
 
 ![Show-Primary-Value-Axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/show-primary-value-axis.png)
 
@@ -643,13 +643,13 @@ If you disable the `Show Primary Axis` option, dependencies properties which are
 
 #### Show Primary Value Axis Title
 
-This feature allows you to enable the visibility of the chart's `Primary Value Axis` title.
+This feature lets you enable the visibility of the chart's `Primary Value Axis` title.
 
 ![Primary value axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstackedbarchart-primaryvalueaxistitle.png)
 
 #### Primary Value Axis Title
 
-This allows you to edit the title of the `Primary Value Axis`. It will be reflected in the y-axis name of the chart. 
+This lets you edit the title of the `Primary Value Axis`. It will be reflected in the y-axis name of the chart. 
 
 ![Edit primary value axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/editprimaryvalueaxistitle.png)
 
@@ -663,7 +663,7 @@ When this property is enabled, the chart will display negative values on the top
 
 #### Axis Range Settings
 
-This allows you to manually set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog.
+This lets you manually set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/axisrangesettings.png)
 
@@ -673,7 +673,7 @@ It will be reflected in the primary value axis of the chart.
 
 ### Parameter Support in Axis range:
 
-This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This lets you dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -729,7 +729,7 @@ If you want to establish the same ranges in multiple cases, create a parameter v
 
 #### Axis Format
 
-This option allows you to format the primary and secondary axis values using the formatting details provided in the Format button. For more information, refer to this measure format.
+This option lets you format the primary and secondary axis values using the formatting details provided in the Format button. For more information, refer to this measure format.
 
 ![Axis Format](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/axis-format.png)
 
@@ -745,7 +745,7 @@ This enables you to enable the gridlines for the `Primary Value Axis` in the 100
  
 #### Category Axis
 
-This allows you to enable the gridlines for the `Category Axis` on the 100% stacked bar chart.
+This lets you enable the gridlines for the `Category Axis` on the 100% stacked bar chart.
 
 ![Hundred percent stacked bar chart category axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/categoryaxis.png)
 
@@ -759,13 +759,13 @@ This feature enables you to customize the color of the widget.
 
 ### Series Palette
 
-This allows you to apply color to the chart series either using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if you have configured the row section in the chart.
+This lets you apply color to the chart series either using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if you have configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/series-palette.png)
 
 #### Use Default Palette
 
-This option allows you to apply the default color for chart series.
+This option lets you apply the default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -785,7 +785,7 @@ It enables you to apply colors to chart series based on data. If you wish to ass
 
 ***Index***
 
-It allows you to apply color to chart series based on the `Index`, ensuring that the colors remain consistent even if the data is changed. Only 15 different colors are shown, after which the colors will repeat from the ones above.
+It lets you apply color to chart series based on the `Index`, ensuring that the colors remain consistent even if the data is changed. Only 15 different colors are shown, after which the colors will repeat from the ones above.
 
 For example, if you are displaying the countries based on the increasing order of the case count, index-based color mapping will be useful to set the colors based on the rank. For instance, assign the color red to the top-ranked country, and this color will be maintained for the country with the largest case count.
 
@@ -795,7 +795,7 @@ For example, if you are displaying the countries based on the increasing order o
  
 ### Font settings
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/font-settings.png)
 
@@ -809,11 +809,11 @@ By default, the `Auto Font Size` property is enabled. This property is used to a
 
 #### Act as Master Widget
 
-This allows you to define the 100% stacked bar chart widget as a master widget, so that other widgets in a dashboard can listen to its filter action.
+This lets you define the 100% stacked bar chart widget as a master widget, so that other widgets in a dashboard can listen to its filter action.
 
 #### Ignore Filter Actions
 
-This feature allows you to configure the 100% stacked bar chart widget to disregard any filter actions applied to other widgets in a dashboard.
+This feature lets you configure the 100% stacked bar chart widget to disregard any filter actions applied to other widgets in a dashboard.
 
 #### Hierarchical Filter
 
@@ -823,7 +823,7 @@ When the `Hierarchical Filter` option is enabled, the Top N will be applied to e
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the 100% Stacked Bar Chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the 100% Stacked Bar Chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
@@ -831,11 +831,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the 10
 
 ### Title Alignment
 
-This allows you to handle the alignment of the widget title to either the **left, center, or right**.
+This lets you handle the alignment of the widget title to either the **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -843,7 +843,7 @@ When Auto Font Size is enabled, the font size of the title will be adjusted auto
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -851,7 +851,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -859,15 +859,15 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -875,19 +875,19 @@ This allow you to set the **background image** for the 100% Stacked Bar chart wi
 
 ### Background Color
 
-This allows you to set the **background color** to the 100% Stacked Bar chart widget.
+This lets you set the **background color** to the 100% Stacked Bar chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the background color.
+This property lets you specify the **transparency** for the background color.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -897,41 +897,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the 100% Stacked Bar chart. 
+This lets you enable or disable the `widget title` of the 100% Stacked Bar chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the 100% Stacked Bar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the 100% Stacked Bar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the 100% Stacked Bar chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the 100% Stacked Bar chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the 100% Stacked Bar chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the 100% Stacked Bar chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the 100% Stacked Bar chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the 100% Stacked Bar chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the 100% Stacked Bar chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the 100% Stacked Bar chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

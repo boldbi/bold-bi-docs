@@ -1,16 +1,16 @@
 ---
 layout: post
-title: KPI Card (Modern) - Embedded BI Visual | Bold BI Documentation
-description: Learn how to configure data, KPI values, indicators, formatting, and viewer actions for the modern KPI Card widget in Bold BI.
+title: KPI Card for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, KPI values, target indicators, formatting, and viewer actions for the modern KPI Card widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/cards/kpi-card/"
 platform: bold-bi
 control: KPI Card
 documentation: ug
 ---
 
-# KPI Card
+# KPI Card for Modern Dashboards
 
-A KPI Card compares an actual value with a target value and presents the result as a compact performance indicator. It can display the difference, percentage change, direction indicator, supporting values, and a sparkline trend.
+The KPI Card widget in Bold BI compares an actual value with a target value and presents the result as a compact performance indicator. It can display the difference, percentage change, direction indicator, supporting values, and a sparkline trend.
 
 Use a KPI Card when:
 
@@ -59,11 +59,11 @@ Assigning a field to `Series` changes the widget from a single card to a collect
 
 Click the `More options` icon for an assigned field to configure the available options. The options vary based on the field type and data section.
 
-- **Rename** — Overrides the display name of the assigned field.
-- **Aggregation type** — Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
-- **Sort** — Configures the order of values in a dimension field. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
-- **Filter(s)** — Applies field-level conditions to include or exclude values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
-- **Format** — Changes the display format of the `Actual Value`. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+- **Rename**, Overrides the display name of the assigned field.
+- **Aggregation type**, Changes how a measure is summarized. See [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/).
+- **Sort**, Configures the order of values in a dimension field. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/).
+- **Filter(s)**, Applies field-level conditions to include or exclude values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+- **Format**, Changes the display format of the `Actual Value`. See [Formatting Measure Type Column](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 > **NOTE:** The `Format` option is not available for `Target Value`. The format applied to `Actual Value` is also applied to `Target Value`.
 
@@ -227,7 +227,7 @@ Uses the direction color or a custom color for the value.
 
 #### Auto Font Size
 
-And **Value Font Size** — Control automatic or fixed sizing of the left value.
+And **Value Font Size**, Control automatic or fixed sizing of the left value.
 
 #### Show Caption
 
@@ -243,7 +243,7 @@ Uses the direction color or a custom color for the caption.
 
 #### Auto Font Size
 
-And **Caption Font Size** — Control automatic or fixed sizing of the caption.
+And **Caption Font Size**, Control automatic or fixed sizing of the caption.
 
 ### Right Value
 
@@ -261,7 +261,7 @@ Uses the direction color or a custom color for the value.
 
 #### Auto Font Size
 
-And **Value Font Size** — Control automatic or fixed sizing of the right value.
+And **Value Font Size**, Control automatic or fixed sizing of the right value.
 
 #### Show Caption
 
@@ -277,7 +277,7 @@ Uses the direction color or a custom color for the caption.
 
 #### Auto Font Size
 
-And **Caption Font Size** — Control automatic or fixed sizing of the caption.
+And **Caption Font Size**, Control automatic or fixed sizing of the caption.
 
 ### Image
 

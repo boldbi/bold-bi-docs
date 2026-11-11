@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip Customization – Embedded BI | Bold BI Documentation
+title: Tooltip Customization - Embedded Analytics | Bold BI
 description: Learn how to customize tooltip with different columns for different widgets in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/tooltip-customization/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Tooltip customization in the widgets
+# Tooltip Customization - Embedded Analytics
 
 Tooltips help users understand the exact numerical representation of the data records displayed in the widgets. They are informative and provide a robust way for users to explore raw data for a specific period or point, instead of showing all records at once in the visual. 
 

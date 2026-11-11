@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with Blazor Web Assembly | Bold BI Docs
+title: Embedding Analytics with Blazor Web Assembly | Bold BI
 description: Learn how to embed an analytics dashboard with a Blazor web assembly using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Blazor using the Embed SDK
+# Embedding Analytics with Blazor Web Assembly
 
-The sample has been provided in the following sections for `Blazor WebAssembly`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor WebAssembly` on your own.
+The sample has been provided in the following sections for `Blazor WebAssembly`, which demonstrates the dashboard rendering available on your Bold BI Server. It is followed by steps to create a new embedding application in `Blazor WebAssembly` on your own.
 
 > **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with sufficient information that you need to know before working on the sample.
 
@@ -152,7 +152,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following script tag in your `\wwwroot\index.html` page.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
     ```
 
 10. Inside the `<body>` tag, implement a function to render the dashboard.

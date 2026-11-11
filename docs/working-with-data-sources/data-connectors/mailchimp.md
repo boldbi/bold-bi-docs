@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Mailchimp – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Mailchimp service through basic http authentication with Bold BI Cloud and create data source.
+title: Mailchimp Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Mailchimp through basic HTTP authentication with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Mailchimp data source
+# Mailchimp Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Mailchimp web services through the REST API. 
 
 ## Choose Mailchimp data source
-To configure the Mailchimp data source, follow the below steps:
+To configure the Mailchimp data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Mailchimp data source, follow the below steps:
 
 ## Create Mailchimp data source
 
-Once you click the Mailchimp data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Mailchimp data source.
+Once you click the Mailchimp data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Mailchimp data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Mailchimp REST API endpoint in the URL textbox. Refer to the [Mailchimp API documentation](https://developer.mailchimp.com/documentation/mailchimp/guides/) for more details.
 
@@ -43,7 +43,7 @@ Once you click the Mailchimp data source, the NEW DATA SOURCE configuration pane
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Mailchimp data source?
+### How do I get API Key for connecting Mailchimp data source?
 
 1. Login to your [**Mailchimp**](https://login.mailchimp.com/) account. Go to *Account -> Profile*.
 2. In account details page, navigate to *Extras -> API Keys*.

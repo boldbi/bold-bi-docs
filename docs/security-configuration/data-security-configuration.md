@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Data Security Configuration – Embedded BI | Bold BI Docs
+title: Data Security Configuration - Embedded Analytics | Bold BI
 description: Learn how to enable data security through global embed configuration and access custom attribute, isolation code using configuration based embed support.
 platform: bold-bi
 documentation: ug
 ---
 
-# Data Security Configuration
+# Data Security Configuration - Embedded Analytics
 
 This section explains how to enable global embed configuration and embed the dashboard with global custom attributes and isolation code using the configuration file.
 

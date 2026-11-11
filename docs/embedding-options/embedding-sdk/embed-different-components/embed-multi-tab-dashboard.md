@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Multi-Tab Dashboard - SDK Based Embedding | Bold BI Docs
+title: Bold BI Multi-Tab Dashboard - SDK Based Embedding | Bold BI
 description: Learn how to seamlessly embed a multi-tab dashboard into your business application using the SDK to enhance data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed Authentication for the Multi-Tab Dashboard Viewer
+# Bold BI Multi-Tab Dashboard - SDK Based Embedding
 
 Embed a **multi-tab dashboard** programmatically from a Bold BI dashboard using authorization server authentication.
 

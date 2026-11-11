@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Bar Chart (Modern) | Bold BI Documentation
+title: Stacked Bar Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern Stacked Bar Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/stacked-bar-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Stacked Bar Chart
 documentation: ug
 ---
 
-# Stacked Bar Chart
+# Stacked Bar Chart for Modern Dashboards
 
-A Stacked Bar Chart uses horizontal bars divided into series segments. It compares category totals while also showing how each series contributes to those totals.
+The Stacked Bar Chart widget in Bold BI uses horizontal bars divided into series segments. It compares category totals while also showing how each series contributes to those totals.
 
 ![Stacked Bar Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/stacked-bar-chart/stacked-barchart.png)
 

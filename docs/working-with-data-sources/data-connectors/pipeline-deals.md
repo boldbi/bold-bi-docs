@@ -1,16 +1,16 @@
 ---
 layout: post
-title: PipelineDeals – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect PipelineDeals service through REST API endpoint with Bold BI Cloud and create data source.
+title: PipelineDeals Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect PipelineDeals through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to PipelineDeals data source
+# PipelineDeals Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to PipelineDeals web services through the REST API. 
 
 ## Choose PipelineDeals data source
-To configure the PipelineDeals data source, follow the below steps:
+To configure the PipelineDeals data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the PipelineDeals data source, follow the below steps:
 
 
 ## Create PipelineDeals data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create PipelineDeals data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create PipelineDeals data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid PipelineDeals REST API endpoint in the URL textbox. Refer to the [PipelineDeals API documentation](https://app.pipelinedeals.com/api/docs) for more details.
 
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting PipelineDeals data source?
+### How do I get Account Key for connecting PipelineDeals data source?
 1. Login to [PipelineDeals](https://app.pipelinedeals.com/login) account. Go to *Account Settings -> Pipeline Deals API*. Refer [Access API key](https://help.pipelinedeals.com/article/474-how-do-i-find-my-api-key)
 2. Use this *API key* as *api_key* value in URL in PipelineDeals data source in Bold BI Dashboard.
 

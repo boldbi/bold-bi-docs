@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Q&A Widget - Embedded BI Visual | Bold BI Documentation
+title: Q&A Widget - Embedded Analytics Visual in Bold BI | Bold BI
 description: Learn about Q&A widget and how to use a Q&A widget in the dashboard designing through simple Natural language questions using Bold BI application.
 canonical: "/artificial-intelligence-and-machine-learning/qna-widget/"
 platform: bold-bi
 documentation: ug
 ---
 
-# About Q&A Widget
-The BoldBI Q&A widget is an AI-powered tool that simplifies the process of converting data into visual charts by using natural language commands. It employs AI models using the AI Assistant service to comprehend your queries and crafts relevant charts, streamlining the process of data investigation and dashboard creation.
+# Q&A Widget - Embedded Analytics Visual
+The Bold BI Q&A widget is an AI-powered tool that simplifies the process of converting data into visual charts by using natural language commands. It employs AI models using the AI Assistant service to comprehend your queries and crafts relevant charts, streamlining the process of data investigation and dashboard creation.
 
 >**Breaking Changes:** Starting from Bold BI v8.1, the Q&A widget will integrate with our dedicated AI service. As a result, no fine-tuning process or initial configuration setup is required on your end to utilize the Q&A widget. 
 For versions prior to Bold BI v8.1, fine-tuning your data is necessary to use the Q&A widget. Please refer to the [Fine-Tuning Guide](/utilities/fine-tuning-utility/) for more details.
@@ -38,9 +38,9 @@ Review the generated chart and provide feedback by clicking like or dislike.
 
 ![Feedback Q&A widget](/static/assets/artificial-intelligence-and-machine-learning/images/qna-widget/feedback-qna.png)
 
-When you select the dislike option, a prompt will appear, allowing you to inform the BoldBI team about your reasons for disliking. This action will generate an email to the BoldBI team that includes the question, the data source's column names relevant to the widget in question, and any error logs. Your feedback will be used to enhance the AI model.
+When you select the dislike option, a prompt will appear, allowing you to inform the Bold BI team about your reasons for disliking. This action will generate an email to the Bold BI team that includes the question, the data source's column names relevant to the widget in question, and any error logs. Your feedback will be used to enhance the AI model.
 
-![Report feedback to BoldBI](/static/assets/artificial-intelligence-and-machine-learning/images/qna-widget/reportfeedback-qna.png)
+![Report feedback to Bold BI](/static/assets/artificial-intelligence-and-machine-learning/images/qna-widget/reportfeedback-qna.png)
 
 The email will be sent from the email configured in the [Email settings](https://help.boldbi.com/site-administration/email-settings/email-settings-configuration/). 
 

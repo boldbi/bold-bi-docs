@@ -7,7 +7,7 @@ documentation: ug
 
 ---
 
-# Office 365 support for authentication
+# Single Sign-On with Office 365 Users and Groups
 
 Bold BI Cloud supports the addition of Office 365 users and groups, along with your own users and groups. This allows you to share dashboards and email reports with them.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: LinkedIn – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect LinkedIn data using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: LinkedIn Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect LinkedIn data through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to LinkedIn data source
+# LinkedIn Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to LinkedIn web services through the REST API.
 
 ## Choose LinkedIn data source
 
-To configure the LinkedIn data source, follow the below steps:
+To configure the LinkedIn data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -44,7 +44,7 @@ To authenticate with the LinkedIn web service, follow these steps:
 
 ## Connect to LinkedIn
 ### Create LinkedIn data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create LinkedIn data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create LinkedIn data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid LinkedIn REST API endpoint in the URL textbox. Refer to the [LinkedIn API documentation](https://docs.microsoft.com/en-us/linkedin/) for more details.
 

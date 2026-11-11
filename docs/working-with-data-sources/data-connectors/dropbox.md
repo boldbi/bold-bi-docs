@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dropbox – Cloud BI Data Connector | Bold BI Documentation
+title: Dropbox Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect your Dropbox account with Bold BI Cloud, read CSV, JSON, XML and XLSX files and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Dropbox data source
+# Dropbox Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Dropbox web services through the REST API. 
 
-### Prerequisites with Dropbox data source 
+## Prerequisites with Dropbox data source
 
 1. Create the Dropbox App
 
@@ -57,7 +57,7 @@ The Bold BI dashboard designer supports connecting to Dropbox web services throu
   ![Explorer View](/static/assets/working-with-datasource/data-connectors/images/Dropbox/Client3.png)
   
 ## Choose Dropbox data source
-To configure the Dropbox data source, follow the below steps:
+To configure the Dropbox data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -87,7 +87,7 @@ Use the following steps to authenticate with the Dropbox web service:
 
 ## Connect to Dropbox
 ### Create Dropbox data source
-After successful authentication, the File Explorer panel opens. Follow the below steps to create Dropbox data source.
+After successful authentication, the File Explorer panel opens. Follow the following steps to create Dropbox data source.
 1. Enter a name for the data source.
 2. Explorer will list out all the folders and files with extension `csv`, `json`, `xml` and `xlsx`.
 3. Select the file you wish to preview and connect the data.

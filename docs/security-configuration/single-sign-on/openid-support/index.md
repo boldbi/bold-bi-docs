@@ -86,8 +86,24 @@ The Bold BI application can be configured to support OpenID Connect for Single S
     </table>
 
     ![OpenId settings](/static/assets/site-administration/openid-support/images/openid-settings.png#width=55%)
+    
+## HTTP OpenID Connect Support
 
-    ![OpenId group claim](/static/assets/site-administration/openid-support/images/openid-group-claim.png#width=55%)
+To allow HTTP-based OpenID Connect metadata endpoints, modify the following node in the config.json in the configuration settings:
+
+```json
+"EnableSslValidationOpenID": false
+```
+
+| Setting | Description |
+| --- | --- |
+| `EnableSslValidationOpenID` | Disables SSL certificate validation for OpenID Connect metadata and authority endpoints. |
+
+> **Note:** Set this option to `false` only for trusted HTTP endpoints in development or internal environments. HTTPS is strongly recommended for production deployments.
+    
+![OpenId settings](/static/assets/multi-tenancy/images/openid-sslenable.png)
+
+![OpenId group claim](/static/assets/site-administration/openid-support/images/openid-group-claim.png#width=55%)
 
 If we need to import the OpenID Connect groups, we must configure the group details when saving the OpenID authentication settings.
 

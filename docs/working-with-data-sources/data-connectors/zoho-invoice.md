@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Zoho Invoice - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Zoho Invoice web service through OAuth-based authentication with cloud-hosted Bold BI and create data source.
+title: Zoho Invoice Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Zoho Invoice through OAuth-based authentication and its REST API with cloud-hosted Bold BI, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zoho Invoice data source
+# Zoho Invoice Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zoho Invoice web services using the REST API. 
 
 ## Choose Zoho Invoice data source
@@ -52,7 +52,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

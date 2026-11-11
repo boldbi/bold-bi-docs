@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Period Over Period (Modern) | Bold BI Documentation
-description: Learn how to configure data, formatting, filters, and interactions for the modern Period Over Period widget in Bold BI dashboards.
+title: Period over Period in Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, formatting, filters, and interactions for the modern Period Over Period widget in Bold BI dashboards to compare two periods.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/period-over-period/"
 platform: bold-bi
 control: Period Over Period
 documentation: ug
 ---
 
-# Period Over Period
+# Period over Period in Modern Dashboards
 
-The Period Over Period widget allows users to select two time periods and compare data from a selected date range with data from a previous, subsequent, or custom comparison period.
+The Period Over Period widget in Bold BI lets users select two time periods and compare data from a selected date range with data from a previous, subsequent, or custom comparison period.
 
 ![Period Over Period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop.png)
 
@@ -21,7 +21,7 @@ Configure the data for the Period Over Period widget in the `ASSIGN DATA` tab.
 | Data section | Requirement | Description |
 |---|---|---|
 | **Column** | Required | Specifies the date or date-time dimension used to calculate the comparison periods and filter linked widgets. |
-| **Filters** | Optional | Allows you to apply additional filtering conditions to the Period Over Period data. |
+| **Filters** | Optional | Lets you apply additional filtering conditions to the Period Over Period data. |
 
 ### Assigning Data
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to create Zoho Books data source in Cloud BI | Bold BI Docs
-description: Learn how to connect Zoho Books web service through OAuth-based authentication and create data source with Bold BI Cloud application.
+title: Zoho Books Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Zoho Books through OAuth-based authentication and its REST API with Bold BI Cloud, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zoho Books data source
+# Zoho Books Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zoho Books web services using the REST API. 
 
 ## Choose Zoho Books data source
@@ -52,7 +52,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

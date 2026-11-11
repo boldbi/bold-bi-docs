@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Optimizely – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Optimizely data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: Optimizely Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Optimizely data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Optimizely data source
+# Optimizely Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to Optimizely web services through the REST API.
 
 ## Choose Optimizely data source
 
-To configure the Optimizely data source, follow the below steps:
+To configure the Optimizely data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -30,7 +30,7 @@ To configure the Optimizely data source, follow the below steps:
 
 ## Create Optimizely data source
 
-Once you click the Optimizely data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Optimizely data source.
+Once you click the Optimizely data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Optimizely data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Optimizely REST API endpoint in the URL textbox. Refer to the [Optimizely API documentation](https://docs.developers.optimizely.com/web-experimentation/reference/overview) for more details.
 
@@ -47,7 +47,7 @@ Once you click the Optimizely data source, the NEW DATA SOURCE configuration pan
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get App Token for connecting Optimizely data source?
+### How do I get App Token for connecting Optimizely data source?
 
 1. Login to [Optimizely](https://app.optimizely.com/signin) with the valid credentials and go to *Profile -> API Access*.
 2. Find your API token here. Click **Generate new token** with an appropriate name, if you don't have an API token yet. 

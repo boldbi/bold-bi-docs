@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Filter – Manual Mode – Embedded BI | Bold BI Docs
+title: User Filter - Manual Mode - Embedded Analytics | Bold BI
 description: Learn how to create the user filter through manual mode configuration by restricting field values access to users/groups in Bold BI Embedded.
 canonical: "/working-with-data-sources/user-filter/user-filter-manual/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Configure User Filter Manual Mode
+# User Filter - Manual Mode - Embedded Analytics
 Let's consider the <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a> sample here. In this dashboard, we will configure the user filter so that the staff and managers can view the data specific to the continent.
 
 To start, open the User Filter Dialog by following the steps mentioned [here](/working-with-data-sources/user-filter/#configuring-user-filter)
@@ -31,7 +31,7 @@ The filter can be set for each user or group by selecting the user or group and 
 
 
 ## Users/Groups
-All active users and groups on the Bold BI server will be listed. Users will be listed at the top followed by the groups.
+All active users and groups on the Bold BI Server will be listed. Users will be listed at the top followed by the groups.
 
 ![User Filter Manual User Options](/static/assets/working-with-datasource/user-filter/images/user-filter-dlg-manual-user-options.png)
 

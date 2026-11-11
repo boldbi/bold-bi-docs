@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Google Cloud SQL – Cloud BI Connector | Bold BI Docs
-description: Learn how to connect Google Cloud SQL using SQL Live Query with cloud-hosted Bold BI and create data source.
+title: Google Cloud SQL Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Google Cloud SQL using SQL Live Query with cloud-hosted Bold BI and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Google Cloud SQL data source
+# Google Cloud SQL Data Connector Guide in Bold BI
 The Bold BI Dashboard Designer supports connecting to multiple databases via Google Cloud SQL using the SQL Live Query (C# API).
 
 ## Choose Google Cloud SQL data source
@@ -37,7 +37,7 @@ After clicking on the data source, the **NEW DATA SOURCE** configuration panel o
 > **NOTE:**  To connect the data source with **SSH**, enable the SSH checkbox in the **New Data Source** configuration panel and enter the necessary credentials.
 ![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%)
 
-Google Cloud SQL supported database engine in Bold Bi:
+Google Cloud SQL supported database engine in Bold BI:
 
 	* MySQL
 	* PostgreSQL
@@ -76,7 +76,7 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/GoogleCloudSQL/GoogleCloudSQL_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/GoogleCloudSQL/maxRowOption.png#max-width=60%)	
  
 ### Refresh Settings

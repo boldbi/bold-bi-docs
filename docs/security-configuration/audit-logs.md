@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Guide to Track User Activity for Single Tenant | Bold BI Docs
+title: Guide to Track User Activity for Single Tenant | Bold BI
 description: Learn how to use Bold BI to monitor user activity for a single tenant, ensure security, compliance, and audit readiness with detailed insights for administrators.
 platform: bold-bi
 documentation: ug
 ---
 
-# Activity Logs
+# Guide to Track User Activity for Single Tenant
 
 The Audit Logs page allows administrators to track and review various user actions and changes within the system for a particular tenant. These logs help maintain accountability and transparency by providing a record of who performed what actions and when. The logs contain details about each activity, including the **User, Date and Time, Event Category, Event Type, Summary** and any associated Details.
 

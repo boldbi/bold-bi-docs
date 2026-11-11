@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pinning a Visual from Dashboard – Embedded BI | Bold BI Docs
+title: Pinning a Visual from a Dashboard in Bold BI | Bold BI
 description: Learn how to pin a visual from dashboard to pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
 canonical: "/managing-resources/manage-pinboards/pin-widgets/"
 platform: bold-bi
 documentation: ug
 ---
 
-# To Pin Widgets from Dashboard
+# Pinning a Visual from a Dashboard
 
 This section explains how to pin widgets to Pinboard in the Bold BI application.
 

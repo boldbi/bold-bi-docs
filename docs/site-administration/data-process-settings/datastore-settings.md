@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Extract Storage Settings – Embedded BI | Bold BI Docs
+title: Data Extract Storage Settings - Embedded Analytics | Bold BI
 description: Learn how to configure the data store settings for storing extracted data from data sources in Bold BI.
 platform: bold-bi
 documentation: UG
@@ -12,7 +12,7 @@ This section explains how to configure the DataStore settings for storing extrac
 
 DataStore is an intermediate database used to store imported data from web data sources and statistic files, with a scheduled refresh option to update data.
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 ## Database configuration
 

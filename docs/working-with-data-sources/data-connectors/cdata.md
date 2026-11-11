@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CData – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect CData with cloud-hosted Bold BI and create data source for dashboard preparation.
+title: CData Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect CData with cloud-hosted Bold BI and create a data source for dashboard preparation, including the data sources CData supports.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to CDATA data source
+# CData Data Connector Setup Guide in Bold BI
 The Bold BI Dashboard Designer supports connecting to a CDATA database using the SQL Live Query.
 
 ## Choose CDATA data source
@@ -71,7 +71,7 @@ In this connection type, data is fetched from the source periodically. Choose th
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mysql/Mysql_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Cdata/maxRowOption.png#max-width=60%)	
 
 ### Refresh Settings

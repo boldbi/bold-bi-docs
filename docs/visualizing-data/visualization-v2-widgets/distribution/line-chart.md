@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Line Chart (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Line Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, trend settings, forecast support, formatting, drill-down, and interactions for the modern Line Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/line-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Line Chart
 documentation: ug
 ---
 
-# Line Chart
+# Line Chart for Modern Dashboards
 
-A Line Chart connects data points with straight lines. It is commonly used to show trends, changes, and comparisons across time or another ordered category.
+The Line Chart widget in Bold BI connects data points with straight lines. It is commonly used to show trends, changes, and comparisons across time or another ordered category.
 
 ![Line Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/line-chart/line-chart.png)
 

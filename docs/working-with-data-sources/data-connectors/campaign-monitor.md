@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Campaign Monitor – Cloud BI Connector | Bold BI Learning
+title: Campaign Monitor Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Campaign Monitor web service through basic http authentication with Bold BI Cloud and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Campaign Monitor data source
+# Campaign Monitor Data Connector Guide in Bold BI
 Bold BI dashboard designer supports connecting Campaign Monitor web services through the REST API. 
 
 ## Choose Campaign Monitor data source
@@ -25,7 +25,7 @@ To configure the Campaign Monitor data source, follow the steps below:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/campaign-monitor/ChooseDS_server.png)
 
 ## Create Campaign Monitor data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Campaign Monitor data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Campaign Monitor data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Campaign Monitor REST API endpoint in the URL textbox. Refer to the [Campaign Monitor API documentation](https://www.campaignmonitor.com/api/) for more details.
 
@@ -42,7 +42,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting Campaign Monitor Data source?
+### How do I get Account Key for connecting Campaign Monitor Data source?
 
 1. Login to your Campaign Monitor account and go to *Profile -> Account settings*.
 2. In the Account settings page, click *API Keys*.

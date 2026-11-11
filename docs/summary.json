@@ -240,9 +240,17 @@
 				"String Expressions": "string-expressions",
 				"Date Expressions": "date-expressions",
 				"Row Expressions": "row-expressions",
-				"Level Of Detail Expressions": "level-of-detail-expressions"
+				"Level Of Detail Expressions": "level-of-detail-expressions" ,
+				"Financial Expressions": "financial-expressions"
 			},
 			"Data Sampling": "data-sampling",
+			"Hybrid Data Cache": {
+				"slug": "cache",
+				"pages": {
+					"Hybrid Data Cache": "hybrid-data-cache",
+					"Code View Initial Load Cache": "initial-load-cache"
+				}
+			},
 			"Configuring Replace Value":{
 				"Replace Value Support in Data Source Level": "datasource-level-support",
                  "Replace Value Support in Column Level": "column-level-support",
@@ -731,7 +739,13 @@
 		"Unified AI Agent":{
            "Data": "data",
 		   "Dashboard": "dashboard",
-		   "Chat History": "chat-history"
+		   "Chat History": "chat-history",
+		   "Settings": {
+				"Instructions": "instructions",
+				"Skills": "skills",
+				"Usage": "usage",
+				"Audit Logs": "audit-logs"
+			}
 	    },
 		"Q&A Widget": "qna-widget",
 		"AI Credits": "ai-credits",

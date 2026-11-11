@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Configure Bold BI with Apache server in CentOS | Bold BI Docs
+title: Configure Bold BI with Apache server in CentOS | Bold BI
 description: Learn more about how to configure Bold BI with the Apache front-end server in CentOS with SSL termination.
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on CentOS Environment 
+# Configure Bold BI with Apache server in CentOS
 
 ## Deployment prerequisites
 

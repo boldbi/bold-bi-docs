@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Insightly – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Insightly web service through basic http authentication with Bold BI Cloud and create data source.
+title: Insightly Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Insightly web service through basic HTTP authentication with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Insightly data source
+# Insightly Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Insightly web services through the REST API.
 
 ## Choose Insightly data source
-To configure the Insightly data source, follow the below steps:
+To configure the Insightly data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -42,7 +42,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set here by using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting Insightly data source?
+### How do I get Account Key for connecting Insightly data source?
 
 1. Log in to your [Insightly](https://login.insightly.com/User/Login?ReturnUrl=%2F) account and navigate to *Profile -> User settings*.
 2. Locate the API Key in the *API KEY* section.

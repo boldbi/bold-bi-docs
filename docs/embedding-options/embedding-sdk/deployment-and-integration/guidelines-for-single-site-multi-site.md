@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Single and Multisite – JavaScript Embedding | Bold BI Docs
+title: Single and Multi-site - JavaScript Embedding | Bold BI
 description: Learn single and multisite in JavaScript-based embedding of Bold BI dashboard in any of your business or Web applications.
 platform: bold-bi
 documentation: ug
 ---
 
-# Relationship between number of sites in Bold and Embedding in application
+# Single and Multi-site - JavaScript Embedding
 
 Bold BI is a multi-site application that will be created with a minimum of one site upon installation and configuration. When using Bold BI for embedding, the site architecture can either consist of a single site for all customer tenants/organizations (single-site embedding) or one site per customer tenant/organization (multi-site embedding).
 

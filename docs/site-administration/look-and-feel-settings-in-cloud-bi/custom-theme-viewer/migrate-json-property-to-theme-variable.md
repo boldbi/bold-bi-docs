@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map CSS3 theme variables with JSON theme property | Bold BI Docs
+title: Map CSS3 Theme Variables to JSON Properties | Bold BI
 description: Know about the CSS3 theme variables and learn how to map corresponding theme variables for the JSON theme property in Bold BI application.
 platform: bold-bi
 documentation: ug

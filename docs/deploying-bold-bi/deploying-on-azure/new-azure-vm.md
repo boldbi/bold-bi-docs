@@ -1,12 +1,12 @@
 ---
 layout: post
-title: VM image in Azure Marketplace | Bold BI Documentation
-description: Learn how to make use of pre-configured VM image of Bold BI in Azure Marketplace and get your Bold BI server setup with no additional steps.
+title: VM image in Azure Marketplace in Bold BI | Bold BI
+description: Learn how to make use of pre-configured VM image of Bold BI in Azure Marketplace and get your Bold BI Server setup with no additional steps.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI on Microsoft Azure Marketplace
+# VM image in Azure Marketplace in Bold BI
 This section explains how to use Bold BI in the Azure portal to select and create the Bold BI Server virtual machine.
 
 ## Pre-configured image via Azure Marketplace
@@ -18,7 +18,7 @@ One of the fastest ways to get Bold BI Server up and running in Azure is based o
     ![New resource in Azure portal](/static/assets/installation-and-deployment/images/portal-new.png)
 * Search for “Bold BI Server.
 
-    ![Search Bold BI server in Azure portal](/static/assets/installation-and-deployment/images/portal-search.png)
+    ![Search Bold BI Server in Azure portal](/static/assets/installation-and-deployment/images/portal-search.png)
 * Select the Bold BI Server - Multi-tenant and click the `Create` button.
 
     ![Click on Create button](/static/assets/installation-and-deployment/images/click-create.png)
@@ -99,10 +99,10 @@ Follow the below steps to connect to the virtual machine:
     ![verify the identity of the virtual machine](/static/assets/installation-and-deployment/images/cert-warning.png)
     
 ## Run the Bold BI Server
-A desktop shortcut to start the Bold BI server can be found once connected to the virtual machine. By default, the Bold BI server is hosted on port 80 in the IIS. Follow the steps below to run the Bold BI server:
-Follow the given steps to run the Bold BI server:
-1. Open the `Start Bold BI in IIS` shortcut to run the Bold BI server.
-2. As the Bold BI server is not configured yet, the application startup page will be shown.  
+A desktop shortcut to start the Bold BI Server can be found once connected to the virtual machine. By default, the Bold BI Server is hosted on port 80 in the IIS. Follow the steps below to run the Bold BI Server:
+Follow the given steps to run the Bold BI Server:
+1. Open the `Start Bold BI in IIS` shortcut to run the Bold BI Server.
+2. As the Bold BI Server is not configured yet, the application startup page will be shown.  
 
     ![BoldBI Startup](/static/assets/installation-and-deployment/images/boldbi-startup.png)  
 3. Follow the steps in the link to do the [application startup](/application-startup/).  

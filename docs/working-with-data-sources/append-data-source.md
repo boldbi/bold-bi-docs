@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to configure Append data source in Bold BI | Bold BI Docs
+title: How to configure Append data source in Bold BI | Bold BI
 description: The Append Data Source allows users to append selected files to an existing data source table. Currently, this feature is available for file types such as Excel, JSON, CSV, and XML.
 platform: bold-bi
 documentation: ug
 ---
 
-# Append Data Source in Bold BI:
+# How to configure Append data source in Bold BI
 
 This section explains how to use the `Append Data` option in Bold BI Server.
 

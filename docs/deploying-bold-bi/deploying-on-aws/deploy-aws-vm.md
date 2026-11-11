@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deploying Bold BI Server in AWS EC2 Instance | Documentation
-description: Learn how to self-deploy a virtual machine in the Amazon Web Service portal and install the Bold BI server application into it.
+title: Deploying Bold BI Server in AWS EC2 Instance | Bold BI
+description: Learn how to self-deploy a virtual machine in the Amazon Web Service portal and install the Bold BI Server application into it.
 platform: bold-bi
 documentation: ug
 ---
 
-# Self-Deploy a Bold BI Server on an AWS Virtual Machine
+# Deploying Bold BI Server in AWS EC2 Instance
 The following steps guide you through deploying Bold BI on an AWS EC2 instance. Follow the steps according to your instance type.
 <ul>
 
@@ -64,10 +64,10 @@ The following steps guide you through deploying Bold BI on an AWS EC2 instance. 
 
 ### Installing and running the Bold BI Server on Windows
 
-This section provides instructions on how to install and run the Bold BI server in a Windows virtual machine (VM).
+This section provides instructions on how to install and run the Bold BI Server in a Windows virtual machine (VM).
 
 * Features to be enabled in IIS to run Bold BI in Windows Server OS. Refer to this [Windows Server OS](https://support.boldbi.com/kb/article/16584/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os).
-* Install the Bold BI server on the created Windows virtual machine (VM) in the AWS portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-windows/)
+* Install the Bold BI Server on the created Windows virtual machine (VM) in the AWS portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-windows/)
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)
 *  Follow the steps in the link to do the [application startup](https://help.boldbi.com/application-startup/).
 
@@ -125,9 +125,9 @@ To connect to an EC2 instance running Linux using SSH, you need to follow these 
 
 ### Installing and running the Bold BI Server on Linux Ubuntu
 
-This section provides instructions on how to install and run the Bold BI server on a Linux virtual machine (VM).
+This section provides instructions on how to install and run the Bold BI Server on a Linux virtual machine (VM).
 
-* Install the Bold BI server on the Linux virtual machine (VM) created in the AWS portal using the [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/)
+* Install the Bold BI Server on the Linux virtual machine (VM) created in the AWS portal using the [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/)
 
 * After the installation, when you access the IP address or domain name in the web browser, you will see the same interface as shown in the image below.
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)

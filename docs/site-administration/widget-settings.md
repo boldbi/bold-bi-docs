@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Widget Settings – Embedded BI | Bold BI Docs
+title: Custom Widget Settings - Embedded Analytics | Bold BI
 description: Learn about how to configure the widget settings for visualizing the data in Dashboard Designer of the embedded BI application.
 platform: bold-bi
 documentation: ug
@@ -18,7 +18,7 @@ Please choose the necessary widget controls under each category, and then click 
 Now, the Dashboard Designer design panel will display only your selected widgets list as shown below.
 ![Design Panel](/static/assets/site-administration/images/design-panel.png)  
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 ## Add New Custom Widget
 

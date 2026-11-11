@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – Datsource Members -JavaScript Embedding | Bold BI
+title: API Reference for Datasource Members in JavaScript | Bold BI
 description: Explore the datasource JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Members
+# API Reference for Datasource Members in JavaScript
 <h2 class="doc-prop-wrapper" id="datasourceid" data-Path="datasourceid-datasourceId">
 <a href="#datasourceid" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -261,7 +261,7 @@ dashboard.loadDatasource();
 </span>
 </h3>
     
-Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance. Refer to the [authorization server documentation](/security-configuration/authorize-server/) for details.
+Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI Server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI Server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance. Refer to the [authorization server documentation](/security-configuration/authorize-server/) for details.
 - **Required**: Yes
 - **Default**: `""` (empty)
 

@@ -5761,7 +5761,7 @@
           "Settings"
         ],
         "summary": "Update Site Settings",
-        "description": "Users who have administrative rights to the site are able to update the site settings.",
+        "description": "Users who have administrative rights to site settings can update the site settings.",
         "operationId": "Administration_UpdateSiteSettings",
         "parameters": [
           {
@@ -14138,11 +14138,6 @@
           "type": "object",
           "description": "Details for group import settings.",
           "$ref": "#/definitions/OAuthGroupImportSettings"
-        },
-        "GroupClaim": {
-          "type": "object",
-          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
-          "$ref": "#/definitions/OAuthGroupClaimSettings"
         }
       }
     },
@@ -14236,11 +14231,6 @@
             "type": "object",
             "description": "Specify the group import settings details.",
             "$ref": "#/definitions/OAuthGroupImportSettings"
-        },
-        "GroupClaim": {
-          "type": "object",
-          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
-          "$ref": "#/definitions/OAuthGroupClaimSettings"
         }
       }
     },
@@ -14415,11 +14405,6 @@
           "type": "object",
           "description": "Details for group import settings.",
           "$ref": "#/definitions/OpenIDGroupImportSettings"
-        },
-        "GroupClaim": {
-          "type": "object",
-          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
-          "$ref": "#/definitions/OpenIDGroupClaimSettings"
         }
       }
     },
@@ -14480,11 +14465,6 @@
           "type": "object",
           "description": "Specified the groupimportsettings details.",
           "$ref": "#/definitions/OpenIDGroupImportSettings"
-        },
-        "GroupClaim": {
-          "type": "object",
-          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
-          "$ref": "#/definitions/OpenIDGroupClaimSettings"
         }
       }
     },

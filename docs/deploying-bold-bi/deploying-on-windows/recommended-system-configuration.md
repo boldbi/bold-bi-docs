@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Recommended System Configuration| Bold BI Documentation.
+title: Recommended System Configuration in Bold BI | Bold BI
 description: Read this guide to know system configuration based on users count and data size for Deploying Bold BI in Windows.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended System Configuration
+# Recommended System Configuration in Bold BI
  
 This section assists you in determining the optimal configuration for your production system, based on the number of users and the size of the data.
  
@@ -33,9 +33,9 @@ This section assists you in determining the optimal configuration for your produ
 
 RAM - 32 GB
 
-Core – 8 vCPU's  
+Core: 8 vCPU's  
 
-Disk Size – 127 GB SSD
+Disk Size: 127 GB SSD
  </td>
  </tr>  
  <tr>
@@ -49,8 +49,8 @@ Disk Size – 127 GB SSD
 
 RAM - 64 GB
 
-Core – 16 vCPU's  
+Core: 16 vCPU's  
 
-Disk Size – 127 GB SSD
+Disk Size: 127 GB SSD
  </td>
  </tr>  

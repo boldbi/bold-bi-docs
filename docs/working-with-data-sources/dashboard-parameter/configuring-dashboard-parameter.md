@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Config Dashboard Parameter - Embedded BI| Bold BI Documentation
+title: Config Dashboard Parameter - Embedded Analytics | Bold BI
 description: Learn how to configure dashboard parameter in Bold BI Embedded through add, edit, delete and mode selection.
 platform: bold-bi
 documentation: ug
 ---
 
-# Configuring Dashboard Parameter
+# Config Dashboard Parameter - Embedded Analytics
 
 Dynamic parameters allow users to execute custom queries or stored procedures dynamically based on the parameter while viewing the dashboard. Users can also use the parameter in expression columns.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: List Box Widget – Embedded BI | Bold BI Documentation
+title: List Box Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a List Box visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/list-box/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# List Box
+# List Box Widget - Embedded Analytics
 
 List Box enables you to filter based on single or multiple item selection in a list. To configure a list box, a minimum requirement of 1 column is needed.
 
@@ -118,19 +118,19 @@ You can format the List box for a better illustration of the view that you requi
 
 #### Name
 
-This allows you to set the `title` for the list box widget.
+This lets you set the `title` for the list box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/list-box/title.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for the list box widget.
+This lets you set the `subtitle` for the list box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/list-box/subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about the list box widget.
+This lets you set a brief explanation about the list box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/list-box/Description.png)
 
@@ -140,7 +140,7 @@ This allows you to set a brief explanation about the list box widget.
 
 #### Enable Multi-select
 
-`Enable Multi-Select` allows you to select one or more items in the dropdown list.
+`Enable Multi-Select` lets you select one or more items in the dropdown list.
 
 #### Single Selection
 
@@ -164,11 +164,11 @@ This option allows data to be displayed from right to left.
 
 #### Act as Master Widget
 
-This allows you to define this list box widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this list box widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this list box widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this list box widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable hierarchical filtering
 
@@ -178,7 +178,7 @@ When the hierarchical filter option is enabled, the `Top N` will be applied for 
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the `Listbox` widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the `Listbox` widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -186,11 +186,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the `L
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget title to either `left, center, or right.`
+This lets you handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -198,7 +198,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -206,31 +206,31 @@ When Auto Font Size is enabled, the font size of the subtitle will adjust automa
 
 **Font Size**
 
-This feature allows you to set the font size for the widget title if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
+This feature lets you set the font size for the widget title if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
 
 #### Show Border
 
-This feature allows you to show or hide the `border` around the widget.
+This feature lets you show or hide the `border` around the widget.
 
 #### Corner Radius
 
-This feature allows you to set the `radius` for the corners of the widget if the **Show Border** is enabled. The value can range from 0 to 100.
+This feature lets you set the `radius` for the corners of the widget if the **Show Border** is enabled. The value can range from 0 to 100.
 
 #### Background Color
 
-This feature allows you to choose the **background color** for the list box widget.
+This feature lets you choose the **background color** for the list box widget.
 
 #### Transparency
 
-This property allows you to adjust the **transparency** of the `background color`.
+This property lets you adjust the **transparency** of the `background color`.
 
 #### Show Shadow
 
-This feature allows you to show or hide the `shadow` around the widget.
+This feature lets you show or hide the `shadow` around the widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -240,8 +240,8 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This feature allows you to enable or disable the `widget title` for the list box widget.
+This feature lets you enable or disable the `widget title` for the list box widget.
 
 #### Enable Comments
 
-This feature allows you to enable or disable `comments` for the dashboard widget. For more details, please refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This feature lets you enable or disable `comments` for the dashboard widget. For more details, please refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Commvault Data Connector – Cloud BI | Bold BI Documentation
-description: Learn how to connect Commvault web service through basic http authentication with Bold BI Cloud and create data source.
+title: Commvault Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Commvault web service through basic HTTP authentication with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Commvault data source
+# Commvault Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Commvault web services through the REST API. 
 
 ## Choose Commvault data source
 
-To configure the Commvault data source, follow the below steps:
+To configure the Commvault data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
@@ -27,7 +27,7 @@ To configure the Commvault data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/commvault/ChooseDS_Server.png)
 
 ## Create Commvault data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Commvault data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Commvault data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter the **HostName** for the connected account.
 3. Click on the **API Endpoints** down drop box and choose the required endpoint.
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information that is set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

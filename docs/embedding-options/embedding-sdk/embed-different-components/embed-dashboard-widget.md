@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Widget - JavaScript Embedding | Bold BI Docs
+title: Bold BI Widget - JavaScript Embedding in Bold BI | Bold BI
 description: Learn how to seamlessly embed widget into your business application using the SDK, enhancing data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed Authentication for the Widget Embedding
+# Bold BI Widget - JavaScript Embedding in Bold BI
 
 Embed the <b>Bold BI single widget</b> using an Embed Token and <b>multiple widgets</b> using Authorization Server Authentication.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table Visual – Embedded BI Widget | Bold BI Documentation
+title: Table Visual - Embedded Analytics Widget | Bold BI
 description: Learn how to create a Table visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/grid/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# Configuring and Formatting Grid
+# Table Visual - Embedded Analytics Widget
 
-The `Grid` allows you to showcase the ranking relationship through the vertical arrangement of items ordered from top to bottom.
+The `Grid` lets you showcase the ranking relationship through the vertical arrangement of items ordered from top to bottom.
 
 ![Grid widget](/static/assets/visualizing-data/visualization-widgets/images/grid/grid.png)
 
@@ -111,19 +111,19 @@ You can format the grid for better illustration of the view that you require usi
 
 #### Name 
 
-This allows you to set a `title` for this grid widget.
+This lets you set a `title` for this grid widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/grid/name.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for this grid widget.
+This lets you set a `subtitle` for this grid widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/grid/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this grid widget.
+This lets you set a brief explanation about this grid widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/grid/description.png)
 
@@ -133,7 +133,7 @@ This allows you to set a brief explanation about this grid widget.
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in a grid.
+This option lets you toggle the visibility of the tooltip in a grid.
 
 ![Basic settings](/static/assets/visualizing-data/visualization-widgets/images/grid/tooltip.png)
 
@@ -157,11 +157,11 @@ You can enable or disable vertical lines in the grid control. `This option is en
 
 #### Show Border
 
-This allows you to enable or disable the border of the grid control. This option is enabled by default.
+This lets you enable or disable the border of the grid control. This option is enabled by default.
 
 #### Enable Alternative Row
 
-This allows you to differentiate `alternative rows` of the grid by the background color. If you enable this property, the alternative rows change their background color to `#F7F7F7` by default. It can be customized from the `Content Settings` section.
+This lets you differentiate `alternative rows` of the grid by the background color. If you enable this property, the alternative rows change their background color to `#F7F7F7` by default. It can be customized from the `Content Settings` section.
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
@@ -171,7 +171,7 @@ You can enable or disable the selection of values in grid cells, allowing you to
 
 #### Enable Column Chooser
 
-This option allows you to show or hide columns within the configured fields of the Grid widget.
+This option lets you show or hide columns within the configured fields of the Grid widget.
 
 ![Grid Column Chooser](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-column-chooser-property.png)
 
@@ -180,7 +180,7 @@ For example, you can hide specific columns by deselecting the corresponding fiel
 
 #### Allow Column Reorder
 
-This option allows you to rearrange the columns within the configured fields of the Grid widget only if the `Allow Paging` is enabled.
+This option lets you rearrange the columns within the configured fields of the Grid widget only if the `Allow Paging` is enabled.
 
 ![Grid Reorder Default](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-reorder-property.png)
 
@@ -190,7 +190,7 @@ For example, the `ProductName` column in the grid can be reordered by dragging i
 
 ### Summary Row
 
-This section allows you to add a summary row at the end of the grid container.
+This section lets you add a summary row at the end of the grid container.
 
 ![Summary Row](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
 
@@ -204,23 +204,23 @@ Click on `Add Summary` to add a summary row.
 
 ***Type***
 
-This option allows you to customize the aggregation type of the summary row.
+This option lets you customize the aggregation type of the summary row.
 
 ***Title***
 
-This option allows you to customize the title of the summary row.
+This option lets you customize the title of the summary row.
 
 ***Show Value***
 
-This option allows you to customize the visibility of the summary value of a column in the summary row.
+This option lets you customize the visibility of the summary value of a column in the summary row.
 
 ***Title Color***
 
-This option allows you to customize the grid summary row title color.
+This option lets you customize the grid summary row title color.
 
 ***Value Color***
 
-This option allows you to customize the grid summary row value color.
+This option lets you customize the grid summary row value color.
 
 ![Summary Row Value Color](/static/assets/visualizing-data/visualization-widgets/images/grid/value_color.png)
 
@@ -228,11 +228,11 @@ This option allows you to customize the grid summary row value color.
 
 ![Summary Row Customize](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-summary-rowformat.png)
 
-This option allows you to measure the format of the summary value. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you measure the format of the summary value. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ***Delete***
 
-This option allows you to delete the summary row.
+This option lets you delete the summary row.
 
 We can configure summary rows for each column by clicking on the respective column.
 
@@ -250,7 +250,7 @@ You can customize the summary row background color by using this property. The d
 
 #### Auto Height
 
-This property picks auto height for the grid summary row when it is enabled, otherwise, it allows you to choose a fixed height from the `Height` property. This option is enabled by default.
+This property picks auto height for the grid summary row when it is enabled, otherwise, it lets you choose a fixed height from the `Height` property. This option is enabled by default.
 
 #### Height
 
@@ -274,7 +274,7 @@ This property picks auto font-size for the grid summary row title and value when
 
 #### Font Size
 
-You can enable this property by disabling `Auto Font Size`, Which allows you to adjust the font size of the grid summary row title and value.
+You can enable this property by disabling `Auto Font Size`, Which lets you adjust the font size of the grid summary row title and value.
 
 ![Summary Row Font Size](/static/assets/visualizing-data/visualization-widgets/images/grid/summaryrow_fontsize.png)
 
@@ -290,7 +290,7 @@ You can edit the existing summary row configuration by using this `Customize` bu
 
 #### Allow Paging
 
-This option allows you to enable pagination in a Grid. When this option is enabled, the pager is enabled in the footer section. You can see options to navigate pages, such as previous, next, and a text box to choose a specific page. Additionally, you can view the total record count of bounded column results.
+This option lets you enable pagination in a Grid. When this option is enabled, the pager is enabled in the footer section. You can see options to navigate pages, such as previous, next, and a text box to choose a specific page. Additionally, you can view the total record count of bounded column results.
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-allowpaging.png)
 
@@ -300,17 +300,17 @@ Enabling this option will fetch the entire record on the initial load, and there
 
 #### Page Size
 
-This option allows you to set the number of records that need to be fetched on the initial load. It also acts as the page size for pagination.
+This option lets you set the number of records that need to be fetched on the initial load. It also acts as the page size for pagination.
 
 ### Header Settings
 
-This section allows you to format the grid header visibility, color, and font size.
+This section lets you format the grid header visibility, color, and font size.
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-headersettings.png)
 
 #### Show Header
 
-This allows you to enable or disable the grid header. This option is enabled by default.
+This lets you enable or disable the grid header. This option is enabled by default.
 
 If we uncheck the `Show Header`, dependent properties will be hidden, such as **Allow Text Wrap**, **Foreground color**, **Background color**, **Row height**, **Auto font size**, **padding**.
 
@@ -318,7 +318,7 @@ If we uncheck the `Show Header`, dependent properties will be hidden, such as **
 
 #### Allow Text Wrap
 
-This allows you to wrap the header text if the text length is high.
+This lets you wrap the header text if the text length is high.
 
 ![Grid Header Allow Text Wrap Option](/static/assets/visualizing-data/visualization-widgets/images/grid/header-allow-text-wrap-option.png)
 
@@ -346,7 +346,7 @@ This property automatically picks the font size for the grid header when enabled
 
 #### Font Size
 
-You can enable this property by disabling `Auto Font Size,` which allows you to change the font size of the grid header.
+You can enable this property by disabling `Auto Font Size,` which lets you change the font size of the grid header.
 
 #### Padding
 
@@ -358,7 +358,7 @@ You can increase or decrease the space between the border and the header by adju
 
 ### Content Settings
 
-This section allows you to format the grid row height, color, and font size.
+This section lets you format the grid row height, color, and font size.
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-contentsetting.png)
 #### Foreground
@@ -367,7 +367,7 @@ You can customize the font color. The default color of the font is `#000000`.
 
 #### Allow Text Wrap
 
-This allows you to wrap the content text if the text length is high.
+This lets you wrap the content text if the text length is high.
 
 ![Grid Content Allow Text Wrap Option](/static/assets/visualizing-data/visualization-widgets/images/grid/content-allow-text-wrap-option.png)
 
@@ -397,7 +397,7 @@ This property automatically picks the font size for grid rows when enabled. Othe
 
 #### Font Size
 
-You can enable this property by disabling `Auto Font Size`, which allows you to change the font size of the grid content.
+You can enable this property by disabling `Auto Font Size`, which lets you change the font size of the grid content.
 
 #### Padding
 
@@ -415,13 +415,13 @@ You can increase or decrease the space between the border and the header by adju
 
 #### Allow filter
 
-This allows you to enable a filter type  for each column in the grid for easy data filtering.
+This lets you enable a filter type  for each column in the grid for easy data filtering.
 
 ![Filter settings](/static/assets/visualizing-data/visualization-widgets/images/grid/allow-filter-types.png)
 
 #### Filter Type
 
-This option allows you to choose how the data can be filtered within the grid. The filter types are  **Bar, Menu, or Excel**.
+This option lets you choose how the data can be filtered within the grid. The filter types are  **Bar, Menu, or Excel**.
 
 ### Bar
 
@@ -461,11 +461,11 @@ This filtering option is only supported for Dimension fields (including Date fie
 
 #### Act as master widget
 
-This allows you to define this grid widget as a master widget so that its filter action can be listened to by other widgets in the dashboard.
+This lets you define this grid widget as a master widget so that its filter action can be listened to by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this grid widget to ignore responding to filter actions applied on other widgets in the dashboard.
+This lets you define this grid widget to ignore responding to filter actions applied on other widgets in the dashboard.
 
 #### Enable hierarchical filtering
 
@@ -475,11 +475,11 @@ When the Hierarchical Filter option is enabled, the Top N will be applied for ea
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the grid widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the grid widget when the `Act as Master Widget` option is enabled.
 
 #### Column Settings
 
-This section allows you to format the grid columns based on alignment, width, and KPI customization.
+This section lets you format the grid columns based on alignment, width, and KPI customization.
 
 ![Column settings](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-columnSetting.png)
 
@@ -531,7 +531,7 @@ The KPI column can be filtered based on the measure values bound to the KPI. You
 
 #### KPI Column measure formatting 
 
-The values showcased in the KPI column can be formatted like any other measure column. You can open the Measure Formatting dialog box by clicking the `format` KPI column button. This allows you to handle different formatting options such as display type, representation, decimal places, and currency culture for the respective KPI column added.
+The values showcased in the KPI column can be formatted like any other measure column. You can open the Measure Formatting dialog box by clicking the `format` KPI column button. This lets you handle different formatting options such as display type, representation, decimal places, and currency culture for the respective KPI column added.
 
 ![Format icon](/static/assets/visualizing-data/visualization-widgets/images/grid/format-icon.png)
 
@@ -569,7 +569,7 @@ Select value as the display type to get the column values represented as they ar
 
 #### Bar
 
-This property allows you to configure the color, shape, and range of the progress bar from the `Bar Settings` dialog.
+This property lets you configure the color, shape, and range of the progress bar from the `Bar Settings` dialog.
 
 To customize the progress bar, open the `Bar Settings` dialog by selecting the `Bar` radio button from the `Formatting` section.
 
@@ -585,7 +585,7 @@ The dialog can be opened by selecting the `Bar` radio button for initial configu
 
 ***Negative Bar*** The progress bar background color for negative values can be changed.
 
-***Bar Style***  This property allows you to change the bar shape. The dropdown contains two shapes: `Cylinder` and `Rectangle`.
+***Bar Style***  This property lets you change the bar shape. The dropdown contains two shapes: `Cylinder` and `Rectangle`.
 
 ![Bar shape](/static/assets/visualizing-data/visualization-widgets/images/grid/barshape.png)
 
@@ -637,7 +637,7 @@ This will open the `Advanced Settings` dialog.
 
 **Gradient:** You can customize the cell background color of the grid columns using gradient-based advanced settings. This is the default mode.
 
-**Rule based:** This allows you to customize the cell color and the text style of the grid columns.
+**Rule based:** This lets you customize the cell color and the text style of the grid columns.
 
 ### Gradient mode
 
@@ -665,7 +665,7 @@ You can define your range by entering the low, mid, and high values.
 
 #### Value type
 
-The value type drop-down allows you to choose whether to apply the direct value (specific number like three goals, order ID 10248) or percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether to apply the direct value (specific number like three goals, order ID 10248) or percentage (values above 30% or 50%).
 
 ![Value type](/static/assets/visualizing-data/visualization-widgets/images/grid/value-type.png)
 
@@ -695,7 +695,7 @@ Enter the condition value.
 
 #### Font style
 
-Allows you to choose the title font style. (`Bold, Italic, Underline, and Superscript`).
+Lets you choose the title font style. (`Bold, Italic, Underline, and Superscript`).
 
 #### Case sensitivity
 
@@ -720,11 +720,11 @@ Select the checkbox provided next to the options to customize the properties. Si
 
 ### Title alignment
 
-This allows you to align the widget title to the **left, center, or right**.
+This lets you align the widget title to the **left, center, or right**.
 
 ### Title color
 
-This allows you to apply a specific `color` to the widget title.
+This lets you apply a specific `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -732,7 +732,7 @@ When enabled, the font size of the title will be adjusted automatically if the s
 
 **Font Size**
 
-This allows you to apply a specified font size to the widget title if the Title Auto Font Size is disabled. The value can range between 10 and 44.
+This lets you apply a specified font size to the widget title if the Title Auto Font Size is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -740,7 +740,7 @@ When enabled, the font size of the subtitle will be adjusted automatically if th
 
 **Font Size**
 
-This allows you to apply a specified font size to the widget subtitle if the Subtitle Auto Font Size is disabled. The value can range between 10 and 32.
+This lets you apply a specified font size to the widget subtitle if the Subtitle Auto Font Size is disabled. The value can range between 10 and 32.
 
 ### Auto Padding
 
@@ -748,15 +748,15 @@ When enabled, the padding of the widget container will be adjusted automatically
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can range between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can range between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the border surrounding the widget.
+This lets you toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified radius to the widget corners if the Show Border is enabled. The value can range between 0 and 100.
+This lets you apply a specified radius to the widget corners if the Show Border is enabled. The value can range between 0 and 100.
 
 ### Transparency
 
@@ -764,11 +764,11 @@ You can adjust the transparency from 0 to 1.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -778,36 +778,36 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show header
 
-This allows you to enable or disable the widget title of the Grid.
+This lets you enable or disable the widget title of the Grid.
 
 #### Allow maximize view
 
-This allows you to enable or disable the maximized mode of the Grid. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the maximized mode of the Grid. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV export
 
-This allows you to enable or disable the CSV export option for the Grid. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the CSV export option for the Grid. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel export
 
-This allows you to enable or disable the Excel export option for the Grid. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
+This lets you enable or disable the Excel export option for the Grid. Enabling this lets you export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
 
 #### Allow image export
 
-This allows you to enable or disable the image export option for the Grid. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
+This lets you enable or disable the image export option for the Grid. Enabling this lets you export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
 
 #### Allow PDF export
 
-This allows you to enable or disable the PDF export option for the Grid. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the PDF export option for the Grid. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable comment for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.

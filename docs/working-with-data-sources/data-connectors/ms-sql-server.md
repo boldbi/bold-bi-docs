@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Connect Microsoft SQL Server in Cloud BI | Bold BI Docs
-description: Learn how to connect and create data source(s) for the Microsoft SQL Server database with the full and incremental update refresh settings in Bold BI Cloud based Web designer.
+title: Microsoft SQL Server Data Connector Guide | Bold BI
+description: Learn how to connect a Microsoft SQL Server database to Bold BI Cloud, create data sources in live or extract mode, and set refresh settings.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Connecting Bold BI to Microsoft SQL Server Data Source
+# Microsoft SQL Server Data Connector Guide
 
-The Bold BI designer allows you to connect with multiple SQL data sources to visualize and analyze the data using interactive dashboards.
+The Bold BI designer lets you connect with multiple SQL data sources to visualize and analyze the data using interactive dashboards.
 
 **Supported Server Versions:** Microsoft SQL Server (2012, 2014, 2016, 2017, and 2019)
 
@@ -35,12 +35,12 @@ In live mode, the Bold BI designer executes the query directly into the database
     ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
 2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+3. When switching to Bold Data Hub, the data is extracted using the Bold Data Hub. An equivalent pipeline is created, which can leverage the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
 4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+5. When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 ## How to create Microsoft SQL Server data source
 
@@ -77,7 +77,7 @@ To connect to the SQL server database in [live](/working-with-data-sources/data-
 5. Drag and drop the table from the table schema onto the data design view page.  
 ![Create data design](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/Create-data-design.png)
 
-6. Click **Save** to save the data source with a relevant name in order to proceed with designing the dashboard.  
+6. Click **Save** to save the data source with a relevant name to proceed with designing the dashboard.  
 ![Save data source](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/Save-data-source.png)
 
 ### Create Microsoft SQL Server data source in extract mode
@@ -90,7 +90,7 @@ To connect the SQL server database in [extract](/working-with-data-sources/data-
 
 3. Choose the **Extract** mode radio button to enable extract mode for creating a data source. Refer to [Extract](/working-with-data-sources/data-connectors/ms-sql-server/#extract) mode to learn more. 
 
-> **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected in order to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh. 
+> **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh. 
 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/maxRowOption.png#max-width=60%)					                    
 
@@ -175,7 +175,7 @@ You can drag the desired stored procedure onto the canvas area. Enter the parame
 
 ![Create data design for stored procedure](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/add-stored-procedure.png)
 
-The Bold BI designer allows you to edit the supplied parameters by using the Edit Parameters button that is available in the created table.  
+The Bold BI designer lets you edit the supplied parameters by using the Edit Parameters button that is available in the created table.  
 ![Edit stored procedure parameters](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/Edit-stored-procedure.png)
 
 >**NOTE:** You can only add one stored procedure per model, even if the database contains more than one stored procedure.
@@ -234,7 +234,7 @@ You can view the query in the Query Editor window for a data source that has alr
 
 For example, I dragged the `Categories` table into design view, added an expression column, and applied filters as well.
 
-Then, I attempted to enable the `Code` Slider in order to view the query. This query displays the added expression column, applied filters, and any changes made in the table.
+Then, I attempted to enable the `Code` Slider to view the query. This query displays the added expression column, applied filters, and any changes made in the table.
 
 ![Query for design view](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/CustomSql-QueryforTables.png)
 
@@ -245,13 +245,13 @@ If you click `Execute`, you will be prompted with an alert message for confirmat
 ### Alias Name for Tables and Columns
 In query editor window, you can write/edit your query and perform all the operations with respect to retrieving data from your database.
 
-Here, you can change the table or column name using `SQL Alias` name. Refer to the below image,
+Here, you can change the table or column name using `SQL Alias` name. Refer to the following image,
 
 ![Alias name](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/CustomSql-AliasName.png)
 
 After clicking `Execute`, this modification will be reflected in your table.
 
-> **NOTE:**  You can modify the column name in design view itself. Please refer [here](/working-with-data-sources/data-modeling/formatting-column/#renaming-column).
+> **NOTE:**  You can modify the column name in design view itself. Please refer to [column renaming steps](/working-with-data-sources/data-modeling/formatting-column/#renaming-column).
 
 ### Configuring Expression Columns
 
@@ -369,7 +369,7 @@ You should use Full Load Refresh when:
 -	Starting with a fresh dataset is required.
 
 ### Incremental update
-Incremental Refresh is a feature in Bold BI that allows you to refresh a data source by extracting only the data that has changed since the last refresh. This method is particularly useful when dealing with large databases, as it can save time and resources by avoiding the need to extract and load all the data again. The primary requirement is to have a date field and a primary key field included in the table.
+Incremental Refresh is a feature in Bold BI that lets you refresh a data source by extracting only the data that has changed since the last refresh. This method is particularly useful when dealing with large databases, as it can save time and resources by avoiding the need to extract and load all the data again. The primary requirement is to have a date field and a primary key field included in the table.
 
 **When should you use Incremental Refresh?**
 When should you use Incremental Refresh? Incremental Refresh is recommended in the following scenarios:
@@ -378,7 +378,7 @@ When should you use Incremental Refresh? Incremental Refresh is recommended in t
 - Saving time and resources is a priority.
 
 **Views :** To perform incremental refresh for views, specify the last modified timestamp column when creating the data source in extract mode. The Bold BI designer will use this last modified column to extract and load the newly updated data from the actual database to the intermediate database table.
- * The "Include Unique Column(s)" option is available in Incremental Refresh and allows you to specify the unique or constraint columns that are used to identify and update the modified records in the intermediate database. By enabling and selecting the appropriate unique columns, you ensure that the modified records are correctly updated during the incremental refresh process.
+ * The "Include Unique Column(s)" option is available in Incremental Refresh and lets you specify the unique or constraint columns that are used to identify and update the modified records in the intermediate database. By enabling and selecting the appropriate unique columns, you ensure that the modified records are correctly updated during the incremental refresh process.
 
 ![views](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/Incremental-Refresh_views.PNG)
 
@@ -391,7 +391,7 @@ When should you use Incremental Refresh? Incremental Refresh is recommended in t
 
 The main difference between data refresh and dashboard refresh is that data refresh can be scheduled to occur automatically, while dashboard refresh must be initiated manually. In Bold BI, you have the flexibility to configure the scheduled refresh of your dashboards. You can choose to automatically refresh the entire dashboard or specific widgets within a dashboard, based on a predefined timer.
 
-Furthermore, data refresh can be utilized to update the data in a singular data source, whereas dashboard refresh can be utilized to update the data in multiple data sources.
+Furthermore, data refresh can be used to update the data in a singular data source, whereas dashboard refresh can be used to update the data in multiple data sources.
 
 ### Best practices to schedule and run data refresh:
 **Tips for best practice:**

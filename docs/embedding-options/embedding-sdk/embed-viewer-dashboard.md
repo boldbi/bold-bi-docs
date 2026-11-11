@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI dashboard viewer - JavaScript Embedding | Bold BI Docs
+title: Bold BI dashboard viewer - JavaScript Embedding | Bold BI
 description:  Learn how to seamlessly embed the Bold BI dashboard into your business application using the SDK, enhancing data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 
 ---
-# Embed a Dashboard using an Embed token
+# Bold BI dashboard viewer - JavaScript Embedding
 Once an [embed authorization token](/embedding-options/embedding-sdk/token-generation/) has been generated on the backend server side, use it on the frontend to securely render a Bold BI dashboard.
 
 ## Install the Bold BI Embed SDK
@@ -31,7 +31,7 @@ import {BoldBI} from '@boldbi/boldbi-embedded-sdk';
 If your application does not use npm or a package manager, include the minified SDK via CDN:
 
 ```html
-<script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
+<script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v17.1.30/boldbi-embed.js"></script>
 ```
 
 ## Embed the Bold BI Dashboard
@@ -359,7 +359,7 @@ function getToken() {
 
 ### Custom Attribute
 
-Custom Attributes are name–value pairs that can be defined at the user, group, or site level. It can be enforced by passing an `embed_custom_attribute` attribute in the [embed token](/embedding-options/embedding-sdk/authorization-options/token-generation-lower-version/). They allow dashboards to dynamically adjust queries, expressions, or data source connections to enforce RLS.
+Custom Attributes are name-value pairs that can be defined at the user, group, or site level. It can be enforced by passing an `embed_custom_attribute` attribute in the [embed token](/embedding-options/embedding-sdk/authorization-options/token-generation-lower-version/). They allow dashboards to dynamically adjust queries, expressions, or data source connections to enforce RLS.
 
 :::TABS
 :::TAB ['active'] ['Node.js'] ['tokengeneration.js']

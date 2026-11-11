@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Intermediate DB for Data Extract - Embedded BI | Bold BI Docs
+title: Intermediate Database for Data Extracts in Bold BI | Bold BI
 description: This page summarizes the intermediate database used in Bold BI for processing data extracts with extract mode data sources for embedded analytics.
 platform: bold-bi
 documentation: ug
 ---
-# Bold BI Intermediate Database in Embedded Analytics
+# Intermediate Database for Data Extracts in Bold BI
 
 The Bold BI Intermediate Database is a data store used to import data from Web API data sources, extract mode connection data sources like SQL, and statistic files, and connect them with dashboards quickly. 
 

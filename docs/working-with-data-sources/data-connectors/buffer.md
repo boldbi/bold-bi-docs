@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Buffer – Embedded BI Data Connector | Bold BI Documentation
-description: Learn how to connect Buffer web service using OAuth-based authentication through REST API endpoint with Bold BI Embedded.
+title: Buffer Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Buffer web service through OAuth-based authentication and its REST API endpoint with Bold BI Embedded, then create a data source.
 canonical: "/working-with-data-sources/data-connectors/buffer/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Buffer data source
+# Buffer Data Connector Setup Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to Buffer web services through the REST API.
 

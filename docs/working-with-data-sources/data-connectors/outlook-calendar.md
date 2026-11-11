@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Outlook Calendar – Cloud BI Connector | Bold BI DocS
-description: Learn how to connect Microsoft Outlook Calendar web service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Outlook Calendar Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Microsoft Outlook Calendar with Bold BI Cloud through OAuth-based authentication and its REST API endpoint, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Microsoft Outlook calendar data source
+# Outlook Calendar Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Microsoft Outlook calendar web services through the REST API. 
 
 ## Choose Microsoft Outlook calendar data source
-To configure the Microsoft Outlook calendar data source, follow the below steps:
+To configure the Microsoft Outlook calendar data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Microsoft Outlook calendar web 
 
 ## Connect to Microsoft Outlook calendar
 ### Create Microsoft Outlook calendar data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Microsoft Outlook calendar data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Microsoft Outlook calendar data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Microsoft Outlook calendar REST API endpoint in the URL textbox. Refer to the [Microsoft Outlook calendar API documentation](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) for more details.
 

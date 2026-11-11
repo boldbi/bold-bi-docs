@@ -1,15 +1,15 @@
 ---
 layout: pos
-title: Azure Maps – Embedded BI Visual | Bold BI Documentation
+title: Azure Maps - Embedded Analytics Visual in Bold BI | Bold BI
 description: Learn how to enable and add an Azure Maps visual to Bold BI Embedded dashboard, configure data and other settings.
 platform: bold-bi
 control: Azure Maps
 documentation: ug
 ---
 
-# Configuring and Formatting Azure Maps
+# Azure Maps - Embedded Analytics Visual
 
-`Azure Maps` allows you to visualize markers based on latitude and longitude data. It also supports bubble layers for value-sized symbols and choropleth maps for region-based coloring.
+`Azure Maps` lets you visualize markers based on latitude and longitude data. It also supports bubble layers for value-sized symbols and choropleth maps for region-based coloring.
 
 *Figure: Azure Maps visualization with bubble layer examples*
 ![Default Azure Maps](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/default-azure-maps.png)
@@ -24,7 +24,7 @@ To obtain `keys`, follow these steps:
 
 3. In the left menu, click `Create a resource`. Search for `Azure Maps` and select it and click create.
 
-4. Fill the below details
+4. Fill the following details
 
 - **Subscription:** Choose your subscription.
 - **Resource Group:** Select an existing group or create a new one.
@@ -299,19 +299,19 @@ You can format the `Azure maps` for better illustration of the view that you req
 
 #### Name
 
-This allows you to set a `title` for this Azure maps widget.
+This lets you set a `title` for this Azure maps widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/Name.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for this Azure maps widget.
+This lets you set a `subtitle` for this Azure maps widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this Azure maps widget.
+This lets you set a brief explanation about this Azure maps widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/Description.png)
 
@@ -321,7 +321,7 @@ This allows you to set a brief explanation about this Azure maps widget.
 
 #### Map theme
 
-This allows you to toggle the theme of the Azure maps.
+This lets you toggle the theme of the Azure maps.
 
 1.  Road
 
@@ -365,7 +365,7 @@ This option disables zooming and panning in maps.
 
 #### Map shape
 
-This option allows you to toggle the map shapes of Azure Maps.
+This option lets you toggle the map shapes of Azure Maps.
 
 1. Bubble
 
@@ -377,25 +377,25 @@ This option allows you to toggle the map shapes of Azure Maps.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Tooltip Settings](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in Azure map.
+This option lets you toggle the visibility of tooltip in Azure map.
 
 ![Show Tooltip](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the Azure Maps tooltip.
+This option lets you customize which columns are visible in the Azure Maps tooltip.
 
 ![Customize Tooltip](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/customize-tooltip.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Enaable RTL](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/rtl-tooltip.png)
 
@@ -416,7 +416,7 @@ You can configure a single color palette with varying saturation based on value 
 
 #### Advanced Settings
 
-This option allows you to customize the map color using three different types:
+This option lets you customize the map color using three different types:
 gradient, rule, or individual. By default, the window renders with the gradient type.
 
 Enabling the `Advanced` option will cause the color customization window to render as follows:
@@ -469,7 +469,7 @@ Save your changes by clicking `Save`. Now, the map will render with the changes.
 
 #### Marker Shape
 
-This option allows you to change the marker shapes of Azure Maps.
+This option lets you change the marker shapes of Azure Maps.
 
 1.  Circle
 
@@ -493,7 +493,7 @@ This option allows you to change the marker shapes of Azure Maps.
 
 ![Image source](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/image-source-option.png)
 
-This option allows you to upload various types of images.
+This option lets you upload various types of images.
 
 *Image: Azure maps widget after applying the marker Image settings*
 
@@ -503,7 +503,7 @@ This option allows you to upload various types of images.
 
 #### Color
 
-This option allows you to change the marker color of Azure Maps.
+This option lets you change the marker color of Azure Maps.
 
 ![Shape Color](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/shape-color-option.png)
 
@@ -511,7 +511,7 @@ This option allows you to change the marker color of Azure Maps.
 
 #### Size 
 
-This option allows you to change the marker size of Azure Maps. When configuring data into `Marker Size`, this property will be disabled.
+This option lets you change the marker size of Azure Maps. When configuring data into `Marker Size`, this property will be disabled.
 
 ![Shape Size](/static/assets/visualizing-data/visualization-widgets/images/azure-maps/shape-size-option.png)
 
@@ -538,7 +538,7 @@ Markers can be customized based on conditions and fields by enabling the advance
 
 ##### Individual
 
-This option allows you to customize the map marker color individually based on the selected column values.
+This option lets you customize the map marker color individually based on the selected column values.
 
 For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types, you can select the `Signal Strength` column in the based selection and assign a color for each type of signal strength option.
 
@@ -560,11 +560,11 @@ You can enable linking and configure it to navigate to a general URL with or wit
 
 #### Act as master widget
 
-This allows you to define the Azure Maps widget as a master widget, so that its filter action can be listened to by other widgets in the dashboard.
+This lets you define the Azure Maps widget as a master widget, so that its filter action can be listened to by other widgets in the dashboard.
 
 #### Ignore filter actions
 
-This allows you to define this Azure Maps widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this Azure Maps widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable hierarchical filtering
 
@@ -580,11 +580,11 @@ This section contains the property for azure maps container's layout.
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget **left, center,** or **right**.
+This lets you handle the alignment of the widget **left, center,** or **right**.
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -592,7 +592,7 @@ When Auto Font Size is enabled, the font size of the title will be adjusted auto
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -600,7 +600,7 @@ When Auto Font Size is enabled, the font size of the subtitle will be adjusted a
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Auto Padding
 
@@ -608,31 +608,31 @@ When Auto Padding is enabled, the padding of the widget container will be adjust
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Show Background Image
 
-This allows you to set the **background image** for the map widget.
+This lets you set the **background image** for the map widget.
 
 #### Background Color
 
-This allows you to set the **background color** for the map widget.
+This lets you set the **background color** for the map widget.
 
 #### Transparency
 
-This property allows you to change the transparency from 0.0 to 1.0.
+This property lets you change the transparency from 0.0 to 1.0.
 
 #### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -640,38 +640,38 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the map. 
+This lets you enable or disable the `widget title` of the map. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the map widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the map widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the map widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the map widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/).
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.

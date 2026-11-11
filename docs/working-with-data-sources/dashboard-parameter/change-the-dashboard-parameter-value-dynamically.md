@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Change Dashboard Parameter value - Embedded BI | Bold BI
+title: Change Dashboard Parameter Values Dynamically | Bold BI
 description: This section describes about how to change the dashboard parameter value dynamically in Bold BI Embedded. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Change the Dashboard Parameter value dynamically
+# Change Dashboard Parameter Values Dynamically
 
 To change the dashboard parameter values dynamically, users can update them in view mode.
 

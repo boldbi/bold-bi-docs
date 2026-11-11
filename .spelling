@@ -1,4 +1,4 @@
-﻿Bitly
+Bitly
 Mem
 Sendible
 pinboards
@@ -129,6 +129,7 @@ v2.0
 v3.0
 v4.0
 v5.0
+v5.1
 v6.0
 v4.2
 WalkThrough
@@ -194,6 +195,7 @@ createsend.com
 clients.json
 ChartBeat
 v3.2
+v3.3
 AdSense
 adsense
 jhgowjHGS83
@@ -338,6 +340,7 @@ App_Data
 dll
 config
 iOS
+iPadOS
 Subselects
 subselects
 programmatically
@@ -1660,6 +1663,7 @@ Datadog
 LLMs
 hide_dashboard_edit
 v8.1
+v17.1.30
 v11.3.24
 SUSE-15
 optionallibs
@@ -2308,3 +2312,6 @@ RoleBinding
 namespace-scoped
 Kubernetes
 databricks
+showViewDataDialog
+365-day
+Financials

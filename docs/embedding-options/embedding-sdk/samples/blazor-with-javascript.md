@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with Blazor and JavaScript | Bold BI Docs
+title: Embedding Analytics with Blazor and JavaScript | Bold BI
 description: Learn how to embed an analytics dashboard with Blazor and JavaScript application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Blazor using the Embed SDK
+# Embedding Analytics with Blazor and JavaScript
 
-The sample has been provided in the following sections for `Blazor Server`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor Server` on your own. 
+The sample has been provided in the following sections for `Blazor Server`, which demonstrates the dashboard rendering available on your Bold BI Server. It is followed by steps to create a new embedding application in `Blazor Server` on your own. 
 
 > **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with all the necessary information you need to know before working on the sample.
 

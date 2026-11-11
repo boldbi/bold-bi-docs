@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fitbit - Embedded BI Connector | Bold BI Documentation
+title: Fitbit Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect to the Fitbit data source using OAuth-based authentication through REST API with Bold BI at your server or embedded in your application.
 canonical: "/working-with-data-sources/data-connectors/fitbit/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Fitbit data source
+# Fitbit Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Fitbit web services through the REST API.
 > **NOTE:** Fitbit OAuth credentials are required for On-Premises Deployment, but they are not needed in the Syncfusion Managed Cloud Server.
 ## Choose Fitbit data source
@@ -56,7 +56,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel will op
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

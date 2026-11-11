@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chart – Embedded BI Visual | Bold BI Documentation
+title: Column Chart - Embedded Analytics Visual | Bold BI
 description: Learn how to add a Column Chart visual to Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/column-chart/"
 platform: bold-bi
@@ -9,9 +9,9 @@ documentation: ug
 
 ---
 
-# Column Chart
+# Column Chart - Embedded Analytics Visual
 
-A `column chart` allows you to compare values for a set of unordered items across categories using vertical bars that are arranged horizontally.
+A `column chart` lets you compare values for a set of unordered items across categories using vertical bars that are arranged horizontally.
 
 ![Default Column chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-chart-view.png)
 
@@ -253,13 +253,13 @@ You can format the column chart to better illustrate the view you require using 
 
 #### Name
 
-This feature allows you to set the `title` for the column chart widget.
+This feature lets you set the `title` for the column chart widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/Name.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this column chart widget.
+This lets you set the `subtitle` for this column chart widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/subtitle.png)
 
@@ -279,7 +279,7 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 ![Change type and axis settings dialog](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-type-and-axis.png)
 
-**Chart Type**: This allows you to switch the widget view from the current chart type to another convertible chart type.
+**Chart Type**: This lets you switch the widget view from the current chart type to another convertible chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis.
 
@@ -309,7 +309,7 @@ This feature enables you to customize the visibility of value labels in each ser
 
 #### Value Label Color
 
-This allows you to customize the color of the value label.
+This lets you customize the color of the value label.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
 
@@ -317,13 +317,13 @@ This allows you to customize the color of the value label.
 
 ### Value Label Position
 
-This option allows you to customize the position of the value label in the chart. By default, it is set to 'Auto,' so the label position for the column chart will be set to the Top.
+This option lets you customize the position of the value label in the chart. By default, it is set to 'Auto,' so the label position for the column chart will be set to the Top.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-valuelabelposition.png)
 
 #### Value label rotation
 
-This allows you to define the `rotation angle for the value labels` to be displayed.
+This lets you define the `rotation angle for the value labels` to be displayed.
 
 ![Rotated labels](/static/assets/visualizing-data/visualization-widgets/images/column-chart/rotated-labels.png)
 
@@ -333,7 +333,7 @@ This feature enables you to display or conceal the suffix value of value labels.
 
 #### Suffix Value
 
-This allows you to customize the suffix value of the value labels.
+This lets you customize the suffix value of the value labels.
 
 ![Labels with suffix](/static/assets/visualizing-data/visualization-widgets/images/column-chart/label-with-suffix.png)
 
@@ -341,25 +341,25 @@ This allows you to customize the suffix value of the value labels.
 
 #### Show items with no data
 
-This allows you to display data for columns that do not have a value.
+This lets you display data for columns that do not have a value.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
 
 ### Empty Point Mode
 
-This allows you to handle the display mode of the data point values when they are null or undefined, and `Show Items With No Data` is enabled.
+This lets you handle the display mode of the data point values when they are null or undefined, and `Show Items With No Data` is enabled.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
  
 ### Gap
 
-This option allows you to display null or undefined values as gaps.
+This option lets you display null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
 
 ### Zero
 
-This option allows you to display the null or undefined values on the zero axis.
+This option lets you display the null or undefined values on the zero axis.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-zero.png)
 
@@ -372,7 +372,7 @@ This option displays the null or undefined values along with the average value.
 
 #### Column Width
 
-This option allows you to increase or decrease the width of the column by using the `Column Width`.
+This option lets you increase or decrease the width of the column by using the `Column Width`.
 
 ![Column Width Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
 
@@ -380,7 +380,7 @@ This option allows you to increase or decrease the width of the column by using 
 
 #### Column Spacing
 
-This option allows you to increase or decrease the space between the columns by using the `Column Spacing`.
+This option lets you increase or decrease the space between the columns by using the `Column Spacing`.
 
 ![Column Spacing Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
 
@@ -392,7 +392,7 @@ When this support is enabled, the size of the chart scroll bar thumb will be cal
 
 #### Page Size
 
-This option allows you to set the number of records that need to be fetched on initial load.
+This option lets you set the number of records that need to be fetched on initial load.
 
 #### Invert Scroll
 
@@ -410,31 +410,31 @@ The scroll bar follows the default scrolling direction.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-legend-tooltip.png)
 
@@ -444,7 +444,7 @@ This option allows you to display tooltip text and value colors that correspond 
 
 #### Show legend
 
-A legend is a text used to describe the plotted data. This allows you to toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
+A legend is a text used to describe the plotted data. This lets you toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
 
 ![chart legends](/static/assets/visualizing-data/visualization-widgets/images/column-chart/show-legend.png)
 
@@ -452,18 +452,18 @@ Enabling the Custom Legend Text option will allow you to define custom text (usi
 
 #### Legend Interactivity
 
-The chart's `legend interactivity` option allows you to control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in situations where you do not want users to be able to hide or show series data by clicking on the legend. This feature might also be beneficial when presenting crucial data that should always be visible for accuracy and context.
+The chart's `legend interactivity` option lets you control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in situations where you do not want users to be able to hide or show series data by clicking on the legend. This feature might also be beneficial when presenting crucial data that should always be visible for accuracy and context.
 
 Disabling the Interactivity feature in the Legend Settings category prevents you from clicking on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-interactivity-enable.png)
 
 ### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This lets you change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-label-color-option.png)
 
@@ -471,7 +471,7 @@ This allows you to change the chart legend title and label colors.
 
 #### Customize
 
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will display the legend text list as labels on the left and a corresponding text area on the right. This allows you to add formatted text to be displayed instead.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will display the legend text list as labels on the left and a corresponding text area on the right. This lets you add formatted text to be displayed instead.
 
 ![Legend customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legendcustomize.png)
 
@@ -479,11 +479,11 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top,** and **Bottom**.
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
 
@@ -493,9 +493,9 @@ The chart legend dropdown option can be used to simplify viewing complex charts 
 
 #### Legend Alignment
 
-The Legend Alignment allows you to adjust the alignment of the legend within its designated area. You can choose from four alignment options: **Near, Center, Far,** and **None**.
+The Legend Alignment lets you adjust the alignment of the legend within its designated area. You can choose from four alignment options: **Near, Center, Far,** and **None**.
 
-For further legend's placement details are in the below table.
+For further legend's placement details are in the following table.
 
 <table>
 <tr><td>
@@ -534,33 +534,33 @@ You can similarly customize position and alignment in various scenarios.
 
 #### Legend Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend to a `Circle.`
+This option lets you change the shape of the legend to a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option lets you change the shape of the legend in `Series.`
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-shape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart, which will be reflected with the `Show Legend` option.
+This lets you add the legend title for the chart, which will be reflected with the `Show Legend` option.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-title.png)
 
 #### Text Overflow
 
-This option allows you to customize the legend text based on the value of the `Text Width` property.
+This option lets you customize the legend text based on the value of the `Text Width` property.
 
 ***None***
 
-This option allows you to render legend items without wrapping or trimming them.
+This option lets you render legend items without wrapping or trimming them.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-none-option.png)
 
@@ -568,7 +568,7 @@ This option allows you to render legend items without wrapping or trimming them.
 
 ***Trim***
 
-This option allows you to trim the legend items if their legend exceeds the value of `Text Width`.
+This option lets you trim the legend items if their legend exceeds the value of `Text Width`.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-trim-option.png)
 
@@ -584,7 +584,7 @@ This option enables you to wrap legend items according to the value of `Text Wid
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items, and it is applicable only if text-overflow is set to Trim or Wrap.
+This option lets you set the maximum width for the Legend Items, and it is applicable only if text-overflow is set to Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-width-option.png)
 
@@ -608,7 +608,7 @@ To configure the linking to a URL or dashboard with the widget, use its settings
 
 ### Axis settings
 
-This section allows you to customize the axis settings in the chart.
+This section lets you customize the axis settings in the chart.
 
 ![Chart axis properties](/static/assets/visualizing-data/visualization-widgets/images/column-chart/axis-settings.png)
 
@@ -620,19 +620,19 @@ This enables you to personalize the color of the axis title.
 
 #### Label color
 
-This feature allows you to customize the color of the axis labels.
+This feature lets you customize the color of the axis labels.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/column-chart/label-color.png)
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/column-chart/show-axis-border.png)
 
 #### Show category axis
 
-This feature allows you to toggle the visibility of the category axis.
+This feature lets you toggle the visibility of the category axis.
 
 ![Category axis](/static/assets/visualizing-data/visualization-widgets/images/column-chart/category-axis.png)
 
@@ -648,7 +648,7 @@ This feature enables you to toggle the visibility of the category axis title.
 
 #### Category axis title
 
-This allows you to edit the category axis title for chart. It will reflect in x-axis name of chart.
+This lets you edit the category axis title for chart. It will reflect in x-axis name of chart.
 
 ![category axis title](/static/assets/visualizing-data/visualization-widgets/images/column-chart/category-axis-title.png)
 
@@ -675,11 +675,11 @@ This option trims the end of the overlapping label on the axis.
 
 #### Trim Axis Labels
 
-This option allows you to trim the axis labels based on the value of the `Maximum Label Width` property.
+This option lets you trim the axis labels based on the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a maximum width for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
+This option lets you set a maximum width for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/column-chart/maximum-label-width.png)
 
@@ -687,7 +687,7 @@ This option allows you to set a maximum width for the axis labels, and it can al
 
 #### Category axis label rotation
 
-This allows you to define the rotation angle for displaying the category axis labels.
+This lets you define the rotation angle for displaying the category axis labels.
 
 ![Rotated category axis labels](/static/assets/visualizing-data/visualization-widgets/images/column-chart/label-rotation.png)
 
@@ -701,7 +701,7 @@ By default, the `Auto Interval` property is enabled. The Auto Interval property 
 
 #### Primary value axis
 
-This allows you to enable the primary value axis for the chart.
+This lets you enable the primary value axis for the chart.
 
 ![Chart primary axis](/static/assets/visualizing-data/visualization-widgets/images/column-chart/primary-axis.png)
 
@@ -711,13 +711,13 @@ If you disable the `Show Primary Axis` option, dependencies properties, which ar
 
 #### Show primary axis title
 
-This feature allows you to enable the visibility of the primary value axis title on the chart.
+This feature lets you enable the visibility of the primary value axis title on the chart.
 
 ![Primary axis title visibility](/static/assets/visualizing-data/visualization-widgets/images/column-chart/show-primary-axis-title.png)
 
 #### Primary axis title value
 
-This allows you to edit the title of the primary value axis, which will be reflected as the name of the y-axis in the chart.
+This lets you edit the title of the primary value axis, which will be reflected as the name of the y-axis in the chart.
 
 ![Primary axis title value](/static/assets/visualizing-data/visualization-widgets/images/column-chart/title-value.png)
 
@@ -739,11 +739,11 @@ This option enables you to set the type of axis as linear.
 
 ### Logarithmic
 
-This option allows you to handle the logarithmic axis that uses a logarithmic scale, which is very useful in visualizing data with values of both lower and higher orders of magnitude (e.g., 10-6 and 106).
+This option lets you handle the logarithmic axis that uses a logarithmic scale, which is very useful in visualizing data with values of both lower and higher orders of magnitude (e.g., 10-6 and 106).
 
 ### Axis range settings
 
-This allows you to manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
+This lets you manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
 
 ![Axis range settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/axis-range.png)
 
@@ -810,7 +810,7 @@ If you want to set the same ranges in multiple cases, create the parameter value
 
 #### Axis Format
 
-This option allows you to format the values for the primary and secondary axes using the formatting details provided through the Format button. For more information, please refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option lets you format the values for the primary and secondary axes using the formatting details provided through the Format button. For more information, please refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting Axis](/static/assets/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
 
@@ -828,13 +828,13 @@ This enables you to enable the gridlines for the `Primary Value Axis` in the col
 
 #### Secondary value Axis
 
-This allows you to enable the gridlines for the `Secondary Value Axis` in the column chart.
+This lets you enable the gridlines for the `Secondary Value Axis` in the column chart.
 
 ![Secondary value Axis](/static/assets/visualizing-data/visualization-widgets/images/column-chart/secondary-gridlines.png)
 
 #### Category Axis
 
-This allows you to enable the gridlines for the `category axis` in the column chart.
+This lets you enable the gridlines for the `category axis` in the column chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/column-chart/category-gridlines.png)
 
@@ -971,7 +971,7 @@ For example, when drilling down on a 'Retail' point, the next level of series wi
 
 #### Value type
 
-The value type drop-down allows you to choose whether you are going to apply the direct value (a specific number like 3 goals or order ID 10248) or a percentage (values above 30% or 50%).
+The value type drop-down lets you choose whether you are going to apply the direct value (a specific number like 3 goals or order ID 10248) or a percentage (values above 30% or 50%).
 
 #### Condition name
 
@@ -1025,13 +1025,13 @@ By utilizing the Color Mapping type, you have the ability to apply colors to the
 
 ***Data***
 
-It allows you to apply color to chart series based on data. If you want to apply a specific color to specific data, you can use data-based color mapping. By default, the color mapping type will be `Data`.
+It lets you apply color to chart series based on data. If you want to apply a specific color to specific data, you can use data-based color mapping. By default, the color mapping type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color to chart series based on the `Index`, ensuring that the colors remain consistent even if the data is changed. A maximum of 15 different colors can be displayed, after which the colors will repeat from the ones used above.
+It lets you apply color to chart series based on the `Index`, ensuring that the colors remain consistent even if the data is changed. A maximum of 15 different colors can be displayed, after which the colors will repeat from the ones used above.
 
 For example, if you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. For instance, assigning the color red to the top-ranked country, the red color will be maintained for the country with the largest case count.
 
@@ -1050,13 +1050,13 @@ To undo all the changes, click `reset`.
 
 ### Series Palette
 
-This allows you to apply color to chart series by using either a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if you have configured the row section in the chart.
+This lets you apply color to chart series by using either a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will only be visible if you have configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/column-chart/series-palette.png)
 
 #### Use Default Palette
 
-This Option allows you to apply default color for chart series.
+This Option lets you apply default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -1103,35 +1103,35 @@ This section enables you to manage the `filter` action for the spline area chart
 
 #### Act as master widget
 
-This allows you to define the column chart widget as a master widget so that other widgets in the dashboard can listen to its filter action.
+This lets you define the column chart widget as a master widget so that other widgets in the dashboard can listen to its filter action.
 
 #### Ignore filter actions
 
-This allows you to define the column chart widget to ignore its response to filter actions applied on other widgets in the dashboard.
+This lets you define the column chart widget to ignore its response to filter actions applied on other widgets in the dashboard.
 
 #### Hierarchical filter
 
-This option allows you to enable or disable hierarchical top N filtering. When applying the Top N filter with multiple dimension columns, you can customize the returned data based on whether the filtering should be done in a flat manner or based on the hierarchy of the dimension columns added.
+This option lets you enable or disable hierarchical top N filtering. When applying the Top N filter with multiple dimension columns, you can customize the returned data based on whether the filtering should be done in a flat manner or based on the hierarchy of the dimension columns added.
 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately, based on the number set for each column.
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the column chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the column chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
-This sections allows you to customize the `Container Appearance` for the column chart widget.
+This sections lets you customize the `Container Appearance` for the column chart widget.
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,**  or **right**.
+This lets you handle the alignment of widget title to either **left, center,**  or **right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -1139,7 +1139,7 @@ By enabling Auto Font Size, the title's font size will be adjusted automatically
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -1147,7 +1147,7 @@ When Auto Font Size is enabled, the subtitle's font size will be automatically a
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -1155,81 +1155,81 @@ When Auto Padding is enabled, the padding of the widget container will be automa
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can range from 0 to 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can range from 0 to 25.
 
 ### Show Border
 
-This feature allows you to toggle the visibility of the **border** surrounding the widget.
+This feature lets you toggle the visibility of the **border** surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified **radius** to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This lets you apply the specified **radius** to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
-This feature allows you to set the **background image** for the column chart widget.
+This feature lets you set the **background image** for the column chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the column chart widget.
+This lets you set the **background color** to the column chart widget.
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the **background color**.
+This property lets you specifies the **transparency** for the **background color**.
 
 ### Show Shadow
 
-This feature allows you to switch the visibility of the `shadow` surrounding the widget.
+This feature lets you switch the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 
-This section allows you to customize the **container actions** for the column chart widget.
+This section lets you customize the **container actions** for the column chart widget.
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
-This allows you to enable or disable the **widget title** of the column chart. 
+This lets you enable or disable the **widget title** of the column chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the **maximized mode** of the column chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the **maximized mode** of the column chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the **CSV export** option for the column chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the **CSV export** option for the column chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the **Excel export** option for the column chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the **Excel export** option for the column chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the column chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the column chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the **PDF export** option for the column chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the **PDF export** option for the column chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

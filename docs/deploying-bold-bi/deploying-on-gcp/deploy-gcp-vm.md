@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Install Bold BI on GCP VM Instance | Bold BI Documentation
-description: Learn how to create a VM instance in the Google Cloud Platform portal and install the Bold BI server application on it.
+title: Install Bold BI on GCP VM Instance in Bold BI | Bold BI
+description: Learn how to create a VM instance in the Google Cloud Platform portal and install the Bold BI Server application on it.
 platform: bold-bi
 documentation: ug
 ---
-# Self-deploy a Bold BI Server on Google Cloud Platform
+# Install Bold BI on GCP VM Instance in Bold BI
 The following steps guide you through deploying Bold BI on GCP VM instance. Follow the steps according to your instance type.
 <ul>
 
@@ -51,8 +51,8 @@ The following steps guide you through deploying Bold BI on GCP VM instance. Foll
 * Other methods are available for connecting to your Windows instance. Please refer to this [Connecting windows](https://cloud.google.com/compute/docs/instances/connecting-to-windows)
 
 ### Installing and Running the Bold BI Server on Windows
-This section provides instructions on how to install and run the Bold BI server in a virtual machine (VM).
-* Install the Bold BI server on the created Windows virtual machine (VM) in the GCP portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-windows/installation-and-deployment/)
+This section provides instructions on how to install and run the Bold BI Server in a virtual machine (VM).
+* Install the Bold BI Server on the created Windows virtual machine (VM) in the GCP portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-windows/installation-and-deployment/)
 * Launch your application either by default or through your Desktop shortcut menu item. For example, Start Bold BI in IIS.
 
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)
@@ -92,8 +92,8 @@ This section provides instructions on how to install and run the Bold BI server 
 * Other methods are available for connecting to your Linux instance. Please refer to the [Connect to Linux VM](https://cloud.google.com/compute/docs/connect/standard-ssh)
 
 ### Installing and Running the Bold BI Server on Linux
-This section provides instructions on how to install and run the Bold BI server on a Linux virtual machine (VM).
-* Install the Bold BI server on the created Linux virtual machine (VM) in the GCP portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/).
+This section provides instructions on how to install and run the Bold BI Server on a Linux virtual machine (VM).
+* Install the Bold BI Server on the created Linux virtual machine (VM) in the GCP portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/).
 * After the installation, when you access the IP address or domain name in the web browser, you will see the same interface as shown in the image below.
 
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)

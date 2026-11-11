@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Okta support for SSO authentication
+# Single Sign-On with Okta Provider of OAuth 2.0
 
 The Bold BI application supports the addition of users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with these users.
 

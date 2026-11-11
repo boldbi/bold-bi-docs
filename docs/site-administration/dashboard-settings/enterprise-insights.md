@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handling Enterprise Insights – Embedded BI | Bold BI Docs
+title: Handling Enterprise Insights - Embedded Analytics | Bold BI
 description: Learn how to handle the enterprise insights at administrator level in Bold BI Embedded and users to monitor dashboard activities.
 platform: bold-bi
 documentation: ug
@@ -20,7 +20,7 @@ You can enable or disable enterprise insights in the dashboard settings, and bas
 
 ![Usage Analytics Dashboard](/static/assets/site-administration/images/usage-analytics-dashboard.png#width=50%)
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Cloud Edition.
 
 ## Performance metrics
 

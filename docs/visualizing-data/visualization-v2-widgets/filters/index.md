@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Filter Widgets Overview | Bold BI Docs
+title: Interactive Filter Widgets Overview in Bold BI | Bold BI
 description: Learn when to use Bold BI Modern filter widgets, review the available filter types, and understand how they help viewers control dashboard data interactively.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Filters
+# Interactive Filter Widgets Overview
 
 Filter widgets let viewers interactively narrow dashboard data. Use these widgets when users need to select values, enter text, or choose dates to control what the dashboard displays.
 

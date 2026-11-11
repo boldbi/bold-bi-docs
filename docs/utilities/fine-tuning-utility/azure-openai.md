@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Azure OpenAI-fine-tuning utility - Embedded BI | Bold BI Docs
+title: Azure OpenAI Fine-Tuning Utility in Bold BI | Bold BI
 description: Learn and unlock the secrets to building a finely-tuned Azure OpenAI model, tailored specifically for seamless integration into BoldBI’ s Q&A widget.
 canonical: "/utilities/fine-tuning-utility/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Instructions to fine-tune a new Azure OpenAI GPT 3.5 model
+# Azure OpenAI Fine-Tuning Utility in Bold BI
+
+> **Note:** From Bold BI v8.1, the Q&A widget uses the dedicated AI service with no fine-tuning or setup. Before v8.1, this fine-tuning utility applies to Bold BI versions.
 
 1. Open the Command Prompt: Press `Win + R` on your keyboard, type `cmd`, and enter to open the Command Prompt window.
 

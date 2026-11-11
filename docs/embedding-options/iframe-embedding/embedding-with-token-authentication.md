@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Dashboard iFrame Embedding with Token | Bold BI Docs
+title: Dashboard iFrame Embedding with Token in Bold BI | Bold BI
 description: Learn how to embed a dashboard in various modes using iFrame with token authentication. Also, find a sample to download.
 platform: bold-bi
 documentation: ug
 ---
-# Embedding with Token Authentication
+# Dashboard iFrame Embedding with Token
 
 ## Dashboard Embedding with Token Authentication
 

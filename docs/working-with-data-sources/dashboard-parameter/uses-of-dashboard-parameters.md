@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Uses of Dashboard Parameters - Embedded BI | Bold BI Learning
+title: Uses of Dashboard Parameters - Embedded Analytics | Bold BI
 description: This section describes about how to use the dashboard parameters in dashboards using Bold BI Embedded. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Uses of Dashboard parameters
+# Uses of Dashboard Parameters - Embedded Analytics
 
 Dashboard parameters can be utilized in expressions, stored procedures, and custom queries.
 

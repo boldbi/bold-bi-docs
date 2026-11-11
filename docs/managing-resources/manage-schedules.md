@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Schedules – Embedded BI | Bold BI Documentation
+title: Managing Schedules in Your Site in Bold BI | Bold BI
 description: Learn how to create, edit, enable/disable, delete schedules and send schedule emails to distribution list in Bold BI Embedded. 
 canonical: "/managing-resources/manage-schedules/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Manage Schedules in the Bold BI  	
+# Managing Schedules in Your Site
 
 This section explains how to add, edit, and delete schedules and also how to run the schedules on-demand, enable or disable schedules, and view schedule run history in the Bold BI platform.
 

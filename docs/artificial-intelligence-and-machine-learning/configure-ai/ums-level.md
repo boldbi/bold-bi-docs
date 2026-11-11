@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Manage AI Settings in UMS – Enable or Disable AI | Bold BI Docs
+title: Manage AI Settings in UMS - Enable or Disable AI | Bold BI
 description: Learn how to enable, disable, and manage AI feature settings at the UMS level in Bold BI to ensure smooth AI integration and control.
 canonical: "/artificial-intelligence-and-machine-learning/configure-ai/ums-level/"
 platform: bold-bi
 documentation: ug
 ---
-# Manage AI Settings in UMS
+# Manage AI Settings in UMS - Enable or Disable AI
 
 ## Steps to Enable or Disable AI Features and Configure AI at the UMS Level
 
@@ -32,7 +32,7 @@ You can enable or disable AI features and configure AI settings at the UMS level
 
 ![Select Ai](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Select_own_ai.png)
 
-6. If you select Bold AI Service, no credentials are required, and it operates as a cloud-based service.
+6. If you select Bold AI Service as the provider no credentials are required, and it operates as a cloud-based service using Azure AI configuration.
 
 ![Bold Ai Service](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Bold_ai.png)
 
@@ -40,11 +40,13 @@ You can enable or disable AI features and configure AI settings at the UMS level
 
 ![Open Ai](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Open_ai.png)
 
+> **Note:** Multiple model selection is supported. The available OpenAI models are `GPT-4o Mini`, `GPT-4o`, `GPT-5.1`, `GPT-5.2`, `GPT-5.4`, and `GPT-5.5`. You can select models based on your requirements.
+
 8. If you select Anthropic as the provider, enter the valid Anthropic API Key.
 
 ![Anthropic](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Anthropic.png)
 
-> **Note:** Multiple model selection is currently not available. The default model is `Claude Opus 4.8`. Support for selecting multiple models will be available in a future release.
+> **Note:** Multiple model selection is supported. The available Anthropic models are `Claude Opus 4.8` and `Fabel 5`. You can select one or more models based on your requirements.
 
 9. If you select Azure AI as the provider, you can configure and use models deployed through Azure AI Foundry.
 

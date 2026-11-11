@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Working with ETL in Bold BI – Embedded BI | Bold BI Learning
+title: Working with Bold Data Hub ETL in Bold BI | Bold BI
 description: Learn how to working with ETL  Working with Projects, Scheduling ETL Jobs and Working with Connectors in Bold BI deployed in your server.
 canonical: "/working-with-data-sources/working-with-bold-data-hub/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Working with Bold Data Hub in our Bold BI / Bold Reports
+# Working with Bold Data Hub ETL
 
 ## Overview
 
-The primary objective of the Bold Data Hub application is to facilitate the extraction, transformation, and loading of data from diverse sources such as file types and web, SQL, and NoSQL data sources. please refer to [Working With Data Hub Connectors](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/data-connectors/). we can conveniently schedule recurring jobs to retrieve data from these sources and utilize SQL scripts for data transformation purposes.
+The primary objective of the Bold Data Hub application is to facilitate the extraction, transformation, and loading of data from diverse sources such as file types and web, SQL, and NoSQL data sources. please refer to [Working With Bold Data Hub Connectors](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/data-connectors/). we can conveniently schedule recurring jobs to retrieve data from these sources and utilize SQL scripts for data transformation purposes.
 
 ## Integrated Bold Data Hub Architecture
 ![Source](/static/assets/working-with-etl/images/archietecture.png)
 
 
 ## Python Requirement for ETL Server
-For Windows OS, Python 3.13 is required to run ETL scripts in Bold BI or Bold Reports Data Hub.
+For Windows OS, Python 3.13 is required to run ETL scripts in Bold BI or Bold Reports Bold Data Hub.
 You may use either:
 
    - A system-wide Python 3.13 installation, or
@@ -90,7 +90,7 @@ If you prefer to use a dedicated venv environment:
 
 ## Using the Bold Data Hub Application In Bold BI / Bold Reports
 
-To access the Data Hub site, please click on the "Data Hub" icon displayed on the page. 
+To access the Bold Data Hub site, please click on the "Bold Data Hub" icon displayed on the page. 
 
 This action will open the site in a new tab. In the Bold BI Server page, the icon can be found under the working-with-etl section as shown in the image.
 

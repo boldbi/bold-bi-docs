@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Enabling Data Caching in Dashboard Widget | Bold BI Docs
+title: Enabling Data Caching in Dashboard Widget | Bold BI
 description: Learn how Data Cache support is used to improve dashboard performance by caching widget data during the interactions in a dashboard in the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Data Cache in Dashboard
+# Enabling Data Caching in Dashboard Widget
 The Data Cache allows you to enhance dashboard performance by caching the results of each widget and retaining the cached data in a dashboard for a specific amount of time. When the Data Cache is turned `ON`, it saves widget data during the initial dashboard rendering, and it will retrieve the data from the cache without accessing the actual data server for subsequent dashboard loads. This helps to reduce loading time for widgets and lessen the impact on the data server's performance.
 
 ## How to configure Data Cache

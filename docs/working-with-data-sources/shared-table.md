@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Joining Data Sources – Embedded BI | Bold BI Documentation
+title: Joining Data Sources - Embedded Analytics | Bold BI
 description: Learn how to join multiple data sources in extract mode to achieve showcasing different sources of data through one dashboard in Bold BI Embedded.
 canonical: "/working-with-data-sources/shared-table/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# What are Shared Tables
+# Joining Data Sources - Embedded Analytics
 
 Shared tables are used to combine multiple data sources into one data source.
 

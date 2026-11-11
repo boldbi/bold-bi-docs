@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Secured Data Access with Custom Attribute | Bold BI Docs
+title: Secured Data Access with Custom Attribute | Bold BI
 description: Learn how to access dashboard data based on custom attributes applied at user, group or site level in Bold BI Embedded.
 canonical: "/working-with-data-sources/configuring-custom-attribute/"
 platform: bold-bi
@@ -9,7 +9,7 @@ keywords: Custom attribute, attribute, configure custom attribute
 
 ---
 
-# Configuring Custom Attribute
+# Secured Data Access with Custom Attribute
 
 A custom attribute is a piece of code that functions as a parameter and can be replaced by users in a query. The attribute name is replaced by the code, which is saved for each user and used to render the dashboard.
 
@@ -47,13 +47,13 @@ Attributes are name-value pairs associated with users, groups, and sites (tenant
 
 ![Custom Attribute Window](/static/assets/working-with-datasource/custom-attribute/images/add-custom-attribute.png#width=65%)
 
-Name – The name of the attribute.
+Name: The name of the attribute.
 
-Value – The value of the attribute
+Value: The value of the attribute
 
-Description – An explanation of the purpose of this attribute.
+Description: An explanation of the purpose of this attribute.
 
-Encrypt – Option to store the attribute as encrypted in the database, with the value displayed as dots in the grid.
+Encrypt: Option to store the attribute as encrypted in the database, with the value displayed as dots in the grid.
 
 
 ## Applying custom attribute for different users

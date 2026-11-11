@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Template Guide - Generate, use & Manage | Bold BI Docs
+title: Email Template Guide - Generate, use & Manage | Bold BI
 description: Learn to create, edit, and manage custom email templates on Bold BI, perfect for on-premises. Secure default templates for tailored notifications.
 platform: bold-bi
 documentation: ug

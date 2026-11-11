@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scheduling AI Summary in Unified AI Agent | Bold BI Docs
+title: Scheduling AI Summary in Unified AI Agent | Bold BI
 description: Learn how to schedule AI-generated summaries for widgets and dashboards in Unified AI Agent, including step-by-step instructions for enabling and generating summaries.
 canonical: "/artificial-intelligence-and-machine-learning/schedule-summary/"
 platform: bold-bi
 documentation: ug
 ---
 
-# AI-Powered Summarization in Dashboard Scheduling
+# Scheduling AI Summary in Unified AI Agent
 
 We’ve enhanced Bold BI’s scheduling feature by introducing support for AI-generated insights.
 When the AI Summary option is enabled during scheduling, the system automatically creates natural-language summaries based on the data from the selected widgets and dashboards. These insights are generated at the time of execution, ensuring they reflect the most current data.

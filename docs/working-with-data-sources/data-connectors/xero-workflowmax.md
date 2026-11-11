@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to connect Xero WorkflowMax data in Cloud app | Bold BI Docs
+title: Xero WorkflowMax Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Xero WorkflowMax web service through the OAuth-based authentication and create a data source with the Bold BI Cloud application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Xero WorkflowMax data source
+# Xero WorkflowMax Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Xero WorkflowMax web services through the REST API. 
 
 ## Choose Xero WorkflowMax data source
@@ -84,7 +84,7 @@ Apart from predefined Xero workflow max resources, import data for custom resour
 
 For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://www.workflowmax.com/api/overview)
 
-#### Sample queries
+### Sample queries
 **All Client**
 
 `https://api.xero.com/workflowmax/3.0/client.api/list`

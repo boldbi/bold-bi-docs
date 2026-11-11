@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dashboard Navigation from Pinboard | Bold BI Embedded
+title: Navigating from a Pinboard to a Dashboard | Bold BI
 description: Learn how to navigate to source dashboard from the pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it. 
 canonical: "/managing-resources/manage-pinboards/go-to-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Go to Dependent Dashboard Page
+# Navigating from a Pinboard to a Dashboard
 
 This section explains how to navigate the dependent dashboard for a specific widget from Pinboard in the Bold BI application.
 

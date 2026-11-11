@@ -1,18 +1,18 @@
 ---
 layout: post
-title: SurveyMonkey - Cloud BI Connector | Bold BI Documentation
+title: SurveyMonkey Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect SurveyMonkey web service through REST API endpoint with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Connecting Bold BI to SurveyMonkey data source
+# SurveyMonkey Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SurveyMonkey web services through the REST API. 
 
 ## Choose SurveyMonkey data source
 
-To configure the SurveyMonkey data source, follow the below steps:
+To configure the SurveyMonkey data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
@@ -53,7 +53,7 @@ To configure the SurveyMonkey data source, follow the below steps:
 >**NOTE**: Save the client ID and client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/) guide for more details.
 
 ## Create SurveyMonkey data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create SurveyMonkey data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create SurveyMonkey data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** down drop box and choose the required endpoint.
 3. Enter a valid REST API endpoint in the URL textbox. Refer to the [SurveyMonkey API documentation](https://developer.surveymonkey.com/api/v3/) for more details.
@@ -67,7 +67,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connecting to Stored Procedures – Embedded BI | Bold BI Docs
+title: Connecting to Stored Procedures in Bold BI | Bold BI
 description: Learn how to connect to the stored procedures in the SQL Server database with Bold BI Embedded Dashboard.
 canonical: /working-with-data-sources/connecting-to-stored-procedures/
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting to Stored Procedures in SQL Server database
+# Connecting to Stored Procedures in Bold BI
 
 Bold BI allows you to use the stored procedure defined in the SQL Server database using the `Microsoft SQL` connection.
 
@@ -55,7 +55,7 @@ In Internal Cache mode, Bold BI executes the stored procedure completely and mov
 
 ## Understanding Stored Procedure Execution Modes
 
-Bold BI supports two execution modes for stored procedures—**OpenQuery Mode** and **Internal Cache Mode**. Understanding these modes helps you optimize dashboard performance and manage MSSQL server load effectively.
+Bold BI supports two execution modes for stored procedures, **OpenQuery Mode** and **Internal Cache Mode**. Understanding these modes helps you optimize dashboard performance and manage MSSQL server load effectively.
 
 ---
 ## 1. OpenQuery Mode
@@ -90,7 +90,7 @@ Use OpenQuery Mode when:
 In **Internal Cache Mode**, Bold BI® executes the stored procedure **once during dashboard load**.  
 The result is then stored in a **temporary table** inside the Bold BI® data store (MSSQL, PostgreSQL, or MySQL).
 
-All widget interactions—such as filtering, sorting, and grouping—operate on this temporary table instead of re-executing the stored procedure on the MSSQL server.
+All widget interactions, such as filtering, sorting, and grouping, operate on this temporary table instead of re-executing the stored procedure on the MSSQL server.
 
 ### Example
 
@@ -211,7 +211,7 @@ Selecting the correct mode impacts both performance and data freshness:
 * **Choose OpenQuery** when real-time data is required.
 * **Choose Internal Cache** when scalability and reduced DB load are the priorities.
 
-Both modes serve different needs—select the one that best aligns with your dashboard usage and performance expectations.
+Both modes serve different needs, select the one that best aligns with your dashboard usage and performance expectations.
 
 ## Connecting to Stored Procedure in Extract Mode
 
@@ -229,10 +229,10 @@ Bold BI also allows you to use stored procedures in **Extract** mode.
 
 4. Configure the required input parameters for the stored procedure. The following parameter types are supported:
 
-   - **Custom Value** – Enter a fixed value manually.
-   - **Dashboard Parameter** – Bind the parameter to a dashboard parameter.
-   - **Custom Attribute** – Use a custom attribute value.
-   - **Null** – Pass a `NULL` value to the stored procedure parameter.
+   - **Custom Value**: Enter a fixed value manually.
+   - **Dashboard Parameter**: Bind the parameter to a dashboard parameter.
+   - **Custom Attribute**: Use a custom attribute value.
+   - **Null**: Pass a `NULL` value to the stored procedure parameter.
 
    ![Stored Procedure Parameters](/static/assets/working-with-datasource/images/stored_procedure.png)
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accounts configuration – Embedded BI | Bold BI Documentation
-description: Learn how to activate User Management Server user accounts. There are two modes of account activation available - automatic and user email.
+title: Accounts configuration - Embedded Analytics | Bold BI
+description: Learn how to activate User Management Server user accounts, using either automatic activation or user email activation, step by step in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
 # Accounts configuration in User Management Server
 
-This section explains the configuration needed to activate user accounts and user emails in the User Management Server.
+Configure how user accounts are activated in Bold BI User Management Server, either automatically or by user email.
 
 ## Account activation modes
 
@@ -48,6 +48,6 @@ When the user email setting is set to `Not required` mode, an email address is n
 
 ## System User Authentication
 
-Enable the System User option to streamline authentication and enhance accessibility. This feature allows anonymous users to seamlessly view embedded dashboards and access REST APIs while generating global access tokens for secure and efficient system-wide authentication.
+Enable the System User option to streamline authentication and enhance accessibility. This feature allows anonymous users to view embedded dashboards and access REST APIs while generating global access tokens for secure and efficient system-wide authentication.
 
 ![System user](/static/assets/multi-tenancy/images/system-user.png)

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Install Client libraries in Azure App Service | Bold BI Docs 
+title: Install Client libraries in Azure App Service | Bold BI
 description: Learn more about how to install optional client libraries in Azure App Service deployment to connect with respective SQL database variants of Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Install client libraries 
+# Install Client libraries in Azure App Service
 
 Bold BI Server utilizes client libraries such as Oracle, MySQL, Snowflake, and MongoDB to establish connections with their respective SQL database variants. To install these client libraries, it is necessary to read and accept the licenses associated with each one.
 

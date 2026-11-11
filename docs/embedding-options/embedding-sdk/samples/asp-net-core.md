@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET Core | Bold BI Docs
+title: Embedding Analytics with ASP.NET Core in Bold BI | Bold BI
 description: Learn how to embed an analytics dashboard with an ASP.NET Core application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in ASP.NET Core Sample with Embed SDK
+# Embedding Analytics with ASP.NET Core in Bold BI
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-sample) the sample application, which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Core` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-sample) the sample application, which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI Server. This is followed by steps to create a new embedding application in `ASP.NET Core` on your own.
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.  
 

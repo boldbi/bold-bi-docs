@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Chargebee – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Chargebee web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Chargebee Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Chargebee web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Chargebee data source
+# Chargebee Data Connector Guide in Bold BI
 
 Bold BI dashboard designer supports connecting to Chargebee web services through the REST API.
 
 ## Choose Chargebee data source
 
-To configure the Chargebee data source, follow the below steps:
+To configure the Chargebee data source, follow the following steps:
 
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -30,7 +30,7 @@ To configure the Chargebee data source, follow the below steps:
 
 ## Create Chargebee data source
 
-Once you click the Chargebee data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Chargebee data source.
+Once you click the Chargebee data source, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Chargebee data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** dropdown box and choose the required endpoint.
 3. Click the **Custom URL** to manually enter the URL. Refer to the [Chargebee API documentation](https://apidocs.chargebee.com/docs/api)  for more details.
@@ -45,7 +45,7 @@ Once you click the Chargebee data source, the NEW DATA SOURCE configuration pa
 
 You can also edit the connection information set here by using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting Chargebee data source?
+### How do I get Account Key for connecting Chargebee data source?
 
 1. Log in to your account and navigate to *Settings -> Configure Chargebee*.
 2. In the Configure Chargebee page, go to *API Keys and Web hooks*.

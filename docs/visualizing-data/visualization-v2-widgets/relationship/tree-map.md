@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Treemap (Modern) - Embedded BI Visual | Bold BI Documentation
+title: Treemap for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure hierarchical data, labels, color settings, formatting, and interactions for the modern Treemap widget in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/tree-map/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Tree Map
 documentation: ug
 ---
 
-# Tree Map
+# Treemap for Modern Dashboards
 
-A Tree Map displays hierarchical categories as nested rectangles whose sizes represent measure values. Use it to compare proportions while preserving category structure.
+The Tree Map widget in Bold BI displays hierarchical categories as nested rectangles whose sizes represent measure values. Use it to compare proportions while preserving category structure.
 
 ![Tree Map](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tree-map-widget.png)
 

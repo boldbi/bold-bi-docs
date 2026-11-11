@@ -1,11 +1,11 @@
 ---
-title: User Import from Active Directory – Embedded BI | Bold BI
+title: Import Users from Active Directory in Bold BI | Bold BI
 description: Learn how to import users from Windows Active Directory in Bold BI Embedded. Also know how to modify existing Windows Active Directory connection.
 platform: bold-bi
 documentation: ug
 ---
 
-# Active Directory User Import
+# Import Users from Active Directory
 
 This section explains how to search for and import users from Active Directory into the Bold BI application.
 
@@ -43,7 +43,7 @@ You can view the status of the current import by clicking the `View Status` butt
 
 ![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
-> **NOTE:**  The Bold BI application will rely on the user's email for authentication purposes. If the imported user does not have an email address, the Bold BI server will automatically generate an email for that user. For example, if the username is `John` and the domain name is `example.com`, then the user will be imported with the auto-generated email `john@example.com`.
+> **NOTE:**  The Bold BI application will rely on the user's email for authentication purposes. If the imported user does not have an email address, the Bold BI Server will automatically generate an email for that user. For example, if the username is `John` and the domain name is `example.com`, then the user will be imported with the auto-generated email `john@example.com`.
 
 ## Modify Active Directory Connection
 

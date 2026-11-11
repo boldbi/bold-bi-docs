@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Reset Application Database – Utility for v3.3 | Bold BI Docs
+title: Reset Application Database - Utility for v3.3 | Bold BI
 description: Learn how to reset the application database of Bold BI server application of v3.3 or earlier through the command line interface.
 platform: bold-bi
 documentation: ug
 ---
 
-# Reset Application Database for Bold BI version 3.3 or older
+# Reset Application Database - Utility for v3.3
 
 You can reset the database of the Bold BI application using this command. Follow these steps:
    
@@ -21,13 +21,13 @@ cd C:\Bold BI\Utilities\AdminUtils
 AdminUtils.exe dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false   
 ~~~  
 > **IMPORTANT:**  command details:  
-> servername – SQL server hostname/IP  
-> databasename – SQL database name  
-> u – SQL server username  
-> p – SQL server password  
+> servername: SQL server hostname/IP  
+> databasename: SQL database name  
+> u: SQL server username  
+> p: SQL server password  
 > port - port number of Server(Required PostgreSQL only)  
-> iswindowsauthentication – Is windows authentication required (this is optional)  
-> sslenabled – Is encrypted connection required (this is optional)
+> iswindowsauthentication: Is windows authentication required (this is optional)  
+> sslenabled: Is encrypted connection required (this is optional)
 
 ![reset-command](/static/assets/admin-utility/images/reset-con-string.png)  
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radar Polar Chart – Embedded BI | Bold BI Documentation
+title: Radar Polar Chart - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Radar Polar Chart visual in Bold BI Embedded dashboard, configure data and other settings.
 canonical: "/visualizing-data/visualization-widgets/radar-polar-chart/"
 platform: bold-bi
@@ -8,7 +8,7 @@ control: Radar Polar Chart
 documentation: ug
 ---
 
-# Radar/Polar Chart
+# Radar Polar Chart - Embedded Analytics
 
 A Radar/Polar chart is a graphical method used to display multivariate data in the form of a two-dimensional chart. It utilizes three or more quantitative variables represented on axes that originate from a common point. 
 
@@ -168,7 +168,7 @@ You can view the data in the hidden columns in the underlying data view. This is
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/info-icon.png)
 
-The below chart displays the goals by each team without hidden columns.
+The following chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/before.png)
 
@@ -202,19 +202,19 @@ You will see a list of properties available for the widget, each with a default 
 
 #### Name
 
-This allows you to change the `title` for the Radar/Polar chart widget.
+This lets you change the `title` for the Radar/Polar chart widget.
 
 ![Name](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/name.png)
 
 #### Subtitle
 
-This allows you to add a subtitle for the Radar/Polar chart widget.
+This lets you add a subtitle for the Radar/Polar chart widget.
 
 ![Subtitle](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/subtitle.png)
 
 #### Description
 
-This allows you to add a description for the Radar/Polar chart widget.
+This lets you add a description for the Radar/Polar chart widget.
 
 ![Description](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/description.png)
 
@@ -228,7 +228,7 @@ It animates the measure values when you toggle the `Enable Animation.`
 
 #### Show Marker
 
-This allows you to enable or disable the `marker` in the Radar or Polar chart.
+This lets you enable or disable the `marker` in the Radar or Polar chart.
 
 ![Marker](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/marker.png)
 
@@ -236,13 +236,13 @@ This allows you to enable or disable the `marker` in the Radar or Polar chart.
 
 #### Show Value Label
 
-This allows you to toggle the visibility of the value labels in the Radar/Polar chart.
+This lets you toggle the visibility of the value labels in the Radar/Polar chart.
 
 ![Value Label](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/value-label.png)
 
 #### Draw Type
 
-This allows you to change the draw type of the widget. By default, the `draw type` is Polar.
+This lets you change the draw type of the widget. By default, the `draw type` is Polar.
 
 ![Polar Chart](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/polar-chart.png)
 
@@ -250,74 +250,74 @@ This allows you to change the draw type of the widget. By default, the `draw typ
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in the radar polar chart.
+This option lets you toggle the visibility of tooltip in the radar polar chart.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/rtl-tooltip.png)
 
 #### Chart Type
 
-This allows you to switch from the current chart type to another. The area chart is the default Chart type in the radar polar chart. The other chart types are `Line, Spline, Area` and `Scatter.`
+This lets you switch from the current chart type to another. The area chart is the default Chart type in the radar polar chart. The other chart types are `Line, Spline, Area` and `Scatter.`
 
 #### Legend Settings
 
-This section allows you to customize the legend in the Radar/Polar Chart
+This section lets you customize the legend in the Radar/Polar Chart
 
 ![Legend Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-settings.png)
 
 #### Show Legend
 
-A legend is a text used to describe the data plotted. This option allows you to toggle the visibility of the legend in the Radar/Polar chart.
+A legend is a text used to describe the data plotted. This option lets you toggle the visibility of the legend in the Radar/Polar chart.
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/show-legend.png)
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. It provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. It provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
 
 Disabling the interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+Enabling the Interactivity feature in the Legend Settings category lets you click on the legends
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-interactivity-enable.png)
 
 #### Legend Position
 
-This option allows you to change the position of the legend text by selecting through a combo box. By default, the legend position is bottom.
+This option lets you change the position of the legend text by selecting through a combo box. By default, the legend position is bottom.
 
 ![Legend Position](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-position.png)
 
 #### Legend Shape
 
-This allows you to change the **shape** of the legend.
+This lets you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend to a `Circle`.
+This option lets you change the shape of the legend to a `Circle`.
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend to match the `Series`.
+This option lets you change the shape of the legend to match the `Series`.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-shape-series.png)
 
@@ -332,27 +332,27 @@ You can customize the legend text through the Custom Legend Settings dialog. Thi
 
 #### Axis
 
-This section allows you to customize the axis settings in the Radar/Polar chart.
+This section lets you customize the axis settings in the Radar/Polar chart.
 
 ![Axis](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/axis.png)
 
 
 #### Show Category Axis
 
-This option allows you to toggle the visibility of the category axis in the Radar/Polar chart.
+This option lets you toggle the visibility of the category axis in the Radar/Polar chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/category-axis.png)
 
 #### Primary Value Axis
 
-This option allows you to toggle the visibility of the primary value axis in the Radar/Polar chart.
+This option lets you toggle the visibility of the primary value axis in the Radar/Polar chart.
 
 ![Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/primary-value-axis.png)
 
 
 #### Axis Range Settings
 
-This option allows you to manually set the Minimum, Maximum, and Interval values of the primary value axis through the Axis Range Settings dialog. 
+This option lets you manually set the Minimum, Maximum, and Interval values of the primary value axis through the Axis Range Settings dialog. 
 
 ![Axis Range Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/axis-range-settings.png)
 
@@ -362,25 +362,25 @@ These settings will be reflected in the primary value axis of the Radar/Polar ch
 
 #### Grid Line
 
-This section allows you to toggle the visibility of gridlines in the Radar/Polar chart.
+This section lets you toggle the visibility of gridlines in the Radar/Polar chart.
 
 ![Grid Line](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/gridlines.png)
 
 #### Primary Value Axis
 
-This option allows you to enable or disable the `Primary Value Axis` gridlines for the Radar/Polar chart.
+This option lets you enable or disable the `Primary Value Axis` gridlines for the Radar/Polar chart.
 
 ![Primary Value Axis view](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/primary-value-axis-view.png)
 
 #### Category Axis
 
-This option allows you to enable or disable the `Category Axis` gridlines for the Radar/Polar chart.
+This option lets you enable or disable the `Category Axis` gridlines for the Radar/Polar chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/category-axis-view.png)
 
 #### Series Palette
 
-This option allows you to customize the Radar/Polar chart series color through the Series Palette section.
+This option lets you customize the Radar/Polar chart series color through the Series Palette section.
 
 This section shows a list of series labels on the left-hand side and the corresponding series color on the right-hand side. By clicking on the colored square, the color picker will be opened. In that dialog, you can choose a color or change the series color by changing the corresponding Hexadecimal value on the right-hand side.
 
@@ -394,11 +394,11 @@ This section shows a list of series labels on the left-hand side and the corresp
 
 #### Act as Master Widget
 
-This option allows you to define the Radar/Polar chart widget as a master widget so that its filter action can be listened to by other widgets in the dashboard.
+This option lets you define the Radar/Polar chart widget as a master widget so that its filter action can be listened to by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This option allows you to define the Radar/Polar chart widget to ignore responding to the filter actions applied by other widgets in the dashboard.
+This option lets you define the Radar/Polar chart widget to ignore responding to the filter actions applied by other widgets in the dashboard.
 
 #### Hierarchical filter
 
@@ -408,7 +408,7 @@ When the `Hierarchical Filter option` is enabled, the `Top N` will be applied fo
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the radar polar chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the radar polar chart widget when the `Act as Master Widget` option is enabled.
 
 #### Link
 
@@ -419,17 +419,17 @@ You can enable linking and configure it to navigate to a general URL with or wit
 
 ### Container Appearance
 
-This section allows you to customize the `Container Appearance` for the radar or polar chart widget.
+This section lets you customize the `Container Appearance` for the radar or polar chart widget.
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
-This option allows you to handle the alignment of the widget title to either **left, center,**  or **right**.
+This option lets you handle the alignment of the widget title to either **left, center,**  or **right**.
 
 ### Title Color
 
-This option allows you to apply the text `color` to the widget title.
+This option lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -437,7 +437,7 @@ By enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This option allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This option lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -445,7 +445,7 @@ By enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This option allows you to apply the specified size of the font to the widget subtitle if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This option lets you apply the specified size of the font to the widget subtitle if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -453,81 +453,81 @@ By enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This option allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This option lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This option allows you to toggle the visibility of the `border` surrounding the widget.
+This option lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This option lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This option allows you to set the **background image** for the radar or polar chart widget.
+This option lets you set the **background image** for the radar or polar chart widget.
 
 ### Background Color
 
-This option allows you to set the **background color** for the radar or polar chart widget.
+This option lets you set the **background color** for the radar or polar chart widget.
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the `background color.`
+This property lets you specifies the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+This option lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 
-This section allows you to customize the `Container Actions` for the radar or polar chart widget.
+This section lets you customize the `Container Actions` for the radar or polar chart widget.
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
-This option allows you to enable or disable the `widget title` of the radar or polar chart. 
+This option lets you enable or disable the `widget title` of the radar or polar chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the radar or polar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the radar or polar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the radar or polar chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the radar or polar chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the radar or polar chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the radar or polar chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the radar or polar chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the radar or polar chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the radar or polar chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the radar or polar chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to this [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

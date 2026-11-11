@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Trendline in Chart – Embedded BI | Bold BI Documentation
+title: Add Trendline in Chart - Embedded Analytics | Bold BI
 description: Learn how to add trendlines in chart widget of Bold BI Embedded dashboard and edit related properties like, line type, style, and color.
 canonical: "/visualizing-data/working-with-widgets/chart-trendlines/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Trendlines
+# Add Trendline in Chart - Embedded Analytics
 
 Trendlines help determine the general pattern or overall direction of the data in the chart widget. You can add more than one trendline to Cartesian charts, except for bar type series (Line, Column, Area, Spline) and stacked types of charts. You are able to add, edit, and delete trendlines.
 

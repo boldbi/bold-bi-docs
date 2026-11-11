@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Microsoft Fabric Explorer – BI Connector | Bold BI Documentation
+title: Microsoft Fabric Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Microsoft Fabric Explorer, an analytic data warehouse with Bold BI Cloud & Embedded, and create a data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Microsoft Fabric source
+# Microsoft Fabric Data Connector Guide in Bold BI
 Bold BI Dashboard Designer supports connecting to Microsoft Fabric database through SQL Live query.
 
 ## Choose Microsoft Fabric data source
@@ -89,7 +89,7 @@ The application key is the (Client Secret) secret key generated for your app in 
 
 ## How to get above credentials in Microsoft Fabric Portal
 
-Follow the below steps to access Microsoft Fabric data using the service principle
+Follow the following steps to access Microsoft Fabric data using the service principle
 
 1. Register an Application in Microsoft Entra (Azure AD)
 

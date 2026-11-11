@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Dashboard Embedding Example in JavaScript app | Bold BI Docs
+title: Dashboard Embedding Example in JavaScript app | Bold BI
 description: Explore the embedded samples and learn how to embed the dashboard of the Bold BI application in a JavaScript based Web applications using iFrame.
 platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard view
+# Dashboard Embedding Example in JavaScript app
 
 This section explains how to embed the Bold BI dashboard into the sample application by integrating the Dashboards Listing, Designing, and Viewing modules.
 

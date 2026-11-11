@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chart (Modern) Widget | Bold BI Documentation
+title: Column Chart for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, filters, and interactions for the modern Column Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/column-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Column Chart
 documentation: ug
 ---
 
-# Column Chart
+# Column Chart for Modern Dashboards
 
-A Column Chart compares values across categories using vertical columns. It is useful for comparing discrete categories and showing changes across an ordered category axis.
+The Column Chart widget in Bold BI compares values across categories using vertical columns. It is useful for comparing discrete categories and showing changes across an ordered category axis.
 
 ![Column Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/column-chart/column-chart-view.png)
 

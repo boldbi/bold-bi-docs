@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Files Data Connector – Cloud BI | Bold BI Documentation
-description: Learn how to connect files such as, JSON, XML and CSV with Bold BI Cloud and create data source with their data.
+title: Files Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect JSON, XML and CSV files to Bold BI Cloud and create a data source from their data for dashboards and widgets in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Files (JSON, XML, CSV) data source
+# Files Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to JSON, XML and CSV files. 
 
 ## Choose Files (JSON, XML, CSV) data source
-To configure the Files data source, follow the below steps:
+To configure the Files data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -37,7 +37,7 @@ You can connect to the data source using one of the following extract methods:
    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
    
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
@@ -46,7 +46,7 @@ You can connect to the data source using one of the following extract methods:
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 
 <table width="600">
 <tr>

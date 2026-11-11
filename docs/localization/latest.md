@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Localization Support in Embedded Bold BI v5.1+ | Bold BI Docs
+title: Localization Support in Embedded Bold BI v5.1+ | Bold BI
 description: Learn how to generate localization files for your (local) language, localize the Bold BI v5.1.55 or later versioned application deployed in your server.
 platform: bold-bi
 documentation: ug
 ---
-# Localization Support in Bold BI Application
+# Localization Support in Embedded Bold BI v5.1+
 
 Localization involves adapting a website into different linguistic and cultural contexts, which goes beyond simple text translation.
 

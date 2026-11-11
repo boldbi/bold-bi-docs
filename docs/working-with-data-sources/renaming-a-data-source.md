@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Renaming a data source – Embedded BI | Bold BI Learning
+title: Renaming a data source - Embedded Analytics | Bold BI
 description: Learn how to rename an already created data source associated with a dashboard through data source editor in Bold BI Embedded.
 canonical: "/working-with-data-sources/renaming-a-data-source/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Renaming a Data Source
+# Renaming a data source - Embedded Analytics
 
 To rename a data source, you can use the `Name` field in the tools pane in data design view. This field is highlighted in the image below.
 

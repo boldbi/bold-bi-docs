@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Upgrade on Multi Container | Bold BI Documentation
+title: Bold BI Upgrade on Multi Container in Bold BI | Bold BI
 description: This section explains about how to upgrade the Bold BI single and multi container application using Docker compose.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade Bold BI on Docker Deployment.
+# Bold BI Upgrade on Multi Container in Bold BI
 
 1. Navigate to the location of the Docker Compose deployment file.
 

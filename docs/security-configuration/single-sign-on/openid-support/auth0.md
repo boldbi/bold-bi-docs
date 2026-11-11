@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SSO with Auth0 Provider of OpenID Connect | Bold BI Embedded
+title: SSO with Auth0 Provider of OpenID Connect | Bold BI
 description: Learn how to configure Bold BI Embedded with Auth0 identity provider for Single Sign-on authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Auth0 support for SSO authentication
+# SSO with Auth0 Provider of OpenID Connect
 
 The Bold BI application supports the addition of users using the Auth0 provider. By importing them, you can share the dashboards and send exported dashboards to them via email.
 

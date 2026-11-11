@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Picker (Modern) Widget | Bold BI Documentation
+title: Date Picker for Modern Dashboards in Bold BI | Bold BI
 description: Learn how to configure data, selection modes, limit settings, filters, and widget behavior for the modern Date Picker in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/filters/date-picker/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: Date Picker
 documentation: ug
 ---
 
-# Date Picker
+# Date Picker for Modern Dashboards
 
-The Date Picker allows users to select a date, month, or date range to filter and interact with dashboard data.
+The Date Picker filter in Bold BI lets users select a date, month, or date range to filter and interact with dashboard data.
 
 ## Configuring Data
 
@@ -19,7 +19,7 @@ Configure the data for the Date Picker in the `ASSIGN DATA` tab.
 | Data section | Requirement | Description |
 |---|---|---|
 | **Column** | Required | Specifies the date or date-time dimension field whose values are used by the Date Picker. |
-| **Filters** | Optional | Allows you to apply additional filtering conditions to the Date Picker data. |
+| **Filters** | Optional | Lets you apply additional filtering conditions to the Date Picker data. |
 
 ### Assigning Data
 
@@ -36,9 +36,9 @@ Configure the data for the Date Picker in the `ASSIGN DATA` tab.
 
 Click the `More options` icon for the assigned field to configure the following options.
 
-- **Sort** – Sorts the date values in ascending or descending order. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
-- **Filter(s)** – Applies filter conditions to include or exclude specific date values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column).
-- **Relative Dates** – Configures relative date ranges such as the current week or previous month. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
+- **Sort**, Sorts the date values in ascending or descending order. See [Advanced Sorting](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+- **Filter(s)**, Applies filter conditions to include or exclude specific date values. See [Configuring Widget Filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column).
+- **Relative Dates**, Configures relative date ranges such as the current week or previous month. See [Relative Date Filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#relative-date-filter).
 
 ---
 
@@ -62,8 +62,8 @@ Allows users to select a start date and an end date. Disable this option to allo
 
 Determines the calendar view and the type of value that users can select.
 
-- **Date** – Displays the date calendar and allows users to select individual dates.
-- **Month** – Displays a month-based calendar and allows users to select months.
+- **Date**, Displays the date calendar and allows users to select individual dates.
+- **Month**, Displays a month-based calendar and allows users to select months.
 
 #### Limit Dates
 
@@ -71,7 +71,7 @@ Restricts selection to dates available in the assigned data-source field. Disabl
 
 #### Show Latest Date
 
-Opens the Date Picker calendar at the latest date available in the assigned data-source field.
+Opens the Date Picker calendar at the most recent date available in the assigned data-source field.
 
 #### Limit Date Selection
 
@@ -81,9 +81,9 @@ Restricts the range users can select. This property is available when **Range** 
 
 Determines the period within which an end date can be selected after a start date is chosen.
 
-- **Weekly** – Allows date selection within the week of the selected start date.
-- **Monthly** – Allows date selection within the month of the selected start date.
-- **Custom** – Allows date selection for the number of days specified in **Custom Limit Days**.
+- **Weekly**, Allows date selection within the week of the selected start date.
+- **Monthly**, Allows date selection within the month of the selected start date.
+- **Custom**, Allows date selection for the number of days specified in **Custom Limit Days**.
 
 #### Custom Limit Days
 

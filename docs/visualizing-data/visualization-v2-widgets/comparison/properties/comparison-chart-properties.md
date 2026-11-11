@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comparison Chart Properties | Bold BI Documentation
+title: Comparison Chart Properties in Modern Widgets | Bold BI
 description: Learn the shared comparison chart properties used by modern Bar, Column, Stacked, 100% Stacked, and Radar Polar widgets in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/properties/comparison-chart-properties/"
 platform: bold-bi
@@ -8,15 +8,15 @@ control: Comparison Charts
 documentation: ug
 ---
 
-# Properties
+# Comparison Chart Properties in Modern Widgets
 
-This page describes the properties shared by the modern **Bar Chart**, **Column Chart**, **Stacked Bar Chart**, **Stacked Column Chart**, **100% Stacked Bar Chart**, and **100% Stacked Column Chart**.
+Bold BI modern widget properties on this page are shared by the **Bar Chart**, **Column Chart**, **Stacked Bar Chart**, **Stacked Column Chart**, **100% Stacked Bar Chart**, and **100% Stacked Column Chart**.
 
 Widget-specific property behavior that does not apply across this shared comparison-chart set is documented on the respective widget page.
 
 ## Basic Settings
 
-#### Chart Type and Axis
+### Chart Type and Axis
 
 Opens the series configuration dialog. Select a compatible chart type and assign each series to the primary or secondary value axis. This property is hidden during drill down. A 100% stacked series cannot use the secondary axis.
 
@@ -102,7 +102,7 @@ Rounds bar or column corners. In a stacked chart, rounding applies to the expose
 
 ## Tooltip Settings
 
-#### Show Tooltip
+### Show Tooltip
 
 Displays information when a viewer points to a data point. Disabling it disables the remaining tooltip controls.
 
@@ -128,7 +128,7 @@ Displays all series values for the selected category in one tooltip.
 
 ## Legend Settings
 
-#### Show Legend
+### Show Legend
 
 Shows or hides the legend. Enabling it displays the remaining legend properties.
 
@@ -170,7 +170,7 @@ Sets the available width for legend text.
 
 ## Series Palette
 
-This category is available when both `Values` and `Row` fields are configured.
+The Series Palette category is available when both `Values` and `Row` fields are configured.
 
 #### Use Default Palette
 
@@ -300,7 +300,7 @@ Sets the grid-line color.
 
 ## Trendline
 
-This category is available for an eligible non-stacked Bar or Column series when exactly one `Columns` field is configured and no `Row` field is assigned.
+The Trendline category is available for an eligible non-stacked Bar or Column series when exactly one `Columns` field is configured and no `Row` field is assigned.
 
 #### Series
 

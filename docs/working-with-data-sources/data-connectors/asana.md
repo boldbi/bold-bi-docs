@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Asana – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Asana web service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Asana Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Asana through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Asana data source
+# Asana Data Connector Setup Guide in Bold BI
 
 Bold BI dashboard designer supports connecting to Asana web services through the REST API.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation Data Type Conversion | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to covert the data type of the columns and make the most of your analytics.
+title: Transformation Data Type Conversion in Bold BI | Bold BI
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to convert column data types and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

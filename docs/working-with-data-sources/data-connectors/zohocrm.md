@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Zoho CRM – Cloud BI Data Connector | Bold BI Documentation
+title: Zoho CRM Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect the Zoho CRM data using the OAuth-based authentication and create a data source in Dashboard Designer with Bold BI Cloud data connector.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zoho CRM data source
+# Zoho CRM Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zoho CRM web services through the REST API. 
 
 ## Choose Zoho CRM data source
-To configure the Zoho CRM data source, follow the below steps:
+To configure the Zoho CRM data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Zoho CRM web service:
 
 ## Connect to Zoho CRM
 ### Create Zoho CRM data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Zoho CRM data source:
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Zoho CRM data source:
 1. Enter a name and description (optional) for the data source.
 2. Click the **Endpoints** dropdown and choose the required endpoint.
 

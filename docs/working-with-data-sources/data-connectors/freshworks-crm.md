@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Freshworks CRM – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Freshworks CRM web service through REST API endpoint with Bold BI Cloud and create a data source.
+title: Freshworks CRM Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Freshworks CRM web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Freshworks CRM data source
+# Freshworks CRM Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Freshworks CRM web services through the REST API. 
 
 ## Choose Freshworks CRM data source
-To configure the Freshworks CRM data source, follow the below steps:
+To configure the Freshworks CRM data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Freshworks CRM data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/freshworks-CRM/ChooseDS_server.png)
    
 ## Create Freshworks CRM data source
-Once you click the data source, the `NEW DATA SOURCE` configuration panel opens. Follow the below steps to create Freshworks CRM data source.
+Once you click the data source, the `NEW DATA SOURCE` configuration panel opens. Follow the following steps to create Freshworks CRM data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter your Freshworks CRM hostname
 3. Click the **Api EndPoint** drop-down box and choose the required endpoint.
@@ -45,7 +45,7 @@ Once you click the data source, the `NEW DATA SOURCE` configuration panel open
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Token for connecting Freshworks CRM data source?
+### How do I get API Token for connecting Freshworks CRM data source?
 
 1. Login to your [Freshworks CRM](https://www.freshworks.com/freshsales-crm/login/) account. Go to *Account -> Settings*.
 2. In *Personal setting* page click *API settings* tab.

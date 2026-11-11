@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configure SSO with Keycloak using Open ID Connect | Bold BI Docs
+title: Configure SSO with Keycloak using Open ID Connect | Bold BI
 description: Learn how to configure Bold BI Embedded application with Keycloak identity provider for Single Sign-on authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Keycloak support for SSO authentication
+# Configure SSO with Keycloak using Open ID Connect
 
 Keycloak is an open-source identity and access management solution designed for modern applications and services.
 

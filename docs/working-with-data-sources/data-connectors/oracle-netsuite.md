@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Oracle NetSuite – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Oracle NetSuite web service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: Oracle NetSuite Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Oracle NetSuite through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Oracle NetSuite data source
+# Oracle NetSuite Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Oracle NetSuite web services through the REST API.
 
 ## Choose Oracle NetSuite data source
-To configure the Oracle NetSuite data source, follow the below steps:
+To configure the Oracle NetSuite data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -90,13 +90,13 @@ To configure the Oracle NetSuite data source, follow the below steps:
 ## Connect the NetSuite connector in Bold BI.
 **Note:** Oracle NetSuite supports two primary methods for establishing a connection:
 
-1. **Resources** – Access individual record types through RESTful endpoints.
+1. **Resources**, Access individual record types through RESTful endpoints.
 
-2. **SuiteQL** – Execute SQL-like queries to retrieve complex or filtered data across multiple records.
+2. **SuiteQL**, Execute SQL-like queries to retrieve complex or filtered data across multiple records.
 
 ### Connect to Oracle NetSuite using Resources
 #### Create Oracle NetSuite data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Oracle NetSuite data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Oracle NetSuite data source.
 1. Enter a name and description (optional) for the data source.
 2. Click on the **Resources** radio button to choose the Host Name and the Resources API Endpoints.
 3. The **Host Name** should be in the format: **accountid.suitetalk.api.netsuite.com**, where **accountid** is your actual NetSuite Account ID.
@@ -114,7 +114,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel will op
 
 ### Connect to Oracle NetSuite using SuiteQL
 #### Create Oracle NetSuite data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Oracle NetSuite data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Oracle NetSuite data source.
 1. Enter a name and description (optional) for the data source.
 2. Click on the **SuiteQL** radio button to choose the Host Name or to enable the custom URL.
 3. The **Host Name** should be in the format: **accountid.suitetalk.api.netsuite.com**, where **accountid** is your actual NetSuite Account ID.

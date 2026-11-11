@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation of Bold BI on Amazon EKS | Bold BI Docs
+title: Installation of Bold BI on Amazon EKS in Bold BI | Bold BI
 description: Learn how to deploy the Bold BI application in an AWS ECS environment with step-by-step guidance and best practices.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI on Kubernetes
+# Installation of Bold BI on Amazon EKS in Bold BI
 
 Multi-node deployment has been achieved in Bold BI using Kubernetes, which provides high availability, scalability, and auto-healing. The following diagram illustrates the Bold BI container architecture that runs in a Kubernetes cluster.
   
@@ -36,10 +36,10 @@ The table below shows the Bold BI deployments and their usage:
 
 ## How to achieve high availability in Bold BI using Kubernetes?
 
-1. **Containerized Architecture** – Bold BI runs as a multi-instance containerized application. If any of the instances crashes, the entire application will not go down. If one instance is down, the request is automatically redirected to the next instance.
-2. **Load Balancing** – Network traffic is evenly distributed across available pods. 
-3. **Auto Scaling** – HPA (Horizontal Pod Scaling) is enabled by default in Bold BI. Based on traffic, the pods are automatically scaled up or down. This ensures consistent response time even with rapidly changing loads. 
-4. **Auto Healing** – Kubernetes closely monitors the health status of the pods and restarts them automatically in case of crashes or issues.
+1. **Containerized Architecture**: Bold BI runs as a multi-instance containerized application. If any of the instances crashes, the entire application will not go down. If one instance is down, the request is automatically redirected to the next instance.
+2. **Load Balancing**: Network traffic is evenly distributed across available pods. 
+3. **Auto Scaling**: HPA (Horizontal Pod Scaling) is enabled by default in Bold BI. Based on traffic, the pods are automatically scaled up or down. This ensures consistent response time even with rapidly changing loads. 
+4. **Auto Healing**: Kubernetes closely monitors the health status of the pods and restarts them automatically in case of crashes or issues.
 
 ## How to deploy Bold BI in Amazon Elastic Kubernetes Service
 

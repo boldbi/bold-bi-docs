@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Table Visual - BI Widget (Grid) | Bold BI Documentation
-description: Learn how to configure data, columns, formatting, filters, summary rows, and interactions for the modern Grid widget in Bold BI dashboards.
+title: Table Visual for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, columns, formatting, filters, summary rows, and interactions for the modern Grid widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/relationship/grid/"
 platform: bold-bi
 control: Grid
 documentation: ug
 ---
 
-# Grid
+# Table Visual for Modern Dashboards
 
-The Grid presents data in rows and columns. Use it when viewers need detailed values, sorting, paging, summaries, or conditional formatting.
+The Grid widget in Bold BI presents data in rows and columns. Use it when viewers need detailed values, sorting, paging, summaries, or conditional formatting.
 
 ![Grid widget](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-grid.png)
 
@@ -336,28 +336,28 @@ Select a column under **Value**, then choose a representation type.
 
 The available display representations are:
 
-- **Value** — displays the raw numeric or text value
-- **Data List** — shows values in a list format
+- **Value**, displays the raw numeric or text value
+- **Data List**, shows values in a list format
 
   ![Formatting data list](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-formattingdatalist.png)
 
-- **Data Bar** — renders a proportional bar inside the cell
+- **Data Bar**, renders a proportional bar inside the cell
 
   ![Formatting data bar](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-formattingdatabar.png)
 
-  - **Bar** — configures data bar fill color
+  - **Bar**, configures data bar fill color
 
     ![Bar](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-bar.png)
 
-  - **Bar Shape** — selects the bar style (rectangular, rounded, etc.)
+  - **Bar Shape**, selects the bar style (rectangular, rounded, etc.)
 
     ![Bar shape](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-barshape.png)
 
-- **Icons** — displays a configurable icon for each value
+- **Icons**, displays a configurable icon for each value
 
   ![Icons](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-icons.png)
 
-- **Background** — applies a fill color to the cell based on the value
+- **Background**, applies a fill color to the cell based on the value
 
   ![Background](/static/assets/visualizing-data/visualization-v2-widgets/images/grid-v2/v2-background.png)
 

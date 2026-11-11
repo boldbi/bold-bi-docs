@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to connect SparkSQL in Embedded BI? | Bold BI Docs
+title: SparkSQL Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect and access the SparkSQL database to create a data source, configure the dashboard widget, and embed the dashboards using Bold BI.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to SparkSQL data source
+# SparkSQL Data Connector Guide in Bold BI
 The Bold BI Dashboard designer connects the SparkSQL database using the SQL Live Query.
 
 > **Note:** SparkSQL data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.

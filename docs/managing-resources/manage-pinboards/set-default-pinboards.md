@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting a default Pinboard – Embedded BI | Bold BI Learning
+title: Setting a Default Pinboard in Your Site in Bold BI | Bold BI
 description: Learn how to set a default pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
 canonical: "/managing-resources/manage-pinboards/set-default-pinboards/"
 platform: bold-bi
 documentation: ug
 ---
 
-# To Set a default Pinboard
+# Setting a Default Pinboard in Your Site
 
 This section explains how to set a default Pinboard in the Bold BI application.
 

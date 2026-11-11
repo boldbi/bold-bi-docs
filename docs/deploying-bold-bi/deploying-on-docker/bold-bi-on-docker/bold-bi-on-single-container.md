@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bold BI Deployment on Single container | Bold BI Documentation
+title: Bold BI Deployment on Single container in Bold BI | Bold BI
 description: This section explains about the installation and deployment of the Bold BI on Docker Single Container.
 platform: bold-bi
 documentation: ug
 ---
 
 
-# Deploy Bold BI on Docker Single Container
+# Bold BI Deployment on Single container in Bold BI
 
 Recommended for production sites, in the Bold BI Production Image you can store the application data on your host machine to make the Bold BI container a stateful application. The Bold BI application will read and write the data on your host machine. Follow the below steps to deploy the Bold BI Production Image.
 

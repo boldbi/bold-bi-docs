@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Connect to Web data source | Cloud BI Dashboard Designer
-description: Learn how to create data source by connecting to the Web data source through REST API in Cloud BI Dashboard Designer.
+title: Web Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to create a data source by connecting to a web data source through the REST API in the Cloud BI dashboard designer, then build dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Web data source
+# Web Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to almost all web services that has a REST API interface.
 
 ## Choose web data source
-To configure the web data source, follow the below steps:
+To configure the web data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
@@ -24,7 +24,7 @@ To configure the web data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Web/ChooseDS_Server.png)
 
 ## Create web data source
-After clicking the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create web data source:
+After clicking the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create web data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid REST API endpoint in the URL text box.
 3. Choose one of the **Method Types** from the combo box for the provided REST API. Options include *GET* and *POST*.
@@ -41,12 +41,12 @@ Options include [*None*](/working-with-data-sources/data-connectors/web/#none), 
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also modify the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option. 
 
@@ -349,7 +349,7 @@ For example, let's connect to the `GitHub` REST API in a web data source with pa
    </tr>
    </table> 
 
-> **NOTE:**   In order to implement pagination, you must provide one of the field values, either `Total Records Path` or `Data Indicator Path`. If both values are given, `Total Records Path` will be used. 
+> **NOTE:**   To implement pagination, you must provide one of the field values, either `Total Records Path` or `Data Indicator Path`. If both values are given, `Total Records Path` will be used. 
 
 #### Additional information
 <table width="600">
@@ -446,7 +446,7 @@ You can configure parameters as numeric values for the following functions: AddM
 
 All of the Add methods should not have a parameter of 0. The SetDayStart method should have a numerical value between 0 and 6, and the SetMonthStart method should have a numerical value between 1 and 12.
 
-String parameters are utilized in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters: week, month, quarter, and year. The format function is used to modify the format of date and time, with the parameter being matched with the date and time format supported in C#. Support for epoch time is also available in the format function. The SetTimeZone function is used to adjust the time zone of the date, with the parameter being matched with TimeZoneInfo IDs present in C#.
+String parameters are used in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters: week, month, quarter, and year. The format function is used to modify the format of date and time, with the parameter being matched with the date and time format supported in C#. Support for epoch time is also available in the format function. The SetTimeZone function is used to adjust the time zone of the date, with the parameter being matched with TimeZoneInfo IDs present in C#.
 
 `Today` function does not hold any parameters.
 Here for example concern we are using `today()`as `11/16/2018 12:17`

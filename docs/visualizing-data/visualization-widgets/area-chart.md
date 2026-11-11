@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Area Chart Widget – Embedded BI | Bold BI Documentation
+title: Area Chart Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Area Chart visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/area-chart/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Area Chart
+# Area Chart Widget - Embedded Analytics
 
 The Area Chart enables you to compare values for a group of unordered items across different categories by using filled curves that are arranged vertically.
 
@@ -234,13 +234,13 @@ This feature enables you to modify the `title` for the area chart widget.
 
 #### Subtitle
 
-This area chart widget allows you to provide the `subtitle`.
+This area chart widget lets you provide the `subtitle`.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/subtitle.png)
 
 #### Description
 
-This area chart widget allows you to provide a `description` about it.
+This area chart widget lets you provide a `description` about it.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/description.png)
 
@@ -274,7 +274,7 @@ If you Disable `Show Value Labels` properties, the dependent properties, which a
 
 #### Customize
 
-This feature allows you to customize the visibility of value labels in each series.
+This feature lets you customize the visibility of value labels in each series.
 
 ![Value labels customization change](/static/assets/visualizing-data/visualization-widgets/images/area-chart/value-label-customization.png)
 
@@ -290,13 +290,13 @@ This feature enables you to customize the color of the value label.
 
 #### Value Label Position
 
-This option allows you to customize the position of the value label in the chart. By default, it is set to 'Auto,' so the label position for the area chart will be set as Top.
+This option lets you customize the position of the value label in the chart. By default, it is set to 'Auto,' so the label position for the area chart will be set as Top.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/area-chart/valuelabelposition.png)
 
 #### Value Label Rotation
  
-This allows you to define the rotation angle for the display of value labels.
+This lets you define the rotation angle for the display of value labels.
 
 ![Value Label Rotation](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-showlabelrotation.png)
 
@@ -306,7 +306,7 @@ This feature enables you to display or conceal the suffix value of value labels.
 
 #### Suffix Value
 
-This allows you to customize the suffix value of value labels.
+This lets you customize the suffix value of value labels.
 
 ![Suffix Value](/static/assets/visualizing-data/visualization-widgets/images/area-chart/suffix-value.png)
 
@@ -330,25 +330,25 @@ If you enable the `Show Items With No Data` property, then the columns with null
 
 ### Empty Point Mode
 
-This allows you to handle the display mode for empty points using the properties `Gap`, `Zero`, `Average` and `Connect`.
+This lets you handle the display mode for empty points using the properties `Gap`, `Zero`, `Average` and `Connect`.
 
 ![Empty Point Mode Options](/static/assets/visualizing-data/visualization-widgets/images/area-chart/chart-options.png)
 
 ### Gap
 
-This option allows you to display null or undefined values as gaps.
+This option lets you display null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
 
 ### Zero
 
-This option allows you to display the null or undefined values on the zero axis.
+This option lets you display the null or undefined values on the zero axis.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-zero.png)
 
 ### Average
 
-This option allows you to display the null or undefined values along with the average value.
+This option lets you display the null or undefined values along with the average value.
 
 ![Empty Point Mode Average](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-average.png)
 
@@ -364,35 +364,35 @@ When this support is enabled, the thumb-size of the chart scroll bar will be cal
 
 #### Page Size
 
-This option allows you to set the number of records that need to be fetched on the initial load.
+This option lets you set the number of records that need to be fetched on the initial load.
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in the chart.
+This option lets you toggle the visibility of the tooltip in the chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the chart's tooltip.
+This option lets you customize which columns are visible in the chart's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/area-customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/area-chart/area-rtl-tooltip.png)
 
 #### Apply Legend Color
 
-This option allows you to display tooltip text and value colors that correspond with the legend colors.
+This option lets you display tooltip text and value colors that correspond with the legend colors.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/area-chart/area-legend-tooltip.png)
 
@@ -402,7 +402,7 @@ This option allows you to display tooltip text and value colors that correspond 
 
 #### Show Legend
 
-A legend is a text used to describe the plotted data. This allows you to toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
+A legend is a text used to describe the plotted data. This lets you toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through a combo box.
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/area-chart/show-legend.png)
 
@@ -410,18 +410,18 @@ Enabling the **Custom Legend Text** option will allow you to define a custom tex
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This feature might also be helpful when displaying critical pieces of data that should always be present for accuracy and context.
+The chart `legend interactivity` option lets you control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This feature might also be helpful when displaying critical pieces of data that should always be present for accuracy and context.
 
 Disabling the Interactivity feature in the Legend Settings category prevents you from clicking on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature under the Legend Settings category allows you to click on the legends.
+Enabling the Interactivity feature under the Legend Settings category lets you click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-interactivity-enable.png)
 
 #### Legend Label Color
 
-This allows you to change the title of the chart legend and the colors of its labels.
+This lets you change the title of the chart legend and the colors of its labels.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-label-color-option.png)
 
@@ -451,11 +451,11 @@ You can customize the legend text using the Custom Legend Settings dialog. This 
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+A Legend is a text used to describe the data plotted. This option lets you place the legend at the position of **Left, Right, Top, and Bottom**.
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature lets you toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
 
@@ -473,29 +473,29 @@ This allows you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option lets you change the shape of the legend in a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in a `Series.`
+This option lets you change the shape of the legend in a `Series.`
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart, and it will be reflected with the `Show Legend.`
+This lets you add the legend title for the chart, and it will be reflected with the `Show Legend.`
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize the legend text based on the value of the `Text Width` property.
+This option lets you customize the legend text based on the value of the `Text Width` property.
 
 ***None***
 
-This option allows you to render legend items without wrapping or trimming.
+This option lets you render legend items without wrapping or trimming.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-text-overflow-none-option.png)
 
@@ -503,7 +503,7 @@ This option allows you to render legend items without wrapping or trimming.
 
 ***Trim***
 
-This option allows you to trim the legend items if their legend exceeds the value of `Text Width`.
+This option lets you trim the legend items if their legend exceeds the value of `Text Width`.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-text-overflow-trim-option.png)
 
@@ -511,14 +511,14 @@ This option allows you to trim the legend items if their legend exceeds the valu
 
 ***Wrap***
 
-This option allows you to wrap legend items based on the value of `Text Width`.
+This option lets you wrap legend items based on the value of `Text Width`.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-text-overflow-wrap-option.png)
 
 ![Legend Overflow Wrap in chart](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-text-overflow-wrap.png)
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
+This option lets you set the maximum width for the Legend Items, and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/area-chart/legend-text-overflow-width-option.png)
 
@@ -554,13 +554,13 @@ This enables you to customize the color of the axis label.
 
 #### Show Axis Border
 
-This option allows you to enable or disable the axis border of the chart.
+This option lets you enable or disable the axis border of the chart.
 
 ![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/area-chart/show-axis-border.png)
 
 #### Show Category Axis
 
-This allows you to enable the visibility of the `Category Axis`.
+This lets you enable the visibility of the `Category Axis`.
 
 ![Show Category Axis](/static/assets/visualizing-data/visualization-widgets/images/area-chart/category-axis.png)
 
@@ -570,13 +570,13 @@ If you disable the `Show Category Axis` option, dependencies properties, which a
 
 #### Show Category Axis Title
 
-This allows you to enable the visibility of the `Category Axis` title.
+This lets you enable the visibility of the `Category Axis` title.
 
 ![Show Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-categoryaxistitle.png)
 
 #### Category Axis Title
 
-This allows you to edit the title of the `Category Axis` for the chart, which will be reflected as the name of the x-axis on the chart.
+This lets you edit the title of the `Category Axis` for the chart, which will be reflected as the name of the x-axis on the chart.
 
 ![Category Axis Title](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-editcategoryaxistitle.png)
 
@@ -586,7 +586,7 @@ If we uncheck the `Show Axis Title` property, the Axis title text box property w
 
 #### Label overflow mode
 
-This allows you to handle the display mode of the overlapping labels in the `Category Axis.`
+This lets you handle the display mode of the overlapping labels in the `Category Axis.`
 
 ***Trim***
 
@@ -602,11 +602,11 @@ This option hides the overlapping label on the axis.
 
 #### Trim Axis Labels
 
-This option allows you to `trim` the axis labels based on the value of the `Maximum Label Width` property.
+This option lets you `trim` the axis labels based on the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
+This option lets you set a `maximum width` for the axis labels, and it can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/area-chart/maximum-label-width.png)
 
@@ -614,7 +614,7 @@ This option allows you to set a `maximum width` for the axis labels, and it can 
 
 #### Category Axis Label Rotation
 
-This allows you to define the rotation angle for displaying the category axis labels.
+This lets you define the rotation angle for displaying the category axis labels.
 
 ![Category Axis Label Rotation](/static/assets/visualizing-data/visualization-widgets/images/area-chart/label-rotation.png)
 
@@ -628,7 +628,7 @@ By default, the `Auto Interval` property is enabled. The Auto Interval property 
 
 #### Show Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` for the chart.
+This lets you enable the `Primary Value Axis` for the chart.
 
 ![Show Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/area-chart/primary-axis.png)
 
@@ -638,13 +638,13 @@ If you disable the `Show Primary Axis` option, dependencies properties, which ar
 
 #### Show Primary Value Axis Title
 
-This allows you to enable the visibility of the `Primary Value Axis` title of the chart.
+This lets you enable the visibility of the `Primary Value Axis` title of the chart.
 
 ![Show Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-primaryvalueaxistitle.png)
 
 #### Primary Value Axis Title
 
-This allows you to edit the title of the `Primary Value Axis`. It will be reflected in the y-axis name of the chart.
+This lets you edit the title of the `Primary Value Axis`. It will be reflected in the y-axis name of the chart.
 
 ![Primary Value Axis Title](/static/assets/visualizing-data/visualization-widgets/images/area-chart/axis-title.png)
 
@@ -658,7 +658,7 @@ When this property is enabled, the chart will display negative values on the top
 
 #### Axis Range Settings
 
-This allows you to manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
+This lets you manually set the minimum, maximum, and interval values of the primary value axis through the Axis Range Settings dialog.
 
 ![Axis Range Settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/areachart-axisrangesettings.png)
 
@@ -668,7 +668,7 @@ It will be reflected on the primary value axis of the chart.
 
 ### Parameter Support in Axis range:
 
-This feature allows you to dynamically set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog by using the values of the dashboard parameters. Only number-type dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This feature lets you dynamically set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog by using the values of the dashboard parameters. Only number-type dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -729,13 +729,13 @@ If you want to establish the same ranges in multiple cases, create the parameter
 
 #### Primary Value Axis
 
-This allows you to enable the gridlines for the `Primary Value Axis` in the area chart.
+This lets you enable the gridlines for the `Primary Value Axis` in the area chart.
 
 ![Primary Value Axis](/static/assets/visualizing-data/visualization-widgets/images/area-chart/primary-value-axis.png)
 
 #### Category Axis
 
-This allows you to enable the gridlines for the `Category Axis` in the area chart.
+This lets you enable the gridlines for the `Category Axis` in the area chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/area-chart/enable-category-axis.png)
 
@@ -800,7 +800,7 @@ To `delete` the trendline, select the one that needs to be deleted and click on 
 
 #### Formatting
 
-This allows you to customize the color of the widget.
+This lets you customize the color of the widget.
 
 ![Formatting](/static/assets/visualizing-data/visualization-widgets/images/area-chart/formatting.png)
 
@@ -808,13 +808,13 @@ This allows you to customize the color of the widget.
 
 ### Series Palette
 
-This feature allows you to apply color to chart series either using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This set of options will only be visible if you have configured the row section in the chart.
+This feature lets you apply color to chart series either using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This set of options will only be visible if you have configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/area-chart/series-palette.png)
 
 #### Use Default Palette
 
-This option allows you to apply the default color for chart series.
+This option lets you apply the default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -828,13 +828,13 @@ Using the Color Mapping type, you can apply the colors to the series either base
 
 ***Data***
 
-It allows you to apply color to chart series based on data. If you want to assign a specific color to specific data (e.g., Violet for 2021, Sky Blue for 2022, and green for 2020), you can use data-based color mapping. The default Color Mapping Type is `Data`.
+It lets you apply color to chart series based on data. If you want to assign a specific color to specific data (e.g., Violet for 2021, Sky Blue for 2022, and green for 2020), you can use data-based color mapping. The default Color Mapping Type is `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/area-chart/area-chart-data-type-color.png)
 
 ***Index***
 
-It allows you to apply color to chart series based on the `Index`, so that the colors remain consistent even if the data is changed. It shows only 15 different colors; after that, the colors will repeat from the ones above.
+It lets you apply color to chart series based on the `Index`, so that the colors remain consistent even if the data is changed. It shows only 15 different colors; after that, the colors will repeat from the ones above.
 
 For example, if you are displaying the countries based on the increasing order of the case count, index-based color mapping will be useful for setting the colors based on the rank. For instance, the top-ranked country can be assigned the color red, and this red color will be maintained for the country with the largest case count.
 
@@ -844,7 +844,7 @@ For example, if you are displaying the countries based on the increasing order o
 
 ### Font settings
 
-This section allows you to customize the font size of chart elements.
+This section lets you customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/area-chart/font-settings.png)
 
@@ -858,11 +858,11 @@ By default, the `Auto Font Size` property is enabled. The auto font size propert
 
 #### Act as Master Widget
 
-This allows you to define the area chart widget as a master widget, enabling other widgets in the dashboard to listen to its filter action.
+This lets you define the area chart widget as a master widget, enabling other widgets in the dashboard to listen to its filter action.
 
 #### Ignore Filter Actions
 
-This allows you to define this area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This lets you define this area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
 #### Hierarchical Filter
 
@@ -872,7 +872,7 @@ When the `Hierarchical Filter` option is enabled, the Top N will be applied to e
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the Area Chart widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the Area Chart widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
@@ -880,11 +880,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the Ar
 
 ### Title Alignment
 
-This allows you to handle the alignment of the widget title to either the **left, center, or right**.
+This lets you handle the alignment of the widget title to either the **left, center, or right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -900,7 +900,7 @@ When Auto Font Size is enabled, the subtitle's font size will be automatically a
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title when the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
+This lets you apply the specified font size to the widget title when the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
 
 ### Auto Padding
 
@@ -908,7 +908,7 @@ When Auto Padding is enabled, the padding of the widget container will automatic
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -916,27 +916,27 @@ This feature enables you to toggle the visibility of the `border` surrounding th
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
-This feature allows you to set the **background image** for the spline area chart widget.
+This feature lets you set the **background image** for the spline area chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** for the spline area chart widget.
+This lets you set the **background color** for the spline area chart widget.
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the `background color.`
+This property lets you specifies the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This feature allows you to toggle the visibility of the `shadow` surrounding the widget.
+This feature lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -946,41 +946,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the area chart. 
+This lets you enable or disable the `widget title` of the area chart. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the area chart widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the area chart widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the area chart widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the area chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the area chart widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget 
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

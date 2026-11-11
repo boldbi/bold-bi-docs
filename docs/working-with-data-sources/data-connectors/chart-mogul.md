@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connecting ChartMogul Data with Bold BI | Bold BI Docs
+title: ChartMogul Data Connector Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the ChartMogul data through its REST API endpoint in Dashboard Designer with the Bold BI application.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Connecting Bold BI to ChartMogul data source
+# ChartMogul Data Connector Guide in Bold BI
 The REST API is used by the Bold BI dashboard designer to connect to the ChartMogul web services.
 
 ## Choose ChartMogul data source
@@ -46,7 +46,7 @@ To edit the connection information set, use the [Edit Connection](/working-with-
 
 <p id="GenerateAPIKey"></a>
 
-#### How to get APIKEY from ChartMogul
+### How to get APIKEY from ChartMogul
 
 1. Log in to your ChartMogul account on [chartmogul.com](https://app.chartmogul.com/users/sign_in).
 

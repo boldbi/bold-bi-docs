@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gridlines â€“ Widget Properties | Bold BI Documentation
-description: Learn how to show or hide primary value, secondary value, and category axis gridlines on Bold BI Modern chart widgets.
+title: Gridlines Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how to show or hide primary value, secondary value, and category axis gridlines on modern Bold BI widgets to improve readability in dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/gridlines/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Gridlines
+# Gridlines Settings in Modern Widgets
 
-Gridlines are horizontal or vertical lines drawn across the chart plot area at regular axis intervals. They help viewers estimate data point values without needing to trace lines back to the axis ticks. Bold BI lets you toggle gridlines independently for each axis.
+Gridlines in Bold BI are horizontal or vertical lines drawn across the chart plot area at regular axis intervals. They help viewers estimate data point values without needing to trace lines back to the axis ticks. Bold BI lets you toggle gridlines independently for each axis.
 
 | Unsupported widgets |
 |---|
@@ -19,7 +19,7 @@ Gridlines are horizontal or vertical lines drawn across the chart plot area at r
 
 ## Properties
 
-#### Primary Value Axis
+### Primary Value Axis
 
 Toggles horizontal gridlines aligned with the primary value axis (Y-axis in column charts, X-axis in bar charts).
 

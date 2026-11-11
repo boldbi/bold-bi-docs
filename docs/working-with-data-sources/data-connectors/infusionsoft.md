@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Infusionsoft – Cloud BI Data Connector | Bold BI Learning
-description: Learn how to connect Infusionsoft web service through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Infusionsoft Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Infusionsoft web service through OAuth-based authentication with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Infusionsoft data source
+# Infusionsoft Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Infusionsoft web services through the REST API. 
 
 ## Choose Infusionsoft data source
-To configure the Infusionsoft data source, follow the below steps:
+To configure the Infusionsoft data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ To authenticate with the Infusionsoft web service, follow these steps:
 
 ## Connect to Infusionsoft
 ### Create Infusionsoft data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Infusionsoft data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Infusionsoft data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** down drop box and choose the required endpoint.
 3. Click the **Custom Url** if you want to enter the URL manually. Refer to the [Infusionsoft API documentation](https://developer.infusionsoft.com/docs/rest/#!/Account_Info/getAccountProfileUsingGET) for more details.  

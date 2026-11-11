@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bold BI Embedding in Java with Spring Boot using SDK| Bold BI
+title: Embedding in Java with Spring Boot using SDK | Bold BI
 description: Learn how to embed an analytics dashboard with Spring Boot application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in Java using Spring Boot Sample with Embed SDK
+# Embedding in Java with Spring Boot using SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-sample) the sample application, which demonstrates the dashboard rendering functionality available in your Bold BI server. This is followed by steps to create a new embedding application using `Spring Boot` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-sample) the sample application, which demonstrates the dashboard rendering functionality available in your Bold BI Server. This is followed by steps to create a new embedding application using `Spring Boot` on your own.
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides enough information for you to know before working on the sample.
 
@@ -93,7 +93,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
     ![spring-boot-authorizationserver](/static/assets/javascript/sample/images/springboot-authorizationServer.png)
 
- 5. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
+ 5. These details will be sent to the Bold BI Server and validated there. Once the details are validated, the dashboard starts to render.
 
 
 ## Steps to create Spring Boot application to embed dashboard

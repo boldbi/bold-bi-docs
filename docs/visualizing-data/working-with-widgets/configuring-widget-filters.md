@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering Data in Widgets – Embedded BI | Bold BI Learning
+title: Filtering Data in Widgets - Embedded Analytics | Bold BI
 description: Learn how to apply filter over data bounded to a specific widget based on condition and/or other field in Bold BI Embedded.
 canonical: "/visualizing-data/working-with-widgets/configuring-widget-filters/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Configuring Widget Filters
+# Filtering Data in Widgets - Embedded Analytics
 
 ## Configuring filter for measure column
 

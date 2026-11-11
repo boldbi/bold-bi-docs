@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Filter – Embedded Dashboard Widget | Bold BI Docs
+title: Text Filter - Embedded Dashboard Widget in Bold BI | Bold BI
 description: Learn how to create and add a Text Filter visual in an embedded dashboard, configure data fields and other settings using Bold BI application.
 platform: bold-bi
 control: Text Filter
 documentation: ug
 ---
 
-# Text Filter
+# Text Filter - Embedded Dashboard Widget
 
 Text Filter enables you to filter the items based on the value typed in the text box. To configure the text filter, a minimum requirement of 1 column is needed.
 
@@ -67,7 +67,7 @@ The configured field name can be edited using the Rename option provided in the 
 
 ## Filtering Options
 
-The text filter widget allows you to apply filtering for slave widgets with the following filtering options:
+The text filter widget lets you apply filtering for slave widgets with the following filtering options:
 
 ***Contains***
 
@@ -107,19 +107,19 @@ You can format the text filter for a better illustration of the view that you re
 
 #### Name
 
-This allows you to set the `title` for this text filter widget.
+This lets you set the `title` for this text filter widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/text-filter/title.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this text filter widget.
+This lets you set the `subtitle` for this text filter widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/text-filter/subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this text filter widget.
+This lets you set a brief explanation about this text filter widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/text-filter/Description.png)
 
@@ -135,11 +135,11 @@ The `Placeholder` property of a text filter provides context for the user's inpu
 
 #### Act as Master Widget
 
-This allows you to define this text filter widget as a master widget so that its filter action can be made to listen to other widgets in the dashboard.
+This lets you define this text filter widget as a master widget so that its filter action can be made to listen to other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this text filter widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this text filter widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -149,7 +149,7 @@ When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for e
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the text filter widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the text filter widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -157,11 +157,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the te
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget title to either `left, center, or right.`
+This lets you handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -169,7 +169,7 @@ By enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -177,31 +177,31 @@ By enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
-This allows you to set the **background color** for the text filter widget.
+This lets you set the **background color** for the text filter widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color`.
+This property lets you specify the **transparency** for the `background color`.
 
 #### Show Shadow
 
-This property allows you to toggle the visibility of the `shadow` for the text filter widget.
+This property lets you toggle the visibility of the `shadow` for the text filter widget.
 
 #### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -211,9 +211,9 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the text filter widget. 
+This lets you enable or disable the `widget title` of the text filter widget. 
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Editing a Dashboard – Embedded BI | Bold BI Documentation
+title: Editing a Dashboard - Embedded Analytics | Bold BI
 description: Learn how to edit an existing dashboard by opening it in the WYSIWYG designer from list of dashboards in Bold BI Embedded.
 canonical: "/working-with-dashboards/edit-existing-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
-# Edit Existing Dashboard
+# Editing a Dashboard - Embedded Analytics
    
    > **NOTE:**  To edit the existing dashboard, you will need permission from the administrator.
    

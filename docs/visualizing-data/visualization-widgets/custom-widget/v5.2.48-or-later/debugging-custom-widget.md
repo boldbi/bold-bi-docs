@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to debug the custom widgets in designer | Bold BI Docs
+title: How to debug the custom widgets in designer | Bold BI
 description: Find the steps to debug the custom widgets using the developer tool in Bold BI Dashboard Designer by navigating inspect element option.
 platform: bold-bi
 control: Custom Widget
 documentation: ug
 ---
 
-# Debugging the Custom widget through designer
+# How to debug the custom widgets in designer
 * [Create a new Custom widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#create-a-custom-widget) 
 * [Add debugger in the source file](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#add-debugger-in-the-source-file) 
 * [Publish the Custom widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) 

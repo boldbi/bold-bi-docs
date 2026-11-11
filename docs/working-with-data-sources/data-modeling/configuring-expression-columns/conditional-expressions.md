@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring Conditional Expression Fields | Bold BI Embedded Docs
+title: Configuring Conditional Expression Fields | Bold BI
 description: Learn how to configure expression fields comprising calculated conditional expressions using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Configure Conditional expression
+# Configuring Conditional Expression Fields
 
 ## Functions
 

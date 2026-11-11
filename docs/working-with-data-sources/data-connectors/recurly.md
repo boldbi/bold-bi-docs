@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Recurly – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Recurly web service using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Recurly Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Recurly through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Recurly data source
+# Recurly Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Recurly web services through the REST API.
 
 ## Choose Recurly data source
-To configure the Recurly data source, follow the below steps:
+To configure the Recurly data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Recurly data source, follow the below steps:
 
 ## Create Recurly data source
 
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Recurly data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Recurly data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** down drop box and choose the required endpoint.
 3. Click the **Custom Url** to enter the URL manually. Refer to the [Recurly API documentation](https://dev.recurly.com/docs/getting-started) for more details.
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting Recurly data source?
+### How do I get Account Key for connecting Recurly data source?
 1. Login to your [Recurly](https://app.recurly.com/login) account. Go to *Admin -> Users -> Configure API Access*.
 2. Use this *Private API Key* as the **Account Key** in the Recurly data source in the Bold BI Dashboard.
 

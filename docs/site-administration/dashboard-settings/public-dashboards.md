@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Public Dashboard Settings – Embedded BI | Bold BI Docs
+title: Public Dashboard Settings - Embedded Analytics | Bold BI
 description: Learn how to manage dashboard settings like how to allow/deny marking dashboard as public in Bold BI Embedded.
 canonical: "/site-administration/dashboard-settings/public-dashboards/"
 platform: bold-bi

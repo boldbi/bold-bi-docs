@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to create Yelp data source through REST API | Bold BI Docs
+title: Yelp Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect Yelp data through basic HTTP authentication and create a data source for the dashboards using Bold BI & embed them in any Web applications.
 platform: bold-bi 
 documentation: ug
 ---
 
-# Connecting Bold BI to Yelp data source
+# Yelp Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer connects to the Yelp web services through the REST API.
 
 > **Note:** Yelp data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
@@ -43,7 +43,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information that is set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>
@@ -65,7 +65,7 @@ Period of time before the next refresh call is triggered. This will automaticall
 </table>
 
 ### Setting up Custom URL
-1. For example, in order to obtain specific business details, you should connect to the Business search endpoint, which will return information based on the business you searched for.
+1. For example, to obtain specific business details, you should connect to the Business search endpoint, which will return information based on the business you searched for.
 2. Replace the parameter with "name" and enter the business name you need to search into the value field.
 
    `https://api.yelp.com/v3/businesses/search?param=value`

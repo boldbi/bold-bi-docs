@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Exporting Single or Multiple Dashboards to a File | Bold BI Docs
+title: Exporting Single or Multiple Dashboards to a File | Bold BI
 description: Learn how to easily export dashboard files and import into other sites or keep as backup files, using Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Download dashboards in the Bold BI application
+# Exporting Single or Multiple Dashboards to a File
 
 It is possible to download dashboards from tenants deployed on your server. Here is a step-by-step guide on how to download dashboards from sites in Bold BI:
 

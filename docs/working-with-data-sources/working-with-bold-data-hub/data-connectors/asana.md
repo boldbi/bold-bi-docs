@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Complete Guide to Asana Data Integration in Bold BI
-description: Learn how to use the Asana Data Hub connector in Bold BI Server. Discover simple steps to connect your Asana projects and tasks for seamless tracking and analysis.
+title: Asana Connector for Bold Data Hub in Bold BI | Bold BI
+description: Learn how to use the Asana Bold Data Hub connector in Bold BI Server. Discover simple steps to connect your Asana projects and tasks for seamless tracking and analysis.
 platform: bold-bi
 documentation: ug
 ---
 
-# Asana Source
+# Asana Connector for Bold Data Hub
 
 Asana is a work management tool that helps teams plan, organize, and track their tasks and projects in one place. It’s used to improve team collaboration and productivity.
 
@@ -15,7 +15,7 @@ Asana is a work management tool that helps teams plan, organize, and track their
 To generate a Personal Access Token in Asana:
 1. Go to https://app.asana.com/0/developer-console.
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/asana.png#max-width=100%)
+![Asana - Bold BI](/static/assets/working-with-etl/images/asana.png#max-width=100%)
 
 2. Click "+ New Access Token".
 3. Provide a name (e.g., "Bold BI Integration") and Click Create Token
@@ -77,19 +77,19 @@ plugins:
         - tablename
 
 ```
-## Configure the Data Hub to connect Asana
+## Configure the Bold Data Hub to connect Asana
 
   1. To start, Click the `Bold Data Hub` icon on the Navigation Pane.
 
-  ![Asana - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
+  ![Asana - Bold BI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
   2. Click `Add Pipeline` and provide the name for the new pipeline.
   
-   ![Asana - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
+   ![Asana - Bold BI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
   3. Select the newly created pipeline and choose the Asana connector. Double click or Click on Add Template option to add template.
 
-  ![Asana - BoldBI](/static/assets/working-with-etl/images/asana_addtemplate.png#max-width=100%)
+  ![Asana - Bold BI](/static/assets/working-with-etl/images/asana_addtemplate.png#max-width=100%)
 
   ### Configuration Parameters
 
@@ -105,38 +105,38 @@ plugins:
  
   5. Copy the access token and replace in access_token property and add the details.
 
-  ![Asana - BoldBI](/static/assets/working-with-etl/images/asana_finaltemplate.png#max-width=100%)
+  ![Asana - Bold BI](/static/assets/working-with-etl/images/asana_finaltemplate.png#max-width=100%)
 
   6. Click Save and choose the desired destination to save the pipeline.
   
-   ![Asana - BoldBI](/static/assets/working-with-etl/images/csv_destination.png#max-width=100%)
+   ![Asana - Bold BI](/static/assets/working-with-etl/images/csv_destination.png#max-width=100%)
   
   7. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/).
 
-   ![Asana - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+   ![Asana - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 >**Note:**
   For tasks and sections projectID is required.
   For stories taskID is required.
 
-### Schedule Data Hub Job
+### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![Asana - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![Asana - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
+![Asana - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![Asana - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![Asana - BoldBI](/static/assets/working-with-etl/images/pipeline_bigquery_created.png#max-width=100%)
+![Asana - Bold BI](/static/assets/working-with-etl/images/pipeline_bigquery_created.png#max-width=100%)
 
 5. Click `Edit DataSource` Option to view the created tables.

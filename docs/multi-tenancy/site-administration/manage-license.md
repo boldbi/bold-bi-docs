@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Managing Licenses – On-Premises & Embedded | Bold BI Docs
-description: Learn how to update Bold BI license yourself using the Bold account linked with your subscription in Bold BI application.
+title: Managing Licenses - On-Premises & Embedded | Bold BI
+description: Learn how to update your Bold BI license yourself with the Bold account linked to your subscription, step by step, when your unlock key expires.
 platform: bold-bi
 documentation: ug
 ---
 
 # Manage license in Bold BI
 
-This topic explains how to update the license manually in `Bold BI Embedded`.
+Update the Bold BI Embedded license manually by uploading a valid unlock key.
 
 Open your UMS application URL and log in with the Site Administrator account.
 
@@ -25,7 +25,7 @@ In the Manage License page, click on `Refresh License`.
    
    ![License Update Settings](/static/assets/multi-tenancy/images/manage-license-page.png#max-width=95%)
 
-From the login pop-up, please log in with your Bold ID account that is linked to your Bold BI subscription.
+From the login pop-up, please log in with your Bold BI account that is linked to your Bold BI subscription.
    
    ![License Update Login Popup](/static/assets/multi-tenancy/images/update-license-login-popup.png#max-width=95%)
 
@@ -33,7 +33,7 @@ Once you have successfully logged in, the license will be updated in the applica
 
 ## Update license from License file
 
-To update the license from a license file, you can use the offline unlock key to activate the account. Please download your offline unlock key [here](https://www.boldbi.com/account/downloads/embedded).
+To update the license from a license file, you can use the offline unlock key to activate the account. Download your offline unlock key from the [Bold BI account downloads page](https://www.boldbi.com/account/downloads/embedded).
 
 Click on the `Upload` option to upload your license file.
 
@@ -51,8 +51,8 @@ Once the unlock key is uploaded, click on the **Update License** button to updat
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
-| Invalid File Type | Please ensure to upload the valid unlock key file (lic) downloaded from [here](https://www.boldbi.com/account/downloads/embedded).    
-|  Unlock Key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
+| Invalid File Type | Make sure to upload a valid unlock key file (lic) downloaded from the [Bold BI account downloads page](https://www.boldbi.com/account/downloads/embedded).    
+|  Unlock Key Expired    | Your unlock key has expired. Download a new unlock key file from the [Bold BI account downloads page](https://www.boldbi.com/account/downloads/embedded).   |
 
 If you are facing any issues, please [contact us](https://www.boldbi.com/support) for assistance.
 
@@ -75,7 +75,7 @@ The warning icon is displayed in the following cases:
 
 ### License warning icon behavior
 
-- Clicking the warning icon will display a popup with the below message. The **“here”** link redirects the user to the **Manage License** page.
+- Clicking the warning icon displays a pop-up with the following message. The **“here”** link redirects the user to the **Manage License** page.
 
 - This allows users to take action such as renewing or activating their license.
 

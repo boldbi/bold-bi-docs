@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Flurry – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Flurry data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
+title: Flurry Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Flurry data through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Flurry data source
+# Flurry Data Connector Setup Guide in Bold BI
 
-  You can connect to web services of popular site like `Flurry` using the connection type. To enable this connection, follow the given steps.
+  In Bold BI, the Flurry connection type connects to web services of popular sites like Flurry. To enable this connection, follow the given steps.
   
   Click the `Data Source` button in the configuration panel to add a new data connection.
    

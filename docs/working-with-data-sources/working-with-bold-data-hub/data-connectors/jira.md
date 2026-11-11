@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Jira Bold Data Hub Connector – Embedded BI | Bold BI Learning
+title: Jira Connector for Bold Data Hub in Bold BI | Bold BI
 description: Learn how to use the Jira Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Jira
+# Jira Connector for Bold Data Hub
 
 Jira by ``atlassian`` helps teams manage projects and tasks efficiently, prioritize work, and collaborate.
 
@@ -51,19 +51,19 @@ plugins:
         queries: <QUERY>
 ```
 
-## Configure the Data Hub to connect Jira
+## Configure the Bold Data Hub to connect Jira
 
   1. To start, Click the `Bold Data Hub` icon on the Navigation Pane.
 
-  ![Jira Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
+  ![Jira Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
   2. Click `Add Pipeline` and provide the name for the new pipeline.
   
-   ![Jira Data Hub - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
+   ![Jira Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
   3. Select the newly created pipeline and add the `Jira` template.
 
-  ![Jira Data Hub - BoldBI](/static/assets/working-with-etl/images/jira_addtemplate.png#max-width=100%)
+  ![Jira Bold Data Hub - Bold BI](/static/assets/working-with-etl/images/jira_addtemplate.png#max-width=100%)
   
   4. Update the subdomain, email and API token in the template. Also, Update the resources on the `select` property and Click Save, choose the desired destination to save the pipeline.
 
@@ -79,26 +79,26 @@ The available resources are supported in Jira
 
 >**Warning:**
     1. The `Encrypt_Credentials` property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the `Encrypt_Credentials` property must be set to true.  
-    2. The default lifetime of the access token is 1 hour. Therefore, you need to convert it to a long-lived access token in order to use the same token for 60 days. Existing tables should be maintained even if the token has expired or is being used as an invalid token. 
+    2. The default lifetime of the access token is 1 hour. Therefore, you need to convert it to a long-lived access token to use the same token for 60 days. Existing tables should be maintained even if the token has expired or is being used as an invalid token. 
 
-### Schedule Data Hub Job
+### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![Jira - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+![Jira - Bold BI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![Jira - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+![Jira - Bold BI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
 2. For on-demand refresh, click `Run Now` button.
 
-![Jira - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
+![Jira - Bold BI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
 3. The Schedule history can be checked using the history option as well as logs.
 
-![Jira - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+![Jira - Bold BI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![Jira - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+![Jira - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 5. Click `Edit DataSource` Option to view the created tables.

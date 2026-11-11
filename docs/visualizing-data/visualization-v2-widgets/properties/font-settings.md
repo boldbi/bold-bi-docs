@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Font Settings - Widget Properties | Bold BI Documentation
-description: Learn how font inheritance, font family, font style, and text sizing work for Bold BI Modern widgets.
+title: Font Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how font inheritance, font family, font style, and text sizing work for modern Bold BI widgets, and how to override the dashboard font for a widget.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/font-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Font Settings
+# Font Settings in Modern Widgets
 
-Font settings control how text is displayed in Modern widgets. Depending on the widget, you can configure font inheritance, font family, font style, automatic text sizing, and fixed font sizes for specific text elements.
+Font settings in Bold BI control how text is displayed in Modern widgets. Depending on the widget, you can configure font inheritance, font family, font style, automatic text sizing, and fixed font sizes for specific text elements.
 
 Font settings in Modern widgets follow an inheritance model:
 
@@ -25,7 +25,7 @@ Font settings in Modern widgets follow an inheritance model:
 
 ## Widget-level font settings
 
-#### Use Dashboard Font Family and Style
+### Use Dashboard Font Family and Style
 
 Uses the dashboard-level font family and style for the widget. Keep this option enabled when the widget should follow the same typography as the rest of the dashboard.
 
@@ -61,7 +61,7 @@ Common element groups include:
 - **Header**
 - **Content**
 
-#### Use Widget Font Family and Style
+### Use Widget Font Family and Style
 
 Uses the widget-level font family and style for the selected text element. Disable this option when the element must use a different font family or style from the rest of the widget.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Displaying Custom Date Format in Dashboard Widget | Bold BI Docs
+title: Displaying Custom Date Format in Dashboard Widget | Bold BI
 description: Learn how to configure Custom Date Format that helps the user implicitly set the selected date fields in the dashboard widget using the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Custom Formatting Date Type Column
+# Displaying Custom Date Format in Dashboard Widget
 Custom date format allows you to set the desired format for the date field implicitly and apply formatting based on the fiscal year. This can be supported for all date formats such as year, month, date, day, and many more.
 
 > **NOTE:**  Custom date format support is only applicable for chart and grid widgets.

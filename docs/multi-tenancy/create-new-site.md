@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Multitenancy – Adding a new tenant – Embedded BI | Bold BI
-description: Learn how to add another site as part of multi-tenancy and configure separate database and data store with Bold BI Embedded.
+title: Creating a New Site in Multitenant Bold BI Server | Bold BI
+description: Learn how to add a new site in Bold BI multi-tenancy, with its own database, data store, and site administrator, using the Create Site button.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Creating a New Site in Bold BI Server
+# Creating a New Site in Multitenant Bold BI Server
 
-This section briefly explains the steps involved in creating a new site in Bold BI Server multi-tenant application.
+Follow these steps to create a new site in the multi-tenant Bold BI Server application.
+
+Multi-tenancy is available in Managed Private Cloud and On-Premises deployments. [NEEDS FACT: confirm whether Cloud Edition supports multi-tenancy. Fact sheet rows R231, R263, R275 and R286 say it does not, but the conflict list flags one row that says it does.]
 
 ## Site creation
 
@@ -17,7 +19,9 @@ You can create another site in the Bold BI Server application by clicking the `C
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png#max-width=95%)
 
-This step includes the site details such as tenant type, name, domain, and identifier. The site identifier should be unique and is a part of your site URL. Custom domains can also be used for site creation. You can enable the Lock site URL and prevent automatic updates from reverse proxy requests option to keep the configured domain fixed during site creation and prevent it from being changed automatically by proxy requests. Additionally, you have the option to inherit settings from UMS to your tenant by using the `Inherit Global Settings` option.
+This step includes the site details: tenant type, name, domain, and identifier. The site identifier should be unique and is part of your site URL. You can also use custom domains for site creation.
+
+To keep the configured domain fixed during site creation and stop proxy requests from changing it, enable the Lock site URL and prevent automatic updates from reverse proxy requests option. To copy settings from UMS to your tenant, use the `Inherit Global Settings` option.
 
 The site identifier is generated automatically when a site is created. It follows the format siteN, where N is one more than the current number of active sites for that product. The identifier is included in the site URL and applies to both Bold BI and Bold Reports, with numbering maintained separately per product.
 
@@ -42,11 +46,11 @@ Based on the settings chosen, the following information will be copied to the te
 
 ![Inherit settings](/static/assets/multi-tenancy/images/select-inherit-settings.png)
 
-Please follow this [link](/multi-tenancy/manage-sites/#settings) to learn how to manage Inherit Global Settings for an existing site.
+To manage Inherit Global Settings for an existing site, see [Manage sites](/multi-tenancy/manage-sites/#settings).
 
 ## Select database 
 
-This step helps you configure a single or individual database for the Bold BI Server and Data Store.
+Choose a single database or individual databases for the Bold BI Server and Data Store.
 
 The dashboards, users, and access rights are all stored in the SQL Server Database.
 
@@ -97,27 +101,29 @@ You can skip this configuration directly by clicking the `Next` button, or you c
 
 ### Isolation code
 
-The isolation code feature is used to configure row-level security for the site to apply to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin can apply the isolation code from the site settings of the UMS site details page. Dashboards will be filtered based on the applied isolation code. If the column in the code does not match the data source level, no data will be displayed in widgets. Learn more about [Isolation code](/working-with-data-sources/configuring-isolation-code/).
+The isolation code feature configures row-level security for the site, and it applies to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin applies the isolation code from the site settings on the UMS site details page.
+
+Dashboards are filtered by the applied isolation code. If the column in the code does not match the data source level, no data is displayed in widgets. To learn more, see [isolation code](/working-with-data-sources/configuring-isolation-code/).
 
 ### Custom attribute
 
-This can be set by the UMS admin for a site on the site details page. Learn more about the [Configure Custom Attribute](/working-with-data-sources/configuring-custom-attribute/).
+The UMS admin sets the custom attribute for a site on the site details page. Learn more about the [Configure Custom Attribute](/working-with-data-sources/configuring-custom-attribute/).
 
 Attributes are name-value pairs associated with users, groups, and sites (tenants).
 
 ![Configure Custom Attribute](/static/assets/multi-tenancy/images/custom-attribute.png#max-width=45%)
 
-Name – Name of the attribute.
+Name: Name of the attribute.
 
-Value – Value of the attribute.
+Value: Value of the attribute.
 
-Description – Explaining the purpose for the attribute.
+Description: Explaining the purpose for the attribute.
 
-Encrypt – Store it as encrypted one in the database and the value will be shown as dots in the grid.
+Encrypt: Store it as encrypted one in the database and the value will be shown as dots in the grid.
 
 ## Select administrator
 
-This step is used to choose a user who will have full control over the site.
+Choose the user who will have full control over the site.
 
 The selected user will have the ability to:
 * [Create Dashboards](/managing-resources/manage-dashboards/open-dashboards/)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Disable AI - Embedded BI Visual | Bold BI Documentation
+title: Enable Disable AI - Embedded Analytics Visual | Bold BI
 description: This documentation provides instructions how to enable or disable AI features at both the global and site levels in Bold BI.
 canonical: "/artificial-intelligence-and-machine-learning/enable-disable-ai-feature"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Managing AI Features
+# Enable Disable AI - Embedded Analytics Visual
 
 The visibility of AI features can be managed at both the global and site level using enable/disable options.
 

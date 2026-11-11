@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualizing Maps – Embedded BI | Bold BI Documentation
+title: Visualizing Maps - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Map visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/visualizing-data/visualization-widgets/map/"
 platform: bold-bi
@@ -8,7 +8,7 @@ control: Map
 documentation: ug
 
 ---
-#  Configuring and Formatting a Map
+# Visualizing Maps - Embedded Analytics
 
 ## Choropleth map
 
@@ -216,7 +216,7 @@ Linking is the primary use case for hidden columns. When configuring hidden colu
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the following filter icon.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/map/filtericon.png)
 
@@ -258,19 +258,19 @@ You can format the map for a better illustration of the view that you require us
 
 #### Name
 
-This allows you to set a `title` for the map widget.
+This lets you set a `title` for the map widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/Title.png)
 
 #### Subtitle
 
-This allows you to set a `subtitle` for the map widget.
+This lets you set a `subtitle` for the map widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about the map widget.
+This lets you set a brief explanation about the map widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/Description.png)
 
@@ -290,19 +290,19 @@ By setting the map type as `Bubble`, the show value label property will be hidde
 
 ### Show legend
 
-A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the map.
+A legend is a text used to describe the plotted data. It lets you toggle the visibility of the legend in the map.
 
 ![Map](/static/assets/visualizing-data/visualization-widgets/images/map/show-legend.png)
 
 #### Enable Zooming
 
-This allows you to toggle the visibility of zooming buttons.
+This lets you toggle the visibility of zooming buttons.
 
 ![Map](/static/assets/visualizing-data/visualization-widgets/images/map/enableZooming-enable-option.png)
 
 #### Show Label
 
-This allows you to enable the visibility of `Data Labels.`
+This lets you enable the visibility of `Data Labels.`
 
 ![Show Labels](/static/assets/visualizing-data/visualization-widgets/images/map/show-labels.png)
 
@@ -326,7 +326,7 @@ Select this option to display both the region name and its corresponding numeric
 
 #### Label Color
 
-This allows you to customize the color of the data labels.
+This lets you customize the color of the data labels.
 
 ![Value Labels Color](/static/assets/visualizing-data/visualization-widgets/images/map/value-label-color-option.png)
 
@@ -334,7 +334,7 @@ This allows you to customize the color of the data labels.
 
 ### Enable Multi Selection
 
-This option will only be enabled after you enable the `Act as Master Widget` option, and it allows you to filter multiple data by enabling the `Enable Multi Selection` option.
+This option will only be enabled after you enable the `Act as Master Widget` option, and it lets you filter multiple data by enabling the `Enable Multi Selection` option.
 
 ![Enable multi selection](/static/assets/visualizing-data/visualization-widgets/images/map/multi-selection.png)
 
@@ -449,37 +449,37 @@ If you want to view the customized India shape while drilling India on the world
 
 ### Tooltip Settings
 
-The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+The Tooltip Settings section lets you customize the appearance and behavior of tooltips in widget visualizations.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip-settings.png)
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of the tooltip in a map.
+This option lets you toggle the visibility of the tooltip in a map.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip.png)
 
 #### Customize Tooltip
 
-This option allows you to customize which columns are visible in the map's tooltip.
+This option lets you customize which columns are visible in the map's tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/map/customize-tooltip-settings.png)
 
 #### Enable RTL
 
-This option allows you to display fields and their data from right to left.
+This option lets you display fields and their data from right to left.
 
 ![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/map/rtl-tooltip.png)
 
 ### Legend Settings
 
-This section allows you to customize the legend in the map.
+This section lets you customize the legend in the map.
 
 ![Choropleth color](/static/assets/visualizing-data/visualization-widgets/images/map/legend-settings.png)
 
 #### Show legend
 
-This allows you to toggle the visibility of the legend in a map. By default, it will be enabled.
+This lets you toggle the visibility of the legend in a map. By default, it will be enabled.
 
 #### Type
 
@@ -504,7 +504,7 @@ It defines the legend type whether layers or marker.
 
 #### Show Title
 
-This option allows you to toggle the visibility of the legend title in a map.
+This option lets you toggle the visibility of the legend title in a map.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/map/show-title.png)
 
@@ -512,7 +512,7 @@ This option allows you to toggle the visibility of the legend title in a map.
 
 #### Title
 
-This allows you to edit the legend title of a map.
+This lets you edit the legend title of a map.
 
 ![Map Legend Title](/static/assets/visualizing-data/visualization-widgets/images/map/map-customize-legend-title.png)
 
@@ -545,7 +545,7 @@ By enabling this option, the map will be zoomed in on the area where the marker 
 
 #### Marker Shape
 
-This option allows you to customize the marker shape on the map.
+This option lets you customize the marker shape on the map.
 
 ![Map Shape Dropdown](/static/assets/visualizing-data/visualization-widgets/images/map/map-markershape.png)
 
@@ -553,21 +553,21 @@ This option allows you to customize the marker shape on the map.
 
 #### Color
 
-This option allows you to customize the marker color.
+This option lets you customize the marker color.
 
 #### Width
 
-This option allows you to customize the marker width. When configuring data into `Marker size`, this property will be disabled.
+This option lets you customize the marker width. When configuring data into `Marker size`, this property will be disabled.
 
 #### Height
 
-This option allows you to customize the marker height. When configuring data into `Marker size`, this property will be disabled.
+This option lets you customize the marker height. When configuring data into `Marker size`, this property will be disabled.
 
 #### Advanced
 
 ### Rule
 
-This option allows you to customize the map marker.
+This option lets you customize the map marker.
 
 If you enable the `Advanced` option, the color customization window will render as follows:
 
@@ -587,7 +587,7 @@ If you click save, the map widget will render like this:
 
 ### Individual
 
-This option allows you to customize the map marker color individually based on the selected column values.
+This option lets you customize the map marker color individually based on the selected column values.
 
 For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types, you can select the `Signal Strength` column in the based selection and then assign a color for each type of signal strength option.
 
@@ -620,7 +620,7 @@ You can configure a single color palette whose saturation differs based on the v
 
 #### Advanced Settings
 
-This allows you to customize the map color with three different types:
+This lets you customize the map color with three different types:
 gradient, rule, or individual. By default, the window renders with gradient type.
 
 If you enable the option `Advanced,` the color customization window will render as follows.
@@ -691,7 +691,7 @@ You can save your changes by clicking `Save.` Now, the map renders with changes.
 
 ### Font settings
 
-This section allows you to customize the font size of map elements.
+This section lets you customize the font size of map elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/map/font-settings.png)
 
@@ -711,7 +711,7 @@ If the user wants to customize or set a Fixed Font Size, the user needs to disab
 
 #### Act as Master Widget
 
-This allows you to define the map widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define the map widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 Select a shape to filter interaction, the menu will be shown as follows.
 
@@ -741,7 +741,7 @@ When the Hierarchical Filter option is enabled, the `Top N` will be applied for 
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the map widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the map widget when the `Act as Master Widget` option is enabled.
 
 ### Container Appearance
 
@@ -749,11 +749,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the ma
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,** or **right**.
+This lets you handle the alignment of widget title to either **left, center,** or **right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
@@ -761,7 +761,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -769,7 +769,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -777,15 +777,15 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This lets you customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -793,19 +793,19 @@ This allow you to set the **background image** for the map widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the map widget.
+This lets you set the **background color** to the map widget.
 
 ### Transparency
 
-This property allows you to change the transparency from 0.0 to 1.0.
+This property lets you change the transparency from 0.0 to 1.0.
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -815,41 +815,41 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the map. 
+This lets you enable or disable the `widget title` of the map. 
 
 #### Allow Maximize View
 
-This allows you to enable or disable the `maximized mode` of the map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+This lets you enable or disable the `maximized mode` of the map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
 #### Allow CSV Export
 
-This allows you to enable or disable the `CSV export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+This lets you enable or disable the `CSV export` option for the map widget. Enabling this lets you export the summarized data of the widget view to CSV format in the viewer.
 
 #### Allow Excel Export
 
-This allows you to enable or disable the `Excel export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+This lets you enable or disable the `Excel export` option for the map widget. Enabling this lets you export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
 
 #### Allow Image Export
 
-This allows you to enable or disable the `Image export` option for the map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This lets you enable or disable the `Image export` option for the map widget. Enabling this lets you export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF Export
 
-This allows you to enable or disable the `PDF export` option for the map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This lets you enable or disable the `PDF export` option for the map widget. Enabling this lets you export the view of the widget to pdf format in the viewer.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
-This allows you to visualize the raw data associated with a widget at runtime. 
+This lets you visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/visualizing-data/working-with-widgets/view-data/).
 
 #### Pin Widget
 
-This allows you to pin the widget.
+This lets you pin the widget.
 
 #### Responsive Behavior
 

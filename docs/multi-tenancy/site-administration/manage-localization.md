@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization for User Management Portal | Bold BI Docs
+title: Localization for the User Management Portal | Bold BI
 description: Learn how to add and delete the localization files for the User Management Server application. Also, learn about how to change the language for the application.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # Manage Localization
 
-This section explains how to add, apply, and remove the localization files for the Bold BI application.
+Add, apply, and remove localization files for the Bold BI application.
 
 Localization involves adapting a website into different linguistic and cultural contexts, which goes beyond simple text translation.
 
@@ -24,7 +24,7 @@ To add a language file to the application, please follow these steps:
 
    ![Upload-dialog-box](/static/assets/multi-tenancy/images/upload-dialog-box.png)
 
-3. `Choose` the language from the dropdown and `select` the file to upload. The zip file should have the correct structure. Refer to this [link](#localization-file-structure) for the valid file structure.
+3. `Choose` the language from the dropdown and `select` the file to upload. The zip file should have the correct structure. See [Localization file structure](#localization-file-structure) for the valid file structure.
 
    ![Localization-select-file](/static/assets/multi-tenancy/images/localization-select-file.png#max-width=95%)
 
@@ -43,9 +43,9 @@ To add a language file to the application, please follow these steps:
 
    ![Localization-file-structure](/static/assets/multi-tenancy/images/localization-file-structure.png)
 
-2. To create a locale file `messages.po` from `messages.pot`, you can either use manual editing or an online tool for the `BI` and `UMS` services. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
+2. To create a locale file `messages.po` from `messages.pot`, you can either use manual editing or an online tool for the `BI` and `UMS` services. See [How to generate the localization file for another language](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
 
-3. To create a locale file `messages.po` from `default.po`  you can either use manual editing or an online tool for the `Designer` service. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
+3. To create a locale file `messages.po` from `default.po`  you can either use manual editing or an online tool for the `Designer` service. See [How to generate the localization file for another language](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
 
 4. After completing the above steps, please convert the service folders into a zip file and upload them to the application.
 
@@ -63,11 +63,11 @@ To remove a language, `Select` the language and `Click` the `Remove` option. You
 
 To set localization in the application, by default, the application will be in English. You can change the language at the global, site, or user level.
 
-Please refer to [this](/localization/latest/#where-to-change-the-localization-in-the-application) for instructions on setting localization.
+See [Where to change the localization in the application](/localization/latest/#where-to-change-the-localization-in-the-application) for instructions on setting localization.
 
 ## Possible errors cases and their solution:
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
 | Invalid File Type | Please ensure to upload the valid zip file (zip).  
-| Invalid File Error | Please refer [here](#localization-file-structure) to form the localization file structure.
+| Invalid File Error | See [Localization file structure](#localization-file-structure) to form the localization file structure.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ProofHub - Cloud BI Connector | Bold BI Documentation
+title: ProofHub Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect ProofHub web service through REST API endpoint with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to ProofHub data source
+# ProofHub Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to ProofHub web services using the REST API.
 
@@ -44,7 +44,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting ProofHub Data source?
+### How do I get API Key for connecting ProofHub Data source?
 
 1. Login to your [ProofHub](https://www.ProofHub.com/login) account.
 2. Click on Manage profile dropdown and then click five times on the profile picture. The API key of the logged-in user will be displayed in the pop-up window that opens.

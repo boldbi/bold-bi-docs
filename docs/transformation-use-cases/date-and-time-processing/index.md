@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation Date and Time Adjustments | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to adjust date time in data and make the most of your analytics.
+description: Learn how to use the Bold Data Hub Transformation section in Bold BI. Follow simple steps to adjust date time in data and get more from your analytics.
 platform: bold-bi
 documentation: ug
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: JavaScript Embedding with Embed SDK | Bold BI Docs
+title: JavaScript Embedding with Embed SDK in Bold BI | Bold BI
 description: Study the overview of SDK-based embedding with Bold BI Embed SDK. This embedding reduces the amount of code and effort needed to embed the dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Overview of JavaScript-Based Embedding Authentication Methods
+# JavaScript Embedding with Embed SDK in Bold BI
 Bold BI’s Embed SDK supports two primary authentication methods for securely embedding dashboards using JavaScript: Embed Secret and API Key. Each method is suited for different use cases based on security, complexity, and application needs.
 
 ## Embed Secret Authentication

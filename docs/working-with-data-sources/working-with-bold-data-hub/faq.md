@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold Data Hub - Frequently Asked Questions | Bold BI Docs
+title: Frequently Asked Questions about Bold Data Hub | Bold BI
 description: Explore frequently asked questions about Bold Data Hub, covering setup, data store configuration, datahub capabilities, supported connectors, and common issues.
 platform: bold-bi
 documentation: ug
 ---
 
-# Frequently Asked Questions - Bold Data Hub
+# Frequently Asked Questions about Bold Data Hub
 
 ## Pipeline Execution Log Locations in Bold Data Hub?
 

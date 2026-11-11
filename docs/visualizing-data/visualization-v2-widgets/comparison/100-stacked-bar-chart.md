@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 100% Stacked Bar Chart (Modern) | Bold BI Documentation
+title: 100% Stacked Bar Chart for Modern Dashboards | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern 100% Stacked Bar Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/100-stacked-bar-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: 100% Stacked Bar Chart
 documentation: ug
 ---
 
-# 100% Stacked Bar Chart
+# 100% Stacked Bar Chart for Modern Dashboards
 
-A 100% Stacked Bar Chart displays each category as a horizontal bar normalized to 100%. Its segments show the percentage contribution of each series rather than comparing absolute category totals.
+The 100% Stacked Bar Chart widget in Bold BI displays each category as a horizontal bar normalized to 100%. Its segments show the percentage contribution of each series rather than comparing absolute category totals.
 
 ![100% Stacked Bar Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/100-stacked-bar-chart/hundredstacked-barchart.png)
 

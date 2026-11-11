@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with React and Python | Bold BI Docs
+title: Embedding Analytics with React and Python | Bold BI
 description: Learn how to embed an analytics dashboard with a Python and React application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with Python using Embed SDK
+# Embedding Analytics with React and Python
 
-A GitHub link has been provided to [get](https://github.com/boldbi/react-with-python) the sample application,  which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI server and followed by steps to create a new embedding application in `React` with `Python` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-python) the sample application,  which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI Server and followed by steps to create a new embedding application in `React` with `Python` on your own.
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The Getting Started guide provides enough information that you need to know before working on the sample.
 

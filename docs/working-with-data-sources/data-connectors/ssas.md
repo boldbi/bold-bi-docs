@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Microsoft SSAS – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Microsoft SQL Server Analysis Services (SSAS) with Bold BI Cloud and create data source for widget configuration.
+title: Microsoft SSAS Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Microsoft SQL Server Analysis Services (SSAS) with Bold BI Cloud using MDX queries, then create a data source for widgets and dashboards.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting to Microsoft SQL Server Analysis Services(SSAS) data source
+# Microsoft SSAS Data Connector Guide in Bold BI
 Bold BI supports connecting Microsoft SQL Server Analysis Services (SSAS) database using the SQL MDX Query (C# API).
 
 ## Choose a Microsoft SQL Server Analysis Services (SSAS) data source
@@ -106,7 +106,7 @@ The Expression Designer is used to create a calculated field or column based on 
    </table>
 
 ## Query filters or Initial filters 
-Query filters can be used to filter data for the created data source. For example, if you want to create a data source to display share market data only for the year 2018, then you can utilize this filter.
+Query filters can be used to filter data for the created data source. For example, if you want to create a data source to display share market data only for the year 2018, then you can use this filter.
 
    ![Query filters](/static/assets/working-with-datasource/data-connectors/images/ssas/Filter_Dialog.png)
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Google Search Console – Cloud BI Connector | Bold BI
-description: Learn how to connect Google Search Console web service through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Google Search Console Data Connector Guide | Bold BI
+description: Learn how to connect Google Search Console web service through OAuth-based authentication with Bold BI Cloud and create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Google Search Console data source
+# Google Search Console Data Connector Guide
 The Bold BI dashboard designer supports connecting to Google Search Console web services through the REST API. 
 
 ## Choose Google Search Console data source
-To configure the Google Search Console data source, follow the below steps:
+To configure the Google Search Console data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with the Google Search Console web servi
 
 ## Connect to Google Search Console
 ### Create Google Search Console data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google Search Console data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Google Search Console data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google Search Console REST API endpoint in the URL textbox. Refer to the [Google Search Console API documentation](https://developers.google.com/webmaster-tools/search-console-api/reference/rest/) for more details.
 

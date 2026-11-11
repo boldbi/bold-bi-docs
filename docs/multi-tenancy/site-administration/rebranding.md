@@ -1,6 +1,6 @@
 ---
 layout: post
-title: White label User Management Server Interface | Bold BI Docs
+title: White label User Management Server Interface | Bold BI
 description: Learn how to white label / rebrand user management server interface by changing organization name, logo, fav icon, email logo, and date time display formats.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Rebranding / White labeling User Management Server
 
-This section explains how to customize the Bold ID by changing the organization name, header logo, favorite icon, email logo, time zone, and date/time display formats.
+Customize the Bold BI User Management Server interface by changing the organization name, header logo, favorite icon, email logo, time zone, and date and time display formats.
 
 The User Management Server can be rebranded and white-labeled with the organization name, header logo, favorite icon, email logo, time zone, and date/time format.
 
@@ -18,7 +18,7 @@ The User Management Server can be rebranded and white-labeled with the organizat
 The name of the User Management Server can be changed at any time and will appear in the title bar of the browser.
 
 ## Email
-The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold ID email logo as the default email logo.
+The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold BI email logo as the default email logo.
 		
 ## Display
 
@@ -39,19 +39,19 @@ There is an option to localize the User Management Server to any culture. Click 
 ![Branding](/static/assets/multi-tenancy/images/branding-section.png)
 
 ### Login Screen
-The login page logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold ID login logo as the default login logo.
+The login page logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold BI login logo as the default login logo.
 
 ### Header Logo
-The header logo image can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold ID logo as the default main screen logo.
+The header logo image can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold BI logo as the default main screen logo.
 
 ### Favicon
-The favicon for the User Management Server can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold ID favicon as the default favicon.
+The favicon for the User Management Server can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold BI favicon as the default favicon.
 
 ### Email
-The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold ID email logo as the default email logo.
+The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold BI email logo as the default email logo.
 
 ### AI Logo
-The AI logo can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold ID  AI logo as the default AI logo.
+The AI logo can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold BI  AI logo as the default AI logo.
 
 ### Powered by Syncfusion
 There is an option to show or hide `Powered by Syncfusion` in the footer of the User Management Server, with it being shown by default.

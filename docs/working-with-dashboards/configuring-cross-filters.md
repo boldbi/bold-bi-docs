@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating Cross Filters for Dashboards– Embedded BI | Bold BI Docs
+title: Creating Cross Filters for Dashboards in Bold BI | Bold BI
 description: Learn how to create cross filters to configure a master-listener relationship between widgets in a dashboard in Bold BI Embedded.
 canonical: "/working-with-dashboards/configuring-cross-filters/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Configuring Cross Filters for Dashboards
+# Creating Cross Filters for Dashboards in Bold BI
 
 Cross filters allow you to control the interdependency of widgets in a dashboard concerning dynamic user interactions.
 
@@ -62,7 +62,7 @@ Profiles can be renamed by double-clicking them.
 
 ![Rename profile](/static/assets/working-with-dashboards/images/Rename-profile.png)
 
-> **NOTE:** If more than one filter profile is defined for a master widget, they will all have an interaction effect – all profiles that match the filter criteria will be applied.
+> **NOTE:** If more than one filter profile is defined for a master widget, they will all have an interaction effect: all profiles that match the filter criteria will be applied.
 
 **Listener widgets**
 

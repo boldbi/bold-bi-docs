@@ -1,16 +1,16 @@
 ---
 layout: post
-title: SparkPost – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect SparkPost through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: SparkPost Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect SparkPost through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to SparkPost data source
+# SparkPost Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to SparkPost web services through the REST API. 
 
 ## Choose SparkPost data source
-To configure the SparkPost data source, follow the below steps:
+To configure the SparkPost data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the SparkPost data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/sparkpost/ChooseDS_server.png)
 
 ## Create SparkPost data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create SparkPost data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create SparkPost data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid SparkPost REST API endpoint in the URL textbox. Refer to the [SparkPost API documentation](https://developers.sparkpost.com/api/) for more details.
 
@@ -41,7 +41,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information that is set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Token for connecting SparkPost data source?
+### How do I get API Token for connecting SparkPost data source?
 
 1. Login to your account. Go to *Settings -> API Keys*.
 2. Use this *API Key* as **:your_api_token** in SparkPost data source in Bold BI Dashboard.

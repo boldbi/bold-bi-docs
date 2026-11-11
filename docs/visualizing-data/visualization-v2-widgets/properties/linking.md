@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Linking â€“ Widget Properties | Bold BI Documentation
-description: Learn how to configure URL and dashboard navigation triggered by data point clicks in Bold BI Modern widgets.
+title: Linking Widgets in Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure URL and dashboard navigation triggered by data point clicks in modern Bold BI widgets, so viewers can open links or other dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/linking/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Linking
+# Linking Widgets in Modern Dashboards
 
-Linking lets you attach a navigation action to a data point click. When a user clicks a chart bar, pie slice, grid cell, or any other interactive element, Bold BI can open a URL or navigate to another dashboard, passing context from the clicked data point as query parameters.
+Linking in Bold BI lets you attach a navigation action to a data point click. When a user clicks a chart bar, pie slice, grid cell, or any other interactive element, Bold BI can open a URL or navigate to another dashboard, passing context from the clicked data point as query parameters.
 
 Use linking to create drill-through dashboards, open external documentation for the selected product, or navigate to a detail report filtered to the clicked dimension value.
 

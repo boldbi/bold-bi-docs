@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Azure DevOps – Cloud BI Data Connector | Bold BI Docs
+title: Azure DevOps Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Azure DevOps projects, test plan and builds using OAuth-based authentication through REST API endpoint with cloud-hosted Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Azure DevOps data source
+# Azure DevOps Data Connector Guide in Bold BI
 Bold BI dashboard designer supports connecting to Azure DevOps web services through REST API. 
 
 ## Choose Azure DevOps data source
-To configure the Azure DevOps data source, follow the below steps:
+To configure the Azure DevOps data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)

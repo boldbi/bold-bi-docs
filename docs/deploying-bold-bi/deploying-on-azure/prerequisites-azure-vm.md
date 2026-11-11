@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prerequisites – Deploying Bold BI in Azure VM | Bold BI Docs
-description: Know about the prerequisites to deploy Bold BI server application in Microsoft Azure Virtual Machine (VM).
+title: Prerequisites - Deploying Bold BI in Azure VM | Bold BI
+description: Know about the prerequisites to deploy Bold BI Server application in Microsoft Azure Virtual Machine (VM).
 platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites for Deploying Bold BI Server on Microsoft Azure
+# Prerequisites - Deploying Bold BI in Azure VM
 
-To deploy Bold BI server on Microsoft Azure, the following prerequisites are necessary:
+To deploy Bold BI Server on Microsoft Azure, the following prerequisites are necessary:
 1. A Microsoft Azure subscription is required. If you do not already have one, you can avail of the free trial on the [Microsoft Azure website](https://azure.microsoft.com/en-us/free/).
 
 2. You will need the Bold BI Server. Please ensure you have the appropriate license and download the build by following the instructions provided in this [help link](/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi).

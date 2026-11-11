@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connecting TDengine Data with Bold BI | Bold BI Docs
+title: TDengine Data Connector Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the TDengine data through its REST API endpoint in Dashboard Designer with the Bold BI application.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Connecting Bold BI to TDengine data source
+# TDengine Data Connector Guide in Bold BI
 The Bold BI dashboard designer connects the TDengine web services through the REST API.
 
 ## Choose TDengine data source
@@ -48,7 +48,7 @@ Once you click the TDengine data source, the TDengine data source configuration 
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

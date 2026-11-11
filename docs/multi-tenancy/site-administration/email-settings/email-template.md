@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Template Guide– UMS - Create, Use & Manage | Bold BI Doc
+title: Email Templates in User Management Server | Bold BI
 description: Learn to create, edit, and manage custom email templates on the User Management Server, using secure default templates for tailored on-premises notifications.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # Email Template in User Management Server
 
-This section explains how to manage email templates within the email settings. Bold BI allows you to access system templates, create custom templates, and customize templates for sending email notifications.
+Create, customize, and manage email templates in the Bold BI User Management Server email settings. Bold BI gives you access to system templates, and you can create and customize templates for email notifications.
 
 ![Email templates](/static/assets/multi-tenancy/images/email-template-list.png#width=55%)
 

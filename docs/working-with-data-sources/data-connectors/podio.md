@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Podio - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Podio web service through OAuth-based authentication with cloud-hosted Bold BI and create data source.
+title: Podio Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Podio through OAuth-based authentication and the REST API with cloud-hosted Bold BI, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to the Podio data source
+# Podio Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Podio web services using the REST API. 
 
 ## Choose Podio data source

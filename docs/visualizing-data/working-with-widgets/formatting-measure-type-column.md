@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure Formatting – Embedded BI | Bold BI Learning
+title: Measure Formatting - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to apply formatting such as decimal places, number type, etc. to the numeric column in Bold BI Embedded dashboard.
 canonical: "/visualizing-data/working-with-widgets/formatting-measure-type-column/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Formatting Measure Type Column
+# Measure Formatting - Embedded Analytics
 
 The values in the Measure Type column can be formatted based on various options available:
 

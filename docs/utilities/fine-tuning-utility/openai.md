@@ -1,13 +1,15 @@
 ---
 layout: post
-title: OpenAI-fine-tuning utility - Embedded BI | Bold BI Docs
+title: OpenAI-fine-tuning utility - Embedded Analytics | Bold BI
 description: Learn and unlock the secrets to building a finely-tuned OpenAI model tailored specifically for seamless integration into BoldBI’s Q&A widget.
 canonical: "/utilities/fine-tuning-utility/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Instructions to fine-tune a new OpenAI GPT 3.5 model 
+# OpenAI-fine-tuning utility - Embedded Analytics
+
+> **Note:** From Bold BI v8.1, the Q&A widget uses the dedicated AI service with no fine-tuning or setup. Before v8.1, this fine-tuning utility applies to Bold BI versions.
 To run the OpenAI fine-tuning utility, follow these steps:
 
 ## Steps to run in Windows

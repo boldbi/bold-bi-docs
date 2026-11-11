@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Column Formatting – Embedded BI | Bold BI Docs
+title: Data Column Formatting - Embedded Analytics | Bold BI
 description: Learn how to handle data columns formatting such as, renaming column and changing data type in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Formatting Columns
+# Data Column Formatting - Embedded Analytics
 
 ## Renaming column
 

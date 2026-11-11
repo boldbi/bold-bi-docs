@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guide to Track User Activity Across Tenants | Bold BI Docs
+title: Guide to Track User Activity Across Tenants | Bold BI
 description: Learn how to track user activity across tenants in Bold BI using Audit Logs, enabling administrators to monitor actions for improved security.
 platform: bold-bi
 documentation: ug
@@ -8,13 +8,13 @@ documentation: ug
 
 # Activity Logs
 
-The Audit Logs page allows administrators to track and review various user actions and changes within the system for all tenants, including activities specific to the UMS (User Management System) page. This comprehensive view helps maintain accountability and transparency by providing a detailed record of who performed what actions and when. The logs contain information about each activity, including the **User, Date and Time, Event Category, Event Type, Summary** and any associated Details.
+Use the Audit Logs page in Bold BI to track and review user actions and changes across all tenants, including activity on the UMS page. This comprehensive view helps maintain accountability and transparency by providing a detailed record of who performed what actions and when. The logs contain information about each activity, including the **User, Date and Time, Event Category, Event Type, Summary** and any associated Details.
 
 > **Note:** The Audit Logs are visible only to admin users. They include records for all tenants within the system and UMS activities, ensuring a complete overview of user actions and system changes across different environments.
 
    ![Activity Logs](/static/assets/multi-tenancy/images/activity-logs.png#width=60%)
 
-### How to Filter and View Activity Logs
+## How to Filter and View Activity Logs
 
 1. Open the **Date Picker** Calendar to select a specific date range. Select the certain date range you want to filter.
 
@@ -28,7 +28,7 @@ The Audit Logs page allows administrators to track and review various user actio
    
    ![Event Category Dropdown](/static/assets/multi-tenancy/images/activity-event-category.png#width=40%)
 
-4. Open the `Event Type` drop-down and choose the specific type of event you want to filter. Options include Added, Updated, and Deleted. This allows you to view only the actions of a specific type within the chosen category.  
+4. Open the `Event Type` drop-down and choose the specific type of event you want to filter. Options include Added, Updated, and Deleted. You can view only the actions of a specific type within the chosen category.  
 
    ![Event Type Dropdown](/static/assets/multi-tenancy/images/activity-event-type.png#width=40%)
 

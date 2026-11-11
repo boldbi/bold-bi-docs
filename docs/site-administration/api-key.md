@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Secure Access with API Keys - Generate, Use & Manage | Bold BI
+title: Secure Access with API Keys, Generate and Manage | Bold BI
 description: Learn how to create, list, edit, and delete user-created API keys on the Bold BI admin page, and understand their usage for effective access management.
 platform: bold-bi
 documentation: ug

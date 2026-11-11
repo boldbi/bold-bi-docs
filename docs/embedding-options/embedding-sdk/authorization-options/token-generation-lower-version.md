@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold BI Dashboard v13 - JavaScript Embedding | Bold BI Docs
+title: Bold BI Dashboard v13 - JavaScript Embedding | Bold BI
 description: Learn how to securely embed Bold BI dashboards into your application using the SDK and embed token authentication below v14.1.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed Token Generation
+# Bold BI Dashboard v13 - JavaScript Embedding
 
 > **Note:** We enhanced a newer approach to token generation using the object model structure. Please refer to this [link](/embedding-options/embedding-sdk/token-generation/) to learn more.
 

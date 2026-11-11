@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configuring Window Functions | Bold BI Embedded Docs
+title: Configuring Window Functions in Expressions | Bold BI
 description: Learn how to configure expression fields comprising calculated window function expression using built-in functions in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
 
-# Configure Window Expressions in Bold BI
+# Configuring Window Functions in Expressions
 
 
 
@@ -58,8 +58,8 @@ WindowExpression([Column], PartitionBy := [GroupColumn], OrderBy := [SortColumn]
     <td>Frame</td>
     <td>
 Supported frame types include:<br><br>
-1. Running – Includes all rows from the start of the group up to the current row.<br><br>
-2. RowsTrailing(n) – Includes the current row and the previous n rows.<br><br>
+1. Running: Includes all rows from the start of the group up to the current row.<br><br>
+2. RowsTrailing(n): Includes the current row and the previous n rows.<br><br>
 3. DaysTrailing(n) - Includes the current row and rows from the past n days.<br><br>
 4. EntirePartition  - Includes all rows in the group (partition).<br><br>
 
@@ -339,6 +339,88 @@ Then reference the expression in a window function:
 FIRSTVALUE(Expression1, PartitionBy := [Region], OrderBy := [OrderDate])
 ```
 
+## Arithmetic Operations with Window Expressions
+
+Window expressions can be combined with arithmetic operators such as addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`) to perform calculations using window-expression results.
+
+### Window Expression with Window Expression
+
+Arithmetic operations can be performed between two window expressions.
+
+#### Syntax
+
+```text
+SUMPARTITION([Column], PartitionBy := [GroupColumn], OrderBy := [SortColumn], Frame := FrameType)
+/
+AVGPARTITION([Column], PartitionBy := [GroupColumn], OrderBy := [SortColumn], Frame := FrameType)
+```
+
+#### Example
+
+Divides the running sum of Amount by the running average of Amount for each region, ordered by order date.
+
+SUMPARTITION([Amount], PartitionBy := [Region], OrderBy := [OrderDate], Frame := Running)
+/
+AVGPARTITION([Amount], PartitionBy := [Region], OrderBy := [OrderDate], Frame := Running)
+
+ ![WindowExpressionWithWindowExpression](/static/assets/data-modeling/configuring-expression-columns/window-expression-with-window-expression.png)
+
+### Window Expression with Aggregate Expression
+
+A window expression can be combined with a standard aggregate expression.
+
+#### Syntax
+
+```text
+SUMPARTITION([Column], PartitionBy := [GroupColumn], OrderBy := [SortColumn], Frame := FrameType)
+/ SUM([Column])
+```
+
+#### Example
+
+Divides the running sum of Amount for each region by the aggregated Amount value.
+
+SUMPARTITION([Amount], PartitionBy := [Region], OrderBy := [OrderDate], Frame := Running)
+/ SUM([Amount])
+
+ ![WindowExpressionWithAggregateExpression](/static/assets/data-modeling/configuring-expression-columns/window-expression-with-aggregate-expression.png)
+
+### Aggregate Expression with Window Expression
+
+The aggregate expression can also appear before the window expression.
+
+#### Syntax
+
+```text
+SUM([Column])
+/ SUMPARTITION([Column], PartitionBy := [GroupColumn], OrderBy := [SortColumn], Frame := FrameType)
+```
+
+#### Example
+
+Divides the aggregated Amount value by the running sum of Amount for each region, ordered by order date.
+
+SUM([Amount])
+/
+SUMPARTITION([Amount], PartitionBy := [Region], OrderBy := [OrderDate], Frame := Running)
+
+ ![AggregateExpressionWithWindowExpression](/static/assets/data-modeling/configuring-expression-columns/aggregate-expression-with-window-expression.png)
+
+### Aggregate Expression with Ranking Window Function
+
+Standard aggregate expressions can also be combined with ranking window functions.
+
+#### Addition Example
+
+Adds the aggregated Amount value to the rank generated for each row within its region, ordered by order date.
+
+SUM([Amount]) +
+RANK(PartitionBy := [Region], OrderBy := [OrderDate])
+
+ ![AggregateExpressionWithRankingWindowFunctionAddition](/static/assets/data-modeling/configuring-expression-columns/aggregate-expression-with-ranking-window-function-addition.png)
+
+Similar arithmetic combinations can be used with supported ranking functions such as `RANK()`, `DENSERANK()`, `ROWNUMBER()`, and `NTILE()`.
+
 ## Limitations
 
 * **Window expressions are not supported** in raw data views, such as **Data Preview, View Underlying Data,** or **Grid Raw Data.**  
@@ -354,6 +436,20 @@ FIRSTVALUE(Expression1, PartitionBy := [Region], OrderBy := [OrderDate])
 * **Window expressions do not work with aggregation fields** (such as COUNT, SUM, etc.) alone; at least **one dimension must be included** along with the aggregation expression.  
 * **Window expressions are not supported in widgets with Row or Column category types,** because they return multiple values that cannot fit into a single row, column, or certain widget value types.  
 * **Window functions can be used in the aggregation category,** but they are **not supported in the Value field together with aggregation,** and **window expressions in columns are not supported** in Bar or Column charts. 
+* For mixed aggregate and window expressions that use `PartitionBy` or `OrderBy`, the columns referenced in these parameters must be available in the query grouping scope. If these columns are not already part of the widget configuration, add them as hidden columns. This ensures that the required columns are included in the generated `GROUP BY` clause and helps avoid query-generation errors without affecting the intended widget visualization.
+
+    **Example:**
+
+    ```text
+    SUM([SalesAmount]) +
+    RANK(PartitionBy := [Department], OrderBy := [EmployeeName])
+    ```
+
+    In this example, if `[Department]` and `[EmployeeName]` are not already part of the widget configuration, add them as hidden columns.
+
+* **Nested window expressions are not supported.** Arithmetic operations are different from nesting one window function inside another.
+* For division operations, ensure that the divisor does not evaluate to zero.
+* Existing window-expression widget and data-view limitations continue to apply.
 * For **complex query scenarios,** Bold BI recommends using **aggregation tables, view tables, or Code View instead of window expressions.**
 * **Window expression could not use** in Filter due to windows expression only used in **SELECT and Order BY** only.
 

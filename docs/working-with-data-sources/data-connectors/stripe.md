@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stripe – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Stripe service using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Stripe Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Stripe through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source for dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Stripe data source
+# Stripe Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Stripe web services through the REST API. 
 
 ## Choose Stripe data source
-To configure the Stripe data source, follow the below steps:
+To configure the Stripe data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Stripe data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Stripe/ChooseDS_Server.png)
 
 ## Create Stripe data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Stripe data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Stripe data source.
 1. Enter a name and description (optional) for the data source.
 2. Choose The Extract Engine.
 3. Click the **API Endpoints** down drop box and choose the required endpoint.
@@ -41,18 +41,18 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get Account Key for connecting Stripe Data source?
+### How do I get Account Key for connecting Stripe Data source?
 1. Login to your [Stripe](https://dashboard.stripe.com/login) account. Go to *Developers -> API Keys*.
-2. Utilize this *Secret Key* as the **Account Key** in the Stripe data source within the Bold BI Dashboard.
+2. Use this *Secret Key* as the **Account Key** in the Stripe data source within the Bold BI Dashboard.
 
    ![Reveal API Key](/static/assets/working-with-datasource/data-connectors/images/Stripe/APIKey.png)
 
@@ -78,7 +78,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 ### Setting up the URL
 
-1. For example, in order to retrieve specific payments_intents details, you can query the */payments_intents* endpoint.
+1. For example, to retrieve specific payments_intents details, you can query the */payments_intents* endpoint.
 2. Obtain the id of the specific payments_intents from the provided information.
 
 Replace it in the URL to query a particular payment:

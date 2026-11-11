@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Nutshell – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect the Nutshell service using the basic HTTP authentication through REST API endpoint with cloud-hosted Bold BI.
+title: Nutshell Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Nutshell with cloud-hosted Bold BI using basic HTTP authentication and the REST API, then create a data source for your dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Nutshell data source
+# Nutshell Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to the Nutshell web services through the REST API.
 
 ## Choose Nutshell data source
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

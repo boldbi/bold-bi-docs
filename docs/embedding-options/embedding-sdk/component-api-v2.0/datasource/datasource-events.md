@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference - Datasource Events JavaScript Embedding | Bold BI
+title: API Reference for Datasource Events in JavaScript | Bold BI
 description: Explore the Datasource JavaScript API reference for events that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Events
+# API Reference for Datasource Events in JavaScript
 ## onActionStart
    
 This event will be triggered at the beginning of every viewer action, including connection, layout and dashboard rendering, popup opening and closing, refreshing, filtering, exporting, and more.
@@ -508,7 +508,7 @@ This section describes the data source properties of the viewer object.
                <td class="name">serverUrl</td>
                <td class="type">string</td>
                <td class="access">get</td>
-               <td class="description">Hold the Bold BI server URL.</td>
+               <td class="description">Hold the Bold BI Server URL.</td>
           </tr>
            <tr>
                <td class="name">datasource</td>

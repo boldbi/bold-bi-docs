@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 100% Stacked Area (Modern) | Bold BI Documentation
+title: 100% Stacked Area Chart for Modern Dashboards | Bold BI
 description: Learn how to configure data, chart settings, formatting, drill-down, and interactions for the modern 100% Stacked Area Chart in Bold BI dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/distribution/100-stacked-area-chart/"
 platform: bold-bi
@@ -8,9 +8,9 @@ control: 100% Stacked Area Chart
 documentation: ug
 ---
 
-# 100% Stacked Area Chart
+# 100% Stacked Area Chart for Modern Dashboards
 
-A 100% Stacked Area Chart normalizes the combined series at every category to 100%. It shows how each series' percentage contribution changes across an ordered category.
+The 100% Stacked Area Chart widget in Bold BI normalizes the combined series at every category to 100%. It shows how each series' percentage contribution changes across an ordered category.
 
 ![100% Stacked Area Chart](/static/assets/visualizing-data/visualization-v2-widgets/images/100-stacked-area-chart/stacked-area-chart.png)
 

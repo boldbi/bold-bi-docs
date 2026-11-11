@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RavenDB - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect RavenDB database with cloud-hosted Bold BI and create data source for dashboard configuration.
+title: RavenDB Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect a RavenDB database with cloud-hosted Bold BI using the RavenDB client, then create a data source for dashboard and widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to RavenDB data source
+# RavenDB Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to RavenDB database using the RavenDB client. 
 
 ## Choose RavenDB data source
@@ -39,7 +39,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/RavenDB/Choose_client_password.png)
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

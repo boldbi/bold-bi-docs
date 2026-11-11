@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Filter Settings - Widget Properties | Bold BI Documentation
-description: Learn how to configure master widget behavior, filter action responses, and hierarchical Top N filtering in Bold BI Modern widgets.
+title: Filter Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how to configure master widget behavior, filter action responses, and hierarchical Top N filtering for modern Bold BI widgets in dashboards.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/filter-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Filter Settings
+# Filter Settings in Modern Widgets
 
-Filter settings control how a widget participates in the dashboard's cross-filtering system. In Bold BI, clicking a data point on one widget can filter the data displayed by other widgets on the same dashboard. The filter settings panel lets you configure which widgets broadcast filter events and which widgets listen to them.
+Filter settings in Bold BI control how a widget participates in the dashboard's cross-filtering system. In Bold BI, clicking a data point on one widget can filter the data displayed by other widgets on the same dashboard. The filter settings panel lets you configure which widgets broadcast filter events and which widgets listen to them.
 
 | Unsupported widgets |
 |---|
@@ -17,11 +17,11 @@ Filter settings control how a widget participates in the dashboard's cross-filte
 
 ## Properties
 
-#### Act as Master Widget
+### Act as Master Widget
 
 When enabled, this widget broadcasts filter events when a user clicks a data point. Other widgets on the dashboard that are not set to **Ignore Filter Actions** will update their data in response.
 
-Use this setting to create drill-through dashboards where a summary chart controls the detail widgets around it.
+Use this setting to create drill-through dashboards where a summary chart filters the detail widgets around it.
 
 #### Ignore Filter Actions
 

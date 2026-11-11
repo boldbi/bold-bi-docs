@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Whitelisting IP Addresses - Cloud BI | Bold BI Docs
+title: Whitelisting IP Addresses - Cloud BI in Bold BI | Bold BI
 description: Find the IP addresses that need to be whitelisted to enable Bold BI Cloud application to access your database server.
 platform: bold-bi
 documentation: ug
 ---
 
-# Whitelisting IP Addresses for the Bold BI Cloud Analytics Server
+# Whitelisting IP Addresses - Cloud BI
 
 To allow the Bold BI Cloud application to access your database server and create data sources, you must whitelist the following IP addresses.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map CSS3 theme variables with JSON theme property | Embedded
-description: Know about the CSS3 theme variables and learn how to map corresponding theme variables for the JSON theme property in Bold BI Embedded.
+title: Map CSS3 theme variables with JSON theme property | Bold BI
+description: Learn how to map JSON theme properties to their matching CSS3 theme variables in Bold BI Embedded, so existing themes keep the same look after you switch.
 platform: bold-bi
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 
 Use theme variables to customize the Bold BI application. This document will help you locate the corresponding theme variable for the JSON property.
 
-### Dashboard banner
+## Dashboard banner
 
 <table>
   <thead>
@@ -317,7 +317,7 @@ Use theme variables to customize the Bold BI application. This document will hel
 </table>
 
 ### Widget specific level properties
-The `widgets` section allows you to customize the properties of a specific widget.
+The `widgets` section customizes the properties of a specific widget.
 
 #### Chart widget
 

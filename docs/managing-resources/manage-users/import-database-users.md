@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Import Users from Database – Embedded BI | Bold BI Learning
+title: Importing Users from a Database in Bold BI | Bold BI
 description: Learn how to import users from database in Bold BI Embedded. Also know how to modify existing database connection.
 canonical: "/managing-resources/manage-users/import-database-users/"
 platform: bold-bi
 documentation: ug
 ---
 
-# User Import from a Database
+# Importing Users from a Database
 
 This section explains how to import users from a database into Bold BI Embedded.
 

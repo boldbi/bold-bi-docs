@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Azure Search - Cloud BI Connector | Bold BI Documentation
+title: Azure Search Data Connector Guide in Bold BI | Bold BI
 description: Learn how to connect Azure Search web service through REST API endpoint with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Azure Search data source
+# Azure Search Data Connector Guide in Bold BI
 
 Bold BI dashboard designer supports connecting to Azure Search web services through the REST API.
 
 ## Choose Azure Search data source
-To configure the Azure Search data source, follow the below steps:
+To configure the Azure Search data source, follow the following steps:
 
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Azure Search Data source?
+### How do I get API Key for connecting Azure Search Data source?
 
 Azure Search authentication supports API Key authentication:
 

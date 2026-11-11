@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding disclaimer text to login screen | Bold BI Docs
+title: Adding Disclaimer Text to the Login Screen | Bold BI
 description: Learn how to enable disclaimer in login screen and get user consent for every login in your cloud-hosted Bold BI site.
 platform: bold-bi
 documentation: ug

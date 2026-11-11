@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Slack Data Connector – Cloud BI | Bold BI Documentation
-description: Learn how to connect Slack web service using OAuth authentication with Bold BI Cloud and create data source.
+title: Slack Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Slack through OAuth authentication with Bold BI Cloud and the REST API, then create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Slack data source
+# Slack Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Slack web services through the REST API. 
 
 ## Choose Slack data source
 
-To configure the Slack data source, follow the below steps:
+To configure the Slack data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the Slack data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Slack/ChooseDS_Server.png)
 
 ## Create Slack data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Slack data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Slack data source.
 1. Enter a name and description (optional) for the data source.
 2. Choose The Extract Engine.
 2. Click on the **API Endpoints** down drop box and choose the required endpoint.
@@ -42,17 +42,17 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

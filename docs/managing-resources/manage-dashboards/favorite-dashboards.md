@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Favorite Dashboards – Embedded BI | Bold BI Documentation
+title: Mark Your Favorite Dashboards in Bold BI | Bold BI
 description: Learn how to mark a dashboard as favorite, remove from favorites and view as separate list in Bold BI Embedded.
 canonical: "/managing-resources/manage-dashboards/favorite-dashboards/" 
 platform: bold-bi
 documentation: ug
 ---
 
-# Favorite Dashboard
+# Mark Your Favorite Dashboards
 
 This section explains how to mark dashboards as favorites, remove a particular dashboard from favorites, and view the list of favorite dashboards in Bold BI.
 

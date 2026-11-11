@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Amazon Athena – Bold BI Connector | Bold BI Learning
-description: Learn how to connect Amazon Athena database with Bold BI deployed in your server and create data source in cloud.
+title: Amazon Athena Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect an Amazon Athena database with Bold BI deployed on your server and create a data source in the cloud for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Amazon Athena data source
+# Amazon Athena Data Connector Guide in Bold BI
 The **Bold BI** Dashboard Designer supports connecting to the Amazon Athena database using the SQL Live Query (C# API). 
 
 ## Choose an Amazon Athena data source

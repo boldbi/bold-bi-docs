@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Bitly – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Bitly web service through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: Bitly Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Bitly web service through its REST API endpoint with Bold BI Cloud and create a data source for widget configuration in dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Bitly data source
+# Bitly Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Bitly web services through the REST API.
 
 ## Choose Bitly data source
-To configure the Bitly data source, follow the below steps:
+To configure the Bitly data source, follow the following steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -41,7 +41,7 @@ Use the following steps to authenticate with Bitly web service:
 
 ## Connect to Bitly
 ### Create Bitly data source
-After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Bitly data source.
+After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the following steps to create Bitly data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** drop-down box and choose the required endpoint.
 3. Click **Custom URL** if you want to enter the URL manually. Refer to the [Bitly API documentation](https://dev.bitly.com/v4_documentation.html) for more details.  

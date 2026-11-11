@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedding Analytics with ASP.NET Core and Vue | Bold BI Docs
+title: Embedding Analytics with ASP.NET Core and Vue | Bold BI
 description: Learn how to embed an analytics dashboard with ASP.NET Core and Vue.js application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Vue.js with ASP.NET core using Embed SDK
+# Embedding Analytics with ASP.NET Core and Vue
 
-A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Vue.js` with `ASP.NET Core` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI Server. This is followed by steps to create a new embedding application in `Vue.js` with `ASP.NET Core` on your own. 
 
 > **NOTE:** The recommended starting point is to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides all the necessary information you need to know before working on the sample.
 

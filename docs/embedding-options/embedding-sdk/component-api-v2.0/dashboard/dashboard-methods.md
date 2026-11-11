@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Reference – Viewer Methods - JavaScript Embedding | Bold BI
+title: API Reference for Viewer Methods in JavaScript | Bold BI
 description: Explore the JavaScript viewer API reference for methods that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
 
-# Methods
+# API Reference for Viewer Methods in JavaScript
 
 ## create()
     
@@ -174,6 +174,39 @@ This method is used to resize the current dashboard.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.viewer.resize();   
+```
+
+## showViewDataDialog()
+
+This method is used to open the **View Underlying Data** dialog programmatically.
+
+When called from dashboard events such as [onToolbarItemClick](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-events/#ontoolbaritemclick), the current dashboard and widget context are identified automatically, so no parameters are required.
+
+When called from an external button or custom UI outside the dashboard, specify the target widget using the `widgetId` option. For multitab dashboard embedding, provide both `dashboardId` and `widgetId` options to identify the correct dashboard and widget.
+
+**Example 1: Open View Underlying Data from Toolbar Item Click**
+
+```js
+   onToolbarItemClick: function (args) {
+      if (args.name === "viewUnderlyingData") {
+         var instance = BoldBI.getInstance("dashboard"); // dashboard -> embed container id
+         instance.viewer.showViewDataDialog();
+      }
+   }
+```
+
+**Example 2: Open View Underlying Data from an External Button/Icon**
+
+```js
+   var instance = BoldBI.getInstance("dashboard"); // dashboard -> embed container id
+   instance.viewer.showViewDataDialog({ widgetId: "widgetId" });
+```
+
+**Example 3: Multitab Dashboard Embedding**
+
+```js
+   var instance = BoldBI.getInstance("dashboard"); // dashboard -> embed container id
+   instance.viewer.showViewDataDialog({ dashboardId: "dashboardId", widgetId: "widgetId" });
 ```
 
 ## updateFilters()
@@ -993,7 +1026,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>
@@ -1116,7 +1149,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>
@@ -1206,7 +1239,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>

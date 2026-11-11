@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Picker Widget – Embedded BI | Bold BI Documentation
+title: Date Picker Widget - Embedded Analytics in Bold BI | Bold BI
 description: Learn how to create a Date Picker visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/date-picker/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Date Picker
+# Date Picker Widget - Embedded Analytics
 
 Date Picker enables you to filter based on a single date or a range of date selections.
 
@@ -76,7 +76,7 @@ You can see the added relative dates in the DatePicker as follows.
 
 ### Show Custom Option
 
-This option allows you to show or hide the custom option when relative dates are configured.
+This option lets you show or hide the custom option when relative dates are configured.
 
 ![show custom option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/show-custom-option.png)
 
@@ -121,19 +121,19 @@ You can format the Date Picker for a better illustration of the view that you re
 
 #### Name
 
-This allows you to set the `title` for this date picker widget.
+This lets you set the `title` for this date picker widget.
 
 ![date picker name](/static/assets/visualizing-data/visualization-widgets/images/date-picker/Title.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this date picker widget.
+This lets you set the `subtitle` for this date picker widget.
 
 ![date picker name](/static/assets/visualizing-data/visualization-widgets/images/date-picker/Subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this date picker widget.
+This lets you set a brief explanation about this date picker widget.
 
 ![date picker name](/static/assets/visualizing-data/visualization-widgets/images/date-picker/Description.png)
 
@@ -143,19 +143,19 @@ This allows you to set a brief explanation about this date picker widget.
 
 #### Range
 
-This allows you to toggle the selection type of Range.
+This lets you toggle the selection type of Range.
 
-**Single** – Single date can be bounded if you disable the `Range` selection option.
+**Single**: Single date can be bounded if you disable the `Range` selection option.
 
 ![single date selction option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/single-selection.png)
 
-**Range** – A range of dates (two dates) can be bounded if you enable the `Range` selection option.
+**Range**: A range of dates (two dates) can be bounded if you enable the `Range` selection option.
 
 ![range date selection option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/range-selection.png)
 
 #### Select Today as Default
 
-This allows you to set today’s date as default selection in Date Picker, enabling users to quickly proceed with analyses on the current date. 
+This lets you set today’s date as default selection in Date Picker, enabling users to quickly proceed with analyses on the current date. 
 
 ![showcasing today date as default](/static/assets/visualizing-data/visualization-widgets/images/date-picker/today-date.png)
 
@@ -165,13 +165,13 @@ Enabling the “Select Today as Default” option will hide the “Range” opti
 
 #### Highlight Available Dates
 
-This allows you to enable the highlighting of available dates in the date picker.
+This lets you enable the highlighting of available dates in the date picker.
 
 ![showcasing date picker highlighted date option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/datepicker-high.png)
 
 #### Limit Dates
 
-This allows you to display only the limited dates (dates in the data source) in the date picker. By enabling this option, you can select the dates available in the data source.
+This lets you display only the limited dates (dates in the data source) in the date picker. By enabling this option, you can select the dates available in the data source.
 
 ![date range limit selection](/static/assets/visualizing-data/visualization-widgets/images/date-picker/datepicker-limit.png)
 
@@ -183,7 +183,7 @@ If you disable the Limit Dates option, there is no limit for the date range.
 
 If you enable the `Range` option, the `Fixed Calendar Selection` will be shown.
 
-This allows you to select a date (start or end) without discarding your previous selection.
+This lets you select a date (start or end) without discarding your previous selection.
 
 And you can only select a start date from the left calendar and the end date from the right calendar.
 
@@ -233,11 +233,11 @@ The `Placeholder` property of a date picker provides context for the user's inpu
 
 #### Act as Master Widget
 
-This allows you to define this date picker widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
+This lets you define this date picker widget as a master widget so that its filter action can be made to listen by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this date picker widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+This lets you define this date picker widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -247,7 +247,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the datepicker widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the datepicker widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -255,11 +255,11 @@ This feature allows you to toggle the visibility of the `Filter` icon for the da
 
 #### Title Alignment
 
-This allows you to handle the alignment of the widget title to either `left, center, or right.`
+This lets you handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This lets you apply the text `color` to the widget title.
 
 #### Title Auto Font Size
 
@@ -267,7 +267,7 @@ When Auto Font Size is enabled, the font size of the title will be adjusted auto
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This lets you apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -275,31 +275,31 @@ When Auto Font Size is enabled, the font size of the subtitle will be adjusted a
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This lets you apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This lets you toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
+This lets you apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
-This allows you to set the **background color** to the date picker widget.
+This lets you set the **background color** to the date picker widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+This lets you toggle the visibility of the `shadow` surrounding the widget.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -309,8 +309,8 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the date picker widget. 
+This lets you enable or disable the `widget title` of the date picker widget. 
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
+This lets you enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

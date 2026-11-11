@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ODBC – Embedded BI Data Connector | Bold BI Learning
+title: ODBC Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to connect ODBC databases such as SQL Server, PostgreSQL, MySQL, Oracle, Exasol and DB2 with Bold BI Embedded and create data source.
 canonical: "/working-with-data-sources/data-connectors/odbc/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to ODBC data source
+# ODBC Data Connector Setup Guide in Bold BI
 Bold BI Dashboard designer (Server) supports connecting to datasources through Open Database Connectivity (ODBC).
 
 > **Note:** The ODBC Connector is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
@@ -71,6 +71,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. T
 * ProgressDB
 * MongoDB Atlas
 * Neo4j
+* Simba Spark SQL Server
 
 Follow the given steps to create an ODBC data source: 
 1. Enter a name and description (optional) for the data source.
@@ -153,17 +154,17 @@ Following steps to connect the 64-bit values:
 2. Using the navigation pane at the left, browse to **Sites** and select your Bold BI application site (**BoldBIOnPremiseEdition**).
    ![IIS Bold BI Site](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_BoldBISite.png) 
 3. Right-click the Bold BI application site (**BoldBIOnPremiseEdition**) and select the **Manage Website** > **Stop**.
-   ![IIS Stop BoldBI](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Stop_BoldBI.png) 
-4. Select the **Application Pools** and then select and right click **BoldBI** > **Stop**. 
+   ![IIS Stop Bold BI](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Stop_BoldBI.png) 
+4. Select the **Application Pools** and then select and right click **Bold BI** > **Stop**. 
    ![IIS Stop Application Pools](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Stop_ApplicationPools.png) 
 5. Repeat the step 4 for all other application pools **BoldBIDesigner**, **BoldBIJobs**, and **BoldUMS**.
-6. Select the application pool **BoldBI** and click the **Advanced Settings** option.
+6. Select the application pool **Bold BI** and click the **Advanced Settings** option.
    ![IIS Application Pools Advanced settings](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_ApplicationPools_ADS.png) 
 7. Set the “**Enable 32- bit Applications**” to “**False**”.
    ![IIS Application Pools Advanced settings False](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_ApplicationPools_ADS_False.png) 
 8. Set the same property change in other three application pools (**BoldBIDesigner**, **BoldBIJobs**, and **BoldUMS**) also. 
-9. Restart the site (**BoldBIOnPremiseEdition**) and all application pools (**BoldBI**, **BoldBIDesigner**, **BoldBIJobs**, and **BoldUMS**).
-   ![IIS Start BoldBI](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Start_BoldBI.png)
+9. Restart the site (**BoldBIOnPremiseEdition**) and all application pools (**Bold BI**, **BoldBIDesigner**, **BoldBIJobs**, and **BoldUMS**).
+   ![IIS Start Bold BI](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Start_BoldBI.png)
    ![IIS Start Application Pools](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Start_ApplicationPools.png) 
 10. If the services are restarted, then go to the ODBC data source to list out the System DSN 64-bit values.
 

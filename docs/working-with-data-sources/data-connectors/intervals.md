@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Intervals – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Intervals web service using basic http authentication through REST API endpoint with Bold BI Cloud.
+title: Intervals Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Intervals web service through basic HTTP authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Intervals data source
+# Intervals Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Intervals web services through the REST API.
 
 ## Choose Intervals data source
-To configure the Intervals data source, follow the below steps:
+To configure the Intervals data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Intervals data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/intervals/ChooseDS_server.png)
 
 ## Create Intervals data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Intervals data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Intervals data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Intervals REST API endpoint in the URL textbox. Refer to the [Intervals API documentation](https://www.myintervals.com/api/) for more details.
 
@@ -42,7 +42,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Key for connecting Intervals data source?
+### How do I get API Key for connecting Intervals data source?
 
 1. Login to [Intervals](https://www.myintervals.com/login/) account. Go to *Profile -> My Account*.
 2. Find the Access Token under *API Access* tab.

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gmail Data Connector – Embedded BI | Bold BI Documentation
-description: Learn how to connect your Gmail account data with Bold BI Embedded dashboard editor and create data source.
+title: Gmail Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect your Gmail account data with the Bold BI Embedded dashboard editor and create a data source for dashboards and widgets in the designer.
 canonical: "/working-with-data-sources/data-connectors/gmail/"
 platform: bold-bi
 documentation: ug
 ---
    
-# Connecting Bold BI to Gmail data source
+# Gmail Data Connector Setup Guide in Bold BI
 
-  `What is Gmail?` Gmail offers free cloud storage for storing emails on the web. Gmail makes emailing, chatting, drafting, and archiving your mails and conversations easy and convenient. It is necessary to create a Gmail account.
+  `What is Gmail?` Gmail is an email service that offers free cloud storage for emails on the web, and Bold BI connects to it as a data source. Gmail makes emailing, chatting, drafting, and archiving your mails and conversations easy and convenient. It is necessary to create a Gmail account.
 
 > **Note:** Gmail data source is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
 
@@ -98,7 +98,7 @@ documentation: ug
 
       ![Oauth Concert screen](/static/assets/working-with-datasource/data-connectors/images/googleapps/peopleapi.png)
 
->**NOTE**:  You need to enable the required APIs in order to connect the connector in Bold BI.
+>**NOTE**:  You need to enable the required APIs to connect the connector in Bold BI.
    
    <table>
          <tr>

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to white label Bold BI | Bold BI Documentation
+title: How to White-Label Bold BI for Your Organization | Bold BI
 description: Learn how to white label Bold BI to match your application's branding, including logos, site name, copyright information, "powered by" information, themes, fonts, languages, date and time display formats, and domain.
 platform: bold-bi
 documentation: ug
 ---
 
-# White labeling in Bold BI
+# How to White-Label Bold BI for Your Organization
 Bold BI can be white-labeled to align with your application's branding. Your application will be prominently featured, ensuring that your clients enjoy a consistent and integrated experience with every engagement. Site administrators or users with permission to manage the settings can perform white-labeling.
 
 ## What areas in Bold BI can be white-labeled?
@@ -59,14 +59,14 @@ The AI logo can be customized (ideal size: `40 x 40`). It will be used on the da
 Please refer to this [link](/site-administration/site-settings/#branding) to learn more about customizing the logo in Bold BI.
 
 ## Powered by Information Customization
-The "Powered by" logo (ideal size: `100x25`) can be customized or disabled for Embedded BI on the `Site Settings` page under the `Branding` section. Cloud BI users can only hide the logo display.
+The "Powered by" logo (ideal size: `100x25`) can be customized or disabled for Embedded Analytics on the `Site Settings` page under the `Branding` section. Cloud BI users can only hide the logo display.
 
 ![White label powered by](/static/assets/white-label/images/poweredby-logo.png)
 
 Please refer to this [link](/site-administration/site-settings/#branding) to learn more about customizing the "Powered by" information in Bold BI.
 
 ## Copyright Information Customization
-Copyright details can be changed or disabled for Embedded BI on the `Site Settings` page under the `Branding` section. Cloud BI users can only hide this information.
+Copyright details can be changed or disabled for Embedded Analytics on the `Site Settings` page under the `Branding` section. Cloud BI users can only hide this information.
 
 ![White label copyright](/static/assets/white-label/images/copyright.png)
 
@@ -114,9 +114,9 @@ Please refer to this [link](/site-administration/site-settings/#date-and-time) t
 ## Site Domain Customization
 You can customize the domain in Bold BI to align your analytics platform by reinforcing brand recognition and credibility.
 
-**Custom Domain in Embedded BI**
+**Custom Domain in Embedded Analytics**
 
-You can customize your bindings with either an IP address or a domain. Please follow this [link](https://support.boldbi.com/kb/article/16575/how-to-change-binding-in-bold-bi-embedded) to learn how to set up a custom domain in Embedded BI.
+You can customize your bindings with either an IP address or a domain. Please follow this [link](https://support.boldbi.com/kb/article/16575/how-to-change-binding-in-bold-bi-embedded) to learn how to set up a custom domain in Embedded Analytics.
 
 **Custom Domain in Cloud BI**
 
@@ -144,7 +144,7 @@ Here is a sample image after customizing theme branding color using a violet var
 
 [How to create custom dashboard theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/)
 
-[How to upload custom theme files for Embedded BI on the UMS site settings page](/multi-tenancy/site-administration/look-and-feel-settings/)
+[How to upload custom theme files for Embedded Analytics on the UMS site settings page](/multi-tenancy/site-administration/look-and-feel-settings/)
 
 ## Site Font Customization
 You can customize the font style to match your application's interface under the `Look and Feel` settings in the Bold BI.
@@ -154,11 +154,11 @@ Here is the sample image after applying the font.
    ![Font Applied Cloud BI](/static/assets/white-label/images/after-font-cloud.png)
 
 
-**Font Customization in Embedded BI**
+**Font Customization in Embedded Analytics**
 
 The font styles uploaded in **UMS site settings** will be listed in the `Fonts` drop-down list. The selected font style will be applied throughout your site.
 
-![Font Settings Embedded BI](/static/assets/white-label/images/custom-font.png#width=45%)
+![Font Settings Embedded Analytics](/static/assets/white-label/images/custom-font.png#width=45%)
 
 Please click on the [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/) to learn how to upload font styles on the **UMS site settings** page.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bold Data Hub Destinations - Embedded BI | Bold BI Docs
+title: Data Destinations for Bold Data Hub in Bold BI | Bold BI
 description: Learn to configure various destinations in Bold Data Hub,leveraging inbuilt ETL capabilities support for data stores in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
 
-# Destination
+# Data Destinations for Bold Data Hub
 
 >To set the destination credentials navigate to the settings tab in the Bold Data Hub. Bold Data Hub supports below destinations,
 >1. Bold IMDB Datastore

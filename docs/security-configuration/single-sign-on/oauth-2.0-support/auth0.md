@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Auth0 support for SSO authentication
+# Single Sign-On with Auth0 Provider of OAuth 2.0
 
 The Bold BI application supports the addition of users using the Auth0 provider. By importing them, you can share dashboards and email exported dashboards with them.
 

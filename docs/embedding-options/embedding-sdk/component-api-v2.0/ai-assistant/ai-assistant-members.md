@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – AI Assistant Members | Bold BI Docs
+title: API Reference - AI Assistant Members in Bold BI | Bold BI
 description: Explore the AI Assistant SDK API reference for members used when embedding Bold BI in your deployed server environment.
 platform: bold-bi
 documentation: UG
 ---
-# Members
+# API Reference - AI Assistant Members in Bold BI
 <h2 class="doc-prop-wrapper" id="aisummaryintromessage" data-Path="aisummaryintromessage-aiSummaryIntroMessage">
 <a href="#aisummaryintromessage" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">

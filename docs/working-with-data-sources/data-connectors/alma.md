@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to create Alma data source in Cloud BI | Bold BI Docs
+title: Alma Data Connector Setup Guide in Bold BI | Bold BI
 description: Learn how to create a data source by connecting the Alma data through its REST API endpoint in Dashboard Designer with the Bold BI Cloud application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Alma data source
+# Alma Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer connects to the Alma web services through the REST API.
 
 ## Choose Alma data source
@@ -43,7 +43,7 @@ Once you click on the Alma data source, the Alma data source configuration panel
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### Additional information
+### Additional information
 <table width="600">
 <tr>
 <td>

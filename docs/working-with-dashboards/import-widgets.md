@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Reusing Dashboard Widgets - Embedded BI | Bold BI Docs
+title: Reusing Dashboard Widgets - Embedded Analytics | Bold BI
 description: Learn how to reuse other dashboard widgets along with its data and other settings in current dashboard in Bold BI Embedded.
 canonical: "/working-with-dashboards/import-widgets/"
 platform: bold-bi
 documentation: ug
 ---
-# Bold BI widgets import feature
+# Reusing Dashboard Widgets - Embedded Analytics
 The Widgets import feature allows you to import configured widgets from existing dashboards into a new dashboard. When drilling into dashboards where you have read-write permission, you will have access to all the widgets on the dashboard, which you can then drag into the current dashboard.
 
 Follow the steps below to reuse the widgets:

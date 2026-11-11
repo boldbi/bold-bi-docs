@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Doughnut Chart Widget (Modern) | Bold BI Documentation
-description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Doughnut Chart in Bold BI dashboards.
+title: Doughnut Chart for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Doughnut Chart widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/doughnut-chart/"
 platform: bold-bi
 control: Doughnut Chart
 documentation: ug
 ---
 
-# Doughnut Chart
+# Doughnut Chart for Modern Dashboards
 
-A Doughnut Chart represents values as proportional segments of a ring. The hollow center distinguishes it from a Pie Chart while retaining the same part-to-whole comparison.
+The Doughnut Chart widget in Bold BI represents values as proportional segments of a ring. The hollow center distinguishes it from a Pie Chart while retaining the same part-to-whole comparison.
 
 ![Doughnut Chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 

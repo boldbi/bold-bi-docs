@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Comparison Widgets (Modern) | Bold BI Documentation
-description: Learn when to use Bold BI Modern comparison widgets and explore the chart types available in this category.
+title: Comparison Widgets in Modern Dashboards in Bold BI | Bold BI
+description: Learn when to use Bold BI modern comparison widgets, review the chart types in this category, and see how they compare values across categories.
 canonical: "/visualizing-data/visualization-v2-widgets/comparison/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Comparison
+# Comparison Widgets in Modern Dashboards
 
 Comparison widgets help you compare values across categories, series, or grouped business data. Use these widgets when you want to show differences between items, track ranking, or compare multiple measures side by side.
 

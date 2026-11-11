@@ -1,9 +1,9 @@
 ---
-title: Upgrade Center for Updating and Managing Bold BI Versions
+title: Upgrade Center for Managing Bold BI Versions | Bold BI
 description: Learn how to upgrade your Bold BI deployment using the Upgrade Center and keep your environment up to date.
 ---
 
-# Upgrade Center on Kubernetes
+# Upgrade Center for Managing Bold BI Versions
 
 ## Overview
 

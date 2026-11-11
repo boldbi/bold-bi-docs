@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Pipedrive – Cloud BI Data Connector | Bold BI Documentation
-description: Learn how to connect Pipedrive service through REST API endpoint with Bold BI Cloud and create data source.
+title: Pipedrive Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect Pipedrive through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Pipedrive data source
+# Pipedrive Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Pipedrive web services through the REST API. 
 
 ## Choose Pipedrive data source
-To configure the Pipedrive data source, follow the below steps:
+To configure the Pipedrive data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Pipedrive data source, follow the below steps:
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Pipedrive/ChooseDS_server.png)
 
 ## Create Pipedrive data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Pipedrive data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Pipedrive data source.
 1. Enter a name and description (optional) for the data source.
 2. Select The Extract Engine.
 3. Enter the **HostName** for the connected account.
@@ -42,16 +42,16 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 ## Extract Engine
 You can connect to the data source using one of the following extract methods:
 - **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Bold Data Hub**: Data extraction is handled through the Bold Data Hub. An equivalent pipeline is created, utilizing the Bold Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 - To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
     ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that uses the Bold Data Hub Extract Engine, the refresh will be managed within the Bold Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API Token for connecting Pipedrive data source?
+### How do I get API Token for connecting Pipedrive data source?
 To access endpoints in Pipedrive, you need an API Token to be included in your query.
 1. Login to your [Pipedrive](https://www.pipedrive.com/) account.
 2. Go to *Settings -> Personal -> Other -> API*. Refer [Pipedrive Documentation](https://pipedrive.readme.io/docs/how-to-find-the-api-token).

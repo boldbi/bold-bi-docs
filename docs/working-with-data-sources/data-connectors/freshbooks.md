@@ -1,18 +1,18 @@
 ---
 layout: post
-title: FreshBooks – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect FreshBooks service using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+title: FreshBooks Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect FreshBooks service through OAuth-based authentication and its REST API endpoint with Bold BI Cloud, then create a data source.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to FreshBooks data source
+# FreshBooks Data Connector Guide in Bold BI
 
 The Bold BI dashboard designer supports connecting to FreshBooks web services through the REST API.
 
 ## Choose FreshBooks data source
 
-To configure the FreshBooks data source, follow the below steps:
+To configure the FreshBooks data source, follow the following steps:
 
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -43,7 +43,7 @@ Use the following steps to authenticate with the FreshBooks web service.
 
 ## Connect to FreshBooks
 ### Create FreshBooks data source
-After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create FreshBooks data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create FreshBooks data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid FreshBooks REST API endpoint in the URL textbox. Refer to the [FreshBooks API documentation](https://www.freshbooks.com/api/start) for more details.
 

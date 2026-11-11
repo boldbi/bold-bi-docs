@@ -1,11 +1,11 @@
 ---
 layout: post
-title: API Reference – MutiTab Dashboard Members | Bold BI
-description: Explore the MutiTab Dashboard JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
+title: API Reference - Multi-tab Dashboard Members | Bold BI
+description: Explore the Multi-tab Dashboard JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
-# Members
+# API Reference - Multi-tab Dashboard Members
 <h2 class="doc-prop-wrapper" id="dashboardids" data-Path="dashboardids-dashboardIds">
 <a href="#dashboardids" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">

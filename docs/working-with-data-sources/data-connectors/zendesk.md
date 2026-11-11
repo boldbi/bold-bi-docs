@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Zendesk – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Zendesk web service through REST API endpoint with Bold BI Cloud and create data source.
+title: Zendesk Data Connector Setup Guide in Bold BI | Bold BI
+description: Learn how to connect Zendesk through its REST API endpoint with Bold BI Cloud and create a data source for dashboard and widget configuration in the designer.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to Zendesk data source
+# Zendesk Data Connector Setup Guide in Bold BI
 The Bold BI dashboard designer supports connecting to Zendesk web services through the REST API. 
 
 ## Choose Zendesk data source
-To configure the Zendesk data source, follow the below steps:
+To configure the Zendesk data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -25,7 +25,7 @@ To configure the Zendesk data source, follow the below steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Zendesk/ChooseDS_Server.png)
 
 ## Create Zendesk data source
-Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Zendesk data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create Zendesk data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Zendesk REST API endpoint in the URL textbox. Refer to the [Zendesk API documentation](https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources) for more details.
 

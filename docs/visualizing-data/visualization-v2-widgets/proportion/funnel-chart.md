@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Funnel Chart (Modern) Widget | Bold BI Documentation
-description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Funnel Chart in Bold BI dashboards.
+title: Funnel Chart for Modern Dashboards in Bold BI | Bold BI
+description: Learn how to configure data, labels, formatting, legend settings, and interactions for the modern Funnel Chart widget in Bold BI dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/proportion/funnel-chart/"
 platform: bold-bi
 control: Funnel Chart
 documentation: ug
 ---
 
-# Funnel Chart
+# Funnel Chart for Modern Dashboards
 
-A Funnel Chart represents values as segments in a tapered shape. It helps viewers compare stages in a process and identify where values increase or decrease between stages.
+The Funnel Chart widget in Bold BI represents values as segments in a tapered shape. It helps viewers compare stages in a process and identify where values increase or decrease between stages.
 
 ![Funnel Chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/funnel-chart.png)
 

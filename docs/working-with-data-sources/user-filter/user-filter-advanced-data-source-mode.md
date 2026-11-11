@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Filter – Data Source Mode – Embedded BI | Bold BI
+title: User Filter in Data Source Mode in Bold BI | Bold BI
 description: Learn how to create the user filter in Bold BI Embedded through mapping another data source existing in that server that holds detail about the user.
 canonical: "/working-with-data-sources/user-filter/user-filter-advanced-data-source-mode/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# User Filter Modes
+# User Filter in Data Source Mode in Bold BI
 
 There are two types of modes present in User Filter:
 

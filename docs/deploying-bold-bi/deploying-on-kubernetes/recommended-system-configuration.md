@@ -1,12 +1,12 @@
 ---
 layout: post
-title: System Configuration For Kubernetes| Bold BI Documentation.
+title: System Configuration For Kubernetes in Bold BI | Bold BI
 description: Read this guide to know system configuration based on users count and data size for Deploying Bold BI in Kubernetes.
 platform: bold-bi
 documentation: ug
 ---
 
-# Recommended System Configuration
+# System Configuration For Kubernetes in Bold BI
  
 This section helps you define your production system configuration based on the number of concurrent users and the size of data.
  

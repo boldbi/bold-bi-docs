@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Embed a dashboard in other JavaScript platforms | Bold BI Docs
+title: Embed a dashboard in other JavaScript platforms | Bold BI
 description: Explore the steps to embed a dashboard in various JavaScript platforms like ColdFusion, Java Servlet, Django, Ionic and more since Bold BI v3.3.40.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embed dashboard in other platforms
+# Embed a dashboard in other JavaScript platforms
 
 The samples have been created in other platforms to embed the Bold BI Dashboard. Here, you can set the server and dashboard details as the embed details, then the dashboard will be rendered after passing the authorization. The platforms are:
 

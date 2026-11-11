@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Interacted Actions in Visuals – Embedded BI | Bold BI Docs
+title: Grid Interacted Actions in Bold BI Visuals | Bold BI
 description: Learn about applicable options and how to save the Grid widget interaction to views through Bold BI Embedded dashboard
 canonical: "/visualizing-data/working-with-widgets/saving-user-interacted-widgets/grid/"
 platform: bold-bi
@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Configuring Interaction For Grid Widget
+# Grid Interacted Actions in Bold BI Visuals
 
 The following options allow the widget state to be preserved after the dashboard page is reloaded.
 1. Allow Column Reorder

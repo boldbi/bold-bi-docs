@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Amazon RDS - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Amazon RDS database with cloud-hosted Bold BI and create data source for widget configuration.
+title: Amazon RDS Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect an Amazon RDS database with cloud-hosted Bold BI and create a data source for widget configuration and dashboard preparation.
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to Amazon RDS data source
+# Amazon RDS Data Connector Guide in Bold BI
 The Bold BI Dashboard Designer supports connecting to an Amazon RDS database using SQL Live Query.
 
 ## Choose Amazon RDS data source

@@ -111,4 +111,4 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Pricing
 
-- [**Pricing**](https://www.boldbi.com/pricing) - Simple, predictable pricing with no per-user fees, ensuring cost-effective scaling. Get analytics at a flat rate with no hidden fees or per-user charges.
+- [**Pricing**](https://www.boldbi.com/pricing) - Bold BI offers per-user and per-application pricing. See the pricing page for current plans and a cost calculator.

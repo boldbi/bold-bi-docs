@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Upgrading BoldBI Server in AWS EC2 instance | Bold BI Docs
+title: Upgrading Bold BI Server in AWS EC2 instance | Bold BI
 description: Learn how to upgrade the Bold BI Server in AWS EC2 instance to the latest version to benefit from new features and fix updates.
 platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade to latest Bold BI Server latest version
+# Upgrading Bold BI Server in AWS EC2 instance
 
 To upgrade the Bold BI Server VM to the latest source from older versions, follow these steps:
 

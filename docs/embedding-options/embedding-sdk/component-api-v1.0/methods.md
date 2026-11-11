@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Reference – Methods - JavaScript Embedding | Bold BI
+title: API Reference - Methods - JavaScript Embedding | Bold BI
 description: Explore the JavaScript API reference for methods that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
 ---
 
-# Methods
+# API Reference - Methods - JavaScript Embedding
 
 ## create()
     
@@ -1680,7 +1680,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>
@@ -1802,7 +1802,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>
@@ -1892,7 +1892,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>IsDefault</td>
    <td><code>string</code></td>
-   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI server, otherwise view not saved as DefaultView of the dashboard.</td>
+   <td>By default, it would be false. You can set as your view as DefaultView after the Default view option is enabled in Dashboard settings in the Bold BI Server, otherwise view not saved as DefaultView of the dashboard.</td>
    </tr>
    </table>
 </td>

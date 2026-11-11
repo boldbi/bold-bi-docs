@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Bold BI New Dashboard Designer - SDK Embedding | Bold BI Docs
+title: Bold BI New Dashboard Designer - SDK Embedding | Bold BI
 description: Learn how to embed the Bold BI New Dashboard Designer seamlessly in your business application using the SDK to enhance data visualization and decision-making capabilities.
 platform: bold-bi
 documentation: ug
 ---
-# Embed a New Dashboard Designer Using an Embed Token
+# Bold BI New Dashboard Designer - SDK Embedding
 
 This enables you to <b>create dashboards</b> directly within your application, offering an integrated and collaborative experience.
 

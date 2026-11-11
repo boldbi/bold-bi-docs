@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Theme for a Dashboard - Cloud BI | Bold BI Docs
+title: Custom Theme for a Dashboard in Cloud Edition | Bold BI
 description: Learn how to a generate custom theme file, upload the generated file and manage custom theme for your dashboards in Cloud based Bold BI application.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # How to create a custom theme using variables for dashboards
 
-You can customize your dashboard in BoldBI using the provided variables to create a custom theme. Follow these steps:
+You can customize your dashboard in Bold BI using the provided variables to create a custom theme. Follow these steps:
 
 1. Download the default `light` and `dark` files from the [Github repository](https://github.com/boldbi/boldbi-themestudio/releases) and extract them.
 

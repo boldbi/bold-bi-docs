@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Database Synchronization – Embedded BI | Bold BI Docs
+title: Synchronize Users from a Database in Bold BI | Bold BI
 description: Learn how to synchronize imported user details such as, first name, last name, email address, and contact number from existing database in Bold BI Embedded.
 canonical: "/managing-resources/manage-users/synchronization-imported-users-from-exisiting-database/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Synchronization of Imported Users From the Existing Database
+# Synchronize Users from a Database
 
 This section explains how to synchronize the imported existing database users' details with the existing database.
 

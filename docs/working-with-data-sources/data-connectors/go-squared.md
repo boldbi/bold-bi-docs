@@ -1,16 +1,16 @@
 ---
 layout: post
-title: GoSquared – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect GoSquared web service through REST API endpoint with Bold BI Cloud and create data source.
+title: GoSquared Data Connector Guide in Bold BI | Bold BI
+description: Learn how to connect GoSquared web service through its REST API endpoint with Bold BI Cloud and create a data source for dashboards and widgets.
 platform: bold-bi
 documentation: ug
 ---
 
-# Connecting Bold BI to GoSquared data source
+# GoSquared Data Connector Guide in Bold BI
 The Bold BI dashboard designer supports connecting to GoSquared web services through the REST API. 
 
 ## Choose GoSquared data source
-To configure the GoSquared data source, follow the below steps:
+To configure the GoSquared data source, follow the following steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -26,7 +26,7 @@ To configure the GoSquared data source, follow the below steps:
 
 
 ## Create GoSquared data source
-Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create GoSquared data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the following steps to create GoSquared data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid GoSquared REST API endpoint in the URL textbox. Refer to the [GoSquared API documentation](https://www.gosquared.com/docs/api/) for more details.
 
@@ -42,7 +42,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-#### How do I get API key and Site Token for connecting GoSquared data source?
+### How do I get API key and Site Token for connecting GoSquared data source?
 1. Log in to your [GoSquared](https://www.gosquared.com/login/) account. 
 2. To obtain the Site Token, Go to *Settings -> Current Project -> General -> Project Token*.
 3. Use this *Project Token* as the **Site Token** in the GoSquared data source in the Bold BI dashboard.
@@ -69,7 +69,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 ### Setting up the URL
 
-1. For instance, to retrieve the, list of online visitors from different countries, replace the *api_key* and *site_token* like in the below URL to query countries list.
+1. For instance, to retrieve the, list of online visitors from different countries, replace the *api_key* and *site_token* like in the following URL to query countries list.
 
    `https://api.gosquared.com/now/v3/countries?api_key=JSOjsiw92he83h42HWj&site_token=GSN-763262983-B`
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Facebook Ads Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Facebook Ads Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
+title: Facebook Ads Bold Data Hub Connector Guide in Bold BI | Bold BI
+description: Learn how to use the Facebook Ads Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Facebook Ads:
+# Facebook Ads Bold Data Hub Connector Guide
 
 Facebook Ads is the advertising platform that allows businesses and individuals to create targeted ads on Facebook and its affiliated apps, such as Instagram and Messenger.
 
@@ -96,7 +96,7 @@ plugins:
         attribution_window_days_lag: 7
         time_increment_days: 1
 ```
-## Configure the Data Hub to connect Facebook Ads
+## Configure the Bold Data Hub to connect Facebook Ads
 
   1. To start, Click the `Bold Data Hub` icon on the Navigation Pane.
 
@@ -125,13 +125,13 @@ The available resources are supported in Facebook Ads
  
  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/).
 
-   ![FileSystem - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+   ![FileSystem - Bold BI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 >**Warning:**
     1. The `Encrypt_Credentials` property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the `Encrypt_Credentials` property must be set to true.  
-    2. The default lifetime of the access token is 1 hour. Therefore, you need to convert it to a long-lived access token in order to use the same token for 60 days. Existing tables should be maintained even if the token has expired or is being used as an invalid token. 
+    2. The default lifetime of the access token is 1 hour. Therefore, you need to convert it to a long-lived access token to use the same token for 60 days. Existing tables should be maintained even if the token has expired or is being used as an invalid token. 
 
-### Schedule Data Hub Job
+### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 

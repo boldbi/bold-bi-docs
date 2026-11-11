@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Installation and deployment of Bold BI on Ubuntu | Bold BI Docs
+title: Installation and deployment of Bold BI on Ubuntu | Bold BI
 description: Learn more about the prerequisites, installation and deployment of the Embedded Bold BI v4.1 or older Linux package on Ubuntu Linux server with Nginx.
 platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on Ubuntu 
+# Installation and deployment of Bold BI on Ubuntu
 
 ## Deployment prerequisites
 

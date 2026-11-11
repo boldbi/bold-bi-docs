@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Legend Settings - Widget Properties | Bold BI Documentation
-description: Learn how to configure chart legend visibility, position, alignment, shape, label color, and text overflow in Bold BI Modern widgets.
+title: Legend Settings in Modern Widgets in Bold BI | Bold BI
+description: Learn how to configure chart legend visibility, position, alignment, shape, label color, and text for modern Bold BI widgets in dashboards and reports.
 canonical: "/visualizing-data/visualization-v2-widgets/properties/legend-settings/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Legend Settings
+# Legend Settings in Modern Widgets
 
-A legend identifies each data series plotted on a chart by mapping a color or shape to a series name. It helps users interpret multi-series charts without needing to hover over individual data points. Legend settings let you control where the legend appears, how it looks, and how users interact with it.
+A legend in Bold BI identifies each data series plotted on a chart by mapping a color or shape to a series name. It helps users interpret multi-series charts without needing to hover over individual data points. Legend settings let you control where the legend appears, how it looks, and how users interact with it.
 
 | Unsupported widgets |
 |---|
@@ -19,7 +19,7 @@ A legend identifies each data series plotted on a chart by mapping a color or sh
 
 ## Properties
 
-#### Show Legend
+### Show Legend
 
 Toggles the visibility of the legend. When enabled, the legend appears adjacent to the chart plot area. When disabled, all dependent legend properties are also hidden.
 

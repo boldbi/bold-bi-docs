@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Line Separator Widget (Modern) | Bold BI Documentation
-description: Learn how to use the modern Line widget in Bold BI dashboards to separate content, organize sections, and improve visual layout clarity.
+title: Line Separator Widget for Modern Dashboards | Bold BI
+description: Learn how to use the modern Line widget in Bold BI dashboards to add horizontal or vertical separators that organize content and sections on a dashboard.
 canonical: "/visualizing-data/visualization-v2-widgets/miscellaneous/line-widget/"
 platform: bold-bi
 control: Line Widget
 documentation: ug
 ---
 
-# Line Widget
+# Line Separator Widget for Modern Dashboards
 
-The Line widget adds a horizontal or vertical separator to a dashboard. Use it to distinguish dashboard sections and reinforce the layout structure.
+The Line widget in Bold BI adds a horizontal or vertical separator to a dashboard. Use it to distinguish dashboard sections and reinforce the layout structure.
 
 ## Adding a Line Widget
 

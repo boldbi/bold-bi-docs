@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Slider Widget – Embedded BI | Bold BI Documentation
+title: Range Slider Widget - Embedded Analytics | Bold BI
 description: Learn how to create a Range Slider visual in Bold BI Embedded dashboard, configure data field and other settings.
 canonical: "/visualizing-data/visualization-widgets/range-slider/"
 platform: bold-bi
@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Range Slider
+# Range Slider Widget - Embedded Analytics
 
 The Range Slider enables you to filter based on a value or date range set through sliders. To configure a range slider, a minimum requirement of 1 column is needed.
 
@@ -72,19 +72,19 @@ You can format the Range Slider for better illustration of the view that you req
 
 #### Name
 
-This allows you to set the `title` for this range slider widget.
+This lets you set the `title` for this range slider widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/range-slider/Name.png)
 
 #### Subtitle
 
-This allows you to set the `subtitle` for this range slider widget.
+This lets you set the `subtitle` for this range slider widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/range-slider/subtitle.png)
 
 #### Description
 
-This allows you to set a brief explanation about this range slider widget.
+This lets you set a brief explanation about this range slider widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/range-slider/Description.png)
 
@@ -96,13 +96,13 @@ This allows you to set a brief explanation about this range slider widget.
 
 Single value can be bounded if you disable the `Range Selection` option. 
 
-Single – Single value can be bounded, if you disable the `Range Selection` option.
+Single: Single value can be bounded, if you disable the `Range Selection` option.
 
 **Range Slider with Single Pointer**
 
 ![Range Slider with Single Pointer](/static/assets/visualizing-data/visualization-widgets/images/range-slider/single-pointer.png)
 
-Range – A range (two values) can be bounded if you enable the `Range Selection` option.
+Range: A range (two values) can be bounded if you enable the `Range Selection` option.
 
 **Range Slider with Range Pointer**
 
@@ -110,7 +110,7 @@ Range – A range (two values) can be bounded if you enable the `Range Selection
 
 #### Orientation
 
-This allows you to toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation.`
+This lets you toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation.`
 
 ![Range Slider Orientation Type](/static/assets/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
 
@@ -126,7 +126,7 @@ Orientation will be set based on the widget resolutions in the `Auto` mode.
 
 #### Label Color
 
-This allows you to customize the label color.
+This lets you customize the label color.
 
 ![Range Slider with modified label color](/static/assets/visualizing-data/visualization-widgets/images/range-slider/label-color-option.png)
 
@@ -134,7 +134,7 @@ This allows you to customize the label color.
 
 #### Slider Color
 
-This allows you to customize the slider color.
+This lets you customize the slider color.
 
 ![Range Slider with modified slider color](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-color-option.png)
 
@@ -142,7 +142,7 @@ This allows you to customize the slider color.
 
 #### Slider Interval
 
-This allows you to modify the incremental step of the slider. When the slider is adjusted, it shifts based on the new interval of the slider.
+This lets you modify the incremental step of the slider. When the slider is adjusted, it shifts based on the new interval of the slider.
 
 ![Range Slider with modified slider interval](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-interval-option.png)
 
@@ -154,11 +154,11 @@ This allows you to modify the incremental step of the slider. When the slider is
 
 #### Act as Master Widget
 
-This option allows you to define the range slider widget as a master widget so that its filter action can be recognized by other widgets in the dashboard.
+This option lets you define the range slider widget as a master widget so that its filter action can be recognized by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This option allows you to specify that the range slider widget should not respond to filter actions applied on other widgets in the dashboard.
+This option lets you specify that the range slider widget should not respond to filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -168,7 +168,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Show Filter
 
-This feature allows you to toggle the visibility of the `Filter` icon for the range slider widget when the `Act as Master Widget` option is enabled.
+This feature lets you toggle the visibility of the `Filter` icon for the range slider widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -176,7 +176,7 @@ This feature allows you to toggle the visibility of the `Filter` icon for the ra
 
 #### Title Alignment
 
-This setting allows you to adjust the alignment of the widget title to be `left, center, or right.`
+This setting lets you adjust the alignment of the widget title to be `left, center, or right.`
 
 #### Title Color
 
@@ -188,7 +188,7 @@ If Auto Font Size is enabled, the font size of the title will automatically adju
 
 **Font Size**
 
-This setting allows you to specify the font size for the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
+This setting lets you specify the font size for the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
@@ -196,7 +196,7 @@ Similar to the title, enabling Auto Font Size for the subtitle will adjust the f
 
 **Font Size**
 
-This setting allows you to specify the font size for the subtitle if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
+This setting lets you specify the font size for the subtitle if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Show Border
 
@@ -204,7 +204,7 @@ You can toggle the visibility of the `border` surrounding the widget using this 
 
 #### Corner Radius
 
-This setting allows you to specify the `radius` for the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
+This setting lets you specify the `radius` for the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
@@ -212,7 +212,7 @@ Set the **background color** for the range slider widget using this option.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property lets you specify the **transparency** for the `background color.`
 
 ### Show Shadow
 
@@ -220,7 +220,7 @@ Toggle the visibility of the `shadow` surrounding the widget with this option.
 
 ### Mobile Height Factor
 
-This option allows you to resize widgets specifically for mobile view.
+This option lets you resize widgets specifically for mobile view.
 
 ![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
@@ -230,7 +230,7 @@ This option allows you to resize widgets specifically for mobile view.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the range slider widget. 
+This lets you enable or disable the `widget title` of the range slider widget. 
 
 #### Enable Comments
 
